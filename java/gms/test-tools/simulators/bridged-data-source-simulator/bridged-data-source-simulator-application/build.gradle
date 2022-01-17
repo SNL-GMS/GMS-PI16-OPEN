@@ -1,0 +1,39 @@
+plugins {
+    id "application"
+    id 'com.palantir.docker'
+}
+
+mainClassName = "gms.testtools.simulators.bridgeddatasourcesimulator.application.BridgedDataSourceSimulatorApplication"
+
+dependencies {
+    implementation project(":java-utilities")
+
+    implementation "com.google.auto.value:auto-value-annotations"
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    implementation project(":frameworks-service-generator")
+    implementation project(':frameworks-configuration-repository')
+    implementation project(':frameworks-configuration-commonobjects')
+    implementation project(':frameworks-control')
+    // Logback for Structured Logging
+    implementation 'ch.qos.logback:logback-classic'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation project(':structured-logging')
+    implementation project(':bridged-data-source-simulator-api')
+    implementation project(':bridged-data-source-analysis-simulator')
+    implementation project(':bridged-data-source-station-simulator')
+    implementation project(':bridged-data-source-interval-simulator')
+    implementation project(':bridged-data-source-simulator-jpa')
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation project(':signal-detection-database-connector')
+    implementation project(':station-definition-repository')
+    implementation project(":workflow-repository")
+
+
+    implementation 'io.projectreactor:reactor-core'
+
+    implementation "org.apache.commons:commons-lang3"
+    implementation project(':bridge-utilities')
+
+    testImplementation project(':station-definition-testfixtures')
+}

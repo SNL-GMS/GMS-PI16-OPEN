@@ -1,0 +1,39 @@
+#!/bin/bash
+
+RESULTS_PATH="dist"
+TESTRUN_OUTPUT="${RESULTS_PATH}/testrun.txt"
+
+if [ -z "${GMS_TEST_NAME}" ]; then
+    echo "ERROR: Variable 'GMS_TEST_NAME' must be set to identify the test results."
+    exit 1
+fi
+
+if [ -z "${CYPRESS_BASE_URL}" ]; then
+    echo "ERROR: Variable 'CYPRESS_BASE_URL' must be set to the external URL of the UI under test."
+    exit 1
+fi
+
+if [ -z "${CYPRESS_TEST_TAGS}" ]; then
+    echo "ERROR: Variable 'CYPRESS_TEST_TAGS' must be set to the tags to run (i.e. '@soh and not @skip')."
+    exit 1
+fi
+
+rm -rf ${RESULTS_PATH}
+mkdir ${RESULTS_PATH}
+echo "RUNNING: yarn cypress-tags run -e TAGS=${CYPRESS_TEST_TAGS}" | tee -a ${TESTRUN_OUTPUT}
+yarn cypress-tags run -e TAGS="${CYPRESS_TEST_TAGS}" | tee -a ${TESTRUN_OUTPUT}
+test_exit_status=${PIPESTATUS[0]}
+yarn report | tee -a ${TESTRUN_OUTPUT}
+
+echo "Test exit status: ${test_exit_status}"  | tee -a ${TESTRUN_OUTPUT}
+
+#-- Send results back to minio (if URL and keys are defined)
+if [[ -n "${MINIO_URL}" && -n "${MINIO_REPORT_BUCKET}" && -n "${MINIO_ACCESS_KEY}" && -n "${MINIO_SECRET_KEY}" ]]; then
+    echo "Copying results to minio cache..." | tee -a ${TESTRUN_OUTPUT}
+    mc alias set minio $MINIO_URL $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
+    mv ${RESULTS_PATH} ${GMS_TEST_NAME}
+    tar czf ${GMS_TEST_NAME}.tgz ${GMS_TEST_NAME}
+    mc cp -r ${GMS_TEST_NAME}.tgz minio/${MINIO_REPORT_BUCKET}
+fi
+
+exit $test_exit_status

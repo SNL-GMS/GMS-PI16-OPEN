@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mutation-util WithMutation wrapped component matches snapshot 1`] = `
+<Fragment>
+  <TestComponent
+    testMutation={[Function]}
+  />
+</Fragment>
+`;
+
+exports[`mutation-util buildMutationInjector returns a component that matches the snapshot 1`] = `[Function]`;

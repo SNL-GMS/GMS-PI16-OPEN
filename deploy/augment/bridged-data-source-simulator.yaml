@@ -1,0 +1,144 @@
+# --------------------------------------------------------
+# [ HARNESS] Bridged Data Source Simulator
+#
+# description:
+#   This test harness can be applied to an IAN or SB instance
+#   to add a bridged data source simulator for testing.
+# --------------------------------------------------------
+---
+kind: Augmentation
+metadata:
+  type: harness  
+  values:
+    appName: bridged-data-source-simulator
+    imageName: gms-common/bridged-data-source-simulator-application
+    hostPath:
+      bridgeWaveforms: "/data/bridge-waveforms"
+      bridgeResponses: "/data/bridge-responses"
+  labels:
+    - sim    
+    - ian
+    - sb 
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ appName }}
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ appName }}
+    spec:
+      serviceAccount: gms-{{ instanceType }}-elevated
+      initContainers:
+        - name: wait-for-config-load
+          image: {{ imageRegistry }}/{{ imageName }}:{{ imageTag }}
+          imagePullPolicy: Always
+          command: ["/bin/bash", "-c"]
+          args: ["url=http://config-loader:8080/config-loader/initialized; while true; do echo Curling ${url}; http_code=$(curl -s -o /dev/null -I -w \"%{http_code}\" --insecure --max-time 1 ${url}); echo Returned http_code: ${http_code}; if [[ ${http_code} == \"200\" ]]; then break; fi; sleep 1s; done;"]
+      containers:
+        - name: {{ appName }}
+          image: "{{ imageRegistry }}/{{ imageName }}:{{ imageTag }}"
+          imagePullPolicy: Always
+          volumeMounts:
+            - name: oracle-wallet
+              mountPath: /opt/gms/bridged-data-source-simulator-application/oracle-wallet
+              readOnly: true
+            - name: bridge-waveforms
+              mountPath: /data/bridge-waveforms
+              readOnly: true
+            - name: bridge-responses
+              mountPath: /data/bridge-responses
+              readOnly: true
+          env:
+            - name: ETCD_GMS_USER
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key:  username
+            - name: ETCD_GMS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key: password
+            - name: GMS_CONFIG_SQL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: username
+            - name: GMS_CONFIG_SQL_PASSWORD 
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: password
+            {%- for name in env %}
+            - name: "{{ name }}"
+              value: "{{ env[name] -}}"
+            {% endfor %}
+          ports:
+            - containerPort: 8080
+      volumes:
+        - name: oracle-wallet
+          secret:
+            secretName: oracle-wallet
+        - name: bridge-waveforms
+          hostPath:
+            path: {{ hostPath.bridgeWaveforms }}
+        - name: bridge-responses
+          hostPath:
+            path: {{ hostPath.bridgeResponses }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ appName }}
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: http-web
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: {{ appName }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ appName }}
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+spec:
+  tls:
+    - secretName: ingress-default-cert
+      hosts:
+        - "{{ namespace }}.{{ baseDomain }}"
+  rules:
+    - host: "{{ namespace }}.{{ baseDomain }}"
+      http:
+        paths:
+          - path: "/{{ appName }}"
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ appName }}
+                port:
+                  number: 8080

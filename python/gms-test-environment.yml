@@ -1,0 +1,29 @@
+# gms-test-environment.yml
+#
+# This environment should include only requirements used for testing that are not to
+# be delivered to the customer. This environment must be applied on top of the
+# production environment. For example:
+#   `conda env create --name gms --file environment.yml`
+#   `conda env update --name gms --file gms-test-environment.yml`
+#
+# In general, additions or updates to this file do not require a TPS be submitted.
+#
+
+name: gms
+
+dependencies:
+- python=3.7.6
+- pip
+- pip:
+  # Please keep this list in alphabetical order
+  - behave==1.2.6
+  - coverage==5.5
+  - flake8==3.9.2
+  - markdown==3.2.2
+  - openpyxl==2.6.1
+  - pipenv==2021.5.29
+  - pylint==2.9.3
+  - pytest==6.2.4
+  - pytest-mock==3.6.1
+  - testcontainers==2.6.0
+  - twine==3.4.1

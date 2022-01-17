@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Daily boundary indicator should match snapshot 1`] = `
+<DayBoundaryIndicator
+  timeRange={
+    Object {
+      "endTimeSecs": 10000,
+      "startTimeSecs": 0,
+    }
+  }
+>
+  <div
+    className="workflow-day-divider"
+    key="0"
+    style={
+      Object {
+        "backgroundColor": "#ffc940",
+        "left": "calc(0px + 1px)",
+      }
+    }
+  />
+</DayBoundaryIndicator>
+`;

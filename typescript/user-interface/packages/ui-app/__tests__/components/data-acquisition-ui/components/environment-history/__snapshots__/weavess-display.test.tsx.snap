@@ -1,0 +1,2897 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Environment history panel render weavess display 1`] = `
+<ApolloProvider
+  client={
+    DefaultClient {
+      "cache": InMemoryCache {
+        "addTypename": true,
+        "cacheKeyRoot": KeyTrie {
+          "weakness": true,
+        },
+        "config": Object {
+          "addTypename": true,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+          "freezeResults": false,
+          "resultCaching": true,
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimisticData": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "executeSubSelectedArray": [Function],
+          "freezeResults": false,
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {},
+        "watches": Set {},
+      },
+      "clearStoreCallbacks": Array [],
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "localState": LocalState {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "client": [Circular],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "queryManager": QueryManager {
+        "assumeImmutableResults": false,
+        "clientAwareness": Object {
+          "name": undefined,
+          "version": undefined,
+        },
+        "dataStore": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "fetchQueryRejectFns": Map {},
+        "idCounter": 1,
+        "inFlightLinkObservables": Map {},
+        "link": ApolloLink {
+          "request": [Function],
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutationStore": MutationStore {
+          "store": Object {},
+        },
+        "onBroadcast": [Function],
+        "pollingInfoByQueryId": Map {},
+        "queries": Map {},
+        "queryDeduplication": true,
+        "queryStore": QueryStore {
+          "store": Object {},
+        },
+        "ssrMode": false,
+        "transformCache": WeakMap {},
+      },
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+      },
+      "typeDefs": undefined,
+      "version": "2.6.4",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <WeavessDisplay
+    channelSohs={
+      Array [
+        Object {
+          "allSohMonitorValueAndStatuses": Array [
+            Object {
+              "contributing": false,
+              "hasUnacknowledgedChanges": false,
+              "monitorType": "LAG",
+              "quietUntilMs": 1,
+              "status": "GOOD",
+              "thresholdBad": 10,
+              "thresholdMarginal": 1,
+              "value": 1,
+              "valuePresent": true,
+            },
+          ],
+          "channelName": "AAA111",
+          "channelSohStatus": "GOOD",
+        },
+      ]
+    }
+    endTimeMs={1000}
+    sohHistoricalDurations={Array []}
+    startTimeMs={500}
+    station={
+      Object {
+        "allStationAggregates": Array [],
+        "channelSohs": Array [
+          Object {
+            "allSohMonitorValueAndStatuses": Array [
+              Object {
+                "contributing": false,
+                "hasUnacknowledgedChanges": false,
+                "monitorType": "LAG",
+                "quietUntilMs": 1,
+                "status": "GOOD",
+                "thresholdBad": 10,
+                "thresholdMarginal": 1,
+                "value": 1,
+                "valuePresent": true,
+              },
+            ],
+            "channelName": "AAA111",
+            "channelSohStatus": "GOOD",
+          },
+        ],
+        "id": "1",
+        "needsAcknowledgement": true,
+        "needsAttention": true,
+        "sohStatusSummary": "MARGINAL",
+        "stationGroups": Array [
+          Object {
+            "groupName": "GroupA",
+            "sohStationCapability": "BAD",
+            "stationName": "Test",
+          },
+        ],
+        "stationName": "Test",
+        "statusContributors": Array [],
+        "time": 123456789,
+        "uuid": "2",
+      }
+    }
+  >
+    <div
+      className="weavess-container"
+      style={
+        Object {
+          "height": "undefinedpx",
+        }
+      }
+      tabIndex={0}
+    >
+      <div
+        className="weavess-container__wrapper"
+      >
+        <WaveformDisplay
+          endTimeSecs={1}
+          events={
+            Object {
+              "onClickSelectionWindow": undefined,
+              "onMoveSelectionWindow": undefined,
+              "onUpdateMarker": undefined,
+              "onUpdateSelectionWindow": undefined,
+              "onZoomChange": undefined,
+              "stationEvents": Object {
+                "defaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+                "nonDefaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+              },
+            }
+          }
+          initialConfiguration={
+            Object {
+              "colorScale": undefined,
+              "defaultChannel": Object {
+                "disableMaskModification": true,
+                "disableMeasureWindow": true,
+                "disablePreditedPhaseModification": true,
+                "disableSignalDetectionModification": true,
+              },
+              "defaultChannelHeightPx": 50,
+              "hotKeys": Object {
+                "amplitudeScale": "KeyS",
+                "amplitudeScaleReset": "Alt+Shift+KeyS",
+                "amplitudeScaleSingleReset": "Alt+KeyS",
+                "drawMeasureWindow": "Alt",
+                "maskCreate": "KeyM",
+              },
+              "labelWidthPx": 180,
+              "nonDefaultChannel": Object {
+                "disableMaskModification": false,
+                "disableMeasureWindow": false,
+                "disablePreditedPhaseModification": false,
+                "disableSignalDetectionModification": false,
+              },
+              "shouldRenderSpectrograms": true,
+              "shouldRenderWaveforms": true,
+              "xAxisLabel": undefined,
+            }
+          }
+          selections={
+            Object {
+              "channels": undefined,
+            }
+          }
+          startTimeSecs={0.5}
+          stations={
+            Array [
+              Object {
+                "defaultChannel": Object {
+                  "defaultRange": Object {
+                    "max": 1.2,
+                    "min": -0.2,
+                  },
+                  "height": 60,
+                  "id": "AAA111",
+                  "name": "AAA111",
+                  "waveform": Object {
+                    "channelSegmentId": "data",
+                    "channelSegments": Map {
+                      "data" => Object {
+                        "channelName": "AAA111",
+                        "dataSegments": Array [
+                          Object {
+                            "color": "#6659b3",
+                            "data": Object {
+                              "values": Array [
+                                Object {
+                                  "timeSecs": 1482456217,
+                                  "value": 0,
+                                },
+                                Object {
+                                  "timeSecs": 1482456217,
+                                  "value": 1,
+                                },
+                                Object {
+                                  "timeSecs": 1482456293,
+                                  "value": 1,
+                                },
+                                Object {
+                                  "timeSecs": 1482456293,
+                                  "value": 0,
+                                },
+                                Object {
+                                  "timeSecs": 1482456369,
+                                  "value": 0,
+                                },
+                                Object {
+                                  "timeSecs": 1482456445,
+                                  "value": 0,
+                                },
+                              ],
+                            },
+                            "displayType": Array [
+                              "LINE",
+                            ],
+                            "pointSize": 4,
+                          },
+                          Object {
+                            "color": "#6659b3",
+                            "data": Object {
+                              "values": Array [
+                                Object {
+                                  "timeSecs": 1482457781,
+                                  "value": 1,
+                                },
+                                Object {
+                                  "timeSecs": 1482457781,
+                                  "value": 0,
+                                },
+                                Object {
+                                  "timeSecs": 1482457857,
+                                  "value": 0,
+                                },
+                                Object {
+                                  "timeSecs": 1482457857,
+                                  "value": 1,
+                                },
+                                Object {
+                                  "timeSecs": 1482457933,
+                                  "value": 1,
+                                },
+                                Object {
+                                  "timeSecs": 1482458009,
+                                  "value": 1,
+                                },
+                              ],
+                            },
+                            "displayType": Array [
+                              "LINE",
+                            ],
+                            "pointSize": 4,
+                          },
+                          Object {
+                            "color": "#6659b3",
+                            "data": Object {
+                              "values": Array [
+                                Object {
+                                  "timeSecs": 1482459345,
+                                  "value": 0,
+                                },
+                                Object {
+                                  "timeSecs": 1482459345,
+                                  "value": 1,
+                                },
+                                Object {
+                                  "timeSecs": 1482459421,
+                                  "value": 1,
+                                },
+                                Object {
+                                  "timeSecs": 1482459421,
+                                  "value": 0,
+                                },
+                                Object {
+                                  "timeSecs": 1482459497,
+                                  "value": 0,
+                                },
+                                Object {
+                                  "timeSecs": 1482459573,
+                                  "value": 0,
+                                },
+                              ],
+                            },
+                            "displayType": Array [
+                              "LINE",
+                            ],
+                            "pointSize": 4,
+                          },
+                        ],
+                        "wfFilterId": "unfiltered",
+                      },
+                    },
+                  },
+                  "yAxisTicks": Array [
+                    0,
+                    1,
+                  ],
+                },
+                "id": "0",
+                "name": "station AAA111",
+                "nonDefaultChannels": Array [],
+              },
+            ]
+          }
+        >
+          <div
+            className="weavess"
+          >
+            <HorizontalDivider
+              bottomClassName="weavess-waveform-display"
+              bottomComponent={[Function]}
+              onResizeEnd={[Function]}
+              showTop={false}
+              topClassName="weavess-measure-window"
+              topComponent={[Function]}
+            >
+              <div
+                className="horizontal-divider__bottom weavess-waveform-display"
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              >
+                <WaveformPanel
+                  convertTimeToGL={[Function]}
+                  endTimeSecs={1}
+                  events={
+                    Object {
+                      "onClickSelectionWindow": undefined,
+                      "onMoveSelectionWindow": undefined,
+                      "onUpdateMarker": undefined,
+                      "onUpdateSelectionWindow": undefined,
+                      "onZoomChange": undefined,
+                      "stationEvents": Object {
+                        "defaultChannelEvents": Object {
+                          "events": Object {
+                            "onChannelClick": undefined,
+                            "onClickSelectionWindow": undefined,
+                            "onContextMenu": undefined,
+                            "onMeasureWindowUpdated": undefined,
+                            "onMoveSelectionWindow": undefined,
+                            "onPredictivePhaseClick": undefined,
+                            "onPredictivePhaseContextMenu": undefined,
+                            "onPredictivePhaseDragEnd": undefined,
+                            "onSignalDetectionClick": undefined,
+                            "onSignalDetectionContextMenu": undefined,
+                            "onSignalDetectionDragEnd": undefined,
+                            "onUpdateMarker": undefined,
+                            "onUpdateSelectionWindow": undefined,
+                          },
+                          "labelEvents": Object {
+                            "onChannelCollapsed": undefined,
+                            "onChannelExpanded": undefined,
+                            "onChannelLabelClick": undefined,
+                          },
+                          "onKeyPress": undefined,
+                        },
+                        "nonDefaultChannelEvents": Object {
+                          "events": Object {
+                            "onChannelClick": undefined,
+                            "onClickSelectionWindow": undefined,
+                            "onContextMenu": undefined,
+                            "onMeasureWindowUpdated": undefined,
+                            "onMoveSelectionWindow": undefined,
+                            "onPredictivePhaseClick": undefined,
+                            "onPredictivePhaseContextMenu": undefined,
+                            "onPredictivePhaseDragEnd": undefined,
+                            "onSignalDetectionClick": undefined,
+                            "onSignalDetectionContextMenu": undefined,
+                            "onSignalDetectionDragEnd": undefined,
+                            "onUpdateMarker": undefined,
+                            "onUpdateSelectionWindow": undefined,
+                          },
+                          "labelEvents": Object {
+                            "onChannelCollapsed": undefined,
+                            "onChannelExpanded": undefined,
+                            "onChannelLabelClick": undefined,
+                          },
+                          "onKeyPress": undefined,
+                        },
+                      },
+                    }
+                  }
+                  initialConfiguration={
+                    Object {
+                      "colorScale": undefined,
+                      "defaultChannel": Object {
+                        "disableMaskModification": true,
+                        "disableMeasureWindow": true,
+                        "disablePreditedPhaseModification": true,
+                        "disableSignalDetectionModification": true,
+                      },
+                      "defaultChannelHeightPx": 50,
+                      "hotKeys": Object {
+                        "amplitudeScale": "KeyS",
+                        "amplitudeScaleReset": "Alt+Shift+KeyS",
+                        "amplitudeScaleSingleReset": "Alt+KeyS",
+                        "drawMeasureWindow": "Alt",
+                        "maskCreate": "KeyM",
+                      },
+                      "labelWidthPx": 180,
+                      "nonDefaultChannel": Object {
+                        "disableMaskModification": false,
+                        "disableMeasureWindow": false,
+                        "disablePreditedPhaseModification": false,
+                        "disableSignalDetectionModification": false,
+                      },
+                      "shouldRenderSpectrograms": true,
+                      "shouldRenderWaveforms": true,
+                      "xAxisLabel": undefined,
+                    }
+                  }
+                  isMeasureWindow={false}
+                  isResizing={false}
+                  resetAmplitudes={[Function]}
+                  selections={
+                    Object {
+                      "channels": undefined,
+                    }
+                  }
+                  shouldRenderSpectrograms={true}
+                  shouldRenderWaveforms={true}
+                  startTimeSecs={0.5}
+                  stations={
+                    Array [
+                      Object {
+                        "defaultChannel": Object {
+                          "defaultRange": Object {
+                            "max": 1.2,
+                            "min": -0.2,
+                          },
+                          "height": 60,
+                          "id": "AAA111",
+                          "name": "AAA111",
+                          "waveform": Object {
+                            "channelSegmentId": "data",
+                            "channelSegments": Map {
+                              "data" => Object {
+                                "channelName": "AAA111",
+                                "dataSegments": Array [
+                                  Object {
+                                    "color": "#6659b3",
+                                    "data": Object {
+                                      "values": Array [
+                                        Object {
+                                          "timeSecs": 1482456217,
+                                          "value": 0,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482456217,
+                                          "value": 1,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482456293,
+                                          "value": 1,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482456293,
+                                          "value": 0,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482456369,
+                                          "value": 0,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482456445,
+                                          "value": 0,
+                                        },
+                                      ],
+                                    },
+                                    "displayType": Array [
+                                      "LINE",
+                                    ],
+                                    "pointSize": 4,
+                                  },
+                                  Object {
+                                    "color": "#6659b3",
+                                    "data": Object {
+                                      "values": Array [
+                                        Object {
+                                          "timeSecs": 1482457781,
+                                          "value": 1,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482457781,
+                                          "value": 0,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482457857,
+                                          "value": 0,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482457857,
+                                          "value": 1,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482457933,
+                                          "value": 1,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482458009,
+                                          "value": 1,
+                                        },
+                                      ],
+                                    },
+                                    "displayType": Array [
+                                      "LINE",
+                                    ],
+                                    "pointSize": 4,
+                                  },
+                                  Object {
+                                    "color": "#6659b3",
+                                    "data": Object {
+                                      "values": Array [
+                                        Object {
+                                          "timeSecs": 1482459345,
+                                          "value": 0,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482459345,
+                                          "value": 1,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482459421,
+                                          "value": 1,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482459421,
+                                          "value": 0,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482459497,
+                                          "value": 0,
+                                        },
+                                        Object {
+                                          "timeSecs": 1482459573,
+                                          "value": 0,
+                                        },
+                                      ],
+                                    },
+                                    "displayType": Array [
+                                      "LINE",
+                                    ],
+                                    "pointSize": 4,
+                                  },
+                                ],
+                                "wfFilterId": "unfiltered",
+                              },
+                            },
+                          },
+                          "yAxisTicks": Array [
+                            0,
+                            1,
+                          ],
+                        },
+                        "id": "0",
+                        "name": "station AAA111",
+                        "nonDefaultChannels": Array [],
+                      },
+                    ]
+                  }
+                  toast={[Function]}
+                  updateMeasureWindow={[Function]}
+                >
+                  <div
+                    className="weavess-wp"
+                    onDoubleClick={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "--weavess-scrollbar-track-margin": "180px",
+                        "boxSizing": "content-box",
+                        "height": "100%",
+                        "position": "relative",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <canvas
+                      className="weavess-wp-canvas"
+                      style={
+                        Object {
+                          "height": "calc(100% - (35px))",
+                          "left": "180px",
+                          "width": "calc(100% - (180px + 10px))",
+                        }
+                      }
+                    />
+                    <div
+                      className="weavess-wp-container"
+                    >
+                      <div
+                        className="weavess-wp-container-1"
+                      >
+                        <div
+                          className="weavess-wp-container-2"
+                        >
+                          <div
+                            className="weavess-wp-container-3"
+                          >
+                            <div
+                              className="weavess-wp-container-viewport"
+                              onKeyDown={[Function]}
+                              onKeyUp={[Function]}
+                              onScroll={[Function]}
+                              onWheel={[Function]}
+                            >
+                              <div
+                                className="weavess-wp-container-viewport-content"
+                              >
+                                <Station
+                                  canvasRef={[Function]}
+                                  converters={
+                                    Object {
+                                      "computeFractionOfCanvasFromMouseXPx": [Function],
+                                      "computeTimeSecsForMouseXFractionalPosition": [Function],
+                                      "computeTimeSecsFromMouseXPixels": [Function],
+                                    }
+                                  }
+                                  displayEndTimeSecs={1}
+                                  displayStartTimeSecs={0.5}
+                                  events={
+                                    Object {
+                                      "defaultChannelEvents": Object {
+                                        "events": Object {
+                                          "onChannelClick": undefined,
+                                          "onClickSelectionWindow": undefined,
+                                          "onContextMenu": undefined,
+                                          "onMeasureWindowUpdated": undefined,
+                                          "onMoveSelectionWindow": undefined,
+                                          "onPredictivePhaseClick": undefined,
+                                          "onPredictivePhaseContextMenu": undefined,
+                                          "onPredictivePhaseDragEnd": undefined,
+                                          "onSignalDetectionClick": undefined,
+                                          "onSignalDetectionContextMenu": undefined,
+                                          "onSignalDetectionDragEnd": undefined,
+                                          "onUpdateMarker": undefined,
+                                          "onUpdateSelectionWindow": undefined,
+                                        },
+                                        "labelEvents": Object {
+                                          "onChannelCollapsed": undefined,
+                                          "onChannelExpanded": undefined,
+                                          "onChannelLabelClick": undefined,
+                                        },
+                                        "onKeyPress": undefined,
+                                      },
+                                      "nonDefaultChannelEvents": Object {
+                                        "events": Object {
+                                          "onChannelClick": undefined,
+                                          "onClickSelectionWindow": undefined,
+                                          "onContextMenu": undefined,
+                                          "onMeasureWindowUpdated": undefined,
+                                          "onMoveSelectionWindow": undefined,
+                                          "onPredictivePhaseClick": undefined,
+                                          "onPredictivePhaseContextMenu": undefined,
+                                          "onPredictivePhaseDragEnd": undefined,
+                                          "onSignalDetectionClick": undefined,
+                                          "onSignalDetectionContextMenu": undefined,
+                                          "onSignalDetectionDragEnd": undefined,
+                                          "onUpdateMarker": undefined,
+                                          "onUpdateSelectionWindow": undefined,
+                                        },
+                                        "labelEvents": Object {
+                                          "onChannelCollapsed": undefined,
+                                          "onChannelExpanded": undefined,
+                                          "onChannelLabelClick": undefined,
+                                        },
+                                        "onKeyPress": undefined,
+                                      },
+                                    }
+                                  }
+                                  getCanvasBoundingRect={[Function]}
+                                  getCurrentViewRangeInSeconds={[Function]}
+                                  getViewRange={[Function]}
+                                  glMax={100}
+                                  glMin={0}
+                                  initialConfiguration={
+                                    Object {
+                                      "colorScale": undefined,
+                                      "defaultChannel": Object {
+                                        "disableMaskModification": true,
+                                        "disableMeasureWindow": true,
+                                        "disablePreditedPhaseModification": true,
+                                        "disableSignalDetectionModification": true,
+                                      },
+                                      "defaultChannelHeightPx": 50,
+                                      "hotKeys": Object {
+                                        "amplitudeScale": "KeyS",
+                                        "amplitudeScaleReset": "Alt+Shift+KeyS",
+                                        "amplitudeScaleSingleReset": "Alt+KeyS",
+                                        "drawMeasureWindow": "Alt",
+                                        "maskCreate": "KeyM",
+                                      },
+                                      "labelWidthPx": 180,
+                                      "nonDefaultChannel": Object {
+                                        "disableMaskModification": false,
+                                        "disableMeasureWindow": false,
+                                        "disablePreditedPhaseModification": false,
+                                        "disableSignalDetectionModification": false,
+                                      },
+                                      "shouldRenderSpectrograms": true,
+                                      "shouldRenderWaveforms": true,
+                                      "xAxisLabel": undefined,
+                                    }
+                                  }
+                                  isMeasureWindow={false}
+                                  key="0"
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  onMouseUp={[Function]}
+                                  renderWaveforms={[Function]}
+                                  selections={
+                                    Object {
+                                      "channels": undefined,
+                                    }
+                                  }
+                                  shouldRenderSpectrograms={true}
+                                  shouldRenderWaveforms={true}
+                                  station={
+                                    Object {
+                                      "defaultChannel": Object {
+                                        "defaultRange": Object {
+                                          "max": 1.2,
+                                          "min": -0.2,
+                                        },
+                                        "height": 60,
+                                        "id": "AAA111",
+                                        "name": "AAA111",
+                                        "waveform": Object {
+                                          "channelSegmentId": "data",
+                                          "channelSegments": Map {
+                                            "data" => Object {
+                                              "channelName": "AAA111",
+                                              "dataSegments": Array [
+                                                Object {
+                                                  "color": "#6659b3",
+                                                  "data": Object {
+                                                    "values": Array [
+                                                      Object {
+                                                        "timeSecs": 1482456217,
+                                                        "value": 0,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482456217,
+                                                        "value": 1,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482456293,
+                                                        "value": 1,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482456293,
+                                                        "value": 0,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482456369,
+                                                        "value": 0,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482456445,
+                                                        "value": 0,
+                                                      },
+                                                    ],
+                                                  },
+                                                  "displayType": Array [
+                                                    "LINE",
+                                                  ],
+                                                  "pointSize": 4,
+                                                },
+                                                Object {
+                                                  "color": "#6659b3",
+                                                  "data": Object {
+                                                    "values": Array [
+                                                      Object {
+                                                        "timeSecs": 1482457781,
+                                                        "value": 1,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482457781,
+                                                        "value": 0,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482457857,
+                                                        "value": 0,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482457857,
+                                                        "value": 1,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482457933,
+                                                        "value": 1,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482458009,
+                                                        "value": 1,
+                                                      },
+                                                    ],
+                                                  },
+                                                  "displayType": Array [
+                                                    "LINE",
+                                                  ],
+                                                  "pointSize": 4,
+                                                },
+                                                Object {
+                                                  "color": "#6659b3",
+                                                  "data": Object {
+                                                    "values": Array [
+                                                      Object {
+                                                        "timeSecs": 1482459345,
+                                                        "value": 0,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482459345,
+                                                        "value": 1,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482459421,
+                                                        "value": 1,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482459421,
+                                                        "value": 0,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482459497,
+                                                        "value": 0,
+                                                      },
+                                                      Object {
+                                                        "timeSecs": 1482459573,
+                                                        "value": 0,
+                                                      },
+                                                    ],
+                                                  },
+                                                  "displayType": Array [
+                                                    "LINE",
+                                                  ],
+                                                  "pointSize": 4,
+                                                },
+                                              ],
+                                              "wfFilterId": "unfiltered",
+                                            },
+                                          },
+                                        },
+                                        "yAxisTicks": Array [
+                                          0,
+                                          1,
+                                        ],
+                                      },
+                                      "id": "0",
+                                      "name": "station AAA111",
+                                      "nonDefaultChannels": Array [],
+                                    }
+                                  }
+                                  toast={[Function]}
+                                  updateMeasureWindow={[Function]}
+                                  updateVisibleChannelForStation={[Function]}
+                                  workerRpcs={
+                                    Array [
+                                      RpcProvider {
+                                        "_dispatch": [Function],
+                                        "_nextTransactionId": 0,
+                                        "_pendingTransactions": Object {},
+                                        "_rpcHandlers": Object {},
+                                        "_rpcTimeout": 0,
+                                        "_signalHandlers": Object {},
+                                        "error": Event {
+                                          "_contexts": Array [],
+                                          "_handlers": Array [],
+                                          "dispatch": [Function],
+                                          "hasHandlers": false,
+                                        },
+                                      },
+                                      RpcProvider {
+                                        "_dispatch": [Function],
+                                        "_nextTransactionId": 0,
+                                        "_pendingTransactions": Object {},
+                                        "_rpcHandlers": Object {},
+                                        "_rpcTimeout": 0,
+                                        "_signalHandlers": Object {},
+                                        "error": Event {
+                                          "_contexts": Array [],
+                                          "_handlers": Array [],
+                                          "dispatch": [Function],
+                                          "hasHandlers": false,
+                                        },
+                                      },
+                                      RpcProvider {
+                                        "_dispatch": [Function],
+                                        "_nextTransactionId": 0,
+                                        "_pendingTransactions": Object {},
+                                        "_rpcHandlers": Object {},
+                                        "_rpcTimeout": 0,
+                                        "_signalHandlers": Object {},
+                                        "error": Event {
+                                          "_contexts": Array [],
+                                          "_handlers": Array [],
+                                          "dispatch": [Function],
+                                          "hasHandlers": false,
+                                        },
+                                      },
+                                      RpcProvider {
+                                        "_dispatch": [Function],
+                                        "_nextTransactionId": 0,
+                                        "_pendingTransactions": Object {},
+                                        "_rpcHandlers": Object {},
+                                        "_rpcTimeout": 0,
+                                        "_signalHandlers": Object {},
+                                        "error": Event {
+                                          "_contexts": Array [],
+                                          "_handlers": Array [],
+                                          "dispatch": [Function],
+                                          "hasHandlers": false,
+                                        },
+                                      },
+                                    ]
+                                  }
+                                >
+                                  <div
+                                    className="station"
+                                    style={
+                                      Object {
+                                        "height": 61,
+                                      }
+                                    }
+                                  >
+                                    <Channel
+                                      canvasRef={[Function]}
+                                      channel={
+                                        Object {
+                                          "defaultRange": Object {
+                                            "max": 1.2,
+                                            "min": -0.2,
+                                          },
+                                          "height": 60,
+                                          "id": "AAA111",
+                                          "name": "AAA111",
+                                          "waveform": Object {
+                                            "channelSegmentId": "data",
+                                            "channelSegments": Map {
+                                              "data" => Object {
+                                                "channelName": "AAA111",
+                                                "dataSegments": Array [
+                                                  Object {
+                                                    "color": "#6659b3",
+                                                    "data": Object {
+                                                      "values": Array [
+                                                        Object {
+                                                          "timeSecs": 1482456217,
+                                                          "value": 0,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482456217,
+                                                          "value": 1,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482456293,
+                                                          "value": 1,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482456293,
+                                                          "value": 0,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482456369,
+                                                          "value": 0,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482456445,
+                                                          "value": 0,
+                                                        },
+                                                      ],
+                                                    },
+                                                    "displayType": Array [
+                                                      "LINE",
+                                                    ],
+                                                    "pointSize": 4,
+                                                  },
+                                                  Object {
+                                                    "color": "#6659b3",
+                                                    "data": Object {
+                                                      "values": Array [
+                                                        Object {
+                                                          "timeSecs": 1482457781,
+                                                          "value": 1,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482457781,
+                                                          "value": 0,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482457857,
+                                                          "value": 0,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482457857,
+                                                          "value": 1,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482457933,
+                                                          "value": 1,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482458009,
+                                                          "value": 1,
+                                                        },
+                                                      ],
+                                                    },
+                                                    "displayType": Array [
+                                                      "LINE",
+                                                    ],
+                                                    "pointSize": 4,
+                                                  },
+                                                  Object {
+                                                    "color": "#6659b3",
+                                                    "data": Object {
+                                                      "values": Array [
+                                                        Object {
+                                                          "timeSecs": 1482459345,
+                                                          "value": 0,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482459345,
+                                                          "value": 1,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482459421,
+                                                          "value": 1,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482459421,
+                                                          "value": 0,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482459497,
+                                                          "value": 0,
+                                                        },
+                                                        Object {
+                                                          "timeSecs": 1482459573,
+                                                          "value": 0,
+                                                        },
+                                                      ],
+                                                    },
+                                                    "displayType": Array [
+                                                      "LINE",
+                                                    ],
+                                                    "pointSize": 4,
+                                                  },
+                                                ],
+                                                "wfFilterId": "unfiltered",
+                                              },
+                                            },
+                                          },
+                                          "yAxisTicks": Array [
+                                            0,
+                                            1,
+                                          ],
+                                        }
+                                      }
+                                      converters={
+                                        Object {
+                                          "computeFractionOfCanvasFromMouseXPx": [Function],
+                                          "computeTimeSecsForMouseXFractionalPosition": [Function],
+                                          "computeTimeSecsFromMouseXPixels": [Function],
+                                        }
+                                      }
+                                      displayEndTimeSecs={1}
+                                      displayStartTimeSecs={0.5}
+                                      distance={0}
+                                      distanceUnits="degrees"
+                                      events={
+                                        Object {
+                                          "events": Object {
+                                            "onChannelClick": undefined,
+                                            "onClickSelectionWindow": undefined,
+                                            "onContextMenu": undefined,
+                                            "onMeasureWindowUpdated": undefined,
+                                            "onMoveSelectionWindow": undefined,
+                                            "onPredictivePhaseClick": undefined,
+                                            "onPredictivePhaseContextMenu": undefined,
+                                            "onPredictivePhaseDragEnd": undefined,
+                                            "onSignalDetectionClick": undefined,
+                                            "onSignalDetectionContextMenu": undefined,
+                                            "onSignalDetectionDragEnd": undefined,
+                                            "onUpdateMarker": undefined,
+                                            "onUpdateSelectionWindow": undefined,
+                                          },
+                                          "labelEvents": Object {
+                                            "onChannelCollapsed": undefined,
+                                            "onChannelExpanded": undefined,
+                                            "onChannelLabelClick": undefined,
+                                          },
+                                          "onKeyPress": undefined,
+                                        }
+                                      }
+                                      expanded={false}
+                                      getCanvasBoundingRect={[Function]}
+                                      getCurrentViewRangeInSeconds={[Function]}
+                                      getViewRange={[Function]}
+                                      glMax={100}
+                                      glMin={0}
+                                      height={60}
+                                      index={0}
+                                      initialConfiguration={
+                                        Object {
+                                          "colorScale": undefined,
+                                          "defaultChannel": Object {
+                                            "disableMaskModification": true,
+                                            "disableMeasureWindow": true,
+                                            "disablePreditedPhaseModification": true,
+                                            "disableSignalDetectionModification": true,
+                                          },
+                                          "defaultChannelHeightPx": 50,
+                                          "hotKeys": Object {
+                                            "amplitudeScale": "KeyS",
+                                            "amplitudeScaleReset": "Alt+Shift+KeyS",
+                                            "amplitudeScaleSingleReset": "Alt+KeyS",
+                                            "drawMeasureWindow": "Alt",
+                                            "maskCreate": "KeyM",
+                                          },
+                                          "labelWidthPx": 180,
+                                          "nonDefaultChannel": Object {
+                                            "disableMaskModification": false,
+                                            "disableMeasureWindow": false,
+                                            "disablePreditedPhaseModification": false,
+                                            "disableSignalDetectionModification": false,
+                                          },
+                                          "shouldRenderSpectrograms": true,
+                                          "shouldRenderWaveforms": true,
+                                          "xAxisLabel": undefined,
+                                        }
+                                      }
+                                      isDefaultChannel={true}
+                                      isExpandable={false}
+                                      isMeasureWindow={false}
+                                      key="station-default-channel-AAA111"
+                                      offsetSecs={0}
+                                      onMouseDown={[Function]}
+                                      onMouseMove={[Function]}
+                                      onMouseUp={[Function]}
+                                      renderWaveforms={[Function]}
+                                      selections={
+                                        Object {
+                                          "channels": undefined,
+                                        }
+                                      }
+                                      shouldRenderSpectrograms={true}
+                                      shouldRenderWaveforms={true}
+                                      showMaskIndicator={false}
+                                      stationId="0"
+                                      toast={[Function]}
+                                      toggleExpansion={[Function]}
+                                      updateMeasureWindow={[Function]}
+                                      workerRpcs={
+                                        Array [
+                                          RpcProvider {
+                                            "_dispatch": [Function],
+                                            "_nextTransactionId": 0,
+                                            "_pendingTransactions": Object {},
+                                            "_rpcHandlers": Object {},
+                                            "_rpcTimeout": 0,
+                                            "_signalHandlers": Object {},
+                                            "error": Event {
+                                              "_contexts": Array [],
+                                              "_handlers": Array [],
+                                              "dispatch": [Function],
+                                              "hasHandlers": false,
+                                            },
+                                          },
+                                          RpcProvider {
+                                            "_dispatch": [Function],
+                                            "_nextTransactionId": 0,
+                                            "_pendingTransactions": Object {},
+                                            "_rpcHandlers": Object {},
+                                            "_rpcTimeout": 0,
+                                            "_signalHandlers": Object {},
+                                            "error": Event {
+                                              "_contexts": Array [],
+                                              "_handlers": Array [],
+                                              "dispatch": [Function],
+                                              "hasHandlers": false,
+                                            },
+                                          },
+                                          RpcProvider {
+                                            "_dispatch": [Function],
+                                            "_nextTransactionId": 0,
+                                            "_pendingTransactions": Object {},
+                                            "_rpcHandlers": Object {},
+                                            "_rpcTimeout": 0,
+                                            "_signalHandlers": Object {},
+                                            "error": Event {
+                                              "_contexts": Array [],
+                                              "_handlers": Array [],
+                                              "dispatch": [Function],
+                                              "hasHandlers": false,
+                                            },
+                                          },
+                                          RpcProvider {
+                                            "_dispatch": [Function],
+                                            "_nextTransactionId": 0,
+                                            "_pendingTransactions": Object {},
+                                            "_rpcHandlers": Object {},
+                                            "_rpcTimeout": 0,
+                                            "_signalHandlers": Object {},
+                                            "error": Event {
+                                              "_contexts": Array [],
+                                              "_handlers": Array [],
+                                              "dispatch": [Function],
+                                              "hasHandlers": false,
+                                            },
+                                          },
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="channel"
+                                        data-cy="AAA111-channel"
+                                        onKeyDown={[Function]}
+                                        style={
+                                          Object {
+                                            "height": "60px",
+                                            "maxHeight": "60px",
+                                          }
+                                        }
+                                        tabIndex={0}
+                                      >
+                                        <div
+                                          className="channel-label-container"
+                                          data-cy="AAA111-label"
+                                          style={
+                                            Object {
+                                              "height": "60px",
+                                              "width": "180px",
+                                            }
+                                          }
+                                          tabIndex={0}
+                                        >
+                                          <Label
+                                            canvasRef={[Function]}
+                                            channel={
+                                              Object {
+                                                "defaultRange": Object {
+                                                  "max": 1.2,
+                                                  "min": -0.2,
+                                                },
+                                                "height": 60,
+                                                "id": "AAA111",
+                                                "name": "AAA111",
+                                                "waveform": Object {
+                                                  "channelSegmentId": "data",
+                                                  "channelSegments": Map {
+                                                    "data" => Object {
+                                                      "channelName": "AAA111",
+                                                      "dataSegments": Array [
+                                                        Object {
+                                                          "color": "#6659b3",
+                                                          "data": Object {
+                                                            "values": Array [
+                                                              Object {
+                                                                "timeSecs": 1482456217,
+                                                                "value": 0,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482456217,
+                                                                "value": 1,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482456293,
+                                                                "value": 1,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482456293,
+                                                                "value": 0,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482456369,
+                                                                "value": 0,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482456445,
+                                                                "value": 0,
+                                                              },
+                                                            ],
+                                                          },
+                                                          "displayType": Array [
+                                                            "LINE",
+                                                          ],
+                                                          "pointSize": 4,
+                                                        },
+                                                        Object {
+                                                          "color": "#6659b3",
+                                                          "data": Object {
+                                                            "values": Array [
+                                                              Object {
+                                                                "timeSecs": 1482457781,
+                                                                "value": 1,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482457781,
+                                                                "value": 0,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482457857,
+                                                                "value": 0,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482457857,
+                                                                "value": 1,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482457933,
+                                                                "value": 1,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482458009,
+                                                                "value": 1,
+                                                              },
+                                                            ],
+                                                          },
+                                                          "displayType": Array [
+                                                            "LINE",
+                                                          ],
+                                                          "pointSize": 4,
+                                                        },
+                                                        Object {
+                                                          "color": "#6659b3",
+                                                          "data": Object {
+                                                            "values": Array [
+                                                              Object {
+                                                                "timeSecs": 1482459345,
+                                                                "value": 0,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482459345,
+                                                                "value": 1,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482459421,
+                                                                "value": 1,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482459421,
+                                                                "value": 0,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482459497,
+                                                                "value": 0,
+                                                              },
+                                                              Object {
+                                                                "timeSecs": 1482459573,
+                                                                "value": 0,
+                                                              },
+                                                            ],
+                                                          },
+                                                          "displayType": Array [
+                                                            "LINE",
+                                                          ],
+                                                          "pointSize": 4,
+                                                        },
+                                                      ],
+                                                      "wfFilterId": "unfiltered",
+                                                    },
+                                                  },
+                                                },
+                                                "yAxisTicks": Array [
+                                                  0,
+                                                  1,
+                                                ],
+                                              }
+                                            }
+                                            channelName="AAA111"
+                                            converters={
+                                              Object {
+                                                "computeFractionOfCanvasFromMouseXPx": [Function],
+                                                "computeTimeSecsForMouseXFractionalPosition": [Function],
+                                                "computeTimeSecsFromMouseXPixels": [Function],
+                                              }
+                                            }
+                                            displayEndTimeSecs={1}
+                                            displayStartTimeSecs={0.5}
+                                            distance={0}
+                                            distanceUnits="degrees"
+                                            events={
+                                              Object {
+                                                "onChannelCollapsed": undefined,
+                                                "onChannelExpanded": undefined,
+                                                "onChannelLabelClick": undefined,
+                                              }
+                                            }
+                                            expanded={false}
+                                            getCanvasBoundingRect={[Function]}
+                                            getCurrentViewRangeInSeconds={[Function]}
+                                            getViewRange={[Function]}
+                                            glMax={100}
+                                            glMin={0}
+                                            height={60}
+                                            index={0}
+                                            initialConfiguration={
+                                              Object {
+                                                "colorScale": undefined,
+                                                "defaultChannel": Object {
+                                                  "disableMaskModification": true,
+                                                  "disableMeasureWindow": true,
+                                                  "disablePreditedPhaseModification": true,
+                                                  "disableSignalDetectionModification": true,
+                                                },
+                                                "defaultChannelHeightPx": 50,
+                                                "hotKeys": Object {
+                                                  "amplitudeScale": "KeyS",
+                                                  "amplitudeScaleReset": "Alt+Shift+KeyS",
+                                                  "amplitudeScaleSingleReset": "Alt+KeyS",
+                                                  "drawMeasureWindow": "Alt",
+                                                  "maskCreate": "KeyM",
+                                                },
+                                                "labelWidthPx": 180,
+                                                "nonDefaultChannel": Object {
+                                                  "disableMaskModification": false,
+                                                  "disableMeasureWindow": false,
+                                                  "disablePreditedPhaseModification": false,
+                                                  "disableSignalDetectionModification": false,
+                                                },
+                                                "shouldRenderSpectrograms": true,
+                                                "shouldRenderWaveforms": true,
+                                                "xAxisLabel": undefined,
+                                              }
+                                            }
+                                            isDefaultChannel={true}
+                                            isExpandable={false}
+                                            isMeasureWindow={false}
+                                            offsetSecs={0}
+                                            onMouseDown={[Function]}
+                                            onMouseMove={[Function]}
+                                            onMouseUp={[Function]}
+                                            renderWaveforms={[Function]}
+                                            selections={
+                                              Object {
+                                                "channels": undefined,
+                                              }
+                                            }
+                                            shouldRenderSpectrograms={true}
+                                            shouldRenderWaveforms={true}
+                                            showMaskIndicator={false}
+                                            stationId="0"
+                                            toast={[Function]}
+                                            toggleExpansion={[Function]}
+                                            updateMeasureWindow={[Function]}
+                                            workerRpcs={
+                                              Array [
+                                                RpcProvider {
+                                                  "_dispatch": [Function],
+                                                  "_nextTransactionId": 0,
+                                                  "_pendingTransactions": Object {},
+                                                  "_rpcHandlers": Object {},
+                                                  "_rpcTimeout": 0,
+                                                  "_signalHandlers": Object {},
+                                                  "error": Event {
+                                                    "_contexts": Array [],
+                                                    "_handlers": Array [],
+                                                    "dispatch": [Function],
+                                                    "hasHandlers": false,
+                                                  },
+                                                },
+                                                RpcProvider {
+                                                  "_dispatch": [Function],
+                                                  "_nextTransactionId": 0,
+                                                  "_pendingTransactions": Object {},
+                                                  "_rpcHandlers": Object {},
+                                                  "_rpcTimeout": 0,
+                                                  "_signalHandlers": Object {},
+                                                  "error": Event {
+                                                    "_contexts": Array [],
+                                                    "_handlers": Array [],
+                                                    "dispatch": [Function],
+                                                    "hasHandlers": false,
+                                                  },
+                                                },
+                                                RpcProvider {
+                                                  "_dispatch": [Function],
+                                                  "_nextTransactionId": 0,
+                                                  "_pendingTransactions": Object {},
+                                                  "_rpcHandlers": Object {},
+                                                  "_rpcTimeout": 0,
+                                                  "_signalHandlers": Object {},
+                                                  "error": Event {
+                                                    "_contexts": Array [],
+                                                    "_handlers": Array [],
+                                                    "dispatch": [Function],
+                                                    "hasHandlers": false,
+                                                  },
+                                                },
+                                                RpcProvider {
+                                                  "_dispatch": [Function],
+                                                  "_nextTransactionId": 0,
+                                                  "_pendingTransactions": Object {},
+                                                  "_rpcHandlers": Object {},
+                                                  "_rpcTimeout": 0,
+                                                  "_signalHandlers": Object {},
+                                                  "error": Event {
+                                                    "_contexts": Array [],
+                                                    "_handlers": Array [],
+                                                    "dispatch": [Function],
+                                                    "hasHandlers": false,
+                                                  },
+                                                },
+                                              ]
+                                            }
+                                            yAxisBounds={
+                                              Array [
+                                                Object {
+                                                  "heightInPercentage": 100,
+                                                  "maxAmplitude": 1,
+                                                  "minAmplitude": -1,
+                                                },
+                                              ]
+                                            }
+                                          >
+                                            <div
+                                              className="label"
+                                              onContextMenu={[Function]}
+                                              tabIndex={0}
+                                            >
+                                              <div
+                                                className="label-container"
+                                              >
+                                                <div
+                                                  className="label-container-left-parent"
+                                                />
+                                                <div
+                                                  className="label-container-content"
+                                                >
+                                                  <div
+                                                    className="label-container-content-label"
+                                                    data-cy="channel-label-AAA111"
+                                                    onClick={[Function]}
+                                                  >
+                                                    <span>
+                                                      AAA111
+                                                      <div>
+                                                        <p>
+                                                           
+                                                          <span
+                                                            className="label-container-content-mask-indicator"
+                                                            key=""
+                                                          />
+                                                        </p>
+                                                      </div>
+                                                    </span>
+                                                  </div>
+                                                  <div
+                                                    data-cy-contains-amplitude-markers={true}
+                                                    style={
+                                                      Object {
+                                                        "height": "100%",
+                                                      }
+                                                    }
+                                                  >
+                                                    <YAxis
+                                                      heightInPercentage={100}
+                                                      key="AAA111_yaxis_0"
+                                                      maxAmplitude={1}
+                                                      minAmplitude={-1}
+                                                      yAxisTicks={
+                                                        Array [
+                                                          0,
+                                                          1,
+                                                        ]
+                                                      }
+                                                    >
+                                                      <div
+                                                        className="y-axis"
+                                                        style={
+                                                          Object {
+                                                            "height": "calc(100% - 4px)",
+                                                            "margin": "2px 0 2px 0",
+                                                          }
+                                                        }
+                                                      />
+                                                    </YAxis>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </Label>
+                                        </div>
+                                        <MeasureWindowSelectionListener
+                                          computeTimeSecsFromMouseXPixels={[Function]}
+                                          displayTimeRange={
+                                            Object {
+                                              "endTimeSecs": 1,
+                                              "startTimeSecs": 0.5,
+                                            }
+                                          }
+                                          hotKeys={
+                                            Object {
+                                              "amplitudeScale": "KeyS",
+                                              "amplitudeScaleReset": "Alt+Shift+KeyS",
+                                              "amplitudeScaleSingleReset": "Alt+KeyS",
+                                              "drawMeasureWindow": "Alt",
+                                              "maskCreate": "KeyM",
+                                            }
+                                          }
+                                          isMeasureWindowEnabled={[Function]}
+                                          toast={[Function]}
+                                          updateMeasureWindowPanel={[Function]}
+                                        >
+                                          <div
+                                            className="channel-content-container"
+                                            key="channel-segment-data"
+                                            style={
+                                              Object {
+                                                "height": "60px",
+                                                "left": "180px",
+                                                "width": "calc(100% - 180px)",
+                                              }
+                                            }
+                                          >
+                                            <ContentRenderer
+                                              canvasRef={[Function]}
+                                              channel={
+                                                Object {
+                                                  "defaultRange": Object {
+                                                    "max": 1.2,
+                                                    "min": -0.2,
+                                                  },
+                                                  "height": 60,
+                                                  "id": "AAA111",
+                                                  "name": "AAA111",
+                                                  "waveform": Object {
+                                                    "channelSegmentId": "data",
+                                                    "channelSegments": Map {
+                                                      "data" => Object {
+                                                        "channelName": "AAA111",
+                                                        "dataSegments": Array [
+                                                          Object {
+                                                            "color": "#6659b3",
+                                                            "data": Object {
+                                                              "values": Array [
+                                                                Object {
+                                                                  "timeSecs": 1482456217,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456217,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456293,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456293,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456369,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456445,
+                                                                  "value": 0,
+                                                                },
+                                                              ],
+                                                            },
+                                                            "displayType": Array [
+                                                              "LINE",
+                                                            ],
+                                                            "pointSize": 4,
+                                                          },
+                                                          Object {
+                                                            "color": "#6659b3",
+                                                            "data": Object {
+                                                              "values": Array [
+                                                                Object {
+                                                                  "timeSecs": 1482457781,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482457781,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482457857,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482457857,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482457933,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482458009,
+                                                                  "value": 1,
+                                                                },
+                                                              ],
+                                                            },
+                                                            "displayType": Array [
+                                                              "LINE",
+                                                            ],
+                                                            "pointSize": 4,
+                                                          },
+                                                          Object {
+                                                            "color": "#6659b3",
+                                                            "data": Object {
+                                                              "values": Array [
+                                                                Object {
+                                                                  "timeSecs": 1482459345,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459345,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459421,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459421,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459497,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459573,
+                                                                  "value": 0,
+                                                                },
+                                                              ],
+                                                            },
+                                                            "displayType": Array [
+                                                              "LINE",
+                                                            ],
+                                                            "pointSize": 4,
+                                                          },
+                                                        ],
+                                                        "wfFilterId": "unfiltered",
+                                                      },
+                                                    },
+                                                  },
+                                                  "yAxisTicks": Array [
+                                                    0,
+                                                    1,
+                                                  ],
+                                                }
+                                              }
+                                              channelId="AAA111"
+                                              color="#4580E6"
+                                              contentRenderers={
+                                                Array [
+                                                  <UNDEFINED
+                                                    onClick={[Function]}
+                                                  />,
+                                                ]
+                                              }
+                                              converters={
+                                                Object {
+                                                  "computeFractionOfCanvasFromMouseXPx": [Function],
+                                                  "computeTimeSecsForMouseXFractionalPosition": [Function],
+                                                  "computeTimeSecsFromMouseXPixels": [Function],
+                                                }
+                                              }
+                                              disablePredictedPhaseModification={true}
+                                              disableSignalDetectionModification={true}
+                                              displayEndTimeSecs={1}
+                                              displayStartTimeSecs={0.5}
+                                              displayType={
+                                                Array [
+                                                  "LINE",
+                                                ]
+                                              }
+                                              distance={0}
+                                              distanceUnits="degrees"
+                                              events={
+                                                Object {
+                                                  "onChannelClick": undefined,
+                                                  "onClickSelectionWindow": undefined,
+                                                  "onContextMenu": undefined,
+                                                  "onMeasureWindowUpdated": undefined,
+                                                  "onMoveSelectionWindow": undefined,
+                                                  "onPredictivePhaseClick": undefined,
+                                                  "onPredictivePhaseContextMenu": undefined,
+                                                  "onPredictivePhaseDragEnd": undefined,
+                                                  "onSignalDetectionClick": undefined,
+                                                  "onSignalDetectionContextMenu": undefined,
+                                                  "onSignalDetectionDragEnd": undefined,
+                                                  "onUpdateMarker": undefined,
+                                                  "onUpdateSelectionWindow": undefined,
+                                                }
+                                              }
+                                              expanded={false}
+                                              getCanvasBoundingRect={[Function]}
+                                              getCurrentViewRangeInSeconds={[Function]}
+                                              getViewRange={[Function]}
+                                              glMax={100}
+                                              glMin={0}
+                                              height={60}
+                                              index={0}
+                                              initialConfiguration={
+                                                Object {
+                                                  "colorScale": undefined,
+                                                  "defaultChannel": Object {
+                                                    "disableMaskModification": true,
+                                                    "disableMeasureWindow": true,
+                                                    "disablePreditedPhaseModification": true,
+                                                    "disableSignalDetectionModification": true,
+                                                  },
+                                                  "defaultChannelHeightPx": 50,
+                                                  "hotKeys": Object {
+                                                    "amplitudeScale": "KeyS",
+                                                    "amplitudeScaleReset": "Alt+Shift+KeyS",
+                                                    "amplitudeScaleSingleReset": "Alt+KeyS",
+                                                    "drawMeasureWindow": "Alt",
+                                                    "maskCreate": "KeyM",
+                                                  },
+                                                  "labelWidthPx": 180,
+                                                  "nonDefaultChannel": Object {
+                                                    "disableMaskModification": false,
+                                                    "disableMeasureWindow": false,
+                                                    "disablePreditedPhaseModification": false,
+                                                    "disableSignalDetectionModification": false,
+                                                  },
+                                                  "shouldRenderSpectrograms": true,
+                                                  "shouldRenderWaveforms": true,
+                                                  "xAxisLabel": undefined,
+                                                }
+                                              }
+                                              isDefaultChannel={true}
+                                              isExpandable={false}
+                                              isMeasureWindow={false}
+                                              offsetSecs={0}
+                                              onContextMenu={[Function]}
+                                              onKeyDown={[Function]}
+                                              onMouseDown={[Function]}
+                                              onMouseMove={[Function]}
+                                              onMouseUp={[Function]}
+                                              pointSize={2}
+                                              renderWaveforms={[Function]}
+                                              selections={
+                                                Object {
+                                                  "channels": undefined,
+                                                }
+                                              }
+                                              setYAxisBounds={[Function]}
+                                              shouldRenderSpectrograms={true}
+                                              shouldRenderWaveforms={true}
+                                              showMaskIndicator={false}
+                                              stationId="0"
+                                              toast={[Function]}
+                                              toggleExpansion={[Function]}
+                                              updateMeasureWindow={[Function]}
+                                              workerRpcs={
+                                                Array [
+                                                  RpcProvider {
+                                                    "_dispatch": [Function],
+                                                    "_nextTransactionId": 0,
+                                                    "_pendingTransactions": Object {},
+                                                    "_rpcHandlers": Object {},
+                                                    "_rpcTimeout": 0,
+                                                    "_signalHandlers": Object {},
+                                                    "error": Event {
+                                                      "_contexts": Array [],
+                                                      "_handlers": Array [],
+                                                      "dispatch": [Function],
+                                                      "hasHandlers": false,
+                                                    },
+                                                  },
+                                                  RpcProvider {
+                                                    "_dispatch": [Function],
+                                                    "_nextTransactionId": 0,
+                                                    "_pendingTransactions": Object {},
+                                                    "_rpcHandlers": Object {},
+                                                    "_rpcTimeout": 0,
+                                                    "_signalHandlers": Object {},
+                                                    "error": Event {
+                                                      "_contexts": Array [],
+                                                      "_handlers": Array [],
+                                                      "dispatch": [Function],
+                                                      "hasHandlers": false,
+                                                    },
+                                                  },
+                                                  RpcProvider {
+                                                    "_dispatch": [Function],
+                                                    "_nextTransactionId": 0,
+                                                    "_pendingTransactions": Object {},
+                                                    "_rpcHandlers": Object {},
+                                                    "_rpcTimeout": 0,
+                                                    "_signalHandlers": Object {},
+                                                    "error": Event {
+                                                      "_contexts": Array [],
+                                                      "_handlers": Array [],
+                                                      "dispatch": [Function],
+                                                      "hasHandlers": false,
+                                                    },
+                                                  },
+                                                  RpcProvider {
+                                                    "_dispatch": [Function],
+                                                    "_nextTransactionId": 0,
+                                                    "_pendingTransactions": Object {},
+                                                    "_rpcHandlers": Object {},
+                                                    "_rpcTimeout": 0,
+                                                    "_signalHandlers": Object {},
+                                                    "error": Event {
+                                                      "_contexts": Array [],
+                                                      "_handlers": Array [],
+                                                      "dispatch": [Function],
+                                                      "hasHandlers": false,
+                                                    },
+                                                  },
+                                                ]
+                                              }
+                                            >
+                                              <div
+                                                className="contentrenderer"
+                                                onContextMenu={[Function]}
+                                                onKeyDown={[Function]}
+                                                onMouseDown={[Function]}
+                                                onMouseMove={[Function]}
+                                                onMouseUp={[Function]}
+                                                style={
+                                                  Object {
+                                                    "backgroundColor": "initial",
+                                                  }
+                                                }
+                                                tabIndex={0}
+                                              >
+                                                <WaveformRenderer
+                                                  canvasRef={[Function]}
+                                                  channel={
+                                                    Object {
+                                                      "defaultRange": Object {
+                                                        "max": 1.2,
+                                                        "min": -0.2,
+                                                      },
+                                                      "height": 60,
+                                                      "id": "AAA111",
+                                                      "name": "AAA111",
+                                                      "waveform": Object {
+                                                        "channelSegmentId": "data",
+                                                        "channelSegments": Map {
+                                                          "data" => Object {
+                                                            "channelName": "AAA111",
+                                                            "dataSegments": Array [
+                                                              Object {
+                                                                "color": "#6659b3",
+                                                                "data": Object {
+                                                                  "values": Array [
+                                                                    Object {
+                                                                      "timeSecs": 1482456217,
+                                                                      "value": 0,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482456217,
+                                                                      "value": 1,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482456293,
+                                                                      "value": 1,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482456293,
+                                                                      "value": 0,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482456369,
+                                                                      "value": 0,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482456445,
+                                                                      "value": 0,
+                                                                    },
+                                                                  ],
+                                                                },
+                                                                "displayType": Array [
+                                                                  "LINE",
+                                                                ],
+                                                                "pointSize": 4,
+                                                              },
+                                                              Object {
+                                                                "color": "#6659b3",
+                                                                "data": Object {
+                                                                  "values": Array [
+                                                                    Object {
+                                                                      "timeSecs": 1482457781,
+                                                                      "value": 1,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482457781,
+                                                                      "value": 0,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482457857,
+                                                                      "value": 0,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482457857,
+                                                                      "value": 1,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482457933,
+                                                                      "value": 1,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482458009,
+                                                                      "value": 1,
+                                                                    },
+                                                                  ],
+                                                                },
+                                                                "displayType": Array [
+                                                                  "LINE",
+                                                                ],
+                                                                "pointSize": 4,
+                                                              },
+                                                              Object {
+                                                                "color": "#6659b3",
+                                                                "data": Object {
+                                                                  "values": Array [
+                                                                    Object {
+                                                                      "timeSecs": 1482459345,
+                                                                      "value": 0,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482459345,
+                                                                      "value": 1,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482459421,
+                                                                      "value": 1,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482459421,
+                                                                      "value": 0,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482459497,
+                                                                      "value": 0,
+                                                                    },
+                                                                    Object {
+                                                                      "timeSecs": 1482459573,
+                                                                      "value": 0,
+                                                                    },
+                                                                  ],
+                                                                },
+                                                                "displayType": Array [
+                                                                  "LINE",
+                                                                ],
+                                                                "pointSize": 4,
+                                                              },
+                                                            ],
+                                                            "wfFilterId": "unfiltered",
+                                                          },
+                                                        },
+                                                      },
+                                                      "yAxisTicks": Array [
+                                                        0,
+                                                        1,
+                                                      ],
+                                                    }
+                                                  }
+                                                  channelName="AAA111"
+                                                  channelSegmentId="data"
+                                                  channelSegments={
+                                                    Map {
+                                                      "data" => Object {
+                                                        "channelName": "AAA111",
+                                                        "dataSegments": Array [
+                                                          Object {
+                                                            "color": "#6659b3",
+                                                            "data": Object {
+                                                              "values": Array [
+                                                                Object {
+                                                                  "timeSecs": 1482456217,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456217,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456293,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456293,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456369,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482456445,
+                                                                  "value": 0,
+                                                                },
+                                                              ],
+                                                            },
+                                                            "displayType": Array [
+                                                              "LINE",
+                                                            ],
+                                                            "pointSize": 4,
+                                                          },
+                                                          Object {
+                                                            "color": "#6659b3",
+                                                            "data": Object {
+                                                              "values": Array [
+                                                                Object {
+                                                                  "timeSecs": 1482457781,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482457781,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482457857,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482457857,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482457933,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482458009,
+                                                                  "value": 1,
+                                                                },
+                                                              ],
+                                                            },
+                                                            "displayType": Array [
+                                                              "LINE",
+                                                            ],
+                                                            "pointSize": 4,
+                                                          },
+                                                          Object {
+                                                            "color": "#6659b3",
+                                                            "data": Object {
+                                                              "values": Array [
+                                                                Object {
+                                                                  "timeSecs": 1482459345,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459345,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459421,
+                                                                  "value": 1,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459421,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459497,
+                                                                  "value": 0,
+                                                                },
+                                                                Object {
+                                                                  "timeSecs": 1482459573,
+                                                                  "value": 0,
+                                                                },
+                                                              ],
+                                                            },
+                                                            "displayType": Array [
+                                                              "LINE",
+                                                            ],
+                                                            "pointSize": 4,
+                                                          },
+                                                        ],
+                                                        "wfFilterId": "unfiltered",
+                                                      },
+                                                    }
+                                                  }
+                                                  color="#4580E6"
+                                                  converters={
+                                                    Object {
+                                                      "computeFractionOfCanvasFromMouseXPx": [Function],
+                                                      "computeTimeSecsForMouseXFractionalPosition": [Function],
+                                                      "computeTimeSecsFromMouseXPixels": [Function],
+                                                    }
+                                                  }
+                                                  defaultRange={
+                                                    Object {
+                                                      "max": 1.2,
+                                                      "min": -0.2,
+                                                    }
+                                                  }
+                                                  displayEndTimeSecs={1}
+                                                  displayStartTimeSecs={0.5}
+                                                  displayType={
+                                                    Array [
+                                                      "LINE",
+                                                    ]
+                                                  }
+                                                  distance={0}
+                                                  distanceUnits="degrees"
+                                                  events={
+                                                    Object {
+                                                      "events": Object {
+                                                        "onChannelClick": undefined,
+                                                        "onClickSelectionWindow": undefined,
+                                                        "onContextMenu": undefined,
+                                                        "onMeasureWindowUpdated": undefined,
+                                                        "onMoveSelectionWindow": undefined,
+                                                        "onPredictivePhaseClick": undefined,
+                                                        "onPredictivePhaseContextMenu": undefined,
+                                                        "onPredictivePhaseDragEnd": undefined,
+                                                        "onSignalDetectionClick": undefined,
+                                                        "onSignalDetectionContextMenu": undefined,
+                                                        "onSignalDetectionDragEnd": undefined,
+                                                        "onUpdateMarker": undefined,
+                                                        "onUpdateSelectionWindow": undefined,
+                                                      },
+                                                      "labelEvents": Object {
+                                                        "onChannelCollapsed": undefined,
+                                                        "onChannelExpanded": undefined,
+                                                        "onChannelLabelClick": undefined,
+                                                      },
+                                                      "onKeyPress": undefined,
+                                                    }
+                                                  }
+                                                  expanded={false}
+                                                  getCanvasBoundingRect={[Function]}
+                                                  getCurrentViewRangeInSeconds={[Function]}
+                                                  getViewRange={[Function]}
+                                                  glMax={100}
+                                                  glMin={0}
+                                                  height={60}
+                                                  index={0}
+                                                  initialConfiguration={
+                                                    Object {
+                                                      "colorScale": undefined,
+                                                      "defaultChannel": Object {
+                                                        "disableMaskModification": true,
+                                                        "disableMeasureWindow": true,
+                                                        "disablePreditedPhaseModification": true,
+                                                        "disableSignalDetectionModification": true,
+                                                      },
+                                                      "defaultChannelHeightPx": 50,
+                                                      "hotKeys": Object {
+                                                        "amplitudeScale": "KeyS",
+                                                        "amplitudeScaleReset": "Alt+Shift+KeyS",
+                                                        "amplitudeScaleSingleReset": "Alt+KeyS",
+                                                        "drawMeasureWindow": "Alt",
+                                                        "maskCreate": "KeyM",
+                                                      },
+                                                      "labelWidthPx": 180,
+                                                      "nonDefaultChannel": Object {
+                                                        "disableMaskModification": false,
+                                                        "disableMeasureWindow": false,
+                                                        "disablePreditedPhaseModification": false,
+                                                        "disableSignalDetectionModification": false,
+                                                      },
+                                                      "shouldRenderSpectrograms": true,
+                                                      "shouldRenderWaveforms": true,
+                                                      "xAxisLabel": undefined,
+                                                    }
+                                                  }
+                                                  isDefaultChannel={true}
+                                                  isExpandable={false}
+                                                  isMeasureWindow={false}
+                                                  offsetSecs={0}
+                                                  onMouseDown={[Function]}
+                                                  onMouseMove={[Function]}
+                                                  onMouseUp={[Function]}
+                                                  pointSize={2}
+                                                  renderWaveforms={[Function]}
+                                                  selections={
+                                                    Object {
+                                                      "channels": undefined,
+                                                    }
+                                                  }
+                                                  setYAxisBounds={[Function]}
+                                                  shouldRenderSpectrograms={true}
+                                                  shouldRenderWaveforms={true}
+                                                  showMaskIndicator={false}
+                                                  stationId="0"
+                                                  toast={[Function]}
+                                                  toggleExpansion={[Function]}
+                                                  updateMeasureWindow={[Function]}
+                                                  workerRpcs={
+                                                    Array [
+                                                      RpcProvider {
+                                                        "_dispatch": [Function],
+                                                        "_nextTransactionId": 0,
+                                                        "_pendingTransactions": Object {},
+                                                        "_rpcHandlers": Object {},
+                                                        "_rpcTimeout": 0,
+                                                        "_signalHandlers": Object {},
+                                                        "error": Event {
+                                                          "_contexts": Array [],
+                                                          "_handlers": Array [],
+                                                          "dispatch": [Function],
+                                                          "hasHandlers": false,
+                                                        },
+                                                      },
+                                                      RpcProvider {
+                                                        "_dispatch": [Function],
+                                                        "_nextTransactionId": 0,
+                                                        "_pendingTransactions": Object {},
+                                                        "_rpcHandlers": Object {},
+                                                        "_rpcTimeout": 0,
+                                                        "_signalHandlers": Object {},
+                                                        "error": Event {
+                                                          "_contexts": Array [],
+                                                          "_handlers": Array [],
+                                                          "dispatch": [Function],
+                                                          "hasHandlers": false,
+                                                        },
+                                                      },
+                                                      RpcProvider {
+                                                        "_dispatch": [Function],
+                                                        "_nextTransactionId": 0,
+                                                        "_pendingTransactions": Object {},
+                                                        "_rpcHandlers": Object {},
+                                                        "_rpcTimeout": 0,
+                                                        "_signalHandlers": Object {},
+                                                        "error": Event {
+                                                          "_contexts": Array [],
+                                                          "_handlers": Array [],
+                                                          "dispatch": [Function],
+                                                          "hasHandlers": false,
+                                                        },
+                                                      },
+                                                      RpcProvider {
+                                                        "_dispatch": [Function],
+                                                        "_nextTransactionId": 0,
+                                                        "_pendingTransactions": Object {},
+                                                        "_rpcHandlers": Object {},
+                                                        "_rpcTimeout": 0,
+                                                        "_signalHandlers": Object {},
+                                                        "error": Event {
+                                                          "_contexts": Array [],
+                                                          "_handlers": Array [],
+                                                          "dispatch": [Function],
+                                                          "hasHandlers": false,
+                                                        },
+                                                      },
+                                                    ]
+                                                  }
+                                                />
+                                                <div
+                                                  className="contentrenderer-content contentrenderer-content--sticky"
+                                                  style={
+                                                    Object {
+                                                      "width": "calc(100vw - 180)",
+                                                    }
+                                                  }
+                                                />
+                                                <div
+                                                  className="contentrenderer-content"
+                                                  style={
+                                                    Object {
+                                                      "left": 180,
+                                                      "width": "calc(100% - 180)",
+                                                    }
+                                                  }
+                                                >
+                                                  <div
+                                                    className="contentrenderer-content-drag-indicator"
+                                                  />
+                                                  <Memo()
+                                                    key="3"
+                                                    onClick={[Function]}
+                                                  >
+                                                    <div
+                                                      className="measure-window-selection measure-window-selection__container"
+                                                      style={
+                                                        Object {
+                                                          "display": "none",
+                                                          "transform": "translateX(-50%)",
+                                                        }
+                                                      }
+                                                    >
+                                                      <div
+                                                        className="measure-window-selection__overlay"
+                                                        draggable={true}
+                                                        onDragStart={[Function]}
+                                                        style={
+                                                          Object {
+                                                            "display": "none",
+                                                            "left": "50%",
+                                                            "width": "0%",
+                                                          }
+                                                        }
+                                                      />
+                                                    </div>
+                                                  </Memo()>
+                                                  <div
+                                                    className="contentrenderer-content-markers"
+                                                  />
+                                                  <SignalDetections
+                                                    channelId="AAA111"
+                                                    disableModification={true}
+                                                    displayEndTimeSecs={1}
+                                                    displayStartTimeSecs={0.5}
+                                                    events={
+                                                      Object {
+                                                        "onChannelClick": undefined,
+                                                        "onClickSelectionWindow": undefined,
+                                                        "onContextMenu": undefined,
+                                                        "onMeasureWindowUpdated": undefined,
+                                                        "onMoveSelectionWindow": undefined,
+                                                        "onPredictivePhaseClick": undefined,
+                                                        "onPredictivePhaseContextMenu": undefined,
+                                                        "onPredictivePhaseDragEnd": undefined,
+                                                        "onSignalDetectionClick": undefined,
+                                                        "onSignalDetectionContextMenu": undefined,
+                                                        "onSignalDetectionDragEnd": undefined,
+                                                        "onUpdateMarker": undefined,
+                                                        "onUpdateSelectionWindow": undefined,
+                                                      }
+                                                    }
+                                                    getTimeSecsForClientX={[Function]}
+                                                    isDefaultChannel={true}
+                                                    positionDragIndicator={[Function]}
+                                                    stationId="0"
+                                                    toast={[Function]}
+                                                    toggleDragIndicator={[Function]}
+                                                  />
+                                                  <PredictedPhases
+                                                    channelId="AAA111"
+                                                    disableModification={true}
+                                                    displayEndTimeSecs={1}
+                                                    displayStartTimeSecs={0.5}
+                                                    events={
+                                                      Object {
+                                                        "onChannelClick": undefined,
+                                                        "onClickSelectionWindow": undefined,
+                                                        "onContextMenu": undefined,
+                                                        "onMeasureWindowUpdated": undefined,
+                                                        "onMoveSelectionWindow": undefined,
+                                                        "onPredictivePhaseClick": undefined,
+                                                        "onPredictivePhaseContextMenu": undefined,
+                                                        "onPredictivePhaseDragEnd": undefined,
+                                                        "onSignalDetectionClick": undefined,
+                                                        "onSignalDetectionContextMenu": undefined,
+                                                        "onSignalDetectionDragEnd": undefined,
+                                                        "onUpdateMarker": undefined,
+                                                        "onUpdateSelectionWindow": undefined,
+                                                      }
+                                                    }
+                                                    getTimeSecsForClientX={[Function]}
+                                                    isDefaultChannel={true}
+                                                    positionDragIndicator={[Function]}
+                                                    stationId="0"
+                                                    toast={[Function]}
+                                                    toggleDragIndicator={[Function]}
+                                                  />
+                                                  <TheoreticalPhases
+                                                    displayEndTimeSecs={1}
+                                                    displayStartTimeSecs={0.5}
+                                                    events={
+                                                      Object {
+                                                        "onChannelClick": undefined,
+                                                        "onClickSelectionWindow": undefined,
+                                                        "onContextMenu": undefined,
+                                                        "onMeasureWindowUpdated": undefined,
+                                                        "onMoveSelectionWindow": undefined,
+                                                        "onPredictivePhaseClick": undefined,
+                                                        "onPredictivePhaseContextMenu": undefined,
+                                                        "onPredictivePhaseDragEnd": undefined,
+                                                        "onSignalDetectionClick": undefined,
+                                                        "onSignalDetectionContextMenu": undefined,
+                                                        "onSignalDetectionDragEnd": undefined,
+                                                        "onUpdateMarker": undefined,
+                                                        "onUpdateSelectionWindow": undefined,
+                                                      }
+                                                    }
+                                                    getTimeSecsForClientX={[Function]}
+                                                    isDefaultChannel={true}
+                                                    positionDragIndicator={[Function]}
+                                                    stationId="0"
+                                                    toast={[Function]}
+                                                    toggleDragIndicator={[Function]}
+                                                  />
+                                                </div>
+                                              </div>
+                                            </ContentRenderer>
+                                          </div>
+                                        </MeasureWindowSelectionListener>
+                                      </div>
+                                    </Channel>
+                                  </div>
+                                </Station>
+                                <div
+                                  className="weavess-wp-container-viewport-content-markers"
+                                  style={
+                                    Object {
+                                      "left": "180px",
+                                      "width": "calc(100% - 180px)",
+                                    }
+                                  }
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="weavess-wp-container-overlay"
+                          style={
+                            Object {
+                              "width": "calc(100% - (180px + 10px))",
+                            }
+                          }
+                        >
+                          <Blueprint3.Popover
+                            boundary="scrollParent"
+                            captureDismiss={false}
+                            content={
+                              <div
+                                className="weavess-wp-time-popover-content"
+                              />
+                            }
+                            defaultIsOpen={false}
+                            disabled={false}
+                            fill={false}
+                            hasBackdrop={false}
+                            hoverCloseDelay={300}
+                            hoverOpenDelay={150}
+                            inheritDarkTheme={true}
+                            interactionKind="click"
+                            isOpen={false}
+                            minimal={false}
+                            modifiers={Object {}}
+                            openOnTargetFocus={true}
+                            position="top"
+                            targetTagName="span"
+                            transitionDuration={300}
+                            usePortal={true}
+                            wrapperTagName="span"
+                          >
+                            <Manager>
+                              <span
+                                className="bp3-popover-wrapper"
+                              >
+                                <Reference
+                                  innerRef={[Function]}
+                                >
+                                  <InnerReference
+                                    innerRef={[Function]}
+                                    setReferenceNode={[Function]}
+                                  >
+                                    <Blueprint3.ResizeSensor
+                                      onResize={[Function]}
+                                    >
+                                      <span
+                                        className="bp3-popover-target"
+                                        onClick={[Function]}
+                                      >
+                                        <div
+                                          className=""
+                                          key=".0"
+                                        />
+                                      </span>
+                                    </Blueprint3.ResizeSensor>
+                                  </InnerReference>
+                                </Reference>
+                                <Blueprint3.Overlay
+                                  autoFocus={true}
+                                  backdropClassName="bp3-popover-backdrop"
+                                  backdropProps={Object {}}
+                                  canEscapeKeyClose={true}
+                                  canOutsideClickClose={true}
+                                  enforceFocus={true}
+                                  hasBackdrop={false}
+                                  isOpen={false}
+                                  lazy={true}
+                                  onClose={[Function]}
+                                  transitionDuration={300}
+                                  transitionName="bp3-popover"
+                                  usePortal={true}
+                                />
+                              </span>
+                            </Manager>
+                          </Blueprint3.Popover>
+                          <div
+                            className="weavess-wp-container-overlay-cross-hair"
+                          />
+                          <div
+                            className="weavess-wp-container-overlay-selection-area"
+                          />
+                        </div>
+                      </div>
+                      <XAxis
+                        borderTop={true}
+                        endTimeSecs={1}
+                        getViewRange={[Function]}
+                        labelWidthPx={180}
+                        scrollbarWidthPx={10}
+                        startTimeSecs={0.5}
+                      >
+                        <div
+                          className="x-axis"
+                          style={
+                            Object {
+                              "height": "35px",
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "width": "100%",
+                              }
+                            }
+                          />
+                          <div
+                            style={
+                              Object {
+                                "textAlign": "center",
+                              }
+                            }
+                          />
+                        </div>
+                      </XAxis>
+                    </div>
+                    <Memo(InternalTimeRange)
+                      labelWidthPx={180}
+                    >
+                      <div
+                        className="weavess-wp-time-range"
+                        style={
+                          Object {
+                            "left": "180px",
+                          }
+                        }
+                      >
+                        <span>
+                          1970-01-01 00:00:00.500 + 1 second
+                        </span>
+                      </div>
+                    </Memo(InternalTimeRange)>
+                  </div>
+                </WaveformPanel>
+              </div>
+            </HorizontalDivider>
+            <Blueprint3.Toaster
+              autoFocus={false}
+              canEscapeKeyClear={true}
+              position="bottom-right"
+              usePortal={false}
+            >
+              <Blueprint3.Overlay
+                autoFocus={false}
+                backdropProps={Object {}}
+                canEscapeKeyClose={true}
+                canOutsideClickClose={false}
+                className="bp3-toast-container bp3-toast-container-bottom bp3-toast-container-right"
+                enforceFocus={false}
+                hasBackdrop={false}
+                isOpen={false}
+                lazy={true}
+                onClose={[Function]}
+                transitionDuration={350}
+                transitionName="bp3-toast"
+                usePortal={false}
+              />
+            </Blueprint3.Toaster>
+          </div>
+        </WaveformDisplay>
+      </div>
+    </div>
+  </WeavessDisplay>
+</ApolloProvider>
+`;

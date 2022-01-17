@@ -1,0 +1,2099 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a component 1`] = `
+<div
+  class="bp3-dark"
+  style="height: 80%; width: 100%; padding: 0.5rem; color: rgb(167, 182, 194); display: flex; justify-content: center; align-items: center;"
+>
+  <div
+    style="height: 100%; width: 100%; display: flex; flex-direction: column;"
+  >
+    <div
+      style="flex: 1 1 auto; position: relative;"
+    >
+      <div
+        style="position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px;"
+      >
+        <div
+          class="weavess"
+        >
+          <div
+            class="horizontal-divider__bottom weavess-waveform-display"
+            style="height: 100%;"
+          >
+            <div
+              class="weavess-wp"
+              style="height: 100%; position: relative; width: 100%; box-sizing: content-box;"
+            >
+              <canvas
+                class="weavess-wp-canvas"
+                style="left: 184px;"
+              />
+              <div
+                class="weavess-wp-container"
+              >
+                <div
+                  class="weavess-wp-container-1"
+                >
+                  <div
+                    class="weavess-wp-container-2"
+                  >
+                    <div
+                      class="weavess-wp-container-3"
+                    >
+                      <div
+                        class="weavess-wp-container-viewport"
+                      >
+                        <div
+                          class="weavess-wp-container-viewport-content"
+                        >
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="station"
+                            style="height: 76px;"
+                          >
+                            <div
+                              class="channel"
+                              data-cy="dummy channel-channel"
+                              style="height: 75px; max-height: 75px;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="channel-label-container"
+                                data-cy="dummy channel-label"
+                                style="height: 75px; width: 184px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="label"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label-container"
+                                  >
+                                    <div
+                                      class="label-container-left-parent"
+                                    />
+                                    <div
+                                      class="label-container-content"
+                                    >
+                                      <div
+                                        class="label-container-content-label"
+                                        data-cy="channel-label-1"
+                                      >
+                                        <span>
+                                          dummy channel
+                                          <div>
+                                            <p>
+                                               
+                                              <span
+                                                class="label-container-content-mask-indicator"
+                                              />
+                                            </p>
+                                          </div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        data-cy-contains-amplitude-markers="false"
+                                        style="height: 100%;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="channel-content-container"
+                                style="height: 75px; left: 184px;"
+                              >
+                                <div
+                                  class="contentrenderer"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="contentrenderer-content contentrenderer-content--sticky"
+                                  />
+                                  <div
+                                    class="contentrenderer-content"
+                                    style="left: 184px;"
+                                  >
+                                    <div
+                                      class="contentrenderer-content-drag-indicator"
+                                    />
+                                    <div
+                                      class="contentrenderer-content-markers"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="weavess-wp-container-viewport-content-markers"
+                            style="left: 184px;"
+                          />
+                        </div>
+                        <object
+                          class="resize-sensor"
+                          data="about:blank"
+                          style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none; z-index: -1; opacity: 0;"
+                          tabindex="-1"
+                          type="text/html"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="weavess-wp-container-overlay"
+                  >
+                    <span
+                      class="bp3-popover-wrapper"
+                    >
+                      <span
+                        class="bp3-popover-target"
+                      >
+                        <div
+                          class=""
+                        />
+                      </span>
+                    </span>
+                    <div
+                      class="weavess-wp-container-overlay-cross-hair"
+                    />
+                    <div
+                      class="weavess-wp-container-overlay-selection-area"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="x-axis"
+                  style="height: 35px;"
+                >
+                  <div
+                    style="width: 100%;"
+                  >
+                    <svg
+                      height="35"
+                      style="fill: #F5F8FA;"
+                      width="100%"
+                    >
+                      <g
+                        class="x-axis-axis"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    style="text-align: center;"
+                  />
+                </div>
+              </div>
+              <div
+                class="weavess-wp-time-range"
+                style="left: 184px;"
+              >
+                <span>
+                  2016-01-01 00:00:00.000 + 30 minutes
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

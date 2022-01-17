@@ -1,0 +1,527 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow Row matches snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <WorkflowRow
+    stageIntervals={
+      Array [
+        Object {
+          "activityIntervals": Array [
+            Object {
+              "activeAnalysts": Array [
+                "larry",
+                "moe",
+                "curly",
+              ],
+              "comment": "interval example",
+              "endTime": 1622057187,
+              "modificationTime": 1622057667,
+              "name": "Event Review",
+              "percentAvailable": 100,
+              "processingEndTime": 1622057547,
+              "processingStartTime": 1622057487,
+              "stageName": "AL1",
+              "startTime": 1622053587,
+              "status": "IN_PROGRESS",
+              "storageTime": 1622057607,
+            },
+          ],
+          "comment": "interval example",
+          "endTime": 1622057187,
+          "modificationTime": 1622057667,
+          "name": "AL1",
+          "percentAvailable": 100,
+          "processingEndTime": 1622057547,
+          "processingStartTime": 1622057487,
+          "stageMetrics": Object {
+            "associatedSignalDetectionCount": 34,
+            "eventCount": 21,
+            "maxMagnitude": 8,
+            "unassociatedSignalDetectionCount": 55,
+          },
+          "stageMode": "INTERACTIVE",
+          "startTime": 1622053587,
+          "status": "IN_PROGRESS",
+          "storageTime": 1622057607,
+        },
+      ]
+    }
+    subRowNames={Array []}
+  >
+    <div
+      className="stage-row"
+    >
+      <Memo()
+        disabled={false}
+        isExpanded={false}
+        stageName="AL1"
+        toggle={[Function]}
+      >
+        <Blueprint3.Button
+          className="stage-row__expand-button"
+          disabled={false}
+          icon="small-plus"
+          key="AL1"
+          onClick={[Function]}
+        >
+          <button
+            className="bp3-button stage-row__expand-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
+          >
+            <Blueprint3.Icon
+              icon="small-plus"
+              key="leftIcon"
+            >
+              <span
+                className="bp3-icon bp3-icon-small-plus"
+                icon="small-plus"
+              >
+                <svg
+                  data-icon="small-plus"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    small-plus
+                  </desc>
+                  <path
+                    d="M11 7H9V5c0-.55-.45-1-1-1s-1 .45-1 1v2H5c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1V9h2c.55 0 1-.45 1-1s-.45-1-1-1z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+            <Blueprint3.Icon
+              key="rightIcon"
+            />
+          </button>
+        </Blueprint3.Button>
+      </Memo()>
+      <WorkflowTableStage
+        isExpanded={false}
+        key="1622053587 AL1"
+        stage={
+          Object {
+            "activityIntervals": Array [
+              Object {
+                "activeAnalysts": Array [
+                  "larry",
+                  "moe",
+                  "curly",
+                ],
+                "comment": "interval example",
+                "endTime": 1622057187,
+                "modificationTime": 1622057667,
+                "name": "Event Review",
+                "percentAvailable": 100,
+                "processingEndTime": 1622057547,
+                "processingStartTime": 1622057487,
+                "stageName": "AL1",
+                "startTime": 1622053587,
+                "status": "IN_PROGRESS",
+                "storageTime": 1622057607,
+              },
+            ],
+            "comment": "interval example",
+            "endTime": 1622057187,
+            "modificationTime": 1622057667,
+            "name": "AL1",
+            "percentAvailable": 100,
+            "processingEndTime": 1622057547,
+            "processingStartTime": 1622057487,
+            "stageMetrics": Object {
+              "associatedSignalDetectionCount": 34,
+              "eventCount": 21,
+              "maxMagnitude": 8,
+              "unassociatedSignalDetectionCount": 55,
+            },
+            "stageMode": "INTERACTIVE",
+            "startTime": 1622053587,
+            "status": "IN_PROGRESS",
+            "storageTime": 1622057607,
+          }
+        }
+        subRowNames={Array []}
+      >
+        <div
+          className="stage-column"
+        >
+          <Tooltip
+            activeAnalysts={
+              Array [
+                "larry",
+                "moe",
+                "curly",
+              ]
+            }
+            interval={
+              Object {
+                "activityIntervals": Array [
+                  Object {
+                    "activeAnalysts": Array [
+                      "larry",
+                      "moe",
+                      "curly",
+                    ],
+                    "comment": "interval example",
+                    "endTime": 1622057187,
+                    "modificationTime": 1622057667,
+                    "name": "Event Review",
+                    "percentAvailable": 100,
+                    "processingEndTime": 1622057547,
+                    "processingStartTime": 1622057487,
+                    "stageName": "AL1",
+                    "startTime": 1622053587,
+                    "status": "IN_PROGRESS",
+                    "storageTime": 1622057607,
+                  },
+                ],
+                "comment": "interval example",
+                "endTime": 1622057187,
+                "modificationTime": 1622057667,
+                "name": "AL1",
+                "percentAvailable": 100,
+                "processingEndTime": 1622057547,
+                "processingStartTime": 1622057487,
+                "stageMetrics": Object {
+                  "associatedSignalDetectionCount": 34,
+                  "eventCount": 21,
+                  "maxMagnitude": 8,
+                  "unassociatedSignalDetectionCount": 55,
+                },
+                "stageMode": "INTERACTIVE",
+                "startTime": 1622053587,
+                "status": "IN_PROGRESS",
+                "storageTime": 1622057607,
+              }
+            }
+            key="1622053587 AL1"
+          >
+            <TooltipWrapper
+              content={
+                <TooltipPanel
+                  activeAnalysts="larry, moe, curly"
+                  isStale={false}
+                  lastModified="2021-05-26 19:34:27"
+                  status="In Progress"
+                />
+              }
+            >
+              <Blueprint3.Tooltip
+                boundary="window"
+                className="core-tooltip"
+                content={
+                  <TooltipPanel
+                    activeAnalysts="larry, moe, curly"
+                    isStale={false}
+                    lastModified="2021-05-26 19:34:27"
+                    status="In Progress"
+                  />
+                }
+                hoverCloseDelay={0}
+                hoverOpenDelay={300}
+                position="bottom"
+                targetClassName="core-tooltip__target"
+                targetTagName="div"
+                transitionDuration={100}
+                wrapperTagName="div"
+              >
+                <Blueprint3.Popover
+                  autoFocus={false}
+                  boundary="window"
+                  canEscapeKeyClose={false}
+                  captureDismiss={false}
+                  className="core-tooltip"
+                  content={
+                    <TooltipPanel
+                      activeAnalysts="larry, moe, curly"
+                      isStale={false}
+                      lastModified="2021-05-26 19:34:27"
+                      status="In Progress"
+                    />
+                  }
+                  defaultIsOpen={false}
+                  disabled={false}
+                  enforceFocus={false}
+                  fill={false}
+                  hasBackdrop={false}
+                  hoverCloseDelay={0}
+                  hoverOpenDelay={300}
+                  inheritDarkTheme={true}
+                  interactionKind="hover-target"
+                  lazy={true}
+                  minimal={false}
+                  modifiers={Object {}}
+                  openOnTargetFocus={true}
+                  popoverClassName="bp3-tooltip"
+                  position="bottom"
+                  targetClassName="core-tooltip__target"
+                  targetTagName="div"
+                  transitionDuration={100}
+                  usePortal={true}
+                  wrapperTagName="div"
+                >
+                  <Manager>
+                    <div
+                      className="bp3-popover-wrapper core-tooltip"
+                    >
+                      <Reference
+                        innerRef={[Function]}
+                      >
+                        <InnerReference
+                          innerRef={[Function]}
+                          setReferenceNode={[Function]}
+                        >
+                          <Blueprint3.ResizeSensor
+                            onResize={[Function]}
+                          >
+                            <div
+                              className="bp3-popover-target core-tooltip__target"
+                              onBlur={[Function]}
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                            >
+                              <div
+                                className="internal-row"
+                                key=".0"
+                                tabIndex={0}
+                              >
+                                <Memo()
+                                  stageInterval={
+                                    Object {
+                                      "activityIntervals": Array [
+                                        Object {
+                                          "activeAnalysts": Array [
+                                            "larry",
+                                            "moe",
+                                            "curly",
+                                          ],
+                                          "comment": "interval example",
+                                          "endTime": 1622057187,
+                                          "modificationTime": 1622057667,
+                                          "name": "Event Review",
+                                          "percentAvailable": 100,
+                                          "processingEndTime": 1622057547,
+                                          "processingStartTime": 1622057487,
+                                          "stageName": "AL1",
+                                          "startTime": 1622053587,
+                                          "status": "IN_PROGRESS",
+                                          "storageTime": 1622057607,
+                                        },
+                                      ],
+                                      "comment": "interval example",
+                                      "endTime": 1622057187,
+                                      "modificationTime": 1622057667,
+                                      "name": "AL1",
+                                      "percentAvailable": 100,
+                                      "processingEndTime": 1622057547,
+                                      "processingStartTime": 1622057487,
+                                      "stageMetrics": Object {
+                                        "associatedSignalDetectionCount": 34,
+                                        "eventCount": 21,
+                                        "maxMagnitude": 8,
+                                        "unassociatedSignalDetectionCount": 55,
+                                      },
+                                      "stageMode": "INTERACTIVE",
+                                      "startTime": 1622053587,
+                                      "status": "IN_PROGRESS",
+                                      "storageTime": 1622057607,
+                                    }
+                                  }
+                                >
+                                  <Memo()
+                                    key="AL1"
+                                    stageInterval={
+                                      Object {
+                                        "activityIntervals": Array [
+                                          Object {
+                                            "activeAnalysts": Array [
+                                              "larry",
+                                              "moe",
+                                              "curly",
+                                            ],
+                                            "comment": "interval example",
+                                            "endTime": 1622057187,
+                                            "modificationTime": 1622057667,
+                                            "name": "Event Review",
+                                            "percentAvailable": 100,
+                                            "processingEndTime": 1622057547,
+                                            "processingStartTime": 1622057487,
+                                            "stageName": "AL1",
+                                            "startTime": 1622053587,
+                                            "status": "IN_PROGRESS",
+                                            "storageTime": 1622057607,
+                                          },
+                                        ],
+                                        "comment": "interval example",
+                                        "endTime": 1622057187,
+                                        "modificationTime": 1622057667,
+                                        "name": "AL1",
+                                        "percentAvailable": 100,
+                                        "processingEndTime": 1622057547,
+                                        "processingStartTime": 1622057487,
+                                        "stageMetrics": Object {
+                                          "associatedSignalDetectionCount": 34,
+                                          "eventCount": 21,
+                                          "maxMagnitude": 8,
+                                          "unassociatedSignalDetectionCount": 55,
+                                        },
+                                        "stageMode": "INTERACTIVE",
+                                        "startTime": 1622053587,
+                                        "status": "IN_PROGRESS",
+                                        "storageTime": 1622057607,
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="interval-cell interval-cell--in-progress"
+                                      key="1622053587"
+                                      onContextMenu={[Function]}
+                                      style={
+                                        Object {
+                                          "gridColumn": "span 12",
+                                        }
+                                      }
+                                    />
+                                  </Memo()>
+                                </Memo()>
+                              </div>
+                            </div>
+                          </Blueprint3.ResizeSensor>
+                        </InnerReference>
+                      </Reference>
+                      <Blueprint3.Overlay
+                        autoFocus={false}
+                        backdropClassName="bp3-popover-backdrop"
+                        backdropProps={Object {}}
+                        canEscapeKeyClose={false}
+                        canOutsideClickClose={false}
+                        enforceFocus={false}
+                        hasBackdrop={false}
+                        isOpen={false}
+                        lazy={true}
+                        onClose={[Function]}
+                        transitionDuration={100}
+                        transitionName="bp3-popover"
+                        usePortal={true}
+                      />
+                    </div>
+                  </Manager>
+                </Blueprint3.Popover>
+              </Blueprint3.Tooltip>
+            </TooltipWrapper>
+          </Tooltip>
+        </div>
+      </WorkflowTableStage>
+      <WorkflowRowLabel
+        isActivityRow={false}
+        label="AL1"
+      >
+        <div
+          className="workflow-table-label"
+          key="AL1"
+        >
+          <div>
+            AL1
+          </div>
+        </div>
+      </WorkflowRowLabel>
+    </div>
+  </WorkflowRow>
+</Provider>
+`;
+
+exports[`Workflow Row shallow mounts 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <WorkflowRow
+    stageIntervals={
+      Array [
+        Object {
+          "activityIntervals": Array [
+            Object {
+              "activeAnalysts": Array [
+                "larry",
+                "moe",
+                "curly",
+              ],
+              "comment": "interval example",
+              "endTime": 1622057187,
+              "modificationTime": 1622057667,
+              "name": "Event Review",
+              "percentAvailable": 100,
+              "processingEndTime": 1622057547,
+              "processingStartTime": 1622057487,
+              "stageName": "AL1",
+              "startTime": 1622053587,
+              "status": "IN_PROGRESS",
+              "storageTime": 1622057607,
+            },
+          ],
+          "comment": "interval example",
+          "endTime": 1622057187,
+          "modificationTime": 1622057667,
+          "name": "AL1",
+          "percentAvailable": 100,
+          "processingEndTime": 1622057547,
+          "processingStartTime": 1622057487,
+          "stageMetrics": Object {
+            "associatedSignalDetectionCount": 34,
+            "eventCount": 21,
+            "maxMagnitude": 8,
+            "unassociatedSignalDetectionCount": 55,
+          },
+          "stageMode": "INTERACTIVE",
+          "startTime": 1622053587,
+          "status": "IN_PROGRESS",
+          "storageTime": 1622057607,
+        },
+      ]
+    }
+    subRowNames={Array []}
+  />
+</ContextProvider>
+`;

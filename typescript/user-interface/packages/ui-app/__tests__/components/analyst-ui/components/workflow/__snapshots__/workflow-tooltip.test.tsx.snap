@@ -1,0 +1,409 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow Tooltip can handle undefined interval with tooltip 1`] = `
+Array [
+  <Tooltip />,
+  " ",
+]
+`;
+
+exports[`Workflow Tooltip matches tooltip panel snapshot 1`] = `
+<TooltipPanel
+  isStale={false}
+>
+  <div
+    className="workflow-tooltip"
+  />
+</TooltipPanel>
+`;
+
+exports[`Workflow Tooltip matches tooltip panel snapshot 2`] = `
+<TooltipPanel
+  activeAnalysts="analyst 1, analyst 2"
+  isStale={false}
+  lastModified="1970-01-01 00:00:00"
+  status="IN_PROGRESS"
+>
+  <div
+    className="workflow-tooltip"
+  >
+    <LabelValue
+      containerClass="workflow-tooltip-container"
+      label="Status"
+      tooltip="Status"
+      value="IN_PROGRESS "
+    >
+      <div
+        className="label-value-container workflow-tooltip-container"
+      >
+        <div
+          className="label-value__label"
+        >
+          Status: 
+        </div>
+        <div
+          className="label-value__value"
+          style={
+            Object {
+              "color": "",
+            }
+          }
+          title="Status"
+        >
+          IN_PROGRESS 
+        </div>
+      </div>
+    </LabelValue>
+    <LabelValue
+      containerClass="workflow-tooltip-container"
+      label="Active Analysts"
+      tooltip="Active Analysts"
+      value="analyst 1, analyst 2"
+    >
+      <div
+        className="label-value-container workflow-tooltip-container"
+      >
+        <div
+          className="label-value__label"
+        >
+          Active Analysts: 
+        </div>
+        <div
+          className="label-value__value"
+          style={
+            Object {
+              "color": "",
+            }
+          }
+          title="Active Analysts"
+        >
+          analyst 1, analyst 2
+        </div>
+      </div>
+    </LabelValue>
+    <LabelValue
+      containerClass="workflow-tooltip-container"
+      label="Last Modified"
+      tooltip="Last Modified"
+      value="1970-01-01 00:00:00"
+    >
+      <div
+        className="label-value-container workflow-tooltip-container"
+      >
+        <div
+          className="label-value__label"
+        >
+          Last Modified: 
+        </div>
+        <div
+          className="label-value__value"
+          style={
+            Object {
+              "color": "",
+            }
+          }
+          title="Last Modified"
+        >
+          1970-01-01 00:00:00
+        </div>
+      </div>
+    </LabelValue>
+  </div>
+</TooltipPanel>
+`;
+
+exports[`Workflow Tooltip matches tooltip snapshot 1`] = `
+<Tooltip
+  interval={
+    Object {
+      "activeAnalysts": Array [
+        "larry",
+        "moe",
+        "curly",
+      ],
+      "comment": "interval example",
+      "endTime": 1622057187,
+      "modificationTime": 1622057667,
+      "name": "Event Review",
+      "percentAvailable": 100,
+      "processingEndTime": 1622057547,
+      "processingStartTime": 1622057487,
+      "stageName": "AL1",
+      "startTime": 1622053587,
+      "status": "IN_PROGRESS",
+      "storageTime": 1622057607,
+    }
+  }
+>
+  <TooltipWrapper
+    content={
+      <TooltipPanel
+        activeAnalysts="larry, moe, curly"
+        isStale={false}
+        lastModified="2021-05-26 19:34:27"
+        status="In Progress"
+      />
+    }
+  >
+    <Blueprint3.Tooltip
+      boundary="window"
+      className="core-tooltip"
+      content={
+        <TooltipPanel
+          activeAnalysts="larry, moe, curly"
+          isStale={false}
+          lastModified="2021-05-26 19:34:27"
+          status="In Progress"
+        />
+      }
+      hoverCloseDelay={0}
+      hoverOpenDelay={300}
+      position="bottom"
+      targetClassName="core-tooltip__target"
+      targetTagName="div"
+      transitionDuration={100}
+      wrapperTagName="div"
+    >
+      <Blueprint3.Popover
+        autoFocus={false}
+        boundary="window"
+        canEscapeKeyClose={false}
+        captureDismiss={false}
+        className="core-tooltip"
+        content={
+          <TooltipPanel
+            activeAnalysts="larry, moe, curly"
+            isStale={false}
+            lastModified="2021-05-26 19:34:27"
+            status="In Progress"
+          />
+        }
+        defaultIsOpen={false}
+        disabled={false}
+        enforceFocus={false}
+        fill={false}
+        hasBackdrop={false}
+        hoverCloseDelay={0}
+        hoverOpenDelay={300}
+        inheritDarkTheme={true}
+        interactionKind="hover-target"
+        lazy={true}
+        minimal={false}
+        modifiers={Object {}}
+        openOnTargetFocus={true}
+        popoverClassName="bp3-tooltip"
+        position="bottom"
+        targetClassName="core-tooltip__target"
+        targetTagName="div"
+        transitionDuration={100}
+        usePortal={true}
+        wrapperTagName="div"
+      >
+        <Manager>
+          <div
+            className="bp3-popover-wrapper core-tooltip"
+          >
+            <Reference
+              innerRef={[Function]}
+            >
+              <InnerReference
+                innerRef={[Function]}
+                setReferenceNode={[Function]}
+              >
+                <Blueprint3.ResizeSensor
+                  onResize={[Function]}
+                >
+                  <div
+                    className="bp3-popover-target core-tooltip__target"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                  >
+                    <span
+                      className=""
+                      tabIndex={0}
+                    />
+                  </div>
+                </Blueprint3.ResizeSensor>
+              </InnerReference>
+            </Reference>
+            <Blueprint3.Overlay
+              autoFocus={false}
+              backdropClassName="bp3-popover-backdrop"
+              backdropProps={Object {}}
+              canEscapeKeyClose={false}
+              canOutsideClickClose={false}
+              enforceFocus={false}
+              hasBackdrop={false}
+              isOpen={false}
+              lazy={true}
+              onClose={[Function]}
+              transitionDuration={100}
+              transitionName="bp3-popover"
+              usePortal={true}
+            />
+          </div>
+        </Manager>
+      </Blueprint3.Popover>
+    </Blueprint3.Tooltip>
+  </TooltipWrapper>
+</Tooltip>
+`;
+
+exports[`Workflow Tooltip matches tooltip snapshot 2`] = `
+<Tooltip
+  interval={
+    Object {
+      "comment": "interval example",
+      "endTime": 1622057187,
+      "modificationTime": 1622057667,
+      "name": "Auto Network",
+      "percentAvailable": 100,
+      "processingEndTime": 1622057547,
+      "processingStartTime": 1622057487,
+      "sequenceIntervals": Array [
+        Object {
+          "comment": "interval example",
+          "endTime": 1622057187,
+          "lastExecutedStepName": "last-step",
+          "modificationTime": 1622057667,
+          "name": "Auto Network Seq",
+          "percentAvailable": 100,
+          "percentComplete": 50,
+          "processingEndTime": 1622057547,
+          "processingStartTime": 1622057487,
+          "stageName": "Auto Network",
+          "startTime": 1622053587,
+          "status": "IN_PROGRESS",
+          "storageTime": 1622057607,
+        },
+      ],
+      "stageMetrics": Object {
+        "associatedSignalDetectionCount": 34,
+        "eventCount": 21,
+        "maxMagnitude": 8,
+        "unassociatedSignalDetectionCount": 55,
+      },
+      "stageMode": "AUTOMATIC",
+      "startTime": 1622053587,
+      "status": "IN_PROGRESS",
+      "storageTime": 1622057607,
+    }
+  }
+>
+  <TooltipWrapper
+    content={
+      <TooltipPanel
+        isStale={false}
+        lastModified="2021-05-26 19:34:27"
+        status="In Progress"
+      />
+    }
+  >
+    <Blueprint3.Tooltip
+      boundary="window"
+      className="core-tooltip"
+      content={
+        <TooltipPanel
+          isStale={false}
+          lastModified="2021-05-26 19:34:27"
+          status="In Progress"
+        />
+      }
+      hoverCloseDelay={0}
+      hoverOpenDelay={300}
+      position="bottom"
+      targetClassName="core-tooltip__target"
+      targetTagName="div"
+      transitionDuration={100}
+      wrapperTagName="div"
+    >
+      <Blueprint3.Popover
+        autoFocus={false}
+        boundary="window"
+        canEscapeKeyClose={false}
+        captureDismiss={false}
+        className="core-tooltip"
+        content={
+          <TooltipPanel
+            isStale={false}
+            lastModified="2021-05-26 19:34:27"
+            status="In Progress"
+          />
+        }
+        defaultIsOpen={false}
+        disabled={false}
+        enforceFocus={false}
+        fill={false}
+        hasBackdrop={false}
+        hoverCloseDelay={0}
+        hoverOpenDelay={300}
+        inheritDarkTheme={true}
+        interactionKind="hover-target"
+        lazy={true}
+        minimal={false}
+        modifiers={Object {}}
+        openOnTargetFocus={true}
+        popoverClassName="bp3-tooltip"
+        position="bottom"
+        targetClassName="core-tooltip__target"
+        targetTagName="div"
+        transitionDuration={100}
+        usePortal={true}
+        wrapperTagName="div"
+      >
+        <Manager>
+          <div
+            className="bp3-popover-wrapper core-tooltip"
+          >
+            <Reference
+              innerRef={[Function]}
+            >
+              <InnerReference
+                innerRef={[Function]}
+                setReferenceNode={[Function]}
+              >
+                <Blueprint3.ResizeSensor
+                  onResize={[Function]}
+                >
+                  <div
+                    className="bp3-popover-target core-tooltip__target"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                  >
+                    <div
+                      className=""
+                      key=".0"
+                      tabIndex={0}
+                    >
+                      content
+                    </div>
+                  </div>
+                </Blueprint3.ResizeSensor>
+              </InnerReference>
+            </Reference>
+            <Blueprint3.Overlay
+              autoFocus={false}
+              backdropClassName="bp3-popover-backdrop"
+              backdropProps={Object {}}
+              canEscapeKeyClose={false}
+              canOutsideClickClose={false}
+              enforceFocus={false}
+              hasBackdrop={false}
+              isOpen={false}
+              lazy={true}
+              onClose={[Function]}
+              transitionDuration={100}
+              transitionName="bp3-popover"
+              usePortal={true}
+            />
+          </div>
+        </Manager>
+      </Blueprint3.Popover>
+    </Blueprint3.Tooltip>
+  </TooltipWrapper>
+</Tooltip>
+`;

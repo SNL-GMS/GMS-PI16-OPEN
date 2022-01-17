@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a component 1`] = `
+<div>
+  <div
+    class="ag-dark"
+    style="flex: 1 1 auto; position: relative; width: 1004px; display: flex; justify-content: flex-begin;"
+  >
+    <div
+      class="toolbar"
+      style="width: 1000px;"
+    >
+      <div
+        class="toolbar__left-group"
+      >
+        <div
+          class="toolbar-item toolbar-item__left"
+        >
+          <div>
+            <div
+              class="dropdown-container"
+            >
+              <span
+                class="dropdown-selector"
+              >
+                <div
+                  class="bp3-html-select"
+                >
+                  <select
+                    style="min-width: 200px; width: 200px;"
+                    title="Select something from a dropdown"
+                  >
+                    <option
+                      value="Example Value One"
+                    >
+                      Example Value One
+                    </option>
+                    <option
+                      value="Example Value Two"
+                    >
+                      Example Value Two
+                    </option>
+                    <option
+                      value="Example Value Three"
+                    >
+                      Example Value Three
+                    </option>
+                  </select>
+                  <span
+                    class="bp3-icon bp3-icon-double-caret-vertical"
+                    icon="double-caret-vertical"
+                  >
+                    <svg
+                      data-icon="double-caret-vertical"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <desc>
+                        double-caret-vertical
+                      </desc>
+                      <path
+                        d="M5 7h6a1.003 1.003 0 00.71-1.71l-3-3C8.53 2.11 8.28 2 8 2s-.53.11-.71.29l-3 3A1.003 1.003 0 005 7zm6 2H5a1.003 1.003 0 00-.71 1.71l3 3c.18.18.43.29.71.29s.53-.11.71-.29l3-3A1.003 1.003 0 0011 9z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="toolbar__center-group"
+      >
+        <div
+          class="toolbar__whitespace"
+          style="width: 984px;"
+        />
+      </div>
+      <div
+        class="toolbar__right-group"
+      >
+        <div
+          class="toolbar-item
+                    "
+        >
+          <div>
+            <span>
+              <span
+                class="toolbar-numeric__label toolbar-numeric__label-left"
+              >
+                Numeric Input
+              </span>
+              <input
+                class="toolbar-numeric-input"
+                max="100"
+                min="1"
+                step="1"
+                title="Accepts values between 1 and 100"
+                type="number"
+                value="10"
+              />
+            </span>
+          </div>
+        </div>
+        <div
+          class="toolbar-item
+                    "
+        >
+          <div>
+            <div>
+              <button
+                class="bp3-button bp3-align-left toolbar-button"
+                title="A checkbox in a popover to demonstrate how we do popovers"
+                type="button"
+              >
+                <span
+                  class="bp3-button-text"
+                >
+                  <span>
+                    Popover
+                  </span>
+                  <span
+                    class="bp3-icon bp3-icon-chevron-down"
+                    icon="chevron-down"
+                  >
+                    <svg
+                      data-icon="chevron-down"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="toolbar-item
+                    "
+        >
+          <div>
+            <button
+              class="bp3-button bp3-align-left toolbar-button"
+              title="Button with Icon"
+              type="button"
+            >
+              <span
+                class="bp3-button-text"
+              >
+                <span>
+                  Generic Button
+                </span>
+                <span
+                  class="bp3-icon bp3-icon-thumbs-up"
+                  icon="thumbs-up"
+                >
+                  <svg
+                    data-icon="thumbs-up"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      d="M15.99 9.62c-.08-.58-.73-.96-1.43-1.05-.15-.02-.32-.04-.49-.05.06-.01.11-.01.16-.02.71-.08 1.23-.47 1.15-1.05-.08-.58-.73-.96-1.43-1.05-.34-.04-.72-.07-1.13-.09h-.01c-.24-.01-.49-.02-.75-.02-.48-.02-1.11-.04-1.59-.08-.36-.03-.41-.28-.37-.53.35-.9.54-1.91.5-2.91-.04-.85-.6-1.68-1.41-1.77-.67-.07-1.16.39-.99.98C8.76 3.91 6.13 6.2 4 7.49v6c1.66 1.03 4.35 1.56 7.48 1.5.19 0 .39-.01.62-.02h.09c.22-.01.46-.03.73-.05.71-.06 1.54-.51 1.5-1.09-.03-.51-.4-.79-.87-.93.27-.02.54-.04.79-.06.71-.06 1.24-.45 1.17-1.04-.06-.58-.7-.97-1.41-1.07-.02 0-.05-.01-.07-.01.29-.02.57-.03.81-.05.71-.03 1.23-.47 1.15-1.05zM2 7H0v7h2c.55 0 1-.45 1-1V8c0-.56-.45-1-1-1z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="toolbar-item
+                    "
+        >
+          <div>
+            <button
+              class="bp3-button toolbar-button--icon-only"
+              style="width: 30px;"
+              title="Just an icon"
+              type="button"
+            >
+              <span
+                class="bp3-button-text"
+              >
+                <span
+                  class="bp3-icon bp3-icon-thumbs-down"
+                  icon="thumbs-down"
+                >
+                  <svg
+                    data-icon="thumbs-down"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      d="M2 2H0v7h2c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm13.99 4.38c.08-.58-.44-1.02-1.15-1.05-.25-.01-.52-.03-.81-.05.02 0 .05-.01.07-.01.7-.1 1.34-.49 1.41-1.07.06-.58-.46-.97-1.17-1.04-.25-.02-.52-.04-.79-.06.47-.15.84-.42.87-.93.04-.58-.79-1.03-1.5-1.09-.27-.02-.51-.04-.73-.05h-.09c-.23-.02-.43-.02-.62-.03C8.35.95 5.66 1.47 4 2.51v6c2.14 1.29 4.76 3.59 4.21 5.51-.18.59.31 1.05.98.98.81-.09 1.37-.91 1.4-1.78.04-1-.15-2.01-.5-2.91-.04-.25.01-.5.37-.53.49-.03 1.11-.06 1.59-.08.26 0 .51-.01.75-.02h.01c.41-.02.8-.05 1.13-.09.7-.09 1.35-.47 1.43-1.05.08-.58-.44-.97-1.15-1.05-.05-.01-.11-.01-.16-.02.17-.01.33-.03.49-.05.72-.08 1.37-.46 1.44-1.04z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="toolbar-item
+                    "
+        >
+          <div
+            class="toolbar-switch"
+            title="Toggle a switch"
+          >
+            <div
+              class="toolbar-switch-label"
+            >
+              On/Off:
+            </div>
+            <label
+              class="bp3-control bp3-switch bp3-large toolbar-switch__blueprint on/off"
+            >
+              <input
+                title="Toggle a switch"
+                type="checkbox"
+              />
+              <span
+                class="bp3-control-indicator"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="toolbar-example__divider"
+      style="border-right: 2px solid white; padding-right: 2px;"
+    />
+  </div>
+  <div
+    style="color: rgb(215, 183, 64); font-family: monospace;"
+  >
+    Toolbar Width: 1000
+    <br />
+  </div>
+  <div
+    style="color: rgb(215, 183, 64); font-family: monospace;"
+  >
+    Toggle: false
+    <br />
+  </div>
+  <div
+    style="color: rgb(215, 183, 64); font-family: monospace;"
+  >
+    Popover: false
+    <br />
+  </div>
+  <div
+    style="color: rgb(215, 183, 64); font-family: monospace;"
+  >
+    Dropdown: Example Value One
+    <br />
+  </div>
+  <div
+    style="color: rgb(215, 183, 64); font-family: monospace;"
+  >
+    Numeric Input: 10
+    <br />
+  </div>
+  <div
+    style="color: rgb(215, 183, 64); font-family: monospace;"
+  >
+    Start Date: 1575410988600
+    <br />
+  </div>
+  <div
+    style="color: rgb(215, 183, 64); font-family: monospace;"
+  >
+    End Date: 1575410988600
+    <br />
+  </div>
+</div>
+`;

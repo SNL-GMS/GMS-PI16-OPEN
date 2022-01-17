@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`boundary-util calculateAndStoreBounds merges and updates the bounds for a channel when given another segment with the same id 1`] = `
+Object {
+  "bottomMax": -100,
+  "channelAvg": 0,
+  "channelSegmentId": "unfiltered",
+  "offset": 100,
+  "topMax": 100,
+}
+`;
+
+exports[`boundary-util calculateAndStoreBounds stores the bounds for a channel which can be retrieved 1`] = `
+Object {
+  "bottomMax": -100,
+  "channelAvg": 0,
+  "channelSegmentId": "unfiltered",
+  "offset": 100,
+  "topMax": 100,
+}
+`;

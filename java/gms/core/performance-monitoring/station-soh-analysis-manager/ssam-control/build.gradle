@@ -1,0 +1,22 @@
+apply plugin: "java-library"
+
+dependencies {
+    implementation project(":ssam-control-api")
+    implementation project(":frameworks-control")
+    implementation project(":frameworks-system-config")
+    implementation project(":soh-control")
+    implementation project(":frameworks-osd-api")
+    implementation project(":ui-materialized-view")
+    implementation project(':structured-logging')
+
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'io.projectreactor.kafka:reactor-kafka'
+    // Google AutoValue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+    implementation project(":frameworks-osd-repository")
+
+    testImplementation 'io.projectreactor:reactor-test'
+
+    testImplementation project(':component-test-utils')
+}

@@ -1,0 +1,19 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    api project(':workflow-coi')
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation project(":workflow-dao")
+    implementation project(":bridge-utilities")
+    implementation project(':structured-logging')
+
+    // Testing.
+    testImplementation project(':station-definition-testfixtures')
+    testImplementation project(':db-test-utils')
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'com.h2database:h2'
+
+    implementation 'javax.persistence:javax.persistence-api'
+}

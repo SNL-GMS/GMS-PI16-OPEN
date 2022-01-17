@@ -1,0 +1,649 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Station Name cell renderer StationNameCellRenderer can be created 1`] = `
+<StationNameCellRenderer
+  context={
+    Object {
+      "data": Object {
+        "channelEnvironment": Object {
+          "isContributing": true,
+          "status": "GOOD",
+          "value": 1,
+        },
+        "channelLag": Object {
+          "isContributing": true,
+          "status": "GOOD",
+          "value": 1,
+        },
+        "channelMissing": Object {
+          "isContributing": true,
+          "status": "GOOD",
+          "value": 1,
+        },
+        "channelTimeliness": Object {
+          "isContributing": true,
+          "status": "GOOD",
+          "value": 1,
+        },
+        "id": "test",
+        "needsAcknowledgement": false,
+        "needsAttention": true,
+        "stationData": Object {
+          "stationCapabilityStatus": "GOOD",
+          "stationName": "test",
+          "stationStatus": "GOOD",
+        },
+        "stationEnvironment": 1,
+        "stationGroups": Array [
+          Object {
+            "groupName": "Group",
+            "sohStationCapability": "GOOD",
+            "stationName": "test",
+          },
+        ],
+        "stationLag": 2,
+        "stationMissing": 3,
+        "stationTimeliness": 4,
+      },
+    }
+  }
+  data={
+    Object {
+      "channelEnvironment": Object {
+        "isContributing": true,
+        "status": "GOOD",
+        "value": 1,
+      },
+      "channelLag": Object {
+        "isContributing": true,
+        "status": "GOOD",
+        "value": 1,
+      },
+      "channelMissing": Object {
+        "isContributing": true,
+        "status": "GOOD",
+        "value": 1,
+      },
+      "channelTimeliness": Object {
+        "isContributing": true,
+        "status": "GOOD",
+        "value": 1,
+      },
+      "id": "test",
+      "needsAcknowledgement": false,
+      "needsAttention": true,
+      "stationData": Object {
+        "stationCapabilityStatus": "GOOD",
+        "stationName": "test",
+        "stationStatus": "GOOD",
+      },
+      "stationEnvironment": 1,
+      "stationGroups": Array [
+        Object {
+          "groupName": "Group",
+          "sohStationCapability": "GOOD",
+          "stationName": "test",
+        },
+      ],
+      "stationLag": 2,
+      "stationMissing": 3,
+      "stationTimeliness": 4,
+    }
+  }
+  formatValue={[MockFunction]}
+  getValue={[MockFunction]}
+  rowIndex={1}
+  setValue={[MockFunction]}
+  value={2.5}
+  valueFormatted={3}
+>
+  <div
+    data-cy="station-name-cell"
+  >
+    <StationStatisticsDragCell
+      stationId="test"
+    >
+      <DragCell
+        getSelectedStationIds={[Function]}
+        getSingleDragImage={[Function]}
+        setSelectedStationIds={[Function]}
+        stationId="test"
+      >
+        <DragInitiator
+          getDragImage={[Function]}
+          getDragPayload={[Function]}
+          onDragEnd={[Function]}
+          onDragStart={[Function]}
+        >
+          <div
+            draggable={true}
+            onDragEnd={[Function]}
+            onDragStart={[Function]}
+          >
+            <NameCell
+              cellStatus="good"
+              context={
+                Object {
+                  "data": Object {
+                    "channelEnvironment": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 1,
+                    },
+                    "channelLag": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 1,
+                    },
+                    "channelMissing": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 1,
+                    },
+                    "channelTimeliness": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 1,
+                    },
+                    "id": "test",
+                    "needsAcknowledgement": false,
+                    "needsAttention": true,
+                    "stationData": Object {
+                      "stationCapabilityStatus": "GOOD",
+                      "stationName": "test",
+                      "stationStatus": "GOOD",
+                    },
+                    "stationEnvironment": 1,
+                    "stationGroups": Array [
+                      Object {
+                        "groupName": "Group",
+                        "sohStationCapability": "GOOD",
+                        "stationName": "test",
+                      },
+                    ],
+                    "stationLag": 2,
+                    "stationMissing": 3,
+                    "stationTimeliness": 4,
+                  },
+                }
+              }
+              data={
+                Object {
+                  "channelEnvironment": Object {
+                    "isContributing": true,
+                    "status": "GOOD",
+                    "value": 1,
+                  },
+                  "channelLag": Object {
+                    "isContributing": true,
+                    "status": "GOOD",
+                    "value": 1,
+                  },
+                  "channelMissing": Object {
+                    "isContributing": true,
+                    "status": "GOOD",
+                    "value": 1,
+                  },
+                  "channelTimeliness": Object {
+                    "isContributing": true,
+                    "status": "GOOD",
+                    "value": 1,
+                  },
+                  "id": "test",
+                  "needsAcknowledgement": false,
+                  "needsAttention": true,
+                  "stationData": Object {
+                    "stationCapabilityStatus": "GOOD",
+                    "stationName": "test",
+                    "stationStatus": "GOOD",
+                  },
+                  "stationEnvironment": 1,
+                  "stationGroups": Array [
+                    Object {
+                      "groupName": "Group",
+                      "sohStationCapability": "GOOD",
+                      "stationName": "test",
+                    },
+                  ],
+                  "stationLag": 2,
+                  "stationMissing": 3,
+                  "stationTimeliness": 4,
+                }
+              }
+              dataReceivedStatus="received"
+              formatValue={[MockFunction]}
+              getValue={[MockFunction]}
+              leftChild={
+                <CapabilityCounts
+                  parentCapability="GOOD"
+                  stationGroups={
+                    Array [
+                      Object {
+                        "groupName": "Group",
+                        "sohStationCapability": "GOOD",
+                        "stationName": "test",
+                      },
+                    ]
+                  }
+                />
+              }
+              name="test"
+              rowIndex={1}
+              setValue={[MockFunction]}
+              tooltipMsg="Worst of capability rollup"
+              value={2.5}
+              valueFormatted={3}
+            >
+              <SohRollupCell
+                cellStatus="good"
+                className="
+        soh-cell__title
+        soh-cell--solid
+      "
+                context={
+                  Object {
+                    "data": Object {
+                      "channelEnvironment": Object {
+                        "isContributing": true,
+                        "status": "GOOD",
+                        "value": 1,
+                      },
+                      "channelLag": Object {
+                        "isContributing": true,
+                        "status": "GOOD",
+                        "value": 1,
+                      },
+                      "channelMissing": Object {
+                        "isContributing": true,
+                        "status": "GOOD",
+                        "value": 1,
+                      },
+                      "channelTimeliness": Object {
+                        "isContributing": true,
+                        "status": "GOOD",
+                        "value": 1,
+                      },
+                      "id": "test",
+                      "needsAcknowledgement": false,
+                      "needsAttention": true,
+                      "stationData": Object {
+                        "stationCapabilityStatus": "GOOD",
+                        "stationName": "test",
+                        "stationStatus": "GOOD",
+                      },
+                      "stationEnvironment": 1,
+                      "stationGroups": Array [
+                        Object {
+                          "groupName": "Group",
+                          "sohStationCapability": "GOOD",
+                          "stationName": "test",
+                        },
+                      ],
+                      "stationLag": 2,
+                      "stationMissing": 3,
+                      "stationTimeliness": 4,
+                    },
+                  }
+                }
+                cy-station-name="test"
+                data={
+                  Object {
+                    "channelEnvironment": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 1,
+                    },
+                    "channelLag": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 1,
+                    },
+                    "channelMissing": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 1,
+                    },
+                    "channelTimeliness": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 1,
+                    },
+                    "id": "test",
+                    "needsAcknowledgement": false,
+                    "needsAttention": true,
+                    "stationData": Object {
+                      "stationCapabilityStatus": "GOOD",
+                      "stationName": "test",
+                      "stationStatus": "GOOD",
+                    },
+                    "stationEnvironment": 1,
+                    "stationGroups": Array [
+                      Object {
+                        "groupName": "Group",
+                        "sohStationCapability": "GOOD",
+                        "stationName": "test",
+                      },
+                    ],
+                    "stationLag": 2,
+                    "stationMissing": 3,
+                    "stationTimeliness": 4,
+                  }
+                }
+                data-cy="soh-name-cell"
+                dataReceivedStatus="received"
+                formatValue={[MockFunction]}
+                getValue={[MockFunction]}
+                leftChild={
+                  <CapabilityCounts
+                    parentCapability="GOOD"
+                    stationGroups={
+                      Array [
+                        Object {
+                          "groupName": "Group",
+                          "sohStationCapability": "GOOD",
+                          "stationName": "test",
+                        },
+                      ]
+                    }
+                  />
+                }
+                name="test"
+                rowIndex={1}
+                setValue={[MockFunction]}
+                stationId="test"
+                tooltipMsg="Worst of capability rollup"
+                value={2.5}
+                valueFormatted={3}
+              >
+                <TableCellRenderer
+                  cellStatus="good"
+                  className="soh-cell 
+        soh-cell__title
+        soh-cell--solid
+      "
+                  context={
+                    Object {
+                      "data": Object {
+                        "channelEnvironment": Object {
+                          "isContributing": true,
+                          "status": "GOOD",
+                          "value": 1,
+                        },
+                        "channelLag": Object {
+                          "isContributing": true,
+                          "status": "GOOD",
+                          "value": 1,
+                        },
+                        "channelMissing": Object {
+                          "isContributing": true,
+                          "status": "GOOD",
+                          "value": 1,
+                        },
+                        "channelTimeliness": Object {
+                          "isContributing": true,
+                          "status": "GOOD",
+                          "value": 1,
+                        },
+                        "id": "test",
+                        "needsAcknowledgement": false,
+                        "needsAttention": true,
+                        "stationData": Object {
+                          "stationCapabilityStatus": "GOOD",
+                          "stationName": "test",
+                          "stationStatus": "GOOD",
+                        },
+                        "stationEnvironment": 1,
+                        "stationGroups": Array [
+                          Object {
+                            "groupName": "Group",
+                            "sohStationCapability": "GOOD",
+                            "stationName": "test",
+                          },
+                        ],
+                        "stationLag": 2,
+                        "stationMissing": 3,
+                        "stationTimeliness": 4,
+                      },
+                    }
+                  }
+                  cy-station-name="test"
+                  data={
+                    Object {
+                      "channelEnvironment": Object {
+                        "isContributing": true,
+                        "status": "GOOD",
+                        "value": 1,
+                      },
+                      "channelLag": Object {
+                        "isContributing": true,
+                        "status": "GOOD",
+                        "value": 1,
+                      },
+                      "channelMissing": Object {
+                        "isContributing": true,
+                        "status": "GOOD",
+                        "value": 1,
+                      },
+                      "channelTimeliness": Object {
+                        "isContributing": true,
+                        "status": "GOOD",
+                        "value": 1,
+                      },
+                      "id": "test",
+                      "needsAcknowledgement": false,
+                      "needsAttention": true,
+                      "stationData": Object {
+                        "stationCapabilityStatus": "GOOD",
+                        "stationName": "test",
+                        "stationStatus": "GOOD",
+                      },
+                      "stationEnvironment": 1,
+                      "stationGroups": Array [
+                        Object {
+                          "groupName": "Group",
+                          "sohStationCapability": "GOOD",
+                          "stationName": "test",
+                        },
+                      ],
+                      "stationLag": 2,
+                      "stationMissing": 3,
+                      "stationTimeliness": 4,
+                    }
+                  }
+                  data-cell-status="good"
+                  data-cy="soh-name-cell"
+                  data-received-status="received"
+                  data-station-id="test"
+                  dataReceivedStatus="received"
+                  formatValue={[MockFunction]}
+                  getValue={[MockFunction]}
+                  leftChild={
+                    <CapabilityCounts
+                      parentCapability="GOOD"
+                      stationGroups={
+                        Array [
+                          Object {
+                            "groupName": "Group",
+                            "sohStationCapability": "GOOD",
+                            "stationName": "test",
+                          },
+                        ]
+                      }
+                    />
+                  }
+                  name="test"
+                  rowIndex={1}
+                  setValue={[MockFunction]}
+                  stationId="test"
+                  tooltipMsg="Worst of capability rollup"
+                  value={2.5}
+                  valueFormatted={3}
+                >
+                  <div
+                    className="table-cell soh-cell 
+        soh-cell__title
+        soh-cell--solid
+      "
+                    data-cell-status="good"
+                    data-cy="soh-name-cell"
+                    data-received-status="received"
+                    data-station-id="test"
+                    style={
+                      Object {
+                        "height": "36px",
+                        "overflow": "hidden",
+                      }
+                    }
+                    title="Worst of capability rollup"
+                  >
+                    <CapabilityCounts
+                      parentCapability="GOOD"
+                      stationGroups={
+                        Array [
+                          Object {
+                            "groupName": "Group",
+                            "sohStationCapability": "GOOD",
+                            "stationName": "test",
+                          },
+                        ]
+                      }
+                    >
+                      <div
+                        className="stacked-counts"
+                      >
+                        <div
+                          className="stacked-counts__entry"
+                          data-capability-status="bad"
+                        >
+                           
+                        </div>
+                        <div
+                          className="stacked-counts__entry"
+                          data-capability-status="marginal"
+                        >
+                           
+                        </div>
+                      </div>
+                    </CapabilityCounts>
+                    <div
+                      className=" table-cell__value"
+                      data-cy="table-cell__value"
+                    >
+                      <span>
+                        2.5
+                      </span>
+                    </div>
+                    <WorstOfBadge
+                      widthPx={40}
+                      worstOfSohStatus="GOOD"
+                    />
+                  </div>
+                </TableCellRenderer>
+              </SohRollupCell>
+            </NameCell>
+          </div>
+        </DragInitiator>
+      </DragCell>
+    </StationStatisticsDragCell>
+  </div>
+</StationNameCellRenderer>
+`;
+
+exports[`Station Name cell renderer can be created handle no data 1`] = `
+<StationNameCellRenderer
+  context={
+    Object {
+      "data": Object {
+        "channelEnvironment": Object {
+          "isContributing": true,
+          "status": "GOOD",
+          "value": 1,
+        },
+        "channelLag": Object {
+          "isContributing": true,
+          "status": "GOOD",
+          "value": 1,
+        },
+        "channelMissing": Object {
+          "isContributing": true,
+          "status": "GOOD",
+          "value": 1,
+        },
+        "channelTimeliness": Object {
+          "isContributing": true,
+          "status": "GOOD",
+          "value": 1,
+        },
+        "id": "test",
+        "needsAcknowledgement": false,
+        "needsAttention": true,
+        "stationData": Object {
+          "stationCapabilityStatus": "GOOD",
+          "stationName": "test",
+          "stationStatus": "GOOD",
+        },
+        "stationEnvironment": 1,
+        "stationGroups": Array [
+          Object {
+            "groupName": "Group",
+            "sohStationCapability": "GOOD",
+            "stationName": "test",
+          },
+        ],
+        "stationLag": 2,
+        "stationMissing": 3,
+        "stationTimeliness": 4,
+      },
+    }
+  }
+  data={
+    Object {
+      "channelEnvironment": Object {
+        "isContributing": true,
+        "status": "GOOD",
+        "value": 1,
+      },
+      "channelLag": Object {
+        "isContributing": true,
+        "status": "GOOD",
+        "value": 1,
+      },
+      "channelMissing": Object {
+        "isContributing": true,
+        "status": "GOOD",
+        "value": 1,
+      },
+      "channelTimeliness": Object {
+        "isContributing": true,
+        "status": "GOOD",
+        "value": 1,
+      },
+      "id": "test",
+      "needsAcknowledgement": false,
+      "needsAttention": true,
+      "stationData": Object {
+        "stationCapabilityStatus": "GOOD",
+        "stationName": "test",
+        "stationStatus": "GOOD",
+      },
+      "stationEnvironment": 1,
+      "stationGroups": Array [
+        Object {
+          "groupName": "Group",
+          "sohStationCapability": "GOOD",
+          "stationName": "test",
+        },
+      ],
+      "stationLag": 2,
+      "stationMissing": 3,
+      "stationTimeliness": 4,
+    }
+  }
+  formatValue={[MockFunction]}
+  getValue={[MockFunction]}
+  rowIndex={1}
+  setValue={[MockFunction]}
+  value={2.5}
+  valueFormatted={3}
+/>
+`;

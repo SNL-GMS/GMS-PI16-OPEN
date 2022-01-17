@@ -1,0 +1,14 @@
+apiVersion: v2
+appVersion: 3.0.0-alpha.1
+description: A Helm chart for Kubernetes
+home: https://github.com/Accenture/reactive-interaction-gateway
+icon: https://github.com/Accenture/reactive-interaction-gateway/blob/master/logo/Reactive-Interaction-Gateway-logo-cropped.png
+maintainers:
+- name: kevinbader
+  url: https://github.com/kevinbader
+- name: mmacai
+  url: https://github.com/mmacai
+- name: Knappek
+  url: https://github.com/Knappek
+name: reactive-interaction-gateway
+version: 2.0.0

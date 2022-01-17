@@ -1,0 +1,56 @@
+{
+  "name": "stage-accounts-default",
+  "constraints": [
+    {
+      "constraintType": "DEFAULT"
+    }
+  ],
+  "parameters": {
+    "databaseAccountsByStage": [
+      {
+        "workflowDefinitionId": {
+          "name": "Auto Network"
+        },
+        "databaseAccount": "jdbc:oracle:thin:/@gms_detpro_ro"
+      },
+      {
+        "workflowDefinitionId": {
+          "name": "AL1"
+        },
+        "databaseAccount": "jdbc:oracle:thin:/@gms_al1_ro"
+      },
+      {
+        "workflowDefinitionId": {
+          "name": "Auto Post-AL1"
+        },
+        "databaseAccount": "jdbc:oracle:thin:/@gms_al1_ro"
+      },
+      {
+        "workflowDefinitionId": {
+          "name": "AL2"
+        },
+        "databaseAccount": "jdbc:oracle:thin:/@gms_al2_ro"
+      }
+    ],
+    "previousDatabaseAccountsByStage": [
+      {
+        "workflowDefinitionId": {
+          "name": "AL1"
+        },
+        "databaseAccount": "jdbc:oracle:thin:/@gms_detpro_ro"
+      },
+      {
+        "workflowDefinitionId": {
+          "name": "Auto Post-AL1"
+        },
+        "databaseAccount": "jdbc:oracle:thin:/@gms_al1_ro"
+      },
+      {
+        "workflowDefinitionId": {
+          "name": "AL2"
+        },
+        "databaseAccount": "jdbc:oracle:thin:/@gms_al1_ro"
+      }
+    ]
+  }
+}

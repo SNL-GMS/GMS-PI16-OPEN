@@ -1,0 +1,50 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation project(':station-definition-repository')
+    implementation project(':station-definition-converter')
+    implementation project(':station-definition-dao')
+    implementation project(':station-definition-api')
+    implementation project(':caching-utils')
+    implementation project(':frameworks-configuration-repository')
+    implementation project(':frameworks-configuration-commonobjects')
+    implementation project(':frameworks-control')
+    implementation project(':java-utilities')
+    implementation project(':bridge-utilities')
+    implementation 'com.oracle.ojdbc:ojdbc8'
+    implementation 'org.quartz-scheduler:quartz'
+
+    // Ignite cache libs
+    implementation 'javax.cache:cache-api'
+    implementation 'org.apache.ignite:ignite-core'
+    implementation 'org.apache.ignite:ignite-log4j'
+    constraints {
+        implementation('io.netty:netty-all:4.1.51.Final') {
+            because 'io.projectreactor.netty is grabbing older netty-all version'
+        }
+    }
+
+    //Google autovalue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    implementation 'com.google.guava:guava'
+
+    // Logback for Structured Logging
+    implementation 'ch.qos.logback:logback-classic'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation project(':structured-logging')
+
+    implementation 'net.jodah:failsafe'
+
+    implementation 'org.hibernate:hibernate-entitymanager'
+    // unit testing dependencies
+    testImplementation project(":frameworks-test-utilities")
+    testImplementation project(":station-definition-testfixtures")
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.mockito:mockito-inline'
+    testImplementation 'org.mockito:mockito-core'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+
+}

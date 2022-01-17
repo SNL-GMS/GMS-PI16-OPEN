@@ -1,0 +1,382 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`station control StationControls matches a snapshot when given basic props 1`] = `
+<StationControls
+  checkboxItems={
+    Array [
+      Object {
+        "checked": true,
+        "id": "id1",
+        "name": "id1",
+      },
+      Object {
+        "checked": false,
+        "id": "id2",
+        "name": "id2",
+      },
+    ]
+  }
+  setCheckboxItems={[MockFunction]}
+>
+  <Blueprint3.Popover
+    boundary="scrollParent"
+    captureDismiss={false}
+    content={
+      <CheckboxSearchList
+        items={
+          Array [
+            Object {
+              "checked": true,
+              "id": "id1",
+              "name": "id1",
+            },
+            Object {
+              "checked": false,
+              "id": "id2",
+              "name": "id2",
+            },
+          ]
+        }
+        maxHeightPx={200}
+        onCheckboxChecked={[Function]}
+      />
+    }
+    defaultIsOpen={false}
+    disabled={false}
+    fill={false}
+    hasBackdrop={false}
+    hoverCloseDelay={300}
+    hoverOpenDelay={150}
+    inheritDarkTheme={true}
+    interactionKind="click"
+    minimal={false}
+    modifiers={Object {}}
+    openOnTargetFocus={true}
+    position="auto"
+    targetTagName="span"
+    transitionDuration={300}
+    usePortal={true}
+    wrapperTagName="span"
+  >
+    <Manager>
+      <span
+        className="bp3-popover-wrapper"
+      >
+        <Reference
+          innerRef={[Function]}
+        >
+          <InnerReference
+            innerRef={[Function]}
+            setReferenceNode={[Function]}
+          >
+            <Blueprint3.ResizeSensor
+              onResize={[Function]}
+            >
+              <span
+                className="bp3-popover-target"
+                onClick={[Function]}
+              >
+                <Blueprint3.Button
+                  alignText="left"
+                  className=""
+                  key=".0"
+                  rightIcon="caret-down"
+                  style={
+                    Object {
+                      "width": 94,
+                    }
+                  }
+                  title="Select stations to be shown"
+                  value="Stations"
+                >
+                  <button
+                    className="bp3-button bp3-align-left"
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    style={
+                      Object {
+                        "width": 94,
+                      }
+                    }
+                    title="Select stations to be shown"
+                    type="button"
+                    value="Stations"
+                  >
+                    <Blueprint3.Icon
+                      key="leftIcon"
+                    />
+                    <span
+                      className="bp3-button-text"
+                      key="text"
+                    >
+                      Stations
+                    </span>
+                    <Blueprint3.Icon
+                      icon="caret-down"
+                      key="rightIcon"
+                    >
+                      <span
+                        className="bp3-icon bp3-icon-caret-down"
+                        icon="caret-down"
+                      >
+                        <svg
+                          data-icon="caret-down"
+                          height={16}
+                          viewBox="0 0 16 16"
+                          width={16}
+                        >
+                          <desc>
+                            caret-down
+                          </desc>
+                          <path
+                            d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 00-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z"
+                            fillRule="evenodd"
+                            key="0"
+                          />
+                        </svg>
+                      </span>
+                    </Blueprint3.Icon>
+                  </button>
+                </Blueprint3.Button>
+              </span>
+            </Blueprint3.ResizeSensor>
+          </InnerReference>
+        </Reference>
+        <Blueprint3.Overlay
+          autoFocus={true}
+          backdropClassName="bp3-popover-backdrop"
+          backdropProps={Object {}}
+          canEscapeKeyClose={true}
+          canOutsideClickClose={true}
+          enforceFocus={true}
+          hasBackdrop={false}
+          isOpen={false}
+          lazy={true}
+          onClose={[Function]}
+          transitionDuration={300}
+          transitionName="bp3-popover"
+          usePortal={true}
+        />
+      </span>
+    </Manager>
+  </Blueprint3.Popover>
+</StationControls>
+`;
+
+exports[`station control buildStationsDropdown matches a snapshot 1`] = `
+Object {
+  "element": <StationControls
+    checkboxItems={
+      Array [
+        Object {
+          "checked": true,
+          "id": "id1",
+          "name": "id1",
+        },
+        Object {
+          "checked": false,
+          "id": "id2",
+          "name": "id2",
+        },
+      ]
+    }
+    setCheckboxItems={[MockFunction]}
+  />,
+  "label": "Stations",
+  "rank": 1,
+  "tooltip": "Check a station to display",
+  "type": "CustomItem",
+}
+`;
+
+exports[`station control buildUpdatedList matches a snapshot 1`] = `
+Array [
+  Object {
+    "checked": false,
+    "id": "id1",
+    "name": "id1",
+  },
+  Object {
+    "checked": false,
+    "id": "id2",
+    "name": "id2",
+  },
+]
+`;
+
+exports[`station control useStationsDropdownControl matches a snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <TestComponent>
+    <StationControls
+      checkboxItems={
+        Array [
+          Object {
+            "checked": true,
+            "id": "name",
+            "name": "name",
+          },
+          Object {
+            "checked": true,
+            "id": "name2",
+            "name": "name2",
+          },
+        ]
+      }
+      setCheckboxItems={[Function]}
+    >
+      <Blueprint3.Popover
+        boundary="scrollParent"
+        captureDismiss={false}
+        content={
+          <CheckboxSearchList
+            items={
+              Array [
+                Object {
+                  "checked": true,
+                  "id": "name",
+                  "name": "name",
+                },
+                Object {
+                  "checked": true,
+                  "id": "name2",
+                  "name": "name2",
+                },
+              ]
+            }
+            maxHeightPx={200}
+            onCheckboxChecked={[Function]}
+          />
+        }
+        defaultIsOpen={false}
+        disabled={false}
+        fill={false}
+        hasBackdrop={false}
+        hoverCloseDelay={300}
+        hoverOpenDelay={150}
+        inheritDarkTheme={true}
+        interactionKind="click"
+        minimal={false}
+        modifiers={Object {}}
+        openOnTargetFocus={true}
+        position="auto"
+        targetTagName="span"
+        transitionDuration={300}
+        usePortal={true}
+        wrapperTagName="span"
+      >
+        <Manager>
+          <span
+            className="bp3-popover-wrapper"
+          >
+            <Reference
+              innerRef={[Function]}
+            >
+              <InnerReference
+                innerRef={[Function]}
+                setReferenceNode={[Function]}
+              >
+                <Blueprint3.ResizeSensor
+                  onResize={[Function]}
+                >
+                  <span
+                    className="bp3-popover-target"
+                    onClick={[Function]}
+                  >
+                    <Blueprint3.Button
+                      alignText="left"
+                      className=""
+                      key=".0"
+                      rightIcon="caret-down"
+                      style={
+                        Object {
+                          "width": 94,
+                        }
+                      }
+                      title="Select stations to be shown"
+                      value="Stations"
+                    >
+                      <button
+                        className="bp3-button bp3-align-left"
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        style={
+                          Object {
+                            "width": 94,
+                          }
+                        }
+                        title="Select stations to be shown"
+                        type="button"
+                        value="Stations"
+                      >
+                        <Blueprint3.Icon
+                          key="leftIcon"
+                        />
+                        <span
+                          className="bp3-button-text"
+                          key="text"
+                        >
+                          Stations
+                        </span>
+                        <Blueprint3.Icon
+                          icon="caret-down"
+                          key="rightIcon"
+                        >
+                          <span
+                            className="bp3-icon bp3-icon-caret-down"
+                            icon="caret-down"
+                          >
+                            <svg
+                              data-icon="caret-down"
+                              height={16}
+                              viewBox="0 0 16 16"
+                              width={16}
+                            >
+                              <desc>
+                                caret-down
+                              </desc>
+                              <path
+                                d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 00-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z"
+                                fillRule="evenodd"
+                                key="0"
+                              />
+                            </svg>
+                          </span>
+                        </Blueprint3.Icon>
+                      </button>
+                    </Blueprint3.Button>
+                  </span>
+                </Blueprint3.ResizeSensor>
+              </InnerReference>
+            </Reference>
+            <Blueprint3.Overlay
+              autoFocus={true}
+              backdropClassName="bp3-popover-backdrop"
+              backdropProps={Object {}}
+              canEscapeKeyClose={true}
+              canOutsideClickClose={true}
+              enforceFocus={true}
+              hasBackdrop={false}
+              isOpen={false}
+              lazy={true}
+              onClose={[Function]}
+              transitionDuration={300}
+              transitionName="bp3-popover"
+              usePortal={true}
+            />
+          </span>
+        </Manager>
+      </Blueprint3.Popover>
+    </StationControls>
+  </TestComponent>
+</Provider>
+`;

@@ -1,0 +1,1638 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Waveform Panel can get the current view range in seconds 1`] = `
+Object {
+  "endTimeSecs": 100,
+  "startTimeSecs": 0,
+}
+`;
+
+exports[`Weavess Waveform Panel matches a snapshot 1`] = `
+<WaveformPanel
+  clearSelectedChannels={[MockFunction]}
+  convertTimeToGL={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          0,
+        ],
+        Array [
+          100,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  endTimeSecs={100}
+  events={
+    Object {
+      "onClickSelectionWindow": undefined,
+      "onMoveSelectionWindow": undefined,
+      "onUpdateMarker": undefined,
+      "onUpdateSelectionWindow": undefined,
+      "onZoomChange": undefined,
+      "stationEvents": Object {
+        "defaultChannelEvents": Object {
+          "events": Object {
+            "onChannelClick": undefined,
+            "onClickSelectionWindow": undefined,
+            "onContextMenu": undefined,
+            "onMeasureWindowUpdated": undefined,
+            "onMoveSelectionWindow": undefined,
+            "onPredictivePhaseClick": undefined,
+            "onPredictivePhaseContextMenu": undefined,
+            "onPredictivePhaseDragEnd": undefined,
+            "onSignalDetectionClick": undefined,
+            "onSignalDetectionContextMenu": undefined,
+            "onSignalDetectionDragEnd": undefined,
+            "onUpdateMarker": undefined,
+            "onUpdateSelectionWindow": undefined,
+          },
+          "labelEvents": Object {
+            "onChannelCollapsed": undefined,
+            "onChannelExpanded": undefined,
+            "onChannelLabelClick": undefined,
+          },
+          "onKeyPress": undefined,
+        },
+        "nonDefaultChannelEvents": Object {
+          "events": Object {
+            "onChannelClick": undefined,
+            "onClickSelectionWindow": undefined,
+            "onContextMenu": undefined,
+            "onMeasureWindowUpdated": undefined,
+            "onMoveSelectionWindow": undefined,
+            "onPredictivePhaseClick": undefined,
+            "onPredictivePhaseContextMenu": undefined,
+            "onPredictivePhaseDragEnd": undefined,
+            "onSignalDetectionClick": undefined,
+            "onSignalDetectionContextMenu": undefined,
+            "onSignalDetectionDragEnd": undefined,
+            "onUpdateMarker": undefined,
+            "onUpdateSelectionWindow": undefined,
+          },
+          "labelEvents": Object {
+            "onChannelCollapsed": undefined,
+            "onChannelExpanded": undefined,
+            "onChannelLabelClick": undefined,
+          },
+          "onKeyPress": undefined,
+        },
+      },
+    }
+  }
+  initialConfiguration={
+    Object {
+      "colorScale": undefined,
+      "defaultChannel": Object {
+        "disableMeasureWindow": true,
+      },
+      "defaultChannelHeightPx": 50,
+      "hotKeys": Object {
+        "amplitudeScale": "KeyS",
+        "amplitudeScaleReset": "Alt+Shift+KeyS",
+        "amplitudeScaleSingleReset": "Alt+KeyS",
+        "drawMeasureWindow": "Alt",
+        "maskCreate": "KeyM",
+      },
+      "labelWidthPx": 65,
+      "nonDefaultChannel": Object {},
+      "shouldRenderSpectrograms": false,
+      "shouldRenderWaveforms": true,
+      "suppressLabelYAxis": false,
+      "xAxisLabel": "x axis",
+    }
+  }
+  isMeasureWindow={false}
+  resetAmplitudes={[MockFunction]}
+  shouldRenderSpectrograms={false}
+  shouldRenderWaveforms={true}
+  startTimeSecs={0}
+  stations={
+    Array [
+      Object {
+        "defaultChannel": Object {
+          "height": 40,
+          "id": "id",
+          "name": "default channel",
+          "waveform": Object {
+            "channelSegmentId": "data",
+            "channelSegments": Map {
+              "data" => Object {
+                "channelName": "TestChannel",
+                "dataSegments": Array [
+                  Object {
+                    "color": "tomato",
+                    "data": Object {
+                      "endTimeSecs": 100,
+                      "sampleRate": 40,
+                      "startTimeSecs": 0,
+                      "values": Float32Array [
+                        0,
+                        0,
+                        1,
+                        10,
+                        2,
+                        20,
+                        3,
+                        30,
+                      ],
+                    },
+                    "pointSize": 1,
+                  },
+                ],
+                "wfFilterId": "unfiltered",
+              },
+            },
+          },
+        },
+        "id": "id",
+        "name": "name",
+        "nonDefaultChannels": Array [],
+      },
+    ]
+  }
+  toast={[MockFunction]}
+>
+  <div
+    className="weavess-wp"
+    onDoubleClick={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "--weavess-scrollbar-track-margin": "65px",
+        "boxSizing": "content-box",
+        "height": "100%",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <canvas
+      className="weavess-wp-canvas"
+      style={
+        Object {
+          "height": "calc(100% - (35px))",
+          "left": "65px",
+          "width": "calc(100% - (65px + 10px))",
+        }
+      }
+    />
+    <div
+      className="weavess-wp-container"
+    >
+      <div
+        className="weavess-wp-container-1"
+      >
+        <div
+          className="weavess-wp-container-2"
+        >
+          <div
+            className="weavess-wp-container-3"
+          >
+            <div
+              className="weavess-wp-container-viewport"
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onScroll={[Function]}
+              onWheel={[Function]}
+            >
+              <div
+                className="weavess-wp-container-viewport-content"
+              >
+                <Station
+                  canvasRef={[Function]}
+                  converters={
+                    Object {
+                      "computeFractionOfCanvasFromMouseXPx": [Function],
+                      "computeTimeSecsForMouseXFractionalPosition": [Function],
+                      "computeTimeSecsFromMouseXPixels": [Function],
+                    }
+                  }
+                  displayEndTimeSecs={100}
+                  displayStartTimeSecs={0}
+                  events={
+                    Object {
+                      "defaultChannelEvents": Object {
+                        "events": Object {
+                          "onChannelClick": undefined,
+                          "onClickSelectionWindow": undefined,
+                          "onContextMenu": undefined,
+                          "onMeasureWindowUpdated": undefined,
+                          "onMoveSelectionWindow": undefined,
+                          "onPredictivePhaseClick": undefined,
+                          "onPredictivePhaseContextMenu": undefined,
+                          "onPredictivePhaseDragEnd": undefined,
+                          "onSignalDetectionClick": undefined,
+                          "onSignalDetectionContextMenu": undefined,
+                          "onSignalDetectionDragEnd": undefined,
+                          "onUpdateMarker": undefined,
+                          "onUpdateSelectionWindow": undefined,
+                        },
+                        "labelEvents": Object {
+                          "onChannelCollapsed": undefined,
+                          "onChannelExpanded": undefined,
+                          "onChannelLabelClick": undefined,
+                        },
+                        "onKeyPress": undefined,
+                      },
+                      "nonDefaultChannelEvents": Object {
+                        "events": Object {
+                          "onChannelClick": undefined,
+                          "onClickSelectionWindow": undefined,
+                          "onContextMenu": undefined,
+                          "onMeasureWindowUpdated": undefined,
+                          "onMoveSelectionWindow": undefined,
+                          "onPredictivePhaseClick": undefined,
+                          "onPredictivePhaseContextMenu": undefined,
+                          "onPredictivePhaseDragEnd": undefined,
+                          "onSignalDetectionClick": undefined,
+                          "onSignalDetectionContextMenu": undefined,
+                          "onSignalDetectionDragEnd": undefined,
+                          "onUpdateMarker": undefined,
+                          "onUpdateSelectionWindow": undefined,
+                        },
+                        "labelEvents": Object {
+                          "onChannelCollapsed": undefined,
+                          "onChannelExpanded": undefined,
+                          "onChannelLabelClick": undefined,
+                        },
+                        "onKeyPress": undefined,
+                      },
+                    }
+                  }
+                  getCanvasBoundingRect={[Function]}
+                  getCurrentViewRangeInSeconds={[Function]}
+                  getViewRange={[Function]}
+                  initialConfiguration={
+                    Object {
+                      "colorScale": undefined,
+                      "defaultChannel": Object {
+                        "disableMeasureWindow": true,
+                      },
+                      "defaultChannelHeightPx": 50,
+                      "hotKeys": Object {
+                        "amplitudeScale": "KeyS",
+                        "amplitudeScaleReset": "Alt+Shift+KeyS",
+                        "amplitudeScaleSingleReset": "Alt+KeyS",
+                        "drawMeasureWindow": "Alt",
+                        "maskCreate": "KeyM",
+                      },
+                      "labelWidthPx": 65,
+                      "nonDefaultChannel": Object {},
+                      "shouldRenderSpectrograms": false,
+                      "shouldRenderWaveforms": true,
+                      "suppressLabelYAxis": false,
+                      "xAxisLabel": "x axis",
+                    }
+                  }
+                  isMeasureWindow={false}
+                  key="id"
+                  onMouseDown={[Function]}
+                  onMouseMove={[Function]}
+                  onMouseUp={[Function]}
+                  renderWaveforms={[Function]}
+                  selections={
+                    Object {
+                      "channels": undefined,
+                      "predictedPhases": undefined,
+                      "signalDetections": undefined,
+                    }
+                  }
+                  shouldRenderSpectrograms={false}
+                  shouldRenderWaveforms={true}
+                  station={
+                    Object {
+                      "defaultChannel": Object {
+                        "height": 40,
+                        "id": "id",
+                        "name": "default channel",
+                        "waveform": Object {
+                          "channelSegmentId": "data",
+                          "channelSegments": Map {
+                            "data" => Object {
+                              "channelName": "TestChannel",
+                              "dataSegments": Array [
+                                Object {
+                                  "color": "tomato",
+                                  "data": Object {
+                                    "endTimeSecs": 100,
+                                    "sampleRate": 40,
+                                    "startTimeSecs": 0,
+                                    "values": Float32Array [
+                                      0,
+                                      0,
+                                      1,
+                                      10,
+                                      2,
+                                      20,
+                                      3,
+                                      30,
+                                    ],
+                                  },
+                                  "pointSize": 1,
+                                },
+                              ],
+                              "wfFilterId": "unfiltered",
+                            },
+                          },
+                        },
+                      },
+                      "id": "id",
+                      "name": "name",
+                      "nonDefaultChannels": Array [],
+                    }
+                  }
+                  toast={[MockFunction]}
+                  updateVisibleChannelForStation={[Function]}
+                  workerRpcs={
+                    Array [
+                      RpcProvider {
+                        "_dispatch": [Function],
+                        "_nextTransactionId": 0,
+                        "_pendingTransactions": Object {},
+                        "_rpcHandlers": Object {},
+                        "_rpcTimeout": 0,
+                        "_signalHandlers": Object {},
+                        "error": Event {
+                          "_contexts": Array [],
+                          "_handlers": Array [],
+                          "dispatch": [Function],
+                          "hasHandlers": false,
+                        },
+                      },
+                      RpcProvider {
+                        "_dispatch": [Function],
+                        "_nextTransactionId": 0,
+                        "_pendingTransactions": Object {},
+                        "_rpcHandlers": Object {},
+                        "_rpcTimeout": 0,
+                        "_signalHandlers": Object {},
+                        "error": Event {
+                          "_contexts": Array [],
+                          "_handlers": Array [],
+                          "dispatch": [Function],
+                          "hasHandlers": false,
+                        },
+                      },
+                      RpcProvider {
+                        "_dispatch": [Function],
+                        "_nextTransactionId": 0,
+                        "_pendingTransactions": Object {},
+                        "_rpcHandlers": Object {},
+                        "_rpcTimeout": 0,
+                        "_signalHandlers": Object {},
+                        "error": Event {
+                          "_contexts": Array [],
+                          "_handlers": Array [],
+                          "dispatch": [Function],
+                          "hasHandlers": false,
+                        },
+                      },
+                      RpcProvider {
+                        "_dispatch": [Function],
+                        "_nextTransactionId": 0,
+                        "_pendingTransactions": Object {},
+                        "_rpcHandlers": Object {},
+                        "_rpcTimeout": 0,
+                        "_signalHandlers": Object {},
+                        "error": Event {
+                          "_contexts": Array [],
+                          "_handlers": Array [],
+                          "dispatch": [Function],
+                          "hasHandlers": false,
+                        },
+                      },
+                    ]
+                  }
+                >
+                  <div
+                    className="station"
+                    style={
+                      Object {
+                        "height": 41,
+                      }
+                    }
+                  >
+                    <Channel
+                      canvasRef={[Function]}
+                      channel={
+                        Object {
+                          "height": 40,
+                          "id": "id",
+                          "name": "default channel",
+                          "waveform": Object {
+                            "channelSegmentId": "data",
+                            "channelSegments": Map {
+                              "data" => Object {
+                                "channelName": "TestChannel",
+                                "dataSegments": Array [
+                                  Object {
+                                    "color": "tomato",
+                                    "data": Object {
+                                      "endTimeSecs": 100,
+                                      "sampleRate": 40,
+                                      "startTimeSecs": 0,
+                                      "values": Float32Array [
+                                        0,
+                                        0,
+                                        1,
+                                        10,
+                                        2,
+                                        20,
+                                        3,
+                                        30,
+                                      ],
+                                    },
+                                    "pointSize": 1,
+                                  },
+                                ],
+                                "wfFilterId": "unfiltered",
+                              },
+                            },
+                          },
+                        }
+                      }
+                      converters={
+                        Object {
+                          "computeFractionOfCanvasFromMouseXPx": [Function],
+                          "computeTimeSecsForMouseXFractionalPosition": [Function],
+                          "computeTimeSecsFromMouseXPixels": [Function],
+                        }
+                      }
+                      displayEndTimeSecs={100}
+                      displayStartTimeSecs={0}
+                      distance={0}
+                      distanceUnits="degrees"
+                      events={
+                        Object {
+                          "events": Object {
+                            "onChannelClick": undefined,
+                            "onClickSelectionWindow": undefined,
+                            "onContextMenu": undefined,
+                            "onMeasureWindowUpdated": undefined,
+                            "onMoveSelectionWindow": undefined,
+                            "onPredictivePhaseClick": undefined,
+                            "onPredictivePhaseContextMenu": undefined,
+                            "onPredictivePhaseDragEnd": undefined,
+                            "onSignalDetectionClick": undefined,
+                            "onSignalDetectionContextMenu": undefined,
+                            "onSignalDetectionDragEnd": undefined,
+                            "onUpdateMarker": undefined,
+                            "onUpdateSelectionWindow": undefined,
+                          },
+                          "labelEvents": Object {
+                            "onChannelCollapsed": undefined,
+                            "onChannelExpanded": undefined,
+                            "onChannelLabelClick": undefined,
+                          },
+                          "onKeyPress": undefined,
+                        }
+                      }
+                      expanded={false}
+                      getCanvasBoundingRect={[Function]}
+                      getCurrentViewRangeInSeconds={[Function]}
+                      getViewRange={[Function]}
+                      height={40}
+                      index={0}
+                      initialConfiguration={
+                        Object {
+                          "colorScale": undefined,
+                          "defaultChannel": Object {
+                            "disableMeasureWindow": true,
+                          },
+                          "defaultChannelHeightPx": 50,
+                          "hotKeys": Object {
+                            "amplitudeScale": "KeyS",
+                            "amplitudeScaleReset": "Alt+Shift+KeyS",
+                            "amplitudeScaleSingleReset": "Alt+KeyS",
+                            "drawMeasureWindow": "Alt",
+                            "maskCreate": "KeyM",
+                          },
+                          "labelWidthPx": 65,
+                          "nonDefaultChannel": Object {},
+                          "shouldRenderSpectrograms": false,
+                          "shouldRenderWaveforms": true,
+                          "suppressLabelYAxis": false,
+                          "xAxisLabel": "x axis",
+                        }
+                      }
+                      isDefaultChannel={true}
+                      isExpandable={false}
+                      isMeasureWindow={false}
+                      key="station-default-channel-id"
+                      offsetSecs={0}
+                      onMouseDown={[Function]}
+                      onMouseMove={[Function]}
+                      onMouseUp={[Function]}
+                      renderWaveforms={[Function]}
+                      selections={
+                        Object {
+                          "channels": undefined,
+                          "predictedPhases": undefined,
+                          "signalDetections": undefined,
+                        }
+                      }
+                      shouldRenderSpectrograms={false}
+                      shouldRenderWaveforms={true}
+                      showMaskIndicator={false}
+                      stationId="id"
+                      toast={[MockFunction]}
+                      toggleExpansion={[Function]}
+                      workerRpcs={
+                        Array [
+                          RpcProvider {
+                            "_dispatch": [Function],
+                            "_nextTransactionId": 0,
+                            "_pendingTransactions": Object {},
+                            "_rpcHandlers": Object {},
+                            "_rpcTimeout": 0,
+                            "_signalHandlers": Object {},
+                            "error": Event {
+                              "_contexts": Array [],
+                              "_handlers": Array [],
+                              "dispatch": [Function],
+                              "hasHandlers": false,
+                            },
+                          },
+                          RpcProvider {
+                            "_dispatch": [Function],
+                            "_nextTransactionId": 0,
+                            "_pendingTransactions": Object {},
+                            "_rpcHandlers": Object {},
+                            "_rpcTimeout": 0,
+                            "_signalHandlers": Object {},
+                            "error": Event {
+                              "_contexts": Array [],
+                              "_handlers": Array [],
+                              "dispatch": [Function],
+                              "hasHandlers": false,
+                            },
+                          },
+                          RpcProvider {
+                            "_dispatch": [Function],
+                            "_nextTransactionId": 0,
+                            "_pendingTransactions": Object {},
+                            "_rpcHandlers": Object {},
+                            "_rpcTimeout": 0,
+                            "_signalHandlers": Object {},
+                            "error": Event {
+                              "_contexts": Array [],
+                              "_handlers": Array [],
+                              "dispatch": [Function],
+                              "hasHandlers": false,
+                            },
+                          },
+                          RpcProvider {
+                            "_dispatch": [Function],
+                            "_nextTransactionId": 0,
+                            "_pendingTransactions": Object {},
+                            "_rpcHandlers": Object {},
+                            "_rpcTimeout": 0,
+                            "_signalHandlers": Object {},
+                            "error": Event {
+                              "_contexts": Array [],
+                              "_handlers": Array [],
+                              "dispatch": [Function],
+                              "hasHandlers": false,
+                            },
+                          },
+                        ]
+                      }
+                    >
+                      <div
+                        className="channel"
+                        data-cy="default channel-channel"
+                        onKeyDown={[Function]}
+                        style={
+                          Object {
+                            "height": "40px",
+                            "maxHeight": "40px",
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        <div
+                          className="channel-label-container"
+                          data-cy="default channel-label"
+                          style={
+                            Object {
+                              "height": "40px",
+                              "width": "65px",
+                            }
+                          }
+                          tabIndex={0}
+                        >
+                          <Label
+                            canvasRef={[Function]}
+                            channel={
+                              Object {
+                                "height": 40,
+                                "id": "id",
+                                "name": "default channel",
+                                "waveform": Object {
+                                  "channelSegmentId": "data",
+                                  "channelSegments": Map {
+                                    "data" => Object {
+                                      "channelName": "TestChannel",
+                                      "dataSegments": Array [
+                                        Object {
+                                          "color": "tomato",
+                                          "data": Object {
+                                            "endTimeSecs": 100,
+                                            "sampleRate": 40,
+                                            "startTimeSecs": 0,
+                                            "values": Float32Array [
+                                              0,
+                                              0,
+                                              1,
+                                              10,
+                                              2,
+                                              20,
+                                              3,
+                                              30,
+                                            ],
+                                          },
+                                          "pointSize": 1,
+                                        },
+                                      ],
+                                      "wfFilterId": "unfiltered",
+                                    },
+                                  },
+                                },
+                              }
+                            }
+                            channelName="id"
+                            converters={
+                              Object {
+                                "computeFractionOfCanvasFromMouseXPx": [Function],
+                                "computeTimeSecsForMouseXFractionalPosition": [Function],
+                                "computeTimeSecsFromMouseXPixels": [Function],
+                              }
+                            }
+                            displayEndTimeSecs={100}
+                            displayStartTimeSecs={0}
+                            distance={0}
+                            distanceUnits="degrees"
+                            events={
+                              Object {
+                                "onChannelCollapsed": undefined,
+                                "onChannelExpanded": undefined,
+                                "onChannelLabelClick": undefined,
+                              }
+                            }
+                            expanded={false}
+                            getCanvasBoundingRect={[Function]}
+                            getCurrentViewRangeInSeconds={[Function]}
+                            getViewRange={[Function]}
+                            height={40}
+                            index={0}
+                            initialConfiguration={
+                              Object {
+                                "colorScale": undefined,
+                                "defaultChannel": Object {
+                                  "disableMeasureWindow": true,
+                                },
+                                "defaultChannelHeightPx": 50,
+                                "hotKeys": Object {
+                                  "amplitudeScale": "KeyS",
+                                  "amplitudeScaleReset": "Alt+Shift+KeyS",
+                                  "amplitudeScaleSingleReset": "Alt+KeyS",
+                                  "drawMeasureWindow": "Alt",
+                                  "maskCreate": "KeyM",
+                                },
+                                "labelWidthPx": 65,
+                                "nonDefaultChannel": Object {},
+                                "shouldRenderSpectrograms": false,
+                                "shouldRenderWaveforms": true,
+                                "suppressLabelYAxis": false,
+                                "xAxisLabel": "x axis",
+                              }
+                            }
+                            isDefaultChannel={true}
+                            isExpandable={false}
+                            isMeasureWindow={false}
+                            offsetSecs={0}
+                            onMouseDown={[Function]}
+                            onMouseMove={[Function]}
+                            onMouseUp={[Function]}
+                            renderWaveforms={[Function]}
+                            selections={
+                              Object {
+                                "channels": undefined,
+                                "predictedPhases": undefined,
+                                "signalDetections": undefined,
+                              }
+                            }
+                            shouldRenderSpectrograms={false}
+                            shouldRenderWaveforms={true}
+                            showMaskIndicator={false}
+                            stationId="id"
+                            toast={[MockFunction]}
+                            toggleExpansion={[Function]}
+                            workerRpcs={
+                              Array [
+                                RpcProvider {
+                                  "_dispatch": [Function],
+                                  "_nextTransactionId": 0,
+                                  "_pendingTransactions": Object {},
+                                  "_rpcHandlers": Object {},
+                                  "_rpcTimeout": 0,
+                                  "_signalHandlers": Object {},
+                                  "error": Event {
+                                    "_contexts": Array [],
+                                    "_handlers": Array [],
+                                    "dispatch": [Function],
+                                    "hasHandlers": false,
+                                  },
+                                },
+                                RpcProvider {
+                                  "_dispatch": [Function],
+                                  "_nextTransactionId": 0,
+                                  "_pendingTransactions": Object {},
+                                  "_rpcHandlers": Object {},
+                                  "_rpcTimeout": 0,
+                                  "_signalHandlers": Object {},
+                                  "error": Event {
+                                    "_contexts": Array [],
+                                    "_handlers": Array [],
+                                    "dispatch": [Function],
+                                    "hasHandlers": false,
+                                  },
+                                },
+                                RpcProvider {
+                                  "_dispatch": [Function],
+                                  "_nextTransactionId": 0,
+                                  "_pendingTransactions": Object {},
+                                  "_rpcHandlers": Object {},
+                                  "_rpcTimeout": 0,
+                                  "_signalHandlers": Object {},
+                                  "error": Event {
+                                    "_contexts": Array [],
+                                    "_handlers": Array [],
+                                    "dispatch": [Function],
+                                    "hasHandlers": false,
+                                  },
+                                },
+                                RpcProvider {
+                                  "_dispatch": [Function],
+                                  "_nextTransactionId": 0,
+                                  "_pendingTransactions": Object {},
+                                  "_rpcHandlers": Object {},
+                                  "_rpcTimeout": 0,
+                                  "_signalHandlers": Object {},
+                                  "error": Event {
+                                    "_contexts": Array [],
+                                    "_handlers": Array [],
+                                    "dispatch": [Function],
+                                    "hasHandlers": false,
+                                  },
+                                },
+                              ]
+                            }
+                            yAxisBounds={
+                              Array [
+                                Object {
+                                  "heightInPercentage": 100,
+                                  "maxAmplitude": 1,
+                                  "minAmplitude": -1,
+                                },
+                              ]
+                            }
+                          >
+                            <div
+                              className="label"
+                              onContextMenu={[Function]}
+                              tabIndex={0}
+                            >
+                              <div
+                                className="label-container"
+                              >
+                                <div
+                                  className="label-container-left-parent"
+                                />
+                                <div
+                                  className="label-container-content"
+                                >
+                                  <div
+                                    className="label-container-content-label"
+                                    data-cy="channel-label-id"
+                                    onClick={[Function]}
+                                  >
+                                    <span>
+                                      default channel
+                                      <div>
+                                        <p>
+                                           
+                                          <span
+                                            className="label-container-content-mask-indicator"
+                                            key=""
+                                          />
+                                        </p>
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div
+                                    data-cy-contains-amplitude-markers={true}
+                                    style={
+                                      Object {
+                                        "height": "100%",
+                                      }
+                                    }
+                                  >
+                                    <YAxis
+                                      heightInPercentage={100}
+                                      key="id_yaxis_0"
+                                      maxAmplitude={1}
+                                      minAmplitude={-1}
+                                    >
+                                      <div
+                                        className="y-axis"
+                                        style={
+                                          Object {
+                                            "height": "calc(100% - 4px)",
+                                            "margin": "2px 0 2px 0",
+                                          }
+                                        }
+                                      />
+                                    </YAxis>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </Label>
+                        </div>
+                        <MeasureWindowSelectionListener
+                          computeTimeSecsFromMouseXPixels={[Function]}
+                          displayTimeRange={
+                            Object {
+                              "endTimeSecs": 100,
+                              "startTimeSecs": 0,
+                            }
+                          }
+                          hotKeys={
+                            Object {
+                              "amplitudeScale": "KeyS",
+                              "amplitudeScaleReset": "Alt+Shift+KeyS",
+                              "amplitudeScaleSingleReset": "Alt+KeyS",
+                              "drawMeasureWindow": "Alt",
+                              "maskCreate": "KeyM",
+                            }
+                          }
+                          isMeasureWindowEnabled={[Function]}
+                          toast={[Function]}
+                          updateMeasureWindowPanel={[Function]}
+                        >
+                          <div
+                            className="channel-content-container"
+                            key="channel-segment-data"
+                            style={
+                              Object {
+                                "height": "40px",
+                                "left": "65px",
+                                "width": "calc(100% - 65px)",
+                              }
+                            }
+                          >
+                            <ContentRenderer
+                              canvasRef={[Function]}
+                              channel={
+                                Object {
+                                  "height": 40,
+                                  "id": "id",
+                                  "name": "default channel",
+                                  "waveform": Object {
+                                    "channelSegmentId": "data",
+                                    "channelSegments": Map {
+                                      "data" => Object {
+                                        "channelName": "TestChannel",
+                                        "dataSegments": Array [
+                                          Object {
+                                            "color": "tomato",
+                                            "data": Object {
+                                              "endTimeSecs": 100,
+                                              "sampleRate": 40,
+                                              "startTimeSecs": 0,
+                                              "values": Float32Array [
+                                                0,
+                                                0,
+                                                1,
+                                                10,
+                                                2,
+                                                20,
+                                                3,
+                                                30,
+                                              ],
+                                            },
+                                            "pointSize": 1,
+                                          },
+                                        ],
+                                        "wfFilterId": "unfiltered",
+                                      },
+                                    },
+                                  },
+                                }
+                              }
+                              channelId="id"
+                              color="#4580E6"
+                              contentRenderers={
+                                Array [
+                                  <UNDEFINED
+                                    onClick={[Function]}
+                                  />,
+                                ]
+                              }
+                              converters={
+                                Object {
+                                  "computeFractionOfCanvasFromMouseXPx": [Function],
+                                  "computeTimeSecsForMouseXFractionalPosition": [Function],
+                                  "computeTimeSecsFromMouseXPixels": [Function],
+                                }
+                              }
+                              disablePredictedPhaseModification={false}
+                              disableSignalDetectionModification={false}
+                              displayEndTimeSecs={100}
+                              displayStartTimeSecs={0}
+                              displayType={
+                                Array [
+                                  "LINE",
+                                ]
+                              }
+                              distance={0}
+                              distanceUnits="degrees"
+                              events={
+                                Object {
+                                  "onChannelClick": undefined,
+                                  "onClickSelectionWindow": undefined,
+                                  "onContextMenu": undefined,
+                                  "onMeasureWindowUpdated": undefined,
+                                  "onMoveSelectionWindow": undefined,
+                                  "onPredictivePhaseClick": undefined,
+                                  "onPredictivePhaseContextMenu": undefined,
+                                  "onPredictivePhaseDragEnd": undefined,
+                                  "onSignalDetectionClick": undefined,
+                                  "onSignalDetectionContextMenu": undefined,
+                                  "onSignalDetectionDragEnd": undefined,
+                                  "onUpdateMarker": undefined,
+                                  "onUpdateSelectionWindow": undefined,
+                                }
+                              }
+                              expanded={false}
+                              getCanvasBoundingRect={[Function]}
+                              getCurrentViewRangeInSeconds={[Function]}
+                              getViewRange={[Function]}
+                              height={40}
+                              index={0}
+                              initialConfiguration={
+                                Object {
+                                  "colorScale": undefined,
+                                  "defaultChannel": Object {
+                                    "disableMeasureWindow": true,
+                                  },
+                                  "defaultChannelHeightPx": 50,
+                                  "hotKeys": Object {
+                                    "amplitudeScale": "KeyS",
+                                    "amplitudeScaleReset": "Alt+Shift+KeyS",
+                                    "amplitudeScaleSingleReset": "Alt+KeyS",
+                                    "drawMeasureWindow": "Alt",
+                                    "maskCreate": "KeyM",
+                                  },
+                                  "labelWidthPx": 65,
+                                  "nonDefaultChannel": Object {},
+                                  "shouldRenderSpectrograms": false,
+                                  "shouldRenderWaveforms": true,
+                                  "suppressLabelYAxis": false,
+                                  "xAxisLabel": "x axis",
+                                }
+                              }
+                              isDefaultChannel={true}
+                              isExpandable={false}
+                              isMeasureWindow={false}
+                              offsetSecs={0}
+                              onContextMenu={[Function]}
+                              onKeyDown={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseMove={[Function]}
+                              onMouseUp={[Function]}
+                              pointSize={2}
+                              renderWaveforms={[Function]}
+                              selections={
+                                Object {
+                                  "channels": undefined,
+                                  "predictedPhases": undefined,
+                                  "signalDetections": undefined,
+                                }
+                              }
+                              setYAxisBounds={[Function]}
+                              shouldRenderSpectrograms={false}
+                              shouldRenderWaveforms={true}
+                              showMaskIndicator={false}
+                              stationId="id"
+                              toast={[MockFunction]}
+                              toggleExpansion={[Function]}
+                              workerRpcs={
+                                Array [
+                                  RpcProvider {
+                                    "_dispatch": [Function],
+                                    "_nextTransactionId": 0,
+                                    "_pendingTransactions": Object {},
+                                    "_rpcHandlers": Object {},
+                                    "_rpcTimeout": 0,
+                                    "_signalHandlers": Object {},
+                                    "error": Event {
+                                      "_contexts": Array [],
+                                      "_handlers": Array [],
+                                      "dispatch": [Function],
+                                      "hasHandlers": false,
+                                    },
+                                  },
+                                  RpcProvider {
+                                    "_dispatch": [Function],
+                                    "_nextTransactionId": 0,
+                                    "_pendingTransactions": Object {},
+                                    "_rpcHandlers": Object {},
+                                    "_rpcTimeout": 0,
+                                    "_signalHandlers": Object {},
+                                    "error": Event {
+                                      "_contexts": Array [],
+                                      "_handlers": Array [],
+                                      "dispatch": [Function],
+                                      "hasHandlers": false,
+                                    },
+                                  },
+                                  RpcProvider {
+                                    "_dispatch": [Function],
+                                    "_nextTransactionId": 0,
+                                    "_pendingTransactions": Object {},
+                                    "_rpcHandlers": Object {},
+                                    "_rpcTimeout": 0,
+                                    "_signalHandlers": Object {},
+                                    "error": Event {
+                                      "_contexts": Array [],
+                                      "_handlers": Array [],
+                                      "dispatch": [Function],
+                                      "hasHandlers": false,
+                                    },
+                                  },
+                                  RpcProvider {
+                                    "_dispatch": [Function],
+                                    "_nextTransactionId": 0,
+                                    "_pendingTransactions": Object {},
+                                    "_rpcHandlers": Object {},
+                                    "_rpcTimeout": 0,
+                                    "_signalHandlers": Object {},
+                                    "error": Event {
+                                      "_contexts": Array [],
+                                      "_handlers": Array [],
+                                      "dispatch": [Function],
+                                      "hasHandlers": false,
+                                    },
+                                  },
+                                ]
+                              }
+                            >
+                              <div
+                                className="contentrenderer"
+                                onContextMenu={[Function]}
+                                onKeyDown={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseMove={[Function]}
+                                onMouseUp={[Function]}
+                                style={
+                                  Object {
+                                    "backgroundColor": "initial",
+                                  }
+                                }
+                                tabIndex={0}
+                              >
+                                <WaveformRenderer
+                                  canvasRef={[Function]}
+                                  channel={
+                                    Object {
+                                      "height": 40,
+                                      "id": "id",
+                                      "name": "default channel",
+                                      "waveform": Object {
+                                        "channelSegmentId": "data",
+                                        "channelSegments": Map {
+                                          "data" => Object {
+                                            "channelName": "TestChannel",
+                                            "dataSegments": Array [
+                                              Object {
+                                                "color": "tomato",
+                                                "data": Object {
+                                                  "endTimeSecs": 100,
+                                                  "sampleRate": 40,
+                                                  "startTimeSecs": 0,
+                                                  "values": Float32Array [
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    10,
+                                                    2,
+                                                    20,
+                                                    3,
+                                                    30,
+                                                  ],
+                                                },
+                                                "pointSize": 1,
+                                              },
+                                            ],
+                                            "wfFilterId": "unfiltered",
+                                          },
+                                        },
+                                      },
+                                    }
+                                  }
+                                  channelName="id"
+                                  channelSegmentId="data"
+                                  channelSegments={
+                                    Map {
+                                      "data" => Object {
+                                        "channelName": "TestChannel",
+                                        "dataSegments": Array [
+                                          Object {
+                                            "color": "tomato",
+                                            "data": Object {
+                                              "endTimeSecs": 100,
+                                              "sampleRate": 40,
+                                              "startTimeSecs": 0,
+                                              "values": Float32Array [
+                                                0,
+                                                0,
+                                                1,
+                                                10,
+                                                2,
+                                                20,
+                                                3,
+                                                30,
+                                              ],
+                                            },
+                                            "pointSize": 1,
+                                          },
+                                        ],
+                                        "wfFilterId": "unfiltered",
+                                      },
+                                    }
+                                  }
+                                  color="#4580E6"
+                                  converters={
+                                    Object {
+                                      "computeFractionOfCanvasFromMouseXPx": [Function],
+                                      "computeTimeSecsForMouseXFractionalPosition": [Function],
+                                      "computeTimeSecsFromMouseXPixels": [Function],
+                                    }
+                                  }
+                                  displayEndTimeSecs={100}
+                                  displayStartTimeSecs={0}
+                                  displayType={
+                                    Array [
+                                      "LINE",
+                                    ]
+                                  }
+                                  distance={0}
+                                  distanceUnits="degrees"
+                                  events={
+                                    Object {
+                                      "events": Object {
+                                        "onChannelClick": undefined,
+                                        "onClickSelectionWindow": undefined,
+                                        "onContextMenu": undefined,
+                                        "onMeasureWindowUpdated": undefined,
+                                        "onMoveSelectionWindow": undefined,
+                                        "onPredictivePhaseClick": undefined,
+                                        "onPredictivePhaseContextMenu": undefined,
+                                        "onPredictivePhaseDragEnd": undefined,
+                                        "onSignalDetectionClick": undefined,
+                                        "onSignalDetectionContextMenu": undefined,
+                                        "onSignalDetectionDragEnd": undefined,
+                                        "onUpdateMarker": undefined,
+                                        "onUpdateSelectionWindow": undefined,
+                                      },
+                                      "labelEvents": Object {
+                                        "onChannelCollapsed": undefined,
+                                        "onChannelExpanded": undefined,
+                                        "onChannelLabelClick": undefined,
+                                      },
+                                      "onKeyPress": undefined,
+                                    }
+                                  }
+                                  expanded={false}
+                                  getCanvasBoundingRect={[Function]}
+                                  getCurrentViewRangeInSeconds={[Function]}
+                                  getViewRange={[Function]}
+                                  height={40}
+                                  index={0}
+                                  initialConfiguration={
+                                    Object {
+                                      "colorScale": undefined,
+                                      "defaultChannel": Object {
+                                        "disableMeasureWindow": true,
+                                      },
+                                      "defaultChannelHeightPx": 50,
+                                      "hotKeys": Object {
+                                        "amplitudeScale": "KeyS",
+                                        "amplitudeScaleReset": "Alt+Shift+KeyS",
+                                        "amplitudeScaleSingleReset": "Alt+KeyS",
+                                        "drawMeasureWindow": "Alt",
+                                        "maskCreate": "KeyM",
+                                      },
+                                      "labelWidthPx": 65,
+                                      "nonDefaultChannel": Object {},
+                                      "shouldRenderSpectrograms": false,
+                                      "shouldRenderWaveforms": true,
+                                      "suppressLabelYAxis": false,
+                                      "xAxisLabel": "x axis",
+                                    }
+                                  }
+                                  isDefaultChannel={true}
+                                  isExpandable={false}
+                                  isMeasureWindow={false}
+                                  offsetSecs={0}
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  onMouseUp={[Function]}
+                                  pointSize={2}
+                                  renderWaveforms={[Function]}
+                                  selections={
+                                    Object {
+                                      "channels": undefined,
+                                      "predictedPhases": undefined,
+                                      "signalDetections": undefined,
+                                    }
+                                  }
+                                  setYAxisBounds={[Function]}
+                                  shouldRenderSpectrograms={false}
+                                  shouldRenderWaveforms={true}
+                                  showMaskIndicator={false}
+                                  stationId="id"
+                                  toast={[MockFunction]}
+                                  toggleExpansion={[Function]}
+                                  workerRpcs={
+                                    Array [
+                                      RpcProvider {
+                                        "_dispatch": [Function],
+                                        "_nextTransactionId": 0,
+                                        "_pendingTransactions": Object {},
+                                        "_rpcHandlers": Object {},
+                                        "_rpcTimeout": 0,
+                                        "_signalHandlers": Object {},
+                                        "error": Event {
+                                          "_contexts": Array [],
+                                          "_handlers": Array [],
+                                          "dispatch": [Function],
+                                          "hasHandlers": false,
+                                        },
+                                      },
+                                      RpcProvider {
+                                        "_dispatch": [Function],
+                                        "_nextTransactionId": 0,
+                                        "_pendingTransactions": Object {},
+                                        "_rpcHandlers": Object {},
+                                        "_rpcTimeout": 0,
+                                        "_signalHandlers": Object {},
+                                        "error": Event {
+                                          "_contexts": Array [],
+                                          "_handlers": Array [],
+                                          "dispatch": [Function],
+                                          "hasHandlers": false,
+                                        },
+                                      },
+                                      RpcProvider {
+                                        "_dispatch": [Function],
+                                        "_nextTransactionId": 0,
+                                        "_pendingTransactions": Object {},
+                                        "_rpcHandlers": Object {},
+                                        "_rpcTimeout": 0,
+                                        "_signalHandlers": Object {},
+                                        "error": Event {
+                                          "_contexts": Array [],
+                                          "_handlers": Array [],
+                                          "dispatch": [Function],
+                                          "hasHandlers": false,
+                                        },
+                                      },
+                                      RpcProvider {
+                                        "_dispatch": [Function],
+                                        "_nextTransactionId": 0,
+                                        "_pendingTransactions": Object {},
+                                        "_rpcHandlers": Object {},
+                                        "_rpcTimeout": 0,
+                                        "_signalHandlers": Object {},
+                                        "error": Event {
+                                          "_contexts": Array [],
+                                          "_handlers": Array [],
+                                          "dispatch": [Function],
+                                          "hasHandlers": false,
+                                        },
+                                      },
+                                    ]
+                                  }
+                                />
+                                <div
+                                  className="contentrenderer-content contentrenderer-content--sticky"
+                                  style={
+                                    Object {
+                                      "width": "calc(100vw - 65)",
+                                    }
+                                  }
+                                />
+                                <div
+                                  className="contentrenderer-content"
+                                  style={
+                                    Object {
+                                      "left": 65,
+                                      "width": "calc(100% - 65)",
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="contentrenderer-content-drag-indicator"
+                                  />
+                                  <Memo()
+                                    key="1"
+                                    onClick={[Function]}
+                                  >
+                                    <div
+                                      className="measure-window-selection measure-window-selection__container"
+                                      style={
+                                        Object {
+                                          "display": "none",
+                                          "transform": "translateX(-50%)",
+                                        }
+                                      }
+                                    >
+                                      <div
+                                        className="measure-window-selection__overlay"
+                                        draggable={true}
+                                        onDragStart={[Function]}
+                                        style={
+                                          Object {
+                                            "display": "none",
+                                            "left": "50%",
+                                            "width": "0%",
+                                          }
+                                        }
+                                      />
+                                    </div>
+                                  </Memo()>
+                                  <div
+                                    className="contentrenderer-content-markers"
+                                  />
+                                  <SignalDetections
+                                    channelId="id"
+                                    disableModification={false}
+                                    displayEndTimeSecs={100}
+                                    displayStartTimeSecs={0}
+                                    events={
+                                      Object {
+                                        "onChannelClick": undefined,
+                                        "onClickSelectionWindow": undefined,
+                                        "onContextMenu": undefined,
+                                        "onMeasureWindowUpdated": undefined,
+                                        "onMoveSelectionWindow": undefined,
+                                        "onPredictivePhaseClick": undefined,
+                                        "onPredictivePhaseContextMenu": undefined,
+                                        "onPredictivePhaseDragEnd": undefined,
+                                        "onSignalDetectionClick": undefined,
+                                        "onSignalDetectionContextMenu": undefined,
+                                        "onSignalDetectionDragEnd": undefined,
+                                        "onUpdateMarker": undefined,
+                                        "onUpdateSelectionWindow": undefined,
+                                      }
+                                    }
+                                    getTimeSecsForClientX={[Function]}
+                                    isDefaultChannel={true}
+                                    positionDragIndicator={[Function]}
+                                    stationId="id"
+                                    toast={[MockFunction]}
+                                    toggleDragIndicator={[Function]}
+                                  />
+                                  <PredictedPhases
+                                    channelId="id"
+                                    disableModification={false}
+                                    displayEndTimeSecs={100}
+                                    displayStartTimeSecs={0}
+                                    events={
+                                      Object {
+                                        "onChannelClick": undefined,
+                                        "onClickSelectionWindow": undefined,
+                                        "onContextMenu": undefined,
+                                        "onMeasureWindowUpdated": undefined,
+                                        "onMoveSelectionWindow": undefined,
+                                        "onPredictivePhaseClick": undefined,
+                                        "onPredictivePhaseContextMenu": undefined,
+                                        "onPredictivePhaseDragEnd": undefined,
+                                        "onSignalDetectionClick": undefined,
+                                        "onSignalDetectionContextMenu": undefined,
+                                        "onSignalDetectionDragEnd": undefined,
+                                        "onUpdateMarker": undefined,
+                                        "onUpdateSelectionWindow": undefined,
+                                      }
+                                    }
+                                    getTimeSecsForClientX={[Function]}
+                                    isDefaultChannel={true}
+                                    positionDragIndicator={[Function]}
+                                    stationId="id"
+                                    toast={[MockFunction]}
+                                    toggleDragIndicator={[Function]}
+                                  />
+                                  <TheoreticalPhases
+                                    displayEndTimeSecs={100}
+                                    displayStartTimeSecs={0}
+                                    events={
+                                      Object {
+                                        "onChannelClick": undefined,
+                                        "onClickSelectionWindow": undefined,
+                                        "onContextMenu": undefined,
+                                        "onMeasureWindowUpdated": undefined,
+                                        "onMoveSelectionWindow": undefined,
+                                        "onPredictivePhaseClick": undefined,
+                                        "onPredictivePhaseContextMenu": undefined,
+                                        "onPredictivePhaseDragEnd": undefined,
+                                        "onSignalDetectionClick": undefined,
+                                        "onSignalDetectionContextMenu": undefined,
+                                        "onSignalDetectionDragEnd": undefined,
+                                        "onUpdateMarker": undefined,
+                                        "onUpdateSelectionWindow": undefined,
+                                      }
+                                    }
+                                    getTimeSecsForClientX={[Function]}
+                                    isDefaultChannel={true}
+                                    positionDragIndicator={[Function]}
+                                    stationId="id"
+                                    toast={[MockFunction]}
+                                    toggleDragIndicator={[Function]}
+                                  />
+                                </div>
+                              </div>
+                            </ContentRenderer>
+                          </div>
+                        </MeasureWindowSelectionListener>
+                      </div>
+                    </Channel>
+                  </div>
+                </Station>
+                <div
+                  className="weavess-wp-container-viewport-content-markers"
+                  style={
+                    Object {
+                      "left": "65px",
+                      "width": "calc(100% - 65px)",
+                    }
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="weavess-wp-container-overlay"
+          style={
+            Object {
+              "width": "calc(100% - (65px + 10px))",
+            }
+          }
+        >
+          <Blueprint3.Popover
+            boundary="scrollParent"
+            captureDismiss={false}
+            content={
+              <div
+                className="weavess-wp-time-popover-content"
+              />
+            }
+            defaultIsOpen={false}
+            disabled={false}
+            fill={false}
+            hasBackdrop={false}
+            hoverCloseDelay={300}
+            hoverOpenDelay={150}
+            inheritDarkTheme={true}
+            interactionKind="click"
+            isOpen={false}
+            minimal={false}
+            modifiers={Object {}}
+            openOnTargetFocus={true}
+            position="top"
+            targetTagName="span"
+            transitionDuration={300}
+            usePortal={true}
+            wrapperTagName="span"
+          >
+            <Manager>
+              <span
+                className="bp3-popover-wrapper"
+              >
+                <Reference
+                  innerRef={[Function]}
+                >
+                  <InnerReference
+                    innerRef={[Function]}
+                    setReferenceNode={[Function]}
+                  >
+                    <Blueprint3.ResizeSensor
+                      onResize={[Function]}
+                    >
+                      <span
+                        className="bp3-popover-target"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className=""
+                          key=".0"
+                        />
+                      </span>
+                    </Blueprint3.ResizeSensor>
+                  </InnerReference>
+                </Reference>
+                <Blueprint3.Overlay
+                  autoFocus={true}
+                  backdropClassName="bp3-popover-backdrop"
+                  backdropProps={Object {}}
+                  canEscapeKeyClose={true}
+                  canOutsideClickClose={true}
+                  enforceFocus={true}
+                  hasBackdrop={false}
+                  isOpen={false}
+                  lazy={true}
+                  onClose={[Function]}
+                  transitionDuration={300}
+                  transitionName="bp3-popover"
+                  usePortal={true}
+                />
+              </span>
+            </Manager>
+          </Blueprint3.Popover>
+          <div
+            className="weavess-wp-container-overlay-cross-hair"
+          />
+          <div
+            className="weavess-wp-container-overlay-selection-area"
+          />
+        </div>
+      </div>
+      <XAxis
+        borderTop={true}
+        endTimeSecs={100}
+        getViewRange={[Function]}
+        label="x axis"
+        labelWidthPx={65}
+        scrollbarWidthPx={10}
+        startTimeSecs={0}
+      >
+        <div
+          className="x-axis"
+          style={
+            Object {
+              "height": "35px",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+          >
+            x axis
+          </div>
+        </div>
+      </XAxis>
+    </div>
+    <Memo(InternalTimeRange)
+      labelWidthPx={65}
+    >
+      <div
+        className="weavess-wp-time-range"
+        style={
+          Object {
+            "left": "65px",
+          }
+        }
+      >
+        <span>
+          1970-01-01 00:00:00.000 + 1 minute 40 seconds
+        </span>
+      </div>
+    </Memo(InternalTimeRange)>
+  </div>
+</WaveformPanel>
+`;

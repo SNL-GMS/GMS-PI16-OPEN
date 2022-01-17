@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Historical SOH Query handle axios query with data response 1`] = `
+Object {
+  "calculationTimes": Array [
+    0,
+    0.001,
+    0.002,
+  ],
+  "minAndMax": Object {
+    "xMax": 0.002,
+    "xMin": 0,
+    "yMax": 9,
+    "yMin": 5,
+  },
+  "monitorValues": Array [
+    Object {
+      "average": 6,
+      "channelName": "channel name",
+      "type": "DURATION",
+      "values": Float32Array [
+        -25,
+        5,
+        0,
+        6,
+        25,
+        9,
+      ],
+    },
+  ],
+  "percentageSent": 100,
+  "stationName": "station name",
+}
+`;
+
+exports[`Historical SOH Query handle axios query with no data response 1`] = `
+Object {
+  "calculationTimes": Array [],
+  "minAndMax": Object {
+    "xMax": Infinity,
+    "xMin": -Infinity,
+    "yMax": Infinity,
+    "yMin": -Infinity,
+  },
+  "monitorValues": Array [],
+  "percentageSent": 0,
+  "stationName": "station name",
+}
+`;
+
+exports[`Historical SOH Query is creating the config correctly for lag 1`] = `
+Object {
+  "config": Object {
+    "refetchOnWindowFocus": false,
+    "staleTime": Infinity,
+  },
+  "queryFn": [Function],
+  "queryKey": Array [
+    "historicalByStationIdTimeAndSohMonitorTypes",
+    Object {
+      "data": Object {
+        "historicalSohInput": Object {
+          "endTime": 1606818240100,
+          "samplesPerChannel": 50000,
+          "sohMonitorType": "LAG",
+          "startTime": 1606818240000,
+          "stationName": "station name",
+        },
+        "maxQueryIntervalSize": 1000000,
+      },
+      "headers": Object {
+        "accept": "application/msgpack",
+        "content-type": "application/json",
+      },
+      "method": "post",
+      "responseType": "arraybuffer",
+      "timeout": 600000,
+      "url": "http://localhost/ssam-control/retrieve-decimated-historical-station-soh",
+    },
+  ],
+}
+`;
+
+exports[`Historical SOH Query is creating the config correctly for missing 1`] = `
+Object {
+  "config": Object {
+    "refetchOnWindowFocus": false,
+    "staleTime": Infinity,
+  },
+  "queryFn": [Function],
+  "queryKey": Array [
+    "historicalByStationIdTimeAndSohMonitorTypes",
+    Object {
+      "data": Object {
+        "historicalSohInput": Object {
+          "endTime": 1606818240100,
+          "samplesPerChannel": 50000,
+          "sohMonitorType": "MISSING",
+          "startTime": 1606818240000,
+          "stationName": "station name",
+        },
+        "maxQueryIntervalSize": 1000000,
+      },
+      "headers": Object {
+        "accept": "application/msgpack",
+        "content-type": "application/json",
+      },
+      "method": "post",
+      "responseType": "arraybuffer",
+      "timeout": 600000,
+      "url": "http://localhost/ssam-control/retrieve-decimated-historical-station-soh",
+    },
+  ],
+}
+`;
+
+exports[`Historical SOH Query is creating the config correctly for timeliness 1`] = `
+Object {
+  "config": Object {
+    "refetchOnWindowFocus": false,
+    "staleTime": Infinity,
+  },
+  "queryFn": [Function],
+  "queryKey": Array [
+    "historicalByStationIdTimeAndSohMonitorTypes",
+    Object {
+      "data": Object {
+        "historicalSohInput": Object {
+          "endTime": 1606818240100,
+          "samplesPerChannel": 50000,
+          "sohMonitorType": "TIMELINESS",
+          "startTime": 1606818240000,
+          "stationName": "station name",
+        },
+        "maxQueryIntervalSize": 1000000,
+      },
+      "headers": Object {
+        "accept": "application/msgpack",
+        "content-type": "application/json",
+      },
+      "method": "post",
+      "responseType": "arraybuffer",
+      "timeout": 600000,
+      "url": "http://localhost/ssam-control/retrieve-decimated-historical-station-soh",
+    },
+  ],
+}
+`;

@@ -1,0 +1,17 @@
+apply plugin: "java-library"
+
+dependencies {
+    implementation project(":frameworks-system-config")
+
+    implementation 'com.github.docker-java:docker-java'
+    implementation 'com.github.docker-java:docker-java-core'
+    implementation 'com.github.docker-java:docker-java-transport-httpclient5'
+
+    implementation 'org.postgresql:postgresql'
+    implementation 'org.testcontainers:testcontainers'
+    implementation 'org.testcontainers:junit-jupiter'
+    implementation 'org.testcontainers:postgresql'
+    implementation 'org.testcontainers:kafka'
+
+    implementation 'net.jodah:failsafe'
+}

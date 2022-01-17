@@ -1,0 +1,813 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Channel Configuration Table matches snapshot 1`] = `
+<ChannelConfigurationTable
+  channels={
+    Array [
+      Object {
+        "canonicalName": "Canonical Name One",
+        "channelBandType": "B",
+        "channelDataType": "DIAGNOSTIC_SOH",
+        "channelInstrumentType": "H",
+        "channelOrientationCode": "Z",
+        "channelOrientationType": "Z",
+        "configuredInputs": Array [],
+        "description": "Example description",
+        "effectiveAt": 0,
+        "effectiveUntil": 0,
+        "location": Object {
+          "depthKm": 100,
+          "elevationKm": 5500,
+          "latitudeDegrees": 35,
+          "longitudeDegrees": -125,
+        },
+        "name": "Real Channel Name One",
+        "nominalSampleRateHz": 66,
+        "orientationAngles": Object {
+          "horizontalAngleDeg": 65,
+          "verticalAngleDeg": 135,
+        },
+        "processingDefinition": Map {},
+        "processingMetadata": Map {
+          "CHANNEL_GROUP" => "CHANNEL_GROUP",
+        },
+        "response": Object {
+          "calibration": Object {
+            "calibrationFactor": Object {
+              "standardDeviation": 0.112,
+              "units": "SECONDS",
+              "value": 1.2,
+            },
+            "calibrationPeriodSec": 14.5,
+            "calibrationTimeShift": "PT2S",
+          },
+          "effectiveAt": 1618935090.674,
+          "effectiveUntil": 1618935090.674,
+          "fapResponse": Object {
+            "id": "966deee1-545e-44ed-a346-b029ab111151",
+          },
+          "id": "5dc3dce4-ae3c-3fb0-84ba-2f83fb5a89d2",
+        },
+        "station": Object {
+          "name": "STA",
+        },
+        "units": "NANOMETERS",
+      },
+    ]
+  }
+  columnsToDisplay={
+    Map {
+      "name" => true,
+      "effectiveAt" => true,
+      "effectiveUntil" => true,
+      "latitudeDegrees" => true,
+      "longitudeDegrees" => true,
+      "depthKm" => true,
+      "elevationKm" => true,
+      "nominalSampleRateHz" => true,
+      "units" => true,
+      "orientationHorizontalDegrees" => true,
+      "orientationVerticalDegrees" => true,
+      "calibrationFactor" => true,
+      "calibrationPeriod" => true,
+      "calibrationEffectiveAt" => true,
+      "calibrationTimeShift" => true,
+      "calibrationStandardDeviation" => true,
+      "northDisplacementKm" => true,
+      "eastDisplacementKm" => true,
+      "verticalDisplacementKm" => true,
+      "description" => true,
+      "channelDataType" => false,
+      "channelBandType" => false,
+      "channelInstrumentType" => false,
+      "channelOrientationCode" => false,
+      "channelOrientationType" => false,
+      "calibrationResponseId" => true,
+      "fapResponseId" => true,
+    }
+  }
+  stationData={
+    Object {
+      "allRawChannels": Array [
+        Object {},
+      ],
+      "channelGroups": Array [
+        Object {},
+      ],
+      "description": "This is a test station",
+      "effectiveAt": 1618935091.118,
+      "effectiveUntil": 1618935091.118,
+      "location": Object {
+        "depthKm": 50,
+        "elevationKm": 10,
+        "latitudeDegrees": 35.647,
+        "longitudeDegrees": 100,
+      },
+      "name": "STA",
+      "relativePositionsByChannel": Map {
+        "Real Channel Name One" => Object {
+          "eastDisplacementKm": 5,
+          "northDisplacementKm": 50,
+          "verticalDisplacementKm": 10,
+        },
+        "Real Channel Name Two" => Object {
+          "eastDisplacementKm": 5,
+          "northDisplacementKm": 50,
+          "verticalDisplacementKm": 10,
+        },
+      },
+      "type": "SEISMIC_1_COMPONENT",
+    }
+  }
+>
+  <div
+    className="channel-configuration-table ag-theme-dark station-properties-table"
+  >
+    <Component
+      className="bp3-heading"
+    >
+      <h4
+        className="bp3-heading bp3-heading"
+      >
+        Channel Configuration
+      </h4>
+    </Component>
+    <div
+      className="station-properties-table__wrapper"
+    >
+      <ClientSideTable
+        columnDefs={
+          Array [
+            Object {
+              "field": "name",
+              "headerName": "Name",
+              "headerTooltip": "Name",
+              "width": 200,
+            },
+            Object {
+              "field": "effectiveAt",
+              "headerName": "Effective At",
+              "headerTooltip": "Effective at",
+              "width": 200,
+            },
+            Object {
+              "field": "effectiveUntil",
+              "headerName": "Effective Until",
+              "headerTooltip": "Effective until",
+              "width": 200,
+            },
+            Object {
+              "comparator": [Function],
+              "field": "latitudeDegrees",
+              "headerName": "Lat (°)",
+              "headerTooltip": "Latitude in degrees",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "longitudeDegrees",
+              "headerName": "Lon (°)",
+              "headerTooltip": "Longitude in degrees",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "depthKm",
+              "headerName": "Depth (km)",
+              "headerTooltip": "Depth in kilometers",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "elevationKm",
+              "headerName": "Elev (km)",
+              "headerTooltip": "Elevation in kilometers",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "nominalSampleRateHz",
+              "headerName": "Sample Rate (Hz)",
+              "headerTooltip": "Nominal sample rate in hertz",
+            },
+            Object {
+              "field": "units",
+              "headerName": "Units",
+              "headerTooltip": "units",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "orientationHorizontalDegrees",
+              "headerName": "Horiz Angle (°)",
+              "headerTooltip": "Orientation horizontal angle in degrees",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "orientationVerticalDegrees",
+              "headerName": "Vert Angle (°)",
+              "headerTooltip": "Orientation vertical angle in degrees",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "calibrationFactor",
+              "headerName": "Calib Factor (s)",
+              "headerTooltip": "Calibration factor in seconds",
+              "width": 200,
+            },
+            Object {
+              "comparator": [Function],
+              "field": "calibrationPeriod",
+              "headerName": "Calib Period (s)",
+              "headerTooltip": "Calibration period in seconds",
+              "width": 200,
+            },
+            Object {
+              "comparator": [Function],
+              "field": "calibrationEffectiveAt",
+              "headerName": "Calib Effective At",
+              "headerTooltip": "Calibration effective at",
+              "width": 300,
+            },
+            Object {
+              "comparator": [Function],
+              "field": "calibrationTimeShift",
+              "headerName": "Calib Time Shift (s)",
+              "headerTooltip": "Calibration time shift in seconds",
+              "width": 200,
+            },
+            Object {
+              "comparator": [Function],
+              "field": "calibrationStandardDeviation",
+              "headerName": "Calib Std Dev",
+              "headerTooltip": "Calibration standard deviation",
+              "width": 200,
+            },
+            Object {
+              "comparator": [Function],
+              "field": "northDisplacementKm",
+              "headerName": "North Displacement (km)",
+              "headerTooltip": "North displacement in kilometers",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "eastDisplacementKm",
+              "headerName": "East Displacement (km)",
+              "headerTooltip": "East displacement in kilometers",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "verticalDisplacementKm",
+              "headerName": "Vert Displacement (km)",
+              "headerTooltip": "Vertical displacement in kilometers",
+            },
+            Object {
+              "field": "description",
+              "headerName": "Description",
+              "headerTooltip": "Description",
+              "width": 300,
+            },
+            Object {
+              "field": "channelDataType",
+              "headerName": "Data Type",
+              "headerTooltip": "Channel data type",
+              "width": 200,
+            },
+            Object {
+              "field": "channelBandType",
+              "headerName": "Band Type",
+              "headerTooltip": "Channel band type",
+            },
+            Object {
+              "field": "channelInstrumentType",
+              "headerName": "Instrument Type",
+              "headerTooltip": "Channel instrument type",
+            },
+            Object {
+              "field": "channelOrientationCode",
+              "headerName": "Orientation Code",
+              "headerTooltip": "Channel orientation code",
+            },
+            Object {
+              "field": "channelOrientationType",
+              "headerName": "Orientation Type",
+              "headerTooltip": "Channel orientation type",
+              "width": 200,
+            },
+            Object {
+              "field": "calibrationResponseId",
+              "headerName": "Calib ID",
+              "headerTooltip": "Calibration response ID",
+              "width": 200,
+            },
+            Object {
+              "field": "fapResponseId",
+              "headerName": "FAP Resp ID",
+              "headerTooltip": "Frequency amplitude response ID",
+              "width": 200,
+            },
+          ]
+        }
+        context={Object {}}
+        defaultColDef={
+          Object {
+            "cellRendererFramework": [Function],
+            "disableStaticMarkupForCellRendererFramework": true,
+            "disableStaticMarkupForHeaderComponentFramework": true,
+            "filter": true,
+            "headerClass": "station-properties-header-cell",
+            "hide": true,
+            "lockVisible": false,
+            "resizable": true,
+            "sortable": true,
+            "width": 105,
+          }
+        }
+        deltaRowDataMode={true}
+        getRowNodeId={[Function]}
+        headerHeight={44}
+        onGridReady={[Function]}
+        overlayNoRowsTemplate="No Channels to display"
+        rowData={
+          Array [
+            Object {
+              "calibrationEffectiveAt": "2021-04-20 16:11:30.674",
+              "calibrationFactor": "1.2",
+              "calibrationPeriod": "14.5",
+              "calibrationResponseId": "5dc3dce4-ae3c-3fb0-84ba-2f83fb5a89d2",
+              "calibrationStandardDeviation": "0.112",
+              "calibrationTimeShift": "2",
+              "channelBandType": "B",
+              "channelDataType": "Diagnostic SOH",
+              "channelInstrumentType": "H",
+              "channelOrientationCode": "Z",
+              "channelOrientationType": "Z",
+              "depthKm": "100.000",
+              "description": "Example description",
+              "eastDisplacementKm": "5",
+              "effectiveAt": "1970-01-01 00:00:00.000",
+              "effectiveUntil": "1970-01-01 00:00:00.000",
+              "elevationKm": "5500.000",
+              "fapResponseId": "966deee1-545e-44ed-a346-b029ab111151",
+              "id": "0",
+              "latitudeDegrees": "35.000",
+              "longitudeDegrees": "-125.000",
+              "name": "Real Channel Name One",
+              "nominalSampleRateHz": "66",
+              "northDisplacementKm": "50",
+              "orientationHorizontalDegrees": "65",
+              "orientationVerticalDegrees": "135",
+              "units": "Nanometers",
+              "verticalDisplacementKm": "10",
+            },
+          ]
+        }
+        rowDeselection={true}
+        rowHeight={40}
+        rowSelection="single"
+        suppressCellSelection={true}
+        suppressContextMenu={true}
+      >
+        <CoreTable
+          columnDefs={
+            Array [
+              Object {
+                "field": "name",
+                "headerName": "Name",
+                "headerTooltip": "Name",
+                "width": 200,
+              },
+              Object {
+                "field": "effectiveAt",
+                "headerName": "Effective At",
+                "headerTooltip": "Effective at",
+                "width": 200,
+              },
+              Object {
+                "field": "effectiveUntil",
+                "headerName": "Effective Until",
+                "headerTooltip": "Effective until",
+                "width": 200,
+              },
+              Object {
+                "comparator": [Function],
+                "field": "latitudeDegrees",
+                "headerName": "Lat (°)",
+                "headerTooltip": "Latitude in degrees",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "longitudeDegrees",
+                "headerName": "Lon (°)",
+                "headerTooltip": "Longitude in degrees",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "depthKm",
+                "headerName": "Depth (km)",
+                "headerTooltip": "Depth in kilometers",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "elevationKm",
+                "headerName": "Elev (km)",
+                "headerTooltip": "Elevation in kilometers",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "nominalSampleRateHz",
+                "headerName": "Sample Rate (Hz)",
+                "headerTooltip": "Nominal sample rate in hertz",
+              },
+              Object {
+                "field": "units",
+                "headerName": "Units",
+                "headerTooltip": "units",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "orientationHorizontalDegrees",
+                "headerName": "Horiz Angle (°)",
+                "headerTooltip": "Orientation horizontal angle in degrees",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "orientationVerticalDegrees",
+                "headerName": "Vert Angle (°)",
+                "headerTooltip": "Orientation vertical angle in degrees",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "calibrationFactor",
+                "headerName": "Calib Factor (s)",
+                "headerTooltip": "Calibration factor in seconds",
+                "width": 200,
+              },
+              Object {
+                "comparator": [Function],
+                "field": "calibrationPeriod",
+                "headerName": "Calib Period (s)",
+                "headerTooltip": "Calibration period in seconds",
+                "width": 200,
+              },
+              Object {
+                "comparator": [Function],
+                "field": "calibrationEffectiveAt",
+                "headerName": "Calib Effective At",
+                "headerTooltip": "Calibration effective at",
+                "width": 300,
+              },
+              Object {
+                "comparator": [Function],
+                "field": "calibrationTimeShift",
+                "headerName": "Calib Time Shift (s)",
+                "headerTooltip": "Calibration time shift in seconds",
+                "width": 200,
+              },
+              Object {
+                "comparator": [Function],
+                "field": "calibrationStandardDeviation",
+                "headerName": "Calib Std Dev",
+                "headerTooltip": "Calibration standard deviation",
+                "width": 200,
+              },
+              Object {
+                "comparator": [Function],
+                "field": "northDisplacementKm",
+                "headerName": "North Displacement (km)",
+                "headerTooltip": "North displacement in kilometers",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "eastDisplacementKm",
+                "headerName": "East Displacement (km)",
+                "headerTooltip": "East displacement in kilometers",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "verticalDisplacementKm",
+                "headerName": "Vert Displacement (km)",
+                "headerTooltip": "Vertical displacement in kilometers",
+              },
+              Object {
+                "field": "description",
+                "headerName": "Description",
+                "headerTooltip": "Description",
+                "width": 300,
+              },
+              Object {
+                "field": "channelDataType",
+                "headerName": "Data Type",
+                "headerTooltip": "Channel data type",
+                "width": 200,
+              },
+              Object {
+                "field": "channelBandType",
+                "headerName": "Band Type",
+                "headerTooltip": "Channel band type",
+              },
+              Object {
+                "field": "channelInstrumentType",
+                "headerName": "Instrument Type",
+                "headerTooltip": "Channel instrument type",
+              },
+              Object {
+                "field": "channelOrientationCode",
+                "headerName": "Orientation Code",
+                "headerTooltip": "Channel orientation code",
+              },
+              Object {
+                "field": "channelOrientationType",
+                "headerName": "Orientation Type",
+                "headerTooltip": "Channel orientation type",
+                "width": 200,
+              },
+              Object {
+                "field": "calibrationResponseId",
+                "headerName": "Calib ID",
+                "headerTooltip": "Calibration response ID",
+                "width": 200,
+              },
+              Object {
+                "field": "fapResponseId",
+                "headerName": "FAP Resp ID",
+                "headerTooltip": "Frequency amplitude response ID",
+                "width": 200,
+              },
+            ]
+          }
+          context={Object {}}
+          defaultColDef={
+            Object {
+              "cellRendererFramework": [Function],
+              "disableStaticMarkupForCellRendererFramework": true,
+              "disableStaticMarkupForHeaderComponentFramework": true,
+              "filter": true,
+              "headerClass": "station-properties-header-cell",
+              "hide": true,
+              "lockVisible": false,
+              "resizable": true,
+              "sortable": true,
+              "width": 105,
+            }
+          }
+          deltaRowDataMode={true}
+          getRowNodeId={[Function]}
+          headerHeight={44}
+          onGridReady={[Function]}
+          overlayNoRowsTemplate="No Channels to display"
+          rowBuffer={10}
+          rowData={
+            Array [
+              Object {
+                "calibrationEffectiveAt": "2021-04-20 16:11:30.674",
+                "calibrationFactor": "1.2",
+                "calibrationPeriod": "14.5",
+                "calibrationResponseId": "5dc3dce4-ae3c-3fb0-84ba-2f83fb5a89d2",
+                "calibrationStandardDeviation": "0.112",
+                "calibrationTimeShift": "2",
+                "channelBandType": "B",
+                "channelDataType": "Diagnostic SOH",
+                "channelInstrumentType": "H",
+                "channelOrientationCode": "Z",
+                "channelOrientationType": "Z",
+                "depthKm": "100.000",
+                "description": "Example description",
+                "eastDisplacementKm": "5",
+                "effectiveAt": "1970-01-01 00:00:00.000",
+                "effectiveUntil": "1970-01-01 00:00:00.000",
+                "elevationKm": "5500.000",
+                "fapResponseId": "966deee1-545e-44ed-a346-b029ab111151",
+                "id": "0",
+                "latitudeDegrees": "35.000",
+                "longitudeDegrees": "-125.000",
+                "name": "Real Channel Name One",
+                "nominalSampleRateHz": "66",
+                "northDisplacementKm": "50",
+                "orientationHorizontalDegrees": "65",
+                "orientationVerticalDegrees": "135",
+                "units": "Nanometers",
+                "verticalDisplacementKm": "10",
+              },
+            ]
+          }
+          rowDeselection={true}
+          rowHeight={40}
+          rowSelection="single"
+          suppressCellSelection={true}
+          suppressContextMenu={true}
+        >
+          <AgGridReact
+            animateRows={false}
+            columnDefs={
+              Array [
+                Object {
+                  "field": "name",
+                  "headerName": "Name",
+                  "headerTooltip": "Name",
+                  "width": 200,
+                },
+                Object {
+                  "field": "effectiveAt",
+                  "headerName": "Effective At",
+                  "headerTooltip": "Effective at",
+                  "width": 200,
+                },
+                Object {
+                  "field": "effectiveUntil",
+                  "headerName": "Effective Until",
+                  "headerTooltip": "Effective until",
+                  "width": 200,
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "latitudeDegrees",
+                  "headerName": "Lat (°)",
+                  "headerTooltip": "Latitude in degrees",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "longitudeDegrees",
+                  "headerName": "Lon (°)",
+                  "headerTooltip": "Longitude in degrees",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "depthKm",
+                  "headerName": "Depth (km)",
+                  "headerTooltip": "Depth in kilometers",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "elevationKm",
+                  "headerName": "Elev (km)",
+                  "headerTooltip": "Elevation in kilometers",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "nominalSampleRateHz",
+                  "headerName": "Sample Rate (Hz)",
+                  "headerTooltip": "Nominal sample rate in hertz",
+                },
+                Object {
+                  "field": "units",
+                  "headerName": "Units",
+                  "headerTooltip": "units",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "orientationHorizontalDegrees",
+                  "headerName": "Horiz Angle (°)",
+                  "headerTooltip": "Orientation horizontal angle in degrees",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "orientationVerticalDegrees",
+                  "headerName": "Vert Angle (°)",
+                  "headerTooltip": "Orientation vertical angle in degrees",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "calibrationFactor",
+                  "headerName": "Calib Factor (s)",
+                  "headerTooltip": "Calibration factor in seconds",
+                  "width": 200,
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "calibrationPeriod",
+                  "headerName": "Calib Period (s)",
+                  "headerTooltip": "Calibration period in seconds",
+                  "width": 200,
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "calibrationEffectiveAt",
+                  "headerName": "Calib Effective At",
+                  "headerTooltip": "Calibration effective at",
+                  "width": 300,
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "calibrationTimeShift",
+                  "headerName": "Calib Time Shift (s)",
+                  "headerTooltip": "Calibration time shift in seconds",
+                  "width": 200,
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "calibrationStandardDeviation",
+                  "headerName": "Calib Std Dev",
+                  "headerTooltip": "Calibration standard deviation",
+                  "width": 200,
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "northDisplacementKm",
+                  "headerName": "North Displacement (km)",
+                  "headerTooltip": "North displacement in kilometers",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "eastDisplacementKm",
+                  "headerName": "East Displacement (km)",
+                  "headerTooltip": "East displacement in kilometers",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "verticalDisplacementKm",
+                  "headerName": "Vert Displacement (km)",
+                  "headerTooltip": "Vertical displacement in kilometers",
+                },
+                Object {
+                  "field": "description",
+                  "headerName": "Description",
+                  "headerTooltip": "Description",
+                  "width": 300,
+                },
+                Object {
+                  "field": "channelDataType",
+                  "headerName": "Data Type",
+                  "headerTooltip": "Channel data type",
+                  "width": 200,
+                },
+                Object {
+                  "field": "channelBandType",
+                  "headerName": "Band Type",
+                  "headerTooltip": "Channel band type",
+                },
+                Object {
+                  "field": "channelInstrumentType",
+                  "headerName": "Instrument Type",
+                  "headerTooltip": "Channel instrument type",
+                },
+                Object {
+                  "field": "channelOrientationCode",
+                  "headerName": "Orientation Code",
+                  "headerTooltip": "Channel orientation code",
+                },
+                Object {
+                  "field": "channelOrientationType",
+                  "headerName": "Orientation Type",
+                  "headerTooltip": "Channel orientation type",
+                  "width": 200,
+                },
+                Object {
+                  "field": "calibrationResponseId",
+                  "headerName": "Calib ID",
+                  "headerTooltip": "Calibration response ID",
+                  "width": 200,
+                },
+                Object {
+                  "field": "fapResponseId",
+                  "headerName": "FAP Resp ID",
+                  "headerTooltip": "Frequency amplitude response ID",
+                  "width": 200,
+                },
+              ]
+            }
+            context={Object {}}
+            defaultColDef={
+              Object {
+                "cellRendererFramework": [Function],
+                "filter": true,
+                "headerClass": "station-properties-header-cell",
+                "hide": true,
+                "lockVisible": false,
+                "resizable": true,
+                "sortable": true,
+                "sortingOrder": Array [
+                  "asc",
+                  "desc",
+                ],
+                "suppressCellFlash": true,
+                "width": 105,
+              }
+            }
+            deltaRowDataMode={true}
+            getRowNodeId={[Function]}
+            headerHeight={44}
+            onColumnMoved={[Function]}
+            onGridReady={[Function]}
+            overlayNoRowsTemplate="No Channels to display"
+            preventDefaultOnContextMenu={true}
+            rowBuffer={10}
+            rowData={null}
+            rowDataChangeDetectionStrategy="IdentityCheck"
+            rowDeselection={true}
+            rowHeight={40}
+            rowSelection="single"
+            suppressCellSelection={true}
+            suppressContextMenu={true}
+            suppressLoadingOverlay={true}
+            suppressScrollOnNewData={true}
+          >
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                }
+              }
+            />
+          </AgGridReact>
+        </CoreTable>
+      </ClientSideTable>
+    </div>
+  </div>
+</ChannelConfigurationTable>
+`;

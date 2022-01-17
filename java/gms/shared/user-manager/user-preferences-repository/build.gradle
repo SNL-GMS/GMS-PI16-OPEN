@@ -1,0 +1,28 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':user-preferences-dao')
+    api project(':user-preferences-api')
+
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // JPA dependencies
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-c3p0'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'org.hibernate:hibernate-ehcache'
+
+    implementation project(":user-preferences-coi")
+    implementation project(':metrics')
+    implementation project(':frameworks-utilities-jpa')
+    // RepositoryException
+    implementation project(":frameworks-osd-commonobjects")
+
+    // Testing.
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'org.postgresql:postgresql'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.testcontainers:postgresql'
+    testImplementation 'org.testcontainers:kafka'
+}

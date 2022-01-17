@@ -1,0 +1,4303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow Panel confirmation panel closes and sets the interval for open anything 1`] = `
+<BaseDisplay
+  glContainer={
+    Object {
+      "close": [MockFunction],
+      "emit": [MockFunction],
+      "extendState": [MockFunction],
+      "getElement": [MockFunction],
+      "getState": [MockFunction],
+      "height": 1200,
+      "hide": [MockFunction],
+      "isHidden": false,
+      "layoutManager": undefined,
+      "off": [MockFunction],
+      "on": [MockFunction],
+      "parent": undefined,
+      "setSize": [MockFunction],
+      "setState": [MockFunction],
+      "setTitle": [MockFunction],
+      "show": [MockFunction],
+      "tab": undefined,
+      "title": "workflow",
+      "trigger": [MockFunction],
+      "unbind": [MockFunction],
+      "width": 1900,
+    }
+  }
+>
+  <div
+    className="base-display "
+  >
+    <Provider
+      store={
+        Object {
+          "dispatch": [MockFunction] {
+            "calls": Array [
+              Array [
+                [Function],
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+    >
+      <WorkflowPanel
+        glContainer={
+          Object {
+            "close": [MockFunction],
+            "emit": [MockFunction],
+            "extendState": [MockFunction],
+            "getElement": [MockFunction],
+            "getState": [MockFunction],
+            "height": 1200,
+            "hide": [MockFunction],
+            "isHidden": false,
+            "layoutManager": undefined,
+            "off": [MockFunction],
+            "on": [MockFunction],
+            "parent": undefined,
+            "setSize": [MockFunction],
+            "setState": [MockFunction],
+            "setTitle": [MockFunction],
+            "show": [MockFunction],
+            "tab": undefined,
+            "title": "workflow",
+            "trigger": [MockFunction],
+            "unbind": [MockFunction],
+            "width": 1900,
+          }
+        }
+        operationalTimePeriodConfigurationQuery={
+          Object {
+            "canFetchMore": false,
+            "clear": undefined,
+            "data": Object {
+              "operationalPeriodEndSecs": 0,
+              "operationalPeriodStartSecs": 3888000,
+            },
+            "error": undefined,
+            "failureCount": 0,
+            "fetchMore": undefined,
+            "isError": false,
+            "isFetched": false,
+            "isFetchedAfterMount": undefined,
+            "isFetching": false,
+            "isIdle": false,
+            "isInitialData": undefined,
+            "isLoading": false,
+            "isPlaceholderData": undefined,
+            "isPreviousData": undefined,
+            "isStale": true,
+            "isSuccess": true,
+            "refetch": undefined,
+            "remove": undefined,
+            "status": undefined,
+            "updatedAt": undefined,
+          }
+        }
+        timeRange={
+          Object {
+            "endTimeSecs": 1609506000,
+            "startTimeSecs": 1609500000,
+          }
+        }
+        workflowIntervalQuery={
+          Object {
+            "canFetchMore": false,
+            "clear": undefined,
+            "data": Immutable.Map {
+              "AL1": Array [
+                Object {
+                  "activityIntervals": Array [
+                    Object {
+                      "activeAnalysts": Array [
+                        "larry",
+                        "moe",
+                        "curly",
+                      ],
+                      "comment": "interval example",
+                      "endTime": 1622057187,
+                      "modificationTime": 1622057667,
+                      "name": "Event Review",
+                      "percentAvailable": 100,
+                      "processingEndTime": 1622057547,
+                      "processingStartTime": 1622057487,
+                      "stageName": "AL1",
+                      "startTime": 1622053587,
+                      "status": "IN_PROGRESS",
+                      "storageTime": 1622057607,
+                    },
+                  ],
+                  "comment": "interval example",
+                  "endTime": 1622057187,
+                  "modificationTime": 1622057667,
+                  "name": "AL1",
+                  "percentAvailable": 100,
+                  "processingEndTime": 1622057547,
+                  "processingStartTime": 1622057487,
+                  "stageMetrics": Object {
+                    "associatedSignalDetectionCount": 34,
+                    "eventCount": 21,
+                    "maxMagnitude": 8,
+                    "unassociatedSignalDetectionCount": 55,
+                  },
+                  "stageMode": "INTERACTIVE",
+                  "startTime": 1622053587,
+                  "status": "IN_PROGRESS",
+                  "storageTime": 1622057607,
+                },
+              ],
+            },
+            "error": undefined,
+            "failureCount": 0,
+            "fetchMore": undefined,
+            "isError": false,
+            "isFetched": false,
+            "isFetchedAfterMount": undefined,
+            "isFetching": false,
+            "isIdle": false,
+            "isInitialData": undefined,
+            "isLoading": false,
+            "isPlaceholderData": undefined,
+            "isPreviousData": undefined,
+            "isStale": true,
+            "isSuccess": true,
+            "refetch": undefined,
+            "remove": undefined,
+            "status": undefined,
+            "updatedAt": undefined,
+          }
+        }
+        workflowQuery={
+          Object {
+            "canFetchMore": false,
+            "clear": undefined,
+            "data": Object {
+              "name": "gms",
+              "stages": Array [
+                Object {
+                  "activities": Array [
+                    Object {
+                      "analysisMode": "EVENT_REVIEW",
+                      "name": "Event Review",
+                      "stationGroup": Object {
+                        "description": "station group",
+                        "effectiveAt": 1622048927,
+                        "name": "station-group",
+                      },
+                    },
+                  ],
+                  "duration": 3600,
+                  "mode": "INTERACTIVE",
+                  "name": "AL1",
+                },
+                Object {
+                  "duration": 3600,
+                  "mode": "AUTOMATIC",
+                  "name": "Auto Network",
+                  "sequences": Array [
+                    Object {
+                      "name": "Auto Post-AL1 Seq",
+                      "steps": Array [
+                        Object {
+                          "name": "AAA",
+                        },
+                        Object {
+                          "name": "BBB",
+                        },
+                        Object {
+                          "name": "CCC",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            "error": undefined,
+            "failureCount": 0,
+            "fetchMore": undefined,
+            "isError": false,
+            "isFetched": false,
+            "isFetchedAfterMount": undefined,
+            "isFetching": false,
+            "isIdle": false,
+            "isInitialData": undefined,
+            "isLoading": false,
+            "isPlaceholderData": undefined,
+            "isPreviousData": undefined,
+            "isStale": true,
+            "isSuccess": true,
+            "refetch": undefined,
+            "remove": undefined,
+            "status": undefined,
+            "updatedAt": undefined,
+          }
+        }
+      >
+        <div
+          className="workflow-panel"
+          onKeyDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          tabIndex={0}
+        >
+          <Memo()
+            onPan={[Function]}
+          >
+            <ToolbarComponent
+              items={
+                Array [
+                  Object {
+                    "cyData": "workflow-doubleLeftArrowItem",
+                    "icon": "double-chevron-left",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 0,
+                    "tooltip": "Pan the workflow to the left by 7 days",
+                    "type": "Button",
+                    "widthPx": 20,
+                  },
+                  Object {
+                    "cyData": "workflow-singleLeftArrowItem",
+                    "icon": "chevron-left",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 1,
+                    "tooltip": "Pan the workflow to the left by 1 day",
+                    "type": "Button",
+                    "widthPx": 20,
+                  },
+                  Object {
+                    "cyData": "workflow-singleRightArrowItem",
+                    "icon": "chevron-right",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 2,
+                    "tooltip": "Pan the workflow to the right by 1 day",
+                    "type": "Button",
+                    "widthPx": 20,
+                  },
+                  Object {
+                    "cyData": "workflow-doubleRightArrowItem",
+                    "icon": "double-chevron-right",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 3,
+                    "tooltip": "Pan the workflow to the right by 7 days",
+                    "type": "Button",
+                    "widthPx": 20,
+                  },
+                  Object {
+                    "cyData": "workflow-openAnythingItem",
+                    "icon": "search-template",
+                    "labelRight": "Open anything...",
+                    "onClick": [Function],
+                    "onlyShowIcon": false,
+                    "rank": 4,
+                    "tooltip": "Open anything",
+                    "type": "Button",
+                    "widthPx": 160,
+                  },
+                ]
+              }
+              itemsLeft={
+                Array [
+                  Object {
+                    "hasIssue": false,
+                    "label": "Open time range",
+                    "rank": 0,
+                    "style": Object {
+                      "marginLeft": "1em",
+                    },
+                    "tooltip": "The opened time range",
+                    "tooltipForIssue": undefined,
+                    "type": "LabelValue",
+                    "value": "2021-01-01 13:00:00  to  2021-01-01 13:00:00",
+                    "widthPx": 400,
+                  },
+                  Object {
+                    "hasIssue": false,
+                    "label": "Processing stage",
+                    "rank": 1,
+                    "style": Object {
+                      "marginLeft": "8em",
+                    },
+                    "tooltip": "The opened processing stage",
+                    "tooltipForIssue": undefined,
+                    "type": "LabelValue",
+                    "value": "AL1",
+                    "widthPx": 400,
+                  },
+                ]
+              }
+              minWhiteSpacePx={1}
+              toolbarWidthPx={1860}
+            >
+              <div
+                className="toolbar"
+                style={
+                  Object {
+                    "width": "1860px",
+                  }
+                }
+              >
+                <div
+                  className="toolbar__left-group"
+                >
+                  <div
+                    className="toolbar-item toolbar-item__left"
+                    key="0"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "hasIssue": false,
+                          "label": "Open time range",
+                          "rank": 0,
+                          "style": Object {
+                            "marginLeft": "1em",
+                          },
+                          "tooltip": "The opened time range",
+                          "tooltipForIssue": undefined,
+                          "type": "LabelValue",
+                          "value": "2021-01-01 13:00:00  to  2021-01-01 13:00:00",
+                          "widthPx": 400,
+                        }
+                      }
+                      key="0"
+                    >
+                      <div
+                        className="toolbar-label-value"
+                        style={
+                          Object {
+                            "marginLeft": "1em",
+                          }
+                        }
+                      >
+                        <LabelValue
+                          label="Open time range"
+                          tooltip="The opened time range"
+                          value="2021-01-01 13:00:00  to  2021-01-01 13:00:00"
+                        >
+                          <div
+                            className="label-value-container"
+                          >
+                            <div
+                              className="label-value__label"
+                            >
+                              Open time range: 
+                            </div>
+                            <div
+                              className="label-value__value"
+                              style={
+                                Object {
+                                  "color": "",
+                                }
+                              }
+                              title="The opened time range"
+                            >
+                              2021-01-01 13:00:00  to  2021-01-01 13:00:00
+                            </div>
+                          </div>
+                        </LabelValue>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item toolbar-item__left"
+                    key="1"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "hasIssue": false,
+                          "label": "Processing stage",
+                          "rank": 1,
+                          "style": Object {
+                            "marginLeft": "8em",
+                          },
+                          "tooltip": "The opened processing stage",
+                          "tooltipForIssue": undefined,
+                          "type": "LabelValue",
+                          "value": "AL1",
+                          "widthPx": 400,
+                        }
+                      }
+                      key="1"
+                    >
+                      <div
+                        className="toolbar-label-value"
+                        style={
+                          Object {
+                            "marginLeft": "8em",
+                          }
+                        }
+                      >
+                        <LabelValue
+                          label="Processing stage"
+                          tooltip="The opened processing stage"
+                          value="AL1"
+                        >
+                          <div
+                            className="label-value-container"
+                          >
+                            <div
+                              className="label-value__label"
+                            >
+                              Processing stage: 
+                            </div>
+                            <div
+                              className="label-value__value"
+                              style={
+                                Object {
+                                  "color": "",
+                                }
+                              }
+                              title="The opened processing stage"
+                            >
+                              AL1
+                            </div>
+                          </div>
+                        </LabelValue>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                </div>
+                <div
+                  className="toolbar__center-group"
+                >
+                  <div
+                    className="toolbar__whitespace"
+                    style={
+                      Object {
+                        "width": "1844px",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="toolbar__right-group"
+                >
+                  <div
+                    className="toolbar-item
+                    "
+                    key="0"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-doubleLeftArrowItem",
+                          "icon": "double-chevron-left",
+                          "onClick": [Function],
+                          "onlyShowIcon": true,
+                          "rank": 0,
+                          "tooltip": "Pan the workflow to the left by 7 days",
+                          "type": "Button",
+                          "widthPx": 20,
+                        }
+                      }
+                      key="0"
+                    >
+                      <div
+                        key="0"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="center"
+                          className="toolbar-button--icon-only"
+                          data-cy="workflow-doubleLeftArrowItem"
+                          key="0"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "20px",
+                            }
+                          }
+                          title="Pan the workflow to the left by 7 days"
+                        >
+                          <button
+                            className="bp3-button toolbar-button--icon-only"
+                            data-cy="workflow-doubleLeftArrowItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "20px",
+                              }
+                            }
+                            title="Pan the workflow to the left by 7 days"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <Blueprint3.Icon
+                                icon="double-chevron-left"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-double-chevron-left"
+                                  icon="double-chevron-left"
+                                >
+                                  <svg
+                                    data-icon="double-chevron-left"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M4.41 8L7.7 4.71c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C2.11 7.47 2 7.72 2 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L4.41 8zm5 0l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C7.11 7.47 7 7.72 7 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L9.41 8z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item
+                    "
+                    key="1"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-singleLeftArrowItem",
+                          "icon": "chevron-left",
+                          "onClick": [Function],
+                          "onlyShowIcon": true,
+                          "rank": 1,
+                          "tooltip": "Pan the workflow to the left by 1 day",
+                          "type": "Button",
+                          "widthPx": 20,
+                        }
+                      }
+                      key="1"
+                    >
+                      <div
+                        key="1"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="center"
+                          className="toolbar-button--icon-only"
+                          data-cy="workflow-singleLeftArrowItem"
+                          key="1"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "20px",
+                            }
+                          }
+                          title="Pan the workflow to the left by 1 day"
+                        >
+                          <button
+                            className="bp3-button toolbar-button--icon-only"
+                            data-cy="workflow-singleLeftArrowItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "20px",
+                              }
+                            }
+                            title="Pan the workflow to the left by 1 day"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <Blueprint3.Icon
+                                icon="chevron-left"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-chevron-left"
+                                  icon="chevron-left"
+                                >
+                                  <svg
+                                    data-icon="chevron-left"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L7.41 8z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item
+                    "
+                    key="2"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-singleRightArrowItem",
+                          "icon": "chevron-right",
+                          "onClick": [Function],
+                          "onlyShowIcon": true,
+                          "rank": 2,
+                          "tooltip": "Pan the workflow to the right by 1 day",
+                          "type": "Button",
+                          "widthPx": 20,
+                        }
+                      }
+                      key="2"
+                    >
+                      <div
+                        key="2"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="center"
+                          className="toolbar-button--icon-only"
+                          data-cy="workflow-singleRightArrowItem"
+                          key="2"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "20px",
+                            }
+                          }
+                          title="Pan the workflow to the right by 1 day"
+                        >
+                          <button
+                            className="bp3-button toolbar-button--icon-only"
+                            data-cy="workflow-singleRightArrowItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "20px",
+                              }
+                            }
+                            title="Pan the workflow to the right by 1 day"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <Blueprint3.Icon
+                                icon="chevron-right"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-chevron-right"
+                                  icon="chevron-right"
+                                >
+                                  <svg
+                                    data-icon="chevron-right"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M10.71 7.29l-4-4a1.003 1.003 0 00-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item
+                    "
+                    key="3"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-doubleRightArrowItem",
+                          "icon": "double-chevron-right",
+                          "onClick": [Function],
+                          "onlyShowIcon": true,
+                          "rank": 3,
+                          "tooltip": "Pan the workflow to the right by 7 days",
+                          "type": "Button",
+                          "widthPx": 20,
+                        }
+                      }
+                      key="3"
+                    >
+                      <div
+                        key="3"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="center"
+                          className="toolbar-button--icon-only"
+                          data-cy="workflow-doubleRightArrowItem"
+                          key="3"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "20px",
+                            }
+                          }
+                          title="Pan the workflow to the right by 7 days"
+                        >
+                          <button
+                            className="bp3-button toolbar-button--icon-only"
+                            data-cy="workflow-doubleRightArrowItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "20px",
+                              }
+                            }
+                            title="Pan the workflow to the right by 7 days"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <Blueprint3.Icon
+                                icon="double-chevron-right"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-double-chevron-right"
+                                  icon="double-chevron-right"
+                                >
+                                  <svg
+                                    data-icon="double-chevron-right"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 00-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 00-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item
+                    "
+                    key="4"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-openAnythingItem",
+                          "icon": "search-template",
+                          "labelRight": "Open anything...",
+                          "onClick": [Function],
+                          "onlyShowIcon": false,
+                          "rank": 4,
+                          "tooltip": "Open anything",
+                          "type": "Button",
+                          "widthPx": 160,
+                        }
+                      }
+                      key="4"
+                    >
+                      <div
+                        key="4"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="left"
+                          className="toolbar-button"
+                          data-cy="workflow-openAnythingItem"
+                          key="4"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "160px",
+                            }
+                          }
+                          title="Open anything"
+                        >
+                          <button
+                            className="bp3-button bp3-align-left toolbar-button"
+                            data-cy="workflow-openAnythingItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "160px",
+                              }
+                            }
+                            title="Open anything"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <span
+                                key="1"
+                              />
+                              <Blueprint3.Icon
+                                icon="search-template"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-search-template"
+                                  icon="search-template"
+                                >
+                                  <svg
+                                    data-icon="search-template"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M15.55 13.43l-2.67-2.67c.7-1.09 1.11-2.38 1.11-3.77 0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.39 0 2.68-.41 3.77-1.11l2.67 2.67a1.498 1.498 0 102.12-2.12zm-8.56-1.44c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm2.5-6h-5c-.28 0-.5.22-.5.5s.22.5.5.5h5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zm0-2h-5c-.28 0-.5.22-.5.5s.22.5.5.5h5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zm0 4h-5c-.28 0-.5.22-.5.5s.22.5.5.5h5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                              <span
+                                key="3"
+                              >
+                                Open anything...
+                              </span>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                </div>
+              </div>
+            </ToolbarComponent>
+            <Memo(OpenAnythingDialogComponent)
+              isVisible={false}
+              onCancel={[Function]}
+              onOpen={[Function]}
+            >
+              <ModalPrompt
+                actionCallback={[Function]}
+                actionDisabled={true}
+                actionText="Open"
+                actionTooltipText="Open"
+                cancelButtonCallback={[Function]}
+                cancelText="Cancel"
+                cancelTooltipText="Cancel"
+                isOpen={false}
+                onCloseCallback={[Function]}
+                title="Open Anything"
+              >
+                <Blueprint3.Dialog
+                  canOutsideClickClose={true}
+                  className="dialog_parent dialog_parent--wide"
+                  isOpen={false}
+                  onClose={[Function]}
+                  title="Open Anything"
+                >
+                  <Blueprint3.Overlay
+                    autoFocus={true}
+                    backdropProps={Object {}}
+                    canEscapeKeyClose={true}
+                    canOutsideClickClose={true}
+                    className="bp3-overlay-scroll-container"
+                    enforceFocus={true}
+                    hasBackdrop={true}
+                    isOpen={false}
+                    lazy={true}
+                    onClose={[Function]}
+                    title="Open Anything"
+                    transitionDuration={300}
+                    transitionName="bp3-overlay"
+                    usePortal={true}
+                  >
+                    <Blueprint3.Portal
+                      container={
+                        <body
+                          class=""
+                        >
+                          <div
+                            class="bp3-portal"
+                          >
+                            <div
+                              class="bp3-overlay bp3-overlay-scroll-container"
+                            />
+                          </div>
+                          <div
+                            class="bp3-portal"
+                          >
+                            <div
+                              class="bp3-overlay bp3-overlay-scroll-container"
+                            >
+                              <div
+                                class="bp3-overlay-backdrop bp3-overlay-exit bp3-overlay-exit-active"
+                                tabindex="0"
+                              />
+                              <div
+                                class="bp3-dialog-container bp3-overlay-content bp3-overlay-exit bp3-overlay-exit-active"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="bp3-dialog dialog_parent dialog_parent--wide"
+                                >
+                                  <div
+                                    class="bp3-dialog-header"
+                                  >
+                                    <h4
+                                      class="bp3-heading"
+                                    >
+                                      Warning
+                                    </h4>
+                                    <button
+                                      aria-label="Close"
+                                      class="bp3-button bp3-minimal bp3-dialog-close-button"
+                                      type="button"
+                                    >
+                                      <span
+                                        class="bp3-icon bp3-icon-small-cross"
+                                        icon="small-cross"
+                                      >
+                                        <svg
+                                          data-icon="small-cross"
+                                          height="20"
+                                          viewBox="0 0 20 20"
+                                          width="20"
+                                        >
+                                          <desc>
+                                            small-cross
+                                          </desc>
+                                          <path
+                                            d="M11.41 10l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71L10 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42L8.59 10 5.3 13.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l3.29-3.3 3.29 3.29c.18.19.43.3.71.3a1.003 1.003 0 00.71-1.71L11.41 10z"
+                                            fill-rule="evenodd"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </button>
+                                  </div>
+                                  <div
+                                    class="dialog dialog__container"
+                                  >
+                                    <div
+                                      class="interval-confirmation-contents"
+                                    >
+                                      <div
+                                        class="interval-confirmation-text"
+                                      >
+                                        <div
+                                          class="interval-confirmation-header"
+                                        >
+                                          You have unsaved changes in your workspace.
+                                        </div>
+                                        <div
+                                          class="interval-confirmation-paragraph"
+                                        >
+                                           Do you want to discard these changes and load data for a different time range?
+                                        </div>
+                                      </div>
+                                      <span
+                                        class="bp3-icon bp3-icon-error interval-confirmation-icon"
+                                        icon="error"
+                                      >
+                                        <svg
+                                          data-icon="error"
+                                          height="48"
+                                          viewBox="0 0 20 20"
+                                          width="48"
+                                        >
+                                          <desc>
+                                            error
+                                          </desc>
+                                          <path
+                                            d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm1 16H9v-2h2v2zm0-3H9V4h2v9z"
+                                            fill-rule="evenodd"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </div>
+                                    <div
+                                      class="dialog__controls"
+                                    >
+                                      <div
+                                        class="dialog-actions"
+                                      >
+                                        <button
+                                          class="bp3-button bp3-intent-primary"
+                                          data-cy="modal-action-button"
+                                          title="Discard your changes and open a new interval"
+                                          type="button"
+                                        >
+                                          <span
+                                            class="bp3-button-text"
+                                          >
+                                            Discard my changes
+                                          </span>
+                                        </button>
+                                      </div>
+                                      <button
+                                        class="bp3-button"
+                                        data-cy="modal-cancel-button"
+                                        title="Cancel and do not open a new interval"
+                                        type="button"
+                                      >
+                                        <span
+                                          class="bp3-button-text"
+                                        >
+                                          Cancel
+                                        </span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </body>
+                      }
+                    >
+                      <Portal
+                        containerInfo={
+                          <div
+                            class="bp3-portal"
+                          >
+                            <div
+                              class="bp3-overlay bp3-overlay-scroll-container"
+                            />
+                          </div>
+                        }
+                      >
+                        <TransitionGroup
+                          appear={true}
+                          childFactory={[Function]}
+                          className="bp3-overlay bp3-overlay-scroll-container"
+                          component="div"
+                          onKeyDown={[Function]}
+                        >
+                          <div
+                            className="bp3-overlay bp3-overlay-scroll-container"
+                            onKeyDown={[Function]}
+                          />
+                        </TransitionGroup>
+                      </Portal>
+                    </Blueprint3.Portal>
+                  </Blueprint3.Overlay>
+                </Blueprint3.Dialog>
+              </ModalPrompt>
+            </Memo(OpenAnythingDialogComponent)>
+          </Memo()>
+          <WorkflowTable
+            onScroll={[Function]}
+            stageIntervals={
+              Immutable.Map {
+                "AL1": Array [
+                  Object {
+                    "activityIntervals": Array [
+                      Object {
+                        "activeAnalysts": Array [
+                          "larry",
+                          "moe",
+                          "curly",
+                        ],
+                        "comment": "interval example",
+                        "endTime": 1622057187,
+                        "modificationTime": 1622057667,
+                        "name": "Event Review",
+                        "percentAvailable": 100,
+                        "processingEndTime": 1622057547,
+                        "processingStartTime": 1622057487,
+                        "stageName": "AL1",
+                        "startTime": 1622053587,
+                        "status": "IN_PROGRESS",
+                        "storageTime": 1622057607,
+                      },
+                    ],
+                    "comment": "interval example",
+                    "endTime": 1622057187,
+                    "modificationTime": 1622057667,
+                    "name": "AL1",
+                    "percentAvailable": 100,
+                    "processingEndTime": 1622057547,
+                    "processingStartTime": 1622057487,
+                    "stageMetrics": Object {
+                      "associatedSignalDetectionCount": 34,
+                      "eventCount": 21,
+                      "maxMagnitude": 8,
+                      "unassociatedSignalDetectionCount": 55,
+                    },
+                    "stageMode": "INTERACTIVE",
+                    "startTime": 1622053587,
+                    "status": "IN_PROGRESS",
+                    "storageTime": 1622057607,
+                  },
+                ],
+              }
+            }
+            timeRange={
+              Object {
+                "endTimeSecs": 1622057187,
+                "startTimeSecs": 1622053587,
+              }
+            }
+            workflow={
+              Object {
+                "name": "gms",
+                "stages": Array [
+                  Object {
+                    "activities": Array [
+                      Object {
+                        "analysisMode": "EVENT_REVIEW",
+                        "name": "Event Review",
+                        "stationGroup": Object {
+                          "description": "station group",
+                          "effectiveAt": 1622048927,
+                          "name": "station-group",
+                        },
+                      },
+                    ],
+                    "duration": 3600,
+                    "mode": "INTERACTIVE",
+                    "name": "AL1",
+                  },
+                  Object {
+                    "duration": 3600,
+                    "mode": "AUTOMATIC",
+                    "name": "Auto Network",
+                    "sequences": Array [
+                      Object {
+                        "name": "Auto Post-AL1 Seq",
+                        "steps": Array [
+                          Object {
+                            "name": "AAA",
+                          },
+                          Object {
+                            "name": "BBB",
+                          },
+                          Object {
+                            "name": "CCC",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              }
+            }
+          >
+            <div
+              className="workflow-scroll-wrapper"
+            >
+              <div
+                className="interval-table__curtain-left"
+              />
+              <div
+                className="interval-table-wrapper-wrapper"
+              >
+                <DayBoundaryIndicator
+                  timeRange={
+                    Object {
+                      "endTimeSecs": 1622057187,
+                      "startTimeSecs": 1622053587,
+                    }
+                  }
+                />
+                <div
+                  className="interval-table-scroll-wrapper"
+                />
+                <div
+                  className="interval-table-wrapper"
+                  onScroll={[Function]}
+                >
+                  <WorkflowRow
+                    key="AL1"
+                    stageIntervals={
+                      Array [
+                        Object {
+                          "activityIntervals": Array [
+                            Object {
+                              "activeAnalysts": Array [
+                                "larry",
+                                "moe",
+                                "curly",
+                              ],
+                              "comment": "interval example",
+                              "endTime": 1622057187,
+                              "modificationTime": 1622057667,
+                              "name": "Event Review",
+                              "percentAvailable": 100,
+                              "processingEndTime": 1622057547,
+                              "processingStartTime": 1622057487,
+                              "stageName": "AL1",
+                              "startTime": 1622053587,
+                              "status": "IN_PROGRESS",
+                              "storageTime": 1622057607,
+                            },
+                          ],
+                          "comment": "interval example",
+                          "endTime": 1622057187,
+                          "modificationTime": 1622057667,
+                          "name": "AL1",
+                          "percentAvailable": 100,
+                          "processingEndTime": 1622057547,
+                          "processingStartTime": 1622057487,
+                          "stageMetrics": Object {
+                            "associatedSignalDetectionCount": 34,
+                            "eventCount": 21,
+                            "maxMagnitude": 8,
+                            "unassociatedSignalDetectionCount": 55,
+                          },
+                          "stageMode": "INTERACTIVE",
+                          "startTime": 1622053587,
+                          "status": "IN_PROGRESS",
+                          "storageTime": 1622057607,
+                        },
+                      ]
+                    }
+                    subRowNames={
+                      Array [
+                        "Event Review",
+                      ]
+                    }
+                  >
+                    <div
+                      className="stage-row"
+                    >
+                      <Memo()
+                        disabled={false}
+                        isExpanded={false}
+                        stageName="AL1"
+                        toggle={[Function]}
+                      >
+                        <Blueprint3.Button
+                          className="stage-row__expand-button"
+                          disabled={false}
+                          icon="small-plus"
+                          key="AL1"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="bp3-button stage-row__expand-button"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              icon="small-plus"
+                              key="leftIcon"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-small-plus"
+                                icon="small-plus"
+                              >
+                                <svg
+                                  data-icon="small-plus"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    small-plus
+                                  </desc>
+                                  <path
+                                    d="M11 7H9V5c0-.55-.45-1-1-1s-1 .45-1 1v2H5c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1V9h2c.55 0 1-.45 1-1s-.45-1-1-1z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </Memo()>
+                      <WorkflowTableStage
+                        isExpanded={false}
+                        key="1622053587 AL1"
+                        stage={
+                          Object {
+                            "activityIntervals": Array [
+                              Object {
+                                "activeAnalysts": Array [
+                                  "larry",
+                                  "moe",
+                                  "curly",
+                                ],
+                                "comment": "interval example",
+                                "endTime": 1622057187,
+                                "modificationTime": 1622057667,
+                                "name": "Event Review",
+                                "percentAvailable": 100,
+                                "processingEndTime": 1622057547,
+                                "processingStartTime": 1622057487,
+                                "stageName": "AL1",
+                                "startTime": 1622053587,
+                                "status": "IN_PROGRESS",
+                                "storageTime": 1622057607,
+                              },
+                            ],
+                            "comment": "interval example",
+                            "endTime": 1622057187,
+                            "modificationTime": 1622057667,
+                            "name": "AL1",
+                            "percentAvailable": 100,
+                            "processingEndTime": 1622057547,
+                            "processingStartTime": 1622057487,
+                            "stageMetrics": Object {
+                              "associatedSignalDetectionCount": 34,
+                              "eventCount": 21,
+                              "maxMagnitude": 8,
+                              "unassociatedSignalDetectionCount": 55,
+                            },
+                            "stageMode": "INTERACTIVE",
+                            "startTime": 1622053587,
+                            "status": "IN_PROGRESS",
+                            "storageTime": 1622057607,
+                          }
+                        }
+                        subRowNames={
+                          Array [
+                            "Event Review",
+                          ]
+                        }
+                      >
+                        <div
+                          className="stage-column"
+                        >
+                          <Tooltip
+                            activeAnalysts={
+                              Array [
+                                "larry",
+                                "moe",
+                                "curly",
+                              ]
+                            }
+                            interval={
+                              Object {
+                                "activityIntervals": Array [
+                                  Object {
+                                    "activeAnalysts": Array [
+                                      "larry",
+                                      "moe",
+                                      "curly",
+                                    ],
+                                    "comment": "interval example",
+                                    "endTime": 1622057187,
+                                    "modificationTime": 1622057667,
+                                    "name": "Event Review",
+                                    "percentAvailable": 100,
+                                    "processingEndTime": 1622057547,
+                                    "processingStartTime": 1622057487,
+                                    "stageName": "AL1",
+                                    "startTime": 1622053587,
+                                    "status": "IN_PROGRESS",
+                                    "storageTime": 1622057607,
+                                  },
+                                ],
+                                "comment": "interval example",
+                                "endTime": 1622057187,
+                                "modificationTime": 1622057667,
+                                "name": "AL1",
+                                "percentAvailable": 100,
+                                "processingEndTime": 1622057547,
+                                "processingStartTime": 1622057487,
+                                "stageMetrics": Object {
+                                  "associatedSignalDetectionCount": 34,
+                                  "eventCount": 21,
+                                  "maxMagnitude": 8,
+                                  "unassociatedSignalDetectionCount": 55,
+                                },
+                                "stageMode": "INTERACTIVE",
+                                "startTime": 1622053587,
+                                "status": "IN_PROGRESS",
+                                "storageTime": 1622057607,
+                              }
+                            }
+                            key="1622053587 AL1"
+                          >
+                            <TooltipWrapper
+                              content={
+                                <TooltipPanel
+                                  activeAnalysts="larry, moe, curly"
+                                  isStale={false}
+                                  lastModified="2021-01-01 13:00:00"
+                                  status="In Progress"
+                                />
+                              }
+                            >
+                              <Blueprint3.Tooltip
+                                boundary="window"
+                                className="core-tooltip"
+                                content={
+                                  <TooltipPanel
+                                    activeAnalysts="larry, moe, curly"
+                                    isStale={false}
+                                    lastModified="2021-01-01 13:00:00"
+                                    status="In Progress"
+                                  />
+                                }
+                                hoverCloseDelay={0}
+                                hoverOpenDelay={300}
+                                position="bottom"
+                                targetClassName="core-tooltip__target"
+                                targetTagName="div"
+                                transitionDuration={100}
+                                wrapperTagName="div"
+                              >
+                                <Blueprint3.Popover
+                                  autoFocus={false}
+                                  boundary="window"
+                                  canEscapeKeyClose={false}
+                                  captureDismiss={false}
+                                  className="core-tooltip"
+                                  content={
+                                    <TooltipPanel
+                                      activeAnalysts="larry, moe, curly"
+                                      isStale={false}
+                                      lastModified="2021-01-01 13:00:00"
+                                      status="In Progress"
+                                    />
+                                  }
+                                  defaultIsOpen={false}
+                                  disabled={false}
+                                  enforceFocus={false}
+                                  fill={false}
+                                  hasBackdrop={false}
+                                  hoverCloseDelay={0}
+                                  hoverOpenDelay={300}
+                                  inheritDarkTheme={true}
+                                  interactionKind="hover-target"
+                                  lazy={true}
+                                  minimal={false}
+                                  modifiers={Object {}}
+                                  openOnTargetFocus={true}
+                                  popoverClassName="bp3-tooltip"
+                                  position="bottom"
+                                  targetClassName="core-tooltip__target"
+                                  targetTagName="div"
+                                  transitionDuration={100}
+                                  usePortal={true}
+                                  wrapperTagName="div"
+                                >
+                                  <Manager>
+                                    <div
+                                      className="bp3-popover-wrapper core-tooltip"
+                                    >
+                                      <Reference
+                                        innerRef={[Function]}
+                                      >
+                                        <InnerReference
+                                          innerRef={[Function]}
+                                          setReferenceNode={[Function]}
+                                        >
+                                          <Blueprint3.ResizeSensor
+                                            onResize={[Function]}
+                                          >
+                                            <div
+                                              className="bp3-popover-target core-tooltip__target"
+                                              onBlur={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                            >
+                                              <div
+                                                className="internal-row"
+                                                key=".0"
+                                                tabIndex={0}
+                                              >
+                                                <Memo()
+                                                  stageInterval={
+                                                    Object {
+                                                      "activityIntervals": Array [
+                                                        Object {
+                                                          "activeAnalysts": Array [
+                                                            "larry",
+                                                            "moe",
+                                                            "curly",
+                                                          ],
+                                                          "comment": "interval example",
+                                                          "endTime": 1622057187,
+                                                          "modificationTime": 1622057667,
+                                                          "name": "Event Review",
+                                                          "percentAvailable": 100,
+                                                          "processingEndTime": 1622057547,
+                                                          "processingStartTime": 1622057487,
+                                                          "stageName": "AL1",
+                                                          "startTime": 1622053587,
+                                                          "status": "IN_PROGRESS",
+                                                          "storageTime": 1622057607,
+                                                        },
+                                                      ],
+                                                      "comment": "interval example",
+                                                      "endTime": 1622057187,
+                                                      "modificationTime": 1622057667,
+                                                      "name": "AL1",
+                                                      "percentAvailable": 100,
+                                                      "processingEndTime": 1622057547,
+                                                      "processingStartTime": 1622057487,
+                                                      "stageMetrics": Object {
+                                                        "associatedSignalDetectionCount": 34,
+                                                        "eventCount": 21,
+                                                        "maxMagnitude": 8,
+                                                        "unassociatedSignalDetectionCount": 55,
+                                                      },
+                                                      "stageMode": "INTERACTIVE",
+                                                      "startTime": 1622053587,
+                                                      "status": "IN_PROGRESS",
+                                                      "storageTime": 1622057607,
+                                                    }
+                                                  }
+                                                >
+                                                  <Memo()
+                                                    key="AL1"
+                                                    stageInterval={
+                                                      Object {
+                                                        "activityIntervals": Array [
+                                                          Object {
+                                                            "activeAnalysts": Array [
+                                                              "larry",
+                                                              "moe",
+                                                              "curly",
+                                                            ],
+                                                            "comment": "interval example",
+                                                            "endTime": 1622057187,
+                                                            "modificationTime": 1622057667,
+                                                            "name": "Event Review",
+                                                            "percentAvailable": 100,
+                                                            "processingEndTime": 1622057547,
+                                                            "processingStartTime": 1622057487,
+                                                            "stageName": "AL1",
+                                                            "startTime": 1622053587,
+                                                            "status": "IN_PROGRESS",
+                                                            "storageTime": 1622057607,
+                                                          },
+                                                        ],
+                                                        "comment": "interval example",
+                                                        "endTime": 1622057187,
+                                                        "modificationTime": 1622057667,
+                                                        "name": "AL1",
+                                                        "percentAvailable": 100,
+                                                        "processingEndTime": 1622057547,
+                                                        "processingStartTime": 1622057487,
+                                                        "stageMetrics": Object {
+                                                          "associatedSignalDetectionCount": 34,
+                                                          "eventCount": 21,
+                                                          "maxMagnitude": 8,
+                                                          "unassociatedSignalDetectionCount": 55,
+                                                        },
+                                                        "stageMode": "INTERACTIVE",
+                                                        "startTime": 1622053587,
+                                                        "status": "IN_PROGRESS",
+                                                        "storageTime": 1622057607,
+                                                      }
+                                                    }
+                                                  >
+                                                    <div
+                                                      className="interval-cell interval-cell--in-progress"
+                                                      key="1622053587"
+                                                      onContextMenu={[Function]}
+                                                      style={
+                                                        Object {
+                                                          "gridColumn": "span 12",
+                                                        }
+                                                      }
+                                                    />
+                                                  </Memo()>
+                                                </Memo()>
+                                              </div>
+                                            </div>
+                                          </Blueprint3.ResizeSensor>
+                                        </InnerReference>
+                                      </Reference>
+                                      <Blueprint3.Overlay
+                                        autoFocus={false}
+                                        backdropClassName="bp3-popover-backdrop"
+                                        backdropProps={Object {}}
+                                        canEscapeKeyClose={false}
+                                        canOutsideClickClose={false}
+                                        enforceFocus={false}
+                                        hasBackdrop={false}
+                                        isOpen={false}
+                                        lazy={true}
+                                        onClose={[Function]}
+                                        transitionDuration={100}
+                                        transitionName="bp3-popover"
+                                        usePortal={true}
+                                      />
+                                    </div>
+                                  </Manager>
+                                </Blueprint3.Popover>
+                              </Blueprint3.Tooltip>
+                            </TooltipWrapper>
+                          </Tooltip>
+                        </div>
+                      </WorkflowTableStage>
+                      <WorkflowRowLabel
+                        isActivityRow={false}
+                        label="AL1"
+                      >
+                        <div
+                          className="workflow-table-label"
+                          key="AL1"
+                        >
+                          <div>
+                            AL1
+                          </div>
+                        </div>
+                      </WorkflowRowLabel>
+                    </div>
+                  </WorkflowRow>
+                  <WorkflowRow
+                    key="Auto Network"
+                    subRowNames={
+                      Array [
+                        "Auto Post-AL1 Seq",
+                      ]
+                    }
+                  >
+                    <div />
+                  </WorkflowRow>
+                </div>
+              </div>
+            </div>
+          </WorkflowTable>
+          <WorkflowTimeAxis
+            timeRange={
+              Object {
+                "endTimeSecs": 1622057187,
+                "startTimeSecs": 1622053587,
+              }
+            }
+          >
+            <div
+              className="time-axis-wrapper"
+            >
+              <div
+                className="time-axis"
+              />
+            </div>
+          </WorkflowTimeAxis>
+          <ModalPrompt
+            actionCallback={[Function]}
+            actionText="Discard my changes"
+            actionTooltipText="Discard your changes and open a new interval"
+            cancelButtonCallback={[Function]}
+            cancelText="Cancel"
+            cancelTooltipText="Cancel and do not open a new interval"
+            isOpen={false}
+            onCloseCallback={[Function]}
+            optionalCallback={[Function]}
+            title="Warning"
+          >
+            <Blueprint3.Dialog
+              canOutsideClickClose={true}
+              className="dialog_parent dialog_parent--wide"
+              isOpen={false}
+              onClose={[Function]}
+              title="Warning"
+            >
+              <Blueprint3.Overlay
+                autoFocus={true}
+                backdropProps={Object {}}
+                canEscapeKeyClose={true}
+                canOutsideClickClose={true}
+                className="bp3-overlay-scroll-container"
+                enforceFocus={true}
+                hasBackdrop={true}
+                isOpen={false}
+                lazy={true}
+                onClose={[Function]}
+                title="Warning"
+                transitionDuration={300}
+                transitionName="bp3-overlay"
+                usePortal={true}
+              >
+                <Blueprint3.Portal
+                  container={
+                    <body
+                      class=""
+                    >
+                      <div
+                        class="bp3-portal"
+                      >
+                        <div
+                          class="bp3-overlay bp3-overlay-scroll-container"
+                        />
+                      </div>
+                      <div
+                        class="bp3-portal"
+                      >
+                        <div
+                          class="bp3-overlay bp3-overlay-scroll-container"
+                        >
+                          <div
+                            class="bp3-overlay-backdrop bp3-overlay-exit bp3-overlay-exit-active"
+                            tabindex="0"
+                          />
+                          <div
+                            class="bp3-dialog-container bp3-overlay-content bp3-overlay-exit bp3-overlay-exit-active"
+                            tabindex="0"
+                          >
+                            <div
+                              class="bp3-dialog dialog_parent dialog_parent--wide"
+                            >
+                              <div
+                                class="bp3-dialog-header"
+                              >
+                                <h4
+                                  class="bp3-heading"
+                                >
+                                  Warning
+                                </h4>
+                                <button
+                                  aria-label="Close"
+                                  class="bp3-button bp3-minimal bp3-dialog-close-button"
+                                  type="button"
+                                >
+                                  <span
+                                    class="bp3-icon bp3-icon-small-cross"
+                                    icon="small-cross"
+                                  >
+                                    <svg
+                                      data-icon="small-cross"
+                                      height="20"
+                                      viewBox="0 0 20 20"
+                                      width="20"
+                                    >
+                                      <desc>
+                                        small-cross
+                                      </desc>
+                                      <path
+                                        d="M11.41 10l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71L10 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42L8.59 10 5.3 13.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l3.29-3.3 3.29 3.29c.18.19.43.3.71.3a1.003 1.003 0 00.71-1.71L11.41 10z"
+                                        fill-rule="evenodd"
+                                      />
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                              <div
+                                class="dialog dialog__container"
+                              >
+                                <div
+                                  class="interval-confirmation-contents"
+                                >
+                                  <div
+                                    class="interval-confirmation-text"
+                                  >
+                                    <div
+                                      class="interval-confirmation-header"
+                                    >
+                                      You have unsaved changes in your workspace.
+                                    </div>
+                                    <div
+                                      class="interval-confirmation-paragraph"
+                                    >
+                                       Do you want to discard these changes and load data for a different time range?
+                                    </div>
+                                  </div>
+                                  <span
+                                    class="bp3-icon bp3-icon-error interval-confirmation-icon"
+                                    icon="error"
+                                  >
+                                    <svg
+                                      data-icon="error"
+                                      height="48"
+                                      viewBox="0 0 20 20"
+                                      width="48"
+                                    >
+                                      <desc>
+                                        error
+                                      </desc>
+                                      <path
+                                        d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm1 16H9v-2h2v2zm0-3H9V4h2v9z"
+                                        fill-rule="evenodd"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                                <div
+                                  class="dialog__controls"
+                                >
+                                  <div
+                                    class="dialog-actions"
+                                  >
+                                    <button
+                                      class="bp3-button bp3-intent-primary"
+                                      data-cy="modal-action-button"
+                                      title="Discard your changes and open a new interval"
+                                      type="button"
+                                    >
+                                      <span
+                                        class="bp3-button-text"
+                                      >
+                                        Discard my changes
+                                      </span>
+                                    </button>
+                                  </div>
+                                  <button
+                                    class="bp3-button"
+                                    data-cy="modal-cancel-button"
+                                    title="Cancel and do not open a new interval"
+                                    type="button"
+                                  >
+                                    <span
+                                      class="bp3-button-text"
+                                    >
+                                      Cancel
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </body>
+                  }
+                >
+                  <Portal
+                    containerInfo={
+                      <div
+                        class="bp3-portal"
+                      >
+                        <div
+                          class="bp3-overlay bp3-overlay-scroll-container"
+                        >
+                          <div
+                            class="bp3-overlay-backdrop bp3-overlay-exit bp3-overlay-exit-active"
+                            tabindex="0"
+                          />
+                          <div
+                            class="bp3-dialog-container bp3-overlay-content bp3-overlay-exit bp3-overlay-exit-active"
+                            tabindex="0"
+                          >
+                            <div
+                              class="bp3-dialog dialog_parent dialog_parent--wide"
+                            >
+                              <div
+                                class="bp3-dialog-header"
+                              >
+                                <h4
+                                  class="bp3-heading"
+                                >
+                                  Warning
+                                </h4>
+                                <button
+                                  aria-label="Close"
+                                  class="bp3-button bp3-minimal bp3-dialog-close-button"
+                                  type="button"
+                                >
+                                  <span
+                                    class="bp3-icon bp3-icon-small-cross"
+                                    icon="small-cross"
+                                  >
+                                    <svg
+                                      data-icon="small-cross"
+                                      height="20"
+                                      viewBox="0 0 20 20"
+                                      width="20"
+                                    >
+                                      <desc>
+                                        small-cross
+                                      </desc>
+                                      <path
+                                        d="M11.41 10l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71L10 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42L8.59 10 5.3 13.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l3.29-3.3 3.29 3.29c.18.19.43.3.71.3a1.003 1.003 0 00.71-1.71L11.41 10z"
+                                        fill-rule="evenodd"
+                                      />
+                                    </svg>
+                                  </span>
+                                </button>
+                              </div>
+                              <div
+                                class="dialog dialog__container"
+                              >
+                                <div
+                                  class="interval-confirmation-contents"
+                                >
+                                  <div
+                                    class="interval-confirmation-text"
+                                  >
+                                    <div
+                                      class="interval-confirmation-header"
+                                    >
+                                      You have unsaved changes in your workspace.
+                                    </div>
+                                    <div
+                                      class="interval-confirmation-paragraph"
+                                    >
+                                       Do you want to discard these changes and load data for a different time range?
+                                    </div>
+                                  </div>
+                                  <span
+                                    class="bp3-icon bp3-icon-error interval-confirmation-icon"
+                                    icon="error"
+                                  >
+                                    <svg
+                                      data-icon="error"
+                                      height="48"
+                                      viewBox="0 0 20 20"
+                                      width="48"
+                                    >
+                                      <desc>
+                                        error
+                                      </desc>
+                                      <path
+                                        d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm1 16H9v-2h2v2zm0-3H9V4h2v9z"
+                                        fill-rule="evenodd"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                                <div
+                                  class="dialog__controls"
+                                >
+                                  <div
+                                    class="dialog-actions"
+                                  >
+                                    <button
+                                      class="bp3-button bp3-intent-primary"
+                                      data-cy="modal-action-button"
+                                      title="Discard your changes and open a new interval"
+                                      type="button"
+                                    >
+                                      <span
+                                        class="bp3-button-text"
+                                      >
+                                        Discard my changes
+                                      </span>
+                                    </button>
+                                  </div>
+                                  <button
+                                    class="bp3-button"
+                                    data-cy="modal-cancel-button"
+                                    title="Cancel and do not open a new interval"
+                                    type="button"
+                                  >
+                                    <span
+                                      class="bp3-button-text"
+                                    >
+                                      Cancel
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                  >
+                    <TransitionGroup
+                      appear={true}
+                      childFactory={[Function]}
+                      className="bp3-overlay bp3-overlay-scroll-container"
+                      component="div"
+                      onKeyDown={[Function]}
+                    >
+                      <div
+                        className="bp3-overlay bp3-overlay-scroll-container"
+                        onKeyDown={[Function]}
+                      >
+                        <CSSTransition
+                          classNames="bp3-overlay"
+                          in={false}
+                          key=".$__backdrop"
+                          onExited={[Function]}
+                          timeout={300}
+                        >
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
+                          >
+                            <div
+                              className="bp3-overlay-backdrop"
+                              onMouseDown={[Function]}
+                              tabIndex={0}
+                            />
+                          </Transition>
+                        </CSSTransition>
+                        <CSSTransition
+                          classNames="bp3-overlay"
+                          in={false}
+                          key=".$.0"
+                          onExited={[Function]}
+                          timeout={300}
+                        >
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
+                          >
+                            <div
+                              className="bp3-dialog-container bp3-overlay-content"
+                              tabIndex={0}
+                            >
+                              <div
+                                className="bp3-dialog dialog_parent dialog_parent--wide"
+                              >
+                                <div
+                                  className="bp3-dialog-header"
+                                >
+                                  <Blueprint3.Icon
+                                    iconSize={20}
+                                  />
+                                  <Component>
+                                    <h4
+                                      className="bp3-heading"
+                                    >
+                                      Warning
+                                    </h4>
+                                  </Component>
+                                  <Blueprint3.Button
+                                    aria-label="Close"
+                                    className="bp3-dialog-close-button"
+                                    icon={
+                                      <Blueprint3.Icon
+                                        icon="small-cross"
+                                        iconSize={20}
+                                      />
+                                    }
+                                    minimal={true}
+                                    onClick={[Function]}
+                                  >
+                                    <button
+                                      aria-label="Close"
+                                      className="bp3-button bp3-minimal bp3-dialog-close-button"
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      onKeyUp={[Function]}
+                                      type="button"
+                                    >
+                                      <Blueprint3.Icon
+                                        icon={
+                                          <Blueprint3.Icon
+                                            icon="small-cross"
+                                            iconSize={20}
+                                          />
+                                        }
+                                        key="leftIcon"
+                                      >
+                                        <Blueprint3.Icon
+                                          icon="small-cross"
+                                          iconSize={20}
+                                        >
+                                          <span
+                                            className="bp3-icon bp3-icon-small-cross"
+                                            icon="small-cross"
+                                          >
+                                            <svg
+                                              data-icon="small-cross"
+                                              height={20}
+                                              viewBox="0 0 20 20"
+                                              width={20}
+                                            >
+                                              <desc>
+                                                small-cross
+                                              </desc>
+                                              <path
+                                                d="M11.41 10l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71L10 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42L8.59 10 5.3 13.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l3.29-3.3 3.29 3.29c.18.19.43.3.71.3a1.003 1.003 0 00.71-1.71L11.41 10z"
+                                                fillRule="evenodd"
+                                                key="0"
+                                              />
+                                            </svg>
+                                          </span>
+                                        </Blueprint3.Icon>
+                                      </Blueprint3.Icon>
+                                      <Blueprint3.Icon
+                                        key="rightIcon"
+                                      />
+                                    </button>
+                                  </Blueprint3.Button>
+                                </div>
+                                <div
+                                  className="dialog dialog__container"
+                                >
+                                  <div
+                                    className="interval-confirmation-contents"
+                                  >
+                                    <div
+                                      className="interval-confirmation-text"
+                                    >
+                                      <div
+                                        className="interval-confirmation-header"
+                                      >
+                                        You have unsaved changes in your workspace.
+                                      </div>
+                                      <div
+                                        className="interval-confirmation-paragraph"
+                                      >
+                                         Do you want to discard these changes and load data for a different time range?
+                                      </div>
+                                    </div>
+                                    <Blueprint3.Icon
+                                      className="interval-confirmation-icon"
+                                      icon="error"
+                                      iconSize={48}
+                                    >
+                                      <span
+                                        className="bp3-icon bp3-icon-error interval-confirmation-icon"
+                                        icon="error"
+                                      >
+                                        <svg
+                                          data-icon="error"
+                                          height={48}
+                                          viewBox="0 0 20 20"
+                                          width={48}
+                                        >
+                                          <desc>
+                                            error
+                                          </desc>
+                                          <path
+                                            d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm1 16H9v-2h2v2zm0-3H9V4h2v9z"
+                                            fillRule="evenodd"
+                                            key="0"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </Blueprint3.Icon>
+                                  </div>
+                                  <div
+                                    className="dialog__controls"
+                                  >
+                                    <div
+                                      className="dialog-actions"
+                                    >
+                                      <Blueprint3.Button
+                                        data-cy="modal-action-button"
+                                        intent="primary"
+                                        onClick={[Function]}
+                                        text="Discard my changes"
+                                        title="Discard your changes and open a new interval"
+                                      >
+                                        <button
+                                          className="bp3-button bp3-intent-primary"
+                                          data-cy="modal-action-button"
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                          onKeyUp={[Function]}
+                                          title="Discard your changes and open a new interval"
+                                          type="button"
+                                        >
+                                          <Blueprint3.Icon
+                                            key="leftIcon"
+                                          />
+                                          <span
+                                            className="bp3-button-text"
+                                            key="text"
+                                          >
+                                            Discard my changes
+                                          </span>
+                                          <Blueprint3.Icon
+                                            key="rightIcon"
+                                          />
+                                        </button>
+                                      </Blueprint3.Button>
+                                    </div>
+                                    <Blueprint3.Button
+                                      data-cy="modal-cancel-button"
+                                      onClick={[Function]}
+                                      text="Cancel"
+                                      title="Cancel and do not open a new interval"
+                                    >
+                                      <button
+                                        className="bp3-button"
+                                        data-cy="modal-cancel-button"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        onKeyUp={[Function]}
+                                        title="Cancel and do not open a new interval"
+                                        type="button"
+                                      >
+                                        <Blueprint3.Icon
+                                          key="leftIcon"
+                                        />
+                                        <span
+                                          className="bp3-button-text"
+                                          key="text"
+                                        >
+                                          Cancel
+                                        </span>
+                                        <Blueprint3.Icon
+                                          key="rightIcon"
+                                        />
+                                      </button>
+                                    </Blueprint3.Button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </Transition>
+                        </CSSTransition>
+                      </div>
+                    </TransitionGroup>
+                  </Portal>
+                </Blueprint3.Portal>
+              </Blueprint3.Overlay>
+            </Blueprint3.Dialog>
+          </ModalPrompt>
+        </div>
+      </WorkflowPanel>
+    </Provider>
+  </div>
+</BaseDisplay>
+`;
+
+exports[`Workflow Panel full mounts 1`] = `
+<BaseDisplay
+  glContainer={
+    Object {
+      "close": [MockFunction],
+      "emit": [MockFunction],
+      "extendState": [MockFunction],
+      "getElement": [MockFunction],
+      "getState": [MockFunction],
+      "height": 1200,
+      "hide": [MockFunction],
+      "isHidden": false,
+      "layoutManager": undefined,
+      "off": [MockFunction],
+      "on": [MockFunction],
+      "parent": undefined,
+      "setSize": [MockFunction],
+      "setState": [MockFunction],
+      "setTitle": [MockFunction],
+      "show": [MockFunction],
+      "tab": undefined,
+      "title": "workflow",
+      "trigger": [MockFunction],
+      "unbind": [MockFunction],
+      "width": 1900,
+    }
+  }
+>
+  <div
+    className="base-display "
+  >
+    <Provider
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+    >
+      <WorkflowPanel
+        glContainer={
+          Object {
+            "close": [MockFunction],
+            "emit": [MockFunction],
+            "extendState": [MockFunction],
+            "getElement": [MockFunction],
+            "getState": [MockFunction],
+            "height": 1200,
+            "hide": [MockFunction],
+            "isHidden": false,
+            "layoutManager": undefined,
+            "off": [MockFunction],
+            "on": [MockFunction],
+            "parent": undefined,
+            "setSize": [MockFunction],
+            "setState": [MockFunction],
+            "setTitle": [MockFunction],
+            "show": [MockFunction],
+            "tab": undefined,
+            "title": "workflow",
+            "trigger": [MockFunction],
+            "unbind": [MockFunction],
+            "width": 1900,
+          }
+        }
+        operationalTimePeriodConfigurationQuery={
+          Object {
+            "canFetchMore": false,
+            "clear": undefined,
+            "data": Object {
+              "operationalPeriodEndSecs": 0,
+              "operationalPeriodStartSecs": 3888000,
+            },
+            "error": undefined,
+            "failureCount": 0,
+            "fetchMore": undefined,
+            "isError": false,
+            "isFetched": false,
+            "isFetchedAfterMount": undefined,
+            "isFetching": false,
+            "isIdle": false,
+            "isInitialData": undefined,
+            "isLoading": false,
+            "isPlaceholderData": undefined,
+            "isPreviousData": undefined,
+            "isStale": true,
+            "isSuccess": true,
+            "refetch": undefined,
+            "remove": undefined,
+            "status": undefined,
+            "updatedAt": undefined,
+          }
+        }
+        timeRange={
+          Object {
+            "endTimeSecs": 1609506000,
+            "startTimeSecs": 1609500000,
+          }
+        }
+        workflowIntervalQuery={
+          Object {
+            "canFetchMore": false,
+            "clear": undefined,
+            "data": Immutable.Map {
+              "AL1": Array [
+                Object {
+                  "activityIntervals": Array [
+                    Object {
+                      "activeAnalysts": Array [
+                        "larry",
+                        "moe",
+                        "curly",
+                      ],
+                      "comment": "interval example",
+                      "endTime": 1622057187,
+                      "modificationTime": 1622057667,
+                      "name": "Event Review",
+                      "percentAvailable": 100,
+                      "processingEndTime": 1622057547,
+                      "processingStartTime": 1622057487,
+                      "stageName": "AL1",
+                      "startTime": 1622053587,
+                      "status": "IN_PROGRESS",
+                      "storageTime": 1622057607,
+                    },
+                  ],
+                  "comment": "interval example",
+                  "endTime": 1622057187,
+                  "modificationTime": 1622057667,
+                  "name": "AL1",
+                  "percentAvailable": 100,
+                  "processingEndTime": 1622057547,
+                  "processingStartTime": 1622057487,
+                  "stageMetrics": Object {
+                    "associatedSignalDetectionCount": 34,
+                    "eventCount": 21,
+                    "maxMagnitude": 8,
+                    "unassociatedSignalDetectionCount": 55,
+                  },
+                  "stageMode": "INTERACTIVE",
+                  "startTime": 1622053587,
+                  "status": "IN_PROGRESS",
+                  "storageTime": 1622057607,
+                },
+              ],
+            },
+            "error": undefined,
+            "failureCount": 0,
+            "fetchMore": undefined,
+            "isError": false,
+            "isFetched": false,
+            "isFetchedAfterMount": undefined,
+            "isFetching": false,
+            "isIdle": false,
+            "isInitialData": undefined,
+            "isLoading": false,
+            "isPlaceholderData": undefined,
+            "isPreviousData": undefined,
+            "isStale": true,
+            "isSuccess": true,
+            "refetch": undefined,
+            "remove": undefined,
+            "status": undefined,
+            "updatedAt": undefined,
+          }
+        }
+        workflowQuery={
+          Object {
+            "canFetchMore": false,
+            "clear": undefined,
+            "data": Object {
+              "name": "gms",
+              "stages": Array [
+                Object {
+                  "activities": Array [
+                    Object {
+                      "analysisMode": "EVENT_REVIEW",
+                      "name": "Event Review",
+                      "stationGroup": Object {
+                        "description": "station group",
+                        "effectiveAt": 1622048927,
+                        "name": "station-group",
+                      },
+                    },
+                  ],
+                  "duration": 3600,
+                  "mode": "INTERACTIVE",
+                  "name": "AL1",
+                },
+                Object {
+                  "duration": 3600,
+                  "mode": "AUTOMATIC",
+                  "name": "Auto Network",
+                  "sequences": Array [
+                    Object {
+                      "name": "Auto Post-AL1 Seq",
+                      "steps": Array [
+                        Object {
+                          "name": "AAA",
+                        },
+                        Object {
+                          "name": "BBB",
+                        },
+                        Object {
+                          "name": "CCC",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            "error": undefined,
+            "failureCount": 0,
+            "fetchMore": undefined,
+            "isError": false,
+            "isFetched": false,
+            "isFetchedAfterMount": undefined,
+            "isFetching": false,
+            "isIdle": false,
+            "isInitialData": undefined,
+            "isLoading": false,
+            "isPlaceholderData": undefined,
+            "isPreviousData": undefined,
+            "isStale": true,
+            "isSuccess": true,
+            "refetch": undefined,
+            "remove": undefined,
+            "status": undefined,
+            "updatedAt": undefined,
+          }
+        }
+      >
+        <div
+          className="workflow-panel"
+          onKeyDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          tabIndex={0}
+        >
+          <Memo()
+            onPan={[Function]}
+          >
+            <ToolbarComponent
+              items={
+                Array [
+                  Object {
+                    "cyData": "workflow-doubleLeftArrowItem",
+                    "icon": "double-chevron-left",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 0,
+                    "tooltip": "Pan the workflow to the left by 7 days",
+                    "type": "Button",
+                    "widthPx": 20,
+                  },
+                  Object {
+                    "cyData": "workflow-singleLeftArrowItem",
+                    "icon": "chevron-left",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 1,
+                    "tooltip": "Pan the workflow to the left by 1 day",
+                    "type": "Button",
+                    "widthPx": 20,
+                  },
+                  Object {
+                    "cyData": "workflow-singleRightArrowItem",
+                    "icon": "chevron-right",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 2,
+                    "tooltip": "Pan the workflow to the right by 1 day",
+                    "type": "Button",
+                    "widthPx": 20,
+                  },
+                  Object {
+                    "cyData": "workflow-doubleRightArrowItem",
+                    "icon": "double-chevron-right",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 3,
+                    "tooltip": "Pan the workflow to the right by 7 days",
+                    "type": "Button",
+                    "widthPx": 20,
+                  },
+                  Object {
+                    "cyData": "workflow-openAnythingItem",
+                    "icon": "search-template",
+                    "labelRight": "Open anything...",
+                    "onClick": [Function],
+                    "onlyShowIcon": false,
+                    "rank": 4,
+                    "tooltip": "Open anything",
+                    "type": "Button",
+                    "widthPx": 160,
+                  },
+                ]
+              }
+              itemsLeft={
+                Array [
+                  Object {
+                    "hasIssue": false,
+                    "label": "Open time range",
+                    "rank": 0,
+                    "style": Object {
+                      "marginLeft": "1em",
+                    },
+                    "tooltip": "The opened time range",
+                    "tooltipForIssue": undefined,
+                    "type": "LabelValue",
+                    "value": "N/A",
+                    "widthPx": 400,
+                  },
+                  Object {
+                    "hasIssue": false,
+                    "label": "Processing stage",
+                    "rank": 1,
+                    "style": Object {
+                      "marginLeft": "8em",
+                    },
+                    "tooltip": "The opened processing stage",
+                    "tooltipForIssue": undefined,
+                    "type": "LabelValue",
+                    "value": "N/A",
+                    "widthPx": 400,
+                  },
+                ]
+              }
+              minWhiteSpacePx={1}
+              toolbarWidthPx={1860}
+            >
+              <div
+                className="toolbar"
+                style={
+                  Object {
+                    "width": "1860px",
+                  }
+                }
+              >
+                <div
+                  className="toolbar__left-group"
+                >
+                  <div
+                    className="toolbar-item toolbar-item__left"
+                    key="0"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "hasIssue": false,
+                          "label": "Open time range",
+                          "rank": 0,
+                          "style": Object {
+                            "marginLeft": "1em",
+                          },
+                          "tooltip": "The opened time range",
+                          "tooltipForIssue": undefined,
+                          "type": "LabelValue",
+                          "value": "N/A",
+                          "widthPx": 400,
+                        }
+                      }
+                      key="0"
+                    >
+                      <div
+                        className="toolbar-label-value"
+                        style={
+                          Object {
+                            "marginLeft": "1em",
+                          }
+                        }
+                      >
+                        <LabelValue
+                          label="Open time range"
+                          tooltip="The opened time range"
+                          value="N/A"
+                        >
+                          <div
+                            className="label-value-container"
+                          >
+                            <div
+                              className="label-value__label"
+                            >
+                              Open time range: 
+                            </div>
+                            <div
+                              className="label-value__value"
+                              style={
+                                Object {
+                                  "color": "",
+                                }
+                              }
+                              title="The opened time range"
+                            >
+                              N/A
+                            </div>
+                          </div>
+                        </LabelValue>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item toolbar-item__left"
+                    key="1"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "hasIssue": false,
+                          "label": "Processing stage",
+                          "rank": 1,
+                          "style": Object {
+                            "marginLeft": "8em",
+                          },
+                          "tooltip": "The opened processing stage",
+                          "tooltipForIssue": undefined,
+                          "type": "LabelValue",
+                          "value": "N/A",
+                          "widthPx": 400,
+                        }
+                      }
+                      key="1"
+                    >
+                      <div
+                        className="toolbar-label-value"
+                        style={
+                          Object {
+                            "marginLeft": "8em",
+                          }
+                        }
+                      >
+                        <LabelValue
+                          label="Processing stage"
+                          tooltip="The opened processing stage"
+                          value="N/A"
+                        >
+                          <div
+                            className="label-value-container"
+                          >
+                            <div
+                              className="label-value__label"
+                            >
+                              Processing stage: 
+                            </div>
+                            <div
+                              className="label-value__value"
+                              style={
+                                Object {
+                                  "color": "",
+                                }
+                              }
+                              title="The opened processing stage"
+                            >
+                              N/A
+                            </div>
+                          </div>
+                        </LabelValue>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                </div>
+                <div
+                  className="toolbar__center-group"
+                >
+                  <div
+                    className="toolbar__whitespace"
+                    style={
+                      Object {
+                        "width": "1844px",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="toolbar__right-group"
+                >
+                  <div
+                    className="toolbar-item
+                    "
+                    key="0"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-doubleLeftArrowItem",
+                          "icon": "double-chevron-left",
+                          "onClick": [Function],
+                          "onlyShowIcon": true,
+                          "rank": 0,
+                          "tooltip": "Pan the workflow to the left by 7 days",
+                          "type": "Button",
+                          "widthPx": 20,
+                        }
+                      }
+                      key="0"
+                    >
+                      <div
+                        key="0"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="center"
+                          className="toolbar-button--icon-only"
+                          data-cy="workflow-doubleLeftArrowItem"
+                          key="0"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "20px",
+                            }
+                          }
+                          title="Pan the workflow to the left by 7 days"
+                        >
+                          <button
+                            className="bp3-button toolbar-button--icon-only"
+                            data-cy="workflow-doubleLeftArrowItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "20px",
+                              }
+                            }
+                            title="Pan the workflow to the left by 7 days"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <Blueprint3.Icon
+                                icon="double-chevron-left"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-double-chevron-left"
+                                  icon="double-chevron-left"
+                                >
+                                  <svg
+                                    data-icon="double-chevron-left"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M4.41 8L7.7 4.71c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C2.11 7.47 2 7.72 2 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L4.41 8zm5 0l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C7.11 7.47 7 7.72 7 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L9.41 8z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item
+                    "
+                    key="1"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-singleLeftArrowItem",
+                          "icon": "chevron-left",
+                          "onClick": [Function],
+                          "onlyShowIcon": true,
+                          "rank": 1,
+                          "tooltip": "Pan the workflow to the left by 1 day",
+                          "type": "Button",
+                          "widthPx": 20,
+                        }
+                      }
+                      key="1"
+                    >
+                      <div
+                        key="1"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="center"
+                          className="toolbar-button--icon-only"
+                          data-cy="workflow-singleLeftArrowItem"
+                          key="1"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "20px",
+                            }
+                          }
+                          title="Pan the workflow to the left by 1 day"
+                        >
+                          <button
+                            className="bp3-button toolbar-button--icon-only"
+                            data-cy="workflow-singleLeftArrowItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "20px",
+                              }
+                            }
+                            title="Pan the workflow to the left by 1 day"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <Blueprint3.Icon
+                                icon="chevron-left"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-chevron-left"
+                                  icon="chevron-left"
+                                >
+                                  <svg
+                                    data-icon="chevron-left"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L7.41 8z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item
+                    "
+                    key="2"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-singleRightArrowItem",
+                          "icon": "chevron-right",
+                          "onClick": [Function],
+                          "onlyShowIcon": true,
+                          "rank": 2,
+                          "tooltip": "Pan the workflow to the right by 1 day",
+                          "type": "Button",
+                          "widthPx": 20,
+                        }
+                      }
+                      key="2"
+                    >
+                      <div
+                        key="2"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="center"
+                          className="toolbar-button--icon-only"
+                          data-cy="workflow-singleRightArrowItem"
+                          key="2"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "20px",
+                            }
+                          }
+                          title="Pan the workflow to the right by 1 day"
+                        >
+                          <button
+                            className="bp3-button toolbar-button--icon-only"
+                            data-cy="workflow-singleRightArrowItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "20px",
+                              }
+                            }
+                            title="Pan the workflow to the right by 1 day"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <Blueprint3.Icon
+                                icon="chevron-right"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-chevron-right"
+                                  icon="chevron-right"
+                                >
+                                  <svg
+                                    data-icon="chevron-right"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M10.71 7.29l-4-4a1.003 1.003 0 00-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item
+                    "
+                    key="3"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-doubleRightArrowItem",
+                          "icon": "double-chevron-right",
+                          "onClick": [Function],
+                          "onlyShowIcon": true,
+                          "rank": 3,
+                          "tooltip": "Pan the workflow to the right by 7 days",
+                          "type": "Button",
+                          "widthPx": 20,
+                        }
+                      }
+                      key="3"
+                    >
+                      <div
+                        key="3"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="center"
+                          className="toolbar-button--icon-only"
+                          data-cy="workflow-doubleRightArrowItem"
+                          key="3"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "20px",
+                            }
+                          }
+                          title="Pan the workflow to the right by 7 days"
+                        >
+                          <button
+                            className="bp3-button toolbar-button--icon-only"
+                            data-cy="workflow-doubleRightArrowItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "20px",
+                              }
+                            }
+                            title="Pan the workflow to the right by 7 days"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <Blueprint3.Icon
+                                icon="double-chevron-right"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-double-chevron-right"
+                                  icon="double-chevron-right"
+                                >
+                                  <svg
+                                    data-icon="double-chevron-right"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 00-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 00-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                  <div
+                    className="toolbar-item
+                    "
+                    key="4"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "cyData": "workflow-openAnythingItem",
+                          "icon": "search-template",
+                          "labelRight": "Open anything...",
+                          "onClick": [Function],
+                          "onlyShowIcon": false,
+                          "rank": 4,
+                          "tooltip": "Open anything",
+                          "type": "Button",
+                          "widthPx": 160,
+                        }
+                      }
+                      key="4"
+                    >
+                      <div
+                        key="4"
+                        style={Object {}}
+                      >
+                        <Blueprint3.Button
+                          alignText="left"
+                          className="toolbar-button"
+                          data-cy="workflow-openAnythingItem"
+                          key="4"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseOut={[Function]}
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                              "width": "160px",
+                            }
+                          }
+                          title="Open anything"
+                        >
+                          <button
+                            className="bp3-button bp3-align-left toolbar-button"
+                            data-cy="workflow-openAnythingItem"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseOut={[Function]}
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                                "width": "160px",
+                              }
+                            }
+                            title="Open anything"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <span
+                                key="1"
+                              />
+                              <Blueprint3.Icon
+                                icon="search-template"
+                                key="2"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-search-template"
+                                  icon="search-template"
+                                >
+                                  <svg
+                                    data-icon="search-template"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M15.55 13.43l-2.67-2.67c.7-1.09 1.11-2.38 1.11-3.77 0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.39 0 2.68-.41 3.77-1.11l2.67 2.67a1.498 1.498 0 102.12-2.12zm-8.56-1.44c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm2.5-6h-5c-.28 0-.5.22-.5.5s.22.5.5.5h5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zm0-2h-5c-.28 0-.5.22-.5.5s.22.5.5.5h5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zm0 4h-5c-.28 0-.5.22-.5.5s.22.5.5.5h5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                              <span
+                                key="3"
+                              >
+                                Open anything...
+                              </span>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </ToolbarItemRenderer>
+                  </div>
+                </div>
+              </div>
+            </ToolbarComponent>
+            <Memo(OpenAnythingDialogComponent)
+              isVisible={false}
+              onCancel={[Function]}
+              onOpen={[Function]}
+            >
+              <ModalPrompt
+                actionCallback={[Function]}
+                actionDisabled={false}
+                actionText="Open"
+                actionTooltipText="Open"
+                cancelButtonCallback={[Function]}
+                cancelText="Cancel"
+                cancelTooltipText="Cancel"
+                isOpen={false}
+                onCloseCallback={[Function]}
+                title="Open Anything"
+              >
+                <Blueprint3.Dialog
+                  canOutsideClickClose={true}
+                  className="dialog_parent dialog_parent--wide"
+                  isOpen={false}
+                  onClose={[Function]}
+                  title="Open Anything"
+                >
+                  <Blueprint3.Overlay
+                    autoFocus={true}
+                    backdropProps={Object {}}
+                    canEscapeKeyClose={true}
+                    canOutsideClickClose={true}
+                    className="bp3-overlay-scroll-container"
+                    enforceFocus={true}
+                    hasBackdrop={true}
+                    isOpen={false}
+                    lazy={true}
+                    onClose={[Function]}
+                    title="Open Anything"
+                    transitionDuration={300}
+                    transitionName="bp3-overlay"
+                    usePortal={true}
+                  />
+                </Blueprint3.Dialog>
+              </ModalPrompt>
+            </Memo(OpenAnythingDialogComponent)>
+          </Memo()>
+          <WorkflowTable
+            onScroll={[Function]}
+            stageIntervals={
+              Immutable.Map {
+                "AL1": Array [
+                  Object {
+                    "activityIntervals": Array [
+                      Object {
+                        "activeAnalysts": Array [
+                          "larry",
+                          "moe",
+                          "curly",
+                        ],
+                        "comment": "interval example",
+                        "endTime": 1622057187,
+                        "modificationTime": 1622057667,
+                        "name": "Event Review",
+                        "percentAvailable": 100,
+                        "processingEndTime": 1622057547,
+                        "processingStartTime": 1622057487,
+                        "stageName": "AL1",
+                        "startTime": 1622053587,
+                        "status": "IN_PROGRESS",
+                        "storageTime": 1622057607,
+                      },
+                    ],
+                    "comment": "interval example",
+                    "endTime": 1622057187,
+                    "modificationTime": 1622057667,
+                    "name": "AL1",
+                    "percentAvailable": 100,
+                    "processingEndTime": 1622057547,
+                    "processingStartTime": 1622057487,
+                    "stageMetrics": Object {
+                      "associatedSignalDetectionCount": 34,
+                      "eventCount": 21,
+                      "maxMagnitude": 8,
+                      "unassociatedSignalDetectionCount": 55,
+                    },
+                    "stageMode": "INTERACTIVE",
+                    "startTime": 1622053587,
+                    "status": "IN_PROGRESS",
+                    "storageTime": 1622057607,
+                  },
+                ],
+              }
+            }
+            timeRange={
+              Object {
+                "endTimeSecs": 1622057187,
+                "startTimeSecs": 1622053587,
+              }
+            }
+            workflow={
+              Object {
+                "name": "gms",
+                "stages": Array [
+                  Object {
+                    "activities": Array [
+                      Object {
+                        "analysisMode": "EVENT_REVIEW",
+                        "name": "Event Review",
+                        "stationGroup": Object {
+                          "description": "station group",
+                          "effectiveAt": 1622048927,
+                          "name": "station-group",
+                        },
+                      },
+                    ],
+                    "duration": 3600,
+                    "mode": "INTERACTIVE",
+                    "name": "AL1",
+                  },
+                  Object {
+                    "duration": 3600,
+                    "mode": "AUTOMATIC",
+                    "name": "Auto Network",
+                    "sequences": Array [
+                      Object {
+                        "name": "Auto Post-AL1 Seq",
+                        "steps": Array [
+                          Object {
+                            "name": "AAA",
+                          },
+                          Object {
+                            "name": "BBB",
+                          },
+                          Object {
+                            "name": "CCC",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              }
+            }
+          >
+            <div
+              className="workflow-scroll-wrapper"
+            >
+              <div
+                className="interval-table__curtain-left"
+              />
+              <div
+                className="interval-table-wrapper-wrapper"
+              >
+                <DayBoundaryIndicator
+                  timeRange={
+                    Object {
+                      "endTimeSecs": 1622057187,
+                      "startTimeSecs": 1622053587,
+                    }
+                  }
+                />
+                <div
+                  className="interval-table-scroll-wrapper"
+                />
+                <div
+                  className="interval-table-wrapper"
+                  onScroll={[Function]}
+                >
+                  <WorkflowRow
+                    key="AL1"
+                    stageIntervals={
+                      Array [
+                        Object {
+                          "activityIntervals": Array [
+                            Object {
+                              "activeAnalysts": Array [
+                                "larry",
+                                "moe",
+                                "curly",
+                              ],
+                              "comment": "interval example",
+                              "endTime": 1622057187,
+                              "modificationTime": 1622057667,
+                              "name": "Event Review",
+                              "percentAvailable": 100,
+                              "processingEndTime": 1622057547,
+                              "processingStartTime": 1622057487,
+                              "stageName": "AL1",
+                              "startTime": 1622053587,
+                              "status": "IN_PROGRESS",
+                              "storageTime": 1622057607,
+                            },
+                          ],
+                          "comment": "interval example",
+                          "endTime": 1622057187,
+                          "modificationTime": 1622057667,
+                          "name": "AL1",
+                          "percentAvailable": 100,
+                          "processingEndTime": 1622057547,
+                          "processingStartTime": 1622057487,
+                          "stageMetrics": Object {
+                            "associatedSignalDetectionCount": 34,
+                            "eventCount": 21,
+                            "maxMagnitude": 8,
+                            "unassociatedSignalDetectionCount": 55,
+                          },
+                          "stageMode": "INTERACTIVE",
+                          "startTime": 1622053587,
+                          "status": "IN_PROGRESS",
+                          "storageTime": 1622057607,
+                        },
+                      ]
+                    }
+                    subRowNames={
+                      Array [
+                        "Event Review",
+                      ]
+                    }
+                  >
+                    <div
+                      className="stage-row"
+                    >
+                      <Memo()
+                        disabled={false}
+                        isExpanded={false}
+                        stageName="AL1"
+                        toggle={[Function]}
+                      >
+                        <Blueprint3.Button
+                          className="stage-row__expand-button"
+                          disabled={false}
+                          icon="small-plus"
+                          key="AL1"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="bp3-button stage-row__expand-button"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              icon="small-plus"
+                              key="leftIcon"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-small-plus"
+                                icon="small-plus"
+                              >
+                                <svg
+                                  data-icon="small-plus"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    small-plus
+                                  </desc>
+                                  <path
+                                    d="M11 7H9V5c0-.55-.45-1-1-1s-1 .45-1 1v2H5c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1V9h2c.55 0 1-.45 1-1s-.45-1-1-1z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </Memo()>
+                      <WorkflowTableStage
+                        isExpanded={false}
+                        key="1622053587 AL1"
+                        stage={
+                          Object {
+                            "activityIntervals": Array [
+                              Object {
+                                "activeAnalysts": Array [
+                                  "larry",
+                                  "moe",
+                                  "curly",
+                                ],
+                                "comment": "interval example",
+                                "endTime": 1622057187,
+                                "modificationTime": 1622057667,
+                                "name": "Event Review",
+                                "percentAvailable": 100,
+                                "processingEndTime": 1622057547,
+                                "processingStartTime": 1622057487,
+                                "stageName": "AL1",
+                                "startTime": 1622053587,
+                                "status": "IN_PROGRESS",
+                                "storageTime": 1622057607,
+                              },
+                            ],
+                            "comment": "interval example",
+                            "endTime": 1622057187,
+                            "modificationTime": 1622057667,
+                            "name": "AL1",
+                            "percentAvailable": 100,
+                            "processingEndTime": 1622057547,
+                            "processingStartTime": 1622057487,
+                            "stageMetrics": Object {
+                              "associatedSignalDetectionCount": 34,
+                              "eventCount": 21,
+                              "maxMagnitude": 8,
+                              "unassociatedSignalDetectionCount": 55,
+                            },
+                            "stageMode": "INTERACTIVE",
+                            "startTime": 1622053587,
+                            "status": "IN_PROGRESS",
+                            "storageTime": 1622057607,
+                          }
+                        }
+                        subRowNames={
+                          Array [
+                            "Event Review",
+                          ]
+                        }
+                      >
+                        <div
+                          className="stage-column"
+                        >
+                          <Tooltip
+                            activeAnalysts={
+                              Array [
+                                "larry",
+                                "moe",
+                                "curly",
+                              ]
+                            }
+                            interval={
+                              Object {
+                                "activityIntervals": Array [
+                                  Object {
+                                    "activeAnalysts": Array [
+                                      "larry",
+                                      "moe",
+                                      "curly",
+                                    ],
+                                    "comment": "interval example",
+                                    "endTime": 1622057187,
+                                    "modificationTime": 1622057667,
+                                    "name": "Event Review",
+                                    "percentAvailable": 100,
+                                    "processingEndTime": 1622057547,
+                                    "processingStartTime": 1622057487,
+                                    "stageName": "AL1",
+                                    "startTime": 1622053587,
+                                    "status": "IN_PROGRESS",
+                                    "storageTime": 1622057607,
+                                  },
+                                ],
+                                "comment": "interval example",
+                                "endTime": 1622057187,
+                                "modificationTime": 1622057667,
+                                "name": "AL1",
+                                "percentAvailable": 100,
+                                "processingEndTime": 1622057547,
+                                "processingStartTime": 1622057487,
+                                "stageMetrics": Object {
+                                  "associatedSignalDetectionCount": 34,
+                                  "eventCount": 21,
+                                  "maxMagnitude": 8,
+                                  "unassociatedSignalDetectionCount": 55,
+                                },
+                                "stageMode": "INTERACTIVE",
+                                "startTime": 1622053587,
+                                "status": "IN_PROGRESS",
+                                "storageTime": 1622057607,
+                              }
+                            }
+                            key="1622053587 AL1"
+                          >
+                            <TooltipWrapper
+                              content={
+                                <TooltipPanel
+                                  activeAnalysts="larry, moe, curly"
+                                  isStale={false}
+                                  lastModified="2021-01-01 13:00:00"
+                                  status="In Progress"
+                                />
+                              }
+                            >
+                              <Blueprint3.Tooltip
+                                boundary="window"
+                                className="core-tooltip"
+                                content={
+                                  <TooltipPanel
+                                    activeAnalysts="larry, moe, curly"
+                                    isStale={false}
+                                    lastModified="2021-01-01 13:00:00"
+                                    status="In Progress"
+                                  />
+                                }
+                                hoverCloseDelay={0}
+                                hoverOpenDelay={300}
+                                position="bottom"
+                                targetClassName="core-tooltip__target"
+                                targetTagName="div"
+                                transitionDuration={100}
+                                wrapperTagName="div"
+                              >
+                                <Blueprint3.Popover
+                                  autoFocus={false}
+                                  boundary="window"
+                                  canEscapeKeyClose={false}
+                                  captureDismiss={false}
+                                  className="core-tooltip"
+                                  content={
+                                    <TooltipPanel
+                                      activeAnalysts="larry, moe, curly"
+                                      isStale={false}
+                                      lastModified="2021-01-01 13:00:00"
+                                      status="In Progress"
+                                    />
+                                  }
+                                  defaultIsOpen={false}
+                                  disabled={false}
+                                  enforceFocus={false}
+                                  fill={false}
+                                  hasBackdrop={false}
+                                  hoverCloseDelay={0}
+                                  hoverOpenDelay={300}
+                                  inheritDarkTheme={true}
+                                  interactionKind="hover-target"
+                                  lazy={true}
+                                  minimal={false}
+                                  modifiers={Object {}}
+                                  openOnTargetFocus={true}
+                                  popoverClassName="bp3-tooltip"
+                                  position="bottom"
+                                  targetClassName="core-tooltip__target"
+                                  targetTagName="div"
+                                  transitionDuration={100}
+                                  usePortal={true}
+                                  wrapperTagName="div"
+                                >
+                                  <Manager>
+                                    <div
+                                      className="bp3-popover-wrapper core-tooltip"
+                                    >
+                                      <Reference
+                                        innerRef={[Function]}
+                                      >
+                                        <InnerReference
+                                          innerRef={[Function]}
+                                          setReferenceNode={[Function]}
+                                        >
+                                          <Blueprint3.ResizeSensor
+                                            onResize={[Function]}
+                                          >
+                                            <div
+                                              className="bp3-popover-target core-tooltip__target"
+                                              onBlur={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                            >
+                                              <div
+                                                className="internal-row"
+                                                key=".0"
+                                                tabIndex={0}
+                                              >
+                                                <Memo()
+                                                  stageInterval={
+                                                    Object {
+                                                      "activityIntervals": Array [
+                                                        Object {
+                                                          "activeAnalysts": Array [
+                                                            "larry",
+                                                            "moe",
+                                                            "curly",
+                                                          ],
+                                                          "comment": "interval example",
+                                                          "endTime": 1622057187,
+                                                          "modificationTime": 1622057667,
+                                                          "name": "Event Review",
+                                                          "percentAvailable": 100,
+                                                          "processingEndTime": 1622057547,
+                                                          "processingStartTime": 1622057487,
+                                                          "stageName": "AL1",
+                                                          "startTime": 1622053587,
+                                                          "status": "IN_PROGRESS",
+                                                          "storageTime": 1622057607,
+                                                        },
+                                                      ],
+                                                      "comment": "interval example",
+                                                      "endTime": 1622057187,
+                                                      "modificationTime": 1622057667,
+                                                      "name": "AL1",
+                                                      "percentAvailable": 100,
+                                                      "processingEndTime": 1622057547,
+                                                      "processingStartTime": 1622057487,
+                                                      "stageMetrics": Object {
+                                                        "associatedSignalDetectionCount": 34,
+                                                        "eventCount": 21,
+                                                        "maxMagnitude": 8,
+                                                        "unassociatedSignalDetectionCount": 55,
+                                                      },
+                                                      "stageMode": "INTERACTIVE",
+                                                      "startTime": 1622053587,
+                                                      "status": "IN_PROGRESS",
+                                                      "storageTime": 1622057607,
+                                                    }
+                                                  }
+                                                >
+                                                  <Memo()
+                                                    key="AL1"
+                                                    stageInterval={
+                                                      Object {
+                                                        "activityIntervals": Array [
+                                                          Object {
+                                                            "activeAnalysts": Array [
+                                                              "larry",
+                                                              "moe",
+                                                              "curly",
+                                                            ],
+                                                            "comment": "interval example",
+                                                            "endTime": 1622057187,
+                                                            "modificationTime": 1622057667,
+                                                            "name": "Event Review",
+                                                            "percentAvailable": 100,
+                                                            "processingEndTime": 1622057547,
+                                                            "processingStartTime": 1622057487,
+                                                            "stageName": "AL1",
+                                                            "startTime": 1622053587,
+                                                            "status": "IN_PROGRESS",
+                                                            "storageTime": 1622057607,
+                                                          },
+                                                        ],
+                                                        "comment": "interval example",
+                                                        "endTime": 1622057187,
+                                                        "modificationTime": 1622057667,
+                                                        "name": "AL1",
+                                                        "percentAvailable": 100,
+                                                        "processingEndTime": 1622057547,
+                                                        "processingStartTime": 1622057487,
+                                                        "stageMetrics": Object {
+                                                          "associatedSignalDetectionCount": 34,
+                                                          "eventCount": 21,
+                                                          "maxMagnitude": 8,
+                                                          "unassociatedSignalDetectionCount": 55,
+                                                        },
+                                                        "stageMode": "INTERACTIVE",
+                                                        "startTime": 1622053587,
+                                                        "status": "IN_PROGRESS",
+                                                        "storageTime": 1622057607,
+                                                      }
+                                                    }
+                                                  >
+                                                    <div
+                                                      className="interval-cell interval-cell--in-progress"
+                                                      key="1622053587"
+                                                      onContextMenu={[Function]}
+                                                      style={
+                                                        Object {
+                                                          "gridColumn": "span 12",
+                                                        }
+                                                      }
+                                                    />
+                                                  </Memo()>
+                                                </Memo()>
+                                              </div>
+                                            </div>
+                                          </Blueprint3.ResizeSensor>
+                                        </InnerReference>
+                                      </Reference>
+                                      <Blueprint3.Overlay
+                                        autoFocus={false}
+                                        backdropClassName="bp3-popover-backdrop"
+                                        backdropProps={Object {}}
+                                        canEscapeKeyClose={false}
+                                        canOutsideClickClose={false}
+                                        enforceFocus={false}
+                                        hasBackdrop={false}
+                                        isOpen={false}
+                                        lazy={true}
+                                        onClose={[Function]}
+                                        transitionDuration={100}
+                                        transitionName="bp3-popover"
+                                        usePortal={true}
+                                      />
+                                    </div>
+                                  </Manager>
+                                </Blueprint3.Popover>
+                              </Blueprint3.Tooltip>
+                            </TooltipWrapper>
+                          </Tooltip>
+                        </div>
+                      </WorkflowTableStage>
+                      <WorkflowRowLabel
+                        isActivityRow={false}
+                        label="AL1"
+                      >
+                        <div
+                          className="workflow-table-label"
+                          key="AL1"
+                        >
+                          <div>
+                            AL1
+                          </div>
+                        </div>
+                      </WorkflowRowLabel>
+                    </div>
+                  </WorkflowRow>
+                  <WorkflowRow
+                    key="Auto Network"
+                    subRowNames={
+                      Array [
+                        "Auto Post-AL1 Seq",
+                      ]
+                    }
+                  >
+                    <div />
+                  </WorkflowRow>
+                </div>
+              </div>
+            </div>
+          </WorkflowTable>
+          <WorkflowTimeAxis
+            timeRange={
+              Object {
+                "endTimeSecs": 1622057187,
+                "startTimeSecs": 1622053587,
+              }
+            }
+          >
+            <div
+              className="time-axis-wrapper"
+            >
+              <div
+                className="time-axis"
+              />
+            </div>
+          </WorkflowTimeAxis>
+          <ModalPrompt
+            actionCallback={[Function]}
+            actionText="Discard my changes"
+            actionTooltipText="Discard your changes and open a new interval"
+            cancelButtonCallback={[Function]}
+            cancelText="Cancel"
+            cancelTooltipText="Cancel and do not open a new interval"
+            isOpen={false}
+            onCloseCallback={[Function]}
+            optionalCallback={[Function]}
+            title="Warning"
+          >
+            <Blueprint3.Dialog
+              canOutsideClickClose={true}
+              className="dialog_parent dialog_parent--wide"
+              isOpen={false}
+              onClose={[Function]}
+              title="Warning"
+            >
+              <Blueprint3.Overlay
+                autoFocus={true}
+                backdropProps={Object {}}
+                canEscapeKeyClose={true}
+                canOutsideClickClose={true}
+                className="bp3-overlay-scroll-container"
+                enforceFocus={true}
+                hasBackdrop={true}
+                isOpen={false}
+                lazy={true}
+                onClose={[Function]}
+                title="Warning"
+                transitionDuration={300}
+                transitionName="bp3-overlay"
+                usePortal={true}
+              />
+            </Blueprint3.Dialog>
+          </ModalPrompt>
+        </div>
+      </WorkflowPanel>
+    </Provider>
+  </div>
+</BaseDisplay>
+`;
+
+exports[`Workflow Panel shallow mounts 1`] = `
+<div
+  className="base-display "
+>
+  <ContextProvider
+    value={
+      Object {
+        "glContainer": Object {
+          "close": [MockFunction],
+          "emit": [MockFunction],
+          "extendState": [MockFunction],
+          "getElement": [MockFunction],
+          "getState": [MockFunction],
+          "height": 1200,
+          "hide": [MockFunction],
+          "isHidden": false,
+          "layoutManager": undefined,
+          "off": [MockFunction],
+          "on": [MockFunction],
+          "parent": undefined,
+          "setSize": [MockFunction],
+          "setState": [MockFunction],
+          "setTitle": [MockFunction],
+          "show": [MockFunction],
+          "tab": undefined,
+          "title": "workflow",
+          "trigger": [MockFunction],
+          "unbind": [MockFunction],
+          "width": 1900,
+        },
+        "heightPx": 1200,
+        "widthPx": 1900,
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+    >
+      <WorkflowPanel
+        glContainer={
+          Object {
+            "close": [MockFunction],
+            "emit": [MockFunction],
+            "extendState": [MockFunction],
+            "getElement": [MockFunction],
+            "getState": [MockFunction],
+            "height": 1200,
+            "hide": [MockFunction],
+            "isHidden": false,
+            "layoutManager": undefined,
+            "off": [MockFunction],
+            "on": [MockFunction],
+            "parent": undefined,
+            "setSize": [MockFunction],
+            "setState": [MockFunction],
+            "setTitle": [MockFunction],
+            "show": [MockFunction],
+            "tab": undefined,
+            "title": "workflow",
+            "trigger": [MockFunction],
+            "unbind": [MockFunction],
+            "width": 1900,
+          }
+        }
+        operationalTimePeriodConfigurationQuery={
+          Object {
+            "canFetchMore": false,
+            "clear": undefined,
+            "data": Object {
+              "operationalPeriodEndSecs": 0,
+              "operationalPeriodStartSecs": 3888000,
+            },
+            "error": undefined,
+            "failureCount": 0,
+            "fetchMore": undefined,
+            "isError": false,
+            "isFetched": false,
+            "isFetchedAfterMount": undefined,
+            "isFetching": false,
+            "isIdle": false,
+            "isInitialData": undefined,
+            "isLoading": false,
+            "isPlaceholderData": undefined,
+            "isPreviousData": undefined,
+            "isStale": true,
+            "isSuccess": true,
+            "refetch": undefined,
+            "remove": undefined,
+            "status": undefined,
+            "updatedAt": undefined,
+          }
+        }
+        timeRange={
+          Object {
+            "endTimeSecs": 1609506000,
+            "startTimeSecs": 1609500000,
+          }
+        }
+        workflowIntervalQuery={
+          Object {
+            "canFetchMore": false,
+            "clear": undefined,
+            "data": Immutable.Map {
+              "AL1": Array [
+                Object {
+                  "activityIntervals": Array [
+                    Object {
+                      "activeAnalysts": Array [
+                        "larry",
+                        "moe",
+                        "curly",
+                      ],
+                      "comment": "interval example",
+                      "endTime": 1622057187,
+                      "modificationTime": 1622057667,
+                      "name": "Event Review",
+                      "percentAvailable": 100,
+                      "processingEndTime": 1622057547,
+                      "processingStartTime": 1622057487,
+                      "stageName": "AL1",
+                      "startTime": 1622053587,
+                      "status": "IN_PROGRESS",
+                      "storageTime": 1622057607,
+                    },
+                  ],
+                  "comment": "interval example",
+                  "endTime": 1622057187,
+                  "modificationTime": 1622057667,
+                  "name": "AL1",
+                  "percentAvailable": 100,
+                  "processingEndTime": 1622057547,
+                  "processingStartTime": 1622057487,
+                  "stageMetrics": Object {
+                    "associatedSignalDetectionCount": 34,
+                    "eventCount": 21,
+                    "maxMagnitude": 8,
+                    "unassociatedSignalDetectionCount": 55,
+                  },
+                  "stageMode": "INTERACTIVE",
+                  "startTime": 1622053587,
+                  "status": "IN_PROGRESS",
+                  "storageTime": 1622057607,
+                },
+              ],
+            },
+            "error": undefined,
+            "failureCount": 0,
+            "fetchMore": undefined,
+            "isError": false,
+            "isFetched": false,
+            "isFetchedAfterMount": undefined,
+            "isFetching": false,
+            "isIdle": false,
+            "isInitialData": undefined,
+            "isLoading": false,
+            "isPlaceholderData": undefined,
+            "isPreviousData": undefined,
+            "isStale": true,
+            "isSuccess": true,
+            "refetch": undefined,
+            "remove": undefined,
+            "status": undefined,
+            "updatedAt": undefined,
+          }
+        }
+        workflowQuery={
+          Object {
+            "canFetchMore": false,
+            "clear": undefined,
+            "data": Object {
+              "name": "gms",
+              "stages": Array [
+                Object {
+                  "activities": Array [
+                    Object {
+                      "analysisMode": "EVENT_REVIEW",
+                      "name": "Event Review",
+                      "stationGroup": Object {
+                        "description": "station group",
+                        "effectiveAt": 1622048927,
+                        "name": "station-group",
+                      },
+                    },
+                  ],
+                  "duration": 3600,
+                  "mode": "INTERACTIVE",
+                  "name": "AL1",
+                },
+                Object {
+                  "duration": 3600,
+                  "mode": "AUTOMATIC",
+                  "name": "Auto Network",
+                  "sequences": Array [
+                    Object {
+                      "name": "Auto Post-AL1 Seq",
+                      "steps": Array [
+                        Object {
+                          "name": "AAA",
+                        },
+                        Object {
+                          "name": "BBB",
+                        },
+                        Object {
+                          "name": "CCC",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            "error": undefined,
+            "failureCount": 0,
+            "fetchMore": undefined,
+            "isError": false,
+            "isFetched": false,
+            "isFetchedAfterMount": undefined,
+            "isFetching": false,
+            "isIdle": false,
+            "isInitialData": undefined,
+            "isLoading": false,
+            "isPlaceholderData": undefined,
+            "isPreviousData": undefined,
+            "isStale": true,
+            "isSuccess": true,
+            "refetch": undefined,
+            "remove": undefined,
+            "status": undefined,
+            "updatedAt": undefined,
+          }
+        }
+      />
+    </Provider>
+  </ContextProvider>
+</div>
+`;

@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Root IAN app matches a snapshot 1`] = `
+Object {
+  "config": Object {
+    "components": Object {
+      "map-display": Object {
+        "component": "map-display",
+        "title": "IAN Map",
+        "type": "react-component",
+      },
+      "station-properties": Object {
+        "component": "station-properties",
+        "title": "Station Properties",
+        "type": "react-component",
+      },
+      "system-messages": Object {
+        "component": "system-messages",
+        "title": "System Messages",
+        "type": "react-component",
+      },
+      "waveform-display": Object {
+        "component": "waveform-display",
+        "title": "Waveforms",
+        "type": "react-component",
+      },
+      "workflow-display": Object {
+        "component": "workflow-display",
+        "title": "Workflow",
+        "type": "react-component",
+      },
+    },
+    "workspace": Object {
+      "content": Array [
+        Object {
+          "content": Array [
+            Object {
+              "content": Array [
+                Object {
+                  "component": "workflow-display",
+                  "title": "Workflow",
+                  "type": "react-component",
+                },
+              ],
+              "type": "column",
+            },
+          ],
+          "type": "row",
+        },
+        Object {
+          "content": Array [
+            Object {
+              "content": Array [
+                Object {
+                  "component": "map-display",
+                  "title": "IAN Map",
+                  "type": "react-component",
+                },
+              ],
+              "type": "column",
+            },
+          ],
+          "type": "row",
+        },
+        Object {
+          "content": Array [
+            Object {
+              "content": Array [
+                Object {
+                  "component": "station-properties",
+                  "title": "Station Properties",
+                  "type": "react-component",
+                },
+              ],
+              "type": "column",
+            },
+          ],
+          "type": "row",
+        },
+        Object {
+          "content": Array [
+            Object {
+              "component": "waveform-display",
+              "height": 70,
+              "title": "Waveforms",
+              "type": "react-component",
+            },
+          ],
+          "type": "column",
+        },
+      ],
+      "dimensions": Object {
+        "borderWidth": 2,
+        "headerHeight": 30,
+        "minItemHeight": 30,
+        "minItemWidth": 30,
+      },
+      "settings": Object {
+        "showCloseIcon": true,
+        "showMaximiseIcon": true,
+        "showPopoutIcon": false,
+      },
+    },
+  },
+  "gl": undefined,
+  "glComponents": Map {
+    "Analyst Displays" => Map {
+      "map-display" => Object {
+        "id": Object {
+          "component": "map-display",
+          "title": "IAN Map",
+          "type": "react-component",
+        },
+        "value": [Function],
+      },
+      "station-properties" => Object {
+        "id": Object {
+          "component": "station-properties",
+          "title": "Station Properties",
+          "type": "react-component",
+        },
+        "value": [Function],
+      },
+      "waveform-display" => Object {
+        "id": Object {
+          "component": "waveform-display",
+          "title": "Waveforms",
+          "type": "react-component",
+        },
+        "value": [Function],
+      },
+      "workflow-display" => Object {
+        "id": Object {
+          "component": "workflow-display",
+          "title": "Workflow",
+          "type": "react-component",
+        },
+        "value": [Function],
+      },
+    },
+  },
+  "glRef": undefined,
+  "supportedUserInterfaceMode": "IAN",
+}
+`;

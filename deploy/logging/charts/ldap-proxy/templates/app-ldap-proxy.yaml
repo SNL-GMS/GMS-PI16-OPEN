@@ -1,0 +1,120 @@
+{{- $appName := "ldap-proxy" }}
+{{- $appValues := .Values }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      serviceAccount: gms-logging-elevated
+      volumes:
+        - name: config-map-volume
+          configMap:
+            name: {{ $appValues.configMap }}
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "ldap-proxy.container.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: config-map-volume
+              mountPath: {{ $appValues.certMountPoint }}
+          env:
+            - name: BIND_DN
+              valueFrom:
+                configMapKeyRef:
+                  name: logging-ldap-config
+                  key: bind_dn
+            - name: LDAP_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: logging-ldap-config
+                  key: ldap_host
+            - name: LDAP_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: logging-ldap-config
+                  key: ldap_port
+            - name: BASE_DN
+              valueFrom:
+                configMapKeyRef:
+                  name: logging-ldap-config
+                  key: base_dn
+            - name: ATTRIBUTE
+              valueFrom:
+                configMapKeyRef:
+                  name: logging-ldap-config
+                  key: attribute
+            - name: SCOPE
+              valueFrom:
+                configMapKeyRef:
+                  name: logging-ldap-config
+                  key: scope
+            - name: FILTER
+              valueFrom:
+                configMapKeyRef:
+                  name: logging-ldap-config
+                  key: filter
+            - name: LDAP_CA_PEM_FILE
+              valueFrom:
+                configMapKeyRef:
+                  name: logging-ldap-config
+                  key: ldap_ca_pem_file
+            - name: PROXIED_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: logging-ldap-config
+                  key: proxied_url
+            - name: BIND_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: ldap-pass
+                  key: bindpass
+            {{- include "ldap-proxy.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $appName }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: http-web
+      port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: {{ $appName }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ $appName }}
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+    - secretName: ingress-default-cert
+      hosts:
+        - kibana.{{- include "ldap-proxy.baseDomain" . }}
+  rules:
+    - host: kibana.{{- include "ldap-proxy.baseDomain" . }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ $appName }}
+                port:
+                  number: 80

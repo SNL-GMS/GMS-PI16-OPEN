@@ -1,0 +1,911 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Acknowledge Overlay matches a snapshot 1`] = `
+<ApolloProvider
+  client={
+    DefaultClient {
+      "cache": InMemoryCache {
+        "addTypename": true,
+        "cacheKeyRoot": KeyTrie {
+          "weakness": true,
+        },
+        "config": Object {
+          "addTypename": true,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+          "freezeResults": false,
+          "resultCaching": true,
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimisticData": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "executeSubSelectedArray": [Function],
+          "freezeResults": false,
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {},
+        "watches": Set {},
+      },
+      "clearStoreCallbacks": Array [],
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "localState": LocalState {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "client": [Circular],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "queryManager": QueryManager {
+        "assumeImmutableResults": false,
+        "clientAwareness": Object {
+          "name": undefined,
+          "version": undefined,
+        },
+        "dataStore": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "fetchQueryRejectFns": Map {},
+        "idCounter": 1,
+        "inFlightLinkObservables": Map {},
+        "link": ApolloLink {
+          "request": [Function],
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutationStore": MutationStore {
+          "store": Object {},
+        },
+        "onBroadcast": [Function],
+        "pollingInfoByQueryId": Map {},
+        "queries": Map {},
+        "queryDeduplication": true,
+        "queryStore": QueryStore {
+          "store": Object {},
+        },
+        "ssrMode": false,
+        "transformCache": WeakMap {},
+      },
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+      },
+      "typeDefs": undefined,
+      "version": "2.6.4",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <AcknowledgeOverlay
+    acknowledgeStationsByName={[MockFunction]}
+    isOpen={true}
+    onClose={[MockFunction]}
+    stationNames={
+      Array [
+        "TEST",
+      ]
+    }
+  >
+    <OverlayWrapper
+      isOpen={true}
+      onClose={[Function]}
+    >
+      <Blueprint3.Overlay
+        autoFocus={false}
+        backdropClassName=""
+        backdropProps={Object {}}
+        canEscapeKeyClose={true}
+        canOutsideClickClose={true}
+        className="overlay"
+        enforceFocus={false}
+        hasBackdrop={true}
+        isOpen={true}
+        lazy={true}
+        onClose={[Function]}
+        transitionDuration={300}
+        transitionName="bp3-overlay"
+        usePortal={true}
+      >
+        <Blueprint3.Portal
+          container={
+            <body
+              class="bp3-overlay-open"
+            >
+              <div
+                class="bp3-portal"
+              >
+                <div
+                  class="bp3-overlay bp3-overlay-open overlay"
+                >
+                  <div
+                    class="bp3-overlay-backdrop bp3-overlay-appear bp3-overlay-appear-active"
+                    tabindex="0"
+                  />
+                  <div
+                    class="overlay__contents undefined bp3-overlay-content bp3-overlay-appear bp3-overlay-appear-active"
+                    tabindex="0"
+                  >
+                    <div
+                      class="acknowledge-form overlay__contents"
+                    >
+                      <div
+                        class="form"
+                        style="min-width: 424px;"
+                      >
+                        <div
+                          class="form__header"
+                        >
+                          <div>
+                            Acknowledge
+                          </div>
+                        </div>
+                        <div
+                          class="form__panel-selector"
+                        />
+                        <div
+                          class="form-body"
+                        >
+                          <div
+                            class="form-item"
+                          >
+                            <div
+                              class="form-label"
+                              style="font-size: 1em; min-width: 9em;"
+                            >
+                              Stations:
+                            </div>
+                            <div
+                              class="form-value form-value--uneditable"
+                              style="width: 280px;"
+                              title="TEST"
+                            >
+                              TEST
+                            </div>
+                          </div>
+                          <div
+                            class="form-item--top-align form-item"
+                          >
+                            <div
+                              class="form-label"
+                              style="font-size: 1em; min-width: 9em;"
+                            >
+                              Comment:
+                            </div>
+                            <div
+                              class="form-value"
+                              style="width: 280px;"
+                            >
+                              <div>
+                                <textarea
+                                  class="form__text-input"
+                                  data-cy="acknowledge-comment-textarea"
+                                  maxlength="1024"
+                                  rows="4"
+                                  title="Enter the comment"
+                                />
+                                <p
+                                  class="form__character-count"
+                                >
+                                  Characters remaining: 
+                                  1024
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="form__buttons"
+                        >
+                          <div
+                            class="form__buttons--right"
+                          >
+                            <button
+                              class="bp3-button bp3-disabled form__button"
+                              data-cy="submit-acknowledge"
+                              disabled=""
+                              tabindex="-1"
+                              title="Must modify a field to save"
+                              type="button"
+                            >
+                              <span
+                                class="bp3-button-text"
+                              >
+                                Acknowledge
+                              </span>
+                            </button>
+                            <button
+                              class="bp3-button form__button"
+                              data-cy="cancel-acknowledge"
+                              type="button"
+                            >
+                              <span
+                                class="bp3-button-text"
+                              >
+                                Cancel
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>
+          }
+        >
+          <Portal
+            containerInfo={
+              <div
+                class="bp3-portal"
+              >
+                <div
+                  class="bp3-overlay bp3-overlay-open overlay"
+                >
+                  <div
+                    class="bp3-overlay-backdrop bp3-overlay-appear bp3-overlay-appear-active"
+                    tabindex="0"
+                  />
+                  <div
+                    class="overlay__contents undefined bp3-overlay-content bp3-overlay-appear bp3-overlay-appear-active"
+                    tabindex="0"
+                  >
+                    <div
+                      class="acknowledge-form overlay__contents"
+                    >
+                      <div
+                        class="form"
+                        style="min-width: 424px;"
+                      >
+                        <div
+                          class="form__header"
+                        >
+                          <div>
+                            Acknowledge
+                          </div>
+                        </div>
+                        <div
+                          class="form__panel-selector"
+                        />
+                        <div
+                          class="form-body"
+                        >
+                          <div
+                            class="form-item"
+                          >
+                            <div
+                              class="form-label"
+                              style="font-size: 1em; min-width: 9em;"
+                            >
+                              Stations:
+                            </div>
+                            <div
+                              class="form-value form-value--uneditable"
+                              style="width: 280px;"
+                              title="TEST"
+                            >
+                              TEST
+                            </div>
+                          </div>
+                          <div
+                            class="form-item--top-align form-item"
+                          >
+                            <div
+                              class="form-label"
+                              style="font-size: 1em; min-width: 9em;"
+                            >
+                              Comment:
+                            </div>
+                            <div
+                              class="form-value"
+                              style="width: 280px;"
+                            >
+                              <div>
+                                <textarea
+                                  class="form__text-input"
+                                  data-cy="acknowledge-comment-textarea"
+                                  maxlength="1024"
+                                  rows="4"
+                                  title="Enter the comment"
+                                />
+                                <p
+                                  class="form__character-count"
+                                >
+                                  Characters remaining: 
+                                  1024
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="form__buttons"
+                        >
+                          <div
+                            class="form__buttons--right"
+                          >
+                            <button
+                              class="bp3-button bp3-disabled form__button"
+                              data-cy="submit-acknowledge"
+                              disabled=""
+                              tabindex="-1"
+                              title="Must modify a field to save"
+                              type="button"
+                            >
+                              <span
+                                class="bp3-button-text"
+                              >
+                                Acknowledge
+                              </span>
+                            </button>
+                            <button
+                              class="bp3-button form__button"
+                              data-cy="cancel-acknowledge"
+                              type="button"
+                            >
+                              <span
+                                class="bp3-button-text"
+                              >
+                                Cancel
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
+          >
+            <TransitionGroup
+              appear={true}
+              childFactory={[Function]}
+              className="bp3-overlay bp3-overlay-open overlay"
+              component="div"
+              onKeyDown={[Function]}
+            >
+              <div
+                className="bp3-overlay bp3-overlay-open overlay"
+                onKeyDown={[Function]}
+              >
+                <CSSTransition
+                  appear={true}
+                  classNames="bp3-overlay"
+                  in={true}
+                  key=".$__backdrop"
+                  onExited={[Function]}
+                  timeout={300}
+                >
+                  <Transition
+                    appear={true}
+                    enter={true}
+                    exit={true}
+                    in={true}
+                    mountOnEnter={false}
+                    onEnter={[Function]}
+                    onEntered={[Function]}
+                    onEntering={[Function]}
+                    onExit={[Function]}
+                    onExited={[Function]}
+                    onExiting={[Function]}
+                    timeout={300}
+                    unmountOnExit={false}
+                  >
+                    <div
+                      className="bp3-overlay-backdrop"
+                      onMouseDown={[Function]}
+                      tabIndex={0}
+                    />
+                  </Transition>
+                </CSSTransition>
+                <CSSTransition
+                  appear={true}
+                  classNames="bp3-overlay"
+                  in={true}
+                  key=".$.0"
+                  onExited={[Function]}
+                  timeout={300}
+                >
+                  <Transition
+                    appear={true}
+                    enter={true}
+                    exit={true}
+                    in={true}
+                    mountOnEnter={false}
+                    onEnter={[Function]}
+                    onEntered={[Function]}
+                    onEntering={[Function]}
+                    onExit={[Function]}
+                    onExited={[Function]}
+                    onExiting={[Function]}
+                    timeout={300}
+                    unmountOnExit={false}
+                  >
+                    <div
+                      className="overlay__contents undefined bp3-overlay-content"
+                      tabIndex={0}
+                    >
+                      <AcknowledgeForm
+                        acknowledgeStationsByName={[Function]}
+                        classNames="overlay__contents"
+                        onClose={[Function]}
+                        requiresModificationForSubmit={true}
+                        stationNames={
+                          Array [
+                            "TEST",
+                          ]
+                        }
+                      >
+                        <div
+                          className="acknowledge-form overlay__contents"
+                        >
+                          <Form
+                            defaultPanel={
+                              Object {
+                                "formItems": Array [
+                                  Object {
+                                    "displayText": "TEST",
+                                    "itemKey": "stationLabel",
+                                    "itemType": "Display",
+                                    "labelText": "Stations",
+                                    "tooltip": "TEST",
+                                  },
+                                  Object {
+                                    "data-cy": "acknowledge-comment",
+                                    "itemKey": "comment",
+                                    "itemType": "Input",
+                                    "labelText": "Comment",
+                                    "topAlign": true,
+                                    "value": Object {
+                                      "defaultValue": "",
+                                      "params": Object {
+                                        "maxChar": 1024,
+                                        "tooltip": "Enter the comment",
+                                      },
+                                      "type": "TextArea",
+                                    },
+                                  },
+                                ],
+                                "name": "AcknowledgeWithComment",
+                              }
+                            }
+                            header="Acknowledge"
+                            onCancel={[Function]}
+                            onSubmit={[Function]}
+                            requiresModificationForSubmit={true}
+                            submitButtonText="Acknowledge"
+                          >
+                            <div
+                              className="form"
+                              style={
+                                Object {
+                                  "minWidth": "424px",
+                                }
+                              }
+                            >
+                              <div
+                                className="form__header"
+                              >
+                                <div>
+                                  Acknowledge
+                                </div>
+                              </div>
+                              <div
+                                className="form__panel-selector"
+                              />
+                              <FormBody
+                                formItemStates={
+                                  Map {
+                                    "stationLabel" => Object {
+                                      "hasHold": false,
+                                      "modified": false,
+                                      "value": undefined,
+                                    },
+                                    "comment" => Object {
+                                      "hasHold": false,
+                                      "modified": false,
+                                      "value": Object {
+                                        "defaultValue": "",
+                                        "params": Object {
+                                          "maxChar": 1024,
+                                          "tooltip": "Enter the comment",
+                                        },
+                                        "type": "TextArea",
+                                      },
+                                    },
+                                  }
+                                }
+                                formItems={
+                                  Array [
+                                    Object {
+                                      "displayText": "TEST",
+                                      "itemKey": "stationLabel",
+                                      "itemType": "Display",
+                                      "labelText": "Stations",
+                                      "tooltip": "TEST",
+                                    },
+                                    Object {
+                                      "data-cy": "acknowledge-comment",
+                                      "itemKey": "comment",
+                                      "itemType": "Input",
+                                      "labelText": "Comment",
+                                      "topAlign": true,
+                                      "value": Object {
+                                        "defaultValue": "",
+                                        "params": Object {
+                                          "maxChar": 1024,
+                                          "tooltip": "Enter the comment",
+                                        },
+                                        "type": "TextArea",
+                                      },
+                                    },
+                                  ]
+                                }
+                                labelFontSizeEm={1}
+                                maxLabelWidthEm={9}
+                                onHoldChange={[Function]}
+                                onValue={[Function]}
+                              >
+                                <div
+                                  className="form-body"
+                                >
+                                  <div
+                                    className="form-item"
+                                    key="Stations"
+                                  >
+                                    <FormLabel
+                                      fontSizeEm={1}
+                                      modified={false}
+                                      text="Stations"
+                                      widthEm={9}
+                                    >
+                                      <div
+                                        className="form-label"
+                                        style={
+                                          Object {
+                                            "fontSize": "1em",
+                                            "minWidth": "9em",
+                                          }
+                                        }
+                                      >
+                                        Stations:
+                                      </div>
+                                    </FormLabel>
+                                    <FormDisplayText
+                                      displayText="TEST"
+                                      tooltip="TEST"
+                                      widthPx={280}
+                                    >
+                                      <div
+                                        className="form-value form-value--uneditable"
+                                        style={
+                                          Object {
+                                            "width": "280px",
+                                          }
+                                        }
+                                        title="TEST"
+                                      >
+                                        TEST
+                                      </div>
+                                    </FormDisplayText>
+                                  </div>
+                                  <div
+                                    className="form-item--top-align form-item"
+                                    key="Comment"
+                                  >
+                                    <FormLabel
+                                      fontSizeEm={1}
+                                      modified={false}
+                                      text="Comment"
+                                      widthEm={9}
+                                    >
+                                      <div
+                                        className="form-label"
+                                        style={
+                                          Object {
+                                            "fontSize": "1em",
+                                            "minWidth": "9em",
+                                          }
+                                        }
+                                      >
+                                        Comment:
+                                      </div>
+                                    </FormLabel>
+                                    <FormValue
+                                      data-cy="acknowledge-comment"
+                                      itemKey="comment"
+                                      onHoldChange={[Function]}
+                                      onValue={[Function]}
+                                      value={
+                                        Object {
+                                          "defaultValue": "",
+                                          "params": Object {
+                                            "maxChar": 1024,
+                                            "tooltip": "Enter the comment",
+                                          },
+                                          "type": "TextArea",
+                                        }
+                                      }
+                                      widthPx={280}
+                                    >
+                                      <div
+                                        className="form-value"
+                                        style={
+                                          Object {
+                                            "width": "280px",
+                                          }
+                                        }
+                                      >
+                                        <Widget
+                                          data-cy="acknowledge-comment"
+                                          defaultValue=""
+                                          isValid={true}
+                                          onMaybeValue={[Function]}
+                                          onValidStatus={[Function]}
+                                          params={
+                                            Object {
+                                              "maxChar": 1024,
+                                              "tooltip": "Enter the comment",
+                                            }
+                                          }
+                                          type="TextArea"
+                                        >
+                                          <TextArea
+                                            data-cy="acknowledge-comment"
+                                            defaultValue=""
+                                            maxChar={1024}
+                                            onMaybeValue={[Function]}
+                                            title="Enter the comment"
+                                          >
+                                            <div>
+                                              <textarea
+                                                className="form__text-input"
+                                                data-cy="acknowledge-comment-textarea"
+                                                maxLength={1024}
+                                                onChange={[Function]}
+                                                rows={4}
+                                                title="Enter the comment"
+                                                value=""
+                                              />
+                                              <p
+                                                className="form__character-count"
+                                              >
+                                                Characters remaining: 
+                                                1024
+                                              </p>
+                                            </div>
+                                          </TextArea>
+                                        </Widget>
+                                      </div>
+                                    </FormValue>
+                                  </div>
+                                </div>
+                              </FormBody>
+                              <div
+                                className="form__buttons"
+                              >
+                                <div
+                                  className="form__buttons--right"
+                                >
+                                  <Blueprint3.Button
+                                    className="form__button"
+                                    data-cy="submit-acknowledge"
+                                    disabled={true}
+                                    key="submit-button"
+                                    onClick={[Function]}
+                                    text="Acknowledge"
+                                    title="Must modify a field to save"
+                                  >
+                                    <button
+                                      className="bp3-button bp3-disabled form__button"
+                                      data-cy="submit-acknowledge"
+                                      disabled={true}
+                                      onKeyDown={[Function]}
+                                      onKeyUp={[Function]}
+                                      tabIndex={-1}
+                                      title="Must modify a field to save"
+                                      type="button"
+                                    >
+                                      <Blueprint3.Icon
+                                        key="leftIcon"
+                                      />
+                                      <span
+                                        className="bp3-button-text"
+                                        key="text"
+                                      >
+                                        Acknowledge
+                                      </span>
+                                      <Blueprint3.Icon
+                                        key="rightIcon"
+                                      />
+                                    </button>
+                                  </Blueprint3.Button>
+                                  <Blueprint3.Button
+                                    className="form__button"
+                                    data-cy="cancel-acknowledge"
+                                    key="cancel-button"
+                                    onClick={[Function]}
+                                    text="Cancel"
+                                  >
+                                    <button
+                                      className="bp3-button form__button"
+                                      data-cy="cancel-acknowledge"
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      onKeyUp={[Function]}
+                                      type="button"
+                                    >
+                                      <Blueprint3.Icon
+                                        key="leftIcon"
+                                      />
+                                      <span
+                                        className="bp3-button-text"
+                                        key="text"
+                                      >
+                                        Cancel
+                                      </span>
+                                      <Blueprint3.Icon
+                                        key="rightIcon"
+                                      />
+                                    </button>
+                                  </Blueprint3.Button>
+                                </div>
+                              </div>
+                            </div>
+                          </Form>
+                        </div>
+                      </AcknowledgeForm>
+                    </div>
+                  </Transition>
+                </CSSTransition>
+              </div>
+            </TransitionGroup>
+          </Portal>
+        </Blueprint3.Portal>
+      </Blueprint3.Overlay>
+    </OverlayWrapper>
+  </AcknowledgeOverlay>
+</ApolloProvider>
+`;

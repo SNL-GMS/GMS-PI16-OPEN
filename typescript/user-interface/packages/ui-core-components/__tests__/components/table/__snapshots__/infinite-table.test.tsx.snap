@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Infinite Table Renders 1`] = `
+<CoreTable
+  blockLoadDebounceMillis={60}
+  cacheBlockSize={100}
+  cacheOverflowSize={10}
+  context={
+    Object {
+      "columnApi": undefined,
+      "tableApi": undefined,
+    }
+  }
+  datasource={null}
+  enableFilter={false}
+  infiniteInitialRowCount={5}
+  maxBlocksInCache={2}
+  onGridReady={[Function]}
+  rowBuffer={2}
+  rowCount={10}
+  rowModelType="infinite"
+/>
+`;

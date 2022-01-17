@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow Query Util fetchWorkflowData returns the expected result 1`] = `
+Object {
+  "name": "workflow",
+  "stages": Array [
+    Object {
+      "activities": Array [
+        Object {
+          "analysisMode": "EVENT_REVIEW",
+          "name": "name",
+          "stationGroup": Object {
+            "description": "Hi",
+            "effectiveAt": 1000,
+            "name": "ALL_1",
+          },
+        },
+      ],
+      "duration": 50,
+      "mode": "INTERACTIVE",
+      "name": "name",
+    },
+    Object {
+      "duration": 5000,
+      "mode": "AUTOMATIC",
+      "name": "name",
+      "sequences": Array [
+        Object {
+          "name": "name",
+          "steps": Array [],
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`Workflow Query Util fetchWorkflowData returns the expected result 2`] = `Map {}`;
+
+exports[`Workflow Query Util useWorkflowData returns the expected result 1`] = `
+Object {
+  "data": Object {
+    "name": "workflow",
+    "stages": Array [
+      Object {
+        "activities": Array [
+          Object {
+            "analysisMode": "EVENT_REVIEW",
+            "name": "name",
+            "stationGroup": Object {
+              "description": "Hi",
+              "effectiveAt": 1000,
+              "name": "ALL_1",
+            },
+          },
+        ],
+        "duration": 50,
+        "mode": "INTERACTIVE",
+        "name": "name",
+      },
+      Object {
+        "duration": 5000,
+        "mode": "AUTOMATIC",
+        "name": "name",
+        "sequences": Array [
+          Object {
+            "name": "name",
+            "steps": Array [],
+          },
+        ],
+      },
+    ],
+  },
+  "isSuccess": true,
+}
+`;
+
+exports[`Workflow Query Util useWorkflowData returns the expected result 2`] = `
+Object {
+  "data": Map {},
+  "isSuccess": true,
+}
+`;

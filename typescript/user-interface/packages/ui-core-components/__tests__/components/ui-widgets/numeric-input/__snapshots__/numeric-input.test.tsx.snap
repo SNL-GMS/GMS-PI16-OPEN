@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History List History List renders 1`] = `
+<NumericInput
+  disabled={false}
+  minMax={
+    Object {
+      "max": 100,
+      "min": 0,
+    }
+  }
+  onChange={[MockFunction]}
+  requireEnterForOnChange={false}
+  step={1}
+  tooltip="numeric input"
+  value={0}
+  widthPx={150}
+>
+  <input
+    className="toolbar-numeric-input"
+    disabled={false}
+    max={100}
+    min={0}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    onMouseEnter={[Function]}
+    step={1}
+    title="numeric input"
+    type="number"
+    value={0}
+    width={150}
+  />
+</NumericInput>
+`;
+
+exports[`History List History List shallow renders 1`] = `
+<input
+  className="toolbar-numeric-input"
+  disabled={false}
+  max={100}
+  min={0}
+  onChange={[Function]}
+  onKeyDown={[Function]}
+  onMouseEnter={[Function]}
+  step={1}
+  title="numeric input"
+  type="number"
+  value={0}
+  width={150}
+/>
+`;

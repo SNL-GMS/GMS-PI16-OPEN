@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mutations should have graphqlAcknowledgeSohStatusMutation 1`] = `undefined`;
+
+exports[`mutations should have graphqlQuietChannelMonitorStatusesMutation 1`] = `undefined`;

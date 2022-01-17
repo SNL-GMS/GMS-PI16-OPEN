@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+apply plugin: 'io.swagger.core.v3.swagger-gradle-plugin'
+
+dependencies {
+    implementation project(":java-utilities")
+    implementation project(":frameworks-service-interface-base")
+    api project(':station-definition-coi')
+    api project(':station-definition-dao')
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+    implementation "org.apache.commons:commons-lang3"
+    api 'com.fasterxml.jackson.core:jackson-databind'
+
+    testImplementation project(":station-definition-testfixtures")
+}

@@ -1,0 +1,347 @@
+@import '../../gms-colors.scss';
+@import '../../gms-fonts.scss';
+
+$BLOCK_HEIGHT_PX: 24px;
+$ROW_COMPUTED_HEIGHT_PX: 26px;
+$BLOCK_WIDTH_PX: 140px;
+$TABLE_MARGIN: 34px;
+$DIVIDER_MARGIN: 31px;
+//The table margin plus some manual fiddling
+$WIDTH_OF_LEFT_CURTAIN: 43px;
+$gap-between-rows: 0.75em;
+
+.gms-workflow-time-axis {
+  path,
+  line {
+    fill: none;
+    stroke: $gms-prominent;
+    shape-rendering: crispEdges;
+  }
+  text {
+    font-family: $gms-sans;
+    font-size: 12px;
+    fill: $gms-main;
+    &.day-label {
+      stroke: $workflow-day-divider;
+      font-size: 13px;
+    }
+  }
+}
+
+.workflow-display-window {
+  height: 100%;
+}
+
+.workflow-panel {
+  height: 100%;
+  width: 100%;
+}
+
+.workflow-scroll-wrapper {
+  max-height: calc(100% - 55px);
+  overflow-y: scroll;
+}
+
+.interval-table-wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  margin-left: $TABLE_MARGIN;
+  margin-right: $BLOCK_WIDTH_PX;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: static;
+  gap: 2px;
+}
+
+.interval-table-wrapper-wrapper {
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+// Left is set to account for the workflow-table-wrapper's left margin, minus the size of the button
+.stage-row__expand-button {
+  height: $BLOCK_HEIGHT_PX;
+  border: 1px solid $gms-recessed;
+  width: $BLOCK_HEIGHT_PX;
+  transition: margin-bottom 0.15s;
+  min-height: $ROW_COMPUTED_HEIGHT_PX;
+  min-width: $ROW_COMPUTED_HEIGHT_PX;
+  padding: 0;
+  position: absolute;
+  left: 7px;
+  margin-top: -1px;
+  z-index: 5;
+}
+
+.stage-row {
+  display: flex;
+  gap: 2px;
+}
+
+.stage-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.internal-row {
+  display: grid;
+  grid-auto-columns: 8px;
+  gap: 2px;
+}
+
+.workflow-tooltip-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin: 0 auto;
+  gap: 0.25em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px dashed $gms-soft;
+}
+
+.workflow-tooltip-container .label-value__label {
+  font-weight: bold;
+}
+
+.workflow-tooltip-container:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.workflow-tooltip-container + .workflow-tooltip-container {
+  padding-top: 0.5em;
+}
+
+// The absolute position lets it float to the left over the workflow display
+// The margin right and top are for alignment
+.workflow-table-label {
+  height: $ROW_COMPUTED_HEIGHT_PX;
+  width: $BLOCK_WIDTH_PX;
+  border: 1px solid;
+  display: flex;
+  border-color: $gms-background;
+  justify-content: center;
+  align-items: center;
+  background: $gms-soft;
+  flex: 0 0 auto;
+  position: absolute;
+  right: 0px;
+  margin-right: 4px;
+  margin-top: -1px;
+  z-index: 5;
+}
+
+.workflow-table-label--activity {
+  filter: $interval-activity-darken-cell-by;
+}
+
+.workflow-row {
+  position: relative;
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.interval-cell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  height: $BLOCK_HEIGHT_PX;
+  border: 1px solid $gms-background;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  gap: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  .percent-bar {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.interval-cell:hover {
+  filter: brightness(1.2);
+}
+
+.interval-cell--in-progress {
+  background-color: $interval-in-progress-fill;
+  border: 1px solid $interval-in-progress-border;
+  .percent-bar {
+    background-color: scale-color(
+      $color: $interval-in-progress-fill,
+      $lightness: 25%,
+      $saturation: -15%
+    );
+  }
+}
+
+.interval-cell--complete {
+  background-color: $interval-complete-fill;
+  border: 1px solid $interval-complete-border;
+}
+
+.interval-cell--not-complete {
+  background-color: $interval-not-complete-fill;
+  border: 1px solid $interval-not-complete-border;
+}
+
+.interval-cell--not-started {
+  background-color: $interval-not-started-fill;
+  border: 1px solid $interval-not-started-border;
+}
+
+.interval-cell--skipped {
+  background-color: $interval-skipped-fill;
+  border: 1px solid $interval-skipped-border;
+}
+
+.interval-cell--failed {
+  background-color: $interval-failed-fill;
+  border: 1px solid $interval-failed-border;
+}
+
+.interval-cell--selected {
+  border: 2px solid $gms-selection;
+}
+
+.interval-cell--activity-cell {
+  filter: $interval-activity-darken-cell-by;
+}
+
+.interval-cell--activity-cell:hover {
+  filter: brightness(1);
+}
+
+.interval-cell--stale {
+  filter: brightness(0.5);
+}
+
+.workflow-day-divider {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 4px;
+  z-index: 1;
+  margin-left: $DIVIDER_MARGIN;
+}
+
+// To account for the offset of the workflow-table, the time axis needs to be moved to left by 1
+.time-axis-wrapper {
+  margin-left: -1px;
+  width: calc(100%-131px);
+  height: 25px;
+  flex: 0 0 auto;
+  position: static;
+  z-index: 1;
+}
+
+.time-axis {
+  width: 100%;
+  height: 25px;
+  overflow: hidden;
+}
+
+.interval-table__curtain-left {
+  width: $WIDTH_OF_LEFT_CURTAIN;
+  position: absolute;
+  background-color: $gms-background;
+  height: 100vh;
+  z-index: 2;
+  left: -6px;
+}
+
+.workflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100px;
+  text-align: center;
+}
+
+.workflow-open-anything-row {
+  display: flex;
+  flex-flow: wrap;
+  box-sizing: border-box;
+  align-items: center;
+  min-width: 56ch;
+  & > * {
+    margin-left: 0.5rem;
+  }
+}
+
+.open-anything-contents .dropdown-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.workflow-open-anything-row .dropdown-container .span {
+  display: flex;
+}
+
+.open-anything-contents .date-range-picker {
+  width: 100%;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.open-anything-contents .date-range-picker .date-range-picker__range-input {
+  width: 65%;
+  margin: 0px;
+}
+
+.open-anything-contents
+  .date-range-picker
+  .date-range-picker__range-input
+  .bp3-popover-target
+  .bp3-control-group
+  * {
+  flex-shrink: 1;
+}
+
+.open-anything-contents .date-range-picker .date-range-picker__label {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin: 0px;
+  width: 35%;
+}
+
+.open-anything-contents .dropdown-label {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin: 0px;
+  width: 35%;
+}
+
+.open-anything-contents .dropdown-selector {
+  margin-bottom: 5px;
+  width: 65%;
+}
+
+.interval-confirmation-contents {
+  display: flex;
+}
+
+.interval-confirmation-text {
+  width: 90%;
+}
+
+.interval-confirmation-icon {
+  width: 10%;
+}
+
+.interval-confirmation-header {
+  font-weight: bold;
+}
+
+.open-anything-error {
+  color: $gms-strong-warning;
+  display: flex;
+  min-height: 20px;
+}
+.open-anything-error-text {
+  margin-left: 5px;
+  width: calc(100%-20px);
+}

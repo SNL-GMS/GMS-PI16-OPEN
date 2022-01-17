@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateRangePicker matches the snapshot 1`] = `2021-01-01T13:00:00.000Z`;
+
+exports[`DateRangePicker matches the snapshot 2`] = `
+<div
+  className="date-range-picker"
+  id="date-range-picker-id-1"
+>
+  <Component
+    className="bp3-label bp3-inline date-range-picker__label"
+  >
+    Time Range: 2021-01-01 13:00:00 to 2021-01-01 13:00:00
+  </Component>
+  <DateRangePopup
+    durations={
+      Array [
+        Object {
+          "description": "one second",
+          "value": 1000,
+        },
+        Object {
+          "description": "two seconds",
+          "value": 2000,
+        },
+      ]
+    }
+    endTimeMs={1609506000000}
+    format="YYYY-MM-DD HH:mm"
+    isOpen={false}
+    onApply={[Function]}
+    onClose={[Function]}
+    onNewInterval={[MockFunction]}
+    startTimeMs={1609505998000}
+    title="Choose Date Range?"
+  />
+  <div>
+    <Blueprint3.Button
+      className="date-range-picker__apply-button"
+      data-cy="date-range-picker-edit"
+      onClick={[Function]}
+    >
+      Edit
+    </Blueprint3.Button>
+  </div>
+</div>
+`;
+
+exports[`DateRangePicker matches the snapshot 3`] = `
+<div
+  className="date-range-picker"
+  id="date-range-picker-id-1"
+>
+  <Component
+    className="bp3-label bp3-inline date-range-picker__label"
+  >
+    Time Range: 2021-01-01 13:00:00 to 2021-01-01 13:00:00
+  </Component>
+  <DateRangePopup
+    durations={
+      Array [
+        Object {
+          "description": "one second",
+          "value": 1000,
+        },
+        Object {
+          "description": "two seconds",
+          "value": 2000,
+        },
+      ]
+    }
+    endTimeMs={1609506000000}
+    format="YYYY-MM-DD HH:mm"
+    isOpen={false}
+    onApply={[Function]}
+    onClose={[Function]}
+    onNewInterval={[MockFunction]}
+    startTimeMs={1609505998000}
+    title="Choose Date Range?"
+  />
+  <div>
+    <Blueprint3.Button
+      className="date-range-picker__apply-button"
+      data-cy="date-range-picker-edit"
+      onClick={[Function]}
+    >
+      Edit
+    </Blueprint3.Button>
+  </div>
+</div>
+`;
+
+exports[`DateRangePicker matches the snapshot 4`] = `
+<div
+  className="date-range-picker"
+  id="date-range-picker-id-1"
+>
+  <Component
+    className="bp3-label bp3-inline date-range-picker__label"
+  >
+    Time Range: 2021-01-01 13:00:00 to 2021-01-01 13:00:00
+  </Component>
+  <DateRangePopup
+    durations={
+      Array [
+        Object {
+          "description": "one second",
+          "value": 1000,
+        },
+        Object {
+          "description": "two seconds",
+          "value": 2000,
+        },
+      ]
+    }
+    format="YYYY-MM-DD HH:mm"
+    isOpen={false}
+    onApply={[Function]}
+    onClose={[Function]}
+    onNewInterval={[MockFunction]}
+    title="Choose Date Range?"
+  />
+  <div>
+    <Blueprint3.Button
+      className="date-range-picker__apply-button"
+      data-cy="date-range-picker-edit"
+      onClick={[Function]}
+    >
+      Edit
+    </Blueprint3.Button>
+  </div>
+</div>
+`;
+
+exports[`DateRangePicker matches the snapshot 5`] = `
+<div
+  className="date-range-picker"
+  id="date-range-picker-id-1"
+>
+  <Component
+    className="bp3-label bp3-inline date-range-picker__label"
+  >
+    Time Range: 2021-01-01 13:00:00 to 2021-01-01 13:00:00
+  </Component>
+  <DateRangePopup
+    durations={
+      Array [
+        Object {
+          "description": "one second",
+          "value": 1000,
+        },
+        Object {
+          "description": "two seconds",
+          "value": 2000,
+        },
+      ]
+    }
+    format="YYYY-MM-DD HH:mm:ss.SSS"
+    isOpen={false}
+    onApply={[Function]}
+    onClose={[Function]}
+    onNewInterval={[MockFunction]}
+    title="Choose Date Range?"
+  />
+  <div>
+    <Blueprint3.Button
+      className="date-range-picker__apply-button"
+      data-cy="date-range-picker-edit"
+      onClick={[Function]}
+    >
+      Edit
+    </Blueprint3.Button>
+  </div>
+</div>
+`;
+
+exports[`DateRangePicker matches the snapshot 6`] = `
+<div
+  className="date-range-picker"
+  id="date-range-picker-id-1"
+>
+  <Component
+    className="bp3-label bp3-inline date-range-picker__label"
+  >
+    Time Range: 2021-01-01 13:00:00 to 2021-01-01 13:00:00
+  </Component>
+  <DateRangePopup
+    durations={
+      Array [
+        Object {
+          "description": "one second",
+          "value": 1000,
+        },
+        Object {
+          "description": "two seconds",
+          "value": 2000,
+        },
+      ]
+    }
+    format="YYYY-MM-DD HH:mm:ss"
+    isOpen={false}
+    onApply={[Function]}
+    onClose={[Function]}
+    onNewInterval={[MockFunction]}
+    title="Choose Date Range?"
+  />
+  <div>
+    <Blueprint3.Button
+      className="date-range-picker__apply-button"
+      data-cy="date-range-picker-edit"
+      onClick={[Function]}
+    >
+      Edit
+    </Blueprint3.Button>
+  </div>
+</div>
+`;
+
+exports[`DateRangePicker matches the snapshot 7`] = `
+<div
+  className="date-range-picker"
+  id="date-range-picker-id-1"
+>
+  <Component
+    className="bp3-label bp3-inline date-range-picker__label"
+  >
+    Time Range: 2021-01-01 13:00:00 to 2021-01-01 13:00:00
+  </Component>
+  <DateRangePopup
+    durations={
+      Array [
+        Object {
+          "description": "one second",
+          "value": 1000,
+        },
+        Object {
+          "description": "two seconds",
+          "value": 2000,
+        },
+      ]
+    }
+    format="YYYY-MM-DD"
+    isOpen={false}
+    maxEndTimeMs={1609506000000}
+    minStartTimeMs={1609505992000}
+    onApply={[Function]}
+    onClose={[Function]}
+    onNewInterval={[MockFunction]}
+    title="Choose Date Range?"
+  />
+  <div>
+    <Blueprint3.Button
+      className="date-range-picker__apply-button"
+      data-cy="date-range-picker-edit"
+      onClick={[Function]}
+    >
+      Edit
+    </Blueprint3.Button>
+  </div>
+</div>
+`;

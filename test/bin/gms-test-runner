@@ -1,0 +1,1280 @@
+#!/usr/bin/env python3
+
+# -----------------------------------------------------------------------------
+# gms-test-runner
+#
+# The gms-test-runner runs augmentation-based tests against a named
+# instance of the system.
+# -----------------------------------------------------------------------------
+
+
+import argparse
+import atexit
+import datetime
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+import tarfile
+import traceback
+import uuid
+
+from argparse import ArgumentParser, RawDescriptionHelpFormatter
+from collections import defaultdict
+from minio import Minio
+from pathlib import Path
+from signal import signal, SIGINT
+from termcolor import cprint
+from typing import List, Optional, Tuple
+
+
+def main():
+    """
+    The main driver for the ``gms-test-runner`` script.
+
+    Raises:
+        SystemExit (0):  If
+            * Successfully purged any currently running tests.
+        SystemExit (1):  If
+            * ``gmskube``, ``kubectl``, or ``helm`` aren't in the
+              ``PATH``.
+            * ``KUBECONFIG`` isn't in the environment.
+            * Unable to retrieve namespaces from the cluster.
+            * The given instance doesn't appear to be running.
+            * Other tests are currently running.
+            * The reports directory wasn't able to be created.
+            * We fail to retrieve the catalogue of augmentations from
+              ``gmskube``.
+            * No tests match the specified names or labels
+            * We fail to locate the ``minio`` endpoint.
+            * One or more tests fail.
+    """
+    if shutil.which("gmskube") is None:
+        print("ERROR:  The `gmskube` executable was not found in `PATH`.")
+        sys.exit(1)
+
+    if shutil.which("kubectl") is None:
+        print("ERROR:  The `kubectl` executable was not found in `PATH`.  "
+              "Please install `kubectl`.")
+        sys.exit(1)
+
+    if shutil.which("helm") is None:
+        print("ERROR:  The `helm` executable was not found in `PATH`.  Please "
+              "install `helm`.")
+        sys.exit(1)
+
+    if "KUBECONFIG" not in os.environ:
+        print("ERROR:  The variable `KUBECONFIG` must be set to the "
+              "Kubernetes configuration.")
+        sys.exit(1)
+
+    try:
+        args = get_args()
+        instance_name = args.name[0]
+        overall_exit_code = 0  # Assume success until something fails.
+
+        # Verify the instance is running.
+        namespaces = kubectl_lookup_namespaces()
+        if namespaces is None:
+            print_error("Failed to retrieve the namespaces from the "
+                        "Kubernetes cluster.")
+            sys.exit(1)
+        if instance_name not in namespaces:
+            print_error(f"The instance '{instance_name}' does not appear to "
+                        "be running.")
+            sys.exit(1)
+
+        # Check if other tests are already running (likely from another
+        # test runner).
+        other_active_tests = get_active_test_metadata(instance_name)
+
+        # If requested, purge any other currently running tests.
+        if other_active_tests:
+            if args.cleanup:
+                purge_active_tests(instance_name, other_active_tests,
+                                   args.force)
+                sys.exit(0)
+            print_error("TEST AUGMENTATIONS are currently running.")
+            print_message(f"Exiting to avoid interfering with active tests "
+                          f"(started by '{other_active_tests['user']}' at "
+                          f"'{other_active_tests['creation_time']}').")
+            print_active_test_metadata(other_active_tests)
+            sys.exit(1)
+
+        # Check if the report directory exists and overwrite it if necessary.
+        print_header("SETUP")
+        if not create_report_directory(args.reports, args.force):
+            sys.exit(1)
+
+        # Gather environment values to `--set` for tests.
+        test_env_args = defaultdict(list)
+        if args.env_values:
+            for item in args.env_values:
+                name, value = item.split('=', 1)
+
+                # Is this specific to a single test?  Or is it global
+                # for all tests?
+                if '.' in name:
+                    test_name, name = name.split('.', 1)
+                else:
+                    test_name = 'global'
+
+                # Append this to the test environment arguments.
+                print_message(' - Setting test environment '
+                              f'{"[ " + test_name + " ]":24} {name}="{value}"')
+                test_env_args[test_name].append(f'--set env.{name}="{value}"')
+
+        print_header('DETERMINING TESTS TO RUN')
+        print_message(" - Retrieving test augmentation catalog...")
+        augmentations, rc, err = run_json_command("gmskube augment catalog "
+                                                  "--json")
+        if rc != 0:
+            print_error("Failed to retrieve the catalog of augmentations from "
+                        "`gmskube`.")
+            print(err)
+            sys.exit(1)
+
+        test_names = parse_comma_separated_args(args.tests)
+        test_labels = parse_comma_separated_args(args.labels)
+        tests_to_run = search_augmentations(augmentations, names=test_names,
+                                            labels=test_labels)
+
+        if tests_to_run:
+            if test_names:
+                print_message(" - Searching for tests with names:  "
+                              f"{', '.join(test_names)}")
+            if test_labels:
+                print_message(" - Searching for tests with labels: "
+                              f"{', '.join(test_labels)}")
+            print_message(" - MATCHING TESTS:")
+            for t in tests_to_run:
+                print_message(f"   - {t['name']:20}  "
+                              f"[{','.join(t['labels'])}]")
+        else:
+            if test_names:
+                print_error("No test matches specified names:  "
+                            f"{', '.join(test_names)}")
+            if test_labels:
+                print_error("No test matches specified labels: "
+                            f"{', '.join(test_labels)}")
+            print("Nothing to do.  Exiting.")
+            sys.exit(1)
+
+        # Verify that the `minio` augmentation is available for gathering
+        # test reports.
+        minio_augmentations = search_augmentations(augmentations,
+                                                   names=["minio"],
+                                                   aug_type="harness")
+        minio = None
+        if minio_augmentations:
+            print_header("STARTING TEST REPORTING SERVICE")
+            minio = minio_augmentations[0]
+            minio['report_bucket'] = 'reports'
+            minio['access_key'] = str(uuid.uuid4())
+            minio['secret_key'] = str(uuid.uuid4())
+            do_augmentation(
+                "apply",
+                instance_name,
+                'minio',
+                wait_resources=minio['wait'],
+                extra_args=[
+                    f"--set minioReportBucket={minio['report_bucket']}",
+                    f"--set minioAccessKey={minio['access_key']}",
+                    f"--set minioSecretKey={minio['secret_key']}"
+                ]
+            )
+
+            # Register to remove `minio` upon exiting.
+            atexit.register(cleanup_minio, instance_name, 'minio',
+                            wait_resources=minio['wait'])
+
+            # Look up the `minio` ingress endpoint.
+            minio['endpoint'] = kubectl_lookup_endpoint(instance_name, 'minio')
+            if minio['endpoint'] is None:
+                print_error("Failed to locate the `minio` endpoint")
+                sys.exit(1)
+
+        else:
+            print_warning("The `minio` augmentation is unavailable.  Test "
+                          "reports will not be gathered.")
+
+        # Run the specified tests.
+        test_results = []
+        for test in tests_to_run:
+            test_supports_reporting = 'reporting' in test['labels']
+
+            # Add any environment arguments for this test.
+            extra_args = test_env_args['global'] + test_env_args[test['name']]
+            if test_supports_reporting:
+                extra_args.append("--set reporting=1")
+
+            print_header(f"RUNNING '{test['name']}'")
+            do_augmentation("apply", instance_name, test['name'],
+                            extra_args=extra_args)
+
+            # In case we exit before deleting below...
+            atexit.register(do_augmentation, "delete", instance_name,
+                            test['name'])
+
+            test_exit_code = wait_for_resources(instance_name, test['wait'])
+            if minio and test_supports_reporting:
+                print_message(f" - Collecting results from '{test['name']}'")
+                retrieve_test_results(
+                    test['name'],
+                    args.reports,
+                    minio['endpoint'],
+                    minio['report_bucket'],
+                    minio['access_key'],
+                    minio['secret_key']
+                )
+
+            print_message(f" - Deleting the '{test['name']}' augmentation")
+
+            # Okay, we're done and can remove this manually.
+            atexit.unregister(do_augmentation)
+            do_augmentation("delete", instance_name, test['name'],
+                            wait_resources=test['wait'])
+
+            if test_exit_code == 0:
+                print(f"{timestamp()}  ", end="")
+                cprint(f" - {test['name']} PASSED", color='green',
+                       attrs=['bold'])
+            else:
+                print(f"{timestamp()}  ", end="")
+                cprint(f" - {test['name']} FAILED ({test_exit_code})",
+                       color='red', attrs=['bold'])
+
+                # If even a single test fails, this program should
+                # return a non-zero exit status.
+                overall_exit_code = 1
+
+            test_results.append({'name': test['name'],
+                                 'exit_code': test_exit_code})
+
+        print_header("TEST SUMMARY")
+        for result in test_results:
+            if result['exit_code'] == 0:
+                print(f"{timestamp()}  ", end="")
+                cprint(f"TEST {result['name']} PASSED", color='white',
+                       on_color='on_green', attrs=['bold'])
+            else:
+                print(f"{timestamp()}  ", end="")
+                cprint(f"TEST {result['name']} FAILED ({result['exit_code']})",
+                       color='white', on_color='on_red', attrs=['bold'])
+
+        print_message(f"Test reports can be found in '{args.reports}'")
+
+        sys.exit(overall_exit_code)
+
+    except Exception as ex:
+        print_error(f'gms_test-runner: error: {ex}')
+        traceback.print_exc()
+        sys.exit(1)
+
+
+def get_args() -> argparse.Namespace:
+    """
+    Get the command-line arguments.
+
+    Returns:
+        The ``argparse.Namespace`` with all the command-line arguments.
+    """
+
+    description = """
+Description
+===========
+
+``gms-test-runner`` runs a series of tests against a running instance of
+the GMS system and gathers back results.
+
+------------------------------------------------------------------------
+IMPORTANT NOTE:  Only ONE gms-test-runner may be actively testing a
+given instances of the system.  If another test run is already in
+progress, gms-test-runner will detect this and fail.  Running with
+``--cleanup`` will forcibly kill any currently active tests.
+------------------------------------------------------------------------
+
+Each test must be specified by a GMS augmentation with a type of
+``test``.  Test augmentations may also include labels with a list of
+keywords to identify the test.  Running ``gmskube augment catalog`` will
+show a list of all known augmentations and their labels.
+
+The tests to be executed for a given run of ``gms-test-runner`` can be
+specified via two arguments:
+
+--tests:  A name (or comma-separated list of names) indicating the tests
+          to run.
+--labels: A label (or comma-separated list of labels) indicating the tests
+          to run.
+
+Note that multiple instances of the ``--tests`` and ``--labels`` can be
+specified for a given test run.
+
+There is no way to run a test augmentation not already built into the
+``gmskube`` container.  The ability to run test augmentations from local
+augmentation files may be added at some point in the future.
+
+Results
+=======
+
+The exit status of each augmentation job is reported as a PASS/FAIL
+status of the overall test.  A value of zero indicates PASS.  By
+convention, a non-zero test is a count of the number of non-passing
+tests (although not all testing frameworks honor this convention).
+
+In addition to the PASS/FAIL status, test augmentations may copy their
+resulting tests to a MinIO test reporting service so that they can be
+gathered back to the machine on which ``gms-test-runner`` was executed.
+
+Any test augmentation tagged with ``reporting`` will be run with the
+``--reporting=1`` flag set.  That test is expected to tar up its report
+directory to a ``${GMS_TEST_NAME}.tgz`` file an copy it to the MinIO
+service.
+
+The directory where final reports will be gathered can be specified via
+the ``--reports`` argument.
+
+The reports for each test will be in a separate subdirectory under the
+``reports`` directory.  (Currently, there is no 'top-level' page that
+summarizes all of the individual reports.  This is an enhancement that
+may be added later.)
+
+Environment Variables
+=====================
+
+Additional environment variables can be provided to tests from the
+``gms-test-runner`` command line via the ``--env`` argument.  Each
+``env`` argument should specify a value of the form ``variable=value``.
+
+By default, a specified environment variable will be passed to all test
+augmentations, but this can be limited to a specific augmentation by
+prefixing the name of the augmentation to the variable name (for
+example, specifying ``--env test-soh-cypress.GMS_TAGS='@soh'`` will only
+set ``GMS_TAGS`` for the environment of the ``test-soh-cypress``
+augmentation).
+
+Examples
+========
+
+Run all tests tagged with ``soh`` and ``ui`` against ``soh-develop``::
+
+    gms-test-runner -t soh,ui soh-develop
+
+Run the Cypress tests tagged with ``soh-is-up`` against
+``soh-develop``::
+
+    gms-test-runner \\
+        -t soh \\
+        --env test-soh-cypress.GMS_TAGS="@soh-is-up" \\
+        soh-develop
+"""
+    parser = ArgumentParser(description=description,
+                            formatter_class=RawDescriptionHelpFormatter)
+
+    tests_to_run_group = parser.add_argument_group("Specify the tests to run:")
+    tests_to_run_group.add_argument('--labels', '-l', action='append',
+                                    help="The labels of the tests to run.")
+    tests_to_run_group.add_argument('--tests', '-n', action='append',
+                                    help="The names of the tests to run.")
+
+    parser.add_argument('--cleanup', action='store_true',
+                        help='Shut down and clean up any running tests.')
+    parser.add_argument('--force', '-f', action='store_true',
+                        help='Do not prompt the user for confirmation.')
+    parser.add_argument('--verbose', '-v', action='store_true',
+                        help='Print verbose diagnostic output.')
+
+    parser.add_argument('name', nargs=1,
+                        help='The name of the instance being tested.')
+    parser.add_argument('--reports', '-r', default='system-test-reports',
+                        type=Path,
+                        help="The directory for collecting test reports.")
+
+    parser.add_argument('--env', dest='env_values', type=argparse_set_env,
+                        action='append',
+                        help=('Set environment variables in the test '
+                              'environment.  This argument can be specified '
+                              'multiple times to specify multiple values.  '
+                              'Examples:  ``--env FOO=bar`` will set '
+                              '``FOO=bar`` for all tests.  '
+                              '``--env test-soh-cypress.GMS_TAGS="@smoke and '
+                              'not @skip"`` will set ``GMS_TAGS`` for only '
+                              'the ``test-soh-cypress`` test.'))
+
+    args = parser.parse_args()
+
+    if args.cleanup and (args.labels or args.tests):
+        print_warning("`--cleanup` supersedes running other tests.  Ignoring "
+                      "`--labels` and `--tests`.")
+
+    return args
+
+
+def argparse_set_env(s: str, pat: re.Pattern = re.compile(r"^.+=.*")) -> str:
+    """
+    Use a regular expression to match a value of the form
+    ``VARIABLE=VALUE``.
+
+    Args:
+        s:  The input string.
+        pat:  The regular expression pattern to match.
+
+    Raises:
+         ArgumentTypeError:  If the string doesn't match the pattern.
+
+    Returns:
+        The input string.
+    """
+    m = pat.match(s)
+    if m is None:
+        raise argparse.ArgumentTypeError(
+            'When specifying `--env`, you must supply the name/value pair as '
+            '`Name=Value`.'
+        )
+    return s
+
+
+def parse_comma_separated_args(args: List[str]) -> List[str]:
+    """
+    Combine a list of arguments with potentially comma-separated
+    values into single list of single values.
+
+    Args:
+        args:  A list of arguments where each element of the list may be
+            a string of comma-separated values.
+
+    Returns:
+        A single list of values (empty if there are no arguments).
+    """
+    arg_list = []
+    if args:
+        for arg in args:
+
+            # Split apart any comma-separated items into individual list
+            # items.
+            if ',' in arg:
+                arg_list.extend(arg.split(','))
+            else:
+                arg_list.append(arg)
+
+    return arg_list
+
+
+def do_augmentation(
+        action: str,
+        instance_name: str,
+        augmentation: str,
+        wait_resources: Optional[List[str]] = None,
+        extra_args: Optional[List[str]] = None
+) -> None:
+    """
+    Perform an action on an augmentation and optionally wait for
+    specified resources to reach a certain state.
+
+    Args:
+        action:  The action to take (either ``apply`` or ``delete``).
+        instance_name:  The kubernetes instance to apply the
+            augmentation to.
+        augmentation:  The name of the augmentation.
+        wait_resources:  One or more resources from the augmentation
+            to wait to complete (i.e., "job/test").
+        extra_args:  Additional arguments to provide to ``gmskube
+            augment``.
+    """
+    if action not in ["apply", "delete"]:
+        raise ValueError("The `action` supplied to `do_augmentation()` must "
+                         "be either 'apply' or 'delete'.")
+    rc, out, err = run_command(f"gmskube augment {action} --name "
+                               f"{augmentation} {' '.join(extra_args or [])} "
+                               f"{instance_name}")
+    if rc != 0:
+        cprint(f"Exit status:  {rc}", color='yellow')
+        cprint(out, color='yellow')
+        cprint(err, color='red')
+    else:
+        for line in out.splitlines():
+            if line and not line.startswith('#'):
+                print_message(f' - {line}')
+        wait_for_resources(instance_name, wait_resources,
+                           wait_for_deletion=(action == "delete"))
+
+
+def wait_for_resources(
+        instance_name: str,
+        resource_list: Optional[List[str]],
+        wait_for_deletion: bool = False,
+        timeout_seconds: int = 1200
+) -> int:
+    """
+    Wait for one or more resources in a given instance name.  Depending
+    on the resource type, a reasonable default condition will be waited
+    for.  For example, for a 'job' resource  (i.e. 'job/test-job') this
+    will wait for the job to 'complete' or 'fail'.  This can also be
+    called to wait for resources to be deleted.
+
+    Args:
+        instance_name:  The kubernetes instance to delete the
+            augmentation from.
+        resource_list:  One or more resources from the augmentation to
+            wait to be deleted.
+        wait_for_deletion:  Whether or not to wait for the resources to
+            be deleted, instead of using the default condition.
+        timeout_seconds:  How long to wait for the resource to be
+            deleted before giving up.
+
+    Returns:
+        The sum of the exit codes for all the completed resources.
+
+    Todo:
+        * Refactor such that we're not nested seven levels deep.
+    """
+    wait_interval = 5
+
+    # Wait for each resource in the list.
+    exit_code_sum = 0
+    for resource in resource_list or []:
+        if wait_for_deletion:
+            conditions = {"deleted": "--for=delete"}
+            condition_description = 'deleted'
+        elif resource.startswith('jobs'):
+            conditions = {"complete": "--for=condition=complete",
+                          "failed": "--for=condition=failed"}
+            condition_description = 'completed'
+        elif resource.startswith('pods'):
+            conditions = {"ready": "--for=condition=ready"}
+            condition_description = 'ready'
+        else:
+            conditions = {"available": "--for=condition=available"}
+            condition_description = 'available'
+
+        print_message(f" - Waiting for '{resource}' to be "
+                      f"{condition_description}... ", end='')
+        sys.stdout.flush()
+
+        done_waiting = False
+        timeout_seconds_remaining = timeout_seconds
+        while not done_waiting:
+            for condition, flag in conditions.items():
+                rc, out, err = run_command(
+                    f"kubectl wait -n {instance_name} {flag} {resource}",
+                    timeout=wait_interval
+                )
+
+                if rc == 0:
+                    done_waiting = True
+                    if condition == 'failed':
+                        exit_code_sum += kubectl_lookup_exit_code(
+                            instance_name,
+                            resource
+                        )
+                        cprint("failed", color='red')
+                    else:
+                        print('done')
+
+                elif rc > 0:
+                    # Ignore NotFound errors since the resource may not
+                    # have been created yet.
+                    if 'NotFound' in err:
+
+                        # If we are waiting to delete and we can't find
+                        # it, then it is already deleted.
+                        if wait_for_deletion:
+                            done_waiting = True
+                            print('done')
+
+                    # Did the `kubectl` command fail with an error?
+                    elif 'timed out' not in err:
+                        cprint(f"Wait command failed (return code = {rc}).",
+                               color='yellow')
+                        exit_code_sum += 1  # counts as a failure
+                        done_waiting = True
+
+                timeout_seconds_remaining -= wait_interval
+                if timeout_seconds_remaining == 0:
+                    cprint("Wait command timed out.", color='yellow')
+                    exit_code_sum += 1  # counts as a failure
+                    done_waiting = True
+
+    return exit_code_sum
+
+
+def cleanup_minio(
+        instance_name: str,
+        augmentation: str,
+        wait_resources: Optional[List[str]] = None,
+        extra_args: Optional[List[str]] = None
+) -> None:
+    """
+    Handler to delete the ``minio`` augmentation on exit.
+
+    Args:
+        instance_name:  The kubernetes instance to delete the ``minio``
+            augmentation from.
+        augmentation:  The name of the augmentation to delete.
+        wait_resources:  One or more resources from the augmentation
+            that we need to wait to be deleted before returning.
+        extra_args:  Additional arguments to provide to ``gmskube
+            augment delete``.
+    """
+    print_header("STOPPING TEST REPORTING SERVICE")
+    do_augmentation("delete", instance_name, augmentation,
+                    wait_resources=wait_resources, extra_args=extra_args)
+
+
+def search_augmentations(
+        augmentations: dict,
+        names: Optional[List[str]] = None,
+        labels: Optional[List[str]] = None,
+        aug_type: str = "test"
+) -> list:
+    """
+    Search the augmentations catalog for a list of augmentations that
+    are of a specified type (``test`` or ``harness``) that match the
+    given names *or* the given labels.  Any augmentation that matches
+    *one* of the specified names will be returned along with any
+    augmentation that matches *all* of the specified labels.
+
+    Args:
+        augmentations:  A dictionary of augmentations to search.
+        names:  One or more names to match against.
+        labels:  One or more labels to match against.  An augmentation
+            must match *all* the labels to be returned.
+        aug_type:  The type of augmentations to search for.
+
+    Returns:
+        A list of augmentations that match any of the given names *or*
+        matches all of the given labels.
+    """
+    matches = []
+    for augmentation in [a for a in augmentations if a["type"] == aug_type]:
+
+        # If this name matches any of the names in the list, then it's a
+        # match.
+        for n in names or []:
+            if augmentation['name'] == n and augmentation not in matches:
+                matches.append(augmentation)
+
+        # If this matches every specified tag, then it's a match.
+        if (augmentation not in matches and
+                all(item in augmentation['labels'] for item in labels or [])):
+            matches.append(augmentation)
+    return matches
+
+
+def create_report_directory(
+        report_directory: Path,
+        force_overwrite: bool
+) -> bool:
+    """
+    Create a report directory, querying to overwrite if it already
+    exists.
+
+    Args:
+        report_directory:  The path of directory to create (relative or
+            absolute).
+        force_overwrite:  If ``True``, remove the directory if it
+            already exists before creating it.
+
+    Raises:
+        SystemExit:  If the reports directory already exists and the
+            user doesn't want to overwrite it.
+
+    Returns:
+        Whether or not the report directory was successfully created.
+    """
+
+    if report_directory.exists():
+        if force_overwrite or query_yes(
+                f"The report directory '{report_directory}' already exists.  "
+                "Do you want to overwrite it?"
+        ):
+            print_message(" - Removing old report directory "
+                          f"'{report_directory}'")
+            shutil.rmtree(report_directory)
+        else:
+            print_error(
+                f"Report directory '{report_directory}' exists and would "
+                "be overwritten by continuing.  Aborting."
+            )
+            sys.exit(1)
+    try:
+        print_message(f" - Creating report directory '{report_directory}'")
+        report_directory.mkdir()
+        return True
+    except PermissionError:
+        print_warning("Failed to create report directory "
+                      f"'{report_directory}' due to a permissions "
+                      "issue.  Test reports will not be gathered.")
+        return False
+
+
+def retrieve_test_results(
+        test_name: str,
+        local_report_directory: Path,
+        minio_endpoint: str,
+        minio_bucket: str,
+        minio_access_key: str,
+        minio_secret_key: str
+) -> bool:
+    """
+    Retrieves a test results compressed tar file from the ``minio`` test
+    reporting service.  The test results are expected to be in a gzipped
+    tar file named after the ``test_name`` with a ``.tgz`` extension.
+    The test results will be extracted to a local report directory
+    within a ``test_name`` subdirectory.
+
+    Args:
+        test_name:  The name of the test.  The results should be in a
+            file with this name and a ``.tgz`` extension.
+        local_report_directory:  The local report directory to extract
+            test results to.
+        minio_endpoint:  The ``minio`` ingress endpoint in the running
+            system.
+        minio_bucket:  The name of the bucket in ``minio`` to retrieve
+            reports from.
+        minio_access_key:  The access key for retrieving results from
+            ``minio``.
+        minio_secret_key:  The secret key for retrieving results from
+            ``minio``.
+
+    Returns:
+        Whether or not the test results were successfully retrieved.
+    """
+
+    remote_filename = f"{test_name}.tgz"
+    local_filepath = local_report_directory / remote_filename
+
+    try:
+        client = Minio(minio_endpoint, access_key=minio_access_key,
+                       secret_key=minio_secret_key)
+        if client is None:
+            print_warning("Failed to connect to MinIO endpoint "
+                          f"'{minio_endpoint}'.  No results can be retrieved.")
+            return False
+
+        if not client.bucket_exists(minio_bucket):
+            print_warning(
+                f"Unable to locate the '{minio_bucket}' container in the "
+                f"MinIO endpoint '{minio_endpoint}'.  No results can be "
+                "retrieved."
+            )
+            return False
+
+        client.fget_object(minio_bucket, remote_filename, str(local_filepath))
+
+        tar = tarfile.open(local_filepath)
+        tar.extractall(local_report_directory)
+        tar.close()
+        local_filepath.unlink()
+
+    except Exception as ex:
+        print_error(f"Failed to retrieve results from '{test_name}':")
+        print(ex)
+        return False
+
+    return True
+
+
+def get_active_test_metadata(instance_name: str) -> Optional[dict]:
+    """
+    Determine if there are any other test containers running. Any
+    container with a label of ``gms/type`` ``test`` or if the resource
+    name is ``deployments/minio`` is considered to be an active
+    container of a running test.  Only one set of test containers can be
+    active at time, so this will indicate if another ``gms-test-runner``
+    is currently being run.
+
+    Args:
+        instance_name:  The Kubernetes instance to check for active
+            tests in.
+
+    Returns:
+        A summary of metadata of any other active test containers, or
+        ``None`` if there are no active augmentations.
+    """
+
+    active_tests = {'augmentations': {}}
+
+    # Look for any resources with the `gms/type` label of `test`.
+    running_test_resources = kubectl_get(instance_name, 'all,secret,ing',
+                                         selectors=['gms/type==test'])
+
+    # MinIO is a 'harness', not a 'test', so add the MinIO deployment
+    # separately.
+    minio_resources = kubectl_get(instance_name, "deployments/minio")
+    if running_test_resources is not None and minio_resources is not None:
+        running_test_resources += minio_resources
+
+    for i in running_test_resources or []:
+        resource = {
+            'name': i['metadata']['name'],
+            'kind': i['kind'].lower(),
+            'labels': i['metadata'].get('labels', []),
+            'creation_time': i['metadata'].get('creationTimestamp', 'unknown'),
+            'user': i['metadata']['labels'].get('gms/user', 'unknown')
+        }
+
+        aug_name = resource['labels'].get('gms/augmentation', 'unknown')
+        if aug_name not in active_tests['augmentations']:
+            active_tests['augmentations'][aug_name] = {
+                'name': aug_name,
+                'user': resource['user'],
+                'creation_time': resource['creation_time'],
+                'resources': [resource]
+            }
+        else:
+            active_tests['augmentations'][aug_name]['resources'].append(
+                resource
+            )
+
+        # Capture user and creation time in our top-level dictionary
+        # for easy reference.
+        active_tests['user'] = resource['user']
+        active_tests['creation_time'] = resource['creation_time']
+
+    # Prefer the 'minio' container 'user' and 'creation_time' (if
+    # present), since this was the earliest time.
+    if 'minio' in active_tests['augmentations']:
+        active_tests['user'] = active_tests['augmentations']['minio']['user']
+        active_tests['creation_time'] = (
+            active_tests['augmentations']['minio']['creation_time']
+        )
+
+    return active_tests if len(active_tests["augmentations"]) != 0 else None
+
+
+def print_active_test_metadata(other_active_tests: dict) -> None:
+    """
+    Print the summary of "other active tests" (as returned by
+    :func:`get_active_test_metadata`).
+
+    Args:
+        other_active_tests:  A summary of the actively running test
+            augmentations.
+    """
+    print_message("Active augmentations:")
+    for name in other_active_tests['augmentations']:
+        print_message(f" - {name}:")
+        for r in other_active_tests['augmentations'][name]['resources']:
+            print_message(f"   - {r['kind']}/{r['name']}")
+
+
+def purge_active_tests(
+        instance_name: str,
+        other_active_tests: dict,
+        force: bool = False
+) -> None:
+    """
+    Purge any other other actively running test containers from the
+    'augmentations' list of the "other active tests" (as returned by
+    :func:`get_active_test_metadata`).
+
+    Args:
+        instance_name:  The Kubernetes instance to purge tests from.
+        other_active_tests:  A summary of actively running test
+            augmentations.
+        force:  Don't ask the user for permission first.
+    """
+    if force or query_yes("Abort active tests being run by "
+                          f"'{other_active_tests['user']}' on "
+                          f"'{instance_name}'?"):
+        for aug in other_active_tests['augmentations']:
+            if aug != 'unknown':
+                print_message(f"Deleting '{aug}' augmentation...")
+                do_augmentation("delete", instance_name, aug)
+            else:
+
+                # Not sure if it's safe to directly delete this
+                # non-augmentation resource.
+                for resource in other_active_tests['augmentations'][aug]:
+                    print_message("Skipping removal of unknown test resource "
+                                  f"'{resource['kind']}/{resource['name']}'.")
+                    print_message(
+                        "This was labeled with a `gms/type` of `test`, but "
+                        "was not labeled with an augmentation name."
+                    )
+                    print_message(
+                        f"Run `kubectl delete -n {instance_name} "
+                        f"{resource['kind']}/{resource['name']}` to delete it "
+                        "manually."
+                    )
+                    print_message("---")
+
+
+def kubectl_lookup_endpoint(
+        instance_name: str,
+        ingress_name: str,
+        service_name: str = None
+) -> Optional[str]:
+    """
+    Lookup a URL endpoint for the given ingress in the named instance.
+
+    Args:
+        instance_name:  The namespace of the instance to get from.
+        ingress_name:  The name of the ingress resource to get.
+        service_name:  The name of the service.  If none is provided, it
+            defaults to ``ingress_name``.
+
+    Returns:
+        The endpoint, if present; ``None`` otherwise.
+    """
+    ingress_list = kubectl_get(instance_name, f"ingress/{ingress_name}")
+
+    if service_name is None:
+        service_name = ingress_name
+
+    for ingress in ingress_list:
+        for rule in ingress['spec']['rules']:
+            host = rule['host']
+            for path in rule['http']['paths']:
+                if path['backend']['service']['name'] == service_name:
+                    service_path = path['path']
+                    # service_port = (
+                    #     path['backend']['service']['port']['number']
+                    # )
+                    # TODO:  MINIO doesn't like the port, apparently.
+                    endpoint = f"{host}{service_path if service_path else ''}"
+                    return endpoint
+
+    return None
+
+
+def kubectl_lookup_namespaces() -> Optional[List[str]]:
+    """
+    Get the list of all namespaces in the currently configured
+    Kubernetes cluster.
+
+    Returns:
+        The list of namespaces, or ``None`` if the ``kubectl`` command
+        failed.
+
+    Todo:
+        * Should we look at replacing this with a call to the
+          ``kubernetes`` module?  See
+          https://github.com/kubernetes-client/python.  The same goes
+          for any other ``kubectl`` functions in this file.
+    """
+    rc, out, err = run_command(
+        "kubectl get ns -o jsonpath='{.items[*].metadata.name}'"
+    )
+    return out.split(" ") if rc == 0 else None
+
+
+def kubectl_lookup_exit_code(instance_name: str, resource_name: str) -> int:
+    """
+    Look up the exit code for a given resource name in the named
+    instance. This is only called if there is an error, so we
+    assume a return code of 1 if we can't determine the actual
+    error code.
+
+    Args:
+        instance_name:  The namespace of the instance to use.
+        resource_name:  The name of the resource to look up the exit
+            code for.
+
+    Returns:
+        The exit code from the completed resource.
+    """
+
+    if '/' in resource_name:
+        kind, resource = resource_name.split('/', 1)
+    else:
+        resource = resource_name
+
+    # Define the selector to find the corresponding pod for the given
+    # resource.
+    if resource.startswith('jobs'):
+        selector = f"--selector='job-name=={resource}'"
+    else:
+        selector = f"--selector='name=={resource}'"
+
+    # `kubectl` will print the `exitCode` if present; otherwise it
+    # prints nothing.
+    rc, out, err = run_command(
+        f"kubectl get pods -n {instance_name} {selector} -o jsonpath="
+        "'{.status.containerStatuses[*].lastState.terminated.exitCode}'"
+    )
+
+    if rc == 0 and len(out) > 0:
+        return int(out)
+    else:
+        return 1
+
+
+def kubectl_get(
+        instance_name: str,
+        resource_name: str,
+        selectors: Optional[List[str]] = None
+) -> Optional[List[dict]]:
+    """
+    Get a Kubernetes resource from the specified instance.
+
+    Args:
+        instance_name:  The namespace of the instance to get the
+            resource from.
+        resource_name:  The name of the resource to get.
+        selectors:  One or more selector strings to use for filtering
+            the results.
+
+    Raises:
+        SystemExit:  If we failed to get the resource from the given
+            instance.
+
+    Returns:
+        A ``list`` of ``dict``s corresponding to the requested
+        resources, or ``None`` if the resource doesn't exist.
+    """
+    selector_argument = ''
+    for s in selectors or []:
+        selector_argument += f'--selector={s} '
+
+    results, rc, err = run_json_command(f"kubectl get {resource_name} -n "
+                                        f"{instance_name} -o json "
+                                        f"{selector_argument}")
+
+    if rc != 0 and "not found" not in err:
+        print_error(f"Failed to get resource '{resource_name}' from "
+                    f"{instance_name}")
+        print(err)
+        sys.exit(1)
+
+    # `kubectl get` returns either a single object or a dictionary with
+    # a list of 'items'.
+    if results and 'items' in results:
+        return results['items']
+    elif rc != 0 and "not found" in err:
+        return None
+    else:
+        return [results]
+
+
+def run_command(
+        command: str,
+        print_output: bool = False,
+        num_tries: int = 1,
+        timeout: Optional[int] = None
+) -> Tuple[int, str, str]:
+    """
+    Execute the specified command and return when the command execution
+    is completed.  A timeout number of seconds can optionally be
+    specified.  If the timeout expires before the command has completed,
+    the command will be terminated.
+
+    Args:
+        command:  The command to be executed.
+        print_output:  Enable printing of ``stdout`` and ``stderr``
+            immediately.
+        num_tries:  If the command fails, try this many times before
+            giving up.
+        timeout:  If the command does not complete before this number of
+            seconds, it will be terminated.
+
+    Returns:
+        The return code, ``stdout``, and ``stderr`` of the command.  If
+        the command times out, the return code is -1.
+    """
+
+    rc = -1
+    out = ''
+    err = ''
+    while True:
+        cmd = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+        try:
+            out, err = cmd.communicate(timeout=timeout)
+            rc = cmd.returncode
+            out = out.decode()
+            err = err.decode()
+
+            if print_output:
+                print(out)
+                if len(err) > 0:
+                    cprint(err, color='yellow')
+
+            if rc == 0 or num_tries == 0:
+                break
+            else:
+                num_tries -= 1
+
+        except subprocess.TimeoutExpired:
+            cmd.kill()
+            break
+
+    return rc, out, err
+
+
+def run_json_command(
+        command: str,
+        fix_json_list: bool = False,
+        timeout: Optional[int] = None
+) -> Tuple[Optional[dict], int, str]:
+    """"
+    Run a command that produces JSON output and return the result as a
+    Python object.  A timeout number of seconds can optionally be
+    specified.  If the timeout expires before the command has completed,
+    the command will be terminated.
+
+    Args:
+        command:  The command to run.
+        fix_json_list:  Whether or not to convert improper ``kubectl``
+            JSON list output to a proper JSON list.
+        timeout:  If the command does not complete before this number of
+            seconds, it will be terminated.
+
+    Raises:
+        SystemExit:  If we fail to create the subprocess for some
+            reason.
+
+    Returns:
+        The Python representation of the JSON object, return code, and
+        ``stderr`` of the command.  If the command times out, the first
+        two entries in the ``tuple`` are ``None`` and ``-1``,
+        respectively.
+    """
+
+    result = None
+    rc = -1
+    err = ''
+    try:
+        cmd = subprocess.Popen(command.split(), stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+    except Exception as ex:
+        print_error(f"Failed to run '{command}':")
+        print(ex)
+        traceback.print_exc()
+        sys.exit(1)
+
+    try:
+        out, err = cmd.communicate(timeout=timeout)
+        rc = cmd.returncode
+        out = out.decode()
+        err = err.decode()
+
+        if rc == 0:
+
+            # Filter out blank lines and lines starting with '#'.
+            out = ' '.join([line for line in out.splitlines() if not
+                            line.startswith('#') and not line.isspace()])
+
+            # Brute-force translation of the multiple JSON objects
+            # returned from `kubectl` into a JSON list.
+            if fix_json_list:
+                out = '[' + out.replace('\n}\n{', "\n},\n{") + ']'
+
+            result = json.loads(out)
+
+    except subprocess.TimeoutExpired:
+        cmd.kill()
+
+    return result, rc, err
+
+
+def print_message(message: str, end: str = "\n") -> None:
+    """
+    Print a message prefixed with a timestamp.
+
+    Args:
+        message:  The message to print.
+        end:  The string to print at the end of the message.
+    """
+    print(f"{timestamp()}  {message}", end=end)
+
+
+def print_header(title: str) -> None:
+    """
+    Print a header line in bold.
+
+    Args:
+        title: The header title to print.
+    """
+    print(f"{timestamp()}  ", end="")
+    cprint(f"-- {title} ".ljust(80, "-"), attrs=["bold"])
+
+
+def print_warning(message: str, end: str = "\n") -> None:
+    """
+    Print a warning message in yellow.
+
+    Args:
+        message:  The warning message to print.
+        end:  The string to print at the end of the message.
+    """
+    print(f"{timestamp()}  ", end="")
+    cprint(f'[WARNING] {message}', color='yellow', end=end)
+
+
+def print_error(message: str, end: str = "\n") -> None:
+    """
+    Print an error message in bold red.
+
+    Args:
+        message:  The error message to print.
+        end:  The string to print at the end of the message.
+    """
+    print(f"{timestamp()}  ", end="")
+    cprint(f'[ERROR] {message}', color='red', attrs=['bold'], end=end)
+
+
+def timestamp() -> str:
+    """
+    Get the normalized current wall-clock timestamp to use for all
+    ``stdout`` messages.
+
+    Returns:
+        The timestamp in ``%Y-%m-%d %H:%M:%S`` format.
+    """
+    return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+
+# noinspection PyUnusedLocal
+def interrupt_handler(signal_received, frame):
+    """
+    A handler to use in the event of an interrupt signal.
+
+    Args:
+        signal_received:  Unused.
+        frame:  Unused.
+    """
+    print("\nRECEIVED INTERRUPT:  Shutting down gracefully...")
+    sys.exit(0)
+
+
+def query_yes(question: str, default: Optional[str] = "yes") -> bool:
+    """
+    Pose a question to the user and determine if the user responds in
+    the affirmative.
+
+    Args:
+        question:  The question to pose to the user.
+        default:  The default response to use if the user simply hits
+            [Return].
+
+    Returns:
+        ``True`` for yes, and ``False`` for no.
+    """
+    if default is None:
+        options = "y/n"
+    elif default == "yes":
+        options = "Y/n"
+    elif default == "no":
+        options = "y/N"
+    else:
+        raise ValueError(f"The default specified ('{default}') is invalid.  "
+                         "It must be 'yes' or 'no'.")
+    print_warning(f"{question}  ({options}) ", end="")
+    choice = input().lower()
+    if choice == "":
+        return default == "yes"
+    elif choice.startswith("y"):
+        return True
+    else:
+        return False
+
+
+if __name__ == "__main__":
+
+    # Register the SIGINT handler for [Ctrl]+[C].
+    signal(SIGINT, interrupt_handler)
+    main()

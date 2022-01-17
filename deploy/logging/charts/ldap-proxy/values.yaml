@@ -1,0 +1,24 @@
+# Default values for ldap_proxy.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# imageRegistry is the Docker image registry URL where all images will be retrieved
+imageRegistry: some-image-registry.com
+
+imageTag: develop
+
+# imagePullPolicy is the policy used for all images ('Always', 'IfNotPresent', 'Never')
+imagePullPolicy: Always
+
+# baseDomain specifies the domain name suffix applied to all Ingress hostnames
+baseDomain: some.base.domain.com
+
+# env specifies environment variables that will be added to all applications
+env: {}
+
+imageName: "gms-common/ldap_proxy"
+replicas: 1
+ldapCertFile: "sec-ldap.crt"
+certMountPoint: "/etc/config"
+configMap:  ldap-ca-pemstore
+env:

@@ -1,0 +1,1277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a component 1`] = `
+<div
+  class="bp3-dark"
+  style="height: 90%; width: 100%; padding: 0.5rem; color: rgb(167, 182, 194); display: flex; justify-content: center; align-items: center;"
+>
+  <div
+    class="bp3-dark"
+    style="height: 100%; width: 100%;"
+  >
+    <div
+      style="height: 100%; width: 100%; display: flex; flex-direction: column;"
+    >
+      <div
+        style="flex: 1 1 auto; position: relative;"
+      >
+        <div
+          style="position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px;"
+        >
+          <div
+            class="weavess"
+          >
+            <div
+              class="horizontal-divider__bottom weavess-waveform-display"
+              style="height: 100%;"
+            >
+              <div
+                class="weavess-wp"
+                style="height: 100%; position: relative; width: 100%; box-sizing: content-box;"
+              >
+                <canvas
+                  class="weavess-wp-canvas"
+                  style="left: 184px;"
+                />
+                <div
+                  class="weavess-wp-container"
+                >
+                  <div
+                    class="weavess-wp-container-1"
+                  >
+                    <div
+                      class="weavess-wp-container-2"
+                    >
+                      <div
+                        class="weavess-wp-container-3"
+                      >
+                        <div
+                          class="weavess-wp-container-viewport"
+                        >
+                          <div
+                            class="weavess-wp-container-viewport-content"
+                          >
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 0-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 0-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-0"
+                                        >
+                                          <span>
+                                            channel 0
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 1-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 1-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-1"
+                                        >
+                                          <span>
+                                            channel 1
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 2-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 2-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-2"
+                                        >
+                                          <span>
+                                            channel 2
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 3-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 3-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-3"
+                                        >
+                                          <span>
+                                            channel 3
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 4-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 4-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-4"
+                                        >
+                                          <span>
+                                            channel 4
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 5-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 5-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-5"
+                                        >
+                                          <span>
+                                            channel 5
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 6-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 6-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-6"
+                                        >
+                                          <span>
+                                            channel 6
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 7-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 7-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-7"
+                                        >
+                                          <span>
+                                            channel 7
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 8-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 8-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-8"
+                                        >
+                                          <span>
+                                            channel 8
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="station"
+                              style="height: 51px;"
+                            >
+                              <div
+                                class="channel"
+                                data-cy="channel 9-channel"
+                                style="height: 50px; max-height: 50px;"
+                                tabindex="0"
+                              >
+                                <div
+                                  class="channel-label-container"
+                                  data-cy="channel 9-label"
+                                  style="height: 50px; width: 184px;"
+                                  tabindex="0"
+                                >
+                                  <div
+                                    class="label"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="label-container"
+                                    >
+                                      <div
+                                        class="label-container-left-parent"
+                                      />
+                                      <div
+                                        class="label-container-content"
+                                      >
+                                        <div
+                                          class="label-container-content-label"
+                                          data-cy="channel-label-9"
+                                        >
+                                          <span>
+                                            channel 9
+                                            <div>
+                                              <p>
+                                                 
+                                                <span
+                                                  class="label-container-content-mask-indicator"
+                                                />
+                                              </p>
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          data-cy-contains-amplitude-markers="true"
+                                          style="height: 100%;"
+                                        >
+                                          <div
+                                            class="y-axis"
+                                            style="margin: 2px 0px 2px 0px;"
+                                          >
+                                            <svg
+                                              height="100%"
+                                              width="50"
+                                            >
+                                              <g
+                                                class="y-axis__ordinate"
+                                                height="100%"
+                                                transform="translate(49,0)"
+                                              />
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="channel-content-container"
+                                  style="height: 50px; left: 184px;"
+                                >
+                                  <div
+                                    class="contentrenderer"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      class="contentrenderer-content contentrenderer-content--sticky"
+                                      style="width: 0px;"
+                                    />
+                                    <div
+                                      class="contentrenderer-content"
+                                      style="left: 184px;"
+                                    >
+                                      <div
+                                        class="contentrenderer-content-drag-indicator"
+                                      />
+                                      <div
+                                        class="measure-window-selection measure-window-selection__container"
+                                        style="display: none; transform: translateX(-50%);"
+                                      >
+                                        <div
+                                          class="measure-window-selection__overlay"
+                                          draggable="true"
+                                          style="display: none; left: 50%; width: 0%;"
+                                        />
+                                      </div>
+                                      <div
+                                        class="contentrenderer-content-markers"
+                                      >
+                                        <div
+                                          class="vertical-marker"
+                                          data-cy="weavess-static-vertical-marker"
+                                          data-cy-color="lime"
+                                          data-cy-left="0.2777777777777778"
+                                          style="border: 1px dashed lime;"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="weavess-wp-container-viewport-content-markers"
+                              style="left: 184px;"
+                            >
+                              <div
+                                class="vertical-marker"
+                                data-cy="weavess-static-vertical-marker"
+                                data-cy-color="pink"
+                                data-cy-left="66.66666666666666"
+                                style="border: 1px dashed pink;"
+                              />
+                            </div>
+                          </div>
+                          <object
+                            class="resize-sensor"
+                            data="about:blank"
+                            style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none; z-index: -1; opacity: 0;"
+                            tabindex="-1"
+                            type="text/html"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="weavess-wp-container-overlay"
+                    >
+                      <span
+                        class="bp3-popover-wrapper"
+                      >
+                        <span
+                          class="bp3-popover-target"
+                        >
+                          <div
+                            class=""
+                          />
+                        </span>
+                      </span>
+                      <div
+                        class="weavess-wp-container-overlay-cross-hair"
+                      />
+                      <div
+                        class="weavess-wp-container-overlay-selection-area"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="x-axis"
+                    style="height: 35px;"
+                  >
+                    <div
+                      style="width: 100%;"
+                    >
+                      <svg
+                        height="35"
+                        style="fill: #F5F8FA;"
+                        width="100%"
+                      >
+                        <g
+                          class="x-axis-axis"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      style="text-align: center;"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="weavess-wp-time-range"
+                  style="left: 184px;"
+                >
+                  <span>
+                    2017-10-10 00:00:00.000 + 30 minutes
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

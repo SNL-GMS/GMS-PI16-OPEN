@@ -1,0 +1,39 @@
+{{- $appName := "bastion" }}
+{{- $appValues := get .Values $appName }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+  labels:
+    restartAfterReconfig: {{ include "soh.deployment.restartAfterReconfig" (dict "Values" .Values "appValues" $appValues) }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  strategy:
+    type: {{ include "soh.deployment.strategy" (dict "Values" .Values "appValues" $appValues) }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      serviceAccount: gms-soh-elevated
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "soh.container.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          env:
+            - name: GMS_CONFIG_SQL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-read-only"
+                  key: username
+            - name: GMS_CONFIG_SQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-read-only"
+                  key: password
+            {{- include "soh.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+          {{- include "soh.container.resources" (dict "Values" .Values "appValues" $appValues) | nindent 10 }}

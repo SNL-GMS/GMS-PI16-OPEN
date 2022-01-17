@@ -1,0 +1,23 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':station-definition-dao')
+    api project(':station-definition-api')
+
+    implementation 'com.google.guava:guava'
+    implementation 'com.github.ffpojo:ffpojo'
+    implementation 'org.apache.commons:commons-lang3'
+
+    // Google AutoValue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+    // Logback for Structured Logging
+    implementation 'ch.qos.logback:logback-classic'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation project(':structured-logging')
+    implementation project(':bridge-utilities')
+
+    // Testing.
+    testImplementation project(':station-definition-testfixtures')
+    testImplementation 'org.testcontainers:junit-jupiter'
+}

@@ -1,0 +1,143 @@
+# ----------------------------------------------------------------------------
+# [ HARNESS ] MINIO Test Reporting Service
+#
+# description:
+#   This augmentation adds a MINIO service for gathering test reports.
+#   In general this augmentation harness should only be applied by 
+#   the 'gms-test-runner' script.
+# ----------------------------------------------------------------------------
+---
+kind: Augmentation
+metadata:
+  type: harness  
+  values:
+    appName: minio
+    imageName: gms-common/minio
+  labels:
+    - soh
+    - ian
+    - sb
+  wait:
+    - deployments/minio
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ appName }}-keys
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+type: Opaque
+data:
+  minio_access_key: {{ minioAccessKey | default("minio") | b64enc }}
+  minio_secret_key: {{ minioSecretKey | default("minio") | b64enc }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ appName }}
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+data:
+  minio_report_bucket: {{ minioReportBucket | default("reports") }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ appName }}
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ appName }}
+    spec:
+      serviceAccount: gms-{{ instanceType }}-elevated
+      volumes:
+        - name: memdisk
+          emptyDir:
+            sizeLimit: "2Gi"
+            medium: "Memory"
+      containers:
+        - name: {{ appName }}
+          image: "{{ imageRegistry }}/{{ imageName }}:{{ imageTag }}"
+          imagePullPolicy: Always
+          command: ['/bin/bash', '-c', 'mkdir /data/{{ minioReportBucket | default("results") }} && minio server /data']
+          volumeMounts:
+            - mountPath: /data
+              name: memdisk
+          env:
+            - name: MINIO_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ appName }}-keys
+                  key:  minio_access_key
+            - name: MINIO_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ appName }}-keys
+                  key:  minio_secret_key
+            {%- for name in env %}
+            - name: "{{ name }}"
+              value: "{{ env[name] -}}"
+            {% endfor %}
+          ports:
+            - containerPort: 9000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ appName }}
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: http-web
+      port: 9000
+      protocol: TCP
+      targetPort: 9000
+  selector:
+    app: {{ appName }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ appName }}
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+spec:
+  tls:
+    - secretName: ingress-default-cert
+      hosts:
+        - "{{ appName }}-{{ namespace }}.{{ baseDomain }}"
+  rules:
+  - host: "{{ appName }}-{{ namespace }}.{{ baseDomain }}"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: {{ appName }}
+            port:
+              number: 9000

@@ -1,0 +1,93 @@
+# ----------------------------------------------------------------------------
+# [ TEST ] SOH UI Flyover Test
+#
+# description:
+#   This test augmentation runs the SOH-specific Cypress UI flyover tests.
+# ----------------------------------------------------------------------------
+---
+kind: Augmentation
+metadata:
+  type: test
+  values:
+    appName: test-soh-ui-flyover
+    imageName: gms-common/cypress-tests
+    testTags: "@soh and @flyover and not @skip"
+  labels:
+    - test
+    - soh
+    - checkout
+    - ui
+    - flyover
+    - reporting
+  wait:
+    - jobs/test-soh-ui-flyover
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ appName }}
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+spec:
+  # If we fail, fail immediately
+  backoffLimit: 0
+  # TTL is Kubernetes v1.12 [alpha] feature
+  ttlSecondsAfterFinished: 120
+  template:
+    spec:
+      serviceAccount: gms-soh-elevated
+      restartPolicy: Never
+      volumes:
+        - name: shm
+          emptyDir:
+            sizeLimit: "2Gi"
+            medium: "Memory"
+      containers:
+        - name: {{ appName }}
+          image: {{ imageRegistry }}/{{ imageName }}:{{ imageTag }}
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 16
+              memory: "8G"
+            limits:
+              cpu: 32
+              memory: "16G"
+          volumeMounts:
+            - mountPath: /dev/shm
+              name: shm
+          env:
+            - name: GMS_TEST_NAME
+              value: {{ appName }}
+            - name: GMS_UI_MODE
+              value: soh
+            - name: CYPRESS_TEST_TAGS
+              value: '{{ testTags }}'
+            - name: CYPRESS_BASE_URL
+              value: 'https://{{ namespace }}.{{ baseDomain }}/interactive-analysis-ui/'
+            {%- if reporting | default(0) %}
+            - name: MINIO_URL
+              value: "http://minio:9000"
+            - name: MINIO_REPORT_BUCKET
+              valueFrom:
+                configMapKeyRef:
+                  name: "minio"
+                  key:  minio_report_bucket
+            - name: MINIO_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: "minio-keys"
+                  key:  minio_access_key
+            - name: MINIO_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: "minio-keys"
+                  key:  minio_secret_key
+            {% endif %}
+            {%- for name in env %}
+            - name: "{{ name }}"
+              value: "{{ env[name] -}}"
+            {% endfor %}

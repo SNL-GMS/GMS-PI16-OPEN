@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CollapseButton CollapseButton renders 1`] = `
+<CollapseButton
+  buttonText="collapse-button"
+  isCollapsed={false}
+  isLoading={false}
+  onClick={[MockFunction]}
+>
+  <Blueprint3.Button
+    className="collapse-button--closed button--full-width"
+    loading={false}
+    onClick={[Function]}
+    rightIcon="caret-down"
+  >
+    <button
+      className="bp3-button collapse-button--closed button--full-width"
+      disabled={false}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      type="button"
+    >
+      <Blueprint3.Icon
+        key="leftIcon"
+      />
+      <span
+        className="bp3-button-text"
+        key="text"
+      >
+        collapse-button
+      </span>
+      <Blueprint3.Icon
+        icon="caret-down"
+        key="rightIcon"
+      >
+        <span
+          className="bp3-icon bp3-icon-caret-down"
+          icon="caret-down"
+        >
+          <svg
+            data-icon="caret-down"
+            height={16}
+            viewBox="0 0 16 16"
+            width={16}
+          >
+            <desc>
+              caret-down
+            </desc>
+            <path
+              d="M12 6.5c0-.28-.22-.5-.5-.5h-7a.495.495 0 00-.37.83l3.5 4c.09.1.22.17.37.17s.28-.07.37-.17l3.5-4c.08-.09.13-.2.13-.33z"
+              fillRule="evenodd"
+              key="0"
+            />
+          </svg>
+        </span>
+      </Blueprint3.Icon>
+    </button>
+  </Blueprint3.Button>
+  <Blueprint3.Collapse
+    className="collapse-button__target--closed button--full-width"
+    component="div"
+    isOpen={false}
+    keepChildrenMounted={false}
+    transitionDuration={200}
+  >
+    <div
+      className="bp3-collapse collapse-button__target--closed button--full-width"
+      style={
+        Object {
+          "height": undefined,
+          "overflowY": undefined,
+          "transition": undefined,
+        }
+      }
+    >
+      <div
+        aria-hidden={false}
+        className="bp3-collapse-body"
+        style={
+          Object {
+            "transform": "translateY(-0pxpx)",
+            "transition": undefined,
+          }
+        }
+      />
+    </div>
+  </Blueprint3.Collapse>
+</CollapseButton>
+`;
+
+exports[`CollapseButton CollapseButton shallow renders 1`] = `
+<Fragment>
+  <Blueprint3.Button
+    className="collapse-button--closed button--full-width"
+    loading={false}
+    onClick={[Function]}
+    rightIcon="caret-down"
+  >
+    collapse-button
+  </Blueprint3.Button>
+  <Blueprint3.Collapse
+    className="collapse-button__target--closed button--full-width"
+    component="div"
+    isOpen={false}
+    keepChildrenMounted={false}
+    transitionDuration={200}
+  />
+</Fragment>
+`;

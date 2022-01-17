@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess X Axis renders 1`] = `
+<XAxis
+  borderTop={true}
+  endTimeSecs={400}
+  getViewRange={[MockFunction]}
+  label="x axis"
+  labelWidthPx={20}
+  scrollbarWidthPx={10}
+  startTimeSecs={100}
+>
+  <div
+    className="x-axis"
+    style={
+      Object {
+        "height": "35px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      x axis
+    </div>
+  </div>
+</XAxis>
+`;
+
+exports[`Weavess X Axis shallow renders 1`] = `
+<div
+  className="x-axis"
+  style={
+    Object {
+      "height": "35px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    x axis
+  </div>
+</div>
+`;
+
+exports[`Weavess X Axis shallow renders 2`] = `
+<div
+  className="x-axis no-border"
+  style={
+    Object {
+      "height": "35px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    x axis
+  </div>
+</div>
+`;

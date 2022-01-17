@@ -1,0 +1,22 @@
+{
+  "projectId": "InteractiveAnalysis",
+  "viewportWidth": 1400,
+  "viewportHeight": 1060,
+  "baseUrl": "http://localhost:8080",
+  "testFiles": ["**/*.{feature,features}", "**/*.spec.ts"],
+  "defaultCommandTimeout": 10000,
+  "screenshotsFolder": "./dist/screenshots/",
+  "videosFolder": "./dist/videos/",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"],
+  "env": {
+    "cypress-plugin-snapshots": {
+      "imageConfig": {
+        "threshold": 0.01
+      }
+    }
+  }
+}

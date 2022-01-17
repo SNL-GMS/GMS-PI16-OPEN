@@ -1,0 +1,19 @@
+plugins {
+    id "java-library"
+}
+
+dependencies {
+    implementation project(':structured-logging')
+    implementation project(':frameworks-configuration-api')
+    implementation project(':validation')
+
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation 'org.apache.commons:commons-lang3'
+    api 'com.fasterxml.jackson.core:jackson-databind'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
+    implementation 'org.msgpack:jackson-dataformat-msgpack'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
+}

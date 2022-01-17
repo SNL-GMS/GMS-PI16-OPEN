@@ -1,0 +1,924 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Station renders 1`] = `
+<Station
+  canvasRef={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  converters={
+    Object {
+      "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+      "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+      "computeTimeSecsFromMouseXPixels": [MockFunction],
+    }
+  }
+  displayEndTimeSecs={500}
+  displayStartTimeSecs={0}
+  getCanvasBoundingRect={[MockFunction]}
+  getCurrentViewRangeInSeconds={[MockFunction]}
+  getViewRange={[MockFunction]}
+  glMax={100}
+  glMin={0}
+  initialConfiguration={
+    Object {
+      "colorScale": undefined,
+      "defaultChannel": Object {
+        "disableMaskModification": false,
+        "disableMeasureWindow": false,
+        "disablePreditedPhaseModification": false,
+        "disableSignalDetectionModification": false,
+      },
+      "defaultChannelHeightPx": 50,
+      "hotKeys": Object {
+        "amplitudeScale": "KeyS",
+        "amplitudeScaleReset": "Alt+Shift+KeyS",
+        "amplitudeScaleSingleReset": "Alt+KeyS",
+        "drawMeasureWindow": "Alt",
+        "maskCreate": "KeyM",
+      },
+      "labelWidthPx": 184,
+      "nonDefaultChannel": Object {
+        "disableMaskModification": false,
+        "disableMeasureWindow": false,
+        "disablePreditedPhaseModification": false,
+        "disableSignalDetectionModification": false,
+      },
+      "shouldRenderSpectrograms": true,
+      "shouldRenderWaveforms": true,
+      "xAxisLabel": undefined,
+    }
+  }
+  isMeasureWindow={false}
+  onContextMenu={[MockFunction]}
+  onMouseDown={[MockFunction]}
+  onMouseMove={[MockFunction]}
+  onMouseUp={[MockFunction]}
+  renderWaveforms={[MockFunction]}
+  selections={
+    Object {
+      "channels": Array [],
+      "predictedPhases": Array [],
+      "signalDetections": Array [],
+    }
+  }
+  shouldRenderSpectrograms={false}
+  shouldRenderWaveforms={false}
+  station={
+    Object {
+      "defaultChannel": Object {
+        "id": "default-channel",
+        "name": "default-channel",
+      },
+      "distance": 0,
+      "distanceUnits": "km",
+      "id": "station",
+      "name": "station",
+      "nonDefaultChannels": Array [
+        Object {
+          "id": "channel",
+          "name": "channel",
+          "waveform": Object {
+            "channelSegmentId": "1",
+            "channelSegments": Map {},
+            "masks": Array [
+              Object {
+                "color": "ff0000",
+                "endTimeSecs": 10,
+                "id": "mask",
+                "startTimeSecs": 5,
+              },
+            ],
+          },
+        },
+      ],
+    }
+  }
+  toast={[MockFunction]}
+  updateMeasureWindow={[MockFunction]}
+  updateVisibleChannelForStation={[MockFunction]}
+  workerRpcs={Array []}
+>
+  <div
+    className="station"
+    style={
+      Object {
+        "height": 51,
+      }
+    }
+  >
+    <Channel
+      canvasRef={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      channel={
+        Object {
+          "id": "default-channel",
+          "name": "default-channel",
+        }
+      }
+      converters={
+        Object {
+          "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+          "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+          "computeTimeSecsFromMouseXPixels": [MockFunction],
+        }
+      }
+      displayEndTimeSecs={500}
+      displayStartTimeSecs={0}
+      distance={0}
+      distanceUnits="km"
+      expanded={false}
+      getCanvasBoundingRect={[MockFunction]}
+      getCurrentViewRangeInSeconds={[MockFunction]}
+      getViewRange={[MockFunction]}
+      glMax={100}
+      glMin={0}
+      height={50}
+      index={0}
+      initialConfiguration={
+        Object {
+          "colorScale": undefined,
+          "defaultChannel": Object {
+            "disableMaskModification": false,
+            "disableMeasureWindow": false,
+            "disablePreditedPhaseModification": false,
+            "disableSignalDetectionModification": false,
+          },
+          "defaultChannelHeightPx": 50,
+          "hotKeys": Object {
+            "amplitudeScale": "KeyS",
+            "amplitudeScaleReset": "Alt+Shift+KeyS",
+            "amplitudeScaleSingleReset": "Alt+KeyS",
+            "drawMeasureWindow": "Alt",
+            "maskCreate": "KeyM",
+          },
+          "labelWidthPx": 184,
+          "nonDefaultChannel": Object {
+            "disableMaskModification": false,
+            "disableMeasureWindow": false,
+            "disablePreditedPhaseModification": false,
+            "disableSignalDetectionModification": false,
+          },
+          "shouldRenderSpectrograms": true,
+          "shouldRenderWaveforms": true,
+          "xAxisLabel": undefined,
+        }
+      }
+      isDefaultChannel={true}
+      isExpandable={true}
+      isMeasureWindow={false}
+      key="station-default-channel-default-channel"
+      offsetSecs={0}
+      onContextMenu={[MockFunction]}
+      onMouseDown={[MockFunction]}
+      onMouseMove={[Function]}
+      onMouseUp={[MockFunction]}
+      renderWaveforms={[MockFunction]}
+      selections={
+        Object {
+          "channels": Array [],
+          "predictedPhases": Array [],
+          "signalDetections": Array [],
+        }
+      }
+      shouldRenderSpectrograms={false}
+      shouldRenderWaveforms={false}
+      showMaskIndicator={true}
+      stationId="station"
+      toast={[MockFunction]}
+      toggleExpansion={[Function]}
+      updateMeasureWindow={[MockFunction]}
+      workerRpcs={Array []}
+    >
+      <div
+        className="channel"
+        data-cy="default-channel-channel"
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "height": "50px",
+            "maxHeight": "50px",
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          className="channel-label-container"
+          data-cy="default-channel-label"
+          style={
+            Object {
+              "height": "50px",
+              "width": "184px",
+            }
+          }
+          tabIndex={0}
+        >
+          <Label
+            canvasRef={
+              [MockFunction] {
+                "calls": Array [
+                  Array [],
+                  Array [],
+                ],
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": undefined,
+                  },
+                  Object {
+                    "type": "return",
+                    "value": undefined,
+                  },
+                ],
+              }
+            }
+            channel={
+              Object {
+                "id": "default-channel",
+                "name": "default-channel",
+              }
+            }
+            channelName="default-channel"
+            converters={
+              Object {
+                "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+                "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+                "computeTimeSecsFromMouseXPixels": [MockFunction],
+              }
+            }
+            displayEndTimeSecs={500}
+            displayStartTimeSecs={0}
+            distance={0}
+            distanceUnits="km"
+            expanded={false}
+            getCanvasBoundingRect={[MockFunction]}
+            getCurrentViewRangeInSeconds={[MockFunction]}
+            getViewRange={[MockFunction]}
+            glMax={100}
+            glMin={0}
+            height={50}
+            index={0}
+            initialConfiguration={
+              Object {
+                "colorScale": undefined,
+                "defaultChannel": Object {
+                  "disableMaskModification": false,
+                  "disableMeasureWindow": false,
+                  "disablePreditedPhaseModification": false,
+                  "disableSignalDetectionModification": false,
+                },
+                "defaultChannelHeightPx": 50,
+                "hotKeys": Object {
+                  "amplitudeScale": "KeyS",
+                  "amplitudeScaleReset": "Alt+Shift+KeyS",
+                  "amplitudeScaleSingleReset": "Alt+KeyS",
+                  "drawMeasureWindow": "Alt",
+                  "maskCreate": "KeyM",
+                },
+                "labelWidthPx": 184,
+                "nonDefaultChannel": Object {
+                  "disableMaskModification": false,
+                  "disableMeasureWindow": false,
+                  "disablePreditedPhaseModification": false,
+                  "disableSignalDetectionModification": false,
+                },
+                "shouldRenderSpectrograms": true,
+                "shouldRenderWaveforms": true,
+                "xAxisLabel": undefined,
+              }
+            }
+            isDefaultChannel={true}
+            isExpandable={true}
+            isMeasureWindow={false}
+            offsetSecs={0}
+            onContextMenu={[MockFunction]}
+            onMouseDown={[MockFunction]}
+            onMouseMove={[Function]}
+            onMouseUp={[MockFunction]}
+            renderWaveforms={[MockFunction]}
+            selections={
+              Object {
+                "channels": Array [],
+                "predictedPhases": Array [],
+                "signalDetections": Array [],
+              }
+            }
+            shouldRenderSpectrograms={false}
+            shouldRenderWaveforms={false}
+            showMaskIndicator={true}
+            stationId="station"
+            toast={[MockFunction]}
+            toggleExpansion={[Function]}
+            updateMeasureWindow={[MockFunction]}
+            workerRpcs={Array []}
+            yAxisBounds={Array []}
+          >
+            <div
+              className="label"
+              onContextMenu={[Function]}
+              tabIndex={0}
+            >
+              <div
+                className="label-container"
+              >
+                <div
+                  className="label-container-left-parent"
+                >
+                  <div
+                    className="label-container-left-parent-expansion-button"
+                    data-cy="weavess-expand-parent"
+                    data-cy-channel-name="default-channel"
+                    onClick={[Function]}
+                  >
+                    +
+                  </div>
+                </div>
+                <div
+                  className="label-container-content"
+                >
+                  <div
+                    className="label-container-content-label"
+                    data-cy="channel-label-default-channel"
+                    onClick={[Function]}
+                  >
+                    <span>
+                      default-channel
+                      <div>
+                        <p>
+                           
+                          <span
+                            className="label-container-content-mask-indicator"
+                            key=""
+                          >
+                            M
+                          </span>
+                        </p>
+                      </div>
+                    </span>
+                  </div>
+                  <div
+                    data-cy-contains-amplitude-markers={false}
+                    style={
+                      Object {
+                        "height": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </Label>
+        </div>
+        <div
+          className="channel-content-container"
+          style={
+            Object {
+              "height": "50px",
+              "left": "184px",
+              "width": "calc(100% - 184px)",
+            }
+          }
+        >
+          <ContentRenderer
+            canvasRef={
+              [MockFunction] {
+                "calls": Array [
+                  Array [],
+                  Array [],
+                ],
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": undefined,
+                  },
+                  Object {
+                    "type": "return",
+                    "value": undefined,
+                  },
+                ],
+              }
+            }
+            channel={
+              Object {
+                "id": "default-channel",
+                "name": "default-channel",
+              }
+            }
+            channelId="default-channel"
+            color="#4580E6"
+            contentRenderers={Array []}
+            converters={
+              Object {
+                "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+                "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+                "computeTimeSecsFromMouseXPixels": [MockFunction],
+              }
+            }
+            disablePredictedPhaseModification={false}
+            disableSignalDetectionModification={false}
+            displayEndTimeSecs={500}
+            displayStartTimeSecs={0}
+            displayType={
+              Array [
+                "LINE",
+              ]
+            }
+            distance={0}
+            distanceUnits="km"
+            expanded={false}
+            getCanvasBoundingRect={[MockFunction]}
+            getCurrentViewRangeInSeconds={[MockFunction]}
+            getViewRange={[MockFunction]}
+            glMax={100}
+            glMin={0}
+            height={50}
+            index={0}
+            initialConfiguration={
+              Object {
+                "colorScale": undefined,
+                "defaultChannel": Object {
+                  "disableMaskModification": false,
+                  "disableMeasureWindow": false,
+                  "disablePreditedPhaseModification": false,
+                  "disableSignalDetectionModification": false,
+                },
+                "defaultChannelHeightPx": 50,
+                "hotKeys": Object {
+                  "amplitudeScale": "KeyS",
+                  "amplitudeScaleReset": "Alt+Shift+KeyS",
+                  "amplitudeScaleSingleReset": "Alt+KeyS",
+                  "drawMeasureWindow": "Alt",
+                  "maskCreate": "KeyM",
+                },
+                "labelWidthPx": 184,
+                "nonDefaultChannel": Object {
+                  "disableMaskModification": false,
+                  "disableMeasureWindow": false,
+                  "disablePreditedPhaseModification": false,
+                  "disableSignalDetectionModification": false,
+                },
+                "shouldRenderSpectrograms": true,
+                "shouldRenderWaveforms": true,
+                "xAxisLabel": undefined,
+              }
+            }
+            isDefaultChannel={true}
+            isExpandable={true}
+            isMeasureWindow={false}
+            offsetSecs={0}
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onMouseMove={[Function]}
+            onMouseUp={[Function]}
+            pointSize={2}
+            renderWaveforms={[MockFunction]}
+            selections={
+              Object {
+                "channels": Array [],
+                "predictedPhases": Array [],
+                "signalDetections": Array [],
+              }
+            }
+            setYAxisBounds={[Function]}
+            shouldRenderSpectrograms={false}
+            shouldRenderWaveforms={false}
+            showMaskIndicator={true}
+            stationId="station"
+            toast={[MockFunction]}
+            toggleExpansion={[Function]}
+            updateMeasureWindow={[MockFunction]}
+            workerRpcs={Array []}
+          >
+            <div
+              className="contentrenderer"
+              onContextMenu={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              onMouseMove={[Function]}
+              onMouseUp={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "initial",
+                }
+              }
+              tabIndex={0}
+            >
+              <EmptyRenderer
+                canvasRef={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  }
+                }
+                channel={
+                  Object {
+                    "id": "default-channel",
+                    "name": "default-channel",
+                  }
+                }
+                converters={
+                  Object {
+                    "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+                    "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+                    "computeTimeSecsFromMouseXPixels": [MockFunction],
+                  }
+                }
+                displayEndTimeSecs={500}
+                displayStartTimeSecs={0}
+                distance={0}
+                distanceUnits="km"
+                expanded={false}
+                getCanvasBoundingRect={[MockFunction]}
+                getCurrentViewRangeInSeconds={[MockFunction]}
+                getViewRange={[MockFunction]}
+                glMax={100}
+                glMin={0}
+                height={50}
+                index={0}
+                initialConfiguration={
+                  Object {
+                    "colorScale": undefined,
+                    "defaultChannel": Object {
+                      "disableMaskModification": false,
+                      "disableMeasureWindow": false,
+                      "disablePreditedPhaseModification": false,
+                      "disableSignalDetectionModification": false,
+                    },
+                    "defaultChannelHeightPx": 50,
+                    "hotKeys": Object {
+                      "amplitudeScale": "KeyS",
+                      "amplitudeScaleReset": "Alt+Shift+KeyS",
+                      "amplitudeScaleSingleReset": "Alt+KeyS",
+                      "drawMeasureWindow": "Alt",
+                      "maskCreate": "KeyM",
+                    },
+                    "labelWidthPx": 184,
+                    "nonDefaultChannel": Object {
+                      "disableMaskModification": false,
+                      "disableMeasureWindow": false,
+                      "disablePreditedPhaseModification": false,
+                      "disableSignalDetectionModification": false,
+                    },
+                    "shouldRenderSpectrograms": true,
+                    "shouldRenderWaveforms": true,
+                    "xAxisLabel": undefined,
+                  }
+                }
+                isDefaultChannel={true}
+                isExpandable={true}
+                isMeasureWindow={false}
+                offsetSecs={0}
+                onContextMenu={[MockFunction]}
+                onMouseDown={[MockFunction]}
+                onMouseMove={[Function]}
+                onMouseUp={[MockFunction]}
+                renderWaveforms={[MockFunction]}
+                selections={
+                  Object {
+                    "channels": Array [],
+                    "predictedPhases": Array [],
+                    "signalDetections": Array [],
+                  }
+                }
+                shouldRenderSpectrograms={false}
+                shouldRenderWaveforms={false}
+                showMaskIndicator={true}
+                stationId="station"
+                toast={[MockFunction]}
+                toggleExpansion={[Function]}
+                updateMeasureWindow={[MockFunction]}
+                workerRpcs={Array []}
+              />
+              <div
+                className="contentrenderer-content contentrenderer-content--sticky"
+                style={
+                  Object {
+                    "width": "calc(100vw - 184)",
+                  }
+                }
+              />
+              <div
+                className="contentrenderer-content"
+                style={
+                  Object {
+                    "left": 184,
+                    "width": "calc(100% - 184)",
+                  }
+                }
+              >
+                <div
+                  className="contentrenderer-content-drag-indicator"
+                />
+                <div
+                  className="contentrenderer-content-markers"
+                />
+                <SignalDetections
+                  channelId="default-channel"
+                  disableModification={false}
+                  displayEndTimeSecs={500}
+                  displayStartTimeSecs={0}
+                  getTimeSecsForClientX={[Function]}
+                  isDefaultChannel={true}
+                  positionDragIndicator={[Function]}
+                  selectedSignalDetections={Array []}
+                  stationId="station"
+                  toast={[MockFunction]}
+                  toggleDragIndicator={[Function]}
+                />
+                <PredictedPhases
+                  channelId="default-channel"
+                  disableModification={false}
+                  displayEndTimeSecs={500}
+                  displayStartTimeSecs={0}
+                  getTimeSecsForClientX={[Function]}
+                  isDefaultChannel={true}
+                  positionDragIndicator={[Function]}
+                  selectedPredictedPhases={Array []}
+                  stationId="station"
+                  toast={[MockFunction]}
+                  toggleDragIndicator={[Function]}
+                />
+                <TheoreticalPhases
+                  displayEndTimeSecs={500}
+                  displayStartTimeSecs={0}
+                  getTimeSecsForClientX={[Function]}
+                  isDefaultChannel={true}
+                  positionDragIndicator={[Function]}
+                  stationId="station"
+                  toast={[MockFunction]}
+                  toggleDragIndicator={[Function]}
+                />
+              </div>
+            </div>
+          </ContentRenderer>
+        </div>
+      </div>
+    </Channel>
+  </div>
+</Station>
+`;
+
+exports[`Weavess Station shallow renders 1`] = `
+<div
+  className="station"
+  style={
+    Object {
+      "height": 51,
+    }
+  }
+>
+  <Channel
+    canvasRef={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    channel={
+      Object {
+        "id": "default-channel",
+        "name": "default-channel",
+      }
+    }
+    converters={
+      Object {
+        "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+        "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+        "computeTimeSecsFromMouseXPixels": [MockFunction],
+      }
+    }
+    displayEndTimeSecs={500}
+    displayStartTimeSecs={0}
+    distance={0}
+    distanceUnits="km"
+    expanded={false}
+    getCanvasBoundingRect={[MockFunction]}
+    getCurrentViewRangeInSeconds={[MockFunction]}
+    getViewRange={[MockFunction]}
+    glMax={100}
+    glMin={0}
+    height={50}
+    index={0}
+    initialConfiguration={
+      Object {
+        "colorScale": undefined,
+        "defaultChannel": Object {
+          "disableMaskModification": false,
+          "disableMeasureWindow": false,
+          "disablePreditedPhaseModification": false,
+          "disableSignalDetectionModification": false,
+        },
+        "defaultChannelHeightPx": 50,
+        "hotKeys": Object {
+          "amplitudeScale": "KeyS",
+          "amplitudeScaleReset": "Alt+Shift+KeyS",
+          "amplitudeScaleSingleReset": "Alt+KeyS",
+          "drawMeasureWindow": "Alt",
+          "maskCreate": "KeyM",
+        },
+        "labelWidthPx": 184,
+        "nonDefaultChannel": Object {
+          "disableMaskModification": false,
+          "disableMeasureWindow": false,
+          "disablePreditedPhaseModification": false,
+          "disableSignalDetectionModification": false,
+        },
+        "shouldRenderSpectrograms": true,
+        "shouldRenderWaveforms": true,
+        "xAxisLabel": undefined,
+      }
+    }
+    isDefaultChannel={true}
+    isExpandable={true}
+    isMeasureWindow={false}
+    key="station-default-channel-default-channel"
+    offsetSecs={0}
+    onContextMenu={[MockFunction]}
+    onMouseDown={[MockFunction]}
+    onMouseMove={[Function]}
+    onMouseUp={[MockFunction]}
+    renderWaveforms={[MockFunction]}
+    selections={
+      Object {
+        "channels": Array [],
+        "predictedPhases": Array [],
+        "signalDetections": Array [],
+      }
+    }
+    shouldRenderSpectrograms={false}
+    shouldRenderWaveforms={false}
+    showMaskIndicator={true}
+    stationId="station"
+    toast={[MockFunction]}
+    toggleExpansion={[Function]}
+    updateMeasureWindow={[MockFunction]}
+    workerRpcs={Array []}
+  />
+</div>
+`;
+
+exports[`Weavess Station shallow renders 2`] = `
+<div
+  className="station"
+  style={
+    Object {
+      "height": 51,
+    }
+  }
+>
+  <Channel
+    canvasRef={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    channel={
+      Object {
+        "id": "default-channel",
+        "name": "default-channel",
+      }
+    }
+    converters={
+      Object {
+        "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+        "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+        "computeTimeSecsFromMouseXPixels": [MockFunction],
+      }
+    }
+    displayEndTimeSecs={500}
+    displayStartTimeSecs={0}
+    distance={0}
+    distanceUnits="km"
+    expanded={false}
+    getCanvasBoundingRect={[MockFunction]}
+    getCurrentViewRangeInSeconds={[MockFunction]}
+    getViewRange={[MockFunction]}
+    glMax={100}
+    glMin={0}
+    height={50}
+    index={0}
+    initialConfiguration={
+      Object {
+        "colorScale": undefined,
+        "defaultChannel": Object {
+          "disableMaskModification": false,
+          "disableMeasureWindow": false,
+          "disablePreditedPhaseModification": false,
+          "disableSignalDetectionModification": false,
+        },
+        "defaultChannelHeightPx": 50,
+        "hotKeys": Object {
+          "amplitudeScale": "KeyS",
+          "amplitudeScaleReset": "Alt+Shift+KeyS",
+          "amplitudeScaleSingleReset": "Alt+KeyS",
+          "drawMeasureWindow": "Alt",
+          "maskCreate": "KeyM",
+        },
+        "labelWidthPx": 184,
+        "nonDefaultChannel": Object {
+          "disableMaskModification": false,
+          "disableMeasureWindow": false,
+          "disablePreditedPhaseModification": false,
+          "disableSignalDetectionModification": false,
+        },
+        "shouldRenderSpectrograms": true,
+        "shouldRenderWaveforms": true,
+        "xAxisLabel": undefined,
+      }
+    }
+    isDefaultChannel={true}
+    isExpandable={true}
+    isMeasureWindow={false}
+    key="station-default-channel-default-channel"
+    offsetSecs={0}
+    onContextMenu={[MockFunction]}
+    onMouseDown={[MockFunction]}
+    onMouseMove={[Function]}
+    onMouseUp={[MockFunction]}
+    renderWaveforms={[MockFunction]}
+    selections={
+      Object {
+        "channels": Array [],
+        "predictedPhases": Array [],
+        "signalDetections": Array [],
+      }
+    }
+    shouldRenderSpectrograms={false}
+    shouldRenderWaveforms={false}
+    showMaskIndicator={true}
+    stationId="station"
+    toast={[MockFunction]}
+    toggleExpansion={[Function]}
+    updateMeasureWindow={[MockFunction]}
+    workerRpcs={Array []}
+  />
+</div>
+`;

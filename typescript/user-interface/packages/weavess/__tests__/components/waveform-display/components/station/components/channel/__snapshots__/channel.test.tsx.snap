@@ -1,0 +1,3729 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Channel call getMousePosition 1`] = `
+Object {
+  "clientX": 0,
+  "clientY": 0,
+}
+`;
+
+exports[`Weavess Channel channel wrapper to match snapshot 1`] = `
+<Channel
+  canvasRef={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": Object {
+            "getBoundingClientRect": [MockFunction] {
+              "calls": Array [
+                Array [],
+                Array [],
+                Array [],
+                Array [],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            },
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "getBoundingClientRect": [MockFunction] {
+              "calls": Array [
+                Array [],
+                Array [],
+                Array [],
+                Array [],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            },
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "getBoundingClientRect": [MockFunction] {
+              "calls": Array [
+                Array [],
+                Array [],
+                Array [],
+                Array [],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            },
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "getBoundingClientRect": [MockFunction] {
+              "calls": Array [
+                Array [],
+                Array [],
+                Array [],
+                Array [],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            },
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "getBoundingClientRect": [MockFunction] {
+              "calls": Array [
+                Array [],
+                Array [],
+                Array [],
+                Array [],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            },
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "getBoundingClientRect": [MockFunction] {
+              "calls": Array [
+                Array [],
+                Array [],
+                Array [],
+                Array [],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            },
+          },
+        },
+      ],
+    }
+  }
+  channel={
+    Object {
+      "id": "channel",
+      "name": "channel",
+      "spectrogram": Object {
+        "data": Array [
+          Array [
+            0,
+            0.5,
+            1,
+            1.5,
+            2,
+            2.5,
+          ],
+        ],
+        "description": "test spectogram data",
+        "descriptionLabelColor": "black",
+        "frequencyStep": 1,
+        "markers": Object {
+          "moveableMarkers": Array [
+            Object {
+              "color": "RED",
+              "id": "marker",
+              "lineStyle": "dashed",
+              "timeSecs": 50,
+            },
+          ],
+          "selectionWindows": Array [
+            Object {
+              "color": "rgba(200,0,0,0.2)",
+              "endMarker": Object {
+                "color": "purple",
+                "id": "marker",
+                "lineStyle": "dashed",
+                "timeSecs": 400,
+              },
+              "id": "selection",
+              "isMoveable": true,
+              "startMarker": Object {
+                "color": "purple",
+                "id": "marker",
+                "lineStyle": "dashed",
+                "timeSecs": 200,
+              },
+            },
+          ],
+          "verticalMarkers": Array [
+            Object {
+              "color": "lime",
+              "id": "marker",
+              "lineStyle": "dashed",
+              "timeSecs": 5,
+            },
+          ],
+        },
+        "predictedPhases": Array [
+          Object {
+            "color": "red",
+            "filter": "opacity(.6)",
+            "id": "predictive",
+            "isConflicted": false,
+            "label": "P",
+            "timeSecs": 515,
+          },
+        ],
+        "signalDetections": Array [
+          Object {
+            "color": "red",
+            "filter": "brightness(1)",
+            "id": "sd",
+            "isConflicted": false,
+            "label": "P",
+            "timeSecs": 500,
+          },
+        ],
+        "startTimeSecs": 0,
+        "theoreticalPhaseWindows": Array [
+          Object {
+            "color": "red",
+            "endTimeSecs": 120,
+            "id": "theoretical-phase",
+            "label": "TP",
+            "startTimeSecs": 60,
+          },
+        ],
+        "timeStep": 0.5,
+      },
+      "waveform": Object {
+        "channelSegmentId": "unfiltered",
+        "channelSegments": Map {
+          "unfiltered" => Object {
+            "channelName": "channel",
+            "channelSegmentBoundaries": Object {
+              "bottomMax": 154.606635,
+              "channelAvg": 230.31431241288792,
+              "channelSegmentId": "unfiltered",
+              "offset": 307.306593,
+              "samplesCount": 179980,
+              "topMax": 307.306593,
+            },
+            "dataSegments": Array [
+              Object {
+                "color": "dodgerblue",
+                "data": Object {
+                  "endTimeSecs": 500,
+                  "sampleRate": 1,
+                  "startTimeSecs": 0,
+                  "values": Array [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                  ],
+                },
+                "displayType": Array [
+                  "SCATTER",
+                ],
+                "pointSize": 2,
+              },
+            ],
+            "wfFilterId": "unfiltered",
+          },
+        },
+        "masks": Array [
+          Object {
+            "color": "red",
+            "endTimeSecs": 10,
+            "id": "mask",
+            "startTimeSecs": 5,
+          },
+        ],
+      },
+    }
+  }
+  converters={
+    Object {
+      "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+      "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+      "computeTimeSecsFromMouseXPixels": [MockFunction],
+    }
+  }
+  defaultRange={
+    Object {
+      "max": 11,
+      "min": 4,
+    }
+  }
+  displayEndTimeSecs={500}
+  displayStartTimeSecs={0}
+  distance={4}
+  distanceUnits="km"
+  events={
+    Object {
+      "events": Object {
+        "onChannelClick": [MockFunction],
+        "onClickSelectionWindow": [MockFunction],
+        "onContextMenu": [MockFunction],
+        "onMaskClick": [MockFunction],
+        "onMaskContextClick": [MockFunction],
+        "onMaskCreateDragEnd": [MockFunction],
+        "onMeasureWindowUpdated": [MockFunction],
+        "onMoveSelectionWindow": [MockFunction],
+        "onPredictivePhaseClick": [MockFunction],
+        "onPredictivePhaseContextMenu": [MockFunction],
+        "onPredictivePhaseDragEnd": [MockFunction],
+        "onSignalDetectionClick": [MockFunction],
+        "onSignalDetectionContextMenu": [MockFunction],
+        "onSignalDetectionDragEnd": [MockFunction],
+        "onUpdateMarker": [MockFunction],
+        "onUpdateSelectionWindow": [MockFunction],
+      },
+      "labelEvents": Object {
+        "onChannelCollapsed": [MockFunction],
+        "onChannelExpanded": [MockFunction],
+        "onChannelLabelClick": [MockFunction],
+      },
+      "onKeyPress": [MockFunction],
+    }
+  }
+  expanded={true}
+  getBoundaries={[MockFunction]}
+  getCanvasBoundingRect={[MockFunction]}
+  getCurrentViewRangeInSeconds={[MockFunction]}
+  getViewRange={[MockFunction]}
+  glMax={100}
+  glMin={0}
+  height={800}
+  index={1}
+  initialConfiguration={
+    Object {
+      "colorScale": undefined,
+      "defaultChannel": Object {
+        "disableMaskModification": false,
+        "disableMeasureWindow": false,
+        "disablePreditedPhaseModification": false,
+        "disableSignalDetectionModification": false,
+      },
+      "defaultChannelHeightPx": 50,
+      "hotKeys": Object {
+        "amplitudeScale": "KeyS",
+        "amplitudeScaleReset": "Alt+Shift+KeyS",
+        "amplitudeScaleSingleReset": "Alt+KeyS",
+        "drawMeasureWindow": "Alt",
+        "maskCreate": "KeyM",
+      },
+      "labelWidthPx": 184,
+      "nonDefaultChannel": Object {
+        "disableMaskModification": false,
+        "disableMeasureWindow": false,
+        "disablePreditedPhaseModification": false,
+        "disableSignalDetectionModification": false,
+      },
+      "shouldRenderSpectrograms": true,
+      "shouldRenderWaveforms": true,
+      "xAxisLabel": undefined,
+    }
+  }
+  isDefaultChannel={true}
+  isExpandable={true}
+  isMeasureWindow={true}
+  offsetSecs={0}
+  onContextMenu={[MockFunction]}
+  onMouseDown={[MockFunction]}
+  onMouseMove={[MockFunction]}
+  onMouseUp={[MockFunction]}
+  renderWaveforms={[MockFunction]}
+  selections={
+    Object {
+      "channels": Array [],
+      "predictedPhases": Array [],
+      "signalDetections": Array [],
+    }
+  }
+  shouldRenderSpectrograms={true}
+  shouldRenderWaveforms={true}
+  showMaskIndicator={true}
+  stationId="station-id"
+  toast={[MockFunction]}
+  toggleExpansion={[MockFunction]}
+  updateMeasureWindow={[MockFunction]}
+  workerRpcs={Array []}
+>
+  <div
+    className="channel"
+    data-cy="channel-channel"
+    onKeyDown={[Function]}
+    style={
+      Object {
+        "height": "800px",
+        "maxHeight": "800px",
+      }
+    }
+    tabIndex={0}
+  >
+    <div
+      className="channel-label-container"
+      data-cy="channel-label"
+      style={
+        Object {
+          "height": "800px",
+          "width": "184px",
+        }
+      }
+      tabIndex={0}
+    >
+      <Label
+        canvasRef={
+          [MockFunction] {
+            "calls": Array [
+              Array [],
+              Array [],
+              Array [],
+              Array [],
+              Array [],
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+            ],
+          }
+        }
+        channel={
+          Object {
+            "id": "channel",
+            "name": "channel",
+            "spectrogram": Object {
+              "data": Array [
+                Array [
+                  0,
+                  0.5,
+                  1,
+                  1.5,
+                  2,
+                  2.5,
+                ],
+              ],
+              "description": "test spectogram data",
+              "descriptionLabelColor": "black",
+              "frequencyStep": 1,
+              "markers": Object {
+                "moveableMarkers": Array [
+                  Object {
+                    "color": "RED",
+                    "id": "marker",
+                    "lineStyle": "dashed",
+                    "timeSecs": 50,
+                  },
+                ],
+                "selectionWindows": Array [
+                  Object {
+                    "color": "rgba(200,0,0,0.2)",
+                    "endMarker": Object {
+                      "color": "purple",
+                      "id": "marker",
+                      "lineStyle": "dashed",
+                      "timeSecs": 400,
+                    },
+                    "id": "selection",
+                    "isMoveable": true,
+                    "startMarker": Object {
+                      "color": "purple",
+                      "id": "marker",
+                      "lineStyle": "dashed",
+                      "timeSecs": 200,
+                    },
+                  },
+                ],
+                "verticalMarkers": Array [
+                  Object {
+                    "color": "lime",
+                    "id": "marker",
+                    "lineStyle": "dashed",
+                    "timeSecs": 5,
+                  },
+                ],
+              },
+              "predictedPhases": Array [
+                Object {
+                  "color": "red",
+                  "filter": "opacity(.6)",
+                  "id": "predictive",
+                  "isConflicted": false,
+                  "label": "P",
+                  "timeSecs": 515,
+                },
+              ],
+              "signalDetections": Array [
+                Object {
+                  "color": "red",
+                  "filter": "brightness(1)",
+                  "id": "sd",
+                  "isConflicted": false,
+                  "label": "P",
+                  "timeSecs": 500,
+                },
+              ],
+              "startTimeSecs": 0,
+              "theoreticalPhaseWindows": Array [
+                Object {
+                  "color": "red",
+                  "endTimeSecs": 120,
+                  "id": "theoretical-phase",
+                  "label": "TP",
+                  "startTimeSecs": 60,
+                },
+              ],
+              "timeStep": 0.5,
+            },
+            "waveform": Object {
+              "channelSegmentId": "unfiltered",
+              "channelSegments": Map {
+                "unfiltered" => Object {
+                  "channelName": "channel",
+                  "channelSegmentBoundaries": Object {
+                    "bottomMax": 154.606635,
+                    "channelAvg": 230.31431241288792,
+                    "channelSegmentId": "unfiltered",
+                    "offset": 307.306593,
+                    "samplesCount": 179980,
+                    "topMax": 307.306593,
+                  },
+                  "dataSegments": Array [
+                    Object {
+                      "color": "dodgerblue",
+                      "data": Object {
+                        "endTimeSecs": 500,
+                        "sampleRate": 1,
+                        "startTimeSecs": 0,
+                        "values": Array [
+                          2,
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                        ],
+                      },
+                      "displayType": Array [
+                        "SCATTER",
+                      ],
+                      "pointSize": 2,
+                    },
+                  ],
+                  "wfFilterId": "unfiltered",
+                },
+              },
+              "masks": Array [
+                Object {
+                  "color": "red",
+                  "endTimeSecs": 10,
+                  "id": "mask",
+                  "startTimeSecs": 5,
+                },
+              ],
+            },
+          }
+        }
+        channelName="channel"
+        converters={
+          Object {
+            "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+            "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+            "computeTimeSecsFromMouseXPixels": [MockFunction],
+          }
+        }
+        defaultRange={
+          Object {
+            "max": 11,
+            "min": 4,
+          }
+        }
+        displayEndTimeSecs={500}
+        displayStartTimeSecs={0}
+        distance={4}
+        distanceUnits="km"
+        events={
+          Object {
+            "onChannelCollapsed": [MockFunction],
+            "onChannelExpanded": [MockFunction],
+            "onChannelLabelClick": [MockFunction],
+          }
+        }
+        expanded={true}
+        getBoundaries={[MockFunction]}
+        getCanvasBoundingRect={[MockFunction]}
+        getCurrentViewRangeInSeconds={[MockFunction]}
+        getViewRange={[MockFunction]}
+        glMax={100}
+        glMin={0}
+        height={800}
+        index={1}
+        initialConfiguration={
+          Object {
+            "colorScale": undefined,
+            "defaultChannel": Object {
+              "disableMaskModification": false,
+              "disableMeasureWindow": false,
+              "disablePreditedPhaseModification": false,
+              "disableSignalDetectionModification": false,
+            },
+            "defaultChannelHeightPx": 50,
+            "hotKeys": Object {
+              "amplitudeScale": "KeyS",
+              "amplitudeScaleReset": "Alt+Shift+KeyS",
+              "amplitudeScaleSingleReset": "Alt+KeyS",
+              "drawMeasureWindow": "Alt",
+              "maskCreate": "KeyM",
+            },
+            "labelWidthPx": 184,
+            "nonDefaultChannel": Object {
+              "disableMaskModification": false,
+              "disableMeasureWindow": false,
+              "disablePreditedPhaseModification": false,
+              "disableSignalDetectionModification": false,
+            },
+            "shouldRenderSpectrograms": true,
+            "shouldRenderWaveforms": true,
+            "xAxisLabel": undefined,
+          }
+        }
+        isDefaultChannel={true}
+        isExpandable={true}
+        isMeasureWindow={true}
+        offsetSecs={0}
+        onContextMenu={[MockFunction]}
+        onMouseDown={[MockFunction]}
+        onMouseMove={[MockFunction]}
+        onMouseUp={[MockFunction]}
+        renderWaveforms={[MockFunction]}
+        selections={
+          Object {
+            "channels": Array [],
+            "predictedPhases": Array [],
+            "signalDetections": Array [],
+          }
+        }
+        shouldRenderSpectrograms={true}
+        shouldRenderWaveforms={true}
+        showMaskIndicator={true}
+        stationId="station-id"
+        toast={[MockFunction]}
+        toggleExpansion={[MockFunction]}
+        updateMeasureWindow={[MockFunction]}
+        workerRpcs={Array []}
+        yAxisBounds={
+          Array [
+            Object {
+              "heightInPercentage": 50,
+              "maxAmplitude": 1,
+              "minAmplitude": -1,
+            },
+            Object {
+              "heightInPercentage": 50,
+              "maxAmplitude": 1,
+              "minAmplitude": -1,
+            },
+          ]
+        }
+      >
+        <div
+          className="label label--actionable"
+          onContextMenu={[Function]}
+          tabIndex={0}
+        >
+          <div
+            className="label-container"
+          >
+            <div
+              className="label-container-left-parent"
+            >
+              <div
+                className="label-container-left-parent-expansion-button"
+                data-cy="weavess-expand-parent"
+                data-cy-channel-name="channel"
+                onClick={[Function]}
+              >
+                -
+              </div>
+            </div>
+            <div
+              className="label-container-content"
+            >
+              <div
+                className="label-container-content-label"
+                data-cy="channel-label-channel"
+                onClick={[Function]}
+              >
+                <span>
+                  channel
+                  <div>
+                    <p>
+                      4.00 km
+                       
+                      <span
+                        className="label-container-content-mask-indicator"
+                        key="4.00 km"
+                      >
+                        M
+                      </span>
+                    </p>
+                  </div>
+                </span>
+              </div>
+              <div
+                data-cy-contains-amplitude-markers={true}
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              >
+                <YAxis
+                  heightInPercentage={50}
+                  key="channel_yaxis_0"
+                  maxAmplitude={1}
+                  minAmplitude={-1}
+                >
+                  <div
+                    className="y-axis"
+                    style={
+                      Object {
+                        "height": "calc(50% - 4px)",
+                        "margin": "2px 0 2px 0",
+                      }
+                    }
+                  />
+                </YAxis>
+                <YAxis
+                  heightInPercentage={50}
+                  key="channel_yaxis_1"
+                  maxAmplitude={1}
+                  minAmplitude={-1}
+                >
+                  <div
+                    className="y-axis"
+                    style={
+                      Object {
+                        "height": "calc(50% - 4px)",
+                        "margin": "2px 0 2px 0",
+                      }
+                    }
+                  />
+                </YAxis>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Label>
+    </div>
+    <MeasureWindowSelectionListener
+      computeTimeSecsFromMouseXPixels={[Function]}
+      displayTimeRange={
+        Object {
+          "endTimeSecs": 500,
+          "startTimeSecs": 0,
+        }
+      }
+      hotKeys={
+        Object {
+          "amplitudeScale": "KeyS",
+          "amplitudeScaleReset": "Alt+Shift+KeyS",
+          "amplitudeScaleSingleReset": "Alt+KeyS",
+          "drawMeasureWindow": "Alt",
+          "maskCreate": "KeyM",
+        }
+      }
+      isMeasureWindowEnabled={[Function]}
+      toast={[Function]}
+      updateMeasureWindowPanel={[Function]}
+    >
+      <div
+        className="channel-content-container"
+        key="channel-segment-unfiltered"
+        style={
+          Object {
+            "height": "400px",
+            "left": "184px",
+            "width": "calc(100% - 184px)",
+          }
+        }
+      >
+        <ContentRenderer
+          canvasRef={
+            [MockFunction] {
+              "calls": Array [
+                Array [],
+                Array [],
+                Array [],
+                Array [],
+                Array [],
+                Array [],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": Object {
+                    "getBoundingClientRect": [MockFunction] {
+                      "calls": Array [
+                        Array [],
+                        Array [],
+                        Array [],
+                        Array [],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                  },
+                },
+                Object {
+                  "type": "return",
+                  "value": Object {
+                    "getBoundingClientRect": [MockFunction] {
+                      "calls": Array [
+                        Array [],
+                        Array [],
+                        Array [],
+                        Array [],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                  },
+                },
+                Object {
+                  "type": "return",
+                  "value": Object {
+                    "getBoundingClientRect": [MockFunction] {
+                      "calls": Array [
+                        Array [],
+                        Array [],
+                        Array [],
+                        Array [],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                  },
+                },
+                Object {
+                  "type": "return",
+                  "value": Object {
+                    "getBoundingClientRect": [MockFunction] {
+                      "calls": Array [
+                        Array [],
+                        Array [],
+                        Array [],
+                        Array [],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                  },
+                },
+                Object {
+                  "type": "return",
+                  "value": Object {
+                    "getBoundingClientRect": [MockFunction] {
+                      "calls": Array [
+                        Array [],
+                        Array [],
+                        Array [],
+                        Array [],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                  },
+                },
+                Object {
+                  "type": "return",
+                  "value": Object {
+                    "getBoundingClientRect": [MockFunction] {
+                      "calls": Array [
+                        Array [],
+                        Array [],
+                        Array [],
+                        Array [],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            }
+          }
+          channel={
+            Object {
+              "id": "channel",
+              "name": "channel",
+              "spectrogram": Object {
+                "data": Array [
+                  Array [
+                    0,
+                    0.5,
+                    1,
+                    1.5,
+                    2,
+                    2.5,
+                  ],
+                ],
+                "description": "test spectogram data",
+                "descriptionLabelColor": "black",
+                "frequencyStep": 1,
+                "markers": Object {
+                  "moveableMarkers": Array [
+                    Object {
+                      "color": "RED",
+                      "id": "marker",
+                      "lineStyle": "dashed",
+                      "timeSecs": 50,
+                    },
+                  ],
+                  "selectionWindows": Array [
+                    Object {
+                      "color": "rgba(200,0,0,0.2)",
+                      "endMarker": Object {
+                        "color": "purple",
+                        "id": "marker",
+                        "lineStyle": "dashed",
+                        "timeSecs": 400,
+                      },
+                      "id": "selection",
+                      "isMoveable": true,
+                      "startMarker": Object {
+                        "color": "purple",
+                        "id": "marker",
+                        "lineStyle": "dashed",
+                        "timeSecs": 200,
+                      },
+                    },
+                  ],
+                  "verticalMarkers": Array [
+                    Object {
+                      "color": "lime",
+                      "id": "marker",
+                      "lineStyle": "dashed",
+                      "timeSecs": 5,
+                    },
+                  ],
+                },
+                "predictedPhases": Array [
+                  Object {
+                    "color": "red",
+                    "filter": "opacity(.6)",
+                    "id": "predictive",
+                    "isConflicted": false,
+                    "label": "P",
+                    "timeSecs": 515,
+                  },
+                ],
+                "signalDetections": Array [
+                  Object {
+                    "color": "red",
+                    "filter": "brightness(1)",
+                    "id": "sd",
+                    "isConflicted": false,
+                    "label": "P",
+                    "timeSecs": 500,
+                  },
+                ],
+                "startTimeSecs": 0,
+                "theoreticalPhaseWindows": Array [
+                  Object {
+                    "color": "red",
+                    "endTimeSecs": 120,
+                    "id": "theoretical-phase",
+                    "label": "TP",
+                    "startTimeSecs": 60,
+                  },
+                ],
+                "timeStep": 0.5,
+              },
+              "waveform": Object {
+                "channelSegmentId": "unfiltered",
+                "channelSegments": Map {
+                  "unfiltered" => Object {
+                    "channelName": "channel",
+                    "channelSegmentBoundaries": Object {
+                      "bottomMax": 154.606635,
+                      "channelAvg": 230.31431241288792,
+                      "channelSegmentId": "unfiltered",
+                      "offset": 307.306593,
+                      "samplesCount": 179980,
+                      "topMax": 307.306593,
+                    },
+                    "dataSegments": Array [
+                      Object {
+                        "color": "dodgerblue",
+                        "data": Object {
+                          "endTimeSecs": 500,
+                          "sampleRate": 1,
+                          "startTimeSecs": 0,
+                          "values": Array [
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10,
+                            11,
+                          ],
+                        },
+                        "displayType": Array [
+                          "SCATTER",
+                        ],
+                        "pointSize": 2,
+                      },
+                    ],
+                    "wfFilterId": "unfiltered",
+                  },
+                },
+                "masks": Array [
+                  Object {
+                    "color": "red",
+                    "endTimeSecs": 10,
+                    "id": "mask",
+                    "startTimeSecs": 5,
+                  },
+                ],
+              },
+            }
+          }
+          channelId="channel"
+          color="#4580E6"
+          contentRenderers={
+            Array [
+              <UNDEFINED
+                onClick={[Function]}
+              />,
+            ]
+          }
+          converters={
+            Object {
+              "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+              "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+              "computeTimeSecsFromMouseXPixels": [MockFunction],
+            }
+          }
+          defaultRange={
+            Object {
+              "max": 11,
+              "min": 4,
+            }
+          }
+          disablePredictedPhaseModification={false}
+          disableSignalDetectionModification={false}
+          displayEndTimeSecs={500}
+          displayStartTimeSecs={0}
+          displayType={
+            Array [
+              "LINE",
+            ]
+          }
+          distance={4}
+          distanceUnits="km"
+          events={
+            Object {
+              "onChannelClick": [MockFunction],
+              "onClickSelectionWindow": [MockFunction],
+              "onContextMenu": [MockFunction],
+              "onMaskClick": [MockFunction],
+              "onMaskContextClick": [MockFunction],
+              "onMaskCreateDragEnd": [MockFunction],
+              "onMeasureWindowUpdated": [MockFunction],
+              "onMoveSelectionWindow": [MockFunction],
+              "onPredictivePhaseClick": [MockFunction],
+              "onPredictivePhaseContextMenu": [MockFunction],
+              "onPredictivePhaseDragEnd": [MockFunction],
+              "onSignalDetectionClick": [MockFunction],
+              "onSignalDetectionContextMenu": [MockFunction],
+              "onSignalDetectionDragEnd": [MockFunction],
+              "onUpdateMarker": [MockFunction],
+              "onUpdateSelectionWindow": [MockFunction],
+            }
+          }
+          expanded={true}
+          getBoundaries={[MockFunction]}
+          getCanvasBoundingRect={[MockFunction]}
+          getCurrentViewRangeInSeconds={[MockFunction]}
+          getViewRange={[MockFunction]}
+          glMax={100}
+          glMin={0}
+          height={800}
+          index={1}
+          initialConfiguration={
+            Object {
+              "colorScale": undefined,
+              "defaultChannel": Object {
+                "disableMaskModification": false,
+                "disableMeasureWindow": false,
+                "disablePreditedPhaseModification": false,
+                "disableSignalDetectionModification": false,
+              },
+              "defaultChannelHeightPx": 50,
+              "hotKeys": Object {
+                "amplitudeScale": "KeyS",
+                "amplitudeScaleReset": "Alt+Shift+KeyS",
+                "amplitudeScaleSingleReset": "Alt+KeyS",
+                "drawMeasureWindow": "Alt",
+                "maskCreate": "KeyM",
+              },
+              "labelWidthPx": 184,
+              "nonDefaultChannel": Object {
+                "disableMaskModification": false,
+                "disableMeasureWindow": false,
+                "disablePreditedPhaseModification": false,
+                "disableSignalDetectionModification": false,
+              },
+              "shouldRenderSpectrograms": true,
+              "shouldRenderWaveforms": true,
+              "xAxisLabel": undefined,
+            }
+          }
+          isDefaultChannel={true}
+          isExpandable={true}
+          isMeasureWindow={true}
+          offsetSecs={0}
+          onContextMenu={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+          onMouseUp={[Function]}
+          pointSize={2}
+          renderWaveforms={[MockFunction]}
+          selections={
+            Object {
+              "channels": Array [],
+              "predictedPhases": Array [],
+              "signalDetections": Array [],
+            }
+          }
+          setYAxisBounds={[Function]}
+          shouldRenderSpectrograms={true}
+          shouldRenderWaveforms={true}
+          showMaskIndicator={true}
+          stationId="station-id"
+          toast={[MockFunction]}
+          toggleExpansion={[MockFunction]}
+          updateMeasureWindow={[MockFunction]}
+          workerRpcs={Array []}
+        >
+          <div
+            className="contentrenderer"
+            onContextMenu={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onMouseMove={[Function]}
+            onMouseUp={[Function]}
+            style={
+              Object {
+                "backgroundColor": "initial",
+              }
+            }
+            tabIndex={0}
+          >
+            <WaveformRenderer
+              canvasRef={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [],
+                    Array [],
+                    Array [],
+                    Array [],
+                    Array [],
+                    Array [],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": Object {
+                        "getBoundingClientRect": [MockFunction] {
+                          "calls": Array [
+                            Array [],
+                            Array [],
+                            Array [],
+                            Array [],
+                          ],
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    Object {
+                      "type": "return",
+                      "value": Object {
+                        "getBoundingClientRect": [MockFunction] {
+                          "calls": Array [
+                            Array [],
+                            Array [],
+                            Array [],
+                            Array [],
+                          ],
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    Object {
+                      "type": "return",
+                      "value": Object {
+                        "getBoundingClientRect": [MockFunction] {
+                          "calls": Array [
+                            Array [],
+                            Array [],
+                            Array [],
+                            Array [],
+                          ],
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    Object {
+                      "type": "return",
+                      "value": Object {
+                        "getBoundingClientRect": [MockFunction] {
+                          "calls": Array [
+                            Array [],
+                            Array [],
+                            Array [],
+                            Array [],
+                          ],
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    Object {
+                      "type": "return",
+                      "value": Object {
+                        "getBoundingClientRect": [MockFunction] {
+                          "calls": Array [
+                            Array [],
+                            Array [],
+                            Array [],
+                            Array [],
+                          ],
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    Object {
+                      "type": "return",
+                      "value": Object {
+                        "getBoundingClientRect": [MockFunction] {
+                          "calls": Array [
+                            Array [],
+                            Array [],
+                            Array [],
+                            Array [],
+                          ],
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    },
+                  ],
+                }
+              }
+              channel={
+                Object {
+                  "id": "channel",
+                  "name": "channel",
+                  "spectrogram": Object {
+                    "data": Array [
+                      Array [
+                        0,
+                        0.5,
+                        1,
+                        1.5,
+                        2,
+                        2.5,
+                      ],
+                    ],
+                    "description": "test spectogram data",
+                    "descriptionLabelColor": "black",
+                    "frequencyStep": 1,
+                    "markers": Object {
+                      "moveableMarkers": Array [
+                        Object {
+                          "color": "RED",
+                          "id": "marker",
+                          "lineStyle": "dashed",
+                          "timeSecs": 50,
+                        },
+                      ],
+                      "selectionWindows": Array [
+                        Object {
+                          "color": "rgba(200,0,0,0.2)",
+                          "endMarker": Object {
+                            "color": "purple",
+                            "id": "marker",
+                            "lineStyle": "dashed",
+                            "timeSecs": 400,
+                          },
+                          "id": "selection",
+                          "isMoveable": true,
+                          "startMarker": Object {
+                            "color": "purple",
+                            "id": "marker",
+                            "lineStyle": "dashed",
+                            "timeSecs": 200,
+                          },
+                        },
+                      ],
+                      "verticalMarkers": Array [
+                        Object {
+                          "color": "lime",
+                          "id": "marker",
+                          "lineStyle": "dashed",
+                          "timeSecs": 5,
+                        },
+                      ],
+                    },
+                    "predictedPhases": Array [
+                      Object {
+                        "color": "red",
+                        "filter": "opacity(.6)",
+                        "id": "predictive",
+                        "isConflicted": false,
+                        "label": "P",
+                        "timeSecs": 515,
+                      },
+                    ],
+                    "signalDetections": Array [
+                      Object {
+                        "color": "red",
+                        "filter": "brightness(1)",
+                        "id": "sd",
+                        "isConflicted": false,
+                        "label": "P",
+                        "timeSecs": 500,
+                      },
+                    ],
+                    "startTimeSecs": 0,
+                    "theoreticalPhaseWindows": Array [
+                      Object {
+                        "color": "red",
+                        "endTimeSecs": 120,
+                        "id": "theoretical-phase",
+                        "label": "TP",
+                        "startTimeSecs": 60,
+                      },
+                    ],
+                    "timeStep": 0.5,
+                  },
+                  "waveform": Object {
+                    "channelSegmentId": "unfiltered",
+                    "channelSegments": Map {
+                      "unfiltered" => Object {
+                        "channelName": "channel",
+                        "channelSegmentBoundaries": Object {
+                          "bottomMax": 154.606635,
+                          "channelAvg": 230.31431241288792,
+                          "channelSegmentId": "unfiltered",
+                          "offset": 307.306593,
+                          "samplesCount": 179980,
+                          "topMax": 307.306593,
+                        },
+                        "dataSegments": Array [
+                          Object {
+                            "color": "dodgerblue",
+                            "data": Object {
+                              "endTimeSecs": 500,
+                              "sampleRate": 1,
+                              "startTimeSecs": 0,
+                              "values": Array [
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10,
+                                11,
+                              ],
+                            },
+                            "displayType": Array [
+                              "SCATTER",
+                            ],
+                            "pointSize": 2,
+                          },
+                        ],
+                        "wfFilterId": "unfiltered",
+                      },
+                    },
+                    "masks": Array [
+                      Object {
+                        "color": "red",
+                        "endTimeSecs": 10,
+                        "id": "mask",
+                        "startTimeSecs": 5,
+                      },
+                    ],
+                  },
+                }
+              }
+              channelName="channel"
+              channelSegmentId="unfiltered"
+              channelSegments={
+                Map {
+                  "unfiltered" => Object {
+                    "channelName": "channel",
+                    "channelSegmentBoundaries": Object {
+                      "bottomMax": 154.606635,
+                      "channelAvg": 230.31431241288792,
+                      "channelSegmentId": "unfiltered",
+                      "offset": 307.306593,
+                      "samplesCount": 179980,
+                      "topMax": 307.306593,
+                    },
+                    "dataSegments": Array [
+                      Object {
+                        "color": "dodgerblue",
+                        "data": Object {
+                          "endTimeSecs": 500,
+                          "sampleRate": 1,
+                          "startTimeSecs": 0,
+                          "values": Array [
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10,
+                            11,
+                          ],
+                        },
+                        "displayType": Array [
+                          "SCATTER",
+                        ],
+                        "pointSize": 2,
+                      },
+                    ],
+                    "wfFilterId": "unfiltered",
+                  },
+                }
+              }
+              color="#4580E6"
+              converters={
+                Object {
+                  "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+                  "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+                  "computeTimeSecsFromMouseXPixels": [MockFunction],
+                }
+              }
+              displayEndTimeSecs={500}
+              displayStartTimeSecs={0}
+              displayType={
+                Array [
+                  "LINE",
+                ]
+              }
+              distance={4}
+              distanceUnits="km"
+              events={
+                Object {
+                  "events": Object {
+                    "onChannelClick": [MockFunction],
+                    "onClickSelectionWindow": [MockFunction],
+                    "onContextMenu": [MockFunction],
+                    "onMaskClick": [MockFunction],
+                    "onMaskContextClick": [MockFunction],
+                    "onMaskCreateDragEnd": [MockFunction],
+                    "onMeasureWindowUpdated": [MockFunction],
+                    "onMoveSelectionWindow": [MockFunction],
+                    "onPredictivePhaseClick": [MockFunction],
+                    "onPredictivePhaseContextMenu": [MockFunction],
+                    "onPredictivePhaseDragEnd": [MockFunction],
+                    "onSignalDetectionClick": [MockFunction],
+                    "onSignalDetectionContextMenu": [MockFunction],
+                    "onSignalDetectionDragEnd": [MockFunction],
+                    "onUpdateMarker": [MockFunction],
+                    "onUpdateSelectionWindow": [MockFunction],
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": [MockFunction],
+                    "onChannelExpanded": [MockFunction],
+                    "onChannelLabelClick": [MockFunction],
+                  },
+                  "onKeyPress": [MockFunction],
+                }
+              }
+              expanded={true}
+              getBoundaries={[MockFunction]}
+              getCanvasBoundingRect={[MockFunction]}
+              getCurrentViewRangeInSeconds={[MockFunction]}
+              getViewRange={[MockFunction]}
+              glMax={100}
+              glMin={0}
+              height={800}
+              index={1}
+              initialConfiguration={
+                Object {
+                  "colorScale": undefined,
+                  "defaultChannel": Object {
+                    "disableMaskModification": false,
+                    "disableMeasureWindow": false,
+                    "disablePreditedPhaseModification": false,
+                    "disableSignalDetectionModification": false,
+                  },
+                  "defaultChannelHeightPx": 50,
+                  "hotKeys": Object {
+                    "amplitudeScale": "KeyS",
+                    "amplitudeScaleReset": "Alt+Shift+KeyS",
+                    "amplitudeScaleSingleReset": "Alt+KeyS",
+                    "drawMeasureWindow": "Alt",
+                    "maskCreate": "KeyM",
+                  },
+                  "labelWidthPx": 184,
+                  "nonDefaultChannel": Object {
+                    "disableMaskModification": false,
+                    "disableMeasureWindow": false,
+                    "disablePreditedPhaseModification": false,
+                    "disableSignalDetectionModification": false,
+                  },
+                  "shouldRenderSpectrograms": true,
+                  "shouldRenderWaveforms": true,
+                  "xAxisLabel": undefined,
+                }
+              }
+              isDefaultChannel={true}
+              isExpandable={true}
+              isMeasureWindow={true}
+              masks={
+                Array [
+                  Object {
+                    "color": "red",
+                    "endTimeSecs": 10,
+                    "id": "mask",
+                    "startTimeSecs": 5,
+                  },
+                ]
+              }
+              offsetSecs={0}
+              onContextMenu={[MockFunction]}
+              onMouseDown={[MockFunction]}
+              onMouseMove={[MockFunction]}
+              onMouseUp={[MockFunction]}
+              pointSize={2}
+              renderWaveforms={[MockFunction]}
+              selections={
+                Object {
+                  "channels": Array [],
+                  "predictedPhases": Array [],
+                  "signalDetections": Array [],
+                }
+              }
+              setYAxisBounds={[Function]}
+              shouldRenderSpectrograms={true}
+              shouldRenderWaveforms={true}
+              showMaskIndicator={true}
+              stationId="station-id"
+              toast={[MockFunction]}
+              toggleExpansion={[MockFunction]}
+              updateMeasureWindow={[MockFunction]}
+              workerRpcs={Array []}
+            />
+            <div
+              className="contentrenderer-content contentrenderer-content--sticky"
+              style={
+                Object {
+                  "width": "calc(100vw - 184)",
+                }
+              }
+            />
+            <div
+              className="contentrenderer-content"
+              style={
+                Object {
+                  "left": 184,
+                  "width": "calc(100% - 184)",
+                }
+              }
+            >
+              <div
+                className="contentrenderer-content-drag-indicator"
+              />
+              <Memo()
+                key="1"
+                onClick={[Function]}
+              >
+                <div
+                  className="measure-window-selection measure-window-selection__container"
+                  style={
+                    Object {
+                      "display": "none",
+                      "transform": "translateX(-50%)",
+                    }
+                  }
+                >
+                  <div
+                    className="measure-window-selection__overlay"
+                    draggable={true}
+                    onDragStart={[Function]}
+                    style={
+                      Object {
+                        "display": "none",
+                        "left": "50%",
+                        "width": "0%",
+                      }
+                    }
+                  />
+                </div>
+              </Memo()>
+              <div
+                className="contentrenderer-content-markers"
+              />
+              <SignalDetections
+                channelId="channel"
+                disableModification={false}
+                displayEndTimeSecs={500}
+                displayStartTimeSecs={0}
+                events={
+                  Object {
+                    "onChannelClick": [MockFunction],
+                    "onClickSelectionWindow": [MockFunction],
+                    "onContextMenu": [MockFunction],
+                    "onMaskClick": [MockFunction],
+                    "onMaskContextClick": [MockFunction],
+                    "onMaskCreateDragEnd": [MockFunction],
+                    "onMeasureWindowUpdated": [MockFunction],
+                    "onMoveSelectionWindow": [MockFunction],
+                    "onPredictivePhaseClick": [MockFunction],
+                    "onPredictivePhaseContextMenu": [MockFunction],
+                    "onPredictivePhaseDragEnd": [MockFunction],
+                    "onSignalDetectionClick": [MockFunction],
+                    "onSignalDetectionContextMenu": [MockFunction],
+                    "onSignalDetectionDragEnd": [MockFunction],
+                    "onUpdateMarker": [MockFunction],
+                    "onUpdateSelectionWindow": [MockFunction],
+                  }
+                }
+                getTimeSecsForClientX={[Function]}
+                isDefaultChannel={true}
+                positionDragIndicator={[Function]}
+                selectedSignalDetections={Array []}
+                stationId="station-id"
+                toast={[MockFunction]}
+                toggleDragIndicator={[Function]}
+              />
+              <PredictedPhases
+                channelId="channel"
+                disableModification={false}
+                displayEndTimeSecs={500}
+                displayStartTimeSecs={0}
+                events={
+                  Object {
+                    "onChannelClick": [MockFunction],
+                    "onClickSelectionWindow": [MockFunction],
+                    "onContextMenu": [MockFunction],
+                    "onMaskClick": [MockFunction],
+                    "onMaskContextClick": [MockFunction],
+                    "onMaskCreateDragEnd": [MockFunction],
+                    "onMeasureWindowUpdated": [MockFunction],
+                    "onMoveSelectionWindow": [MockFunction],
+                    "onPredictivePhaseClick": [MockFunction],
+                    "onPredictivePhaseContextMenu": [MockFunction],
+                    "onPredictivePhaseDragEnd": [MockFunction],
+                    "onSignalDetectionClick": [MockFunction],
+                    "onSignalDetectionContextMenu": [MockFunction],
+                    "onSignalDetectionDragEnd": [MockFunction],
+                    "onUpdateMarker": [MockFunction],
+                    "onUpdateSelectionWindow": [MockFunction],
+                  }
+                }
+                getTimeSecsForClientX={[Function]}
+                isDefaultChannel={true}
+                positionDragIndicator={[Function]}
+                selectedPredictedPhases={Array []}
+                stationId="station-id"
+                toast={[MockFunction]}
+                toggleDragIndicator={[Function]}
+              />
+              <TheoreticalPhases
+                displayEndTimeSecs={500}
+                displayStartTimeSecs={0}
+                events={
+                  Object {
+                    "onChannelClick": [MockFunction],
+                    "onClickSelectionWindow": [MockFunction],
+                    "onContextMenu": [MockFunction],
+                    "onMaskClick": [MockFunction],
+                    "onMaskContextClick": [MockFunction],
+                    "onMaskCreateDragEnd": [MockFunction],
+                    "onMeasureWindowUpdated": [MockFunction],
+                    "onMoveSelectionWindow": [MockFunction],
+                    "onPredictivePhaseClick": [MockFunction],
+                    "onPredictivePhaseContextMenu": [MockFunction],
+                    "onPredictivePhaseDragEnd": [MockFunction],
+                    "onSignalDetectionClick": [MockFunction],
+                    "onSignalDetectionContextMenu": [MockFunction],
+                    "onSignalDetectionDragEnd": [MockFunction],
+                    "onUpdateMarker": [MockFunction],
+                    "onUpdateSelectionWindow": [MockFunction],
+                  }
+                }
+                getTimeSecsForClientX={[Function]}
+                isDefaultChannel={true}
+                positionDragIndicator={[Function]}
+                stationId="station-id"
+                toast={[MockFunction]}
+                toggleDragIndicator={[Function]}
+              />
+            </div>
+          </div>
+        </ContentRenderer>
+      </div>
+    </MeasureWindowSelectionListener>
+    <div
+      className="channel-content-container"
+      style={
+        Object {
+          "borderTop": "1px solid",
+          "height": "400px",
+          "left": "184px",
+          "top": "800px",
+          "width": "calc(100% - 184px)",
+        }
+      }
+    >
+      <ContentRenderer
+        canvasRef={
+          [MockFunction] {
+            "calls": Array [
+              Array [],
+              Array [],
+              Array [],
+              Array [],
+              Array [],
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+              Object {
+                "type": "return",
+                "value": Object {
+                  "getBoundingClientRect": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              },
+            ],
+          }
+        }
+        channel={
+          Object {
+            "id": "channel",
+            "name": "channel",
+            "spectrogram": Object {
+              "data": Array [
+                Array [
+                  0,
+                  0.5,
+                  1,
+                  1.5,
+                  2,
+                  2.5,
+                ],
+              ],
+              "description": "test spectogram data",
+              "descriptionLabelColor": "black",
+              "frequencyStep": 1,
+              "markers": Object {
+                "moveableMarkers": Array [
+                  Object {
+                    "color": "RED",
+                    "id": "marker",
+                    "lineStyle": "dashed",
+                    "timeSecs": 50,
+                  },
+                ],
+                "selectionWindows": Array [
+                  Object {
+                    "color": "rgba(200,0,0,0.2)",
+                    "endMarker": Object {
+                      "color": "purple",
+                      "id": "marker",
+                      "lineStyle": "dashed",
+                      "timeSecs": 400,
+                    },
+                    "id": "selection",
+                    "isMoveable": true,
+                    "startMarker": Object {
+                      "color": "purple",
+                      "id": "marker",
+                      "lineStyle": "dashed",
+                      "timeSecs": 200,
+                    },
+                  },
+                ],
+                "verticalMarkers": Array [
+                  Object {
+                    "color": "lime",
+                    "id": "marker",
+                    "lineStyle": "dashed",
+                    "timeSecs": 5,
+                  },
+                ],
+              },
+              "predictedPhases": Array [
+                Object {
+                  "color": "red",
+                  "filter": "opacity(.6)",
+                  "id": "predictive",
+                  "isConflicted": false,
+                  "label": "P",
+                  "timeSecs": 515,
+                },
+              ],
+              "signalDetections": Array [
+                Object {
+                  "color": "red",
+                  "filter": "brightness(1)",
+                  "id": "sd",
+                  "isConflicted": false,
+                  "label": "P",
+                  "timeSecs": 500,
+                },
+              ],
+              "startTimeSecs": 0,
+              "theoreticalPhaseWindows": Array [
+                Object {
+                  "color": "red",
+                  "endTimeSecs": 120,
+                  "id": "theoretical-phase",
+                  "label": "TP",
+                  "startTimeSecs": 60,
+                },
+              ],
+              "timeStep": 0.5,
+            },
+            "waveform": Object {
+              "channelSegmentId": "unfiltered",
+              "channelSegments": Map {
+                "unfiltered" => Object {
+                  "channelName": "channel",
+                  "channelSegmentBoundaries": Object {
+                    "bottomMax": 154.606635,
+                    "channelAvg": 230.31431241288792,
+                    "channelSegmentId": "unfiltered",
+                    "offset": 307.306593,
+                    "samplesCount": 179980,
+                    "topMax": 307.306593,
+                  },
+                  "dataSegments": Array [
+                    Object {
+                      "color": "dodgerblue",
+                      "data": Object {
+                        "endTimeSecs": 500,
+                        "sampleRate": 1,
+                        "startTimeSecs": 0,
+                        "values": Array [
+                          2,
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                        ],
+                      },
+                      "displayType": Array [
+                        "SCATTER",
+                      ],
+                      "pointSize": 2,
+                    },
+                  ],
+                  "wfFilterId": "unfiltered",
+                },
+              },
+              "masks": Array [
+                Object {
+                  "color": "red",
+                  "endTimeSecs": 10,
+                  "id": "mask",
+                  "startTimeSecs": 5,
+                },
+              ],
+            },
+          }
+        }
+        channelId="channel"
+        color="#4580E6"
+        contentRenderers={Array []}
+        converters={
+          Object {
+            "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+            "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+            "computeTimeSecsFromMouseXPixels": [MockFunction],
+          }
+        }
+        defaultRange={
+          Object {
+            "max": 11,
+            "min": 4,
+          }
+        }
+        description="test spectogram data"
+        descriptionLabelColor="black"
+        disablePredictedPhaseModification={false}
+        disableSignalDetectionModification={false}
+        displayEndTimeSecs={500}
+        displayStartTimeSecs={0}
+        displayType={
+          Array [
+            "LINE",
+          ]
+        }
+        distance={4}
+        distanceUnits="km"
+        events={
+          Object {
+            "onChannelClick": [MockFunction],
+            "onClickSelectionWindow": [MockFunction],
+            "onContextMenu": [MockFunction],
+            "onMaskClick": [MockFunction],
+            "onMaskContextClick": [MockFunction],
+            "onMaskCreateDragEnd": [MockFunction],
+            "onMeasureWindowUpdated": [MockFunction],
+            "onMoveSelectionWindow": [MockFunction],
+            "onPredictivePhaseClick": [MockFunction],
+            "onPredictivePhaseContextMenu": [MockFunction],
+            "onPredictivePhaseDragEnd": [MockFunction],
+            "onSignalDetectionClick": [MockFunction],
+            "onSignalDetectionContextMenu": [MockFunction],
+            "onSignalDetectionDragEnd": [MockFunction],
+            "onUpdateMarker": [MockFunction],
+            "onUpdateSelectionWindow": [MockFunction],
+          }
+        }
+        expanded={true}
+        getBoundaries={[MockFunction]}
+        getCanvasBoundingRect={[MockFunction]}
+        getCurrentViewRangeInSeconds={[MockFunction]}
+        getViewRange={[MockFunction]}
+        glMax={100}
+        glMin={0}
+        height={800}
+        index={1}
+        initialConfiguration={
+          Object {
+            "colorScale": undefined,
+            "defaultChannel": Object {
+              "disableMaskModification": false,
+              "disableMeasureWindow": false,
+              "disablePreditedPhaseModification": false,
+              "disableSignalDetectionModification": false,
+            },
+            "defaultChannelHeightPx": 50,
+            "hotKeys": Object {
+              "amplitudeScale": "KeyS",
+              "amplitudeScaleReset": "Alt+Shift+KeyS",
+              "amplitudeScaleSingleReset": "Alt+KeyS",
+              "drawMeasureWindow": "Alt",
+              "maskCreate": "KeyM",
+            },
+            "labelWidthPx": 184,
+            "nonDefaultChannel": Object {
+              "disableMaskModification": false,
+              "disableMeasureWindow": false,
+              "disablePreditedPhaseModification": false,
+              "disableSignalDetectionModification": false,
+            },
+            "shouldRenderSpectrograms": true,
+            "shouldRenderWaveforms": true,
+            "xAxisLabel": undefined,
+          }
+        }
+        isDefaultChannel={true}
+        isExpandable={true}
+        isMeasureWindow={true}
+        markers={
+          Object {
+            "moveableMarkers": Array [
+              Object {
+                "color": "RED",
+                "id": "marker",
+                "lineStyle": "dashed",
+                "timeSecs": 50,
+              },
+            ],
+            "selectionWindows": Array [
+              Object {
+                "color": "rgba(200,0,0,0.2)",
+                "endMarker": Object {
+                  "color": "purple",
+                  "id": "marker",
+                  "lineStyle": "dashed",
+                  "timeSecs": 400,
+                },
+                "id": "selection",
+                "isMoveable": true,
+                "startMarker": Object {
+                  "color": "purple",
+                  "id": "marker",
+                  "lineStyle": "dashed",
+                  "timeSecs": 200,
+                },
+              },
+            ],
+            "verticalMarkers": Array [
+              Object {
+                "color": "lime",
+                "id": "marker",
+                "lineStyle": "dashed",
+                "timeSecs": 5,
+              },
+            ],
+          }
+        }
+        offsetSecs={0}
+        onContextMenu={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseMove={[Function]}
+        onMouseUp={[Function]}
+        pointSize={2}
+        predictedPhases={
+          Array [
+            Object {
+              "color": "red",
+              "filter": "opacity(.6)",
+              "id": "predictive",
+              "isConflicted": false,
+              "label": "P",
+              "timeSecs": 515,
+            },
+          ]
+        }
+        renderWaveforms={[MockFunction]}
+        selections={
+          Object {
+            "channels": Array [],
+            "predictedPhases": Array [],
+            "signalDetections": Array [],
+          }
+        }
+        setYAxisBounds={[Function]}
+        shouldRenderSpectrograms={true}
+        shouldRenderWaveforms={true}
+        showMaskIndicator={true}
+        signalDetections={
+          Array [
+            Object {
+              "color": "red",
+              "filter": "brightness(1)",
+              "id": "sd",
+              "isConflicted": false,
+              "label": "P",
+              "timeSecs": 500,
+            },
+          ]
+        }
+        stationId="station-id"
+        theoreticalPhaseWindows={
+          Array [
+            Object {
+              "color": "red",
+              "endTimeSecs": 120,
+              "id": "theoretical-phase",
+              "label": "TP",
+              "startTimeSecs": 60,
+            },
+          ]
+        }
+        toast={[MockFunction]}
+        toggleExpansion={[MockFunction]}
+        updateMeasureWindow={[MockFunction]}
+        workerRpcs={Array []}
+      >
+        <div
+          className="contentrenderer"
+          onContextMenu={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseMove={[Function]}
+          onMouseUp={[Function]}
+          style={
+            Object {
+              "backgroundColor": "initial",
+            }
+          }
+          tabIndex={0}
+        >
+          <SpectrogramRenderer
+            canvasRef={
+              [MockFunction] {
+                "calls": Array [
+                  Array [],
+                  Array [],
+                  Array [],
+                  Array [],
+                  Array [],
+                  Array [],
+                ],
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": Object {
+                      "getBoundingClientRect": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  },
+                  Object {
+                    "type": "return",
+                    "value": Object {
+                      "getBoundingClientRect": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  },
+                  Object {
+                    "type": "return",
+                    "value": Object {
+                      "getBoundingClientRect": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  },
+                  Object {
+                    "type": "return",
+                    "value": Object {
+                      "getBoundingClientRect": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  },
+                  Object {
+                    "type": "return",
+                    "value": Object {
+                      "getBoundingClientRect": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  },
+                  Object {
+                    "type": "return",
+                    "value": Object {
+                      "getBoundingClientRect": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  },
+                ],
+              }
+            }
+            channel={
+              Object {
+                "id": "channel",
+                "name": "channel",
+                "spectrogram": Object {
+                  "data": Array [
+                    Array [
+                      0,
+                      0.5,
+                      1,
+                      1.5,
+                      2,
+                      2.5,
+                    ],
+                  ],
+                  "description": "test spectogram data",
+                  "descriptionLabelColor": "black",
+                  "frequencyStep": 1,
+                  "markers": Object {
+                    "moveableMarkers": Array [
+                      Object {
+                        "color": "RED",
+                        "id": "marker",
+                        "lineStyle": "dashed",
+                        "timeSecs": 50,
+                      },
+                    ],
+                    "selectionWindows": Array [
+                      Object {
+                        "color": "rgba(200,0,0,0.2)",
+                        "endMarker": Object {
+                          "color": "purple",
+                          "id": "marker",
+                          "lineStyle": "dashed",
+                          "timeSecs": 400,
+                        },
+                        "id": "selection",
+                        "isMoveable": true,
+                        "startMarker": Object {
+                          "color": "purple",
+                          "id": "marker",
+                          "lineStyle": "dashed",
+                          "timeSecs": 200,
+                        },
+                      },
+                    ],
+                    "verticalMarkers": Array [
+                      Object {
+                        "color": "lime",
+                        "id": "marker",
+                        "lineStyle": "dashed",
+                        "timeSecs": 5,
+                      },
+                    ],
+                  },
+                  "predictedPhases": Array [
+                    Object {
+                      "color": "red",
+                      "filter": "opacity(.6)",
+                      "id": "predictive",
+                      "isConflicted": false,
+                      "label": "P",
+                      "timeSecs": 515,
+                    },
+                  ],
+                  "signalDetections": Array [
+                    Object {
+                      "color": "red",
+                      "filter": "brightness(1)",
+                      "id": "sd",
+                      "isConflicted": false,
+                      "label": "P",
+                      "timeSecs": 500,
+                    },
+                  ],
+                  "startTimeSecs": 0,
+                  "theoreticalPhaseWindows": Array [
+                    Object {
+                      "color": "red",
+                      "endTimeSecs": 120,
+                      "id": "theoretical-phase",
+                      "label": "TP",
+                      "startTimeSecs": 60,
+                    },
+                  ],
+                  "timeStep": 0.5,
+                },
+                "waveform": Object {
+                  "channelSegmentId": "unfiltered",
+                  "channelSegments": Map {
+                    "unfiltered" => Object {
+                      "channelName": "channel",
+                      "channelSegmentBoundaries": Object {
+                        "bottomMax": 154.606635,
+                        "channelAvg": 230.31431241288792,
+                        "channelSegmentId": "unfiltered",
+                        "offset": 307.306593,
+                        "samplesCount": 179980,
+                        "topMax": 307.306593,
+                      },
+                      "dataSegments": Array [
+                        Object {
+                          "color": "dodgerblue",
+                          "data": Object {
+                            "endTimeSecs": 500,
+                            "sampleRate": 1,
+                            "startTimeSecs": 0,
+                            "values": Array [
+                              2,
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                            ],
+                          },
+                          "displayType": Array [
+                            "SCATTER",
+                          ],
+                          "pointSize": 2,
+                        },
+                      ],
+                      "wfFilterId": "unfiltered",
+                    },
+                  },
+                  "masks": Array [
+                    Object {
+                      "color": "red",
+                      "endTimeSecs": 10,
+                      "id": "mask",
+                      "startTimeSecs": 5,
+                    },
+                  ],
+                },
+              }
+            }
+            converters={
+              Object {
+                "computeFractionOfCanvasFromMouseXPx": [MockFunction],
+                "computeTimeSecsForMouseXFractionalPosition": [MockFunction],
+                "computeTimeSecsFromMouseXPixels": [MockFunction],
+              }
+            }
+            data={
+              Array [
+                Array [
+                  0,
+                  0.5,
+                  1,
+                  1.5,
+                  2,
+                  2.5,
+                ],
+              ]
+            }
+            defaultRange={
+              Object {
+                "max": 11,
+                "min": 4,
+              }
+            }
+            displayEndTimeSecs={500}
+            displayStartTimeSecs={0}
+            distance={4}
+            distanceUnits="km"
+            events={
+              Object {
+                "events": Object {
+                  "onChannelClick": [MockFunction],
+                  "onClickSelectionWindow": [MockFunction],
+                  "onContextMenu": [MockFunction],
+                  "onMaskClick": [MockFunction],
+                  "onMaskContextClick": [MockFunction],
+                  "onMaskCreateDragEnd": [MockFunction],
+                  "onMeasureWindowUpdated": [MockFunction],
+                  "onMoveSelectionWindow": [MockFunction],
+                  "onPredictivePhaseClick": [MockFunction],
+                  "onPredictivePhaseContextMenu": [MockFunction],
+                  "onPredictivePhaseDragEnd": [MockFunction],
+                  "onSignalDetectionClick": [MockFunction],
+                  "onSignalDetectionContextMenu": [MockFunction],
+                  "onSignalDetectionDragEnd": [MockFunction],
+                  "onUpdateMarker": [MockFunction],
+                  "onUpdateSelectionWindow": [MockFunction],
+                },
+                "labelEvents": Object {
+                  "onChannelCollapsed": [MockFunction],
+                  "onChannelExpanded": [MockFunction],
+                  "onChannelLabelClick": [MockFunction],
+                },
+                "onKeyPress": [MockFunction],
+              }
+            }
+            expanded={true}
+            frequencyStep={1}
+            getBoundaries={[MockFunction]}
+            getCanvasBoundingRect={[MockFunction]}
+            getCurrentViewRangeInSeconds={[MockFunction]}
+            getViewRange={[MockFunction]}
+            glMax={100}
+            glMin={0}
+            height={800}
+            index={1}
+            initialConfiguration={
+              Object {
+                "colorScale": undefined,
+                "defaultChannel": Object {
+                  "disableMaskModification": false,
+                  "disableMeasureWindow": false,
+                  "disablePreditedPhaseModification": false,
+                  "disableSignalDetectionModification": false,
+                },
+                "defaultChannelHeightPx": 50,
+                "hotKeys": Object {
+                  "amplitudeScale": "KeyS",
+                  "amplitudeScaleReset": "Alt+Shift+KeyS",
+                  "amplitudeScaleSingleReset": "Alt+KeyS",
+                  "drawMeasureWindow": "Alt",
+                  "maskCreate": "KeyM",
+                },
+                "labelWidthPx": 184,
+                "nonDefaultChannel": Object {
+                  "disableMaskModification": false,
+                  "disableMeasureWindow": false,
+                  "disablePreditedPhaseModification": false,
+                  "disableSignalDetectionModification": false,
+                },
+                "shouldRenderSpectrograms": true,
+                "shouldRenderWaveforms": true,
+                "xAxisLabel": undefined,
+              }
+            }
+            isDefaultChannel={true}
+            isExpandable={true}
+            isMeasureWindow={true}
+            offsetSecs={0}
+            onContextMenu={[MockFunction]}
+            onMouseDown={[MockFunction]}
+            onMouseMove={[MockFunction]}
+            onMouseUp={[MockFunction]}
+            renderWaveforms={[MockFunction]}
+            selections={
+              Object {
+                "channels": Array [],
+                "predictedPhases": Array [],
+                "signalDetections": Array [],
+              }
+            }
+            setYAxisBounds={[Function]}
+            shouldRenderSpectrograms={true}
+            shouldRenderWaveforms={true}
+            showMaskIndicator={true}
+            startTimeSecs={0}
+            stationId="station-id"
+            timeStep={0.5}
+            toast={[MockFunction]}
+            toggleExpansion={[MockFunction]}
+            updateMeasureWindow={[MockFunction]}
+            workerRpcs={Array []}
+          />
+          <div
+            className="contentrenderer-content contentrenderer-content--sticky"
+            style={
+              Object {
+                "width": "calc(100vw - 184)",
+              }
+            }
+          >
+            <div
+              className="contentrenderer-content-description-label"
+              data-cy="filtered-channel-label"
+              data-cy-color="black"
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
+            >
+              <span
+                className="contentrenderer-content__description"
+              >
+                test spectogram data
+              </span>
+            </div>
+          </div>
+          <div
+            className="contentrenderer-content"
+            style={
+              Object {
+                "left": 184,
+                "width": "calc(100% - 184)",
+              }
+            }
+          >
+            <div
+              className="contentrenderer-content-drag-indicator"
+            />
+            <div
+              className="contentrenderer-content-markers"
+            >
+              <VerticalMarker
+                color="lime"
+                key="vertical_marker_marker"
+                lineStyle="dashed"
+                percentageLocation={1}
+              >
+                <div
+                  className="vertical-marker"
+                  data-cy="weavess-static-vertical-marker"
+                  data-cy-color="lime"
+                  data-cy-left="1"
+                  style={
+                    Object {
+                      "border": "1px dashed lime",
+                      "left": "calc(1% - 1px)",
+                    }
+                  }
+                />
+              </VerticalMarker>
+              <MoveableMarker
+                containerClientWidth={[Function]}
+                key="moveable_marker_marker"
+                labelWidthPx={0}
+                marker={
+                  Object {
+                    "color": "RED",
+                    "id": "marker",
+                    "lineStyle": "dashed",
+                    "timeSecs": 50,
+                  }
+                }
+                onUpdateMarker={[Function]}
+                percentageLocation={10}
+                timeRange={[Function]}
+                viewTimeRange={[MockFunction]}
+                viewportClientWidth={[Function]}
+              >
+                <div
+                  className="moveable-marker"
+                  onMouseDown={[Function]}
+                  style={
+                    Object {
+                      "border": ".5px dashed RED",
+                      "left": "10%",
+                    }
+                  }
+                />
+              </MoveableMarker>
+              <SelectionWindow
+                canvasRef={[Function]}
+                computeTimeSecsForMouseXPosition={[MockFunction]}
+                containerClientWidth={[Function]}
+                key="selection_window_selection"
+                labelWidthPx={0}
+                onClickSelectionWindow={[Function]}
+                onMouseDown={[Function]}
+                onMouseMove={[Function]}
+                onMouseUp={[Function]}
+                onMoveSelectionWindow={[Function]}
+                onUpdateSelectionWindow={[Function]}
+                selectionWindow={
+                  Object {
+                    "color": "rgba(200,0,0,0.2)",
+                    "endMarker": Object {
+                      "color": "purple",
+                      "id": "marker",
+                      "lineStyle": "dashed",
+                      "timeSecs": 400,
+                    },
+                    "id": "selection",
+                    "isMoveable": true,
+                    "startMarker": Object {
+                      "color": "purple",
+                      "id": "marker",
+                      "lineStyle": "dashed",
+                      "timeSecs": 200,
+                    },
+                  }
+                }
+                timeRange={[Function]}
+                viewTimeRange={[MockFunction]}
+                viewportClientWidth={[Function]}
+              >
+                <div
+                  className="selection-window"
+                  onMouseDown={[Function]}
+                  onMouseMove={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <div
+                    className="selection-window-selection"
+                    onDoubleClick={[Function]}
+                    onMouseDown={[Function]}
+                    style={
+                      Object {
+                        "backgroundColor": "rgba(200,0,0,0.2)",
+                        "cursor": "move",
+                        "left": "40%",
+                        "right": "20%",
+                      }
+                    }
+                  />
+                  <MoveableMarker
+                    associatedEndMarker={
+                      Object {
+                        "color": "purple",
+                        "id": "marker",
+                        "lineStyle": "dashed",
+                        "timeSecs": 400,
+                      }
+                    }
+                    containerClientWidth={[Function]}
+                    labelWidthPx={0}
+                    marker={
+                      Object {
+                        "color": "purple",
+                        "id": "marker",
+                        "lineStyle": "dashed",
+                        "timeSecs": 200,
+                      }
+                    }
+                    name="moveable-marker-start"
+                    onUpdateMarker={[Function]}
+                    percentageLocation={40}
+                    timeRange={[Function]}
+                    updateTimeWindowSelection={[Function]}
+                    viewTimeRange={[MockFunction]}
+                    viewportClientWidth={[Function]}
+                  >
+                    <div
+                      className="moveable-marker"
+                      key="moveable-marker-start"
+                      onMouseDown={[Function]}
+                      style={
+                        Object {
+                          "border": ".5px dashed purple",
+                          "left": "40%",
+                        }
+                      }
+                    />
+                  </MoveableMarker>
+                  <MoveableMarker
+                    associatedStartMarker={
+                      Object {
+                        "color": "purple",
+                        "id": "marker",
+                        "lineStyle": "dashed",
+                        "timeSecs": 200,
+                      }
+                    }
+                    containerClientWidth={[Function]}
+                    labelWidthPx={0}
+                    marker={
+                      Object {
+                        "color": "purple",
+                        "id": "marker",
+                        "lineStyle": "dashed",
+                        "timeSecs": 400,
+                      }
+                    }
+                    name="moveable-marker-end"
+                    onUpdateMarker={[Function]}
+                    percentageLocation={80}
+                    timeRange={[Function]}
+                    updateTimeWindowSelection={[Function]}
+                    viewTimeRange={[MockFunction]}
+                    viewportClientWidth={[Function]}
+                  >
+                    <div
+                      className="moveable-marker"
+                      key="moveable-marker-end"
+                      onMouseDown={[Function]}
+                      style={
+                        Object {
+                          "border": ".5px dashed purple",
+                          "left": "80%",
+                        }
+                      }
+                    />
+                  </MoveableMarker>
+                </div>
+              </SelectionWindow>
+            </div>
+            <SignalDetections
+              channelId="channel"
+              disableModification={false}
+              displayEndTimeSecs={500}
+              displayStartTimeSecs={0}
+              events={
+                Object {
+                  "onChannelClick": [MockFunction],
+                  "onClickSelectionWindow": [MockFunction],
+                  "onContextMenu": [MockFunction],
+                  "onMaskClick": [MockFunction],
+                  "onMaskContextClick": [MockFunction],
+                  "onMaskCreateDragEnd": [MockFunction],
+                  "onMeasureWindowUpdated": [MockFunction],
+                  "onMoveSelectionWindow": [MockFunction],
+                  "onPredictivePhaseClick": [MockFunction],
+                  "onPredictivePhaseContextMenu": [MockFunction],
+                  "onPredictivePhaseDragEnd": [MockFunction],
+                  "onSignalDetectionClick": [MockFunction],
+                  "onSignalDetectionContextMenu": [MockFunction],
+                  "onSignalDetectionDragEnd": [MockFunction],
+                  "onUpdateMarker": [MockFunction],
+                  "onUpdateSelectionWindow": [MockFunction],
+                }
+              }
+              getTimeSecsForClientX={[Function]}
+              isDefaultChannel={true}
+              positionDragIndicator={[Function]}
+              selectedSignalDetections={Array []}
+              signalDetections={
+                Array [
+                  Object {
+                    "color": "red",
+                    "filter": "brightness(1)",
+                    "id": "sd",
+                    "isConflicted": false,
+                    "label": "P",
+                    "timeSecs": 500,
+                  },
+                ]
+              }
+              stationId="station-id"
+              toast={[MockFunction]}
+              toggleDragIndicator={[Function]}
+            >
+              <PickMarker
+                channelId="channel"
+                color="red"
+                disableModification={false}
+                endTimeSecs={500}
+                filter="brightness(1)"
+                getTimeSecsForClientX={[Function]}
+                id="sd"
+                isConflicted={false}
+                isSelected={false}
+                key="sd"
+                label="P"
+                onClick={[MockFunction]}
+                onContextMenu={[MockFunction]}
+                onDragEnd={[MockFunction]}
+                position={100}
+                positionDragIndicator={[Function]}
+                predicted={false}
+                startTimeSecs={0}
+                timeSecs={500}
+                toast={[MockFunction]}
+                toggleDragIndicator={[Function]}
+              >
+                <div
+                  className="pick-marker"
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <div
+                    className="pick-marker-pick"
+                    data-cy-predicted="pick-marker-pick-predicted-false"
+                    style={
+                      Object {
+                        "borderLeft": "1.5px solid red",
+                        "bottom": "55%",
+                        "boxShadow": "initial",
+                        "filter": "brightness(1)",
+                        "left": "100%",
+                        "top": "10%",
+                      }
+                    }
+                  />
+                  <div
+                    className="pick-marker-label"
+                    data-cy="pick-marker-sd"
+                    data-cy-color="pick-marker-red"
+                    data-cy-is-predicted-phase={false}
+                    data-cy-phase="P"
+                    data-cy-style-left={100}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    style={
+                      Object {
+                        "bottom": "initial",
+                        "color": "red",
+                        "cursor": "pointer",
+                        "filter": "brightness(1)",
+                        "left": "calc(4px + 100%)",
+                        "top": "10%",
+                      }
+                    }
+                  >
+                    P
+                  </div>
+                </div>
+              </PickMarker>
+            </SignalDetections>
+            <PredictedPhases
+              channelId="channel"
+              disableModification={false}
+              displayEndTimeSecs={500}
+              displayStartTimeSecs={0}
+              events={
+                Object {
+                  "onChannelClick": [MockFunction],
+                  "onClickSelectionWindow": [MockFunction],
+                  "onContextMenu": [MockFunction],
+                  "onMaskClick": [MockFunction],
+                  "onMaskContextClick": [MockFunction],
+                  "onMaskCreateDragEnd": [MockFunction],
+                  "onMeasureWindowUpdated": [MockFunction],
+                  "onMoveSelectionWindow": [MockFunction],
+                  "onPredictivePhaseClick": [MockFunction],
+                  "onPredictivePhaseContextMenu": [MockFunction],
+                  "onPredictivePhaseDragEnd": [MockFunction],
+                  "onSignalDetectionClick": [MockFunction],
+                  "onSignalDetectionContextMenu": [MockFunction],
+                  "onSignalDetectionDragEnd": [MockFunction],
+                  "onUpdateMarker": [MockFunction],
+                  "onUpdateSelectionWindow": [MockFunction],
+                }
+              }
+              getTimeSecsForClientX={[Function]}
+              isDefaultChannel={true}
+              positionDragIndicator={[Function]}
+              predictedPhases={
+                Array [
+                  Object {
+                    "color": "red",
+                    "filter": "opacity(.6)",
+                    "id": "predictive",
+                    "isConflicted": false,
+                    "label": "P",
+                    "timeSecs": 515,
+                  },
+                ]
+              }
+              selectedPredictedPhases={Array []}
+              stationId="station-id"
+              toast={[MockFunction]}
+              toggleDragIndicator={[Function]}
+            >
+              <PickMarker
+                channelId="channel"
+                color="red"
+                disableModification={false}
+                endTimeSecs={500}
+                filter="opacity(.6)"
+                getTimeSecsForClientX={[Function]}
+                id="predictive"
+                isConflicted={false}
+                isSelected={false}
+                key="predictive"
+                label="P"
+                onClick={[MockFunction]}
+                onContextMenu={[MockFunction]}
+                onDragEnd={[MockFunction]}
+                position={103}
+                positionDragIndicator={[Function]}
+                predicted={true}
+                startTimeSecs={0}
+                timeSecs={515}
+                toast={[MockFunction]}
+                toggleDragIndicator={[Function]}
+              >
+                <div
+                  className="pick-marker"
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <div
+                    className="pick-marker-pick"
+                    data-cy-predicted="pick-marker-pick-predicted-true"
+                    style={
+                      Object {
+                        "borderLeft": "1.5px solid red",
+                        "bottom": "10%",
+                        "boxShadow": "initial",
+                        "filter": "opacity(.6)",
+                        "left": "103%",
+                        "top": "55%",
+                      }
+                    }
+                  />
+                  <div
+                    className="pick-marker-label"
+                    data-cy="pick-marker-predictive"
+                    data-cy-color="pick-marker-red"
+                    data-cy-is-predicted-phase={true}
+                    data-cy-phase="P"
+                    data-cy-style-left={103}
+                    onClick={[Function]}
+                    onContextMenu={[Function]}
+                    style={
+                      Object {
+                        "bottom": "10%",
+                        "color": "red",
+                        "cursor": "pointer",
+                        "filter": "opacity(.6)",
+                        "left": "calc(4px + 103%)",
+                        "top": "initial",
+                      }
+                    }
+                  >
+                    P
+                  </div>
+                </div>
+              </PickMarker>
+            </PredictedPhases>
+            <TheoreticalPhases
+              displayEndTimeSecs={500}
+              displayStartTimeSecs={0}
+              events={
+                Object {
+                  "onChannelClick": [MockFunction],
+                  "onClickSelectionWindow": [MockFunction],
+                  "onContextMenu": [MockFunction],
+                  "onMaskClick": [MockFunction],
+                  "onMaskContextClick": [MockFunction],
+                  "onMaskCreateDragEnd": [MockFunction],
+                  "onMeasureWindowUpdated": [MockFunction],
+                  "onMoveSelectionWindow": [MockFunction],
+                  "onPredictivePhaseClick": [MockFunction],
+                  "onPredictivePhaseContextMenu": [MockFunction],
+                  "onPredictivePhaseDragEnd": [MockFunction],
+                  "onSignalDetectionClick": [MockFunction],
+                  "onSignalDetectionContextMenu": [MockFunction],
+                  "onSignalDetectionDragEnd": [MockFunction],
+                  "onUpdateMarker": [MockFunction],
+                  "onUpdateSelectionWindow": [MockFunction],
+                }
+              }
+              getTimeSecsForClientX={[Function]}
+              isDefaultChannel={true}
+              positionDragIndicator={[Function]}
+              stationId="station-id"
+              theoreticalPhaseWindows={
+                Array [
+                  Object {
+                    "color": "red",
+                    "endTimeSecs": 120,
+                    "id": "theoretical-phase",
+                    "label": "TP",
+                    "startTimeSecs": 60,
+                  },
+                ]
+              }
+              toast={[MockFunction]}
+              toggleDragIndicator={[Function]}
+            >
+              <TheoreticalPhaseWindow
+                color="red"
+                id="theoretical-phase"
+                key="theoretical-phase"
+                label="TP"
+                left={12}
+                right={76}
+              >
+                <div
+                  className="theoretical-phase-window"
+                >
+                  <div
+                    className="theoretical-phase-window-selection"
+                    style={
+                      Object {
+                        "backgroundColor": "red",
+                        "left": "12%",
+                        "right": "76%",
+                      }
+                    }
+                  />
+                  <div
+                    className="theoretical-phase-window-label"
+                    style={
+                      Object {
+                        "color": "red",
+                        "left": "12%",
+                        "right": "76%",
+                      }
+                    }
+                  >
+                    TP
+                  </div>
+                </div>
+              </TheoreticalPhaseWindow>
+            </TheoreticalPhases>
+          </div>
+        </div>
+      </ContentRenderer>
+    </div>
+  </div>
+</Channel>
+`;

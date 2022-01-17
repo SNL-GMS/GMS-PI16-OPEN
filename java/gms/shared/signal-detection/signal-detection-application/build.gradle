@@ -1,0 +1,31 @@
+plugins {
+    id "application"
+    id 'com.palantir.docker'
+}
+
+mainClassName = "gms.shared.signaldetection.application.SignalDetectionApplication"
+
+dependencies {
+    // Google AutoValue
+    implementation "com.google.auto.value:auto-value-annotations"
+    annotationProcessor "com.google.auto.value:auto-value"
+    implementation project(":frameworks-service-generator")
+    implementation project(':frameworks-configuration-repository')
+    implementation project(':frameworks-configuration-commonobjects')
+    implementation project(':frameworks-control')
+    implementation project(':signal-detection-api')
+    implementation project(':signal-detection-accessor')
+
+    // Logback for Structured Logging
+    implementation 'ch.qos.logback:logback-classic'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation project(':structured-logging')
+    // unit testing dependencies
+    testImplementation project(":frameworks-test-utilities")
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    testImplementation 'org.mockito:mockito-core'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+}

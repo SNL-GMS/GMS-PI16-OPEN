@@ -1,0 +1,30 @@
+plugins {
+    id 'application'
+    id 'com.palantir.docker'
+}
+
+mainClassName = "gms.shared.workflow.WorkflowApplication"
+
+dependencies {
+    implementation project(':bridge-utilities')
+    implementation project(':workflow-accessor')
+    implementation project(':workflow-repository')
+    implementation project(':workflow-coi')
+    implementation project(':workflow-api')
+    implementation project(':frameworks-control')
+    implementation project(':frameworks-osd-api')
+    implementation project(":frameworks-service-generator")
+    implementation project(":frameworks-service-interface-base")
+    implementation project(":system-events")
+    // Logback for Structured Logging
+    implementation project(':structured-logging')
+
+    implementation 'com.google.guava:guava'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // Kafka
+    implementation 'org.apache.kafka:kafka-clients'
+
+    testImplementation project(':test-utils')
+}

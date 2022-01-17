@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Moveable Marker renders 1`] = `
+<MoveableMarker
+  associatedEndMarker={
+    Object {
+      "color": "ffffff",
+      "id": "assoc-end-marker",
+      "lineStyle": "dashed",
+      "maxTimeSecsConstraint": 700,
+      "minTimeSecsConstraint": 400,
+      "timeSecs": 650,
+    }
+  }
+  associatedStartMarker={
+    Object {
+      "color": "ffff00",
+      "id": "assoc-start-marker",
+      "lineStyle": "dashed",
+      "maxTimeSecsConstraint": 100,
+      "minTimeSecsConstraint": 5,
+      "timeSecs": 8,
+    }
+  }
+  containerClientWidth={[Function]}
+  labelWidthPx={10}
+  marker={
+    Object {
+      "color": "ff0000",
+      "id": "my-marker",
+      "lineStyle": "dashed",
+      "maxTimeSecsConstraint": 600,
+      "minTimeSecsConstraint": 15,
+      "timeSecs": 200,
+    }
+  }
+  percentageLocation={80}
+  timeRange={[Function]}
+  viewTimeRange={[Function]}
+  viewportClientWidth={[Function]}
+>
+  <div
+    className="moveable-marker"
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "border": ".5px dashed ff0000",
+        "left": "80%",
+      }
+    }
+  />
+</MoveableMarker>
+`;
+
+exports[`Weavess Moveable Marker shallow renders 1`] = `
+<div
+  className="moveable-marker"
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "border": ".5px dashed ff0000",
+      "left": "80%",
+    }
+  }
+/>
+`;

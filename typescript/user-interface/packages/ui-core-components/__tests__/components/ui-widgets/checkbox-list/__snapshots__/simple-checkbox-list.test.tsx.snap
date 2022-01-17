@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleCheckboxList is exported and renders with empty checkBoxListEntries 1`] = `
+<div
+  className="checkbox-list__body"
+/>
+`;
+
+exports[`SimpleCheckboxList renders with checkBoxListEntries 1`] = `
+<div
+  className="checkbox-list__body"
+>
+  <div
+    className="checkbox-list__row"
+  >
+    <div
+      className="checkbox-list__box-and-label"
+    >
+      <Blueprint3.Checkbox
+        checked={true}
+        className="checkbox-list__checkbox"
+        data-cy="checkbox-item-Station 0"
+        onChange={[Function]}
+      >
+        <div
+          className="checkbox-list__label"
+        >
+          Station 0
+        </div>
+      </Blueprint3.Checkbox>
+    </div>
+  </div>
+  <div
+    className="checkbox-list__row"
+  >
+    <div
+      className="checkbox-list__box-and-label"
+    >
+      <Blueprint3.Checkbox
+        checked={false}
+        className="checkbox-list__checkbox"
+        data-cy="checkbox-item-Station 1"
+        onChange={[Function]}
+      >
+        <div
+          className="checkbox-list__label"
+        >
+          Station 1
+        </div>
+      </Blueprint3.Checkbox>
+    </div>
+  </div>
+  <div
+    className="checkbox-list__row"
+  >
+    <div
+      className="checkbox-list__box-and-label"
+    >
+      <Blueprint3.Checkbox
+        checked={true}
+        className="checkbox-list__checkbox"
+        data-cy="checkbox-item-Station 2"
+        onChange={[Function]}
+      >
+        <div
+          className="checkbox-list__label"
+        >
+          Station 2
+        </div>
+      </Blueprint3.Checkbox>
+    </div>
+  </div>
+</div>
+`;

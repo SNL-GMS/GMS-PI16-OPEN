@@ -1,0 +1,226 @@
+# imageRegistry is the Docker image registry URL where all images will be retrieved.
+#imageRegistry: docker-registry.example.com
+
+# baseDomain specifies the domain name suffix applied to all Ingress hostnames.
+#baseDomain: cluster.example.com
+
+# imageTag is the Docker image tag used when retrieving all CI-built images.
+imageTag: develop
+
+# imagePullPolicy is the policy used for all images ('Always', 'IfNotPresent', 'Never').
+imagePullPolicy: Always
+
+global: {}
+  #imageRegistry: docker-registry.example.com
+  #imageTag: develop
+
+# user specifices the username of the user installing or upgrading the instance.
+#user: UNKNOWN
+
+# env specifies environment variables that will be added to all applications.
+env: {}
+
+# global constraint flags
+globalConstrainCpu: false
+globalConstrainMemory: false
+
+# default resource limits
+cpu_default: 2
+cpu_min: "100m"
+cpu_max: 4
+cpu_request: "100m"
+memory_default: "1Gi"
+memory_request: "256Mi"
+
+# Default PersistentVolumeClaim storage class.
+# Note that kafka's storageClass is configured independently below in the kafka section.
+storageClassName: "local-path"
+
+# hostPath volume mounts are used to provide containers access to waveform and
+# response files accessible from the Kubernetes worker nodes.
+bridgeWaveforms:
+  hostPath: "/data/bridge-waveforms"
+  containerPath: "/data/bridge-waveforms"
+bridgeResponses:
+  hostPath: "/data/bridge-responses"
+  containerPath: "/data/bridge-responses"
+
+#
+# App definitions
+#
+
+bastion:
+  imageName: "gms-common/bastion"
+  replicas: 1
+  env:
+    TNS_ADMIN: /opt/gms/bastion/oracle-wallet
+    WALLET_APP_NAME: bastion
+
+cache-service:
+  imageName: "gms-common/cache-service"
+  replicas: 0
+
+config-loader:
+  imageName: "gms-common/config-loader"
+  replicas: 1
+  storageSize: "100Mi"
+
+etcd:
+  imageName: "gms-common/etcd"
+  replicas: 1
+
+frameworks-configuration-service:
+  imageName: "gms-common/frameworks-configuration-service"
+  replicas: 1
+
+frameworks-osd-service:
+  imageName: "gms-common/frameworks-osd-service"
+  replicas: 1
+
+interactive-analysis-ui:
+  imageName: "gms-common/interactive-analysis-ui"
+  replicas: 1
+  restartAfterReconfig: true
+  env:
+    GMS_UI_MODE: "ian"
+    NODE_ENV: "production"
+    PROCESSING_CONFIGURATION_PROXY_URI: "http://ui-processing-configuration-service:8080"
+    RIG_URI: "http://reactive-interaction-gateway:4000"
+    RIG_WS_URI: "ws://reactive-interaction-gateway:4000"
+    STATION_DEFINITION_PROXY_URI: "http://station-definition-service:8080"
+    MOCK_WAVEFORM_PROXY_URI: "http://mock-waveform-service:8080"
+    USER_MANAGER_PROXY_URI: "http://user-manager-service:8080"
+    WAVEFORM_MANAGER_PROXY_URI: "http://waveform-manager-service:8080"
+    WORKFLOW_MANAGER_PROXY_URI: "http://workflow-manager-service:8080"
+    MOCK_WORKFLOW_PROXY_URI: "http://mock-workflow-service:8080"
+    URL_PATH: "{{ .appName }}"
+
+javadoc:
+  imageName: "gms-common/javadoc_server"
+  replicas: 1
+
+mock-data-server:
+  imageName: "gms-common/mock-data-server"
+  replicas: 0
+
+# kafka is a subchart
+kafka:
+  image:
+    repository: gms-common/bitnami-kafka
+    pullPolicy: Always
+  fullnameOverride: kafka
+  persistence:
+    storageClass: local-path
+  logRetentionHours: 6
+  zookeeper:
+    image:
+      repository: gms-common/bitnami-zookeeper
+      pullPolicy: Always
+    fullnameOverride: zookeeper
+    persistence:
+      storageClass: local-path
+  extraEnvVars:
+    - name: KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE
+      value: "true"
+
+postgresql-exporter:
+  imageName: "gms-common/postgres-exporter"
+  replicas: 1
+  env:
+    DATA_SOURCE_URI: "postgresql-gms:5432/gms?sslmode=disable"
+
+postgresql-gms:
+  imageName: "gms-common/postgres"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "10Gi"
+  node: "node1"
+  env:
+    POSTGRES_DB: "gms"
+
+prometheus:
+  imageName: "gms-common/instance-prometheus"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "10Gi"
+  env:
+    G_HOST: "grafana.grafana"
+    G_PORT: "80"
+    G_ADMIN_PASS:  "someString"
+    G_WAIT: "360"
+    G_SLEEP: "10m"
+    PROM_CONFIG_FILE: "/etc/prometheus/prometheus.yml"
+    PROM_NAME: "prometheus.{{ .Release.Name }}"
+    PROM_URL: "prometheus.{{ .Release.Name }}"
+    PROM_LOG_LEVEL: "info"
+
+# reactive-interaction-gateway is a subchart
+reactive-interaction-gateway:
+  imageName: gms-common/reactive-interaction-gateway
+  replicaCount: 1
+  image:
+    pullPolicy: Always
+  fullnameOverride: reactive-interaction-gateway
+  # nodeSelector:
+  #   type: backend
+  deployment:
+    env:
+      # TODO Remove LOG_LEVEL  when subscription work is done (hopefully by sprint 3)
+      LOG_LEVEL: "debug"
+      CORS: "*"
+      # The broker name is from helm install experiment. AFAIK, it look doesn't looke like
+      # there is way to create kafka broker using {{ .Release.Name }}-kafka:9092 which would be ideal.
+      # Instead, use the "--set" flag as specified in the README.
+      KAFKA_BROKERS: "kafka:9092"
+      KAFKA_SOURCE_TOPICS: "system-event"
+      #PROXY_CONFIG_FILE: "/etc/rig/config.json"
+
+signal-detection-manager-service:
+  imageName: "gms-common/signal-detection-application"
+  replicas: 1
+  restartAfterReconfig: true
+  env:
+    WALLET_APP_NAME: signal-detection-application
+
+station-definition-service:
+  imageName: "gms-common/station-definition-application"
+  replicas: 1
+  restartAfterReconfig: true
+  env:
+    WALLET_APP_NAME: station-definition-application
+
+mock-waveform-service:
+  imageName: "gms-common/mock-waveform-application"
+  replicas: 0
+
+mock-workflow-service:
+  imageName: "gms-common/mock-workflow-manager"
+  replicas: 0
+
+swagger:
+  imageName: "gms-common/swagger-gms"
+  replicas: 1
+  env:
+    BASE_URL: /swagger
+
+ui-processing-configuration-service:
+  imageName: "gms-common/ui-processing-configuration-service"
+  replicas: 1
+  restartAfterReconfig: true
+
+user-manager-service:
+  imageName: "gms-common/user-manager-application"
+  replicas: 1
+  restartAfterReconfig: true
+
+waveform-manager-service:
+  imageName: "gms-common/waveform-manager-application"
+  replicas: 1
+  restartAfterReconfig: true
+  env:
+    WALLET_APP_NAME: waveform-manager-application
+
+workflow-manager-service:
+  imageName: "gms-common/workflow-manager"
+  replicas: 1
+  restartAfterReconfig: true

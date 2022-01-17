@@ -1,0 +1,47 @@
+{{- $appName := "bastion" }}
+{{- $appValues := get .Values $appName }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+  labels:
+    restartAfterReconfig: {{ include "sb.deployment.restartAfterReconfig" (dict "Values" .Values "appValues" $appValues) }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  strategy:
+    type: {{ include "sb.deployment.strategy" (dict "Values" .Values "appValues" $appValues) }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      serviceAccount: gms-sb-elevated
+      volumes:
+        - name: oracle-wallet
+          secret:
+            secretName: oracle-wallet
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "sb.container.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          volumeMounts:
+            - name: oracle-wallet
+              mountPath: /opt/gms/bastion/oracle-wallet
+              readOnly: true
+          env:
+            - name: GMS_CONFIG_SQL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-read-only"
+                  key: username
+            - name: GMS_CONFIG_SQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-read-only"
+                  key: password
+            {{- include "sb.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+          {{- include "sb.container.resources" (dict "Values" .Values "appValues" $appValues) | nindent 10 }}

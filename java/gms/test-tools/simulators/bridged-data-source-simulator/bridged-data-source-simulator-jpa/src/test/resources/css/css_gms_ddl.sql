@@ -1,0 +1,397 @@
+---- MAIN CSS DDL
+
+CREATE SCHEMA IF NOT EXISTS GMS_GLOBAL AUTHORIZATION GMS_GLOBAL;
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.AFFILIATION
+(
+    NET VARCHAR2(8) not null,
+    STA VARCHAR2(6) not null,
+    TIME FLOAT(53) not null,
+    ENDTIME FLOAT(53) not null,
+    LDDATE DATE not null,
+    constraint AFFILIATION_PK
+        primary key (NET, STA, TIME)
+);
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.INSTRUMENT
+(
+    INID NUMBER(18) not null
+        constraint INSTRUMENT_PK
+            primary key,
+    INSNAME VARCHAR2(50),
+    INSTYPE VARCHAR2(6),
+    BAND VARCHAR2(1),
+    DIGITAL VARCHAR2(1),
+    SAMPRATE FLOAT(24),
+    NCALIB FLOAT(24),
+    NCALPER FLOAT(24),
+    DIR VARCHAR2(64),
+    DFILE VARCHAR2(32),
+    RSPTYPE VARCHAR2(1000),
+    LDDATE DATE
+);
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.SENSOR
+(
+    STA VARCHAR2(6) not null,
+    CHAN VARCHAR2(8) not null,
+    TIME FLOAT(53) not null,
+    ENDTIME FLOAT(53) not null,
+    INID NUMBER(18),
+    CHANID NUMBER(18),
+    JDATE NUMBER(8),
+    CALRATIO FLOAT(24),
+    CALPER FLOAT(24),
+    TSHIFT FLOAT(24),
+    INSTANT VARCHAR2(1),
+    LDDATE DATE,
+    constraint SENSOR_PK
+        primary key (STA, CHAN, TIME, ENDTIME)
+);
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.SITE
+(
+    STA VARCHAR2(6) not null,
+    ONDATE NUMBER(8) not null,
+    OFFDATE NUMBER(8),
+    LAT FLOAT(53),
+    LON FLOAT(53),
+    ELEV FLOAT(24),
+    STANAME VARCHAR2(50),
+    STATYPE VARCHAR2(4),
+    REFSTA VARCHAR2(6),
+    DNORTH FLOAT(24),
+    DEAST FLOAT(24),
+    LDDATE DATE,
+    constraint SITE_PK
+        primary key (STA, ONDATE)
+);
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.SITECHAN
+(
+    STA VARCHAR2(6) not null,
+    CHAN VARCHAR2(8) not null,
+    ONDATE NUMBER(8) not null,
+    CHANID NUMBER(18),
+    OFFDATE NUMBER(8),
+    CTYPE VARCHAR2(4),
+    EDEPTH FLOAT(24),
+    HANG FLOAT(24),
+    VANG FLOAT(24),
+    DESCRIP VARCHAR2(50),
+    LDDATE DATE,
+    constraint SITECHAN_PK
+        primary key (STA, CHAN, ONDATE)
+);
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.NETWORK
+(
+   NETWORKID NUMBER(18) not null
+        constraint NETWORK_ID_PK
+            primary key,
+    NET VARCHAR2(8),
+    NETWORK_NAME VARCHAR2(32),
+    DESCRIPTION VARCHAR2(4000),
+    NETWORK_TYPE VARCHAR2(15),
+    ON_DATE DATE,
+    OFF_DATE DATE,
+    AUTHOR VARCHAR2(15),
+    MODDATE DATE,
+    LDDATE DATE
+);
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.WFDISC
+(
+    STA      VARCHAR2(6) not null,
+    CHAN     VARCHAR2(8) not null,
+    TIME     FLOAT(53)   not null,
+    WFID     NUMBER(18)  not null
+        constraint WFDISC_UK
+            unique,
+    CHANID   NUMBER(18),
+    JDATE    NUMBER(8),
+    ENDTIME  FLOAT(53),
+    NSAMP    NUMBER(8),
+    SAMPRATE FLOAT(24),
+    CALIB    FLOAT(24),
+    CALPER   FLOAT(24),
+    INSTYPE  VARCHAR2(6),
+    SEGTYPE  VARCHAR2(1),
+    DATATYPE VARCHAR2(2),
+    CLIP     VARCHAR2(1),
+    DIR      VARCHAR2(64),
+    DFILE    VARCHAR2(32),
+    FOFF     NUMBER(10),
+    COMMID   NUMBER(18),
+    LDDATE   DATE,
+    constraint WFDISC_PK
+        primary key (STA, CHAN, TIME)
+);
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.ARRIVAL
+(
+    STA     VARCHAR2(6) not null,
+    TIME    FLOAT(53)   not null,
+    ARID    NUMBER(10)  not null,
+    JDATE   NUMBER(8),
+    STASSID NUMBER(10),
+    CHANID  NUMBER(8),
+    CHAN    VARCHAR2(8),
+    IPHASE  VARCHAR2(8),
+    STYPE   VARCHAR2(1),
+    DELTIM  FLOAT(24),
+    AZIMUTH FLOAT(24),
+    DELAZ   FLOAT(24),
+    SLOW    FLOAT(24),
+    DELSLO  FLOAT(24),
+    EMA     FLOAT(24),
+    RECT    FLOAT(24),
+    AMP     FLOAT(24),
+    PER     FLOAT(24),
+    LOGAT   FLOAT(24),
+    CLIP    VARCHAR2(1),
+    FM      VARCHAR2(2),
+    SNR     FLOAT(24),
+    QUAL    VARCHAR2(1),
+    AUTH    VARCHAR2(15),
+    COMMID  NUMBER(10),
+    LDDATE  DATE
+);
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.ORIGIN
+(
+    LAT       FLOAT(24)  not null,
+    LON       FLOAT(24)  not null,
+    DEPTH     FLOAT(24)  not null,
+    TIME      FLOAT(53)  not null,
+    ORID      NUMBER(10) not null,
+    EVID      NUMBER(10),
+    JDATE     NUMBER(8),
+    NASS      NUMBER(4),
+    NDEF      NUMBER(4),
+    NDP       NUMBER(4),
+    GRN       NUMBER(8),
+    SRN       NUMBER(8),
+    ETYPE     VARCHAR2(7 char),
+    DEPDP     FLOAT(24),
+    DTYPE     VARCHAR2(1 char),
+    MB        FLOAT(24),
+    MBID      NUMBER(10),
+    MS        FLOAT(24),
+    MSID      NUMBER(10),
+    ML        FLOAT(24),
+    MLID      NUMBER(10),
+    ALGORITHM VARCHAR2(15 char),
+    AUTH      VARCHAR2(15 char),
+    COMMID    NUMBER(10),
+    LDDATE    DATE
+);
+CREATE TABLE IF NOT EXISTS GMS_GLOBAL.`INTERVAL`
+(
+    INTVLID NUMBER(9)    not null
+        constraint INTERVAL_UK
+            unique,
+    CLASS   VARCHAR2(16) not null,
+    NAME    VARCHAR2(20) not null,
+    TIME    FLOAT(53)    not null,
+    ENDTIME FLOAT(53)    not null,
+    STATE   VARCHAR2(16),
+    AUTH    VARCHAR2(15),
+    MODDATE DATE         not null,
+    LDDATE  DATE         not null,
+    constraint INTERVAL_PK
+        primary key (CLASS, NAME, TIME, ENDTIME)
+);
+
+
+---- SIMULATOR CSS DDL
+
+CREATE SCHEMA IF NOT EXISTS GMS_SIMULATION_GLOBAL AUTHORIZATION GMS_GLOBAL;
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.AFFILIATION
+(
+    NET VARCHAR2(8) not null,
+    STA VARCHAR2(6) not null,
+    TIME FLOAT(53) not null,
+    ENDTIME FLOAT(53) not null,
+    LDDATE DATE not null,
+    constraint AFFILIATION_PK
+        primary key (NET, STA, TIME)
+);
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.INSTRUMENT
+(
+    INID NUMBER(18) not null
+        constraint INSTRUMENT_PK
+            primary key,
+    INSNAME VARCHAR2(50),
+    INSTYPE VARCHAR2(6),
+    BAND VARCHAR2(1),
+    DIGITAL VARCHAR2(1),
+    SAMPRATE FLOAT(24),
+    NCALIB FLOAT(24),
+    NCALPER FLOAT(24),
+    DIR VARCHAR2(64),
+    DFILE VARCHAR2(32),
+    RSPTYPE VARCHAR2(1000),
+    LDDATE DATE
+);
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.SENSOR
+(
+    STA VARCHAR2(6) not null,
+    CHAN VARCHAR2(8) not null,
+    TIME FLOAT(53) not null,
+    ENDTIME FLOAT(53) not null,
+    INID NUMBER(18),
+    CHANID NUMBER(18),
+    JDATE NUMBER(8),
+    CALRATIO FLOAT(24),
+    CALPER FLOAT(24),
+    TSHIFT FLOAT(24),
+    INSTANT VARCHAR2(1),
+    LDDATE DATE,
+    constraint SENSOR_PK
+        primary key (STA, CHAN, TIME, ENDTIME)
+);
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.SITE
+(
+    STA VARCHAR2(6) not null,
+    ONDATE NUMBER(8) not null,
+    OFFDATE NUMBER(8),
+    LAT FLOAT(53),
+    LON FLOAT(53),
+    ELEV FLOAT(24),
+    STANAME VARCHAR2(50),
+    STATYPE VARCHAR2(4),
+    REFSTA VARCHAR2(6),
+    DNORTH FLOAT(24),
+    DEAST FLOAT(24),
+    LDDATE DATE,
+    constraint SITE_PK
+        primary key (STA, ONDATE)
+);
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.SITECHAN
+(
+    STA VARCHAR2(6) not null,
+    CHAN VARCHAR2(8) not null,
+    ONDATE NUMBER(8) not null,
+    CHANID NUMBER(18),
+    OFFDATE NUMBER(8),
+    CTYPE VARCHAR2(4),
+    EDEPTH FLOAT(24),
+    HANG FLOAT(24),
+    VANG FLOAT(24),
+    DESCRIP VARCHAR2(50),
+    LDDATE DATE,
+    constraint SITECHAN_PK
+        primary key (STA, CHAN, ONDATE)
+);
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.NETWORK
+(
+   NETWORKID NUMBER(18) not null
+        constraint NETWORK_ID_PK
+            primary key,
+    NET VARCHAR2(8),
+    NETWORK_NAME VARCHAR2(32),
+    DESCRIPTION VARCHAR2(4000),
+    NETWORK_TYPE VARCHAR2(15),
+    ON_DATE DATE,
+    OFF_DATE DATE,
+    AUTHOR VARCHAR2(15),
+    MODDATE DATE,
+    LDDATE DATE
+);
+
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.WFDISC
+(
+    STA      VARCHAR2(6) not null,
+    CHAN     VARCHAR2(8) not null,
+    TIME     FLOAT(53)   not null,
+    WFID     NUMBER(18)  not null
+        constraint WFDISC_UK
+            unique,
+    CHANID   NUMBER(18),
+    JDATE    NUMBER(8),
+    ENDTIME  FLOAT(53),
+    NSAMP    NUMBER(8),
+    SAMPRATE FLOAT(24),
+    CALIB    FLOAT(24),
+    CALPER   FLOAT(24),
+    INSTYPE  VARCHAR2(6),
+    SEGTYPE  VARCHAR2(1),
+    DATATYPE VARCHAR2(2),
+    CLIP     VARCHAR2(1),
+    DIR      VARCHAR2(64),
+    DFILE    VARCHAR2(32),
+    FOFF     NUMBER(10),
+    COMMID   NUMBER(18),
+    LDDATE   DATE,
+    constraint WFDISC_PK
+        primary key (STA, CHAN, TIME)
+);
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.ARRIVAL
+(
+    STA     VARCHAR2(6) not null,
+    TIME    FLOAT(53)   not null,
+    ARID    NUMBER(10)  not null,
+    JDATE   NUMBER(8),
+    STASSID NUMBER(10),
+    CHANID  NUMBER(8),
+    CHAN    VARCHAR2(8),
+    IPHASE  VARCHAR2(8),
+    STYPE   VARCHAR2(1),
+    DELTIM  FLOAT(24),
+    AZIMUTH FLOAT(24),
+    DELAZ   FLOAT(24),
+    SLOW    FLOAT(24),
+    DELSLO  FLOAT(24),
+    EMA     FLOAT(24),
+    RECT    FLOAT(24),
+    AMP     FLOAT(24),
+    PER     FLOAT(24),
+    LOGAT   FLOAT(24),
+    CLIP    VARCHAR2(1),
+    FM      VARCHAR2(2),
+    SNR     FLOAT(24),
+    QUAL    VARCHAR2(1),
+    AUTH    VARCHAR2(15),
+    COMMID  NUMBER(10),
+    LDDATE  DATE
+);
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.ORIGIN
+(
+    LAT       FLOAT(24)  not null,
+    LON       FLOAT(24)  not null,
+    DEPTH     FLOAT(24)  not null,
+    TIME      FLOAT(53)  not null,
+    ORID      NUMBER(10) not null,
+    EVID      NUMBER(10),
+    JDATE     NUMBER(8),
+    NASS      NUMBER(4),
+    NDEF      NUMBER(4),
+    NDP       NUMBER(4),
+    GRN       NUMBER(8),
+    SRN       NUMBER(8),
+    ETYPE     VARCHAR2(7 char),
+    DEPDP     FLOAT(24),
+    DTYPE     VARCHAR2(1 char),
+    MB        FLOAT(24),
+    MBID      NUMBER(10),
+    MS        FLOAT(24),
+    MSID      NUMBER(10),
+    ML        FLOAT(24),
+    MLID      NUMBER(10),
+    ALGORITHM VARCHAR2(15 char),
+    AUTH      VARCHAR2(15 char),
+    COMMID    NUMBER(10),
+    LDDATE    DATE
+);
+CREATE TABLE IF NOT EXISTS GMS_SIMULATION_GLOBAL.`INTERVAL`
+(
+    INTVLID NUMBER(9)    not null
+        constraint INTERVAL_UK
+            unique,
+    CLASS   VARCHAR2(16) not null,
+    NAME    VARCHAR2(20) not null,
+    TIME    FLOAT(53)    not null,
+    ENDTIME FLOAT(53)    not null,
+    STATE   VARCHAR2(16),
+    AUTH    VARCHAR2(15),
+    MODDATE DATE         not null,
+    LDDATE  DATE         not null,
+    constraint INTERVAL_PK
+        primary key (CLASS, NAME, TIME, ENDTIME)
+);
+
+
+CREATE ALIAS IF NOT EXISTS GMS_SIMULATION_GLOBAL.SIMULATION_CLEANUP
+    FOR "gms.testtools.simulators.bridgeddatasourcesimulator.repository.H2Functions.simulationCleanup"

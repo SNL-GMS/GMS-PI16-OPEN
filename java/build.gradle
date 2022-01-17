@@ -1,0 +1,55 @@
+plugins {
+    id "org.sonarqube" version "3.0"
+    id "com.palantir.docker" version "0.21.0" apply false
+    id "com.jfrog.artifactory" version "4.10.0"
+    id "io.swagger.core.v3.swagger-gradle-plugin" version "2.1.2" apply false
+}
+
+// ***** Project-wide Configuration *****
+allprojects {
+    group 'gms'
+    version 'LATEST'
+}
+
+// ***** Root Project Configuration *****
+// Do not publish a JAR to Artifactory for the root project (empty JAR).
+artifactoryPublish.skip = true
+
+sonarqube {
+    properties {
+        property 'sonar.coverage.exclusions',
+                        '**Dao.java,' + '**Key.java,' +
+                        ' gms/shared/frameworks/data-injector**,' +
+                        'gms/shared/frameworks/frameworks-osd-api**,' +
+                        'gms/shared/frameworks/frameworks/testfixtures**,' +
+                        'gms/shared/station-definition/station-definition-api**,' +
+                        'gms/shared/station-definition/station-definition-testfixtures**,' +
+                        'gms/shared/signal-detection/signal-detection-testfixtures**,' +
+                        'gms/shared/user-manager/user-preferences-api**,' +
+                        'gms/shared/waveform/waveform-api**,' +
+                        'gms/shared/waveform/waveform-testfixtures**,' +
+                        'gms/shared/utilities/test-utils**,' +
+                        'gms/shared/utilities/db-test-utils**'
+    }
+}
+
+// ***** Sub-project Configuration *****
+subprojects {
+    apply from: "${rootDir}/gradle/scripts/gms_java_plugin.gradle"
+}
+
+// Root level task to generate javadoc for all sub-projects
+task allJavadoc(type: Javadoc, group: "Documentation") {
+    afterEvaluate {
+        exclude "**/generated/**"
+        exclude "module-info.java"
+        failOnError = false
+        title = "Geophysical Monitoring System (GMS), version ${version}"
+        description = 'Generate JavaDocs for all GMS modules'
+        source subprojects.collect { it.sourceSets.main.allJava }
+        classpath = files(subprojects.collect { it.sourceSets.main.runtimeClasspath })
+        options.memberLevel = JavadocMemberLevel.PROTECTED
+        options.overview = 'overview.html'
+        destinationDir = file("./docs/javadoc")
+    }
+}

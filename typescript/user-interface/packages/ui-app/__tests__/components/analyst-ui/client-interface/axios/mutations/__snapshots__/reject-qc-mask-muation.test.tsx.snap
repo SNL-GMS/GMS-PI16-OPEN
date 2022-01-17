@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reject QcMask mutation rejects a wrapped component that matches a snapshot 1`] = `
+<Component>
+  <ComponentWithMutation>
+    <TestComponent
+      rejectQcMasks={[Function]}
+    >
+      <div>
+        test
+      </div>
+    </TestComponent>
+  </ComponentWithMutation>
+</Component>
+`;

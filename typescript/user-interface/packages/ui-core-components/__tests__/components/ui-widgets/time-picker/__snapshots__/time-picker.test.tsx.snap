@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Time Picker Time Picker renders 1`] = `
+<TimePicker
+  date={2021-01-20T14:34:31.425Z}
+  datePickerEnabled={true}
+  hasHold={false}
+  onEnter={[MockFunction]}
+  onMaybeDate={[MockFunction]}
+  setHold={[MockFunction]}
+  shortFormat={false}
+>
+  <div
+    className="time-picker"
+  >
+    <textarea
+      className="time-picker__input"
+      cols={27}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      rows={1}
+      style={
+        Object {
+          "width": "240px",
+        }
+      }
+      value="2021-01-20T14:34:31.425"
+    />
+    <Blueprint3.Button
+      className="time-picker__date-picker-button"
+      icon="calendar"
+      onClick={[Function]}
+    >
+      <button
+        className="bp3-button time-picker__date-picker-button"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        type="button"
+      >
+        <Blueprint3.Icon
+          icon="calendar"
+          key="leftIcon"
+        >
+          <span
+            className="bp3-icon bp3-icon-calendar"
+            icon="calendar"
+          >
+            <svg
+              data-icon="calendar"
+              height={16}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <desc>
+                calendar
+              </desc>
+              <path
+                d="M11 3c.6 0 1-.5 1-1V1c0-.6-.4-1-1-1s-1 .4-1 1v1c0 .5.4 1 1 1zm3-2h-1v1c0 1.1-.9 2-2 2s-2-.9-2-2V1H6v1c0 1.1-.9 2-2 2s-2-.9-2-2V1H1c-.6 0-1 .5-1 1v12c0 .6.4 1 1 1h13c.6 0 1-.4 1-1V2c0-.6-.5-1-1-1zM5 13H2v-3h3v3zm0-4H2V6h3v3zm4 4H6v-3h3v3zm0-4H6V6h3v3zm4 4h-3v-3h3v3zm0-4h-3V6h3v3zM4 3c.6 0 1-.5 1-1V1c0-.6-.4-1-1-1S3 .4 3 1v1c0 .5.4 1 1 1z"
+                fillRule="evenodd"
+                key="0"
+              />
+            </svg>
+          </span>
+        </Blueprint3.Icon>
+        <Blueprint3.Icon
+          key="rightIcon"
+        />
+      </button>
+    </Blueprint3.Button>
+  </div>
+</TimePicker>
+`;
+
+exports[`Time Picker Time Picker renders with short format 1`] = `
+<TimePicker
+  date={2021-01-20T14:34:31.425Z}
+  datePickerEnabled={true}
+  hasHold={false}
+  onEnter={[MockFunction]}
+  onMaybeDate={[MockFunction]}
+  setHold={[MockFunction]}
+  shortFormat={true}
+>
+  <div
+    className="time-picker"
+  >
+    <textarea
+      className="time-picker__input"
+      cols={27}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      rows={1}
+      style={
+        Object {
+          "width": "152px",
+        }
+      }
+      value="2021-01-20T14:34"
+    />
+    <Blueprint3.Button
+      className="time-picker__date-picker-button"
+      icon="calendar"
+      onClick={[Function]}
+    >
+      <button
+        className="bp3-button time-picker__date-picker-button"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        type="button"
+      >
+        <Blueprint3.Icon
+          icon="calendar"
+          key="leftIcon"
+        >
+          <span
+            className="bp3-icon bp3-icon-calendar"
+            icon="calendar"
+          >
+            <svg
+              data-icon="calendar"
+              height={16}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <desc>
+                calendar
+              </desc>
+              <path
+                d="M11 3c.6 0 1-.5 1-1V1c0-.6-.4-1-1-1s-1 .4-1 1v1c0 .5.4 1 1 1zm3-2h-1v1c0 1.1-.9 2-2 2s-2-.9-2-2V1H6v1c0 1.1-.9 2-2 2s-2-.9-2-2V1H1c-.6 0-1 .5-1 1v12c0 .6.4 1 1 1h13c.6 0 1-.4 1-1V2c0-.6-.5-1-1-1zM5 13H2v-3h3v3zm0-4H2V6h3v3zm4 4H6v-3h3v3zm0-4H6V6h3v3zm4 4h-3v-3h3v3zm0-4h-3V6h3v3zM4 3c.6 0 1-.5 1-1V1c0-.6-.4-1-1-1S3 .4 3 1v1c0 .5.4 1 1 1z"
+                fillRule="evenodd"
+                key="0"
+              />
+            </svg>
+          </span>
+        </Blueprint3.Icon>
+        <Blueprint3.Icon
+          key="rightIcon"
+        />
+      </button>
+    </Blueprint3.Button>
+  </div>
+</TimePicker>
+`;
+
+exports[`Time Picker Time Picker shallow renders 1`] = `
+<div
+  className="time-picker"
+>
+  <textarea
+    className="time-picker__input"
+    cols={27}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    rows={1}
+    style={
+      Object {
+        "width": "240px",
+      }
+    }
+    value="2021-01-20T14:34:31.425"
+  />
+  <Blueprint3.Button
+    className="time-picker__date-picker-button"
+    icon="calendar"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Time Picker Time Picker shallow renders with short format 1`] = `
+<div
+  className="time-picker"
+>
+  <textarea
+    className="time-picker__input"
+    cols={27}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    rows={1}
+    style={
+      Object {
+        "width": "152px",
+      }
+    }
+    value="2021-01-20T14:34"
+  />
+  <Blueprint3.Button
+    className="time-picker__date-picker-button"
+    icon="calendar"
+    onClick={[Function]}
+  />
+</div>
+`;

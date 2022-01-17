@@ -1,0 +1,4014 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Environment history panel matches the snapshot empty channel soh data 1`] = `
+<ApolloProvider
+  client={
+    DefaultClient {
+      "cache": InMemoryCache {
+        "addTypename": true,
+        "cacheKeyRoot": KeyTrie {
+          "weakness": true,
+        },
+        "config": Object {
+          "addTypename": true,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+          "freezeResults": false,
+          "resultCaching": true,
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimisticData": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "executeSubSelectedArray": [Function],
+          "freezeResults": false,
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {
+          Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "historicalAceiByStation",
+                },
+                "operation": "query",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "historicalAceiByStation",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "channelName",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "monitorType",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "issues",
+                            },
+                            "selectionSet": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "directives": Array [],
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "UiHistoricalAceiInput",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "queryInput",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 186,
+              "start": 0,
+            },
+          } => Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "historicalAceiByStation",
+                },
+                "operation": "query",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "historicalAceiByStation",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "channelName",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "monitorType",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "issues",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "__typename",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "directives": Array [],
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "UiHistoricalAceiInput",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "queryInput",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 186,
+              "start": 0,
+            },
+          },
+          Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "historicalAceiByStation",
+                },
+                "operation": "query",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "historicalAceiByStation",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "channelName",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "monitorType",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "issues",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "__typename",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "directives": Array [],
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "UiHistoricalAceiInput",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "queryInput",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 186,
+              "start": 0,
+            },
+          } => Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "historicalAceiByStation",
+                },
+                "operation": "query",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "historicalAceiByStation",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "channelName",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "monitorType",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "issues",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "__typename",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "directives": Array [],
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "UiHistoricalAceiInput",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "queryInput",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 186,
+              "start": 0,
+            },
+          },
+        },
+        "watches": Set {},
+      },
+      "clearStoreCallbacks": Array [],
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "localState": LocalState {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {
+            Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "historicalAceiByStation",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "historicalAceiByStation",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "channelName",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "monitorType",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "issues",
+                              },
+                              "selectionSet": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "UiHistoricalAceiInput",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "queryInput",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 186,
+                "start": 0,
+              },
+            } => Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "historicalAceiByStation",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "historicalAceiByStation",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "channelName",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "monitorType",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "issues",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "__typename",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "UiHistoricalAceiInput",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "queryInput",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 186,
+                "start": 0,
+              },
+            },
+            Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "historicalAceiByStation",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "historicalAceiByStation",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "channelName",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "monitorType",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "issues",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "__typename",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "UiHistoricalAceiInput",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "queryInput",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 186,
+                "start": 0,
+              },
+            } => Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "historicalAceiByStation",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "historicalAceiByStation",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "channelName",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "monitorType",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "issues",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "__typename",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "UiHistoricalAceiInput",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "queryInput",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 186,
+                "start": 0,
+              },
+            },
+          },
+          "watches": Set {},
+        },
+        "client": [Circular],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "queryManager": QueryManager {
+        "assumeImmutableResults": false,
+        "clientAwareness": Object {
+          "name": undefined,
+          "version": undefined,
+        },
+        "dataStore": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {
+              Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "historicalAceiByStation",
+                    },
+                    "operation": "query",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "historicalAceiByStation",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "channelName",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "monitorType",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "issues",
+                                },
+                                "selectionSet": undefined,
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "UiHistoricalAceiInput",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 186,
+                  "start": 0,
+                },
+              } => Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "historicalAceiByStation",
+                    },
+                    "operation": "query",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "historicalAceiByStation",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "channelName",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "monitorType",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "issues",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "__typename",
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "UiHistoricalAceiInput",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 186,
+                  "start": 0,
+                },
+              },
+              Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "historicalAceiByStation",
+                    },
+                    "operation": "query",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "historicalAceiByStation",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "channelName",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "monitorType",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "issues",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "__typename",
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "UiHistoricalAceiInput",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 186,
+                  "start": 0,
+                },
+              } => Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "historicalAceiByStation",
+                    },
+                    "operation": "query",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "historicalAceiByStation",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "channelName",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "monitorType",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "issues",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "__typename",
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "UiHistoricalAceiInput",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 186,
+                  "start": 0,
+                },
+              },
+            },
+            "watches": Set {},
+          },
+        },
+        "fetchQueryRejectFns": Map {
+          "fetchRequest:1" => [Function],
+        },
+        "idCounter": 3,
+        "inFlightLinkObservables": Map {
+          Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "historicalAceiByStation",
+                },
+                "operation": "query",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "historicalAceiByStation",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "channelName",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "monitorType",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "issues",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "__typename",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "directives": Array [],
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "UiHistoricalAceiInput",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "queryInput",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 186,
+              "start": 0,
+            },
+          } => Map {
+            "{\\"queryInput\\":{\\"stationName\\":\\"Test\\",\\"startTime\\":1611153270425,\\"endTime\\":1611153271425,\\"type\\":\\"AMPLIFIER_SATURATION_DETECTED\\"}}" => Observable {
+              "_subscriber": [Function],
+            },
+          },
+        },
+        "link": ApolloLink {
+          "request": [Function],
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {
+              Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "historicalAceiByStation",
+                    },
+                    "operation": "query",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "historicalAceiByStation",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "channelName",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "monitorType",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "issues",
+                                },
+                                "selectionSet": undefined,
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "UiHistoricalAceiInput",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 186,
+                  "start": 0,
+                },
+              } => Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "historicalAceiByStation",
+                    },
+                    "operation": "query",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "historicalAceiByStation",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "channelName",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "monitorType",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "issues",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "__typename",
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "UiHistoricalAceiInput",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 186,
+                  "start": 0,
+                },
+              },
+              Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "historicalAceiByStation",
+                    },
+                    "operation": "query",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "historicalAceiByStation",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "channelName",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "monitorType",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "issues",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "__typename",
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "UiHistoricalAceiInput",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 186,
+                  "start": 0,
+                },
+              } => Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "historicalAceiByStation",
+                    },
+                    "operation": "query",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "historicalAceiByStation",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "channelName",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "monitorType",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "issues",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "__typename",
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "UiHistoricalAceiInput",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 186,
+                  "start": 0,
+                },
+              },
+            },
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutationStore": MutationStore {
+          "store": Object {},
+        },
+        "onBroadcast": [Function],
+        "pollingInfoByQueryId": Map {},
+        "queries": Map {
+          "1" => Object {
+            "cancel": undefined,
+            "document": Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "historicalAceiByStation",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "historicalAceiByStation",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "channelName",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "monitorType",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "issues",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "__typename",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "UiHistoricalAceiInput",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "queryInput",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 186,
+                "start": 0,
+              },
+            },
+            "invalidated": false,
+            "lastRequestId": 2,
+            "listeners": Set {
+              [Function],
+            },
+            "newData": null,
+            "observableQuery": ObservableQuery {
+              "_subscriber": [Function],
+              "isTornDown": false,
+              "lastResult": Object {
+                "data": undefined,
+                "loading": true,
+                "networkStatus": 1,
+                "stale": false,
+              },
+              "lastResultSnapshot": Object {
+                "data": undefined,
+                "loading": true,
+                "networkStatus": 1,
+                "stale": false,
+              },
+              "observers": Set {
+                SubscriptionObserver {
+                  "_subscription": Subscription {
+                    "_cleanup": [Function],
+                    "_observer": Object {
+                      "error": [Function],
+                      "next": [Function],
+                    },
+                    "_queue": Array [
+                      Object {
+                        "type": "next",
+                        "value": Object {
+                          "data": undefined,
+                          "loading": true,
+                          "networkStatus": 1,
+                          "stale": false,
+                        },
+                      },
+                    ],
+                    "_state": "buffering",
+                  },
+                },
+              },
+              "options": Object {
+                "context": undefined,
+                "displayName": "Query",
+                "fetchPolicy": "no-cache",
+                "metadata": Object {
+                  "reactComponent": Object {
+                    "displayName": "Query",
+                  },
+                },
+                "notifyOnNetworkStatusChange": false,
+                "query": Object {
+                  "definitions": Array [
+                    Object {
+                      "directives": Array [],
+                      "kind": "OperationDefinition",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "historicalAceiByStation",
+                      },
+                      "operation": "query",
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [
+                              Object {
+                                "kind": "Argument",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                                "value": Object {
+                                  "kind": "Variable",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "queryInput",
+                                  },
+                                },
+                              },
+                            ],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "historicalAceiByStation",
+                            },
+                            "selectionSet": Object {
+                              "kind": "SelectionSet",
+                              "selections": Array [
+                                Object {
+                                  "alias": undefined,
+                                  "arguments": Array [],
+                                  "directives": Array [],
+                                  "kind": "Field",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "channelName",
+                                  },
+                                  "selectionSet": undefined,
+                                },
+                                Object {
+                                  "alias": undefined,
+                                  "arguments": Array [],
+                                  "directives": Array [],
+                                  "kind": "Field",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "monitorType",
+                                  },
+                                  "selectionSet": undefined,
+                                },
+                                Object {
+                                  "alias": undefined,
+                                  "arguments": Array [],
+                                  "directives": Array [],
+                                  "kind": "Field",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "issues",
+                                  },
+                                  "selectionSet": undefined,
+                                },
+                              ],
+                            },
+                          },
+                        ],
+                      },
+                      "variableDefinitions": Array [
+                        Object {
+                          "defaultValue": undefined,
+                          "directives": Array [],
+                          "kind": "VariableDefinition",
+                          "type": Object {
+                            "kind": "NonNullType",
+                            "type": Object {
+                              "kind": "NamedType",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "UiHistoricalAceiInput",
+                              },
+                            },
+                          },
+                          "variable": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                          },
+                        },
+                      ],
+                    },
+                  ],
+                  "kind": "Document",
+                  "loc": Object {
+                    "end": 186,
+                    "start": 0,
+                  },
+                },
+                "skip": false,
+                "variables": Object {
+                  "queryInput": Object {
+                    "endTime": 1611153271425,
+                    "startTime": 1611153270425,
+                    "stationName": "Test",
+                    "type": "AMPLIFIER_SATURATION_DETECTED",
+                  },
+                },
+              },
+              "queryId": "1",
+              "queryManager": [Circular],
+              "queryName": "historicalAceiByStation",
+              "shouldSubscribe": true,
+              "subscriptions": Set {},
+              "variables": Object {
+                "queryInput": Object {
+                  "endTime": 1611153271425,
+                  "startTime": 1611153270425,
+                  "stationName": "Test",
+                  "type": "AMPLIFIER_SATURATION_DETECTED",
+                },
+              },
+            },
+            "subscriptions": Set {
+              Subscription {
+                "_cleanup": Subscription {
+                  "_cleanup": [Function],
+                  "_observer": Object {
+                    "complete": [Function],
+                    "error": [Function],
+                    "next": [Function],
+                  },
+                  "_queue": undefined,
+                  "_state": "ready",
+                },
+                "_observer": Object {
+                  "complete": [Function],
+                  "error": [Function],
+                },
+                "_queue": undefined,
+                "_state": "ready",
+              },
+            },
+          },
+        },
+        "queryDeduplication": true,
+        "queryStore": QueryStore {
+          "store": Object {
+            "1": Object {
+              "document": Object {
+                "definitions": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "OperationDefinition",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "historicalAceiByStation",
+                    },
+                    "operation": "query",
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [
+                            Object {
+                              "kind": "Argument",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                              "value": Object {
+                                "kind": "Variable",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "queryInput",
+                                },
+                              },
+                            },
+                          ],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "historicalAceiByStation",
+                          },
+                          "selectionSet": Object {
+                            "kind": "SelectionSet",
+                            "selections": Array [
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "channelName",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "monitorType",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "alias": undefined,
+                                "arguments": Array [],
+                                "directives": Array [],
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "issues",
+                                },
+                                "selectionSet": undefined,
+                              },
+                              Object {
+                                "kind": "Field",
+                                "name": Object {
+                                  "kind": "Name",
+                                  "value": "__typename",
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      ],
+                    },
+                    "variableDefinitions": Array [
+                      Object {
+                        "defaultValue": undefined,
+                        "directives": Array [],
+                        "kind": "VariableDefinition",
+                        "type": Object {
+                          "kind": "NonNullType",
+                          "type": Object {
+                            "kind": "NamedType",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "UiHistoricalAceiInput",
+                            },
+                          },
+                        },
+                        "variable": Object {
+                          "kind": "Variable",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+                "kind": "Document",
+                "loc": Object {
+                  "end": 186,
+                  "start": 0,
+                },
+              },
+              "graphQLErrors": Array [],
+              "metadata": Object {
+                "reactComponent": Object {
+                  "displayName": "Query",
+                },
+              },
+              "networkError": null,
+              "networkStatus": 1,
+              "previousVariables": null,
+              "variables": Object {
+                "queryInput": Object {
+                  "endTime": 1611153271425,
+                  "startTime": 1611153270425,
+                  "stationName": "Test",
+                  "type": "AMPLIFIER_SATURATION_DETECTED",
+                },
+              },
+            },
+          },
+        },
+        "ssrMode": false,
+        "transformCache": WeakMap {},
+      },
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {
+            Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "historicalAceiByStation",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "historicalAceiByStation",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "channelName",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "monitorType",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "issues",
+                              },
+                              "selectionSet": undefined,
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "UiHistoricalAceiInput",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "queryInput",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 186,
+                "start": 0,
+              },
+            } => Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "historicalAceiByStation",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "historicalAceiByStation",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "channelName",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "monitorType",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "issues",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "__typename",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "UiHistoricalAceiInput",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "queryInput",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 186,
+                "start": 0,
+              },
+            },
+            Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "historicalAceiByStation",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "historicalAceiByStation",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "channelName",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "monitorType",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "issues",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "__typename",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "UiHistoricalAceiInput",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "queryInput",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 186,
+                "start": 0,
+              },
+            } => Object {
+              "definitions": Array [
+                Object {
+                  "directives": Array [],
+                  "kind": "OperationDefinition",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "historicalAceiByStation",
+                  },
+                  "operation": "query",
+                  "selectionSet": Object {
+                    "kind": "SelectionSet",
+                    "selections": Array [
+                      Object {
+                        "alias": undefined,
+                        "arguments": Array [
+                          Object {
+                            "kind": "Argument",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                            "value": Object {
+                              "kind": "Variable",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "queryInput",
+                              },
+                            },
+                          },
+                        ],
+                        "directives": Array [],
+                        "kind": "Field",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "historicalAceiByStation",
+                        },
+                        "selectionSet": Object {
+                          "kind": "SelectionSet",
+                          "selections": Array [
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "channelName",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "monitorType",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "alias": undefined,
+                              "arguments": Array [],
+                              "directives": Array [],
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "issues",
+                              },
+                              "selectionSet": undefined,
+                            },
+                            Object {
+                              "kind": "Field",
+                              "name": Object {
+                                "kind": "Name",
+                                "value": "__typename",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                  "variableDefinitions": Array [
+                    Object {
+                      "defaultValue": undefined,
+                      "directives": Array [],
+                      "kind": "VariableDefinition",
+                      "type": Object {
+                        "kind": "NonNullType",
+                        "type": Object {
+                          "kind": "NamedType",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "UiHistoricalAceiInput",
+                          },
+                        },
+                      },
+                      "variable": Object {
+                        "kind": "Variable",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "queryInput",
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+              "kind": "Document",
+              "loc": Object {
+                "end": 186,
+                "start": 0,
+              },
+            },
+          },
+          "watches": Set {},
+        },
+      },
+      "typeDefs": undefined,
+      "version": "2.6.4",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <EnvironmentHistoryPanel
+    channelSohs={Array []}
+    sohHistoricalDurations={
+      Array [
+        1000,
+        5000,
+        8000,
+      ]
+    }
+    station={
+      Object {
+        "allStationAggregates": Array [],
+        "channelSohs": Array [
+          Object {
+            "allSohMonitorValueAndStatuses": Array [
+              Object {
+                "contributing": false,
+                "hasUnacknowledgedChanges": false,
+                "monitorType": "LAG",
+                "quietUntilMs": 1,
+                "status": "GOOD",
+                "thresholdBad": 10,
+                "thresholdMarginal": 1,
+                "value": 1,
+                "valuePresent": true,
+              },
+            ],
+            "channelName": "AAA111",
+            "channelSohStatus": "GOOD",
+          },
+        ],
+        "id": "1",
+        "needsAcknowledgement": true,
+        "needsAttention": true,
+        "sohStatusSummary": "MARGINAL",
+        "stationGroups": Array [
+          Object {
+            "groupName": "GroupA",
+            "sohStationCapability": "BAD",
+            "stationName": "Test",
+          },
+        ],
+        "stationName": "Test",
+        "statusContributors": Array [],
+        "time": 123456789,
+        "uuid": "2",
+      }
+    }
+  >
+    <BaseToolbar
+      items={
+        Array [
+          Object {
+            "durations": Array [
+              Object {
+                "description": "Last 1 second",
+                "value": 1000,
+              },
+              Object {
+                "description": "Last 5 seconds",
+                "value": 5000,
+              },
+              Object {
+                "description": "Last 8 seconds",
+                "value": 8000,
+              },
+            ],
+            "endTimeMs": 1611153271425,
+            "format": undefined,
+            "label": "History Interval",
+            "maxEndTimeMs": undefined,
+            "minStartTimeMs": undefined,
+            "onApplyButton": [Function],
+            "onChange": [Function],
+            "rank": 1,
+            "startTimeMs": 1611153270425,
+            "tooltip": "Set start and end times to display",
+            "type": "DateRangePicker",
+          },
+        ]
+      }
+      itemsLeft={
+        Array [
+          Object {
+            "dropdownOptions": Array [
+              "CHOOSE_A_MONITOR_TYPE",
+              "AUTHENTICATION_SEAL_BROKEN",
+              "BACKUP_POWER_UNSTABLE",
+              "CALIBRATION_UNDERWAY",
+              "CLIPPED",
+              "CLOCK_DIFFERENTIAL_TOO_LARGE",
+              "DEAD_SENSOR_CHANNEL",
+              "DIGITIZER_ANALOG_INPUT_SHORTED",
+              "DIGITIZER_CALIBRATION_LOOP_BACK",
+              "DIGITIZING_EQUIPMENT_OPEN",
+              "EQUIPMENT_HOUSING_OPEN",
+              "EQUIPMENT_MOVED",
+              "GPS_RECEIVER_OFF",
+              "GPS_RECEIVER_UNLOCKED",
+              "MAIN_POWER_FAILURE",
+              "VAULT_DOOR_OPENED",
+              "ZEROED_DATA",
+            ],
+            "dropdownText": Array [
+              "Choose A Monitor Type",
+              "Authentication Seal Broken",
+              "Backup Power Unstable",
+              "Calibration Underway",
+              "Clipped",
+              "Clock Differential Too Large",
+              "Dead Sensor Channel",
+              "Digitizer Analog Input Shorted",
+              "Digitizer Calibration Loop Back",
+              "Digitizing Equipment Open",
+              "Equipment Housing Open",
+              "Equipment Moved",
+              "Gps Receiver Off",
+              "Gps Receiver Unlocked",
+              "Main Power Failure",
+              "Vault Door Opened",
+              "Zeroed Data",
+            ],
+            "label": "Select Monitor Type",
+            "onChange": [Function],
+            "rank": 1,
+            "tooltip": "Select Monitor Type",
+            "type": "Dropdown",
+            "value": "AMPLIFIER_SATURATION_DETECTED",
+            "widthPx": 220,
+          },
+        ]
+      }
+      widthPx={100}
+    >
+      <ToolbarComponent
+        items={
+          Array [
+            Object {
+              "durations": Array [
+                Object {
+                  "description": "Last 1 second",
+                  "value": 1000,
+                },
+                Object {
+                  "description": "Last 5 seconds",
+                  "value": 5000,
+                },
+                Object {
+                  "description": "Last 8 seconds",
+                  "value": 8000,
+                },
+              ],
+              "endTimeMs": 1611153271425,
+              "format": undefined,
+              "label": "History Interval",
+              "maxEndTimeMs": undefined,
+              "minStartTimeMs": undefined,
+              "onApplyButton": [Function],
+              "onChange": [Function],
+              "rank": 1,
+              "startTimeMs": 1611153270425,
+              "tooltip": "Set start and end times to display",
+              "type": "DateRangePicker",
+            },
+          ]
+        }
+        itemsLeft={
+          Array [
+            Object {
+              "dropdownOptions": Array [
+                "CHOOSE_A_MONITOR_TYPE",
+                "AUTHENTICATION_SEAL_BROKEN",
+                "BACKUP_POWER_UNSTABLE",
+                "CALIBRATION_UNDERWAY",
+                "CLIPPED",
+                "CLOCK_DIFFERENTIAL_TOO_LARGE",
+                "DEAD_SENSOR_CHANNEL",
+                "DIGITIZER_ANALOG_INPUT_SHORTED",
+                "DIGITIZER_CALIBRATION_LOOP_BACK",
+                "DIGITIZING_EQUIPMENT_OPEN",
+                "EQUIPMENT_HOUSING_OPEN",
+                "EQUIPMENT_MOVED",
+                "GPS_RECEIVER_OFF",
+                "GPS_RECEIVER_UNLOCKED",
+                "MAIN_POWER_FAILURE",
+                "VAULT_DOOR_OPENED",
+                "ZEROED_DATA",
+              ],
+              "dropdownText": Array [
+                "Choose A Monitor Type",
+                "Authentication Seal Broken",
+                "Backup Power Unstable",
+                "Calibration Underway",
+                "Clipped",
+                "Clock Differential Too Large",
+                "Dead Sensor Channel",
+                "Digitizer Analog Input Shorted",
+                "Digitizer Calibration Loop Back",
+                "Digitizing Equipment Open",
+                "Equipment Housing Open",
+                "Equipment Moved",
+                "Gps Receiver Off",
+                "Gps Receiver Unlocked",
+                "Main Power Failure",
+                "Vault Door Opened",
+                "Zeroed Data",
+              ],
+              "label": "Select Monitor Type",
+              "onChange": [Function],
+              "rank": 1,
+              "tooltip": "Select Monitor Type",
+              "type": "Dropdown",
+              "value": "AMPLIFIER_SATURATION_DETECTED",
+              "widthPx": 220,
+            },
+          ]
+        }
+        minWhiteSpacePx={1}
+        toolbarWidthPx={60}
+        widthPx={100}
+      >
+        <div
+          className="toolbar"
+          style={
+            Object {
+              "width": "60px",
+            }
+          }
+        >
+          <div
+            className="toolbar__left-group"
+          >
+            <div
+              className="toolbar-item toolbar-item__left"
+              key="1"
+            >
+              <ToolbarItemRenderer
+                addToPopoverMap={[Function]}
+                hasIssue={false}
+                item={
+                  Object {
+                    "dropdownOptions": Array [
+                      "CHOOSE_A_MONITOR_TYPE",
+                      "AUTHENTICATION_SEAL_BROKEN",
+                      "BACKUP_POWER_UNSTABLE",
+                      "CALIBRATION_UNDERWAY",
+                      "CLIPPED",
+                      "CLOCK_DIFFERENTIAL_TOO_LARGE",
+                      "DEAD_SENSOR_CHANNEL",
+                      "DIGITIZER_ANALOG_INPUT_SHORTED",
+                      "DIGITIZER_CALIBRATION_LOOP_BACK",
+                      "DIGITIZING_EQUIPMENT_OPEN",
+                      "EQUIPMENT_HOUSING_OPEN",
+                      "EQUIPMENT_MOVED",
+                      "GPS_RECEIVER_OFF",
+                      "GPS_RECEIVER_UNLOCKED",
+                      "MAIN_POWER_FAILURE",
+                      "VAULT_DOOR_OPENED",
+                      "ZEROED_DATA",
+                    ],
+                    "dropdownText": Array [
+                      "Choose A Monitor Type",
+                      "Authentication Seal Broken",
+                      "Backup Power Unstable",
+                      "Calibration Underway",
+                      "Clipped",
+                      "Clock Differential Too Large",
+                      "Dead Sensor Channel",
+                      "Digitizer Analog Input Shorted",
+                      "Digitizer Calibration Loop Back",
+                      "Digitizing Equipment Open",
+                      "Equipment Housing Open",
+                      "Equipment Moved",
+                      "Gps Receiver Off",
+                      "Gps Receiver Unlocked",
+                      "Main Power Failure",
+                      "Vault Door Opened",
+                      "Zeroed Data",
+                    ],
+                    "label": "Select Monitor Type",
+                    "onChange": [Function],
+                    "rank": 1,
+                    "tooltip": "Select Monitor Type",
+                    "type": "Dropdown",
+                    "value": "AMPLIFIER_SATURATION_DETECTED",
+                    "widthPx": 220,
+                  }
+                }
+                key="1"
+              >
+                <div
+                  style={Object {}}
+                >
+                  <DropDown
+                    dropDownItems={
+                      Array [
+                        "CHOOSE_A_MONITOR_TYPE",
+                        "AUTHENTICATION_SEAL_BROKEN",
+                        "BACKUP_POWER_UNSTABLE",
+                        "CALIBRATION_UNDERWAY",
+                        "CLIPPED",
+                        "CLOCK_DIFFERENTIAL_TOO_LARGE",
+                        "DEAD_SENSOR_CHANNEL",
+                        "DIGITIZER_ANALOG_INPUT_SHORTED",
+                        "DIGITIZER_CALIBRATION_LOOP_BACK",
+                        "DIGITIZING_EQUIPMENT_OPEN",
+                        "EQUIPMENT_HOUSING_OPEN",
+                        "EQUIPMENT_MOVED",
+                        "GPS_RECEIVER_OFF",
+                        "GPS_RECEIVER_UNLOCKED",
+                        "MAIN_POWER_FAILURE",
+                        "VAULT_DOOR_OPENED",
+                        "ZEROED_DATA",
+                      ]
+                    }
+                    dropdownText={
+                      Array [
+                        "Choose A Monitor Type",
+                        "Authentication Seal Broken",
+                        "Backup Power Unstable",
+                        "Calibration Underway",
+                        "Clipped",
+                        "Clock Differential Too Large",
+                        "Dead Sensor Channel",
+                        "Digitizer Analog Input Shorted",
+                        "Digitizer Calibration Loop Back",
+                        "Digitizing Equipment Open",
+                        "Equipment Housing Open",
+                        "Equipment Moved",
+                        "Gps Receiver Off",
+                        "Gps Receiver Unlocked",
+                        "Main Power Failure",
+                        "Vault Door Opened",
+                        "Zeroed Data",
+                      ]
+                    }
+                    key="1"
+                    label="Select Monitor Type"
+                    onMaybeValue={[Function]}
+                    title="Select Monitor Type"
+                    value="AMPLIFIER_SATURATION_DETECTED"
+                    widthPx={220}
+                  >
+                    <div
+                      className="dropdown-container"
+                    >
+                      <span
+                        className="dropdown-selector"
+                      >
+                        <HTMLSelect
+                          onChange={[Function]}
+                          style={
+                            Object {
+                              "minWidth": "220px",
+                              "width": "220px",
+                            }
+                          }
+                          title="Select Monitor Type"
+                          value="AMPLIFIER_SATURATION_DETECTED"
+                        >
+                          <div
+                            className="bp3-html-select"
+                          >
+                            <select
+                              multiple={false}
+                              onChange={[Function]}
+                              style={
+                                Object {
+                                  "minWidth": "220px",
+                                  "width": "220px",
+                                }
+                              }
+                              title="Select Monitor Type"
+                              value="AMPLIFIER_SATURATION_DETECTED"
+                            >
+                              <option
+                                key="0"
+                                value="CHOOSE_A_MONITOR_TYPE"
+                              >
+                                Choose A Monitor Type
+                              </option>
+                              <option
+                                key="1"
+                                value="AUTHENTICATION_SEAL_BROKEN"
+                              >
+                                Authentication Seal Broken
+                              </option>
+                              <option
+                                key="2"
+                                value="BACKUP_POWER_UNSTABLE"
+                              >
+                                Backup Power Unstable
+                              </option>
+                              <option
+                                key="3"
+                                value="CALIBRATION_UNDERWAY"
+                              >
+                                Calibration Underway
+                              </option>
+                              <option
+                                key="4"
+                                value="CLIPPED"
+                              >
+                                Clipped
+                              </option>
+                              <option
+                                key="5"
+                                value="CLOCK_DIFFERENTIAL_TOO_LARGE"
+                              >
+                                Clock Differential Too Large
+                              </option>
+                              <option
+                                key="6"
+                                value="DEAD_SENSOR_CHANNEL"
+                              >
+                                Dead Sensor Channel
+                              </option>
+                              <option
+                                key="7"
+                                value="DIGITIZER_ANALOG_INPUT_SHORTED"
+                              >
+                                Digitizer Analog Input Shorted
+                              </option>
+                              <option
+                                key="8"
+                                value="DIGITIZER_CALIBRATION_LOOP_BACK"
+                              >
+                                Digitizer Calibration Loop Back
+                              </option>
+                              <option
+                                key="9"
+                                value="DIGITIZING_EQUIPMENT_OPEN"
+                              >
+                                Digitizing Equipment Open
+                              </option>
+                              <option
+                                key="10"
+                                value="EQUIPMENT_HOUSING_OPEN"
+                              >
+                                Equipment Housing Open
+                              </option>
+                              <option
+                                key="11"
+                                value="EQUIPMENT_MOVED"
+                              >
+                                Equipment Moved
+                              </option>
+                              <option
+                                key="12"
+                                value="GPS_RECEIVER_OFF"
+                              >
+                                Gps Receiver Off
+                              </option>
+                              <option
+                                key="13"
+                                value="GPS_RECEIVER_UNLOCKED"
+                              >
+                                Gps Receiver Unlocked
+                              </option>
+                              <option
+                                key="14"
+                                value="MAIN_POWER_FAILURE"
+                              >
+                                Main Power Failure
+                              </option>
+                              <option
+                                key="15"
+                                value="VAULT_DOOR_OPENED"
+                              >
+                                Vault Door Opened
+                              </option>
+                              <option
+                                key="16"
+                                value="ZEROED_DATA"
+                              >
+                                Zeroed Data
+                              </option>
+                            </select>
+                            <Blueprint3.Icon
+                              icon="double-caret-vertical"
+                            >
+                              <span
+                                className="bp3-icon bp3-icon-double-caret-vertical"
+                                icon="double-caret-vertical"
+                              >
+                                <svg
+                                  data-icon="double-caret-vertical"
+                                  height={16}
+                                  viewBox="0 0 16 16"
+                                  width={16}
+                                >
+                                  <desc>
+                                    double-caret-vertical
+                                  </desc>
+                                  <path
+                                    d="M5 7h6a1.003 1.003 0 00.71-1.71l-3-3C8.53 2.11 8.28 2 8 2s-.53.11-.71.29l-3 3A1.003 1.003 0 005 7zm6 2H5a1.003 1.003 0 00-.71 1.71l3 3c.18.18.43.29.71.29s.53-.11.71-.29l3-3A1.003 1.003 0 0011 9z"
+                                    fillRule="evenodd"
+                                    key="0"
+                                  />
+                                </svg>
+                              </span>
+                            </Blueprint3.Icon>
+                          </div>
+                        </HTMLSelect>
+                      </span>
+                    </div>
+                  </DropDown>
+                </div>
+              </ToolbarItemRenderer>
+            </div>
+          </div>
+          <div
+            className="toolbar__center-group"
+          >
+            <div
+              className="toolbar__whitespace"
+              style={
+                Object {
+                  "width": "44px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="toolbar__right-group"
+          >
+            <div
+              className="toolbar-item
+                    "
+              key="1"
+            >
+              <ToolbarItemRenderer
+                addToPopoverMap={[Function]}
+                hasIssue={false}
+                item={
+                  Object {
+                    "durations": Array [
+                      Object {
+                        "description": "Last 1 second",
+                        "value": 1000,
+                      },
+                      Object {
+                        "description": "Last 5 seconds",
+                        "value": 5000,
+                      },
+                      Object {
+                        "description": "Last 8 seconds",
+                        "value": 8000,
+                      },
+                    ],
+                    "endTimeMs": 1611153271425,
+                    "format": undefined,
+                    "label": "History Interval",
+                    "maxEndTimeMs": undefined,
+                    "minStartTimeMs": undefined,
+                    "onApplyButton": [Function],
+                    "onChange": [Function],
+                    "rank": 1,
+                    "startTimeMs": 1611153270425,
+                    "tooltip": "Set start and end times to display",
+                    "type": "DateRangePicker",
+                  }
+                }
+                key="1"
+              >
+                <div
+                  className="toolbar-button--capsule"
+                  key="1"
+                  style={Object {}}
+                >
+                  <DateRangePicker
+                    durations={
+                      Array [
+                        Object {
+                          "description": "Last 1 second",
+                          "value": 1000,
+                        },
+                        Object {
+                          "description": "Last 5 seconds",
+                          "value": 5000,
+                        },
+                        Object {
+                          "description": "Last 8 seconds",
+                          "value": 8000,
+                        },
+                      ]
+                    }
+                    endTimeMs={1611153271425}
+                    format="YYYY-MM-DD HH:mm"
+                    onApply={[Function]}
+                    onNewInterval={[Function]}
+                    startTimeMs={1611153270425}
+                  >
+                    <div
+                      className="date-range-picker"
+                      id="date-range-picker-id-3"
+                    >
+                      <Component
+                        className="bp3-label bp3-inline date-range-picker__label"
+                      >
+                        <label
+                          className="bp3-label bp3-label bp3-inline date-range-picker__label"
+                        >
+                          Time Range: 2021-01-20 02:34:31 to 2021-01-20 02:34:31
+                        </label>
+                      </Component>
+                      <DateRangePopup
+                        durations={
+                          Array [
+                            Object {
+                              "description": "Last 1 second",
+                              "value": 1000,
+                            },
+                            Object {
+                              "description": "Last 5 seconds",
+                              "value": 5000,
+                            },
+                            Object {
+                              "description": "Last 8 seconds",
+                              "value": 8000,
+                            },
+                          ]
+                        }
+                        endTimeMs={1611153271425}
+                        format="YYYY-MM-DD HH:mm"
+                        isOpen={false}
+                        onApply={[Function]}
+                        onClose={[Function]}
+                        onNewInterval={[Function]}
+                        startTimeMs={1611153270425}
+                        title="Choose Date Range?"
+                      >
+                        <Blueprint3.Dialog
+                          canOutsideClickClose={true}
+                          className="date-range-dialog dialog_parent dialog_parent--wide"
+                          isOpen={false}
+                          onClose={[Function]}
+                          onOpened={[Function]}
+                          title="Choose Date Range?"
+                        >
+                          <Blueprint3.Overlay
+                            autoFocus={true}
+                            backdropProps={Object {}}
+                            canEscapeKeyClose={true}
+                            canOutsideClickClose={true}
+                            className="bp3-overlay-scroll-container"
+                            enforceFocus={true}
+                            hasBackdrop={true}
+                            isOpen={false}
+                            lazy={true}
+                            onClose={[Function]}
+                            onOpened={[Function]}
+                            title="Choose Date Range?"
+                            transitionDuration={300}
+                            transitionName="bp3-overlay"
+                            usePortal={true}
+                          />
+                        </Blueprint3.Dialog>
+                      </DateRangePopup>
+                      <div>
+                        <Blueprint3.Button
+                          className="date-range-picker__apply-button"
+                          data-cy="date-range-picker-edit"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="bp3-button date-range-picker__apply-button"
+                            data-cy="date-range-picker-edit"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              Edit
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </div>
+                  </DateRangePicker>
+                </div>
+              </ToolbarItemRenderer>
+            </div>
+          </div>
+        </div>
+      </ToolbarComponent>
+    </BaseToolbar>
+    <DrillDownTitle
+      description="Displaying 100% of available points"
+      subtitle="Amplifier Saturation Detected"
+      title="Test"
+    >
+      <div
+        className="soh-drill-down-station-label display-title"
+      >
+        Test
+        <div
+          className="display-title__subtitle"
+        >
+          Amplifier Saturation Detected
+           (Displaying 100% of available points)
+        </div>
+      </div>
+    </DrillDownTitle>
+    <HistoricalAceiQuery
+      endTimeMs={1611153271425}
+      startTimeMs={1611153270425}
+      stationName="Test"
+      type="AMPLIFIER_SATURATION_DETECTED"
+    >
+      <Query
+        fetchPolicy="no-cache"
+        query={
+          Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "historicalAceiByStation",
+                },
+                "operation": "query",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "queryInput",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "queryInput",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "historicalAceiByStation",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "channelName",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "monitorType",
+                            },
+                            "selectionSet": undefined,
+                          },
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "issues",
+                            },
+                            "selectionSet": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "directives": Array [],
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "UiHistoricalAceiInput",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "queryInput",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 186,
+              "start": 0,
+            },
+          }
+        }
+        skip={false}
+        variables={
+          Object {
+            "queryInput": Object {
+              "endTime": 1611153271425,
+              "startTime": 1611153270425,
+              "stationName": "Test",
+              "type": "AMPLIFIER_SATURATION_DETECTED",
+            },
+          }
+        }
+      >
+        <Blueprint3.NonIdealState
+          action={
+            <Blueprint3.Spinner
+              intent="primary"
+            />
+          }
+          description="Historical data"
+          title="Loading"
+        >
+          <div
+            className="bp3-non-ideal-state"
+          >
+            <Component>
+              <h4
+                className="bp3-heading"
+              >
+                Loading
+              </h4>
+            </Component>
+            <div>
+              Historical data
+            </div>
+            <Blueprint3.Spinner
+              intent="primary"
+            >
+              <div
+                className="bp3-spinner bp3-intent-primary"
+              >
+                <div
+                  className="bp3-spinner-animation"
+                >
+                  <svg
+                    height={50}
+                    strokeWidth="8.00"
+                    viewBox="1.00 1.00 98.00 98.00"
+                    width={50}
+                  >
+                    <path
+                      className="bp3-spinner-track"
+                      d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+                    />
+                    <path
+                      className="bp3-spinner-head"
+                      d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+                      pathLength={280}
+                      strokeDasharray="280 280"
+                      strokeDashoffset={210}
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Blueprint3.Spinner>
+          </div>
+        </Blueprint3.NonIdealState>
+      </Query>
+    </HistoricalAceiQuery>
+  </EnvironmentHistoryPanel>
+</ApolloProvider>
+`;

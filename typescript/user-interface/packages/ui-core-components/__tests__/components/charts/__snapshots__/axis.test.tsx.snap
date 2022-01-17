@@ -1,0 +1,1256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Axis Renders 1`] = `
+<Fragment>
+  <VictoryAxis
+    axisComponent={
+      <LineSegment
+        lineComponent={<Line />}
+        role="presentation"
+        shapeRendering="auto"
+        type="axis"
+      />
+    }
+    axisLabelComponent={
+      <VictoryLabel
+        backgroundComponent={<Rect />}
+        capHeight={0.71}
+        direction="inherit"
+        groupComponent={<g />}
+        lineHeight={1}
+        textComponent={<Text />}
+        tspanComponent={<TSpan />}
+      />
+    }
+    barDefs={
+      Array [
+        Object {
+          "color": "hsl(337.4922359499622deg, 36.84210526315789%, 52.49999999999999%)",
+          "id": "AAK.AAK.BHE",
+          "value": Object {
+            "x": "AAK.AAK.BHE",
+            "y": 2571,
+          },
+        },
+        Object {
+          "color": "hsl(199.98447189992442deg, 36.84210526315789%, 52.49999999999999%)",
+          "id": "AAK.AAK.BHN",
+          "value": Object {
+            "x": "AAK.AAK.BHN",
+            "y": 2239,
+          },
+        },
+        Object {
+          "color": "hsl(62.47670784988662deg, 36.84210526315789%, 52.49999999999999%)",
+          "id": "AAK.AAK.BHZ",
+          "value": Object {
+            "x": "AAK.AAK.BHZ",
+            "y": 2450,
+          },
+        },
+      ]
+    }
+    containerComponent={
+      <VictoryContainer
+        className="VictoryContainer"
+        portalComponent={<Portal />}
+        portalZIndex={99}
+        responsive={true}
+      />
+    }
+    dependentAxis={false}
+    fixLabelOverlap={false}
+    gridComponent={
+      <LineSegment
+        lineComponent={<Line />}
+        role="presentation"
+        shapeRendering="auto"
+        type="grid"
+      />
+    }
+    groupComponent={
+      <g
+        role="presentation"
+      />
+    }
+    label="Channel Name"
+    rotateAxis={true}
+    standalone={true}
+    style={
+      Object {
+        "axisLabel": Object {
+          "fill": "var(--core-prominent)",
+          "fontFamily": "var(--core-sans)",
+          "fontSize": 14,
+          "letterSpacing": "normal",
+          "padding": 82,
+          "stroke": "transparent",
+        },
+        "tickLabels": Object {
+          "angle": -65,
+          "fontSize": 10,
+        },
+      }
+    }
+    theme={
+      Object {
+        "area": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "#252525",
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "axis": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "axis": Object {
+              "fill": "transparent",
+              "stroke": "#252525",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            },
+            "axisLabel": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 25,
+              "stroke": "transparent",
+              "textAnchor": "middle",
+            },
+            "grid": Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "none",
+            },
+            "tickLabels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+            "ticks": Object {
+              "fill": "transparent",
+              "size": 1,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "bar": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "#252525",
+              "padding": 8,
+              "strokeWidth": 0,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "boxplot": Object {
+          "boxWidth": 20,
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "max": Object {
+              "padding": 8,
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "maxLabels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+            "median": Object {
+              "padding": 8,
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "medianLabels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+            "min": Object {
+              "padding": 8,
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "minLabels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+            "q1": Object {
+              "fill": "#969696",
+              "padding": 8,
+            },
+            "q1Labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+            "q3": Object {
+              "fill": "#969696",
+              "padding": 8,
+            },
+            "q3Labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "candlestick": Object {
+          "candleColors": Object {
+            "negative": "#252525",
+            "positive": "#ffffff",
+          },
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 5,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "chart": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "width": 450,
+        },
+        "errorbar": Object {
+          "borderWidth": 8,
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "transparent",
+              "stroke": "#252525",
+              "strokeWidth": 2,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "group": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "width": 450,
+        },
+        "histogram": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "#969696",
+              "stroke": "#252525",
+              "strokeWidth": 2,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "legend": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "gutter": 10,
+          "orientation": "vertical",
+          "style": Object {
+            "data": Object {
+              "type": "circle",
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+            "title": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 5,
+              "stroke": "transparent",
+            },
+          },
+          "titleOrientation": "top",
+        },
+        "line": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "transparent",
+              "stroke": "#252525",
+              "strokeWidth": 2,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "pie": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 400,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "padding": 10,
+              "stroke": "transparent",
+              "strokeWidth": 1,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 20,
+              "stroke": "transparent",
+            },
+          },
+          "width": 400,
+        },
+        "scatter": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "#252525",
+              "stroke": "transparent",
+              "strokeWidth": 0,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "stack": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "width": 450,
+        },
+        "tooltip": Object {
+          "cornerRadius": 5,
+          "flyoutPadding": 5,
+          "flyoutStyle": Object {
+            "fill": "#f0f0f0",
+            "pointerEvents": "none",
+            "stroke": "#252525",
+            "strokeWidth": 1,
+          },
+          "pointerLength": 10,
+          "style": Object {
+            "fill": "#252525",
+            "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+            "fontSize": 14,
+            "letterSpacing": "normal",
+            "padding": 0,
+            "pointerEvents": "none",
+            "stroke": "transparent",
+          },
+        },
+        "voronoi": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "transparent",
+              "stroke": "transparent",
+              "strokeWidth": 0,
+            },
+            "flyout": Object {
+              "fill": "#f0f0f0",
+              "pointerEvents": "none",
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 5,
+              "pointerEvents": "none",
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+      }
+    }
+    tickComponent={
+      <LineSegment
+        lineComponent={<Line />}
+        role="presentation"
+        shapeRendering="auto"
+        type="tick"
+      />
+    }
+    tickFormat={[Function]}
+    tickLabelComponent={
+      <Label
+        dx={-25}
+        dy={-10}
+        xLabelInfoMap={
+          Immutable.Map {
+            "AAK.AAK.BHE": Object {
+              "index": 0,
+              "isDisabled": false,
+              "tooltip": "2571",
+            },
+            "AAK.AAK.BHN": Object {
+              "index": 1,
+              "isDisabled": false,
+              "tooltip": "2239",
+            },
+            "AAK.AAK.BHZ": Object {
+              "index": 2,
+              "isDisabled": false,
+              "tooltip": "2450",
+            },
+          }
+        }
+      />
+    }
+    xAxisLabel="Channel Name"
+    xTickTooltips={
+      Array [
+        "2571",
+        "2239",
+        "2450",
+      ]
+    }
+    yAxisLabel="Average Lag (s)"
+  />
+  <VictoryAxis
+    axisComponent={
+      <LineSegment
+        lineComponent={<Line />}
+        role="presentation"
+        shapeRendering="auto"
+        type="axis"
+      />
+    }
+    axisLabelComponent={
+      <VictoryLabel
+        backgroundComponent={<Rect />}
+        capHeight={0.71}
+        direction="inherit"
+        groupComponent={<g />}
+        lineHeight={1}
+        textComponent={<Text />}
+        tspanComponent={<TSpan />}
+      />
+    }
+    barDefs={
+      Array [
+        Object {
+          "color": "hsl(337.4922359499622deg, 36.84210526315789%, 52.49999999999999%)",
+          "id": "AAK.AAK.BHE",
+          "value": Object {
+            "x": "AAK.AAK.BHE",
+            "y": 2571,
+          },
+        },
+        Object {
+          "color": "hsl(199.98447189992442deg, 36.84210526315789%, 52.49999999999999%)",
+          "id": "AAK.AAK.BHN",
+          "value": Object {
+            "x": "AAK.AAK.BHN",
+            "y": 2239,
+          },
+        },
+        Object {
+          "color": "hsl(62.47670784988662deg, 36.84210526315789%, 52.49999999999999%)",
+          "id": "AAK.AAK.BHZ",
+          "value": Object {
+            "x": "AAK.AAK.BHZ",
+            "y": 2450,
+          },
+        },
+      ]
+    }
+    containerComponent={
+      <VictoryContainer
+        className="VictoryContainer"
+        portalComponent={<Portal />}
+        portalZIndex={99}
+        responsive={true}
+      />
+    }
+    dependentAxis={true}
+    fixLabelOverlap={false}
+    gridComponent={
+      <LineSegment
+        lineComponent={<Line />}
+        role="presentation"
+        shapeRendering="auto"
+        type="grid"
+      />
+    }
+    groupComponent={
+      <g
+        role="presentation"
+      />
+    }
+    label="Average Lag (s)"
+    rotateAxis={true}
+    standalone={true}
+    style={
+      Object {
+        "axisLabel": Object {
+          "fill": "var(--core-prominent)",
+          "fontFamily": "var(--core-sans)",
+          "fontSize": 14,
+          "letterSpacing": "normal",
+          "padding": 40,
+          "stroke": "transparent",
+        },
+        "tickLabels": Object {
+          "fontSize": 10,
+        },
+      }
+    }
+    theme={
+      Object {
+        "area": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "#252525",
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "axis": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "axis": Object {
+              "fill": "transparent",
+              "stroke": "#252525",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            },
+            "axisLabel": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 25,
+              "stroke": "transparent",
+              "textAnchor": "middle",
+            },
+            "grid": Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "none",
+            },
+            "tickLabels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+            "ticks": Object {
+              "fill": "transparent",
+              "size": 1,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "bar": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "#252525",
+              "padding": 8,
+              "strokeWidth": 0,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "boxplot": Object {
+          "boxWidth": 20,
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "max": Object {
+              "padding": 8,
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "maxLabels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+            "median": Object {
+              "padding": 8,
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "medianLabels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+            "min": Object {
+              "padding": 8,
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "minLabels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+            "q1": Object {
+              "fill": "#969696",
+              "padding": 8,
+            },
+            "q1Labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+            "q3": Object {
+              "fill": "#969696",
+              "padding": 8,
+            },
+            "q3Labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 3,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "candlestick": Object {
+          "candleColors": Object {
+            "negative": "#252525",
+            "positive": "#ffffff",
+          },
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 5,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "chart": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "width": 450,
+        },
+        "errorbar": Object {
+          "borderWidth": 8,
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "transparent",
+              "stroke": "#252525",
+              "strokeWidth": 2,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "group": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "width": 450,
+        },
+        "histogram": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "#969696",
+              "stroke": "#252525",
+              "strokeWidth": 2,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "legend": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "gutter": 10,
+          "orientation": "vertical",
+          "style": Object {
+            "data": Object {
+              "type": "circle",
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+            "title": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 5,
+              "stroke": "transparent",
+            },
+          },
+          "titleOrientation": "top",
+        },
+        "line": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "transparent",
+              "stroke": "#252525",
+              "strokeWidth": 2,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "pie": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 400,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "padding": 10,
+              "stroke": "transparent",
+              "strokeWidth": 1,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 20,
+              "stroke": "transparent",
+            },
+          },
+          "width": 400,
+        },
+        "scatter": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "#252525",
+              "stroke": "transparent",
+              "strokeWidth": 0,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 10,
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+        "stack": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "width": 450,
+        },
+        "tooltip": Object {
+          "cornerRadius": 5,
+          "flyoutPadding": 5,
+          "flyoutStyle": Object {
+            "fill": "#f0f0f0",
+            "pointerEvents": "none",
+            "stroke": "#252525",
+            "strokeWidth": 1,
+          },
+          "pointerLength": 10,
+          "style": Object {
+            "fill": "#252525",
+            "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+            "fontSize": 14,
+            "letterSpacing": "normal",
+            "padding": 0,
+            "pointerEvents": "none",
+            "stroke": "transparent",
+          },
+        },
+        "voronoi": Object {
+          "colorScale": Array [
+            "#252525",
+            "#525252",
+            "#737373",
+            "#969696",
+            "#bdbdbd",
+            "#d9d9d9",
+            "#f0f0f0",
+          ],
+          "height": 300,
+          "padding": 50,
+          "style": Object {
+            "data": Object {
+              "fill": "transparent",
+              "stroke": "transparent",
+              "strokeWidth": 0,
+            },
+            "flyout": Object {
+              "fill": "#f0f0f0",
+              "pointerEvents": "none",
+              "stroke": "#252525",
+              "strokeWidth": 1,
+            },
+            "labels": Object {
+              "fill": "#252525",
+              "fontFamily": "'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif",
+              "fontSize": 14,
+              "letterSpacing": "normal",
+              "padding": 5,
+              "pointerEvents": "none",
+              "stroke": "transparent",
+            },
+          },
+          "width": 450,
+        },
+      }
+    }
+    tickComponent={
+      <LineSegment
+        lineComponent={<Line />}
+        role="presentation"
+        shapeRendering="auto"
+        type="tick"
+      />
+    }
+    tickFormat={[Function]}
+    tickLabelComponent={
+      <Label
+        dx={6}
+        dy={0}
+      />
+    }
+    xAxisLabel="Channel Name"
+    xTickTooltips={
+      Array [
+        "2571",
+        "2239",
+        "2450",
+      ]
+    }
+    yAxisLabel="Average Lag (s)"
+  />
+</Fragment>
+`;

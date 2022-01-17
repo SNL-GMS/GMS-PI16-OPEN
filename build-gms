@@ -1,0 +1,107 @@
+#!/bin/bash
+
+#
+# This script builds the GMS PI 16 open source release after the
+# prerequisites have been installed.
+#
+# It's intended to be run on a CentOS/RHEL 7 system.
+#
+
+#set -eux
+set -ex
+
+if [ -z "${REPO_PATH:-}" ]; then
+    REPO_PATH="$(cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd)"
+fi
+
+if [ -z "${CI_DOCKER_REGISTRY:-}" ]; then
+    export CI_DOCKER_REGISTRY=local
+fi
+
+if [ -z "${CI_THIRD_PARTY_DOCKER_REGISTRY:-}" ]; then
+    #export CI_THIRD_PARTY_DOCKER_REGISTRY=registry-1.docker.io/library
+    export CI_THIRD_PARTY_DOCKER_REGISTRY=docker.io
+fi
+
+if [ -z "${CI_PROJECT_NAME:-}" ]; then
+    export CI_PROJECT_NAME=gms-common
+fi
+
+if [ -z "${GMS_INCLUDE_TEST_BIN:-}" ]; then
+    export GMS_INCLUDE_TEST_BIN=""
+fi
+
+source ${REPO_PATH}/.bash_env
+source ${REPO_PATH}/ci/ci.env
+
+# export these values so subshells can see them
+export DOCKER_IMAGE_TAG
+export CI_BUILD_DATETIME
+export CI_COMMIT_REF_NAME
+export CI_COMMIT_REF_SLUG
+export CI_COMMIT_SHA
+
+build_docker() {
+   cd ${REPO_PATH}/docker
+   time make all
+}
+
+build_python() {
+    cd ${REPO_PATH}/python
+    export PATH=$PATH:/opt/gradle/bin
+    time make all
+}
+
+build_java() {
+    cd ${REPO_PATH}/java
+    export PATH=$PATH:/opt/gradle/bin
+    time gradle -Dorg.gradle.jvmargs=-Xmx8g build test alljavadoc resolve docker dockerTagCiCommitRefSlug dockerTagCiCommitSha
+
+    # Prepare to build swagger image
+    mkdir spec
+    cp $(find . -regex '.*build/swagger/.*\.json') spec
+
+    # Create the javadoc container image
+    make
+
+    # Create the swagger container image
+    cd openapi
+    make
+}
+
+build_typescript() {
+    cd ${REPO_PATH}/typescript/user-interface
+    time yarn install --prefer-offline --frozen-lockfile
+    time yarn lerna run build:prod --stream
+    time yarn lerna run build:webpack:prod:ian --scope @gms/ui-app --stream
+    time yarn lerna run build:webpack:prod:soh --scope @gms/ui-app --stream
+    time yarn lerna run build:webpack:prod --scope @gms/api-gateway --stream
+    time yarn lerna run bundle:prod --scope @gms/api-gateway --stream
+    time yarn lerna run bundle:prod --scope @gms/mock-data-server --stream
+    time make all
+}
+
+case "$1" in
+  docker)
+    build_docker
+    ;;
+  java)
+    build_java
+    ;;
+  python)
+    build_python
+    ;;
+  typescript)
+    build_typescript
+    ;;
+  all)
+    build_docker
+    build_java
+    build_python
+    build_typescript
+    ;;
+  *)
+    echo "Unknown option: $1"
+    echo "Valid options are: docker, java, python, typescript, all"
+    ;;
+esac

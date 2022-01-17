@@ -1,0 +1,135 @@
+.station-properties-display-window {
+  height: 100%;
+  width: 100%;
+  padding: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.station-properties-panel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.station-properties-table {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  // wrapper wraps a single table
+  &__wrapper {
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.channel-configuration-table {
+  padding-bottom: 0;
+}
+
+//AG grid seems to start row count at zero which is considered even
+.ag-theme-dark .ag-row-even {
+  background-color: $gms-prominent-background;
+}
+
+.ag-theme-dark .ag-row-odd {
+  background-color: $gms-popover-background;
+}
+
+.ag-theme-dark .ag-ltr .ag-cell {
+  border-right-style: solid;
+  border-right-color: #182026;
+  border-right-width: 2px;
+}
+
+.station-properties-table-cell {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-style: solid;
+  border: #3781e1;
+  font-size: 16px;
+  font-weight: 400;
+  color: $core-main;
+  /// Table Value styles
+  .station-properties-table-cell__value {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: $core-main;
+    & span {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    &--numeric {
+      justify-content: flex-end;
+      flex-grow: 10;
+      width: auto;
+    }
+    &--center {
+      justify-content: center;
+      flex-grow: 10;
+      width: auto;
+    }
+  }
+
+  .station-properties-table-cell-container {
+    padding: 2px 0;
+    background-color: $core-transparent;
+  }
+
+  /// Selection
+  @mixin selectedBorder($where...) {
+    position: relative;
+    &::after {
+      @include fillAllSpaceAbsolutely;
+      content: '';
+      @if length($where) > 0 {
+        @each $place in $where {
+          border-#{$place}: 4px solid lighten($core-input-highlight, 10%);
+        }
+      } @else {
+        border: 4px solid lighten($core-input-highlight, 10%);
+      }
+      z-index: 1;
+      opacity: 1;
+      background-color: transparent;
+    }
+  }
+
+  .is-selected & {
+    @include selectedBorder('top', 'bottom', 'left', 'right');
+  }
+  .is-selected &,
+  .ag-row-selected & {
+    border: transparent !important;
+  }
+}
+
+@mixin headerFontStyle {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0 10px;
+}
+
+.station-properties-header-cell {
+  @include headerFontStyle;
+  color: $gms-main;
+
+  &.ag-header-cell {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,909 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess SelectionWindow Marker renders 1`] = `
+<SelectionWindow
+  canvasRef={[MockFunction]}
+  computeTimeSecsForMouseXPosition={[MockFunction]}
+  containerClientWidth={[MockFunction]}
+  labelWidthPx={5}
+  onClickSelectionWindow={[MockFunction]}
+  onMouseDown={[MockFunction]}
+  onMouseMove={[MockFunction]}
+  onMouseUp={[MockFunction]}
+  onMoveSelectionWindow={[MockFunction]}
+  onUpdateSelectionWindow={[MockFunction]}
+  selectionWindow={
+    Object {
+      "color": "ff0000",
+      "endMarker": Object {
+        "color": "ff0000",
+        "id": "my-end-marker",
+        "lineStyle": "dashed",
+        "maxTimeSecsConstraint": 600,
+        "minTimeSecsConstraint": 15,
+        "timeSecs": 400,
+      },
+      "id": "selection-window",
+      "isMoveable": true,
+      "startMarker": Object {
+        "color": "ff0000",
+        "id": "my-start-marker",
+        "lineStyle": "dashed",
+        "maxTimeSecsConstraint": 600,
+        "minTimeSecsConstraint": 15,
+        "timeSecs": 200,
+      },
+    }
+  }
+  timeRange={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+        Object {
+          "type": "return",
+          "value": Object {
+            "endTimeSecs": 1000,
+            "startTimeSecs": 0,
+          },
+        },
+      ],
+    }
+  }
+  viewTimeRange={[MockFunction]}
+  viewportClientWidth={[MockFunction]}
+>
+  <div
+    className="selection-window"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+  >
+    <div
+      className="selection-window-selection"
+      onDoubleClick={[Function]}
+      onMouseDown={[Function]}
+      style={
+        Object {
+          "backgroundColor": "ff0000",
+          "cursor": "move",
+          "left": "20%",
+          "right": "60%",
+        }
+      }
+    />
+    <MoveableMarker
+      associatedEndMarker={
+        Object {
+          "color": "ff0000",
+          "id": "my-end-marker",
+          "lineStyle": "dashed",
+          "maxTimeSecsConstraint": 600,
+          "minTimeSecsConstraint": 15,
+          "timeSecs": 400,
+        }
+      }
+      containerClientWidth={[MockFunction]}
+      labelWidthPx={5}
+      marker={
+        Object {
+          "color": "ff0000",
+          "id": "my-start-marker",
+          "lineStyle": "dashed",
+          "maxTimeSecsConstraint": 600,
+          "minTimeSecsConstraint": 15,
+          "timeSecs": 200,
+        }
+      }
+      name="moveable-marker-start"
+      onUpdateMarker={[Function]}
+      percentageLocation={20}
+      timeRange={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+          ],
+        }
+      }
+      updateTimeWindowSelection={[Function]}
+      viewTimeRange={[MockFunction]}
+      viewportClientWidth={[MockFunction]}
+    >
+      <div
+        className="moveable-marker"
+        key="moveable-marker-start"
+        onMouseDown={[Function]}
+        style={
+          Object {
+            "border": ".5px dashed ff0000",
+            "left": "20%",
+          }
+        }
+      />
+    </MoveableMarker>
+    <MoveableMarker
+      associatedStartMarker={
+        Object {
+          "color": "ff0000",
+          "id": "my-start-marker",
+          "lineStyle": "dashed",
+          "maxTimeSecsConstraint": 600,
+          "minTimeSecsConstraint": 15,
+          "timeSecs": 200,
+        }
+      }
+      containerClientWidth={[MockFunction]}
+      labelWidthPx={5}
+      marker={
+        Object {
+          "color": "ff0000",
+          "id": "my-end-marker",
+          "lineStyle": "dashed",
+          "maxTimeSecsConstraint": 600,
+          "minTimeSecsConstraint": 15,
+          "timeSecs": 400,
+        }
+      }
+      name="moveable-marker-end"
+      onUpdateMarker={[Function]}
+      percentageLocation={40}
+      timeRange={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+            Object {
+              "type": "return",
+              "value": Object {
+                "endTimeSecs": 1000,
+                "startTimeSecs": 0,
+              },
+            },
+          ],
+        }
+      }
+      updateTimeWindowSelection={[Function]}
+      viewTimeRange={[MockFunction]}
+      viewportClientWidth={[MockFunction]}
+    >
+      <div
+        className="moveable-marker"
+        key="moveable-marker-end"
+        onMouseDown={[Function]}
+        style={
+          Object {
+            "border": ".5px dashed ff0000",
+            "left": "40%",
+          }
+        }
+      />
+    </MoveableMarker>
+  </div>
+</SelectionWindow>
+`;
+
+exports[`Weavess SelectionWindow Marker shallow renders 1`] = `
+<div
+  className="selection-window"
+  onMouseDown={[Function]}
+  onMouseMove={[Function]}
+  onMouseUp={[Function]}
+>
+  <div
+    className="selection-window-selection"
+    onDoubleClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "ff0000",
+        "cursor": "move",
+        "left": "20%",
+        "right": "60%",
+      }
+    }
+  />
+  <MoveableMarker
+    associatedEndMarker={
+      Object {
+        "color": "ff0000",
+        "id": "my-end-marker",
+        "lineStyle": "dashed",
+        "maxTimeSecsConstraint": 600,
+        "minTimeSecsConstraint": 15,
+        "timeSecs": 400,
+      }
+    }
+    containerClientWidth={[MockFunction]}
+    labelWidthPx={5}
+    marker={
+      Object {
+        "color": "ff0000",
+        "id": "my-start-marker",
+        "lineStyle": "dashed",
+        "maxTimeSecsConstraint": 600,
+        "minTimeSecsConstraint": 15,
+        "timeSecs": 200,
+      }
+    }
+    name="moveable-marker-start"
+    onUpdateMarker={[Function]}
+    percentageLocation={20}
+    timeRange={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+        ],
+      }
+    }
+    updateTimeWindowSelection={[Function]}
+    viewTimeRange={[MockFunction]}
+    viewportClientWidth={[MockFunction]}
+  />
+  <MoveableMarker
+    associatedStartMarker={
+      Object {
+        "color": "ff0000",
+        "id": "my-start-marker",
+        "lineStyle": "dashed",
+        "maxTimeSecsConstraint": 600,
+        "minTimeSecsConstraint": 15,
+        "timeSecs": 200,
+      }
+    }
+    containerClientWidth={[MockFunction]}
+    labelWidthPx={5}
+    marker={
+      Object {
+        "color": "ff0000",
+        "id": "my-end-marker",
+        "lineStyle": "dashed",
+        "maxTimeSecsConstraint": 600,
+        "minTimeSecsConstraint": 15,
+        "timeSecs": 400,
+      }
+    }
+    name="moveable-marker-end"
+    onUpdateMarker={[Function]}
+    percentageLocation={40}
+    timeRange={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+          Object {
+            "type": "return",
+            "value": Object {
+              "endTimeSecs": 1000,
+              "startTimeSecs": 0,
+            },
+          },
+        ],
+      }
+    }
+    updateTimeWindowSelection={[Function]}
+    viewTimeRange={[MockFunction]}
+    viewportClientWidth={[MockFunction]}
+  />
+</div>
+`;

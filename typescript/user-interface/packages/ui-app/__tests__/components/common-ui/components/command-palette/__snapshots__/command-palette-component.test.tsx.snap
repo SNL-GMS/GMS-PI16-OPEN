@@ -1,0 +1,590 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Command Palette Component matches a snapshot 1`] = `
+<ApolloProvider
+  client={
+    DefaultClient {
+      "cache": InMemoryCache {
+        "addTypename": true,
+        "cacheKeyRoot": KeyTrie {
+          "weakness": true,
+        },
+        "config": Object {
+          "addTypename": true,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+          "freezeResults": false,
+          "resultCaching": true,
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimisticData": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "executeSubSelectedArray": [Function],
+          "freezeResults": false,
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {},
+        "watches": Set {},
+      },
+      "clearStoreCallbacks": Array [],
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "localState": LocalState {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "client": [Circular],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "queryManager": QueryManager {
+        "assumeImmutableResults": false,
+        "clientAwareness": Object {
+          "name": undefined,
+          "version": undefined,
+        },
+        "dataStore": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "fetchQueryRejectFns": Map {},
+        "idCounter": 1,
+        "inFlightLinkObservables": Map {},
+        "link": ApolloLink {
+          "request": [Function],
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutationStore": MutationStore {
+          "store": Object {},
+        },
+        "onBroadcast": [Function],
+        "pollingInfoByQueryId": Map {},
+        "queries": Map {},
+        "queryDeduplication": true,
+        "queryStore": QueryStore {
+          "store": Object {},
+        },
+        "ssrMode": false,
+        "transformCache": WeakMap {},
+      },
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+      },
+      "typeDefs": undefined,
+      "version": "2.6.4",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <CommandPaletteComponent
+    commandPaletteIsVisible={true}
+    setCommandPaletteVisibility={[MockFunction]}
+    setKeyPressActionQueue={[MockFunction]}
+  >
+    <BaseCommandPaletteOverlay
+      commandActions={Array []}
+      showCommandPalette={true}
+    >
+      <OverlayWrapper
+        isOpen={true}
+        onClose={[Function]}
+      >
+        <Blueprint3.Overlay
+          autoFocus={false}
+          backdropClassName=""
+          backdropProps={Object {}}
+          canEscapeKeyClose={true}
+          canOutsideClickClose={true}
+          className="overlay"
+          enforceFocus={false}
+          hasBackdrop={true}
+          isOpen={true}
+          lazy={true}
+          onClose={[Function]}
+          transitionDuration={300}
+          transitionName="bp3-overlay"
+          usePortal={true}
+        >
+          <Blueprint3.Portal
+            container={
+              <body
+                class="bp3-overlay-open"
+              >
+                <div
+                  class="bp3-portal"
+                >
+                  <div
+                    class="bp3-overlay bp3-overlay-open overlay"
+                  >
+                    <div
+                      class="bp3-overlay-backdrop bp3-overlay-appear bp3-overlay-appear-active"
+                      tabindex="0"
+                    />
+                    <div
+                      class="overlay__contents undefined bp3-overlay-content bp3-overlay-appear bp3-overlay-appear-active"
+                      tabindex="0"
+                    >
+                      <div
+                        class="overlay__contents command-palette-overlay__contents"
+                      >
+                        <form
+                          class="command-palette"
+                          data-cy="command-palette"
+                        >
+                          <div
+                            class="bp3-input-group command-palette__input"
+                          >
+                            <span
+                              class="bp3-icon bp3-icon-chevron-right"
+                              icon="chevron-right"
+                            >
+                              <svg
+                                data-icon="chevron-right"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                width="16"
+                              >
+                                <desc>
+                                  chevron-right
+                                </desc>
+                                <path
+                                  d="M10.71 7.29l-4-4a1.003 1.003 0 00-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                            <input
+                              autocomplete="off"
+                              class="bp3-input"
+                              dir="ltr"
+                              name="command-palette"
+                              placeholder="Command"
+                              style="padding-right: 10px;"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                          <div
+                            class="command-palette__results-wrapper"
+                          >
+                            <ul
+                              class="command-palette__result-list"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </body>
+            }
+          >
+            <Portal
+              containerInfo={
+                <div
+                  class="bp3-portal"
+                >
+                  <div
+                    class="bp3-overlay bp3-overlay-open overlay"
+                  >
+                    <div
+                      class="bp3-overlay-backdrop bp3-overlay-appear bp3-overlay-appear-active"
+                      tabindex="0"
+                    />
+                    <div
+                      class="overlay__contents undefined bp3-overlay-content bp3-overlay-appear bp3-overlay-appear-active"
+                      tabindex="0"
+                    >
+                      <div
+                        class="overlay__contents command-palette-overlay__contents"
+                      >
+                        <form
+                          class="command-palette"
+                          data-cy="command-palette"
+                        >
+                          <div
+                            class="bp3-input-group command-palette__input"
+                          >
+                            <span
+                              class="bp3-icon bp3-icon-chevron-right"
+                              icon="chevron-right"
+                            >
+                              <svg
+                                data-icon="chevron-right"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                width="16"
+                              >
+                                <desc>
+                                  chevron-right
+                                </desc>
+                                <path
+                                  d="M10.71 7.29l-4-4a1.003 1.003 0 00-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                            <input
+                              autocomplete="off"
+                              class="bp3-input"
+                              dir="ltr"
+                              name="command-palette"
+                              placeholder="Command"
+                              style="padding-right: 10px;"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                          <div
+                            class="command-palette__results-wrapper"
+                          >
+                            <ul
+                              class="command-palette__result-list"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              }
+            >
+              <TransitionGroup
+                appear={true}
+                childFactory={[Function]}
+                className="bp3-overlay bp3-overlay-open overlay"
+                component="div"
+                onKeyDown={[Function]}
+              >
+                <div
+                  className="bp3-overlay bp3-overlay-open overlay"
+                  onKeyDown={[Function]}
+                >
+                  <CSSTransition
+                    appear={true}
+                    classNames="bp3-overlay"
+                    in={true}
+                    key=".$__backdrop"
+                    onExited={[Function]}
+                    timeout={300}
+                  >
+                    <Transition
+                      appear={true}
+                      enter={true}
+                      exit={true}
+                      in={true}
+                      mountOnEnter={false}
+                      onEnter={[Function]}
+                      onEntered={[Function]}
+                      onEntering={[Function]}
+                      onExit={[Function]}
+                      onExited={[Function]}
+                      onExiting={[Function]}
+                      timeout={300}
+                      unmountOnExit={false}
+                    >
+                      <div
+                        className="bp3-overlay-backdrop"
+                        onMouseDown={[Function]}
+                        tabIndex={0}
+                      />
+                    </Transition>
+                  </CSSTransition>
+                  <CSSTransition
+                    appear={true}
+                    classNames="bp3-overlay"
+                    in={true}
+                    key=".$.0"
+                    onExited={[Function]}
+                    timeout={300}
+                  >
+                    <Transition
+                      appear={true}
+                      enter={true}
+                      exit={true}
+                      in={true}
+                      mountOnEnter={false}
+                      onEnter={[Function]}
+                      onEntered={[Function]}
+                      onEntering={[Function]}
+                      onExit={[Function]}
+                      onExited={[Function]}
+                      onExiting={[Function]}
+                      timeout={300}
+                      unmountOnExit={false}
+                    >
+                      <div
+                        className="overlay__contents undefined bp3-overlay-content"
+                        tabIndex={0}
+                      >
+                        <CommandPalette
+                          commandActions={Array []}
+                          defaultSearchTerms={
+                            Array [
+                              "open display",
+                              "close display",
+                            ]
+                          }
+                          isVisible={true}
+                        >
+                          <CommandPaletteSearchManager
+                            commandActions={Array []}
+                            defaultSearchResults={Array []}
+                            defaultSearchTerms={
+                              Array [
+                                "open display",
+                                "close display",
+                              ]
+                            }
+                            isVisible={true}
+                          >
+                            <div
+                              className="overlay__contents command-palette-overlay__contents"
+                              onKeyDown={[Function]}
+                            >
+                              <form
+                                className="command-palette"
+                                data-cy="command-palette"
+                                onSubmit={[Function]}
+                              >
+                                <CommandPaletteInput
+                                  getSearchTerm={[Function]}
+                                  selectionManager={
+                                    Object {
+                                      "getSelectedResult": [Function],
+                                      "resetSelection": [Function],
+                                      "selectNext": [Function],
+                                      "selectPrevious": [Function],
+                                    }
+                                  }
+                                  setSearchTerm={[Function]}
+                                >
+                                  <Blueprint3.InputGroup
+                                    autoComplete="off"
+                                    autoFocus={true}
+                                    className="command-palette__input"
+                                    dir="ltr"
+                                    inputRef={[Function]}
+                                    leftIcon="chevron-right"
+                                    name="command-palette"
+                                    onChange={[Function]}
+                                    onKeyDown={[Function]}
+                                    placeholder="Command"
+                                    value=""
+                                  >
+                                    <div
+                                      className="bp3-input-group command-palette__input"
+                                    >
+                                      <Blueprint3.Icon
+                                        icon="chevron-right"
+                                      >
+                                        <span
+                                          className="bp3-icon bp3-icon-chevron-right"
+                                          icon="chevron-right"
+                                        >
+                                          <svg
+                                            data-icon="chevron-right"
+                                            height={16}
+                                            viewBox="0 0 16 16"
+                                            width={16}
+                                          >
+                                            <desc>
+                                              chevron-right
+                                            </desc>
+                                            <path
+                                              d="M10.71 7.29l-4-4a1.003 1.003 0 00-1.42 1.42L8.59 8 5.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                              fillRule="evenodd"
+                                              key="0"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </Blueprint3.Icon>
+                                      <input
+                                        autoComplete="off"
+                                        autoFocus={true}
+                                        className="bp3-input"
+                                        dir="ltr"
+                                        name="command-palette"
+                                        onChange={[Function]}
+                                        onKeyDown={[Function]}
+                                        placeholder="Command"
+                                        style={
+                                          Object {
+                                            "paddingRight": 10,
+                                          }
+                                        }
+                                        type="text"
+                                        value=""
+                                      />
+                                    </div>
+                                  </Blueprint3.InputGroup>
+                                </CommandPaletteInput>
+                                <CommandPaletteResultList
+                                  searchResults={Array []}
+                                >
+                                  <div
+                                    className="command-palette__results-wrapper"
+                                  >
+                                    <ul
+                                      className="command-palette__result-list"
+                                    />
+                                  </div>
+                                </CommandPaletteResultList>
+                              </form>
+                            </div>
+                          </CommandPaletteSearchManager>
+                        </CommandPalette>
+                      </div>
+                    </Transition>
+                  </CSSTransition>
+                </div>
+              </TransitionGroup>
+            </Portal>
+          </Blueprint3.Portal>
+        </Blueprint3.Overlay>
+      </OverlayWrapper>
+    </BaseCommandPaletteOverlay>
+  </CommandPaletteComponent>
+</ApolloProvider>
+`;

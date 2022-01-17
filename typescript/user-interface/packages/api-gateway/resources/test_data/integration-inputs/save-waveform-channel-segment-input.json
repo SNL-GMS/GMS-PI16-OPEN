@@ -1,0 +1,15 @@
+[{
+  "channelId": "5754f22f-c56f-3b57-a72f-48dacf16f906",
+  "endTime": "",
+  "id": "",
+  "name": "SPITS/fkb FK_BEAM",
+  "startTime": "",
+  "timeseries": [{
+    "sampleCount":10,
+    "sampleRate":10,
+    "startTime":"",
+    "values": []
+  }],
+  "timeseriesType": "WAVEFORM",
+  "type": "FK_BEAM"
+}]

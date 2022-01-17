@@ -1,0 +1,329 @@
+{
+  "groups": [
+    {
+      "group": "ALL_1",
+      "description": "All stations in datafeed",
+      "rules": [
+        {
+          "name": "all1",
+          "type": "none"
+        }
+      ]
+    },
+    {
+      "group": "ALL_2",
+      "description": "All stations in datafeed",
+      "rules": [
+        {
+          "name": "all2",
+          "type": "none"
+        }
+      ]
+    },
+    {
+      "group": "A_TO_H",
+      "description": "Stations starting with A to H",
+      "rules": [
+        {
+          "name": "atoh",
+          "type": "alphabet",
+          "table": "Station",
+          "field": "StationName",
+          "operator": "<",
+          "value": "I"
+        }
+      ]
+    },
+    {
+      "group": "I_TO_Z",
+      "description": "Stations starting with I to Z",
+      "rules": [
+        {
+          "name": "atoh",
+          "type": "negate",
+          "value": "A_TO_H"
+        }
+      ]
+    },
+    {
+      "group": "EurAsia",
+      "description": "Stations located in EurAsia",
+      "logic": "OR",
+      "rules": [
+        {
+          "name": "ea1",
+          "type": "lookup",
+          "lookuptable": "Continents",
+          "table": "Station",
+          "field": "Location",
+          "value": "Europe"
+        },
+        {
+          "name": "ea2",
+          "type": "lookup",
+          "lookuptable": "Continents",
+          "table": "Station",
+          "field": "Location",
+          "value": "Asia"
+        }
+      ]
+    },
+    {
+      "group": "OthCont",
+      "description": "Stations NOT located in EurAsia",
+      "logic": "AND",
+      "rules": [
+        {
+          "name": "ea1",
+          "type": "negate",
+          "value": "EurAsia"
+        },
+        {
+          "name": "ea2",
+          "type": "negate",
+          "value": "EurAsia"
+        }
+      ]
+    },
+    {
+      "group": "IMS_Sta",
+      "description": "Stations that are IMS",
+      "rules": [
+        {
+          "name": "mini",
+          "type": "negate",
+          "value": "MiniSD"
+        }
+      ]
+    },
+    {
+      "group": "CD1.1",
+      "description": "Stations originally in CD-1.1 format",
+      "rules": [
+        {
+          "name": "cd11",
+          "type": "find",
+          "table": "Station",
+          "field": "Format",
+          "value": "CD11"
+        }
+      ]
+    },
+    {
+      "group": "CD1.0",
+      "description": "Stations originally in CD-1.0 format",
+      "rules": [
+        {
+          "name": "cd10",
+          "type": "find",
+          "table": "Station",
+          "field": "Format",
+          "value": "CD10"
+        }
+      ]
+    },
+    {
+      "group": "MiniSD",
+      "description": "Stations originally in MiniSEED format",
+      "rules": [
+        {
+          "name": "mini",
+          "type": "find",
+          "table": "Station",
+          "field": "Format",
+          "value": "MINISEED"
+        }
+      ]
+    },
+    {
+      "group": "GSE",
+      "description": "Stations originally in GSE format",
+      "rules": [
+        {
+          "name": "gse",
+          "type": "find",
+          "table": "Station",
+          "field": "Format",
+          "value": "GSE"
+        }
+      ]
+    },
+    {
+      "group": "Primary",
+      "description": "Stations with primary priority",
+      "rules": [
+        {
+          "name": "prim",
+          "type": "find",
+          "table": "Station",
+          "field": "Priority",
+          "value": "PRIMARY"
+        }
+      ]
+    },
+    {
+      "group": "Second",
+      "description": "Stations with secondary priority",
+      "rules": [
+        {
+          "name": "sec",
+          "type": "find",
+          "table": "Station",
+          "field": "Priority",
+          "value": "SECONDARY"
+        }
+      ]
+    },
+    {
+      "group": "AuxFast",
+      "description": "Auxiliary Stations with timely arrival",
+      "rules": [
+        {
+          "name": "auxfast",
+          "type": "find",
+          "table": "Station",
+          "field": "Priority",
+          "value": "AUXFAST"
+        }
+      ]
+    },
+    {
+      "group": "AuxDel",
+      "description": "Auxiliary Stations with delayed arrival",
+      "rules": [
+        {
+          "name": "auxslow",
+          "type": "find",
+          "table": "Station",
+          "field": "Priority",
+          "value": "AUXSLOW"
+        }
+      ]
+    },
+    {
+      "group": "SEISMIC",
+      "description": "Stations with SEISMIC channels",
+      "rules": [
+        {
+          "name": "seismic",
+          "type": "lookup",
+          "lookuptable": "StationTypeByChannel",
+          "table": "Station",
+          "field": "Channels",
+          "operator": "ChannelName",
+          "value": "SEISMIC"
+        }
+      ]
+    },
+    {
+      "group": "INFRA",
+      "description": "Stations with INFRASOUND channels",
+      "rules": [
+        {
+          "name": "infra",
+          "type": "lookup",
+          "lookuptable": "StationTypeByChannel",
+          "table": "Station",
+          "field": "Channels",
+          "operator": "ChannelName",
+          "value": "INFRASOUND"
+        }
+      ]
+    },
+    {
+      "group": "HYDRO",
+      "description": "Stations with HYDRO-ACOUSTIC channels",
+      "logic": "COMPOUND",
+      "rules": [
+        {
+          "name": "hydro1",
+          "type": "alphabet",
+          "index": "1",
+          "table": "Station",
+          "field": "Channels",
+          "operator": "==",
+          "value": "HH"
+        },
+        {
+          "name": "digitize1",
+          "type": "match",
+          "index": "1",
+          "table": "instrument.dat",
+          "value": "T_digitizer"
+        },
+        {
+          "name": "h0_only2",
+          "type": "alphabet",
+          "index": "2",
+          "table": "Station",
+          "field": "StationName",
+          "operator": "==",
+          "value": "H0"
+        },
+        {
+          "name": "hydro2",
+          "type": "alphabet",
+          "index": "2",
+          "table": "Station",
+          "field": "Channels",
+          "operator": "==",
+          "value": "EH"
+        },
+        {
+          "name": "hydro3",
+          "type": "alphabet",
+          "index": "3",
+          "table": "Station",
+          "field": "Channels",
+          "operator": "==",
+          "value": "EH"
+        },
+        {
+          "name": "digitize3",
+          "type": "match",
+          "index": "3",
+          "table": "instrument.dat",
+          "value": "T_digitizer"
+        },
+        {
+          "name": "hydro4",
+          "type": "lookup",
+          "index": "4",
+          "lookuptable": "StationTypeByChannel",
+          "table": "Station",
+          "field": "Channels",
+          "operator": "ChannelName",
+          "value": "HYDRO"
+        },
+        {
+          "name": "h1_only4",
+          "type": "alphabet",
+          "index": "4",
+          "table": "Station",
+          "field": "StationName",
+          "operator": "==",
+          "value": "H1"
+        },
+        {
+          "name": "hydro5",
+          "type": "lookup",
+          "index": "5",
+          "lookuptable": "StationTypeByChannel",
+          "table": "Station",
+          "field": "Channels",
+          "operator": "ChannelName",
+          "value": "HYDRO"
+        },
+        {
+          "name": "h0_only5",
+          "type": "alphabet",
+          "index": "5",
+          "table": "Station",
+          "field": "StationName",
+          "operator": "==",
+          "value": "H0"
+        }
+      ]
+    }
+  ]
+}

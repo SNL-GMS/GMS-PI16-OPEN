@@ -1,0 +1,23 @@
+.station-name {
+  white-space: nowrap;
+
+  &__channel-name {
+    color: $gms-prominent;
+    font-size: 0.8em;
+  }
+}
+.radio-dropdown {
+  padding: 0.5rem 1rem;
+  label {
+    margin: 0 -0.5em;
+    height: 2.125em;
+    display: flex;
+    align-items: center;
+    &:hover {
+      filter: brightness(0.8);
+    }
+    * + .bp3-html-select {
+      margin-left: 1ch;
+    }
+  }
+}

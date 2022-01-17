@@ -1,0 +1,1129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`System Message Component matches snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ApolloProvider
+    client={
+      DefaultClient {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "clearStoreCallbacks": Array [],
+        "defaultOptions": Object {},
+        "disableNetworkFetches": false,
+        "link": ApolloLink {
+          "request": [Function],
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutate": [Function],
+        "query": [Function],
+        "queryDeduplication": true,
+        "queryManager": QueryManager {
+          "assumeImmutableResults": false,
+          "clientAwareness": Object {
+            "name": undefined,
+            "version": undefined,
+          },
+          "dataStore": DataStore {
+            "cache": InMemoryCache {
+              "addTypename": true,
+              "cacheKeyRoot": KeyTrie {
+                "weakness": true,
+              },
+              "config": Object {
+                "addTypename": true,
+                "dataIdFromObject": [Function],
+                "fragmentMatcher": HeuristicFragmentMatcher {},
+                "freezeResults": false,
+                "resultCaching": true,
+              },
+              "data": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "maybeBroadcastWatch": [Function],
+              "optimisticData": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "silenceBroadcast": false,
+              "storeReader": StoreReader {
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "executeSubSelectedArray": [Function],
+                "freezeResults": false,
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
+            },
+          },
+          "fetchQueryRejectFns": Map {},
+          "idCounter": 1,
+          "inFlightLinkObservables": Map {},
+          "link": ApolloLink {
+            "request": [Function],
+          },
+          "localState": LocalState {
+            "cache": InMemoryCache {
+              "addTypename": true,
+              "cacheKeyRoot": KeyTrie {
+                "weakness": true,
+              },
+              "config": Object {
+                "addTypename": true,
+                "dataIdFromObject": [Function],
+                "fragmentMatcher": HeuristicFragmentMatcher {},
+                "freezeResults": false,
+                "resultCaching": true,
+              },
+              "data": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "maybeBroadcastWatch": [Function],
+              "optimisticData": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "silenceBroadcast": false,
+              "storeReader": StoreReader {
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "executeSubSelectedArray": [Function],
+                "freezeResults": false,
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
+            },
+            "client": [Circular],
+          },
+          "mutationStore": MutationStore {
+            "store": Object {},
+          },
+          "onBroadcast": [Function],
+          "pollingInfoByQueryId": Map {},
+          "queries": Map {},
+          "queryDeduplication": true,
+          "queryStore": QueryStore {
+            "store": Object {},
+          },
+          "ssrMode": false,
+          "transformCache": WeakMap {},
+        },
+        "reFetchObservableQueries": [Function],
+        "resetStore": [Function],
+        "resetStoreCallbacks": Array [],
+        "store": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "typeDefs": undefined,
+        "version": "2.6.4",
+        "watchQuery": [Function],
+      }
+    }
+  >
+    <Memo()
+      addSystemMessages={[MockFunction]}
+      clearAllSystemMessages={[MockFunction]}
+      clearExpiredSystemMessages={[MockFunction]}
+      clearSystemMessages={[MockFunction]}
+      setAudibleNotifications={[MockFunction]}
+      systemMessageDefinitionsQuery={
+        Object {
+          "canFetchMore": false,
+          "clear": undefined,
+          "data": Array [
+            Object {
+              "systemMessageCategory": "SOH",
+              "systemMessageSeverity": "INFO",
+              "systemMessageSubCategory": "USER",
+              "systemMessageType": "CHANNEL_MONITOR_TYPE_QUIET_PERIOD_CANCELED",
+              "template": "Station %s Channel %s %s quiet period canceled by user %s",
+            },
+            Object {
+              "systemMessageCategory": "SOH",
+              "systemMessageSeverity": "INFO",
+              "systemMessageSubCategory": "USER",
+              "systemMessageType": "CHANNEL_MONITOR_TYPE_STATUS_CHANGE_ACKNOWLEDGED",
+              "template": "Station %s Channel %s %s status change acknowledged by user %s|Station %s Channel %s %s status change acknowledged by user %s with comment '%s'",
+            },
+          ],
+          "error": undefined,
+          "failureCount": 0,
+          "fetchMore": undefined,
+          "isError": false,
+          "isFetched": false,
+          "isFetchedAfterMount": undefined,
+          "isFetching": false,
+          "isIdle": false,
+          "isInitialData": undefined,
+          "isLoading": false,
+          "isPlaceholderData": undefined,
+          "isPreviousData": undefined,
+          "isStale": true,
+          "isSuccess": true,
+          "refetch": undefined,
+          "remove": undefined,
+          "status": undefined,
+          "updatedAt": undefined,
+        }
+      }
+      systemMessagesState={
+        Object {
+          "lastUpdated": 0,
+          "latestSystemMessages": Array [],
+          "systemMessages": Array [],
+        }
+      }
+      userProfileQuery={
+        Object {
+          "canFetchMore": false,
+          "clear": undefined,
+          "data": Object {
+            "audibleNotifications": Array [],
+            "defaultAnalystLayoutName": "default",
+            "defaultSohLayoutName": "SohDefault",
+            "userId": "1",
+            "workspaceLayouts": Array [
+              Object {
+                "layoutConfiguration": "test",
+                "name": "default",
+                "supportedUserInterfaceModes": Array [
+                  "SOH",
+                ],
+              },
+            ],
+          },
+          "error": undefined,
+          "failureCount": 0,
+          "fetchMore": undefined,
+          "isError": false,
+          "isFetched": false,
+          "isFetchedAfterMount": undefined,
+          "isFetching": false,
+          "isIdle": false,
+          "isInitialData": undefined,
+          "isLoading": false,
+          "isPlaceholderData": undefined,
+          "isPreviousData": undefined,
+          "isStale": true,
+          "isSuccess": true,
+          "refetch": undefined,
+          "remove": undefined,
+          "status": undefined,
+          "updatedAt": undefined,
+        }
+      }
+    >
+      <BaseDisplay
+        className="system-message-display 
+    with-separated-rows
+    ag-theme-dark
+    ag-theme-dark--soh"
+      >
+        <div
+          className="base-display system-message-display 
+    with-separated-rows
+    ag-theme-dark
+    ag-theme-dark--soh"
+        >
+          <Memo()
+            addSystemMessages={[MockFunction]}
+            clearAllSystemMessages={[MockFunction]}
+            clearExpiredSystemMessages={[MockFunction]}
+            clearSystemMessages={[MockFunction]}
+            isAutoScrollingEnabled={true}
+            isSoundEnabled={true}
+            setIsAutoScrollingEnabled={[Function]}
+            setIsSoundEnabled={[Function]}
+            setSeverityFilterMap={[Function]}
+            severityFilterMap={
+              Immutable.Map {
+                "INFO": true,
+                "WARNING": true,
+                "CRITICAL": true,
+              }
+            }
+            systemMessagesState={
+              Object {
+                "lastUpdated": 0,
+                "latestSystemMessages": Array [],
+                "systemMessages": Array [],
+              }
+            }
+          >
+            <ToolbarComponent
+              items={
+                Array [
+                  Object {
+                    "icon": "volume-up",
+                    "label": "Sounds",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 3,
+                    "tooltip": "Disable sound",
+                    "type": "Button",
+                    "widthPx": 30,
+                  },
+                  Object {
+                    "cyData": "system-message-auto-scroll",
+                    "icon": "pause",
+                    "label": "Auto scroll",
+                    "labelRight": "Auto scroll",
+                    "onChange": [Function],
+                    "rank": 1,
+                    "tooltip": "Disable auto scrolling",
+                    "type": "Switch",
+                    "value": true,
+                    "widthPx": 100,
+                  },
+                  Object {
+                    "cyData": "system-message-clear",
+                    "icon": "trash",
+                    "label": "Clear list",
+                    "labelRight": "Clear list",
+                    "onClick": [Function],
+                    "onlyShowIcon": true,
+                    "rank": 2,
+                    "tooltip": "Clear all system messages from the list",
+                    "type": "Button",
+                    "widthPx": 100,
+                  },
+                  Object {
+                    "label": "Configure sounds",
+                    "onClick": [Function],
+                    "rank": 4,
+                    "tooltip": "Configure the sounds",
+                    "type": "Button",
+                    "widthPx": 125,
+                  },
+                ]
+              }
+              itemsLeft={
+                Array [
+                  Object {
+                    "element": <SystemMessageSummary
+                      setSeverityFilterMap={[Function]}
+                      severityFilterMap={
+                        Immutable.Map {
+                          "INFO": true,
+                          "WARNING": true,
+                          "CRITICAL": true,
+                        }
+                      }
+                      systemMessages={Array []}
+                    />,
+                    "label": "Number of system messages by severity",
+                    "rank": 1,
+                    "tooltip": "CRITICAL",
+                    "type": "CustomItem",
+                    "widthPx": 200,
+                  },
+                ]
+              }
+              minWhiteSpacePx={1}
+              toolbarWidthPx={0}
+            >
+              <div
+                className="toolbar"
+                style={
+                  Object {
+                    "width": "0px",
+                  }
+                }
+              >
+                <div
+                  className="toolbar__left-group"
+                >
+                  <div
+                    className="toolbar-item toolbar-item__left"
+                    key="1"
+                  >
+                    <ToolbarItemRenderer
+                      addToPopoverMap={[Function]}
+                      hasIssue={false}
+                      item={
+                        Object {
+                          "element": <SystemMessageSummary
+                            setSeverityFilterMap={[Function]}
+                            severityFilterMap={
+                              Immutable.Map {
+                                "INFO": true,
+                                "WARNING": true,
+                                "CRITICAL": true,
+                              }
+                            }
+                            systemMessages={Array []}
+                          />,
+                          "label": "Number of system messages by severity",
+                          "rank": 1,
+                          "tooltip": "CRITICAL",
+                          "type": "CustomItem",
+                          "widthPx": 200,
+                        }
+                      }
+                      key="1"
+                    >
+                      <SystemMessageSummary
+                        setSeverityFilterMap={[Function]}
+                        severityFilterMap={
+                          Immutable.Map {
+                            "INFO": true,
+                            "WARNING": true,
+                            "CRITICAL": true,
+                          }
+                        }
+                        systemMessages={Array []}
+                      >
+                        <div
+                          className="system-message-summary"
+                        >
+                          <SummaryEntry
+                            isShown={true}
+                            key="INFO"
+                            severity="INFO"
+                            toggleFilter={[Function]}
+                            value={0}
+                          >
+                            <span
+                              className=" system-message-summary__entry"
+                              data-severity="INFO"
+                              onClick={[Function]}
+                            >
+                              INFO
+                              :
+                              <PrefixedDisplayNumber
+                                data-severity="INFO"
+                                digits={4}
+                                value={0}
+                              >
+                                <span
+                                  className="system-message-summary__count "
+                                >
+                                  <span
+                                    className="system-message-summary__count--prefix"
+                                  >
+                                    0
+                                    0
+                                    0
+                                  </span>
+                                  <span
+                                    className="system-message-summary__count--main"
+                                  >
+                                    0
+                                  </span>
+                                </span>
+                              </PrefixedDisplayNumber>
+                            </span>
+                          </SummaryEntry>
+                          <SummaryEntry
+                            isShown={true}
+                            key="WARNING"
+                            severity="WARNING"
+                            toggleFilter={[Function]}
+                            value={0}
+                          >
+                            <span
+                              className=" system-message-summary__entry"
+                              data-severity="WARNING"
+                              onClick={[Function]}
+                            >
+                              WARNING
+                              :
+                              <PrefixedDisplayNumber
+                                data-severity="WARNING"
+                                digits={4}
+                                value={0}
+                              >
+                                <span
+                                  className="system-message-summary__count "
+                                >
+                                  <span
+                                    className="system-message-summary__count--prefix"
+                                  >
+                                    0
+                                    0
+                                    0
+                                  </span>
+                                  <span
+                                    className="system-message-summary__count--main"
+                                  >
+                                    0
+                                  </span>
+                                </span>
+                              </PrefixedDisplayNumber>
+                            </span>
+                          </SummaryEntry>
+                          <SummaryEntry
+                            isShown={true}
+                            key="CRITICAL"
+                            severity="CRITICAL"
+                            toggleFilter={[Function]}
+                            value={0}
+                          >
+                            <span
+                              className=" system-message-summary__entry"
+                              data-severity="CRITICAL"
+                              onClick={[Function]}
+                            >
+                              CRITICAL
+                              :
+                              <PrefixedDisplayNumber
+                                data-severity="CRITICAL"
+                                digits={4}
+                                value={0}
+                              >
+                                <span
+                                  className="system-message-summary__count "
+                                >
+                                  <span
+                                    className="system-message-summary__count--prefix"
+                                  >
+                                    0
+                                    0
+                                    0
+                                  </span>
+                                  <span
+                                    className="system-message-summary__count--main"
+                                  >
+                                    0
+                                  </span>
+                                </span>
+                              </PrefixedDisplayNumber>
+                            </span>
+                          </SummaryEntry>
+                        </div>
+                      </SystemMessageSummary>
+                    </ToolbarItemRenderer>
+                  </div>
+                </div>
+                <div
+                  className="toolbar__center-group"
+                >
+                  <div
+                    className="toolbar__whitespace"
+                    style={
+                      Object {
+                        "width": "1px",
+                      }
+                    }
+                  />
+                </div>
+                <div
+                  className="toolbar__right-group"
+                >
+                  <div>
+                    <Blueprint3.Button
+                      className="toolbar-overflow-menu-button "
+                      icon="more"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "transform": "rotate(90deg)",
+                          "width": "30px",
+                        }
+                      }
+                    >
+                      <button
+                        className="bp3-button toolbar-overflow-menu-button "
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        style={
+                          Object {
+                            "transform": "rotate(90deg)",
+                            "width": "30px",
+                          }
+                        }
+                        type="button"
+                      >
+                        <Blueprint3.Icon
+                          icon="more"
+                          key="leftIcon"
+                        >
+                          <span
+                            className="bp3-icon bp3-icon-more"
+                            icon="more"
+                          >
+                            <svg
+                              data-icon="more"
+                              height={16}
+                              viewBox="0 0 16 16"
+                              width={16}
+                            >
+                              <desc>
+                                more
+                              </desc>
+                              <path
+                                d="M2 6.03a2 2 0 100 4 2 2 0 100-4zM14 6.03a2 2 0 100 4 2 2 0 100-4zM8 6.03a2 2 0 100 4 2 2 0 100-4z"
+                                fillRule="evenodd"
+                                key="0"
+                              />
+                            </svg>
+                          </span>
+                        </Blueprint3.Icon>
+                        <Blueprint3.Icon
+                          key="rightIcon"
+                        />
+                      </button>
+                    </Blueprint3.Button>
+                  </div>
+                </div>
+              </div>
+            </ToolbarComponent>
+            <Memo(SoundConfigurationComponent)
+              isVisible={false}
+              onToggle={[Function]}
+            >
+              <Blueprint3.Dialog
+                autoFocus={true}
+                canEscapeKeyClose={true}
+                canOutsideClickClose={true}
+                hasBackdrop={true}
+                isOpen={false}
+                onClose={[Function]}
+                style={
+                  Object {
+                    "width": "auto",
+                  }
+                }
+                title="Sound Configuration"
+              >
+                <Blueprint3.Overlay
+                  autoFocus={true}
+                  backdropProps={Object {}}
+                  canEscapeKeyClose={true}
+                  canOutsideClickClose={true}
+                  className="bp3-overlay-scroll-container"
+                  enforceFocus={true}
+                  hasBackdrop={true}
+                  isOpen={false}
+                  lazy={true}
+                  onClose={[Function]}
+                  style={
+                    Object {
+                      "width": "auto",
+                    }
+                  }
+                  title="Sound Configuration"
+                  transitionDuration={300}
+                  transitionName="bp3-overlay"
+                  usePortal={true}
+                />
+              </Blueprint3.Dialog>
+            </Memo(SoundConfigurationComponent)>
+          </Memo()>
+          <SystemMessageTable
+            addSystemMessages={[MockFunction]}
+            clearAllSystemMessages={[MockFunction]}
+            clearExpiredSystemMessages={[MockFunction]}
+            clearSystemMessages={[MockFunction]}
+            isAutoScrollingEnabled={true}
+            setIsAutoScrollingEnabled={[Function]}
+            severityFilterMap={
+              Immutable.Map {
+                "INFO": true,
+                "WARNING": true,
+                "CRITICAL": true,
+              }
+            }
+            systemMessages={Array []}
+          >
+            <div
+              className="system-message-table"
+              data-cy="system-message-table"
+              id="system-message-table"
+            >
+              <Component>
+                <InfiniteTable
+                  alwaysShowVerticalScroll={true}
+                  columnDefs={
+                    Array [
+                      Object {
+                        "colId": "id",
+                        "field": "id",
+                        "headerName": "ID",
+                        "headerTooltip": "ID",
+                        "hide": true,
+                        "width": 10,
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "time",
+                        "headerName": "Timestamp",
+                        "headerTooltip": "Timestamp",
+                        "sort": "asc",
+                        "valueGetter": [Function],
+                        "width": 200,
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "category",
+                        "comparator": [Function],
+                        "headerName": "Category",
+                        "headerTooltip": "Category",
+                        "valueGetter": [Function],
+                        "width": 110,
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "subCategory",
+                        "comparator": [Function],
+                        "headerName": "Subcategory",
+                        "headerTooltip": "Subcategory",
+                        "valueGetter": [Function],
+                        "width": 150,
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "severity",
+                        "comparator": [Function],
+                        "headerName": "Severity",
+                        "headerTooltip": "Severity",
+                        "valueGetter": [Function],
+                        "width": 105,
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "message",
+                        "comparator": [Function],
+                        "flex": 1,
+                        "headerName": "Message",
+                        "headerTooltip": "Message",
+                        "minWidth": 200,
+                        "valueGetter": [Function],
+                      },
+                    ]
+                  }
+                  datasource={
+                    Object {
+                      "destroy": [Function],
+                      "getRows": [Function],
+                    }
+                  }
+                  debug={false}
+                  defaultColDef={
+                    Object {
+                      "cellRendererFramework": [Function],
+                      "disableStaticMarkupForCellRendererFramework": true,
+                      "disableStaticMarkupForHeaderComponentFramework": true,
+                      "filter": false,
+                      "headerComponentParams": Object {
+                        "template": "
+  <div class=\\"ag-cell-label-container\\" role=\\"presentation\\">
+      <span ref=\\"eMenu\\" class=\\"ag-header-icon ag-header-cell-menu-button\\"></span>
+      <div ref=\\"eLabel\\" class=\\"ag-header-cell-label\\" role=\\"presentation\\">
+          <span ref=\\"eText\\" class=\\"ag-header-cell-text\\" role=\\"columnheader\\"></span>
+          <span ref=\\"eFilter\\" class=\\"ag-header-icon ag-filter-icon\\"></span>
+          <!-- <span ref=\\"eSortOrder\\" class=\\"ag-header-icon ag-sort-order\\"></span> -->
+          <span ref=\\"eSortAsc\\" class=\\"ag-header-icon ag-sort-ascending-icon\\"></span>
+          <span ref=\\"eSortDesc\\" class=\\"ag-header-icon ag-sort-descending-icon\\"></span>
+          <span ref=\\"eSortNone\\" class=\\"ag-header-icon ag-sort-none-icon\\"></span>
+      </div>
+  </div>
+",
+                      },
+                      "sortable": true,
+                    }
+                  }
+                  headerHeight={44}
+                  onBodyScroll={[Function]}
+                  onCellClicked={[Function]}
+                  onCellContextMenu={[Function]}
+                  onGridReady={[Function]}
+                  onSortChanged={[Function]}
+                  overlayNoRowsTemplate="No System Messages"
+                  pagination={false}
+                  rowData={Array []}
+                  rowHeight={40}
+                  suppressCellSelection={true}
+                  suppressScrollOnNewData={true}
+                >
+                  <CoreTable
+                    alwaysShowVerticalScroll={true}
+                    blockLoadDebounceMillis={60}
+                    cacheBlockSize={100}
+                    cacheOverflowSize={10}
+                    columnDefs={
+                      Array [
+                        Object {
+                          "colId": "id",
+                          "field": "id",
+                          "headerName": "ID",
+                          "headerTooltip": "ID",
+                          "hide": true,
+                          "width": 10,
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "time",
+                          "headerName": "Timestamp",
+                          "headerTooltip": "Timestamp",
+                          "sort": "asc",
+                          "valueGetter": [Function],
+                          "width": 200,
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "category",
+                          "comparator": [Function],
+                          "headerName": "Category",
+                          "headerTooltip": "Category",
+                          "valueGetter": [Function],
+                          "width": 110,
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "subCategory",
+                          "comparator": [Function],
+                          "headerName": "Subcategory",
+                          "headerTooltip": "Subcategory",
+                          "valueGetter": [Function],
+                          "width": 150,
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "severity",
+                          "comparator": [Function],
+                          "headerName": "Severity",
+                          "headerTooltip": "Severity",
+                          "valueGetter": [Function],
+                          "width": 105,
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "message",
+                          "comparator": [Function],
+                          "flex": 1,
+                          "headerName": "Message",
+                          "headerTooltip": "Message",
+                          "minWidth": 200,
+                          "valueGetter": [Function],
+                        },
+                      ]
+                    }
+                    context={
+                      Object {
+                        "columnApi": undefined,
+                        "tableApi": undefined,
+                      }
+                    }
+                    datasource={null}
+                    debug={false}
+                    defaultColDef={
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "disableStaticMarkupForCellRendererFramework": true,
+                        "disableStaticMarkupForHeaderComponentFramework": true,
+                        "filter": false,
+                        "headerComponentParams": Object {
+                          "template": "
+  <div class=\\"ag-cell-label-container\\" role=\\"presentation\\">
+      <span ref=\\"eMenu\\" class=\\"ag-header-icon ag-header-cell-menu-button\\"></span>
+      <div ref=\\"eLabel\\" class=\\"ag-header-cell-label\\" role=\\"presentation\\">
+          <span ref=\\"eText\\" class=\\"ag-header-cell-text\\" role=\\"columnheader\\"></span>
+          <span ref=\\"eFilter\\" class=\\"ag-header-icon ag-filter-icon\\"></span>
+          <!-- <span ref=\\"eSortOrder\\" class=\\"ag-header-icon ag-sort-order\\"></span> -->
+          <span ref=\\"eSortAsc\\" class=\\"ag-header-icon ag-sort-ascending-icon\\"></span>
+          <span ref=\\"eSortDesc\\" class=\\"ag-header-icon ag-sort-descending-icon\\"></span>
+          <span ref=\\"eSortNone\\" class=\\"ag-header-icon ag-sort-none-icon\\"></span>
+      </div>
+  </div>
+",
+                        },
+                        "sortable": true,
+                      }
+                    }
+                    enableFilter={false}
+                    headerHeight={44}
+                    infiniteInitialRowCount={5}
+                    maxBlocksInCache={2}
+                    onBodyScroll={[Function]}
+                    onCellClicked={[Function]}
+                    onCellContextMenu={[Function]}
+                    onGridReady={[Function]}
+                    onSortChanged={[Function]}
+                    overlayNoRowsTemplate="No System Messages"
+                    pagination={false}
+                    rowBuffer={2}
+                    rowData={Array []}
+                    rowHeight={40}
+                    rowModelType="infinite"
+                    suppressCellSelection={true}
+                    suppressScrollOnNewData={true}
+                  >
+                    <AgGridReact
+                      alwaysShowVerticalScroll={true}
+                      animateRows={false}
+                      blockLoadDebounceMillis={60}
+                      cacheBlockSize={100}
+                      cacheOverflowSize={10}
+                      columnDefs={
+                        Array [
+                          Object {
+                            "colId": "id",
+                            "field": "id",
+                            "headerName": "ID",
+                            "headerTooltip": "ID",
+                            "hide": true,
+                            "width": 10,
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "time",
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Timestamp",
+                            "headerTooltip": "Timestamp",
+                            "sort": "asc",
+                            "valueGetter": [Function],
+                            "width": 200,
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "category",
+                            "comparator": [Function],
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Category",
+                            "headerTooltip": "Category",
+                            "valueGetter": [Function],
+                            "width": 110,
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "subCategory",
+                            "comparator": [Function],
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Subcategory",
+                            "headerTooltip": "Subcategory",
+                            "valueGetter": [Function],
+                            "width": 150,
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "severity",
+                            "comparator": [Function],
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Severity",
+                            "headerTooltip": "Severity",
+                            "valueGetter": [Function],
+                            "width": 105,
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "message",
+                            "comparator": [Function],
+                            "flex": 1,
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Message",
+                            "headerTooltip": "Message",
+                            "minWidth": 200,
+                            "valueGetter": [Function],
+                          },
+                        ]
+                      }
+                      context={
+                        Object {
+                          "columnApi": undefined,
+                          "tableApi": undefined,
+                        }
+                      }
+                      datasource={null}
+                      debug={false}
+                      defaultColDef={
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "filter": false,
+                          "headerComponentParams": Object {
+                            "template": "
+  <div class=\\"ag-cell-label-container\\" role=\\"presentation\\">
+      <span ref=\\"eMenu\\" class=\\"ag-header-icon ag-header-cell-menu-button\\"></span>
+      <div ref=\\"eLabel\\" class=\\"ag-header-cell-label\\" role=\\"presentation\\">
+          <span ref=\\"eText\\" class=\\"ag-header-cell-text\\" role=\\"columnheader\\"></span>
+          <span ref=\\"eFilter\\" class=\\"ag-header-icon ag-filter-icon\\"></span>
+          <!-- <span ref=\\"eSortOrder\\" class=\\"ag-header-icon ag-sort-order\\"></span> -->
+          <span ref=\\"eSortAsc\\" class=\\"ag-header-icon ag-sort-ascending-icon\\"></span>
+          <span ref=\\"eSortDesc\\" class=\\"ag-header-icon ag-sort-descending-icon\\"></span>
+          <span ref=\\"eSortNone\\" class=\\"ag-header-icon ag-sort-none-icon\\"></span>
+      </div>
+  </div>
+",
+                          },
+                          "lockVisible": true,
+                          "resizable": true,
+                          "sortable": true,
+                          "sortingOrder": Array [
+                            "asc",
+                            "desc",
+                          ],
+                          "suppressCellFlash": true,
+                        }
+                      }
+                      deltaRowDataMode={true}
+                      enableFilter={false}
+                      getRowNodeId={[Function]}
+                      headerHeight={44}
+                      infiniteInitialRowCount={5}
+                      maxBlocksInCache={2}
+                      onBodyScroll={[Function]}
+                      onCellClicked={[Function]}
+                      onCellContextMenu={[Function]}
+                      onColumnMoved={[Function]}
+                      onGridReady={[Function]}
+                      onSortChanged={[Function]}
+                      overlayNoRowsTemplate="No System Messages"
+                      pagination={false}
+                      preventDefaultOnContextMenu={true}
+                      rowBuffer={2}
+                      rowData={null}
+                      rowDataChangeDetectionStrategy="IdentityCheck"
+                      rowHeight={40}
+                      rowModelType="infinite"
+                      suppressCellSelection={true}
+                      suppressContextMenu={true}
+                      suppressLoadingOverlay={true}
+                      suppressScrollOnNewData={true}
+                    >
+                      <div
+                        style={
+                          Object {
+                            "height": "100%",
+                          }
+                        }
+                      />
+                    </AgGridReact>
+                  </CoreTable>
+                </InfiniteTable>
+              </Component>
+              <NewMessageIndicator
+                handleNewMessageIndicatorClick={[Function]}
+                isVisible={false}
+              />
+            </div>
+          </SystemMessageTable>
+          <SystemMessageAlertPlayer
+            isSoundEnabled={true}
+            latestSystemMessages={Array []}
+          />
+        </div>
+      </BaseDisplay>
+      )
+    </Memo()>
+  </ApolloProvider>
+</Provider>
+`;

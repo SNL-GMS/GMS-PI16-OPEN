@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interaction consumer component matches snapshot with hot key listener 1`] = `
+<InteractionProvider
+  commandPaletteIsVisible={true}
+  selectedAceiType="AMPLIFIER_SATURATION_DETECTED"
+  selectedStationIds={
+    Array [
+      "test",
+      "test2",
+    ]
+  }
+  setCommandPaletteVisibility={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          false,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  setSelectedAceiType={[MockFunction]}
+  setSelectedStationIds={[MockFunction]}
+  sohStatus={
+    Object {
+      "error": undefined,
+      "isStale": false,
+      "lastUpdated": 0,
+      "loading": false,
+      "stationAndStationGroupSoh": Object {
+        "isUpdateResponse": false,
+        "stationGroups": Array [],
+        "stationSoh": Array [
+          Object {
+            "allStationAggregates": Array [],
+            "channelSohs": Array [
+              Object {
+                "allSohMonitorValueAndStatuses": Array [
+                  Object {
+                    "contributing": false,
+                    "hasUnacknowledgedChanges": false,
+                    "monitorType": "LAG",
+                    "quietUntilMs": 1,
+                    "status": "GOOD",
+                    "thresholdBad": 3,
+                    "thresholdMarginal": 3,
+                    "value": 10,
+                    "valuePresent": true,
+                  },
+                  Object {
+                    "contributing": false,
+                    "hasUnacknowledgedChanges": false,
+                    "monitorType": "LAG",
+                    "quietUntilMs": 1,
+                    "status": "GOOD",
+                    "thresholdBad": 3,
+                    "thresholdMarginal": 3,
+                    "value": 11,
+                    "valuePresent": true,
+                  },
+                ],
+                "channelName": "adsf",
+                "channelSohStatus": undefined,
+              },
+            ],
+            "id": "ABC",
+            "needsAcknowledgement": false,
+            "needsAttention": false,
+            "sohStatusSummary": undefined,
+            "stationGroups": Array [],
+            "stationName": "ABC",
+            "statusContributors": Array [],
+            "time": undefined,
+            "uuid": "ABC",
+          },
+          Object {
+            "allStationAggregates": Array [],
+            "channelSohs": Array [
+              Object {
+                "allSohMonitorValueAndStatuses": Array [
+                  Object {
+                    "contributing": false,
+                    "hasUnacknowledgedChanges": true,
+                    "monitorType": "LAG",
+                    "quietUntilMs": 1,
+                    "status": "GOOD",
+                    "thresholdBad": 3,
+                    "thresholdMarginal": 3,
+                    "value": 10,
+                    "valuePresent": true,
+                  },
+                  Object {
+                    "contributing": false,
+                    "hasUnacknowledgedChanges": true,
+                    "monitorType": "LAG",
+                    "quietUntilMs": 1,
+                    "status": "GOOD",
+                    "thresholdBad": 3,
+                    "thresholdMarginal": 3,
+                    "value": 11,
+                    "valuePresent": true,
+                  },
+                ],
+                "channelName": "adsf",
+                "channelSohStatus": undefined,
+              },
+            ],
+            "id": "TEST",
+            "needsAcknowledgement": true,
+            "needsAttention": true,
+            "sohStatusSummary": undefined,
+            "stationGroups": Array [],
+            "stationName": "TEST",
+            "statusContributors": Array [],
+            "time": undefined,
+            "uuid": "TEST",
+          },
+        ],
+      },
+    }
+  }
+>
+  <InteractionConsumer
+    keyPressActionQueue={Immutable.Map {}}
+    setKeyPressActionQueue={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Immutable.Map {
+              "Open Command Palette": 0,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />
+   
+</InteractionProvider>
+`;
+
+exports[`Interaction consumer component matches snapshot with no hot key listener 1`] = `
+<InteractionProvider
+  commandPaletteIsVisible={true}
+  selectedAceiType="AMPLIFIER_SATURATION_DETECTED"
+  selectedStationIds={
+    Array [
+      "test",
+      "test2",
+    ]
+  }
+  setCommandPaletteVisibility={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          false,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  setSelectedAceiType={[MockFunction]}
+  setSelectedStationIds={[MockFunction]}
+  sohStatus={
+    Object {
+      "error": undefined,
+      "isStale": false,
+      "lastUpdated": 0,
+      "loading": false,
+      "stationAndStationGroupSoh": Object {
+        "isUpdateResponse": false,
+        "stationGroups": Array [],
+        "stationSoh": Array [
+          Object {
+            "allStationAggregates": Array [],
+            "channelSohs": Array [
+              Object {
+                "allSohMonitorValueAndStatuses": Array [
+                  Object {
+                    "contributing": false,
+                    "hasUnacknowledgedChanges": false,
+                    "monitorType": "LAG",
+                    "quietUntilMs": 1,
+                    "status": "GOOD",
+                    "thresholdBad": 3,
+                    "thresholdMarginal": 3,
+                    "value": 10,
+                    "valuePresent": true,
+                  },
+                  Object {
+                    "contributing": false,
+                    "hasUnacknowledgedChanges": false,
+                    "monitorType": "LAG",
+                    "quietUntilMs": 1,
+                    "status": "GOOD",
+                    "thresholdBad": 3,
+                    "thresholdMarginal": 3,
+                    "value": 11,
+                    "valuePresent": true,
+                  },
+                ],
+                "channelName": "adsf",
+                "channelSohStatus": undefined,
+              },
+            ],
+            "id": "ABC",
+            "needsAcknowledgement": false,
+            "needsAttention": false,
+            "sohStatusSummary": undefined,
+            "stationGroups": Array [],
+            "stationName": "ABC",
+            "statusContributors": Array [],
+            "time": undefined,
+            "uuid": "ABC",
+          },
+          Object {
+            "allStationAggregates": Array [],
+            "channelSohs": Array [
+              Object {
+                "allSohMonitorValueAndStatuses": Array [
+                  Object {
+                    "contributing": false,
+                    "hasUnacknowledgedChanges": true,
+                    "monitorType": "LAG",
+                    "quietUntilMs": 1,
+                    "status": "GOOD",
+                    "thresholdBad": 3,
+                    "thresholdMarginal": 3,
+                    "value": 10,
+                    "valuePresent": true,
+                  },
+                  Object {
+                    "contributing": false,
+                    "hasUnacknowledgedChanges": true,
+                    "monitorType": "LAG",
+                    "quietUntilMs": 1,
+                    "status": "GOOD",
+                    "thresholdBad": 3,
+                    "thresholdMarginal": 3,
+                    "value": 11,
+                    "valuePresent": true,
+                  },
+                ],
+                "channelName": "adsf",
+                "channelSohStatus": undefined,
+              },
+            ],
+            "id": "TEST",
+            "needsAcknowledgement": true,
+            "needsAttention": true,
+            "sohStatusSummary": undefined,
+            "stationGroups": Array [],
+            "stationName": "TEST",
+            "statusContributors": Array [],
+            "time": undefined,
+            "uuid": "TEST",
+          },
+        ],
+      },
+    }
+  }
+>
+  <InteractionConsumer
+    keyPressActionQueue={Immutable.Map {}}
+    setKeyPressActionQueue={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Immutable.Map {
+              "Open Command Palette": 0,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />
+   
+</InteractionProvider>
+`;

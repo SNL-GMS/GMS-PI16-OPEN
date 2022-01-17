@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess X Axis renders 1`] = `
+<YAxis
+  heightInPercentage={100}
+  maxAmplitude={100}
+  minAmplitude={0}
+  yAxisTicks={
+    Array [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+    ]
+  }
+>
+  <div
+    className="y-axis"
+    style={
+      Object {
+        "height": "calc(100% - 4px)",
+        "margin": "2px 0 2px 0",
+      }
+    }
+  />
+</YAxis>
+`;
+
+exports[`Weavess X Axis shallow renders 1`] = `
+<div
+  className="y-axis"
+  style={
+    Object {
+      "height": "calc(100% - 4px)",
+      "margin": "2px 0 2px 0",
+    }
+  }
+/>
+`;
+
+exports[`Weavess X Axis try to display a negative 1`] = `
+<YAxis
+  heightInPercentage={100}
+  maxAmplitude={0.05}
+  minAmplitude={0}
+>
+  <div
+    className="y-axis"
+    style={
+      Object {
+        "height": "calc(100% - 4px)",
+        "margin": "2px 0 2px 0",
+      }
+    }
+  />
+</YAxis>
+`;
+
+exports[`Weavess X Axis updates when display is called 1`] = `
+<YAxis
+  heightInPercentage={100}
+  maxAmplitude={100}
+  minAmplitude={0}
+  yAxisTicks={
+    Array [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+    ]
+  }
+>
+  <div
+    className="y-axis"
+    style={
+      Object {
+        "height": "calc(100% - 4px)",
+        "margin": "2px 0 2px 0",
+      }
+    }
+  />
+</YAxis>
+`;

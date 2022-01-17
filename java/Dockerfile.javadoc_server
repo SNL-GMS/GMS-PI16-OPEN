@@ -1,0 +1,12 @@
+ARG FROM_IMAGE
+FROM ${FROM_IMAGE}
+
+ENV TZ=America/Denver
+
+COPY docs/javadoc /usr/local/apache2/htdocs/javadoc
+
+RUN sed -i 's|CustomLog /proc/self/fd/1 common$|& env=!dontlog|' /usr/local/apache2/conf/httpd.conf && \
+    echo -e '<IfModule mod_setenvif.c>\nSetEnvIf Remote_Addr "127\.0\.0\.1" dontlog\n</IfModule>' \
+             >> /usr/local/apache2/conf/httpd.conf
+
+HEALTHCHECK --interval=30s CMD wget --quiet --spider http://localhost:80 || exit 1

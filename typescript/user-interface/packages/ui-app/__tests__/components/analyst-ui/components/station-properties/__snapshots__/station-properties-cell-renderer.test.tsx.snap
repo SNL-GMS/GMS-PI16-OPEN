@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`station-properties-cell-renderer can mount StationPropertiesCellRenderer 1`] = `
+<StationPropertiesTableCellRendererComponent
+  data-col-position="first"
+  isNumeric={false}
+  value="valueFormatted"
+/>
+`;
+
+exports[`station-properties-cell-renderer can mount StationPropertiesTableCellRendererComponent 1`] = `
+<div
+  className="station-properties-table-cell callsName"
+  data-cy="station-properties-table-cell"
+  style={
+    Object {
+      "height": "100px",
+      "overflow": "hidden",
+    }
+  }
+  title="tooltip"
+>
+  <div />
+  <div
+    className="station-properties-table-cell__value--numeric station-properties-table-cell__value--center station-properties-table-cell__value"
+    data-cy="station-properties-table-cell__value"
+  >
+    <span>
+      some value
+    </span>
+  </div>
+</div>
+`;

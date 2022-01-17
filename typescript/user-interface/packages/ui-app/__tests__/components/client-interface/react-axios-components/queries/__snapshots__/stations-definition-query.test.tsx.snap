@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`station-definition-query has expected results for getStationsByNamesTimeQueryConfig 1`] = `
+Object {
+  "config": Object {
+    "refetchOnWindowFocus": false,
+    "staleTime": Infinity,
+  },
+  "queryKey": Array [
+    "getStations",
+    Object {
+      "data": Object {
+        "effectiveTime": 0,
+        "stationNames": Array [
+          "stationName1",
+          "StationName2",
+        ],
+      },
+      "headers": Object {
+        "accept": "application/json",
+        "content-type": "application/json",
+      },
+      "method": "post",
+      "proxy": false,
+      "timeout": 60000,
+      "url": "http://localhost/station-definition-service/station-definition/stations/query/names",
+    },
+  ],
+}
+`;
+
+exports[`station-definition-query has expected results for getStationsWithChannelsQueryConfig 1`] = `
+Object {
+  "config": Object {
+    "refetchOnWindowFocus": false,
+    "staleTime": Infinity,
+  },
+  "queryKey": Array [
+    "getStations",
+    Object {
+      "data": Object {
+        "effectiveTime": 0,
+        "stationNames": Array [
+          "stationName1",
+          "StationName2",
+        ],
+      },
+      "headers": Object {
+        "accept": "application/json",
+        "content-type": "application/json",
+      },
+      "method": "post",
+      "proxy": false,
+      "timeout": 60000,
+      "url": "http://localhost/station-definition-service/station-definition/stations/query/names",
+    },
+  ],
+}
+`;
+
+exports[`station-definition-query has expected results for handleUseStationsQueryResponse 1`] = `
+Array [
+  Object {
+    "relativePositionsByChannel": Map {
+      "key1" => "value",
+      "key2" => "value",
+    },
+  },
+]
+`;

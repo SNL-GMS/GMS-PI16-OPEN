@@ -1,0 +1,36 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':station-definition-coi')
+    api project(':station-definition-dao')
+    api project(':workflow-dao')
+    api project(':station-definition-converter')
+    implementation project(':java-utilities')
+    implementation project(':bridge-utilities')
+    implementation project(':signal-detection-dao')
+
+    // Utility (dependency is api as apache commons classes are publicly exposed).
+    api 'org.apache.commons:commons-lang3'
+    // Google AutoValue
+    api 'com.google.guava:guava'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // Serialization (dependencies are api as we expose our ObjectMapper as a singleton).
+    api 'com.fasterxml.jackson.core:jackson-databind'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
+    api 'org.apache.kafka:kafka-clients'
+
+    // msgpack and YAML serialization; kept as private so clients don't have to know about it
+    implementation 'org.msgpack:jackson-dataformat-msgpack'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
+
+    // Testing.
+    compile 'nl.jqno.equalsverifier:equalsverifier'
+    testImplementation('com.github.tomakehurst:wiremock-jre8') {
+        exclude group: 'junit', module: 'junit'
+    }
+    testImplementation 'javax.xml.bind:jaxb-api'
+}

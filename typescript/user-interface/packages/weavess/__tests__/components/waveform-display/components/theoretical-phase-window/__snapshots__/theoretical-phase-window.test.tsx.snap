@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Empty Renderer renders 1`] = `
+<TheoreticalPhaseWindow
+  color="ff0000"
+  id="my-id"
+  label="my label"
+  left={0}
+  right={4}
+>
+  <div
+    className="theoretical-phase-window"
+  >
+    <div
+      className="theoretical-phase-window-selection"
+      style={
+        Object {
+          "backgroundColor": "ff0000",
+          "left": "0%",
+          "right": "4%",
+        }
+      }
+    />
+    <div
+      className="theoretical-phase-window-label"
+      style={
+        Object {
+          "color": "ff0000",
+          "left": "0%",
+          "right": "4%",
+        }
+      }
+    >
+      my label
+    </div>
+  </div>
+</TheoreticalPhaseWindow>
+`;
+
+exports[`Weavess Empty Renderer shallow renders 1`] = `
+<div
+  className="theoretical-phase-window"
+>
+  <div
+    className="theoretical-phase-window-selection"
+    style={
+      Object {
+        "backgroundColor": "ff0000",
+        "left": "0%",
+        "right": "4%",
+      }
+    }
+  />
+  <div
+    className="theoretical-phase-window-label"
+    style={
+      Object {
+        "color": "ff0000",
+        "left": "0%",
+        "right": "4%",
+      }
+    }
+  >
+    my label
+  </div>
+</div>
+`;
+
+exports[`Weavess Empty Renderer shallow renders 2`] = `
+<div
+  className="theoretical-phase-window"
+>
+  <div
+    className="theoretical-phase-window-selection"
+    style={
+      Object {
+        "backgroundColor": "ff0000",
+        "left": "0%",
+        "right": "4%",
+      }
+    }
+  />
+  <div
+    className="theoretical-phase-window-label"
+    style={
+      Object {
+        "color": "ff0000",
+        "left": "0%",
+        "right": "4%",
+      }
+    }
+  >
+    my label
+  </div>
+</div>
+`;

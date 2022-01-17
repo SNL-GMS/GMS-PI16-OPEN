@@ -1,0 +1,11 @@
+{
+  "name": "merge-tolerance-default",
+  "constraints": [
+    {
+      "constraintType": "DEFAULT"
+    }
+  ],
+  "parameters": {
+    "merge-tolerance": "PT1.0S"
+  }
+}

@@ -1,0 +1,32 @@
+plugins {
+    id 'java-library'
+}
+
+//group 'gms.shared.frameworks.messaging'
+
+dependencies {
+
+    // Google AutoValue
+    implementation "com.google.auto.value:auto-value-annotations"
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    //Structured logging
+    implementation project(":structured-logging")
+
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':frameworks-osd-api')
+    implementation project(':frameworks-osd-repository')
+    implementation project(':flux-frameworks')
+
+    implementation 'io.projectreactor:reactor-core:3.4.0'
+    implementation 'io.projectreactor.kafka:reactor-kafka:1.3.0'
+
+    api 'org.apache.kafka:kafka-clients'
+    implementation 'net.jodah:failsafe'
+    api project(':kafka-utilities')
+
+    // Gradle sub-project dependencies.
+    api project(':frameworks-service-generator')
+
+    testImplementation 'io.projectreactor:reactor-test'
+}

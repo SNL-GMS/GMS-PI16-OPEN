@@ -1,0 +1,15 @@
+<configuration>
+  <appender name="jsonConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+      <customFields>
+        {
+        "component": "station-definition-application"
+        }
+      </customFields>
+    </encoder>
+    <component>station-definition-application</component>
+  </appender>
+  <root level="INFO">
+    <appender-ref ref="jsonConsoleAppender"/>
+  </root>
+</configuration>

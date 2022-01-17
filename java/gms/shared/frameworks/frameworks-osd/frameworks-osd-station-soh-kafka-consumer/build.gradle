@@ -1,0 +1,20 @@
+apply plugin: 'application'
+apply plugin: 'com.palantir.docker'
+
+mainClassName = 'gms.shared.frameworks.osd.station.soh.consumer.ReactiveStationSohStorageConsumer'
+
+dependencies {
+    //Structured logging
+    implementation project(":structured-logging")
+
+    // Gradle sub-project dependencies.
+    implementation project(':kafka-consumer-frameworks')
+    implementation project(':flux-frameworks')
+    implementation project(':frameworks-service-generator')
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':frameworks-osd-api')
+    implementation project(':frameworks-osd-repository')
+
+    // Kafka reactor
+    implementation 'io.projectreactor.kafka:reactor-kafka'
+}

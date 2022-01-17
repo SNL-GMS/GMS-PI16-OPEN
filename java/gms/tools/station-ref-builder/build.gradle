@@ -1,0 +1,32 @@
+plugins {
+    id('application')
+    id('java-library')
+    id('com.palantir.docker')
+}
+
+mainClassName = 'gms.tools.stationrefbuilder.StationMetaDataManipulator'
+
+jar {
+    manifest {
+        attributes "Main-Class": "$mainClassName"
+    }
+}
+
+
+dependencies {
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':frameworks-configuration-commonobjects')
+    implementation project(':validation')
+
+    implementation 'args4j:args4j'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+}
+
+run {
+    jvmArgs "-Xmx4g"
+    if (System.getProperty("exec.args") != null) {
+        args System.getProperty("exec.args").split()
+    }
+    systemProperties System.properties
+}

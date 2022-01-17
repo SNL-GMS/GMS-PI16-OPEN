@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History List History List 2 renders 1`] = `
+<HistoryList
+  items={
+    Array [
+      Object {
+        "id": "1",
+        "index": 0,
+        "label": "item",
+      },
+    ]
+  }
+  listLength={1}
+  onSelect={[MockFunction]}
+  preferredItems={
+    Array [
+      Object {
+        "id": "1",
+        "index": 0,
+        "label": "item",
+      },
+    ]
+  }
+>
+  <div>
+    <Blueprint3.Menu>
+      <ul
+        className="bp3-menu"
+      >
+        <Blueprint3.MenuItem
+          disabled={false}
+          key="1"
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="item"
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-popover-dismiss"
+              onClick={[Function]}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  item
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+        <Blueprint3.MenuDivider>
+          <li
+            className="bp3-menu-divider"
+          />
+        </Blueprint3.MenuDivider>
+        <Blueprint3.MenuItem
+          disabled={false}
+          key="1"
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="item"
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-popover-dismiss"
+              onClick={[Function]}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  item
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+      </ul>
+    </Blueprint3.Menu>
+  </div>
+</HistoryList>
+`;
+
+exports[`History List History List renders 1`] = `
+<HistoryList
+  items={
+    Array [
+      Object {
+        "id": "1",
+        "index": 0,
+        "label": "item",
+      },
+    ]
+  }
+  listLength={1}
+  onSelect={[MockFunction]}
+  preferredItems={
+    Array [
+      Object {
+        "id": "1",
+        "index": 0,
+        "label": "item",
+      },
+    ]
+  }
+>
+  <div>
+    <Blueprint3.Menu>
+      <ul
+        className="bp3-menu"
+      >
+        <Blueprint3.MenuItem
+          disabled={false}
+          key="1"
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="item"
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-popover-dismiss"
+              onClick={[Function]}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  item
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+        <Blueprint3.MenuDivider>
+          <li
+            className="bp3-menu-divider"
+          />
+        </Blueprint3.MenuDivider>
+        <Blueprint3.MenuItem
+          disabled={false}
+          key="1"
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="item"
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-popover-dismiss"
+              onClick={[Function]}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  item
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+      </ul>
+    </Blueprint3.Menu>
+  </div>
+</HistoryList>
+`;
+
+exports[`History List History List shallow renders 1`] = `
+<div>
+  <Blueprint3.Menu>
+    <Blueprint3.MenuItem
+      disabled={false}
+      key="1"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="item"
+    />
+    <Blueprint3.MenuDivider />
+    <Blueprint3.MenuItem
+      disabled={false}
+      key="1"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="item"
+    />
+  </Blueprint3.Menu>
+</div>
+`;
+
+exports[`History List History List shallow renders with other props 1`] = `
+<div>
+  <Blueprint3.Menu>
+    <Blueprint3.MenuItem
+      disabled={false}
+      key="1"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="item"
+    />
+    <Blueprint3.MenuDivider />
+    <Blueprint3.MenuItem
+      disabled={false}
+      key="1"
+      multiline={false}
+      onClick={[Function]}
+      popoverProps={Object {}}
+      shouldDismissPopover={true}
+      text="item"
+    />
+  </Blueprint3.Menu>
+</div>
+`;

@@ -1,0 +1,94 @@
+{
+    "featureMeasurementTypes": [
+      "ARRIVAL_TIME",
+      "SLOWNESS",
+      "RECEIVER_TO_SOURCE_AZIMUTH"
+    ],
+    "sourceLocation": {
+      "id": "3a06fac7-46ad-337e-a8da-090a1cc801a1",
+      "locationRestraint": {
+        "depthRestraintType": "UNRESTRAINED",
+        "latitudeRestraintType": "UNRESTRAINED",
+        "longitudeRestraintType": "UNRESTRAINED",
+        "timeRestraintType": "FIXED",
+        "timeRestraint": "2018-01-01T01:15:50Z"
+      },
+      "locationBehaviors": [
+        {
+          "residual": 4,
+          "weight": 5,
+          "defining": false,
+          "featurePredictionId": "21111111-1111-1111-1111-111111111111",
+          "featureMeasurement": {
+            "id": "b863a59f7916e6a1b9128639e94d16f1f1ac0f72ca0826a5d4254f8307d27033",
+            "channelSegmentId": "8e75e256-9e77-355b-b783-43e136b57e85",
+            "measurementValue": {
+                "value": "Pg",
+                "confidence": 1
+            },
+            "featureMeasurementType": "PHASE"
+          }
+        }
+      ],
+      "location": {
+        "latitudeDegrees": 44.94862,
+        "longitudeDegrees": -106.38442,
+        "depthKm": 0,
+        "time": "2010-05-20T22:01:30.238Z"
+      },
+      "featurePredictions": []
+    },
+    "receiverLocations": [
+      {
+        "id": "299199ac-5521-3edd-95cb-7fbaaf1b640b",
+        "name": "CM34/MHN",
+        "channelType": "MID_PERIOD_HIGH_GAIN_NORTH_SOUTH",
+        "dataType": "UNKNOWN",
+        "latitude": 18.85118,
+        "longitude": 99.15009,
+        "elevation": 0.319,
+        "verticalAngle": 90,
+        "horizontalAngle": 0,
+        "position": {
+          "northDisplacementKm": 0,
+          "eastDisplacementKm": 0,
+          "verticalDisplacementKm": 0
+        },
+        "actualTime": "2005-07-15T00:00:00Z",
+        "systemTime": "2005-07-15T00:00:00Z",
+        "sampleRate": 4,
+        "depth": 0.0594
+      },
+      {
+        "id": "acc2f5b3-05bc-3bfe-b229-ff4d69a80860",
+        "name": "ES19/BHZ",
+        "channelType": "BROADBAND_HIGH_GAIN_VERTICAL",
+        "dataType": "UNKNOWN",
+        "latitude": 39.7006,
+        "longitude": -3.8991,
+        "elevation": 0.721,
+        "verticalAngle": 0,
+        "horizontalAngle": -1,
+        "position": {
+          "northDisplacementKm": 0,
+          "eastDisplacementKm": 0,
+          "verticalDisplacementKm": 0
+        },
+        "actualTime": "2002-02-21T00:00:00Z",
+        "systemTime": "2002-02-21T00:00:00Z",
+        "sampleRate": 40,
+        "depth": 0.03
+      }
+    ],
+    "phase": "P",
+    "model": "ak135",
+    "corrections": [],
+    "processingContext": {
+      "analystActionReference": {
+        "processingStageIntervalId": "b83c7e01-11f8-4f1b-aa40-87a77323c441",
+        "processingActivityIntervalId": "d09e6db4-df08-4fb1-b118-6d48dfb1d227",
+        "analystId": "ca6ea2b2-03e4-4571-a51a-347c6fcb75b2"
+      },
+      "storageVisibility": "PRIVATE"
+    }
+  }

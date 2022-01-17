@@ -1,0 +1,30 @@
+[
+    {
+        "id": "6ac41767-8e34-416c-9df7-eee4c6ae609a",
+        "channelId": "c4a878d7-4468-34c5-b048-f269ec868f47",
+        "qcMaskVersions": [
+            {
+                "endTime": "2010-05-20T19:35:00Z",
+                "version": 0,
+                "startTime": "2010-05-20T19:30:00Z",
+                "type": "LONG_GAP",
+                "category": "ANALYST_DEFINED",
+                "rejected": false,
+                "parentQcMasks": [
+                    {
+                        "qcMaskId": "dad89e5a-d72a-3a6a-a810-77297cb50895",
+                        "qcMaskVersionId": 0
+                    }
+                ],
+                "channelSegmentIds": [
+                    "f09572e5-979f-3e07-a181-c1dd75c356b9"
+                ],
+                "rationale": ""
+            }
+        ],
+        "currentVersionAsReference": {
+            "qcMaskId": "dad89e5a-d72a-3a6a-a810-77297cb50895",
+            "qcMaskVersionId": 0
+        }
+    }
+]

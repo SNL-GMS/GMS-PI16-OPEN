@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':station-definition-dao')
+    api project(':waveform-coi')
+    api project(':java-utilities')
+    api project(':station-definition-accessor')
+    api project(':station-definition-converter')
+
+    implementation 'com.google.guava:guava'
+    implementation project(':waveman')
+
+    // Testing.
+    testImplementation project(':station-definition-testfixtures')
+    testImplementation project(':waveform-testfixtures')
+}

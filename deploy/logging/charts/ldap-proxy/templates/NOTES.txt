@@ -1,0 +1,5 @@
+Instance name:  ldap-proxy
+Namespace:      logging
+Type:           {{ .Chart.Name }}
+Image registry: {{ .Values.imageRegistry }}
+Image tag:      {{ .Values.imageTag }}

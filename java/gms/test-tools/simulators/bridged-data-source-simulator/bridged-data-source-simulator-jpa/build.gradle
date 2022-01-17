@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation project(':frameworks-control')
+    implementation project(':bridge-utilities')
+    // Logback for Structured Logging
+    implementation 'ch.qos.logback:logback-classic'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation project(':structured-logging')
+    implementation project(':bridged-data-source-simulator-api')
+    implementation project(":workflow-dao")
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation project(':station-definition-repository')
+    implementation 'org.apache.commons:commons-lang3'
+
+    testImplementation project(':station-definition-testfixtures')
+    testImplementation 'com.h2database:h2'
+}

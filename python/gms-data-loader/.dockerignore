@@ -1,0 +1,6 @@
+.dockerignore
+Dockerfile
+.gitignore
+docker-build-prep.sh
+Makefile
+*.md

@@ -1,0 +1,20 @@
+{
+  "startTime": "2010-05-20T22:09:54.850Z",
+  "sampleRate": 0.0033783783783783786,
+  "channelIds": [],
+  "windowLead": "PT1S",
+  "windowLength": "PT4S",
+  "lowFrequency": 1.25,
+  "highFrequency": 3.25,
+  "useChannelVerticalOffset": false,
+  "phaseType": "P",
+  "normalizeWaveforms": false,
+  "outputChannelId": "850ed2e3-cc07-3c11-8b36-05ac5bc9e93a",
+  "slowCountX": 81,
+  "slowCountY": 81,
+  "slowStartX": -0.3597286423674922,
+  "slowStartY": -0.3597286423674922,
+  "slowDeltaX": 0.008882188700431906,
+  "slowDeltaY": 0.008882188700431906,
+  "sampleCount": 59
+}

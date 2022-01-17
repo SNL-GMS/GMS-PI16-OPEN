@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+dependencies {
+
+    // GMS Dependencies
+    api project(':station-definition-coi')
+    // Google AutoValue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    testImplementation project(':test-utils')
+}

@@ -1,0 +1,31 @@
+apply plugin: 'java-library'
+
+dependencies {
+
+    // Third-party dependencies.
+    // Google AutoValue
+    api 'com.google.guava:guava'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // Utility (dependency is api as apache commons classes are publicly exposed).
+    api 'org.apache.commons:commons-lang3'
+
+    // Serialization (dependencies are api as we expose our ObjectMapper as a singleton).
+    api 'com.fasterxml.jackson.core:jackson-databind'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+    api 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    api 'org.apache.kafka:kafka-clients'
+
+    // For UserInterfaceModeConverter
+//    implementation project(":user-preferences-dao")
+    // SystemMessage definitions
+    implementation project(":frameworks-osd-commonobjects")
+    // msgpack and YAML serialization; kept as private so clients don't have to know about it
+    implementation 'org.msgpack:jackson-dataformat-msgpack'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
+
+    // Testing.
+    testImplementation 'javax.xml.bind:jaxb-api'
+}

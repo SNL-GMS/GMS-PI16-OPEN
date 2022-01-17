@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Empty Renderer renders 1`] = `
+<EmptyRenderer
+  displayEndTimeSecs={500}
+  displayStartTimeSecs={0}
+/>
+`;
+
+exports[`Weavess Empty Renderer shallow renders 1`] = `""`;
+
+exports[`Weavess Empty Renderer shallow renders 2`] = `""`;

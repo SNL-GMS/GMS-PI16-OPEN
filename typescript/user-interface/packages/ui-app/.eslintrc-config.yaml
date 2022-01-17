@@ -1,0 +1,36 @@
+parserOptions:
+  project: './tsconfig.json'
+extends:
+  - '../../.eslintrc.yaml'
+settings:
+  import/resolver:
+    # webpack:
+    #   config: 'webpack.config.ts'
+    node:
+      extensions: ['.ts', '.tsx', '.js']
+      moduleDirectory:
+        - './node_modules'
+        - '../../node_modules'
+    typescript:
+      alwaysTryTypes: true
+      project:
+        - tsconfig.json
+    eslint-import-resolver-custom-alias:
+      alias:
+        # alias for ui-app package
+        '~analyst-ui': 'src/ts/components/analyst-ui'
+        '~app': 'src/ts/app'
+        '~config': 'src/ts/config'
+        '~common-ui': 'src/ts/components/common-ui'
+        '~components': 'src/ts/components'
+        '~css': 'src/css'
+        '~data-acquisition-ui': 'src/ts/components/data-acquisition-ui'
+        '~resources': 'src/ts/resources'
+        '~scss-config': 'src/ts/scss-config'
+        '~workers': 'src/ts/workers'
+      extensions:
+        - '.ts'
+        - '.tsx'
+        - '.scss'
+      packages:
+        - ''

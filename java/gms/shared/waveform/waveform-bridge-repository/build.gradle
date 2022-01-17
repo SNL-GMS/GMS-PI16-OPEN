@@ -1,0 +1,24 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation project(':station-definition-dao')
+    implementation project(':station-definition-repository')
+    implementation project(':station-definition-accessor')
+    implementation project(':station-definition-testfixtures')
+    implementation project(':structured-logging')
+    implementation project(':bridge-utilities')
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    implementation "org.apache.commons:commons-lang3"
+
+    api project(":waveform-coi")
+    api project(':waveform-api')
+    api project(':waveform-converter')
+
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    testImplementation project(':test-utils')
+    testImplementation project(':station-definition-testfixtures')
+    testImplementation project(':waveform-testfixtures')
+}
+

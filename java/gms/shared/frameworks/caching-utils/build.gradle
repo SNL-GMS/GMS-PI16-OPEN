@@ -1,0 +1,31 @@
+apply plugin: 'java-library'
+
+dependencies {
+    // Utility (dependency is api as apache commons classes are publicly exposed).
+    api 'org.apache.commons:commons-lang3'
+
+    implementation "com.google.guava:guava"
+
+    //Ignite cache libs
+    implementation 'javax.cache:cache-api'
+    api 'org.apache.ignite:ignite-core'
+    implementation 'org.apache.ignite:ignite-log4j'
+    implementation 'org.apache.ignite:ignite-kubernetes'
+
+    constraints {
+        implementation('io.netty:netty-all:4.1.51.Final') {
+            because 'io.projectreactor.netty is grabbing older netty-all version'
+        }
+    }
+    api project(":frameworks-system-config")
+    testImplementation project(":frameworks-test-utilities")
+
+    // Logback for Structured Logging
+    implementation 'ch.qos.logback:logback-classic'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation project(':structured-logging')
+
+    // testing dependencies
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'org.testcontainers:junit-jupiter'
+}

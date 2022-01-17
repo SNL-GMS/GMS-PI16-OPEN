@@ -1,0 +1,29 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation project(':frameworks-configuration-api')
+    implementation project(':frameworks-configuration-repository')
+    implementation project(":frameworks-service-interface-base")
+    implementation project(":frameworks-service-generator")
+    implementation project(':frameworks-control')
+    implementation project(":waveform-api")
+    implementation project(':structured-logging')
+    implementation project(':java-utilities')
+    implementation project(':bridge-utilities')
+    implementation project(':waveform-accessor')
+    implementation project(':waveform-bridge-repository')
+
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation project(':station-definition-api')
+    implementation project(':station-definition-accessor')
+    implementation project(':station-definition-repository')
+
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.mockito:mockito-inline'
+    testImplementation 'org.mockito:mockito-core'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+}

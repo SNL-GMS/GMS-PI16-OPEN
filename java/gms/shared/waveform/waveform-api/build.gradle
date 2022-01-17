@@ -1,0 +1,19 @@
+apply plugin: 'java-library'
+apply plugin: 'io.swagger.core.v3.swagger-gradle-plugin'
+
+dependencies {
+    implementation project(":frameworks-service-interface-base")
+    implementation project(":java-utilities")
+    implementation project(":station-definition-api")
+
+    api project(":waveform-coi")
+    api project(':station-definition-coi')
+    testImplementation project(':waveform-testfixtures')
+
+    testImplementation project(':station-definition-testfixtures')
+    testImplementation project(':test-utils')
+
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+    implementation "org.apache.commons:commons-lang3"
+}

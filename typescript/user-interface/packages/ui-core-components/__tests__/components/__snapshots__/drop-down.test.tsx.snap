@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Core drop down Can render custom value 1`] = `
+<div
+  className="dropdown-container"
+>
+  <span
+    className="dropdown-selector"
+  >
+    <HTMLSelect
+      disabled={false}
+      onChange={[Function]}
+      style={
+        Object {
+          "minWidth": "120px",
+          "width": "120px",
+        }
+      }
+      title="undefined"
+      value="UNSELECTED_CUSTOM_VALUE"
+    >
+      <option
+        key="test"
+        value="test"
+      >
+        Test
+      </option>
+      <option
+        key="foo"
+        value="foo"
+      >
+        Foo
+      </option>
+      <option
+        key="bar"
+        value="bar"
+      >
+        Bar
+      </option>
+      <option
+        key="UNSELECTED_CUSTOM_VALUE"
+        value="UNSELECTED_CUSTOM_VALUE"
+      >
+        Custom
+      </option>
+    </HTMLSelect>
+  </span>
+</div>
+`;
+
+exports[`Core drop down Renders 1`] = `
+<div
+  className="dropdown-container"
+>
+  <span
+    className="dropdown-selector"
+  >
+    <HTMLSelect
+      disabled={false}
+      onChange={[Function]}
+      style={
+        Object {
+          "minWidth": "120px",
+          "width": "120px",
+        }
+      }
+      title="undefined"
+      value="bar"
+    >
+      <option
+        key="test"
+        value="test"
+      >
+        test
+      </option>
+      <option
+        key="foo"
+        value="foo"
+      >
+        foo
+      </option>
+      <option
+        key="bar"
+        value="bar"
+      >
+        bar
+      </option>
+    </HTMLSelect>
+  </span>
+</div>
+`;
+
+exports[`Core drop down Renders with label 1`] = `
+<div
+  className="dropdown-container"
+>
+  <span
+    className="dropdown-label"
+  >
+    best label ever: 
+  </span>
+  <span
+    className="dropdown-selector"
+  >
+    <HTMLSelect
+      disabled={false}
+      onChange={[Function]}
+      style={
+        Object {
+          "minWidth": "120px",
+          "width": "120px",
+        }
+      }
+      title="undefined"
+      value="bar"
+    >
+      <option
+        key="test"
+        value="test"
+      >
+        test
+      </option>
+      <option
+        key="foo"
+        value="foo"
+      >
+        foo
+      </option>
+      <option
+        key="bar"
+        value="bar"
+      >
+        bar
+      </option>
+    </HTMLSelect>
+  </span>
+</div>
+`;
+
+exports[`Core drop down Renders without label 1`] = `
+<div
+  className="dropdown-container"
+>
+  <span
+    className="dropdown-selector"
+  >
+    <HTMLSelect
+      disabled={false}
+      onChange={[Function]}
+      style={
+        Object {
+          "minWidth": "120px",
+          "width": "120px",
+        }
+      }
+      title="undefined"
+      value="bar"
+    >
+      <option
+        key="test"
+        value="test"
+      >
+        test
+      </option>
+      <option
+        key="foo"
+        value="foo"
+      >
+        foo
+      </option>
+      <option
+        key="bar"
+        value="bar"
+      >
+        bar
+      </option>
+    </HTMLSelect>
+  </span>
+</div>
+`;

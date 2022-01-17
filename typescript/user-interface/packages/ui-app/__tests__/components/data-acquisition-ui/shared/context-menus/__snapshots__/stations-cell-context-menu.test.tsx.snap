@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Station cell context menu DisabledStationSohContextMenu can be created 1`] = `
+<DisabledStationSohContextMenu
+  acknowledgeCallback={[MockFunction]}
+  stationNames={
+    Array [
+      "test",
+      "test2",
+    ]
+  }
+>
+  <Blueprint3.Menu>
+    <ul
+      className="bp3-menu"
+    >
+      <AcknowledgeMenuItem
+        acknowledgeCallback={[MockFunction]}
+        disabled={true}
+        stationNames={
+          Array [
+            "test",
+            "test2",
+          ]
+        }
+      >
+        <Blueprint3.MenuItem
+          className="acknowledge-soh-status"
+          data-cy="acknowledge-without-comment"
+          disabled={true}
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="Acknowledge 2 stations"
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-disabled acknowledge-soh-status"
+              data-cy="acknowledge-without-comment"
+              tabIndex={-1}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  Acknowledge 2 stations
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+      </AcknowledgeMenuItem>
+      <AcknowledgeWithCommentMenuItem
+        acknowledgeCallback={[MockFunction]}
+        disabled={true}
+        stationNames={
+          Array [
+            "test",
+            "test2",
+          ]
+        }
+      >
+        <Blueprint3.MenuItem
+          className="acknowledge-soh-status"
+          data-cy="acknowledge-with-comment"
+          disabled={true}
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="Acknowledge 2 stations with comment..."
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-disabled acknowledge-soh-status"
+              data-cy="acknowledge-with-comment"
+              tabIndex={-1}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  Acknowledge 2 stations with comment...
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+      </AcknowledgeWithCommentMenuItem>
+    </ul>
+  </Blueprint3.Menu>
+</DisabledStationSohContextMenu>
+`;
+
+exports[`Station cell context menu StationSohContextMenu can be created 1`] = `
+<StationSohContextMenu
+  acknowledgeCallback={[MockFunction]}
+  stationNames={
+    Array [
+      "test",
+      "test2",
+    ]
+  }
+>
+  <Blueprint3.Menu>
+    <ul
+      className="bp3-menu"
+    >
+      <AcknowledgeMenuItem
+        acknowledgeCallback={[MockFunction]}
+        disabled={false}
+        stationNames={
+          Array [
+            "test",
+            "test2",
+          ]
+        }
+      >
+        <Blueprint3.MenuItem
+          className="acknowledge-soh-status"
+          data-cy="acknowledge-without-comment"
+          disabled={false}
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="Acknowledge 2 stations"
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-popover-dismiss acknowledge-soh-status"
+              data-cy="acknowledge-without-comment"
+              onClick={[Function]}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  Acknowledge 2 stations
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+      </AcknowledgeMenuItem>
+      <AcknowledgeWithCommentMenuItem
+        acknowledgeCallback={[MockFunction]}
+        disabled={false}
+        stationNames={
+          Array [
+            "test",
+            "test2",
+          ]
+        }
+      >
+        <Blueprint3.MenuItem
+          className="acknowledge-soh-status"
+          data-cy="acknowledge-with-comment"
+          disabled={false}
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="Acknowledge 2 stations with comment..."
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-popover-dismiss acknowledge-soh-status"
+              data-cy="acknowledge-with-comment"
+              onClick={[Function]}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  Acknowledge 2 stations with comment...
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+      </AcknowledgeWithCommentMenuItem>
+    </ul>
+  </Blueprint3.Menu>
+</StationSohContextMenu>
+`;

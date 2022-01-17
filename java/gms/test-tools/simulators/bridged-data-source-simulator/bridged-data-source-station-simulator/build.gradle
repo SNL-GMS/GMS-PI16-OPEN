@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation project(':structured-logging')
+    implementation project(':station-definition-repository')
+    implementation project(':bridged-data-source-simulator-api')
+    implementation project(':bridged-data-source-simulator-jpa')
+    implementation project(':bridge-utilities')
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'com.google.guava:guava'
+
+    testImplementation project(':station-definition-testfixtures')
+}

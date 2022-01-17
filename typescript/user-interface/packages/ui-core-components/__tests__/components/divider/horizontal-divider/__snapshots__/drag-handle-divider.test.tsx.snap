@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drag Handle Divider renders 1`] = `
+<DragHandleDivider
+  handleHeight={10}
+  onDrag={[MockFunction]}
+>
+  <div
+    className="horizontal-divider"
+    onMouseDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+  >
+    <div
+      className="horizontal-divider__target"
+    />
+    <div
+      className="horizontal-divider__spacer"
+    />
+    <svg
+      className="resize-handle"
+      height="10"
+      viewBox="0 0 18 10"
+      width="18"
+    >
+      <title>
+        Resize
+      </title>
+      <g
+        className="resize-handle-group"
+        data-name="resize-handle-group"
+      >
+        <rect
+          height="10"
+          rx="1"
+          width="2"
+        />
+        <rect
+          height="10"
+          rx="1"
+          width="2"
+          x="4"
+        />
+        <rect
+          height="10"
+          rx="1"
+          width="2"
+          x="8"
+        />
+        <rect
+          height="10"
+          rx="1"
+          width="2"
+          x="12"
+        />
+        <rect
+          height="10"
+          rx="1"
+          width="2"
+          x="16"
+        />
+      </g>
+    </svg>
+    <div
+      className="horizontal-divider__spacer"
+    />
+  </div>
+</DragHandleDivider>
+`;
+
+exports[`Drag Handle Divider shallow renders 1`] = `
+<div
+  className="horizontal-divider"
+  onMouseDown={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  onMouseUp={[Function]}
+>
+  <div
+    className="horizontal-divider__target"
+  />
+  <div
+    className="horizontal-divider__spacer"
+  />
+  <svg
+    className="resize-handle"
+    height="10"
+    viewBox="0 0 18 10"
+    width="18"
+  >
+    <title>
+      Resize
+    </title>
+    <g
+      className="resize-handle-group"
+      data-name="resize-handle-group"
+    >
+      <rect
+        height="10"
+        rx="1"
+        width="2"
+      />
+      <rect
+        height="10"
+        rx="1"
+        width="2"
+        x="4"
+      />
+      <rect
+        height="10"
+        rx="1"
+        width="2"
+        x="8"
+      />
+      <rect
+        height="10"
+        rx="1"
+        width="2"
+        x="12"
+      />
+      <rect
+        height="10"
+        rx="1"
+        width="2"
+        x="16"
+      />
+    </g>
+  </svg>
+  <div
+    className="horizontal-divider__spacer"
+  />
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ian map tooltip handler can create a mouse move handler 1`] = `
+<Component
+  key="234"
+>
+  <Component
+    action={[Function]}
+    type="MOUSE_MOVE"
+  />
+</Component>
+`;
+
+exports[`ian map tooltip handler can handle an undefined viewer 1`] = `""`;

@@ -1,0 +1,18 @@
+<configuration>
+    <appender name="jsonConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <customFields>
+                {
+                "component": "waveform-manager-service"
+                }
+            </customFields>
+        </encoder>
+        <component>waveform-manager-service</component>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="jsonConsoleAppender"/>
+    </root>
+    <root level="${GMS_CONFIG_LOG_LEVEL}">
+        <appender-ref ref="jsonConsoleAppender"/>
+    </root>
+</configuration>

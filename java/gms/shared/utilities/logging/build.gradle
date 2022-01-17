@@ -1,0 +1,22 @@
+plugins {
+    id('java-library')
+}
+
+
+dependencies {
+    implementation 'args4j:args4j'
+
+
+    // Logback for Structured Logging
+    implementation 'ch.qos.logback:logback-classic'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation 'com.google.guava:guava'
+    implementation 'org.apache.commons:commons-lang3'
+
+    // unit testing dependencies
+    testImplementation project(":frameworks-test-utilities")
+    testImplementation project(":station-definition-testfixtures")
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'org.testcontainers:junit-jupiter'
+}
+

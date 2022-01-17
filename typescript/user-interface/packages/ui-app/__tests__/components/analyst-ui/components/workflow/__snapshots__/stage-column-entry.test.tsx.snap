@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stage Column Entry matches snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Memo()
+    stageInterval={
+      Object {
+        "activityIntervals": Array [
+          Object {
+            "activeAnalysts": Array [
+              "larry",
+              "moe",
+              "curly",
+            ],
+            "comment": "interval example",
+            "endTime": 1622057187,
+            "modificationTime": 1622057667,
+            "name": "Event Review",
+            "percentAvailable": 100,
+            "processingEndTime": 1622057547,
+            "processingStartTime": 1622057487,
+            "stageName": "AL1",
+            "startTime": 1622053587,
+            "status": "IN_PROGRESS",
+            "storageTime": 1622057607,
+          },
+        ],
+        "comment": "interval example",
+        "endTime": 1622057187,
+        "modificationTime": 1622057667,
+        "name": "AL1",
+        "percentAvailable": 100,
+        "processingEndTime": 1622057547,
+        "processingStartTime": 1622057487,
+        "stageMetrics": Object {
+          "associatedSignalDetectionCount": 34,
+          "eventCount": 21,
+          "maxMagnitude": 8,
+          "unassociatedSignalDetectionCount": 55,
+        },
+        "stageMode": "INTERACTIVE",
+        "startTime": 1622053587,
+        "status": "IN_PROGRESS",
+        "storageTime": 1622057607,
+      }
+    }
+  >
+    <Memo()
+      key="AL1"
+      stageInterval={
+        Object {
+          "activityIntervals": Array [
+            Object {
+              "activeAnalysts": Array [
+                "larry",
+                "moe",
+                "curly",
+              ],
+              "comment": "interval example",
+              "endTime": 1622057187,
+              "modificationTime": 1622057667,
+              "name": "Event Review",
+              "percentAvailable": 100,
+              "processingEndTime": 1622057547,
+              "processingStartTime": 1622057487,
+              "stageName": "AL1",
+              "startTime": 1622053587,
+              "status": "IN_PROGRESS",
+              "storageTime": 1622057607,
+            },
+          ],
+          "comment": "interval example",
+          "endTime": 1622057187,
+          "modificationTime": 1622057667,
+          "name": "AL1",
+          "percentAvailable": 100,
+          "processingEndTime": 1622057547,
+          "processingStartTime": 1622057487,
+          "stageMetrics": Object {
+            "associatedSignalDetectionCount": 34,
+            "eventCount": 21,
+            "maxMagnitude": 8,
+            "unassociatedSignalDetectionCount": 55,
+          },
+          "stageMode": "INTERACTIVE",
+          "startTime": 1622053587,
+          "status": "IN_PROGRESS",
+          "storageTime": 1622057607,
+        }
+      }
+    >
+      <div
+        className="interval-cell interval-cell--in-progress"
+        key="1622053587"
+        onContextMenu={[Function]}
+        style={
+          Object {
+            "gridColumn": "span 12",
+          }
+        }
+      />
+    </Memo()>
+  </Memo()>
+   
+</Provider>
+`;

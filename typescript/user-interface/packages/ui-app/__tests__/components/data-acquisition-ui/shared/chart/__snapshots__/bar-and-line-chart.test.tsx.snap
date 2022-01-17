@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BarAndLineChart renders BarAndLineChart empty data 1`] = `
+<Fragment>
+  <div
+    className="legend-and-charts"
+  >
+    <BarChart
+      barDefs={Array []}
+      categories={
+        Object {
+          "x": Array [],
+          "y": Array [],
+        }
+      }
+      classNames="table-display"
+      heightPx={100}
+      id="bar-chart-sample"
+      maxBarWidth={100}
+      minBarWidth={100}
+      padding={
+        Object {
+          "bottom": 120,
+          "left": 63,
+          "right": 29,
+          "top": 16,
+        }
+      }
+      widthPx={100}
+    />
+    <LineChartWeavess
+      classNames="table-display"
+      endTimeMs={100}
+      heightPx={100}
+      id="line-chartsample"
+      lineDefs={Array []}
+      padding={
+        Object {
+          "bottom": 120,
+          "left": 63,
+          "right": 29,
+          "top": 16,
+        }
+      }
+      startTimeMs={0}
+      widthPx={100}
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`BarAndLineChart renders BarAndLineChart multiple data 1`] = `
+<Fragment>
+  <div
+    className="legend-and-charts"
+  >
+    <BarChart
+      barDefs={
+        Array [
+          Object {
+            "color": "000000",
+            "id": "1",
+            "value": Object {
+              "x": 1,
+              "y": 1,
+            },
+          },
+          Object {
+            "color": "000000",
+            "id": "2",
+            "value": Object {
+              "x": 2,
+              "y": 2,
+            },
+          },
+        ]
+      }
+      categories={
+        Object {
+          "x": Array [
+            "1",
+            "2",
+          ],
+          "y": Array [
+            "1",
+            "2",
+          ],
+        }
+      }
+      classNames="table-display"
+      heightPx={100}
+      id="bar-chart-sample"
+      maxBarWidth={100}
+      minBarWidth={100}
+      padding={
+        Object {
+          "bottom": 120,
+          "left": 63,
+          "right": 29,
+          "top": 16,
+        }
+      }
+      widthPx={100}
+    />
+    <LineChartWeavess
+      classNames="table-display"
+      endTimeMs={100}
+      heightPx={100}
+      id="line-chartsample"
+      lineDefs={
+        Array [
+          Object {
+            "average": 2,
+            "color": "red",
+            "id": 1,
+            "values": Float32Array [
+              1,
+              1,
+              2,
+              2,
+              3,
+              3,
+            ],
+          },
+          Object {
+            "average": 5,
+            "color": "blue",
+            "id": 2,
+            "values": Float32Array [
+              4,
+              4,
+              5,
+              5,
+              6,
+              6,
+            ],
+          },
+        ]
+      }
+      padding={
+        Object {
+          "bottom": 120,
+          "left": 63,
+          "right": 29,
+          "top": 16,
+        }
+      }
+      startTimeMs={0}
+      widthPx={100}
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`BarAndLineChart renders BarAndLineChart undefined data 01 1`] = `
+<Fragment>
+  <div
+    className="legend-and-charts"
+  >
+    <BarChart
+      classNames="table-display"
+      id="bar-chart-sample"
+      padding={
+        Object {
+          "bottom": 120,
+          "left": 63,
+          "right": 29,
+          "top": 16,
+        }
+      }
+    />
+    <LineChartWeavess
+      classNames="table-display"
+      id="line-chartsample"
+      padding={
+        Object {
+          "bottom": 120,
+          "left": 63,
+          "right": 29,
+          "top": 16,
+        }
+      }
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`BarAndLineChart renders BarAndLineChart undefined data 02 1`] = `
+<Fragment>
+  <div
+    className="legend-and-charts"
+  >
+    <BarChart
+      classNames="table-display"
+      id="bar-chart-sample"
+      padding={
+        Object {
+          "bottom": 120,
+          "left": 63,
+          "right": 29,
+          "top": 16,
+        }
+      }
+    />
+    <LineChartWeavess
+      classNames="table-display"
+      id="line-chartsample"
+      padding={
+        Object {
+          "bottom": 120,
+          "left": 63,
+          "right": 29,
+          "top": 16,
+        }
+      }
+    />
+  </div>
+</Fragment>
+`;

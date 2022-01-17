@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Measure window selection should return a contentRenderer that matches a snapshot 1`] = `
+<MeasureWindowSelectionListener
+  computeTimeSecsFromMouseXPixels={[MockFunction]}
+  displayTimeRange={
+    Object {
+      "endTimeSecs": 1000,
+      "startTimeSecs": 0,
+    }
+  }
+  hotKeys={
+    Object {
+      "amplitudeScale": "KeyS",
+      "drawMeasureWindow": "Alt",
+    }
+  }
+  isMeasureWindowEnabled={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": true,
+        },
+      ],
+    }
+  }
+  toast={[MockFunction]}
+  updateMeasureWindowPanel={[MockFunction]}
+>
+  <div
+    id="START"
+    onMouseDown={[Function]}
+  />
+  <Memo()
+    key="1"
+    onClick={[Function]}
+  >
+    <div
+      className="measure-window-selection measure-window-selection__container"
+      style={
+        Object {
+          "display": "none",
+          "transform": "translateX(-50%)",
+        }
+      }
+    >
+      <div
+        className="measure-window-selection__overlay"
+        draggable={true}
+        onDragStart={[Function]}
+        style={
+          Object {
+            "display": "none",
+            "left": "50%",
+            "width": "0%",
+          }
+        }
+      />
+    </div>
+  </Memo()>
+</MeasureWindowSelectionListener>
+`;

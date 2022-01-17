@@ -1,0 +1,649 @@
+{
+  "event": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "eventId": "00000000-0000-0000-0000-000000000000",
+    "parentEventHypotheses": [
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "rejected": false,
+    "locationSolutions": [
+      {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "location": {
+          "latitudeDegrees": -2.06750,
+          "longitudeDegrees": 126.78543,
+          "depthKm": 52.965,
+          "time": "2010-05-20T08:36:08.38411Z"
+        },
+        "locationRestraint": {
+          "latitudeRestraintType": "UNRESTRAINED",
+          "longitudeRestraintType": "UNRESTRAINED",
+          "depthRestraintType": "UNRESTRAINED",
+          "timeRestraintType": "UNRESTRAINED"
+        },
+        "featurePredictions": [],
+        "locationBehaviors": [],
+        "networkMagnitudeSolution": []
+      }
+    ],
+    "preferredLocationSolution": {
+      "locationSolution": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "location": {
+          "latitudeDegrees": -2.06750,
+          "longitudeDegrees": 126.78543,
+          "depthKm": 52.965,
+          "time": "2010-05-20T08:36:08.38411Z"
+        },
+        "locationRestraint": {
+          "latitudeRestraintType": "UNRESTRAINED",
+          "longitudeRestraintType": "UNRESTRAINED",
+          "depthRestraintType": "UNRESTRAINED",
+          "timeRestraintType": "UNRESTRAINED"
+        },
+        "featurePredictions": [],
+        "locationBehaviors": [],
+        "networkMagnitudeSolution": []
+      }
+    },
+    "associations": []
+  },
+  "definingBehaviors": [
+    {
+      "stationId": "cabdd735-f689-3bdb-932e-e0b0e0fd480e",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "1c4a8d11-178a-3c5d-a902-ac599a155621",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "e2a74c85-6c97-36d1-b5d9-acab1ae58cf3",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "94f14bff-4d1c-3a3f-8a40-ac29f7a8ddbd",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "850ed2e3-cc07-3c11-8b36-05ac5bc9e93a",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "74454797-3053-322d-9283-4b428ee07bae",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "7a481f10-e4d3-3687-9efa-622a82eb92cf",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "b8c43229-dbe7-3601-9bce-1fab6a5d9a09",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "fd3dbadc-72fd-36c6-a3cc-ca4f7a4f58be",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "b85019c8-c2f5-34c2-bd8e-ebf77fff7d63",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "5e5e52fe-f78f-3dfd-b95d-6696be7e7c13",
+      "magnitudeType": "MB",
+      "defining": true
+    },
+    {
+      "stationId": "27acddaf-33bf-3d39-b7ac-0a52ed299ca9",
+      "magnitudeType": "MB",
+      "defining": true
+    }
+  ],
+  "processingMetadata": {
+    "detectionHypotheses": [
+      {
+        "id": "90a7db85-392d-494f-b3ab-65a28c3adf78",
+        "parentSignalDetectionId": "8f2b99ce-e82d-4442-aff9-d3a390135ff0",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.64S",
+              "amplitude": {
+                "value": 1.47,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "b998617e-564f-473b-a8b2-2ca14bbe24c4",
+        "parentSignalDetectionId": "7fa282f5-ea0b-4e93-a7da-2ba78d6828a2",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.58S",
+              "amplitude": {
+                "value": 1.60,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "54745192-76fb-420d-bca5-1f89e5a965ac",
+        "parentSignalDetectionId": "09226759-b898-4c10-90f0-f1afa8edd438",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.66S",
+              "amplitude": {
+                "value": 0.50,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "a0637be1-19ca-4b72-b9f6-776451638fcd",
+        "parentSignalDetectionId": "cc61bdd8-8214-4247-a4e7-734e595a2df8",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.41S",
+              "amplitude": {
+                "value": 3.78,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "a6688793-12b7-4539-b5dd-85d3a4699baf",
+        "parentSignalDetectionId": "ecc7d074-3b94-47b4-9f1f-3af5876a6ec1",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.46S",
+              "amplitude": {
+                "value": 0.96,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "39c2cf71-4203-47dd-b7bf-51dc50e5f49b",
+        "parentSignalDetectionId": "f692c5f6-15e2-4003-b177-02af9135f938",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.36S",
+              "amplitude": {
+                "value": 6.99,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "ff04a43a-aa2f-431a-a4ae-faa4acf3e0f9",
+        "parentSignalDetectionId": "78634f5b-4cf6-4ab9-bc8b-e476e0952fd8",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.64S",
+              "amplitude": {
+                "value": 0.80,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "c9fcb8e3-beb8-4c19-929c-dca0f8ecfa73",
+        "parentSignalDetectionId": "cc10f37c-0348-4866-ace3-6967976a77c9",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.68S",
+              "amplitude": {
+                "value": 0.68,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "8924d861-773a-4c25-8372-b81e324e0383",
+        "parentSignalDetectionId": "61c2e839-9bb5-42e7-81bf-ac00d97a505b",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.54S",
+              "amplitude": {
+                "value": 1.38,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "cb179559-f20e-498b-b163-190d98f210dd",
+        "parentSignalDetectionId": "b110e5cb-540c-41f9-9aee-8e1e2a585768",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.47S",
+              "amplitude": {
+                "value": 1.78,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "40a25b30-7649-4127-a4ca-b73d75b873d5",
+        "parentSignalDetectionId": "2106e08d-5a92-4e0d-ba15-10f0f16d31ca",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.45S",
+              "amplitude": {
+                "value": 0.53,
+                "standardDeviation": 0.0,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      },
+      {
+        "id": "8c2b274f-85e9-4f24-ab15-a470bd7f2d4f",
+        "parentSignalDetectionId": "30ae3f99-5030-45b5-959d-bba4495be777",
+        "rejected": false,
+        "featureMeasurements": [
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": {
+              "value": "2010-05-20T08:36:08.38411Z",
+              "standardDeviation": "PT0S"
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "PHASE",
+            "measurementValue": {
+              "value": "P",
+              "confidence": 1.0
+            }
+          },
+          {
+            "channelSegmentId": "00000000-0000-0000-0000-000000000000",
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": {
+              "startTime": "2010-05-20T08:36:08.38411Z",
+              "period": "PT0.86S",
+              "amplitude": {
+                "value": 1.08,
+                "standardDeviation": 0.0 ,
+                "units": "NANOMETERS"
+              }
+            }
+          }
+        ],
+        
+      }
+    ],
+    "stationIdsByDetectionHypothesisIds": {
+      "90a7db85-392d-494f-b3ab-65a28c3adf78":"cabdd735-f689-3bdb-932e-e0b0e0fd480e",
+      "b998617e-564f-473b-a8b2-2ca14bbe24c4":"1c4a8d11-178a-3c5d-a902-ac599a155621",
+      "54745192-76fb-420d-bca5-1f89e5a965ac":"e2a74c85-6c97-36d1-b5d9-acab1ae58cf3",
+      "a0637be1-19ca-4b72-b9f6-776451638fcd":"94f14bff-4d1c-3a3f-8a40-ac29f7a8ddbd",
+      "a6688793-12b7-4539-b5dd-85d3a4699baf":"850ed2e3-cc07-3c11-8b36-05ac5bc9e93a",
+      "39c2cf71-4203-47dd-b7bf-51dc50e5f49b":"74454797-3053-322d-9283-4b428ee07bae",
+      "ff04a43a-aa2f-431a-a4ae-faa4acf3e0f9":"7a481f10-e4d3-3687-9efa-622a82eb92cf",
+      "c9fcb8e3-beb8-4c19-929c-dca0f8ecfa73":"b8c43229-dbe7-3601-9bce-1fab6a5d9a09",
+      "8924d861-773a-4c25-8372-b81e324e0383":"fd3dbadc-72fd-36c6-a3cc-ca4f7a4f58be",
+      "cb179559-f20e-498b-b163-190d98f210dd":"b85019c8-c2f5-34c2-bd8e-ebf77fff7d63",
+      "40a25b30-7649-4127-a4ca-b73d75b873d5":"5e5e52fe-f78f-3dfd-b95d-6696be7e7c13",
+      "8c2b274f-85e9-4f24-ab15-a470bd7f2d4f":"27acddaf-33bf-3d39-b7ac-0a52ed299ca9"
+    },
+    "stationLocationsByDetectionHypothesisIds": {
+      "90a7db85-392d-494f-b3ab-65a28c3adf78": {
+        "latitudeDegrees":50.4348,
+        "longitudeDegrees":58.0164,
+        "depthKm":0.0650,
+        "elevationKm":0.379
+      },
+      "b998617e-564f-473b-a8b2-2ca14bbe24c4":{
+        "latitudeDegrees":-23.66513,
+        "longitudeDegrees":133.90526,
+        "depthKm":0.0274,
+        "elevationKm":0.627
+      },
+      "54745192-76fb-420d-bca5-1f89e5a965ac":{
+        "latitudeDegrees":53.02492,
+        "longitudeDegrees":70.38853,
+        "depthKm":0.0550,
+        "elevationKm":0.42
+      },
+      "a0637be1-19ca-4b72-b9f6-776451638fcd":{
+        "latitudeDegrees":-5.0142,
+        "longitudeDegrees":119.7517,
+        "depthKm":0.0070,
+        "elevationKm":0.03
+      },
+      "a6688793-12b7-4539-b5dd-85d3a4699baf":{
+        "latitudeDegrees":46.79368,
+        "longitudeDegrees":82.29057,
+        "depthKm":0.0300,
+        "elevationKm":0.618
+      },
+      "39c2cf71-4203-47dd-b7bf-51dc50e5f49b":{
+        "latitudeDegrees":-0.86912,
+        "longitudeDegrees":131.26605,
+        "depthKm":0.0000,
+        "elevationKm":0.193
+      },
+      "ff04a43a-aa2f-431a-a4ae-faa4acf3e0f9":{
+        "latitudeDegrees":47.83469,
+        "longitudeDegrees":106.39499,
+        "depthKm":0.0000,
+        "elevationKm":1.416
+      },
+      "c9fcb8e3-beb8-4c19-929c-dca0f8ecfa73":{
+        "latitudeDegrees":-31.87568,
+        "longitudeDegrees":141.59644,
+        "depthKm":0.0100,
+        "elevationKm":0.255
+      },
+      "8924d861-773a-4c25-8372-b81e324e0383":{
+        "latitudeDegrees":44.1998,
+        "longitudeDegrees":1319888,
+        "depthKm":0.0550,
+        "elevationKm":0.17
+      },
+      "cb179559-f20e-498b-b163-190d98f210dd":{
+        "latitudeDegrees":-19.94266,
+        "longitudeDegrees":134.3395,
+        "depthKm":0.0015,
+        "elevationKm":0.389
+      },
+      "40a25b30-7649-4127-a4ca-b73d75b873d5":{
+        "latitudeDegrees":53.94805,
+        "longitudeDegrees":84.81878,
+        "depthKm":0.0500,
+        "elevationKm":0.229
+      },
+      "8c2b274f-85e9-4f24-ab15-a470bd7f2d4f":{
+        "latitudeDegrees":37.44209,
+        "longitudeDegrees":127.88452,
+        "depthKm":0.0610,
+        "elevationKm":0.138
+      }
+    }
+  }
+}

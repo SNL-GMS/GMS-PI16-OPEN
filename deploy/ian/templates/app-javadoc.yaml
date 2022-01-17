@@ -1,0 +1,65 @@
+{{- $appName := "javadoc" }}
+{{- $appValues := get .Values $appName }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+  labels:
+    restartAfterReconfig: {{ include "ian.deployment.restartAfterReconfig" (dict "Values" .Values "appValues" $appValues) }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  strategy:
+    type: {{ include "ian.deployment.strategy" (dict "Values" .Values "appValues" $appValues) }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      serviceAccount: gms-ian-elevated
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "ian.container.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          env: {{- include "ian.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+          ports:
+            - containerPort: 80
+          {{- include "ian.container.resources" (dict "Values" .Values "appValues" $appValues) | nindent 10 }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $appName }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: http-web
+      port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: {{ $appName }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ $appName }}
+spec:
+  tls:
+    - secretName: ingress-default-cert
+      hosts:
+        - "{{ .Release.Name }}.{{ .Values.baseDomain }}"
+  rules:
+    - host: "{{ .Release.Name }}.{{ .Values.baseDomain }}"
+      http:
+        paths:
+          - path: "/{{ $appName }}"
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ $appName }}
+                port:
+                  number: 80

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Waveform Query createWaveformConfig returns valid config 1`] = `
+Object {
+  "config": Object {
+    "refetchOnWindowFocus": false,
+    "staleTime": Infinity,
+  },
+  "queryFn": [Function],
+  "queryKey": Array [
+    "waveforms",
+    Object {
+      "data": Object {
+        "channels": Array [
+          Object {
+            "effectiveAt": 1614706257.376,
+            "name": "AAK.AAK.BHN",
+          },
+        ],
+        "endTime": 1614727857.376,
+        "startTime": 1614706257.376,
+      },
+      "headers": Object {
+        "accept": "application/msgpack",
+        "content-type": "application/json",
+      },
+      "method": "post",
+      "proxy": false,
+      "responseType": "arraybuffer",
+      "timeout": 180000,
+      "url": "http://localhost/waveform-manager-service/waveform/channel-segment/query/channel-timerange",
+    },
+  ],
+}
+`;
+
+exports[`Waveform Query hook sends a request to a web worker 1`] = `
+<TestComponent>
+  <div>
+    "Mock RPC Return Value"
+  </div>
+</TestComponent>
+`;

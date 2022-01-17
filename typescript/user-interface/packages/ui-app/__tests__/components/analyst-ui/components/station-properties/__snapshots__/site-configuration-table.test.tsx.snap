@@ -1,0 +1,383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site Configuration Table matches snapshot 1`] = `
+<SiteConfigurationTable
+  columnsToDisplay={
+    Map {
+      "name" => true,
+      "effectiveAt" => true,
+      "effectiveUntil" => true,
+      "latitudeDegrees" => true,
+      "longitudeDegrees" => true,
+      "depthKm" => true,
+      "elevationKm" => true,
+      "description" => true,
+      "type" => true,
+    }
+  }
+  onRowSelection={[MockFunction]}
+  station={
+    Object {
+      "allRawChannels": Array [
+        Object {},
+      ],
+      "channelGroups": Array [
+        Object {},
+      ],
+      "description": "This is a test station",
+      "effectiveAt": 1618935091.118,
+      "effectiveUntil": 1618935091.118,
+      "location": Object {
+        "depthKm": 50,
+        "elevationKm": 10,
+        "latitudeDegrees": 35.647,
+        "longitudeDegrees": 100,
+      },
+      "name": "STA",
+      "relativePositionsByChannel": Map {
+        "Real Channel Name One" => Object {
+          "eastDisplacementKm": 5,
+          "northDisplacementKm": 50,
+          "verticalDisplacementKm": 10,
+        },
+        "Real Channel Name Two" => Object {
+          "eastDisplacementKm": 5,
+          "northDisplacementKm": 50,
+          "verticalDisplacementKm": 10,
+        },
+      },
+      "type": "SEISMIC_1_COMPONENT",
+    }
+  }
+>
+  <div
+    className="site-configuration-table ag-theme-dark station-properties-table"
+  >
+    <Component
+      className="bp3-heading "
+    >
+      <h4
+        className="bp3-heading bp3-heading "
+      >
+        Channel Group Configuration
+      </h4>
+    </Component>
+    <div
+      className="station-properties-table__wrapper"
+    >
+      <ClientSideTable
+        columnDefs={
+          Array [
+            Object {
+              "field": "name",
+              "headerName": "Name",
+              "headerTooltip": "Name",
+              "width": 200,
+            },
+            Object {
+              "field": "effectiveAt",
+              "headerName": "Effective At",
+              "headerTooltip": "Effective at",
+              "width": 200,
+            },
+            Object {
+              "field": "effectiveUntil",
+              "headerName": "Effective Until",
+              "headerTooltip": "Effective until",
+              "width": 200,
+            },
+            Object {
+              "comparator": [Function],
+              "field": "latitudeDegrees",
+              "headerName": "Lat (°)",
+              "headerTooltip": "Latitude in degrees",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "longitudeDegrees",
+              "headerName": "Lon (°)",
+              "headerTooltip": "Longitude in degrees",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "depthKm",
+              "headerName": "Depth (km)",
+              "headerTooltip": "Depth in kilometers",
+            },
+            Object {
+              "comparator": [Function],
+              "field": "elevationKm",
+              "headerName": "Elev (km)",
+              "headerTooltip": "Elevation in kilometers",
+            },
+            Object {
+              "field": "description",
+              "headerName": "Description",
+              "headerTooltip": "Description",
+              "width": 300,
+            },
+            Object {
+              "field": "type",
+              "headerName": "Type",
+              "headerTooltip": "Type",
+              "width": 200,
+            },
+          ]
+        }
+        context={Object {}}
+        defaultColDef={
+          Object {
+            "cellRendererFramework": [Function],
+            "disableStaticMarkupForCellRendererFramework": true,
+            "disableStaticMarkupForHeaderComponentFramework": true,
+            "filter": true,
+            "headerClass": "station-properties-header-cell",
+            "hide": true,
+            "lockVisible": false,
+            "resizable": true,
+            "sortable": true,
+            "width": 105,
+          }
+        }
+        deltaRowDataMode={false}
+        getRowNodeId={[Function]}
+        headerHeight={44}
+        onGridReady={[Function]}
+        onRowClicked={[Function]}
+        overlayNoRowsTemplate="No Sites to display"
+        rowData={
+          Array [
+            Object {
+              "depthKm": "Unknown",
+              "description": "Unknown",
+              "effectiveAt": "Unknown",
+              "effectiveUntil": "Unknown",
+              "elevationKm": "Unknown",
+              "id": "0",
+              "latitudeDegrees": "Unknown",
+              "longitudeDegrees": "Unknown",
+              "name": "Unknown",
+              "type": "Unknown",
+            },
+          ]
+        }
+        rowDeselection={true}
+        rowHeight={40}
+        rowSelection="single"
+        suppressCellSelection={true}
+        suppressContextMenu={true}
+      >
+        <CoreTable
+          columnDefs={
+            Array [
+              Object {
+                "field": "name",
+                "headerName": "Name",
+                "headerTooltip": "Name",
+                "width": 200,
+              },
+              Object {
+                "field": "effectiveAt",
+                "headerName": "Effective At",
+                "headerTooltip": "Effective at",
+                "width": 200,
+              },
+              Object {
+                "field": "effectiveUntil",
+                "headerName": "Effective Until",
+                "headerTooltip": "Effective until",
+                "width": 200,
+              },
+              Object {
+                "comparator": [Function],
+                "field": "latitudeDegrees",
+                "headerName": "Lat (°)",
+                "headerTooltip": "Latitude in degrees",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "longitudeDegrees",
+                "headerName": "Lon (°)",
+                "headerTooltip": "Longitude in degrees",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "depthKm",
+                "headerName": "Depth (km)",
+                "headerTooltip": "Depth in kilometers",
+              },
+              Object {
+                "comparator": [Function],
+                "field": "elevationKm",
+                "headerName": "Elev (km)",
+                "headerTooltip": "Elevation in kilometers",
+              },
+              Object {
+                "field": "description",
+                "headerName": "Description",
+                "headerTooltip": "Description",
+                "width": 300,
+              },
+              Object {
+                "field": "type",
+                "headerName": "Type",
+                "headerTooltip": "Type",
+                "width": 200,
+              },
+            ]
+          }
+          context={Object {}}
+          defaultColDef={
+            Object {
+              "cellRendererFramework": [Function],
+              "disableStaticMarkupForCellRendererFramework": true,
+              "disableStaticMarkupForHeaderComponentFramework": true,
+              "filter": true,
+              "headerClass": "station-properties-header-cell",
+              "hide": true,
+              "lockVisible": false,
+              "resizable": true,
+              "sortable": true,
+              "width": 105,
+            }
+          }
+          deltaRowDataMode={false}
+          getRowNodeId={[Function]}
+          headerHeight={44}
+          onGridReady={[Function]}
+          onRowClicked={[Function]}
+          overlayNoRowsTemplate="No Sites to display"
+          rowBuffer={10}
+          rowData={
+            Array [
+              Object {
+                "depthKm": "Unknown",
+                "description": "Unknown",
+                "effectiveAt": "Unknown",
+                "effectiveUntil": "Unknown",
+                "elevationKm": "Unknown",
+                "id": "0",
+                "latitudeDegrees": "Unknown",
+                "longitudeDegrees": "Unknown",
+                "name": "Unknown",
+                "type": "Unknown",
+              },
+            ]
+          }
+          rowDeselection={true}
+          rowHeight={40}
+          rowSelection="single"
+          suppressCellSelection={true}
+          suppressContextMenu={true}
+        >
+          <AgGridReact
+            animateRows={false}
+            columnDefs={
+              Array [
+                Object {
+                  "field": "name",
+                  "headerName": "Name",
+                  "headerTooltip": "Name",
+                  "width": 200,
+                },
+                Object {
+                  "field": "effectiveAt",
+                  "headerName": "Effective At",
+                  "headerTooltip": "Effective at",
+                  "width": 200,
+                },
+                Object {
+                  "field": "effectiveUntil",
+                  "headerName": "Effective Until",
+                  "headerTooltip": "Effective until",
+                  "width": 200,
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "latitudeDegrees",
+                  "headerName": "Lat (°)",
+                  "headerTooltip": "Latitude in degrees",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "longitudeDegrees",
+                  "headerName": "Lon (°)",
+                  "headerTooltip": "Longitude in degrees",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "depthKm",
+                  "headerName": "Depth (km)",
+                  "headerTooltip": "Depth in kilometers",
+                },
+                Object {
+                  "comparator": [Function],
+                  "field": "elevationKm",
+                  "headerName": "Elev (km)",
+                  "headerTooltip": "Elevation in kilometers",
+                },
+                Object {
+                  "field": "description",
+                  "headerName": "Description",
+                  "headerTooltip": "Description",
+                  "width": 300,
+                },
+                Object {
+                  "field": "type",
+                  "headerName": "Type",
+                  "headerTooltip": "Type",
+                  "width": 200,
+                },
+              ]
+            }
+            context={Object {}}
+            defaultColDef={
+              Object {
+                "cellRendererFramework": [Function],
+                "filter": true,
+                "headerClass": "station-properties-header-cell",
+                "hide": true,
+                "lockVisible": false,
+                "resizable": true,
+                "sortable": true,
+                "sortingOrder": Array [
+                  "asc",
+                  "desc",
+                ],
+                "suppressCellFlash": true,
+                "width": 105,
+              }
+            }
+            deltaRowDataMode={true}
+            getRowNodeId={[Function]}
+            headerHeight={44}
+            onColumnMoved={[Function]}
+            onGridReady={[Function]}
+            onRowClicked={[Function]}
+            overlayNoRowsTemplate="No Sites to display"
+            preventDefaultOnContextMenu={true}
+            rowBuffer={10}
+            rowData={null}
+            rowDataChangeDetectionStrategy="IdentityCheck"
+            rowDeselection={true}
+            rowHeight={40}
+            rowSelection="single"
+            suppressCellSelection={true}
+            suppressContextMenu={true}
+            suppressLoadingOverlay={true}
+            suppressScrollOnNewData={true}
+          >
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                }
+              }
+            />
+          </AgGridReact>
+        </CoreTable>
+      </ClientSideTable>
+    </div>
+  </div>
+</SiteConfigurationTable>
+`;

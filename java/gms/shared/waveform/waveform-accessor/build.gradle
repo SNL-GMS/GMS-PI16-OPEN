@@ -1,0 +1,27 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation project(":frameworks-system-config")
+    implementation project(":java-utilities")
+    implementation project(':station-definition-dao')
+    implementation project(':station-definition-repository')
+    implementation project(':station-definition-accessor')
+    implementation project(':waveform-bridge-repository')
+    implementation project(':structured-logging')
+    implementation project(':caching-utils')
+
+    implementation 'org.hibernate:hibernate-entitymanager'
+    api project(":waveform-coi")
+    api project(':waveform-api')
+
+    testImplementation project(':test-utils')
+    testImplementation project(':station-definition-testfixtures')
+    testImplementation project(':waveform-testfixtures')
+    testImplementation project(":frameworks-test-utilities")
+
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+    implementation "org.apache.commons:commons-lang3"
+}
+
+

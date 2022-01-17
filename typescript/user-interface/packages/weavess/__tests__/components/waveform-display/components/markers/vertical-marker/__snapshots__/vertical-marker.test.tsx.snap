@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Vertical Marker renders 1`] = `
+<VerticalMarker
+  color="ff0000"
+  lineStyle="dashed"
+  name="my-marker"
+  percentageLocation={90}
+>
+  <div
+    className="vertical-marker"
+    data-cy="weavess-static-vertical-marker"
+    data-cy-color="ff0000"
+    data-cy-left="90"
+    key="my-marker"
+    style={
+      Object {
+        "border": "1px dashed ff0000",
+        "left": "calc(90% - 1px)",
+      }
+    }
+  />
+</VerticalMarker>
+`;
+
+exports[`Weavess Vertical Marker shallow renders 1`] = `
+<div
+  className="vertical-marker"
+  data-cy="weavess-static-vertical-marker"
+  data-cy-color="ff0000"
+  data-cy-left="90"
+  key="my-marker"
+  style={
+    Object {
+      "border": "1px dashed ff0000",
+      "left": "calc(90% - 1px)",
+    }
+  }
+/>
+`;

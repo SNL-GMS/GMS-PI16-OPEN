@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly Bogus Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+/>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly Button 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  onClick={[Function]}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+/>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly Button Group 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+>
+  <Blueprint3.MenuItem
+    disabled={false}
+    icon="arrow-left"
+    key="Pan Left"
+    multiline={false}
+    onClick={[Function]}
+    popoverProps={Object {}}
+    shouldDismissPopover={true}
+    text="Pan Left"
+  />
+</Blueprint3.MenuItem>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly CheckboxList Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+>
+  <CheckboxList
+    enumToCheckedMap={Map {}}
+    onChange={[Function]}
+  />
+</Blueprint3.MenuItem>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly Custom Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+>
+  <Component>
+    Hello
+  </Component>
+</Blueprint3.MenuItem>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly DateRangePicker Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+>
+  <div
+    className="date-range-picker__menu-popover"
+  >
+    <DateRangePicker
+      endTimeMs={1000}
+      format="YYYY-MM-DD HH:mm"
+      onApply={[Function]}
+      onNewInterval={[Function]}
+      startTimeMs={100}
+    />
+  </div>
+</Blueprint3.MenuItem>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly Dropdown Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+/>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly IntervalPicker Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+>
+  <IntervalPicker
+    defaultIntervalInHours={12}
+    endDate={1970-01-01T00:00:01.000Z}
+    onApply={[Function]}
+    onNewInterval={[Function]}
+    renderStacked={true}
+    startDate={1970-01-01T00:00:00.100Z}
+  />
+</Blueprint3.MenuItem>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly LabelValue Type 1`] = `
+<Blueprint3.MenuItem
+  className=""
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text="label: Yo"
+  title="Hello Label"
+/>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly LoadingSpinner Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text="Loading 1 undefined"
+/>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly Numeric Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+>
+  <div
+    style={Object {}}
+  >
+    <span
+      key="1"
+    >
+      <NumericInput
+        minMax={
+          Object {
+            "max": 43,
+            "min": 41,
+          }
+        }
+        onChange={[Function]}
+        tooltip="Hello Numeric"
+        value={42}
+      />
+    </span>
+  </div>
+</Blueprint3.MenuItem>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly Popover Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+>
+  <Component>
+    Hello
+  </Component>
+</Blueprint3.MenuItem>
+`;
+
+exports[`ToolbarMenuItem ToolbarMenuItem renders directly Switch Type 1`] = `
+<Blueprint3.MenuItem
+  disabled={false}
+  key="tB"
+  multiline={false}
+  onClick={[Function]}
+  popoverProps={Object {}}
+  shouldDismissPopover={true}
+  text=""
+/>
+`;

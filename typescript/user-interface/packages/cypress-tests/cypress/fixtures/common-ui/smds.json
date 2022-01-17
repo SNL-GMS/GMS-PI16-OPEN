@@ -1,0 +1,65 @@
+[
+  {
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_QUIET_PERIOD_CANCELED",
+    "systemMessageCategory": "SOH",
+    "systemMessageSubCategory": "USER",
+    "systemMessageSeverity": "INFO",
+    "template": "Station %s Channel %s %s quiet period canceled by user %s"
+  },
+  {
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_STATUS_CHANGE_ACKNOWLEDGED",
+    "systemMessageCategory": "SOH",
+    "systemMessageSubCategory": "USER",
+    "systemMessageSeverity": "INFO",
+    "template": "Station %s Channel %s %s status change acknowledged by user %s|Station %s Channel %s %s status change acknowledged by user %s with comment '%s'"
+  },
+  {
+    "systemMessageType": "STATION_SOH_STATUS_CHANGED",
+    "systemMessageCategory": "SOH",
+    "systemMessageSubCategory": "STATION",
+    "systemMessageSeverity": "INFO",
+    "template": "Station %s SOH status changed from %s to %s"
+  },
+  {
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_QUIET_PERIOD_EXPIRED",
+    "systemMessageCategory": "SOH",
+    "systemMessageSubCategory": "STATION",
+    "systemMessageSeverity": "INFO",
+    "template": "Station %s Channel %s %s quiet period expired"
+  },
+  {
+    "systemMessageType": "STATION_GROUP_CAPABILITY_STATUS_CHANGED",
+    "systemMessageCategory": "SOH",
+    "systemMessageSubCategory": "CAPABILITY",
+    "systemMessageSeverity": "WARNING",
+    "template": "Station Group %s capability status changed from %s to %s"
+  },
+  {
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_STATUS_CHANGED",
+    "systemMessageCategory": "SOH",
+    "systemMessageSubCategory": "STATION",
+    "systemMessageSeverity": "INFO",
+    "template": "Station %s Channel %s %s status changed from %s (%s) to %s (%s)"
+  },
+  {
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_QUIETED",
+    "systemMessageCategory": "SOH",
+    "systemMessageSubCategory": "USER",
+    "systemMessageSeverity": "WARNING",
+    "template": "Station %s Channel %s %s quieted for %s by user %s|Station %s Channel %s %s quieted for %s by user %s with comment '%s'"
+  },
+  {
+    "systemMessageType": "STATION_CAPABILITY_STATUS_CHANGED",
+    "systemMessageCategory": "SOH",
+    "systemMessageSubCategory": "CAPABILITY",
+    "systemMessageSeverity": "WARNING",
+    "template": "Station %s capability status for Station Group %s changed from %s to %s"
+  },
+  {
+    "systemMessageType": "STATION_NEEDS_ATTENTION",
+    "systemMessageCategory": "SOH",
+    "systemMessageSubCategory": "STATION",
+    "systemMessageSeverity": "CRITICAL",
+    "template": "Station %s needs attention"
+  }
+]

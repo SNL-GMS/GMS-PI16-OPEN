@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sequence Interval Cell matches snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Memo()
+    stageInterval={
+      Object {
+        "comment": "interval example",
+        "endTime": 1622057187,
+        "modificationTime": 1622057667,
+        "name": "Auto Network",
+        "percentAvailable": 100,
+        "processingEndTime": 1622057547,
+        "processingStartTime": 1622057487,
+        "sequenceIntervals": Array [
+          Object {
+            "comment": "interval example",
+            "endTime": 1622057187,
+            "lastExecutedStepName": "last-step",
+            "modificationTime": 1622057667,
+            "name": "Auto Network Seq",
+            "percentAvailable": 100,
+            "percentComplete": 50,
+            "processingEndTime": 1622057547,
+            "processingStartTime": 1622057487,
+            "stageName": "Auto Network",
+            "startTime": 1622053587,
+            "status": "IN_PROGRESS",
+            "storageTime": 1622057607,
+          },
+        ],
+        "stageMetrics": Object {
+          "associatedSignalDetectionCount": 34,
+          "eventCount": 21,
+          "maxMagnitude": 8,
+          "unassociatedSignalDetectionCount": 55,
+        },
+        "stageMode": "AUTOMATIC",
+        "startTime": 1622053587,
+        "status": "IN_PROGRESS",
+        "storageTime": 1622057607,
+      }
+    }
+  >
+    <div
+      className="interval-cell interval-cell--in-progress"
+      onContextMenu={[Function]}
+      style={
+        Object {
+          "gridColumn": "span 12",
+        }
+      }
+    >
+      <PercentBar
+        percentage={100}
+      >
+        <div
+          className="percent-bar"
+          key="1"
+          style={
+            Object {
+              "transform": "translateX(-0%)",
+              "width": "100%",
+            }
+          }
+        />
+      </PercentBar>
+    </div>
+  </Memo()>
+</Provider>
+`;
+
+exports[`Sequence Interval Cell shallow mounts 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <ContextProvider
+    value={
+      Object {
+        "allActivitiesOpenForSelectedInterval": false,
+        "closeConfirmationPrompt": [MockFunction],
+        "openAnythingConfirmationPrompt": [MockFunction],
+        "openConfirmationPrompt": [MockFunction],
+        "staleStartTime": 1,
+      }
+    }
+  >
+    <Memo()
+      stageInterval={
+        Object {
+          "comment": "interval example",
+          "endTime": 1622057187,
+          "modificationTime": 1622057667,
+          "name": "Auto Network",
+          "percentAvailable": 100,
+          "processingEndTime": 1622057547,
+          "processingStartTime": 1622057487,
+          "sequenceIntervals": Array [
+            Object {
+              "comment": "interval example",
+              "endTime": 1622057187,
+              "lastExecutedStepName": "last-step",
+              "modificationTime": 1622057667,
+              "name": "Auto Network Seq",
+              "percentAvailable": 100,
+              "percentComplete": 50,
+              "processingEndTime": 1622057547,
+              "processingStartTime": 1622057487,
+              "stageName": "Auto Network",
+              "startTime": 1622053587,
+              "status": "IN_PROGRESS",
+              "storageTime": 1622057607,
+            },
+          ],
+          "stageMetrics": Object {
+            "associatedSignalDetectionCount": 34,
+            "eventCount": 21,
+            "maxMagnitude": 8,
+            "unassociatedSignalDetectionCount": 55,
+          },
+          "stageMode": "AUTOMATIC",
+          "startTime": 1622053587,
+          "status": "IN_PROGRESS",
+          "storageTime": 1622057607,
+        }
+      }
+    />
+  </ContextProvider>
+</ContextProvider>
+`;

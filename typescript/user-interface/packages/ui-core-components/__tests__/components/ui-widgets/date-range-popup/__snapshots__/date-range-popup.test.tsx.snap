@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateRangePopup matches the snapshot 1`] = `
+<Blueprint3.Dialog
+  canOutsideClickClose={true}
+  className="date-range-dialog dialog_parent dialog_parent--wide"
+  isOpen={true}
+  onClose={[MockFunction]}
+  onOpened={[Function]}
+  title="Test Popup"
+>
+  <div
+    className="date-range-picker__selectors"
+  >
+    <div
+      className="date-input-groups"
+    >
+      <div
+        className="date-input-group"
+      >
+        <span
+          className="date-input-label"
+        >
+          Start
+        </span>
+        <Blueprint3.DateInput
+          className="date-input"
+          closeOnSelection={true}
+          dayPickerProps={Object {}}
+          disabled={false}
+          formatDate={[Function]}
+          invalidDateMessage="Invalid date"
+          maxDate={2021-01-02T13:00:00.000Z}
+          minDate={2020-12-31T13:00:00.000Z}
+          onChange={[Function]}
+          outOfRangeMessage="Out of range"
+          parseDate={[Function]}
+          popoverProps={
+            Object {
+              "disabled": true,
+            }
+          }
+          reverseMonthAndYearMenus={false}
+          value={2021-01-01T12:59:50.000Z}
+        />
+        <Blueprint3.TimePicker
+          autoFocus={false}
+          className="time-input"
+          disabled={false}
+          maxTime={1970-01-01T23:59:59.000Z}
+          minTime={1970-01-01T00:00:00.000Z}
+          onChange={[Function]}
+          precision="minute"
+          selectAllOnFocus={false}
+          showArrowButtons={true}
+          useAmPm={false}
+          value={2021-01-01T12:59:50.000Z}
+        />
+      </div>
+      <div
+        className="date-input-group"
+      >
+        <span
+          className="date-input-label"
+        >
+          End
+        </span>
+        <Blueprint3.DateInput
+          className="date-input"
+          closeOnSelection={true}
+          dayPickerProps={Object {}}
+          disabled={false}
+          formatDate={[Function]}
+          invalidDateMessage="Invalid date"
+          maxDate={2021-01-02T13:00:00.000Z}
+          minDate={2020-12-31T13:00:00.000Z}
+          onChange={[Function]}
+          outOfRangeMessage="Out of range"
+          parseDate={[Function]}
+          popoverProps={
+            Object {
+              "disabled": true,
+            }
+          }
+          reverseMonthAndYearMenus={false}
+          value={2021-01-01T13:00:00.000Z}
+        />
+        <Blueprint3.TimePicker
+          autoFocus={false}
+          className="time-input"
+          disabled={false}
+          maxTime={1970-01-01T23:59:59.000Z}
+          minTime={1970-01-01T00:00:00.000Z}
+          onChange={[Function]}
+          precision="minute"
+          selectAllOnFocus={false}
+          showArrowButtons={true}
+          useAmPm={false}
+          value={2021-01-01T13:00:00.000Z}
+        />
+      </div>
+    </div>
+    <div
+      className="calendar-group"
+    >
+      <Blueprint3.DateRangePicker
+        allowSingleDayRange={true}
+        className="date-range-popup__range-input"
+        closeOnSelection={false}
+        contiguousCalendarMonths={true}
+        dayPickerProps={
+          Object {
+            "className": "date-range-picker--column",
+          }
+        }
+        formatDate={[Function]}
+        maxDate={2021-01-02T13:00:00.000Z}
+        minDate={2020-12-31T13:00:00.000Z}
+        onChange={[Function]}
+        parseDate={[Function]}
+        placeholder="YYYY-MM-DD HH:mm"
+        reverseMonthAndYearMenus={false}
+        shortcuts={false}
+        singleMonthOnly={false}
+        timePickerProps={Object {}}
+        value={
+          Array [
+            2021-01-01T12:59:50.000Z,
+            2021-01-01T13:00:00.000Z,
+          ]
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="date-input-error"
+  >
+    <Blueprint3.Icon
+      className="date-input-error-icon"
+      icon={null}
+      iconSize={16}
+    />
+    <div
+      className="date-input-error-text"
+    >
+       
+       
+    </div>
+  </div>
+  <div
+    className="date-input-apply-cancel"
+  >
+    <Blueprint3.Button
+      data-cy="modal-action-button"
+      disabled={false}
+      intent="primary"
+      onClick={[Function]}
+      text="Apply"
+    />
+    <Blueprint3.Button
+      data-cy="modal-cancel-button"
+      onClick={[Function]}
+      text="Cancel"
+    />
+  </div>
+</Blueprint3.Dialog>
+`;

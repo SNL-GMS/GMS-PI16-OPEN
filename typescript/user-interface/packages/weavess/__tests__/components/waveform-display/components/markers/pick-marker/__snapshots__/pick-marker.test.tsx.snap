@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess PickMarker Marker renders 1`] = `
+<PickMarker
+  channelId="my-channel"
+  color="ff000"
+  disableModification={false}
+  endTimeSecs={600}
+  filter="none"
+  getTimeSecsForClientX={[MockFunction]}
+  id="my-id"
+  isConflicted={false}
+  isSelected={false}
+  label="my pick marker"
+  onClick={[MockFunction]}
+  onContextMenu={[MockFunction]}
+  onDragEnd={[MockFunction]}
+  position={8}
+  positionDragIndicator={[MockFunction]}
+  predicted={false}
+  startTimeSecs={500}
+  timeSecs={540}
+  toast={[MockFunction]}
+  toggleDragIndicator={[MockFunction]}
+>
+  <div
+    className="pick-marker"
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+  >
+    <div
+      className="pick-marker-pick"
+      data-cy-predicted="pick-marker-pick-predicted-false"
+      style={
+        Object {
+          "borderLeft": "1.5px solid ff000",
+          "bottom": "55%",
+          "boxShadow": "initial",
+          "filter": "none",
+          "left": "8%",
+          "top": "10%",
+        }
+      }
+    />
+    <div
+      className="pick-marker-label"
+      data-cy="pick-marker-my-id"
+      data-cy-color="pick-marker-ff000"
+      data-cy-is-predicted-phase={false}
+      data-cy-phase="my pick marker"
+      data-cy-style-left={8}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      style={
+        Object {
+          "bottom": "initial",
+          "color": "ff000",
+          "cursor": "pointer",
+          "filter": "none",
+          "left": "calc(4px + 8%)",
+          "top": "10%",
+        }
+      }
+    >
+      my pick marker
+    </div>
+  </div>
+</PickMarker>
+`;
+
+exports[`Weavess PickMarker Marker shallow renders 1`] = `
+<div
+  className="pick-marker"
+  onMouseDown={[Function]}
+  onMouseUp={[Function]}
+>
+  <div
+    className="pick-marker-pick"
+    data-cy-predicted="pick-marker-pick-predicted-false"
+    style={
+      Object {
+        "borderLeft": "1.5px solid ff000",
+        "bottom": "55%",
+        "boxShadow": "initial",
+        "filter": "none",
+        "left": "8%",
+        "top": "10%",
+      }
+    }
+  />
+  <div
+    className="pick-marker-label"
+    data-cy="pick-marker-my-id"
+    data-cy-color="pick-marker-ff000"
+    data-cy-is-predicted-phase={false}
+    data-cy-phase="my pick marker"
+    data-cy-style-left={8}
+    onClick={[Function]}
+    onContextMenu={[Function]}
+    style={
+      Object {
+        "bottom": "initial",
+        "color": "ff000",
+        "cursor": "pointer",
+        "filter": "none",
+        "left": "calc(4px + 8%)",
+        "top": "10%",
+      }
+    }
+  >
+    my pick marker
+  </div>
+</div>
+`;

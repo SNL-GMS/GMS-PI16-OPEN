@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Spectrogram Renderer renders 1`] = `
+<SpectrogramRenderer
+  colorScale={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          1,
+        ],
+        Array [
+          2,
+        ],
+        Array [
+          3,
+        ],
+        Array [
+          4,
+        ],
+        Array [
+          5,
+        ],
+        Array [
+          6,
+        ],
+        Array [
+          7,
+        ],
+        Array [
+          8,
+        ],
+        Array [
+          9,
+        ],
+        Array [
+          10,
+        ],
+        Array [
+          1,
+        ],
+        Array [
+          2,
+        ],
+        Array [
+          3,
+        ],
+        Array [
+          4,
+        ],
+        Array [
+          5,
+        ],
+        Array [
+          6,
+        ],
+        Array [
+          7,
+        ],
+        Array [
+          8,
+        ],
+        Array [
+          9,
+        ],
+        Array [
+          10,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+        Object {
+          "type": "return",
+          "value": "ff000",
+        },
+      ],
+    }
+  }
+  data={
+    Array [
+      Array [
+        1,
+        2,
+        3,
+        4,
+        5,
+      ],
+      Array [
+        6,
+        7,
+        8,
+        9,
+        10,
+      ],
+    ]
+  }
+  displayEndTimeSecs={700}
+  displayStartTimeSecs={400}
+  frequencyStep={4}
+  setYAxisBounds={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          0,
+          20,
+        ],
+        Array [
+          0,
+          20,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  startTimeSecs={5}
+  timeStep={2}
+/>
+`;
+
+exports[`Weavess Spectrogram Renderer shallow renders 1`] = `""`;

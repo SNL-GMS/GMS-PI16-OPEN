@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`System Message Tests Retrieve systemMessageDefinitions 1`] = `
+Array [
+  Object {
+    "systemMessageCategory": "SOH",
+    "systemMessageSeverity": "INFO",
+    "systemMessageSubCategory": "USER",
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_QUIET_PERIOD_CANCELED",
+    "template": "Station %s Channel %s %s quiet period canceled by user %s",
+  },
+  Object {
+    "systemMessageCategory": "SOH",
+    "systemMessageSeverity": "INFO",
+    "systemMessageSubCategory": "USER",
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_STATUS_CHANGE_ACKNOWLEDGED",
+    "template": "Station %s Channel %s %s status change acknowledged by user %s|Station %s Channel %s %s status change acknowledged by user %s with comment '%s'",
+  },
+  Object {
+    "systemMessageCategory": "SOH",
+    "systemMessageSeverity": "INFO",
+    "systemMessageSubCategory": "STATION",
+    "systemMessageType": "STATION_SOH_STATUS_CHANGED",
+    "template": "Station %s SOH status changed from %s to %s",
+  },
+  Object {
+    "systemMessageCategory": "SOH",
+    "systemMessageSeverity": "INFO",
+    "systemMessageSubCategory": "STATION",
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_QUIET_PERIOD_EXPIRED",
+    "template": "Station %s Channel %s %s quiet period expired",
+  },
+  Object {
+    "systemMessageCategory": "SOH",
+    "systemMessageSeverity": "WARNING",
+    "systemMessageSubCategory": "CAPABILITY",
+    "systemMessageType": "STATION_GROUP_CAPABILITY_STATUS_CHANGED",
+    "template": "Station Group %s capability status changed from %s to %s",
+  },
+  Object {
+    "systemMessageCategory": "SOH",
+    "systemMessageSeverity": "INFO",
+    "systemMessageSubCategory": "STATION",
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_STATUS_CHANGED",
+    "template": "Station %s Channel %s %s status changed from %s (%s) to %s (%s)",
+  },
+  Object {
+    "systemMessageCategory": "SOH",
+    "systemMessageSeverity": "WARNING",
+    "systemMessageSubCategory": "USER",
+    "systemMessageType": "CHANNEL_MONITOR_TYPE_QUIETED",
+    "template": "Station %s Channel %s %s quieted for %s by user %s|Station %s Channel %s %s quieted for %s by user %s with comment '%s'",
+  },
+  Object {
+    "systemMessageCategory": "SOH",
+    "systemMessageSeverity": "WARNING",
+    "systemMessageSubCategory": "CAPABILITY",
+    "systemMessageType": "STATION_CAPABILITY_STATUS_CHANGED",
+    "template": "Station %s capability status for Station Group %s changed from %s to %s",
+  },
+  Object {
+    "systemMessageCategory": "SOH",
+    "systemMessageSeverity": "CRITICAL",
+    "systemMessageSubCategory": "STATION",
+    "systemMessageType": "STATION_NEEDS_ATTENTION",
+    "template": "Station %s needs attention",
+  },
+]
+`;

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pie Chart Pie Chart renders 1`] = `
+<Memo(CorePieChart)
+  className="string"
+  percent={40}
+  pieSliceClass="string"
+  status="string"
+  style={
+    Object {
+      "borderPx": 5,
+      "diameterPx": 100,
+    }
+  }
+>
+  <svg
+    className="pie-chart string"
+    height="110px"
+    width="110px"
+  >
+    <g
+      className="pie-chart__container"
+    >
+      <circle
+        className="
+            pie-chart
+            string"
+        cx={50}
+        cy={50}
+        r={55}
+      />
+      <PieSlice
+        percent={40}
+        pieSliceClass="string"
+        style={
+          Object {
+            "borderPx": 5,
+            "diameterPx": 100,
+          }
+        }
+      >
+        <circle
+          className="pie-chart__pie-slice string"
+          cx={50}
+          cy={50}
+          r={25}
+          strokeDasharray="6283.185307179587 157.07963267948966 "
+          strokeWidth={50}
+        />
+      </PieSlice>
+    </g>
+  </svg>
+</Memo(CorePieChart)>
+`;
+
+exports[`Pie Chart Pie Chart shallow renders 1`] = `
+<svg
+  className="pie-chart string"
+  height="110px"
+  width="110px"
+>
+  <g
+    className="pie-chart__container"
+  >
+    <circle
+      className="
+            pie-chart
+            string"
+      cx={50}
+      cy={50}
+      r={55}
+    />
+    <PieSlice
+      percent={40}
+      pieSliceClass="string"
+      style={
+        Object {
+          "borderPx": 5,
+          "diameterPx": 100,
+        }
+      }
+    />
+  </g>
+</svg>
+`;

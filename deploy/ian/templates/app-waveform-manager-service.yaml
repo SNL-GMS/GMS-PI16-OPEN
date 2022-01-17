@@ -1,0 +1,103 @@
+{{- $appName := "waveform-manager-service" }}
+{{- $appValues := get .Values $appName }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+  labels:
+    restartAfterReconfig: {{ include "ian.deployment.restartAfterReconfig" (dict "Values" .Values "appValues" $appValues) }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  strategy:
+    type: {{ include "ian.deployment.strategy" (dict "Values" .Values "appValues" $appValues) }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+        ignite: ignite
+    spec:
+      serviceAccount: gms-ian-elevated
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "ian.container.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          volumeMounts:
+            - name: oracle-wallet
+              mountPath: /opt/gms/waveform-manager-application/oracle-wallet
+              readOnly: true
+            - name: bridge-waveforms
+              mountPath: {{ .Values.bridgeWaveforms.containerPath }}
+              readOnly: true
+            - name: bridge-responses
+              mountPath: {{ .Values.bridgeResponses.containerPath }}
+              readOnly: true
+          env:
+            - name: ETCD_GMS_USER
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key:  username
+            - name: ETCD_GMS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key: password
+            {{- include "ian.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+          ports:
+            - containerPort: 8080
+            - containerPort: 8383
+            - containerPort: 47500
+          {{- include "ian.container.resources" (dict "Values" .Values "appValues" $appValues) | nindent 10 }}
+      volumes:
+        - name: oracle-wallet
+          secret:
+            secretName: oracle-wallet
+        - name: bridge-waveforms
+          hostPath:
+            path: {{ .Values.bridgeWaveforms.hostPath }}
+        - name: bridge-responses
+          hostPath:
+            path: {{ .Values.bridgeResponses.hostPath }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $appName }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: http-web
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    - name: http-metrics
+      port: 8383
+      protocol: TCP
+      targetPort: 8383
+  selector:
+    app: {{ $appName }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ $appName }}
+spec:
+  tls:
+    - secretName: ingress-default-cert
+      hosts:
+        - "{{ .Release.Name }}.{{ .Values.baseDomain }}"
+  rules:
+    - host: "{{ .Release.Name }}.{{ .Values.baseDomain }}"
+      http:
+        paths:
+          - path: "/{{ $appName }}"
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ $appName }}
+                port:
+                  number: 8080

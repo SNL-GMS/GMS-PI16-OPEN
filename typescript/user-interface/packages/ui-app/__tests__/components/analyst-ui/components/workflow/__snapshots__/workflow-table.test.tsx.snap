@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow Table matches snapshot 1`] = `
+<WorkflowTable
+  onScroll={[MockFunction]}
+  stageIntervals={Immutable.Map {}}
+  timeRange={
+    Object {
+      "endTimeSecs": 360000,
+      "startTimeSecs": 0,
+    }
+  }
+  workflow={
+    Object {
+      "name": "workflow",
+      "stages": Array [
+        Object {
+          "activities": Array [
+            Object {
+              "analysisMode": "EVENT_REVIEW",
+              "name": "name",
+              "stationGroup": Object {
+                "description": "Hi",
+                "effectiveAt": 1000,
+                "name": "ALL_1",
+              },
+            },
+          ],
+          "duration": 50,
+          "mode": "INTERACTIVE",
+          "name": "name",
+        },
+        Object {
+          "duration": 5000,
+          "mode": "AUTOMATIC",
+          "name": "name",
+          "sequences": Array [
+            Object {
+              "name": "name",
+              "steps": Array [],
+            },
+          ],
+        },
+      ],
+    }
+  }
+>
+  <div
+    className="workflow-scroll-wrapper"
+  >
+    <div
+      className="interval-table__curtain-left"
+    />
+    <div
+      className="interval-table-wrapper-wrapper"
+    >
+      <DayBoundaryIndicator
+        timeRange={
+          Object {
+            "endTimeSecs": 360000,
+            "startTimeSecs": 0,
+          }
+        }
+      >
+        <div
+          className="workflow-day-divider"
+          key="0"
+          style={
+            Object {
+              "backgroundColor": "#ffc940",
+              "left": "calc(0px + 1px)",
+            }
+          }
+        />
+        <div
+          className="workflow-day-divider"
+          key="86400000"
+          style={
+            Object {
+              "backgroundColor": "#ffc940",
+              "left": "calc(2880px + 1px)",
+            }
+          }
+        />
+        <div
+          className="workflow-day-divider"
+          key="172800000"
+          style={
+            Object {
+              "backgroundColor": "#ffc940",
+              "left": "calc(5760px + 1px)",
+            }
+          }
+        />
+        <div
+          className="workflow-day-divider"
+          key="259200000"
+          style={
+            Object {
+              "backgroundColor": "#ffc940",
+              "left": "calc(8640px + 1px)",
+            }
+          }
+        />
+        <div
+          className="workflow-day-divider"
+          key="345600000"
+          style={
+            Object {
+              "backgroundColor": "#ffc940",
+              "left": "calc(11520px + 1px)",
+            }
+          }
+        />
+      </DayBoundaryIndicator>
+      <div
+        className="interval-table-scroll-wrapper"
+      />
+      <div
+        className="interval-table-wrapper"
+        onScroll={[Function]}
+      >
+        <WorkflowRow
+          key="name"
+          subRowNames={
+            Array [
+              "name",
+            ]
+          }
+        >
+          <div />
+        </WorkflowRow>
+        <WorkflowRow
+          key="name"
+          subRowNames={
+            Array [
+              "name",
+            ]
+          }
+        >
+          <div />
+        </WorkflowRow>
+      </div>
+    </div>
+  </div>
+</WorkflowTable>
+`;

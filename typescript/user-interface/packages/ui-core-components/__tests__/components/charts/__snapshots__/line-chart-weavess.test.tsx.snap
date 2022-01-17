@@ -1,0 +1,617 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineChartWeavess gets custom ticks if the values provided are valid 1`] = `
+Object {
+  "defaultRange": Object {
+    "max": 102,
+    "min": -2,
+  },
+  "yAxisTicks": Array [
+    0,
+    11.11111111111111,
+    22.22222222222222,
+    33.33333333333333,
+    44.44444444444444,
+    55.55555555555556,
+    66.66666666666666,
+    77.77777777777777,
+    88.88888888888889,
+    100,
+  ],
+}
+`;
+
+exports[`LineChartWeavess gets default ticks if the values provided are invalid 1`] = `
+Object {
+  "defaultRange": Object {
+    "max": 10.4,
+    "min": -10.4,
+  },
+  "yAxisTicks": Array [
+    -10,
+    -6,
+    -2,
+    2,
+    6,
+    10,
+  ],
+}
+`;
+
+exports[`LineChartWeavess renders LineChartWeavess empty data 1`] = `
+<div
+  className="core-chart "
+>
+  <div
+    className="weavess-line-chart container"
+    style={
+      Object {
+        "height": 100,
+        "width": 100,
+      }
+    }
+  >
+    <div
+      className="weavess-line-chart inner"
+    >
+      <div
+        className="weavess-line-chart chart"
+      >
+        <WaveformDisplay
+          customLabel={[Function]}
+          endTimeSecs={0.1}
+          events={
+            Object {
+              "onClickSelectionWindow": undefined,
+              "onMoveSelectionWindow": undefined,
+              "onUpdateMarker": undefined,
+              "onUpdateSelectionWindow": undefined,
+              "onZoomChange": undefined,
+              "stationEvents": Object {
+                "defaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+                "nonDefaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+              },
+            }
+          }
+          initialConfiguration={
+            Object {
+              "defaultChannel": Object {
+                "disableMeasureWindow": true,
+              },
+              "labelWidthPx": 65,
+              "suppressLabelYAxis": false,
+              "xAxisLabel": undefined,
+            }
+          }
+          selections={
+            Object {
+              "channels": undefined,
+            }
+          }
+          startTimeSecs={0}
+          stations={Array []}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`LineChartWeavess renders LineChartWeavess multiple lines 1`] = `
+<div
+  className="core-chart "
+>
+  <div
+    className="weavess-line-chart container"
+    style={
+      Object {
+        "height": 100,
+        "width": 100,
+      }
+    }
+  >
+    <div
+      className="weavess-line-chart inner"
+    >
+      <div
+        className="weavess-line-chart chart"
+      >
+        <WaveformDisplay
+          customLabel={[Function]}
+          endTimeSecs={0.003}
+          events={
+            Object {
+              "onClickSelectionWindow": undefined,
+              "onMoveSelectionWindow": undefined,
+              "onUpdateMarker": undefined,
+              "onUpdateSelectionWindow": undefined,
+              "onZoomChange": undefined,
+              "stationEvents": Object {
+                "defaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+                "nonDefaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+              },
+            }
+          }
+          initialConfiguration={
+            Object {
+              "defaultChannel": Object {
+                "disableMeasureWindow": true,
+              },
+              "labelWidthPx": 65,
+              "suppressLabelYAxis": false,
+              "xAxisLabel": undefined,
+            }
+          }
+          selections={
+            Object {
+              "channels": undefined,
+            }
+          }
+          startTimeSecs={0.001}
+          stations={
+            Array [
+              Object {
+                "defaultChannel": Object {
+                  "defaultRange": Object {
+                    "max": 10.4,
+                    "min": -10.4,
+                  },
+                  "height": 50,
+                  "id": "id",
+                  "name": undefined,
+                  "waveform": Object {
+                    "channelSegmentId": "data",
+                    "channelSegments": Map {
+                      "data" => Object {
+                        "channelName": "LineChartChannel",
+                        "channelSegmentBoundaries": Object {
+                          "bottomMax": undefined,
+                          "channelAvg": 6,
+                          "channelSegmentId": "unfiltered",
+                          "offset": NaN,
+                          "samplesCount": 6,
+                          "topMax": undefined,
+                        },
+                        "dataSegments": Array [
+                          Object {
+                            "color": "red",
+                            "data": Object {
+                              "values": Float32Array [
+                                1,
+                                1,
+                                2,
+                                2,
+                                3,
+                                3,
+                              ],
+                            },
+                            "displayType": Array [
+                              "LINE",
+                            ],
+                            "pointSize": 4,
+                          },
+                          Object {
+                            "color": "blue",
+                            "data": Object {
+                              "values": Float32Array [
+                                4,
+                                4,
+                                5,
+                                5,
+                                6,
+                                6,
+                              ],
+                            },
+                            "displayType": Array [
+                              "LINE",
+                            ],
+                            "pointSize": 4,
+                          },
+                        ],
+                        "wfFilterId": "unfiltered",
+                      },
+                    },
+                  },
+                  "yAxisTicks": Array [
+                    -10,
+                    -6,
+                    -2,
+                    2,
+                    6,
+                    10,
+                  ],
+                },
+                "id": "id",
+                "name": "name",
+                "nonDefaultChannels": Array [],
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`LineChartWeavess renders LineChartWeavess single line 1`] = `
+<div
+  className="core-chart "
+>
+  <div
+    className="weavess-line-chart container"
+    style={
+      Object {
+        "height": 100,
+        "width": 100,
+      }
+    }
+  >
+    <div
+      className="weavess-line-chart inner"
+    >
+      <div
+        className="weavess-line-chart chart"
+      >
+        <WaveformDisplay
+          customLabel={[Function]}
+          endTimeSecs={0.003}
+          events={
+            Object {
+              "onClickSelectionWindow": undefined,
+              "onMoveSelectionWindow": undefined,
+              "onUpdateMarker": undefined,
+              "onUpdateSelectionWindow": undefined,
+              "onZoomChange": undefined,
+              "stationEvents": Object {
+                "defaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+                "nonDefaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+              },
+            }
+          }
+          initialConfiguration={
+            Object {
+              "defaultChannel": Object {
+                "disableMeasureWindow": true,
+              },
+              "labelWidthPx": 65,
+              "suppressLabelYAxis": false,
+              "xAxisLabel": undefined,
+            }
+          }
+          selections={
+            Object {
+              "channels": undefined,
+            }
+          }
+          startTimeSecs={0.001}
+          stations={
+            Array [
+              Object {
+                "defaultChannel": Object {
+                  "defaultRange": Object {
+                    "max": 10.4,
+                    "min": -10.4,
+                  },
+                  "height": 50,
+                  "id": "id",
+                  "name": undefined,
+                  "waveform": Object {
+                    "channelSegmentId": "data",
+                    "channelSegments": Map {
+                      "data" => Object {
+                        "channelName": "LineChartChannel",
+                        "channelSegmentBoundaries": Object {
+                          "bottomMax": undefined,
+                          "channelAvg": 2,
+                          "channelSegmentId": "unfiltered",
+                          "offset": NaN,
+                          "samplesCount": 3,
+                          "topMax": undefined,
+                        },
+                        "dataSegments": Array [
+                          Object {
+                            "color": "red",
+                            "data": Object {
+                              "values": Float32Array [
+                                1,
+                                1,
+                                2,
+                                2,
+                                3,
+                                3,
+                              ],
+                            },
+                            "displayType": Array [
+                              "LINE",
+                            ],
+                            "pointSize": 4,
+                          },
+                        ],
+                        "wfFilterId": "unfiltered",
+                      },
+                    },
+                  },
+                  "yAxisTicks": Array [
+                    -10,
+                    -6,
+                    -2,
+                    2,
+                    6,
+                    10,
+                  ],
+                },
+                "id": "id",
+                "name": "name",
+                "nonDefaultChannels": Array [],
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`LineChartWeavess renders LineChartWeavess undefined data 1`] = `
+<div
+  className="core-chart "
+>
+  <div
+    className="weavess-line-chart container"
+    style={
+      Object {
+        "height": 100,
+        "width": 100,
+      }
+    }
+  >
+    <div
+      className="weavess-line-chart inner"
+    >
+      <div
+        className="weavess-line-chart chart"
+      >
+        <WaveformDisplay
+          customLabel={[Function]}
+          endTimeSecs={0.1}
+          events={
+            Object {
+              "onClickSelectionWindow": undefined,
+              "onMoveSelectionWindow": undefined,
+              "onUpdateMarker": undefined,
+              "onUpdateSelectionWindow": undefined,
+              "onZoomChange": undefined,
+              "stationEvents": Object {
+                "defaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+                "nonDefaultChannelEvents": Object {
+                  "events": Object {
+                    "onChannelClick": undefined,
+                    "onClickSelectionWindow": undefined,
+                    "onContextMenu": undefined,
+                    "onMeasureWindowUpdated": undefined,
+                    "onMoveSelectionWindow": undefined,
+                    "onPredictivePhaseClick": undefined,
+                    "onPredictivePhaseContextMenu": undefined,
+                    "onPredictivePhaseDragEnd": undefined,
+                    "onSignalDetectionClick": undefined,
+                    "onSignalDetectionContextMenu": undefined,
+                    "onSignalDetectionDragEnd": undefined,
+                    "onUpdateMarker": undefined,
+                    "onUpdateSelectionWindow": undefined,
+                  },
+                  "labelEvents": Object {
+                    "onChannelCollapsed": undefined,
+                    "onChannelExpanded": undefined,
+                    "onChannelLabelClick": undefined,
+                  },
+                  "onKeyPress": undefined,
+                },
+              },
+            }
+          }
+          initialConfiguration={
+            Object {
+              "defaultChannel": Object {
+                "disableMeasureWindow": true,
+              },
+              "labelWidthPx": 65,
+              "suppressLabelYAxis": false,
+              "xAxisLabel": undefined,
+            }
+          }
+          selections={
+            Object {
+              "channels": undefined,
+            }
+          }
+          startTimeSecs={0}
+          stations={Array []}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`LineChartWeavess renders custom line y-axis label 1`] = `
+<YAxisLabel
+  channel={
+    Object {
+      "id": "custom-label",
+      "name": "My custom label",
+    }
+  }
+  channelName="custom-label"
+  distance={0}
+  expanded={false}
+  isDefaultChannel={true}
+  isExpandable={false}
+  showMaskIndicator={false}
+>
+  <div
+    className="chart__axis"
+  >
+    <div
+      className="inner rotate"
+    >
+      My custom label
+    </div>
+  </div>
+</YAxisLabel>
+`;

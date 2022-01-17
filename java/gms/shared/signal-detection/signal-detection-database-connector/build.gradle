@@ -1,0 +1,39 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':station-definition-dao')
+    api project(':station-definition-repository')
+    api project(':signal-detection-dao')
+    api project(':signal-detection-coi')
+    api project(':workflow-coi')
+
+    // ignite
+    api 'javax.cache:cache-api'
+    api 'org.apache.ignite:ignite-core'
+    api 'org.apache.ignite:ignite-log4j'
+
+    //Google autovalue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // JPA dependencies
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-c3p0'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'org.hibernate:hibernate-ehcache'
+
+    implementation 'com.google.guava:guava'
+
+    implementation project(':metrics')
+    implementation project(':frameworks-utilities-jpa')
+    implementation project(':bridge-utilities')
+    implementation project(':caching-utils')
+
+    // Testing.
+    testImplementation project(':signal-detection-testfixtures')
+    testImplementation project(':station-definition-testfixtures')
+    testImplementation project(':db-test-utils')
+    testImplementation project(":frameworks-test-utilities")
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'com.h2database:h2'
+}

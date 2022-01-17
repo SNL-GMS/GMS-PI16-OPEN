@@ -1,0 +1,17 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':frameworks-system-config')
+    api project(':frameworks-data-injector')
+    api project(':kafka-consumer-frameworks')
+
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'com.github.docker-java:docker-java'
+    implementation 'com.github.docker-java:docker-java-core'
+    implementation 'com.github.docker-java:docker-java-transport-httpclient5'
+
+    // TestContainers
+    implementation 'org.testcontainers:testcontainers'
+    implementation 'org.testcontainers:junit-jupiter'
+    implementation 'org.testcontainers:kafka'
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "5fc3a827-20f7-455c-bdcc-c893180b14b8",
+    "hypotheses": [
+      {
+        "id": "6c6fcde4-6052-41f2-91d7-d1d1af16753c",
+        "rejected": false,
+        "eventId": "5fc3a827-20f7-455c-bdcc-c893180b14b8",
+        "parentEventHypotheses": [],
+        "associations": [],
+        "locationSolutions": [
+          {
+            "id": "f8b0aa18-229f-48b7-a3ce-b10c853bcbbb",
+            "locationRestraint": {
+              "depthRestraintType": "UNRESTRAINED",
+              "depthRestraintKm": null,
+              "latitudeRestraintType": "UNRESTRAINED",
+              "latitudeRestraintDegrees": null,
+              "longitudeRestraintType": "UNRESTRAINED",
+              "longitudeRestraintDegrees": null,
+              "timeRestraintType": "UNRESTRAINED",
+              "timeRestraint": ""
+            },
+            "locationBehaviors": [],
+            "location": {
+              "latitudeDegrees": 41.06562053214359,
+              "longitudeDegrees": -108.50717895540204,
+              "depthKm": 10,
+              "time": "2010-05-20T16:02:00.850Z"
+            },
+            "featurePredictions": [],
+            "networkMagnitudeSolutions": []
+          }
+        ],
+        "preferredLocationSolution": {
+          "locationSolution": {
+            "id": "f8b0aa18-229f-48b7-a3ce-b10c853bcbbb",
+            "locationRestraint": {
+              "depthRestraintType": "UNRESTRAINED",
+              "depthRestraintKm": null,
+              "latitudeRestraintType": "UNRESTRAINED",
+              "latitudeRestraintDegrees": null,
+              "longitudeRestraintType": "UNRESTRAINED",
+              "longitudeRestraintDegrees": null,
+              "timeRestraintType": "UNRESTRAINED",
+              "timeRestraint": ""
+            },
+            "locationBehaviors": [],
+            "location": {
+              "latitudeDegrees": 41.06562053214359,
+              "longitudeDegrees": -108.50717895540204,
+              "depthKm": 10,
+              "time": "2010-05-20T16:02:00.850Z"
+            },
+            "featurePredictions": [],
+            "networkMagnitudeSolutions": []
+          }
+        }
+      }
+    ],
+    "monitoringOrganization": "TEST",
+    "preferredEventHypothesisHistory": [
+      {
+        "eventHypothesisId": "6c6fcde4-6052-41f2-91d7-d1d1af16753c",
+        "processingStageId": "6c6fcde4-6052-41f2-91d7-d1d1af167555"
+      }
+    ],
+    "rejectedSignalDetectionAssociations": [],
+    "finalEventHypothesisHistory": []
+  }
+]

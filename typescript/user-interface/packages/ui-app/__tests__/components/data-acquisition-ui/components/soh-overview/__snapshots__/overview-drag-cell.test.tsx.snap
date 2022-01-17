@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overview Drag Cell can render and match snapshot 1`] = `
+<OverviewDragCell
+  stationId="AAA"
+>
+  <DragCell
+    getSelectedStationIds={[Function]}
+    getSingleDragImage={[Function]}
+    setSelectedStationIds={[MockFunction]}
+    stationId="AAA"
+  >
+    <DragInitiator
+      getDragImage={[Function]}
+      getDragPayload={[Function]}
+      onDragEnd={[Function]}
+      onDragStart={[Function]}
+    >
+      <div
+        draggable={true}
+        onDragEnd={[Function]}
+        onDragStart={[Function]}
+      />
+    </DragInitiator>
+  </DragCell>
+</OverviewDragCell>
+`;

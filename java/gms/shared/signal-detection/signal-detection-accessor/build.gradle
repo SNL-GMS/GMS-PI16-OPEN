@@ -1,0 +1,48 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation project(':signal-detection-api')
+    implementation project(':station-definition-api')
+    implementation project(':signal-detection-coi')
+    implementation project(':signal-detection-dao')
+    implementation project(':signal-detection-database-connector')
+    implementation project(':station-definition-api')
+    implementation project(':station-definition-accessor')
+    implementation project(':waveform-accessor')
+    implementation project(':waveform-bridge-repository')
+    implementation project(':bridge-utilities')
+    implementation project(':caching-utils')
+    implementation project(':waveform-api')
+
+    // Logback for Structured Logging
+    implementation 'ch.qos.logback:logback-classic'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation project(':structured-logging')
+
+    // Google AutoValue
+    api 'com.google.guava:guava'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    implementation 'org.hibernate:hibernate-entitymanager'
+
+    implementation 'com.oracle.ojdbc:ojdbc8'
+
+    implementation project(':frameworks-configuration-repository')
+    implementation project(':frameworks-configuration-commonobjects')
+    implementation project(':frameworks-control')
+    implementation project(':workflow-manager')
+
+
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.mockito:mockito-inline'
+    testImplementation 'org.mockito:mockito-core'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+    testImplementation project(':test-utils')
+    testImplementation project(':frameworks-test-utilities')
+    testImplementation project(':station-definition-testfixtures')
+    testImplementation project(':signal-detection-testfixtures')
+    testImplementation project(':waveform-testfixtures')
+
+}

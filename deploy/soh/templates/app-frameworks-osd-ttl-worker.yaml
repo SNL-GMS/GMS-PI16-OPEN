@@ -1,0 +1,40 @@
+{{- $appName := "frameworks-osd-ttl-worker" }}
+{{- $appValues := get .Values $appName }}
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: {{ $appName }}
+spec:
+  schedule: {{ $appValues.cronSchedule }}
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 3
+  successfulJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccount: gms-soh-elevated
+          containers:
+            - name: {{ $appName }}
+              image: {{ include "soh.container.image" (dict "Values" .Values "appValues" $appValues) }}
+              imagePullPolicy: {{ .Values.imagePullPolicy }}
+              env:
+                - name: DATA_SOURCE_USER
+                  valueFrom:
+                    secretKeyRef:
+                      name: "postgres-admin"
+                      key:  username
+                - name: DATA_SOURCE_PASS
+                  valueFrom:
+                    secretKeyRef:
+                      name: "postgres-admin"
+                      key:  password
+                - name: GMS_CONFIG_OSD_TTL_WORKER__SQL_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: "postgres-soh-ttl-application"
+                      key:  password
+                {{- include "soh.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) | indent 4 }}
+          restartPolicy: OnFailure
+          {{- include "soh.container.resources" (dict "Values" .Values "appValues" $appValues) | nindent 10 }}

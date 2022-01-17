@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Redux wrapper can create a rendered wrapper 1`] = `
+<WithReduxProvider>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Welcome>
+      <Component>
+        <h1
+          className="bp3-heading"
+        >
+          Hello
+        </h1>
+      </Component>
+    </Welcome>
+  </Provider>
+</WithReduxProvider>
+`;

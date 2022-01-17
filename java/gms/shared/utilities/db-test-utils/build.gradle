@@ -1,0 +1,22 @@
+plugins {
+    id('java')
+}
+
+
+dependencies {
+
+    implementation project(':frameworks-configuration-commonobjects')
+    implementation project(':frameworks-osd-testfixtures')
+    implementation project(':frameworks-osd-repository')
+    implementation project(':frameworks-osd-daos')
+
+    implementation 'net.jodah:failsafe'
+
+    implementation 'org.postgresql:postgresql'
+    implementation 'org.testcontainers:junit-jupiter'
+    implementation 'org.testcontainers:postgresql'
+    implementation 'org.testcontainers:kafka'
+
+    implementation 'org.hibernate:hibernate-entitymanager'
+}
+

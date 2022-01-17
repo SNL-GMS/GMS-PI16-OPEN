@@ -1,0 +1,14 @@
+plugins {
+    id "java-library"
+}
+
+dependencies {
+    implementation project(':structured-logging')
+    implementation project(':frameworks-configuration-api')
+    implementation project(':validation')
+
+    api 'org.hibernate:hibernate-entitymanager'
+    implementation 'net.logstash.logback:logstash-logback-encoder'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'com.google.guava:guava'
+}

@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ignite
+spec:
+  type: ClusterIP
+  ports:
+    - name: tcp-ignite
+      port: 47500
+      protocol: TCP
+      targetPort: 47500
+  selector:
+    ignite: ignite

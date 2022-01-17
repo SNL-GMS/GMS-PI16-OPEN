@@ -1,0 +1,27 @@
+apply plugin: "java-library"
+
+dependencies {
+
+    implementation project(':frameworks-osd-api')
+    implementation project(':frameworks-control')
+    implementation project(":frameworks-osd-commonobjects")
+    implementation project(":frameworks-osd-repository")
+    implementation project(":frameworks-utilities")
+    implementation project(":soh-control-api")
+    implementation project(':structured-logging')
+
+    // Google AutoValue
+    implementation "com.google.auto.value:auto-value-annotations"
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // Kafka
+    implementation 'org.apache.kafka:kafka-clients'
+
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'io.projectreactor.kafka:reactor-kafka'
+    implementation 'org.apache.commons:commons-math3'
+
+    testImplementation 'io.projectreactor:reactor-test'
+    testImplementation project(':frameworks-osd-testfixtures')
+
+}

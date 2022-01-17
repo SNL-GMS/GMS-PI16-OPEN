@@ -1,0 +1,15 @@
+{{ include "logging.validateValues" . }}
+Type:                               {{ .Chart.Name }}
+Instance name:                      {{ .Release.Name }}
+Namespace:                          {{ .Release.Namespace }}
+Base domain:                        {{ .Values.global.baseDomain }}
+User:                               {{ .Values.user }}
+LDAP proxy image name:              {{ index .Values "ldap-proxy" "imageRegistry" }}/{{ index .Values "ldap-proxy" "imageName" }}
+LDAP proxy image tag:               {{ index .Values "ldap-proxy" "imageTag" }}
+Elasticsearch image name:           {{ .Values.elasticsearch.image}}
+Elasticsearch image tag:            {{ .Values.elasticsearch.imageTag }}
+Fluent-bit image name:              {{ index .Values "fluent-bit" "image" "repository"}}
+Fluent-bit image tag:               {{ index .Values "fluent-bit" "image" "tag" }}
+Kibana image name:                  {{ .Values.kibana.image}}
+Kibana image tag:                   {{ .Values.kibana.imageTag }}
+GMS image tag:                      {{ .Values.imageTag }}

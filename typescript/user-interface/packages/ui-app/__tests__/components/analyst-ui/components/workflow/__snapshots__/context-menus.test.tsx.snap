@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Activity Interval Context Menu Interval context menu shallow renders 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <IntervalContextMenu
+    allActivitiesOpenForSelectedInterval={false}
+    closeCallback={null}
+    interval={
+      Object {
+        "activeAnalysts": Array [
+          "larry",
+          "moe",
+          "curly",
+        ],
+        "comment": "interval example",
+        "endTime": 1622057187,
+        "modificationTime": 1622057667,
+        "name": "Event Review",
+        "percentAvailable": 100,
+        "processingEndTime": 1622057547,
+        "processingStartTime": 1622057487,
+        "stageName": "AL1",
+        "startTime": 1622053587,
+        "status": "IN_PROGRESS",
+        "storageTime": 1622057607,
+      }
+    }
+    isSelectedInterval={false}
+    openCallback={null}
+  />
+   
+</ContextProvider>
+`;
+
+exports[`Activity Interval Context Menu matches snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <IntervalContextMenu
+    allActivitiesOpenForSelectedInterval={true}
+    closeCallback={null}
+    interval={
+      Object {
+        "activeAnalysts": Array [
+          "larry",
+          "moe",
+          "curly",
+        ],
+        "comment": "interval example",
+        "endTime": 1622057187,
+        "modificationTime": 1622057667,
+        "name": "Event Review",
+        "percentAvailable": 100,
+        "processingEndTime": 1622057547,
+        "processingStartTime": 1622057487,
+        "stageName": "AL1",
+        "startTime": 1622053587,
+        "status": "IN_PROGRESS",
+        "storageTime": 1622057607,
+      }
+    }
+    isSelectedInterval={true}
+    openCallback={null}
+  >
+    <Blueprint3.Menu>
+      <ul
+        className="bp3-menu"
+      >
+        <Blueprint3.MenuItem
+          className="menu-item-open-interval"
+          disabled={true}
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="Open Interval"
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-disabled menu-item-open-interval"
+              tabIndex={-1}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  Open Interval
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+        <Blueprint3.MenuItem
+          className="menu-item-close-interval"
+          disabled={false}
+          multiline={false}
+          onClick={[Function]}
+          popoverProps={Object {}}
+          shouldDismissPopover={true}
+          text="Close Interval"
+        >
+          <li
+            className=""
+          >
+            <a
+              className="bp3-menu-item bp3-popover-dismiss menu-item-close-interval"
+              onClick={[Function]}
+            >
+              <Blueprint3.Icon />
+              <Blueprint3.Text
+                className="bp3-fill"
+                ellipsize={true}
+              >
+                <div
+                  className="bp3-text-overflow-ellipsis bp3-fill"
+                >
+                  Close Interval
+                </div>
+              </Blueprint3.Text>
+            </a>
+          </li>
+        </Blueprint3.MenuItem>
+      </ul>
+    </Blueprint3.Menu>
+  </IntervalContextMenu>
+</Provider>
+`;

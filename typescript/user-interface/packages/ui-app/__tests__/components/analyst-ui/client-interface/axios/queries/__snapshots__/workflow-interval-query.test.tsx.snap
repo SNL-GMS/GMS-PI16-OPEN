@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow Query getWorkflowIntervalQueryConfig returns valid config 1`] = `
+Object {
+  "config": Object {
+    "enabled": false,
+    "refetchOnWindowFocus": false,
+    "staleTime": Infinity,
+  },
+  "queryFn": [Function],
+  "queryKey": Array [
+    "getWorkflowIntervals",
+    Object {
+      "data": Object {
+        "endTime": 100,
+        "stageIds": Array [],
+        "startTime": 0,
+      },
+      "headers": Object {
+        "accept": "application/json",
+        "content-type": "text/plain",
+      },
+      "method": "post",
+      "proxy": false,
+      "responseType": "json",
+      "timeout": 180000,
+      "url": "http://localhost/workflow-manager-service/workflow-manager/interval/stage/query/ids-timerange",
+    },
+  ],
+}
+`;

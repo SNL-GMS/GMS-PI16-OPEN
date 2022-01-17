@@ -1,0 +1,22 @@
+[
+  {
+    "name": "operation-time-period-12-year-test",
+    "constraints": [
+      {
+        "constraintType": "STRING",
+        "criterion": "TestType",
+        "operator": {
+          "type": "EQ",
+          "negated": false
+        },
+        "value": [
+          "12-year-test"
+        ]
+      }
+    ],
+    "parameters": {
+      "operationalPeriodStart": "PT27285H",
+      "operationalPeriodEnd": "PT22879H"
+    }
+  }
+]

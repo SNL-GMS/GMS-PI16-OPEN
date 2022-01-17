@@ -1,0 +1,35 @@
+# environment.yml
+#
+# This is the production environment.yml for GMS. It should include all requirements for running
+# scripts that are delivered to the customer. Any test-only requirements should go into gms-test-environment.yml.
+# To create the environment:
+#   `conda env create --name gms --file environment.yml
+#
+# Any additional requirements or version changes MUST have a TPS request submitted!
+#
+
+name: gms
+
+dependencies:
+- python=3.7.6
+- pip
+- pip:
+  # Please keep this list in alphabetical order
+  - etcd3==0.8.1
+  - flask==1.1.2
+  - flask-executor==0.9.3
+  - flask-sqlalchemy==2.4.0
+  - flask-sqlalchemy-session==1.1
+  - grpcio==1.12.1
+  - gunicorn==20.0.4
+  - jinja2==2.11.3
+  - jproperties==2.0.0
+  - matplotlib==3.3.4
+  - minio==7.0.3
+  - protobuf==3.6.0
+  - pyyaml==5.3
+  - requests==2.22.0
+  - simplejson==3.7.2
+  - six==1.11.0
+  - tenacity==4.12.0
+  - termcolor==1.1.0

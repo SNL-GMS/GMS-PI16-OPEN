@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+    id 'com.palantir.docker'
+}
+
+mainClassName = "gms.shared.waveform.manager.application.WaveformManagerApplication"
+
+dependencies {
+    implementation project(':frameworks-control')
+    implementation project(":waveform-manager-service")
+    implementation project(':structured-logging')
+
+
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+
+}

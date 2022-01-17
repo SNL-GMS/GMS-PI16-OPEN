@@ -1,0 +1,32 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':station-definition-dao')
+    api project(':station-definition-api')
+
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // JPA dependencies
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-c3p0'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'org.hibernate:hibernate-ehcache'
+
+    implementation 'com.google.guava:guava'
+
+    implementation project(':metrics')
+    implementation project(':frameworks-utilities-jpa')
+    implementation project(':bridge-utilities')
+
+    // Testing.
+    testImplementation project(':db-test-utils')
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'com.h2database:h2'
+
+    test {
+        onlyIf {
+            project.hasProperty("h2Tests")
+        }
+    }
+}

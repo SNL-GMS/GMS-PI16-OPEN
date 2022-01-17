@@ -1,0 +1,11 @@
+.channel {
+  width: 100%;
+  border-bottom: 1px solid;
+  display: flex;
+
+  .channel-label-container {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+}

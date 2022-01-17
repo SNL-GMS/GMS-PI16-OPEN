@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxSearchList CheckboxSearchList renders 1`] = `
+<CheckboxSearchList
+  items={
+    Array [
+      Object {
+        "checked": true,
+        "id": "1",
+        "name": "first",
+      },
+      Object {
+        "checked": false,
+        "id": "2",
+        "name": "second",
+      },
+      Object {
+        "checked": false,
+        "id": "3",
+        "name": "third",
+      },
+    ]
+  }
+  maxHeightPx={300}
+  onCheckboxChecked={[MockFunction]}
+>
+  <div
+    className="checkbox-search-list"
+    style={
+      Object {
+        "height": "300px",
+      }
+    }
+  >
+    <input
+      autoFocus={true}
+      className="checkbox-search-list__search"
+      onChange={[Function]}
+      placeholder="Search input"
+      tabIndex={0}
+      type="search"
+      value=""
+    />
+    <div
+      className="checkbox-search-list-item"
+      key="checkbox-search-list1"
+    >
+      <Blueprint3.Checkbox
+        checked={true}
+        onChange={[Function]}
+      >
+        <Control
+          checked={true}
+          inputRef={[Function]}
+          onChange={[Function]}
+          type="checkbox"
+          typeClassName="bp3-checkbox"
+        >
+          <label
+            className="bp3-control bp3-checkbox"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="bp3-control-indicator"
+            />
+          </label>
+        </Control>
+      </Blueprint3.Checkbox>
+      <span
+        className="checkbox-search-list-item__label"
+      >
+        first
+      </span>
+    </div>
+    <div
+      className="checkbox-search-list-item"
+      key="checkbox-search-list2"
+    >
+      <Blueprint3.Checkbox
+        checked={false}
+        onChange={[Function]}
+      >
+        <Control
+          checked={false}
+          inputRef={[Function]}
+          onChange={[Function]}
+          type="checkbox"
+          typeClassName="bp3-checkbox"
+        >
+          <label
+            className="bp3-control bp3-checkbox"
+          >
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="bp3-control-indicator"
+            />
+          </label>
+        </Control>
+      </Blueprint3.Checkbox>
+      <span
+        className="checkbox-search-list-item__label"
+      >
+        second
+      </span>
+    </div>
+    <div
+      className="checkbox-search-list-item"
+      key="checkbox-search-list3"
+    >
+      <Blueprint3.Checkbox
+        checked={false}
+        onChange={[Function]}
+      >
+        <Control
+          checked={false}
+          inputRef={[Function]}
+          onChange={[Function]}
+          type="checkbox"
+          typeClassName="bp3-checkbox"
+        >
+          <label
+            className="bp3-control bp3-checkbox"
+          >
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="bp3-control-indicator"
+            />
+          </label>
+        </Control>
+      </Blueprint3.Checkbox>
+      <span
+        className="checkbox-search-list-item__label"
+      >
+        third
+      </span>
+    </div>
+  </div>
+</CheckboxSearchList>
+`;
+
+exports[`CheckboxSearchList CheckboxSearchList shallow renders 1`] = `
+<div
+  className="checkbox-search-list"
+  style={
+    Object {
+      "height": "300px",
+    }
+  }
+>
+  <input
+    autoFocus={true}
+    className="checkbox-search-list__search"
+    onChange={[Function]}
+    placeholder="Search input"
+    tabIndex={0}
+    type="search"
+    value=""
+  />
+  <div
+    className="checkbox-search-list-item"
+    key="checkbox-search-list1"
+  >
+    <Blueprint3.Checkbox
+      checked={true}
+      onChange={[Function]}
+    />
+    <span
+      className="checkbox-search-list-item__label"
+    >
+      first
+    </span>
+  </div>
+  <div
+    className="checkbox-search-list-item"
+    key="checkbox-search-list2"
+  >
+    <Blueprint3.Checkbox
+      checked={false}
+      onChange={[Function]}
+    />
+    <span
+      className="checkbox-search-list-item__label"
+    >
+      second
+    </span>
+  </div>
+  <div
+    className="checkbox-search-list-item"
+    key="checkbox-search-list3"
+  >
+    <Blueprint3.Checkbox
+      checked={false}
+      onChange={[Function]}
+    />
+    <span
+      className="checkbox-search-list-item__label"
+    >
+      third
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,88 @@
+{{- $appName := "ui-processing-configuration-service" }}
+{{- $appValues := get .Values $appName }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+  labels:
+    restartAfterReconfig: {{ include "soh.deployment.restartAfterReconfig" (dict "Values" .Values "appValues" $appValues) }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  strategy:
+    type: {{ include "soh.deployment.strategy" (dict "Values" .Values "appValues" $appValues) }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      serviceAccount: gms-soh-elevated
+      initContainers:
+        {{- include "soh.container.initContainer.wait-for-config-load" (dict "Values" .Values "appValues" $appValues) | nindent 8 }}
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "soh.container.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          env:
+            - name: ETCD_GMS_USER
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key:  username
+            - name: ETCD_GMS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key: password
+            - name: GMS_CONFIG_SQL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: username
+            - name: GMS_CONFIG_SQL_PASSWORD 
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: password
+            {{- include "soh.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+          ports:
+            - containerPort: 8080
+          {{- include "soh.container.resources" (dict "Values" .Values "appValues" $appValues) | nindent 10 }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $appName }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: http-web
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: {{ $appName }}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ $appName }}
+spec:
+  tls:
+    - secretName: ingress-default-cert
+      hosts:
+        - "{{ .Release.Name }}.{{ .Values.baseDomain }}"
+  rules:
+    - host: "{{ .Release.Name }}.{{ .Values.baseDomain }}"
+      http:
+        paths:
+          - path: "/{{ $appName }}"
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ $appName }}
+                port:
+                  number: 8080

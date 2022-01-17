@@ -1,0 +1,99 @@
+# --------------------------------------------------------
+# [HARNESS] Data Preloader
+#
+# description:
+#   This will preload data.
+# --------------------------------------------------------
+---
+kind: Augmentation
+metadata:
+  type: harness  
+  values:
+    appName: data-preloader
+    imageName: gms-common/data-preloader
+  labels:
+    - soh
+    - soak
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ appName }}
+  namespace: {{ namespace }}
+  labels:
+    gms/type: {{ augmentationType }}
+    gms/augmentation: {{ appName }}
+    gms/user: {{ userName }}
+spec:
+  template:
+    spec:
+      serviceAccount: gms-soh-elevated
+      restartPolicy: Never
+      containers:
+        - name: {{ appName }}
+          image: {{ imageRegistry }}/{{ imageName }}:{{ imageTag }}
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 64
+              memory: "8G"
+            limits:
+              cpu: 128
+              memory: "16G"
+          env:
+            - name: ETCD_GMS_USER
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key:  username
+            - name: ETCD_GMS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key: password
+            - name: GMS_CONFIG_SQL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: username
+            - name: GMS_CONFIG_SQL_PASSWORD 
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: password
+            # adding a upper limit to the number of threads used for reactor's parallel fluxes
+            #- name: "JAVA_OPTS"
+            #  value: "-Dreactor.schedulers.defaultPoolSize=50"
+            # if you want to load for multiple groups you can enter this a CSV ex: All_1,All_2
+            - name: STATION_GROUP
+              value: "Primary"
+            - name: DAYS_TO_LOAD
+              value: '45'
+            - name: DAYS_AGO_TO_START
+              value: '45'
+            - name: LOAD_RSDFS
+              value: "TRUE"
+            - name: RECEPTION_DELAY
+              value: "PT10S"
+            - name: RSDF_SAMPLE_DURATION
+              value: "PT10S"
+            - name: LOAD_STATION_SOHS
+              value: "TRUE"
+            - name: STATION_SOH_SAMPLE_DURATION
+              value: "PT20S"
+            - name: LOAD_ANALOG_ACEIS
+              value: "TRUE"
+            - name: ACEI_ANALOG_SAMPLE_DURATION
+              value: "PT10S"
+            - name: LOAD_BOOLEAN_ACEIS
+              value: "TRUE"
+            - name: ACEI_BOOLEAN_SAMPLE_DURATION
+              value: "PT2M"
+            - name: LOAD_ROLLUPS
+              value: "TRUE"
+            - name: ROLLUP_SAMPLE_DURATION
+              value: "PT20S"
+            {%- for name in env %}
+            - name: "{{ name }}"
+              value: "{{ env[name] -}}"
+            {% endfor %}

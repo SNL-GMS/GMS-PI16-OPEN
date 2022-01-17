@@ -1,0 +1,427 @@
+global:
+  # baseDomain specifies the domain name suffix applied to all Ingress hostnames
+  baseDomain: ""
+
+ldap-proxy:
+  # imageRegistry is the Docker image registry URL where all images will be retrieved
+  #imageRegistry: some-image-registry.com
+  #imageName: "gms-common/ldap_proxy"
+  #imageTag: develop
+
+  imageRegistry: ""
+  imageName: ""
+  imageTag: ""
+
+  # imagePullPolicy is the policy used for all images ('Always', 'IfNotPresent', 'Never')
+  imagePullPolicy: Always
+
+  # baseDomain specifies the domain name suffix applied to all Ingress hostnames
+  baseDomain: ""
+
+
+elasticsearch:
+  #image: "logging-elasticsearch"
+  image: ""
+  imageTag: ""
+  imagePullPolicy: "Always"
+
+  replicas: 3
+  minimumMasterNodes: 2
+
+  clusterHealthCheckParams: "wait_for_status=green&timeout=1s"
+
+  rbac:
+    create: true
+
+  podSecurityPolicy:
+    create: true
+
+  volumeClaimTemplate:
+    accessModes: [ "ReadWriteOnce" ]
+    storageClassName: local-path
+    resources:
+      requests:
+        storage: 5Gi
+
+  persistence:
+    enabled: true
+    labels:
+      # Add default labels for the volumeClaimTemplate fo the StatefulSet
+      enabled: true
+    annotations: {}
+    
+ 
+  # Enabling this will publically expose your Elasticsearch instance.
+  # # Only enable this if you have security enabled on your cluster
+  ingress:
+    enabled: true
+    annotations: {}
+      # kubernetes.io/ingress.class: nginx
+      #     # kubernetes.io/tls-acme: "true"
+    path: /
+    hosts:
+      - elasticsearch.some.domain.com
+    tls:
+      - secretName: ingress-default-cert
+        hosts:
+          - elasticsearch.some.domain.com
+
+  esJavaOpts: "-Xmx16g -Xms16g"
+  resources:
+    requests:
+      cpu: "4000m"
+      memory: "32Gi"
+    limits:
+      cpu: "4000m"
+      memory: "32Gi"
+
+fluent-bit:
+  # Default values for fluent-bit.
+
+  image:
+    repository: ""
+    pullPolicy: Always
+    tag: ""
+
+  testFramework:
+    image:
+      repository: ""
+      pullPolicy: Always
+      tag: ""
+
+  podSecurityPolicy:
+    create: true
+    annotations: {}
+
+  extraVolumes: 
+    - name: datadockercontainers
+      hostPath:
+        path: /data/docker/containers
+
+  extraVolumeMounts:
+    - name: datadockercontainers
+      mountPath: /data/docker/containers
+
+  ## https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/configuration-file
+  config:
+    service: |
+      [SERVICE]
+          Flush 1
+          Daemon Off
+          Log_Level info
+          Parsers_File parsers.conf
+          Parsers_File custom_parsers.conf
+          HTTP_Server On
+          HTTP_Listen 0.0.0.0
+          HTTP_Port {{ .Values.service.port }}
+
+    ## https://docs.fluentbit.io/manual/pipeline/inputs
+    inputs: |
+      [INPUT]
+          Name tail
+          Path /var/log/containers/*.log
+          Parser docker
+          Tag kube.*
+          Mem_Buf_Limit 512MB
+          Skip_Long_Lines On
+
+      [INPUT]
+          Name systemd
+          Tag host.*
+          Systemd_Filter _SYSTEMD_UNIT=kubelet.service
+          Read_From_Tail On
+
+    ## https://docs.fluentbit.io/manual/pipeline/filters
+    filters: |
+      [FILTER]
+          Name kubernetes
+          Match kube.*
+          Merge_Log On
+          Merge_Log_Key appLog
+          Keep_Log Off
+          K8S-Logging.Parser On
+          K8S-Logging.Exclude On
+
+    ## https://docs.fluentbit.io/manual/pipeline/outputs
+    outputs: |
+      [OUTPUT]
+          Name es
+          Match kube.*
+          Host elasticsearch-master
+          Port 9200
+          Logstash_Format Off
+          Trace_Output Off
+          Trace_Error Off
+          Replace_Dots On
+          Retry_Limit False
+
+      [OUTPUT]
+          Name es
+          Match host.*
+          Host elasticsearch-master
+          Port 9200
+          Logstash_Format Off
+          Trace_Output Off
+          Trace_Error Off
+          Replace_Dots On
+          Logstash_Prefix node
+          Retry_Limit False
+
+    ## https://docs.fluentbit.io/manual/pipeline/parsers
+    customParsers: |
+      [PARSER]
+          Name docker_no_time
+          Format json
+          Time_Keep Off
+          Time_Key time
+          Time_Format %Y-%m-%dT%H:%M:%S.%L
+
+  # We hacked the fluent-bit subchart to add template expansion in the initContainers value here.  This was done by changing the
+  #
+  #   {{- toYaml .Values.initContainers | nindent 2 }}
+  #
+  # line in charts/fluent-bit/templates/_pod.tpl to
+  #
+  #   {{- tpl (toYaml .Values.initContainers) . | nindent 2 }}
+  initContainers:
+    - name: wait-for-es-config
+      image: "{{ .Values.imageRegistry }}/gms-common/centos:{{ .Values.image.tag }}"
+      command:
+        - "/bin/bash"
+        - "-c"
+        - |
+          #!/usr/bin/env bash
+
+          # The following commands:
+          #    exec &> /var/tmp/logfile.txt
+          #    while true
+          # Can be used when you need to debug this init container.  The while true loop
+          # can be placed anywhere in this script to keep the init container in a "Running"
+          # state.
+          # Then if you uncomment the "exec" line, you can intereactively exec into the
+          # the init container to see what error/echo messages are being to displayed
+          # which should help narrow down why the code is failing (note: you will probably
+          # want to comment out all of the "exit 1" statements
+          # 
+          # kubectl exec -it -c wait-for-es-config -- /bin/bash
+          #
+          #exec &> /var/tmp/logfile.txt
+          #echo "fluent-bit init container - echo loop for debugging"
+          #
+          #while true; do
+          #   echo "fluent-bit init container - loop for debugging"
+          #done
+
+          # Define some common variables
+          # Elastic search URL             - ES_URL
+          # Default fluent-bit index       - FB_DEFAULT_INDEX
+          # Rollover fluent-bit seed index - FB_ROLLOVER_SEED_INDEX
+          # Elasticsearch ILM policy       - ES_FB_ILM_POLICY
+          # Elasticsearch index template   - ES_FB_INDEX_TEMPLATE
+          # Elasticsearch fluent-bit alias - ES_FB_INDEX_ALIAS
+          # ----------------------------------------------------------------------------------------------
+
+          ES_URL="http://elasticsearch-master:9200"
+          FB_DEFAULT_INDEX="fluent-bit"
+          FB_ROLLOVER_SEED_INDEX="fluent-bit-000001"
+          ES_FB_ILM_POLICY="fluent-bit-policy"
+          ES_FB_INDEX_TEMPLATE="fluent-bit-template"
+          ES_FB_INDEX_ALIAS="fluent-bit"
+
+          # Curl the elasticsearch URL and save the response
+          curl_cmd="curl -s -o /dev/null -w '%{http_code}\n' $ES_URL/_cat/indices?v"
+          #echo "curl_cmd:  $curl_cmd"
+          RESP=$(eval "$curl_cmd")
+
+          # If the response is NOT 200, then loop until it is 200
+          if [[ "$RESP" != "200" ]]; then
+             while [[ "$RESP" != "200" ]]; do
+                echo "waiting for elastic search"
+                sleep 1
+                echo "curl_cmd:  $curl_cmd"
+                RESP=$(eval "$curl_cmd")
+             done
+          else
+             echo "elasticsearch is UP"
+          fi
+
+          # Check for the existence of an index named "fluent-bit" (only check for an index
+          # with this name - NOT an alias).  This would be the default index generated by
+          # fluent-bit (note, does NOT have a numeric suffix).  If this index exists,
+          # we want to delete it (so we can create one with a numeric suffix)
+          curl_cmd="curl -s $ES_URL/_cluster/state?filter_path=metadata.indices.$FB_DEFAULT_INDEX"
+          echo "curl_cmd:  $curl_cmd"
+          RESP=$(eval "$curl_cmd")
+          echo "RESP:  $RESP"
+
+          if [[ "$RESP" != "{}" ]]; then
+             echo "$FB_DEFAULT_INDEX exists ... Delete it"
+             curl_cmd="curl -s -o /dev/null -w '%{http_code}' -XDELETE $ES_URL/$FB_DEFAULT_INDEX"
+             echo "curl_cmd:  $curl_cmd"
+             RESP=$(eval "$curl_cmd")
+             echo "RESP: $RESP"
+
+             # Checking for RESP=200 is unreliable so we are just going to run the index
+             # command again
+             curl_cmd="curl -s $ES_URL/_cluster/state?filter_path=metadata.indices.$FB_DEFAULT_INDEX"
+             echo "curl_cmd:  $curl_cmd"
+             RESP=$(eval "$curl_cmd")
+             echo "RESP:  $RESP"
+
+             if [[ "$RESP" != "{}" ]]; then
+                echo "ERROR:  The default fluent bit index:  $FB_DEFAULT_INDEX exists but cannot be DELETED ... exiting"
+                exit 1
+             else
+                echo "The default fluent bit index:  $FB_DEFAULT_INDEX was SUCCESSFULLY DELETED"
+             fi
+          else
+             echo "$FB_DEFAULT_INDEX does NOT exist ... continuing"
+          fi
+
+          # Check for the existence of the ILM (index lifecycle management) policy named "fluent-bit-policy".
+          # If this index already exists, do nothing otherwise create it
+          curl_cmd="curl -s -o /dev/null -w '%{http_code}' $ES_URL/_ilm/policy/$ES_FB_ILM_POLICY"
+          echo "curl_cmd:  $curl_cmd"
+          RESP=$(eval "$curl_cmd")
+          echo "RESP:  $RESP"
+
+          if [[ "$RESP" != "200" ]]; then
+             # Create the policy
+             echo "$ES_FB_ILM_POLICY does NOT exist ... Create it"
+             curl_cmd="curl -s -o /dev/null -w '%{http_code}' -XPUT $ES_URL/_ilm/policy/$ES_FB_ILM_POLICY -H 'Content-Type: application/json' -d'{\"policy\": {\"phases\": {\"hot\": {\"min_age\": \"${HOT_PHASE_MIN_AGE}\", \"actions\": {\"rollover\": {\"max_size\": \"${HOT_PHASE_ACTIONS_ROLLOVER_MAX_SIZE}\", \"max_age\": \"${HOT_PHASE_ACTIONS_ROLLOVER_MAX_AGE}\"}, \"set_priority\": {\"priority\": ${HOT_PHASE_SET_PRIORITY_PRIORITY}}}},\"delete\": {\"min_age\": \"${DELETE_PHASE_MIN_AGE}\", \"actions\": {\"delete\": {\"delete_searchable_snapshot\": ${DELETE_PHASE_ACTIONS_DELETE_DELETE_SEARCHABLE_SNAPSHOT}}}}}}}'"
+             echo "curl_cmd:  $curl_cmd"
+             RESP=$(eval "$curl_cmd")
+             echo "RESP:  $RESP"
+
+             # Checking the response code from the PUT is unreliable so re-run the GET
+             # to check for successful creation
+             curl_cmd="curl -s -o /dev/null -w '%{http_code}' $ES_URL/_ilm/policy/$ES_FB_ILM_POLICY"
+             echo "curl_cmd:  $curl_cmd"
+             RESP=$(eval "$curl_cmd")
+             echo "RESP:  $RESP"
+
+             if [[ "$RESP" != "200" ]]; then
+                echo "ERROR:  Unable to create the Index Lifecycle Management Policy:  $ES_FB_ILM_POLICY ... exiting"
+                exit 1
+             else
+                echo "The ILM Policy:  $ES_FB_ILM_POLICY was SUCCESSFULLY CREATED"
+             fi
+          else
+             echo "$ES_FB_ILM_POLICY ALREADY EXISTS ... continuing"
+          fi
+
+          # Check for the existence of the index template named "fluent-bit-template".
+          # If this index already exists, do nothing otherwise create it
+          curl_cmd="curl -s -o /dev/null -w '%{http_code}' $ES_URL/_index_template/$ES_FB_INDEX_TEMPLATE"
+          echo "curl_cmd:  $curl_cmd"
+          RESP=$(eval "$curl_cmd")
+          echo "RESP:  $RESP"
+
+          if [[ "$RESP" != "200" ]]; then
+             # Create the template
+             echo "$ES_FB_INDEX_TEMPLATE does NOT exist ... Create it"
+             curl_cmd="curl -s -o /dev/null -w '%{http_code}' -XPUT $ES_URL/_index_template/$ES_FB_INDEX_TEMPLATE -H 'Content-Type: application/json' -d'{\"index_patterns\" : [\"fluent-bit-*\"], \"template\" : {\"settings\" : {\"index.mapping.total_fields.limit\" : 2000, \"number_of_shards\" : 1, \"number_of_replicas\" : 1, \"index.lifecycle.name\" : \"fluent-bit-policy\", \"index.lifecycle.rollover_alias\" : \"fluent-bit\"}}}'"
+             echo "curl_cmd:  $curl_cmd"
+             RESP=$(eval "$curl_cmd")
+             echo "RESP:  $RESP"
+          
+             # Checking the response code from the PUT is unreliable so re-run the GET
+             # to check for successful creation
+             curl_cmd="curl -s -o /dev/null -w '%{http_code}' $ES_URL/_index_template/$ES_FB_INDEX_TEMPLATE"
+             echo "curl_cmd:  $curl_cmd"
+             RESP=$(eval "$curl_cmd")
+             echo "RESP:  $RESP"
+
+             if [[ "$RESP" != "200" ]]; then
+                echo "ERROR:  Unable to create the Elasticsearch Index Template:  $ES_FB_INDEX_TEMPLATE ... exiting"
+                exit 1
+             else
+                echo "The Index Template:  $ES_FB_INDEX_TEMPLATE was SUCCESSFULLY CREATED"
+             fi
+          else
+             echo "$ES_FB_INDEX_TEMPLATE ALREADY EXISTS ... continuing"
+          fi
+
+          # Check for the existence of an index with a suffix such as "fluent-bit-000001"
+          # If this index already exists, do nothing otherwise create it.  Use reg-ex
+          # to figure out if the index exists and if so what it's name is
+          curl_cmd="curl -s $ES_URL/$ES_FB_INDEX_ALIAS"
+          echo "curl_cmd:  $curl_cmd"
+          RESP=$(eval "$curl_cmd")
+          echo "RESP:  $RESP"
+
+          # Define regular exprssion that looks for a certain response to indicate there is 
+          # an suffixed index configured.  
+          # We need a pattern that will find "{"fluent-bit-00000n":{"aliases":{"fluent-bit":{"is_write_index":true}}
+          # somewhere in the response (either at the beginning or somewhere buried in the response
+          pattern="\{.*\"(fluent-bit-[0-9]+)\":\{\"aliases\":\{\"fluent-bit\":\{\"is_write_index\":true\}"
+
+          # Check for a match on pattern
+          if [[ $RESP =~ $pattern ]]
+          then
+             index_name="${BASH_REMATCH[1]}"
+             echo "Rollover index_name:  $index_name exists ... continuing"
+          else
+             # Create the rollover suffixed index
+             echo "$FB_ROLLOVER_SEED_INDEX does NOT exist ... Create it"
+             curl_cmd="curl -s -o /dev/null -w '%{http_code}' -XPUT $ES_URL/$FB_ROLLOVER_SEED_INDEX -H 'Content-Type: application/json' -d'{\"aliases\" : {\"fluent-bit\" : {\"is_write_index\" : true}}}'"
+             echo "curl_cmd:  $curl_cmd"
+             RESP=$(eval "$curl_cmd")
+             echo "RESP:  $RESP"
+
+             # Checking the response code from the PUT is unreliable so run a GET
+             # to check for successful creation of the seed index
+             curl_cmd="curl -s -o /dev/null -w '%{http_code}' $ES_URL/$FB_ROLLOVER_SEED_INDEX"
+             echo "curl_cmd:  $curl_cmd"
+             RESP=$(eval "$curl_cmd")
+             echo "RESP:  $RESP"
+
+             if [[ "$RESP" != "200" ]]; then
+                echo "ERROR:  Unable to create the Elasticsearch fluent-bit Rollover Index:  $FB_ROLLOVER_SEED_INDEX ... exiting"
+                exit 1
+             else
+                echo "The Elasticsearch fluent-bit Rollover Index:  $FB_ROLLOEVER_SEED_INDEX was SUCCESSFULLY CREATED"
+             fi
+          fi
+          
+          echo 
+          echo "elasticsearch has been SUCCESSFULLY initialized for fluent-bit ... start fluent-bit now"
+      # The following env section defined environment variables for the initContainer which are used to
+      # dynamically set some of the index policy components.  
+      # NOTE:  At this time, it is not possible to over-ride these from the command line with "--set"
+      # arguments because the "env" section isn't built into the template for the initContainer.
+      # These values can be changed here and a --chart provided to change the defaults for
+      # the fluent-bit initContainer.  For example, if it is desired to change "DELETE_PHASE_MIN_AGE"
+      # to "3d", you can change it here in the values.yaml file and provide the "--chart <path-to-this-chart>"
+      # to the gmskube install command
+      # When we re-factor 3rd party charts, we should have a solution to this problem so that the env vars
+      # can be overridden on the command line with --set's
+      env:
+        - name: HOT_PHASE_MIN_AGE
+          value: "1d"
+        - name: HOT_PHASE_ACTIONS_ROLLOVER_MAX_AGE
+          value: "1d"
+        - name: HOT_PHASE_ACTIONS_ROLLOVER_MAX_SIZE
+          value: "30gb"
+        - name: HOT_PHASE_SET_PRIORITY_PRIORITY
+          value: "100"
+        - name: DELETE_PHASE_MIN_AGE
+          value: "7d"
+        - name: DELETE_PHASE_ACTIONS_DELETE_DELETE_SEARCHABLE_SNAPSHOT
+          value: "true"
+
+kibana:
+  image: ""
+  imageTag: ""
+  imagePullPolicy: "Always"
+
+  ingress:
+    enabled: false
+
+  resources:
+    requests:
+      cpu: "2000m"
+      memory: "8Gi"
+    limits:
+      cpu: "2000m"
+      memory: "8Gi"

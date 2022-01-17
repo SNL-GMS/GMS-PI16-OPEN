@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Waveform Renderer renders 1`] = `
+<WaveformRenderer
+  channelName="AAK.AAK.BHZ"
+  channelSegmentId="unfiltered"
+  channelSegments={
+    Map {
+      "data" => Object {
+        "channelName": "WaveformRendererChannel",
+        "dataSegments": Array [
+          Object {
+            "color": "dodgerblue",
+            "data": Object {
+              "endTimeSecs": 500,
+              "sampleRate": 1,
+              "startTimeSecs": 450,
+              "values": Array [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+              ],
+            },
+            "displayType": Array [
+              "SCATTER",
+            ],
+            "pointSize": 2,
+          },
+        ],
+        "wfFilterId": "unfiltered",
+      },
+    }
+  }
+  color="#4580E6"
+  defaultRange={
+    Object {
+      "max": 9,
+      "min": 4,
+    }
+  }
+  displayEndTimeSecs={700}
+  displayStartTimeSecs={400}
+  displayType={
+    Array [
+      "LINE",
+    ]
+  }
+  glMax={100}
+  glMin={0}
+  masks={
+    Array [
+      Object {
+        "color": "green",
+        "endTimeSecs": 440,
+        "id": "mask_1",
+        "startTimeSecs": 420,
+      },
+    ]
+  }
+  pointSize={2}
+  renderWaveforms={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  setYAxisBounds={[MockFunction]}
+  workerRpcs={Array []}
+/>
+`;
+
+exports[`Weavess Waveform Renderer shallow renders 1`] = `""`;

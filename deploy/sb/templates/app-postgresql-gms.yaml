@@ -1,0 +1,124 @@
+{{- $appName := "postgresql-gms" }}
+{{- $appValues := get .Values $appName }}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ $appName }}
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: {{ .Values.storageClassName }}
+  resources:
+    requests:
+      storage: {{ $appValues.storageSize }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+  labels:
+    restartAfterReconfig: {{ include "sb.deployment.restartAfterReconfig" (dict "Values" .Values "appValues" $appValues) }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  strategy:
+    type: {{ include "sb.deployment.strategy" (dict "Values" .Values "appValues" $appValues) }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 1
+              preference:
+                matchExpressions:
+                  - key: kubernetes.io/hostname
+                    operator: In
+                    values:
+                      - {{ $appValues.node }}
+      serviceAccount: gms-sb-elevated
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: "{{ $appName }}"
+        - name: shm
+          emptyDir:
+            medium: Memory
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "sb.container.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-super-user"
+                  key:  username
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-super-user"
+                  key: password
+            - name: GMS_POSTGRES_ADMIN_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-admin"
+                  key: password
+            - name: GMS_POSTGRES_CONFIG_APPLICATION_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-config-application"
+                  key: password
+            - name: GMS_POSTGRES_READ_ONLY_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-read-only"
+                  key: password
+            - name: GMS_POSTGRES_SESSION_APPLICATION_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-session-application"
+                  key: password
+            - name: GMS_POSTGRES_SOH_APPLICATION_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: password
+            - name: GMS_POSTGRES_SOH_TEST_APPLICATION_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-test-application"
+                  key: password
+            - name: GMS_POSTGRES_SOH_TTL_APPLICATION_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-ttl-application"
+                  key: password
+            {{- include "sb.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/postgresql/data
+            - name: shm
+              mountPath: /dev/shm
+          {{- include "sb.container.resources" (dict "Values" .Values "appValues" $appValues) | nindent 10 }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $appName }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: tcp-postgresql
+      port: 5432
+      protocol: TCP
+      targetPort: 5432
+  selector:
+    app: {{ $appName }}

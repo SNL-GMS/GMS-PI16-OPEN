@@ -1,0 +1,1515 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`station-properties-panel matches snapshot 1`] = `
+<StationPropertiesToolbar
+  effectiveAtTimes={
+    Array [
+      "1970-01-01T00:00:00.000Z",
+      "1970-01-01T00:00:00.000Z",
+    ]
+  }
+  onEffectiveTimeChange={[MockFunction]}
+  selectedEffectiveAt="1970-01-01T00:00:00.000Z"
+  selectedStation={
+    Object {
+      "location": Object {
+        "depthKm": 100,
+        "description": "description ",
+        "elevationKm": 100,
+        "latitudeDegrees": 10,
+        "longitudeDegrees": 10,
+      },
+      "name": "name",
+      "type": "WEATHER",
+    }
+  }
+  setSelectedChannelColumnsToDisplay={[MockFunction]}
+  setSelectedSiteColumnsToDisplay={[MockFunction]}
+  stationName="name"
+>
+  <BaseToolbar
+    items={
+      Array [
+        Object {
+          "ianApp": true,
+          "label": "Station",
+          "rank": 1,
+          "tooltip": "Currently Selected Station",
+          "type": "LabelValue",
+          "value": "name",
+          "widthPx": 400,
+        },
+        Object {
+          "ianApp": true,
+          "label": "Lat",
+          "rank": 2,
+          "tooltip": "Station Latitude",
+          "type": "LabelValue",
+          "value": "10.000°",
+          "widthPx": 400,
+        },
+        Object {
+          "ianApp": true,
+          "label": "Lon",
+          "rank": 3,
+          "tooltip": "Station Longitude",
+          "type": "LabelValue",
+          "value": "10.000°",
+          "widthPx": 400,
+        },
+        Object {
+          "ianApp": true,
+          "label": "Depth",
+          "rank": 4,
+          "tooltip": "Depth (km)",
+          "type": "LabelValue",
+          "value": "100.000km",
+          "widthPx": 400,
+        },
+        Object {
+          "ianApp": true,
+          "label": "Elev",
+          "rank": 5,
+          "tooltip": "Station Elevation",
+          "type": "LabelValue",
+          "value": "100.000km",
+        },
+        Object {
+          "ianApp": true,
+          "label": "Description",
+          "rank": 6,
+          "tooltip": "Station Description",
+          "type": "LabelValue",
+          "value": "Unknown",
+          "widthPx": 400,
+        },
+        Object {
+          "ianApp": true,
+          "label": "Type",
+          "rank": 7,
+          "tooltip": "Single Station or Array",
+          "type": "LabelValue",
+          "value": "Single Station",
+          "widthPx": 400,
+        },
+      ]
+    }
+    itemsLeft={
+      Array [
+        Object {
+          "displayLabel": true,
+          "dropdownOptions": Array [
+            "1970-01-01T00:00:00.000Z",
+            "1970-01-01T00:00:00.000Z",
+          ],
+          "dropdownText": Array [
+            "1970-01-01 00:00:00.000",
+            "1970-01-01 00:00:00.000",
+          ],
+          "label": "Effective At",
+          "onChange": [MockFunction],
+          "rank": 1,
+          "tooltip": "Select Effective Time to display",
+          "type": "Dropdown",
+          "value": "1970-01-01T00:00:00.000Z",
+          "widthPx": 220,
+        },
+        Object {
+          "cyData": "station-properties-channel-group-column-picker",
+          "enumKeysToDisplayStrings": Map {
+            "name" => "Name",
+            "effectiveAt" => "Effective At",
+            "effectiveUntil" => "Effective Until",
+            "latitudeDegrees" => "Latitude",
+            "longitudeDegrees" => "Longitude",
+            "depthKm" => "Depth",
+            "elevationKm" => "Elevation",
+            "description" => "Description",
+            "type" => "Type",
+          },
+          "enumOfKeys": Object {
+            "depthKm": "depthKm",
+            "description": "description",
+            "effectiveAt": "effectiveAt",
+            "effectiveUntil": "effectiveUntil",
+            "elevationKm": "elevationKm",
+            "latitudeDegrees": "latitudeDegrees",
+            "longitudeDegrees": "longitudeDegrees",
+            "name": "name",
+            "type": "type",
+          },
+          "label": "Channel Group Columns",
+          "menuLabel": "Channel Group Columns",
+          "onChange": [Function],
+          "rank": 2,
+          "tooltip": "Select columns to be shown in the channel group table below",
+          "type": "CheckboxList",
+          "values": Map {
+            "name" => true,
+            "effectiveAt" => true,
+            "effectiveUntil" => true,
+            "latitudeDegrees" => true,
+            "longitudeDegrees" => true,
+            "depthKm" => true,
+            "elevationKm" => true,
+            "description" => true,
+            "type" => true,
+          },
+          "widthPx": 220,
+        },
+        Object {
+          "cyData": "station-properties-channel-column-picker",
+          "enumKeysToDisplayStrings": Map {
+            "name" => "Name",
+            "effectiveAt" => "Effective At",
+            "effectiveUntil" => "Effective Until",
+            "latitudeDegrees" => "Latitude",
+            "longitudeDegrees" => "Longitude",
+            "depthKm" => "Depth",
+            "elevationKm" => "Elevation",
+            "nominalSampleRateHz" => "Sample Rate",
+            "units" => "Units",
+            "orientationHorizontalDegrees" => "Horizontal Angle",
+            "orientationVerticalDegrees" => "Vertical Angle",
+            "calibrationFactor" => "Calibration Factor",
+            "calibrationPeriod" => "Calibration Period",
+            "calibrationEffectiveAt" => "Calibration Effective At",
+            "calibrationTimeShift" => "Calibration Time Shift",
+            "calibrationStandardDeviation" => "Calibration Std Dev",
+            "northDisplacementKm" => "North Displacement",
+            "eastDisplacementKm" => "East Displacement",
+            "verticalDisplacementKm" => "Vertical Displacement",
+            "description" => "Description",
+            "channelDataType" => "Data Type",
+            "channelBandType" => "Band Type",
+            "channelInstrumentType" => "Instrument Type",
+            "channelOrientationCode" => "Orientation Code",
+            "channelOrientationType" => "Orientation Type",
+            "calibrationResponseId" => "Calibration ID",
+            "fapResponseId" => "FAP Resp ID",
+          },
+          "enumOfKeys": Object {
+            "calibrationEffectiveAt": "calibrationEffectiveAt",
+            "calibrationFactor": "calibrationFactor",
+            "calibrationPeriod": "calibrationPeriod",
+            "calibrationResponseId": "calibrationResponseId",
+            "calibrationStandardDeviation": "calibrationStandardDeviation",
+            "calibrationTimeShift": "calibrationTimeShift",
+            "channelBandType": "channelBandType",
+            "channelDataType": "channelDataType",
+            "channelInstrumentType": "channelInstrumentType",
+            "channelOrientationCode": "channelOrientationCode",
+            "channelOrientationType": "channelOrientationType",
+            "depthKm": "depthKm",
+            "description": "description",
+            "eastDisplacementKm": "eastDisplacementKm",
+            "effectiveAt": "effectiveAt",
+            "effectiveUntil": "effectiveUntil",
+            "elevationKm": "elevationKm",
+            "fapResponseId": "fapResponseId",
+            "latitudeDegrees": "latitudeDegrees",
+            "longitudeDegrees": "longitudeDegrees",
+            "name": "name",
+            "nominalSampleRateHz": "nominalSampleRateHz",
+            "northDisplacementKm": "northDisplacementKm",
+            "orientationHorizontalDegrees": "orientationHorizontalDegrees",
+            "orientationVerticalDegrees": "orientationVerticalDegrees",
+            "units": "units",
+            "verticalDisplacementKm": "verticalDisplacementKm",
+          },
+          "label": "Channel Columns",
+          "menuLabel": "Channel Columns",
+          "onChange": [Function],
+          "rank": 3,
+          "tooltip": "Select columns to be shown in the channel table below",
+          "type": "CheckboxList",
+          "values": Map {
+            "name" => true,
+            "effectiveAt" => true,
+            "effectiveUntil" => true,
+            "latitudeDegrees" => true,
+            "longitudeDegrees" => true,
+            "depthKm" => true,
+            "elevationKm" => true,
+            "nominalSampleRateHz" => true,
+            "units" => true,
+            "orientationHorizontalDegrees" => true,
+            "orientationVerticalDegrees" => true,
+            "calibrationFactor" => true,
+            "calibrationPeriod" => true,
+            "calibrationEffectiveAt" => true,
+            "calibrationTimeShift" => true,
+            "calibrationStandardDeviation" => true,
+            "northDisplacementKm" => true,
+            "eastDisplacementKm" => true,
+            "verticalDisplacementKm" => true,
+            "description" => true,
+            "channelDataType" => false,
+            "channelBandType" => false,
+            "channelInstrumentType" => false,
+            "channelOrientationCode" => false,
+            "channelOrientationType" => false,
+            "calibrationResponseId" => true,
+            "fapResponseId" => true,
+          },
+          "widthPx": 220,
+        },
+      ]
+    }
+    widthPx={100}
+  >
+    <ToolbarComponent
+      items={
+        Array [
+          Object {
+            "ianApp": true,
+            "label": "Station",
+            "rank": 1,
+            "tooltip": "Currently Selected Station",
+            "type": "LabelValue",
+            "value": "name",
+            "widthPx": 400,
+          },
+          Object {
+            "ianApp": true,
+            "label": "Lat",
+            "rank": 2,
+            "tooltip": "Station Latitude",
+            "type": "LabelValue",
+            "value": "10.000°",
+            "widthPx": 400,
+          },
+          Object {
+            "ianApp": true,
+            "label": "Lon",
+            "rank": 3,
+            "tooltip": "Station Longitude",
+            "type": "LabelValue",
+            "value": "10.000°",
+            "widthPx": 400,
+          },
+          Object {
+            "ianApp": true,
+            "label": "Depth",
+            "rank": 4,
+            "tooltip": "Depth (km)",
+            "type": "LabelValue",
+            "value": "100.000km",
+            "widthPx": 400,
+          },
+          Object {
+            "ianApp": true,
+            "label": "Elev",
+            "rank": 5,
+            "tooltip": "Station Elevation",
+            "type": "LabelValue",
+            "value": "100.000km",
+          },
+          Object {
+            "ianApp": true,
+            "label": "Description",
+            "rank": 6,
+            "tooltip": "Station Description",
+            "type": "LabelValue",
+            "value": "Unknown",
+            "widthPx": 400,
+          },
+          Object {
+            "ianApp": true,
+            "label": "Type",
+            "rank": 7,
+            "tooltip": "Single Station or Array",
+            "type": "LabelValue",
+            "value": "Single Station",
+            "widthPx": 400,
+          },
+        ]
+      }
+      itemsLeft={
+        Array [
+          Object {
+            "displayLabel": true,
+            "dropdownOptions": Array [
+              "1970-01-01T00:00:00.000Z",
+              "1970-01-01T00:00:00.000Z",
+            ],
+            "dropdownText": Array [
+              "1970-01-01 00:00:00.000",
+              "1970-01-01 00:00:00.000",
+            ],
+            "label": "Effective At",
+            "onChange": [MockFunction],
+            "rank": 1,
+            "tooltip": "Select Effective Time to display",
+            "type": "Dropdown",
+            "value": "1970-01-01T00:00:00.000Z",
+            "widthPx": 220,
+          },
+          Object {
+            "cyData": "station-properties-channel-group-column-picker",
+            "enumKeysToDisplayStrings": Map {
+              "name" => "Name",
+              "effectiveAt" => "Effective At",
+              "effectiveUntil" => "Effective Until",
+              "latitudeDegrees" => "Latitude",
+              "longitudeDegrees" => "Longitude",
+              "depthKm" => "Depth",
+              "elevationKm" => "Elevation",
+              "description" => "Description",
+              "type" => "Type",
+            },
+            "enumOfKeys": Object {
+              "depthKm": "depthKm",
+              "description": "description",
+              "effectiveAt": "effectiveAt",
+              "effectiveUntil": "effectiveUntil",
+              "elevationKm": "elevationKm",
+              "latitudeDegrees": "latitudeDegrees",
+              "longitudeDegrees": "longitudeDegrees",
+              "name": "name",
+              "type": "type",
+            },
+            "label": "Channel Group Columns",
+            "menuLabel": "Channel Group Columns",
+            "onChange": [Function],
+            "rank": 2,
+            "tooltip": "Select columns to be shown in the channel group table below",
+            "type": "CheckboxList",
+            "values": Map {
+              "name" => true,
+              "effectiveAt" => true,
+              "effectiveUntil" => true,
+              "latitudeDegrees" => true,
+              "longitudeDegrees" => true,
+              "depthKm" => true,
+              "elevationKm" => true,
+              "description" => true,
+              "type" => true,
+            },
+            "widthPx": 220,
+          },
+          Object {
+            "cyData": "station-properties-channel-column-picker",
+            "enumKeysToDisplayStrings": Map {
+              "name" => "Name",
+              "effectiveAt" => "Effective At",
+              "effectiveUntil" => "Effective Until",
+              "latitudeDegrees" => "Latitude",
+              "longitudeDegrees" => "Longitude",
+              "depthKm" => "Depth",
+              "elevationKm" => "Elevation",
+              "nominalSampleRateHz" => "Sample Rate",
+              "units" => "Units",
+              "orientationHorizontalDegrees" => "Horizontal Angle",
+              "orientationVerticalDegrees" => "Vertical Angle",
+              "calibrationFactor" => "Calibration Factor",
+              "calibrationPeriod" => "Calibration Period",
+              "calibrationEffectiveAt" => "Calibration Effective At",
+              "calibrationTimeShift" => "Calibration Time Shift",
+              "calibrationStandardDeviation" => "Calibration Std Dev",
+              "northDisplacementKm" => "North Displacement",
+              "eastDisplacementKm" => "East Displacement",
+              "verticalDisplacementKm" => "Vertical Displacement",
+              "description" => "Description",
+              "channelDataType" => "Data Type",
+              "channelBandType" => "Band Type",
+              "channelInstrumentType" => "Instrument Type",
+              "channelOrientationCode" => "Orientation Code",
+              "channelOrientationType" => "Orientation Type",
+              "calibrationResponseId" => "Calibration ID",
+              "fapResponseId" => "FAP Resp ID",
+            },
+            "enumOfKeys": Object {
+              "calibrationEffectiveAt": "calibrationEffectiveAt",
+              "calibrationFactor": "calibrationFactor",
+              "calibrationPeriod": "calibrationPeriod",
+              "calibrationResponseId": "calibrationResponseId",
+              "calibrationStandardDeviation": "calibrationStandardDeviation",
+              "calibrationTimeShift": "calibrationTimeShift",
+              "channelBandType": "channelBandType",
+              "channelDataType": "channelDataType",
+              "channelInstrumentType": "channelInstrumentType",
+              "channelOrientationCode": "channelOrientationCode",
+              "channelOrientationType": "channelOrientationType",
+              "depthKm": "depthKm",
+              "description": "description",
+              "eastDisplacementKm": "eastDisplacementKm",
+              "effectiveAt": "effectiveAt",
+              "effectiveUntil": "effectiveUntil",
+              "elevationKm": "elevationKm",
+              "fapResponseId": "fapResponseId",
+              "latitudeDegrees": "latitudeDegrees",
+              "longitudeDegrees": "longitudeDegrees",
+              "name": "name",
+              "nominalSampleRateHz": "nominalSampleRateHz",
+              "northDisplacementKm": "northDisplacementKm",
+              "orientationHorizontalDegrees": "orientationHorizontalDegrees",
+              "orientationVerticalDegrees": "orientationVerticalDegrees",
+              "units": "units",
+              "verticalDisplacementKm": "verticalDisplacementKm",
+            },
+            "label": "Channel Columns",
+            "menuLabel": "Channel Columns",
+            "onChange": [Function],
+            "rank": 3,
+            "tooltip": "Select columns to be shown in the channel table below",
+            "type": "CheckboxList",
+            "values": Map {
+              "name" => true,
+              "effectiveAt" => true,
+              "effectiveUntil" => true,
+              "latitudeDegrees" => true,
+              "longitudeDegrees" => true,
+              "depthKm" => true,
+              "elevationKm" => true,
+              "nominalSampleRateHz" => true,
+              "units" => true,
+              "orientationHorizontalDegrees" => true,
+              "orientationVerticalDegrees" => true,
+              "calibrationFactor" => true,
+              "calibrationPeriod" => true,
+              "calibrationEffectiveAt" => true,
+              "calibrationTimeShift" => true,
+              "calibrationStandardDeviation" => true,
+              "northDisplacementKm" => true,
+              "eastDisplacementKm" => true,
+              "verticalDisplacementKm" => true,
+              "description" => true,
+              "channelDataType" => false,
+              "channelBandType" => false,
+              "channelInstrumentType" => false,
+              "channelOrientationCode" => false,
+              "channelOrientationType" => false,
+              "calibrationResponseId" => true,
+              "fapResponseId" => true,
+            },
+            "widthPx": 220,
+          },
+        ]
+      }
+      minWhiteSpacePx={1}
+      toolbarWidthPx={60}
+      widthPx={100}
+    >
+      <div
+        className="toolbar"
+        style={
+          Object {
+            "width": "60px",
+          }
+        }
+      >
+        <div
+          className="toolbar__left-group"
+        >
+          <div
+            className="toolbar-item toolbar-item__left"
+            key="1"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "displayLabel": true,
+                  "dropdownOptions": Array [
+                    "1970-01-01T00:00:00.000Z",
+                    "1970-01-01T00:00:00.000Z",
+                  ],
+                  "dropdownText": Array [
+                    "1970-01-01 00:00:00.000",
+                    "1970-01-01 00:00:00.000",
+                  ],
+                  "label": "Effective At",
+                  "onChange": [MockFunction],
+                  "rank": 1,
+                  "tooltip": "Select Effective Time to display",
+                  "type": "Dropdown",
+                  "value": "1970-01-01T00:00:00.000Z",
+                  "widthPx": 220,
+                }
+              }
+              key="1"
+            >
+              <div
+                style={Object {}}
+              >
+                <DropDown
+                  displayLabel={true}
+                  dropDownItems={
+                    Array [
+                      "1970-01-01T00:00:00.000Z",
+                      "1970-01-01T00:00:00.000Z",
+                    ]
+                  }
+                  dropdownText={
+                    Array [
+                      "1970-01-01 00:00:00.000",
+                      "1970-01-01 00:00:00.000",
+                    ]
+                  }
+                  key="1"
+                  label="Effective At"
+                  onMaybeValue={[Function]}
+                  title="Select Effective Time to display"
+                  value="1970-01-01T00:00:00.000Z"
+                  widthPx={220}
+                >
+                  <div
+                    className="dropdown-container"
+                  >
+                    <span
+                      className="dropdown-label"
+                    >
+                      Effective At: 
+                    </span>
+                    <span
+                      className="dropdown-selector"
+                    >
+                      <HTMLSelect
+                        onChange={[Function]}
+                        style={
+                          Object {
+                            "minWidth": "220px",
+                            "width": "220px",
+                          }
+                        }
+                        title="Select Effective Time to display"
+                        value="1970-01-01T00:00:00.000Z"
+                      >
+                        <div
+                          className="bp3-html-select"
+                        >
+                          <select
+                            multiple={false}
+                            onChange={[Function]}
+                            style={
+                              Object {
+                                "minWidth": "220px",
+                                "width": "220px",
+                              }
+                            }
+                            title="Select Effective Time to display"
+                            value="1970-01-01T00:00:00.000Z"
+                          >
+                            <option
+                              key="0"
+                              value="1970-01-01T00:00:00.000Z"
+                            >
+                              1970-01-01 00:00:00.000
+                            </option>
+                            <option
+                              key="1"
+                              value="1970-01-01T00:00:00.000Z"
+                            >
+                              1970-01-01 00:00:00.000
+                            </option>
+                          </select>
+                          <Blueprint3.Icon
+                            icon="double-caret-vertical"
+                          >
+                            <span
+                              className="bp3-icon bp3-icon-double-caret-vertical"
+                              icon="double-caret-vertical"
+                            >
+                              <svg
+                                data-icon="double-caret-vertical"
+                                height={16}
+                                viewBox="0 0 16 16"
+                                width={16}
+                              >
+                                <desc>
+                                  double-caret-vertical
+                                </desc>
+                                <path
+                                  d="M5 7h6a1.003 1.003 0 00.71-1.71l-3-3C8.53 2.11 8.28 2 8 2s-.53.11-.71.29l-3 3A1.003 1.003 0 005 7zm6 2H5a1.003 1.003 0 00-.71 1.71l3 3c.18.18.43.29.71.29s.53-.11.71-.29l3-3A1.003 1.003 0 0011 9z"
+                                  fillRule="evenodd"
+                                  key="0"
+                                />
+                              </svg>
+                            </span>
+                          </Blueprint3.Icon>
+                        </div>
+                      </HTMLSelect>
+                    </span>
+                  </div>
+                </DropDown>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+          <div
+            className="toolbar-item toolbar-item__left"
+            key="2"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "cyData": "station-properties-channel-group-column-picker",
+                  "enumKeysToDisplayStrings": Map {
+                    "name" => "Name",
+                    "effectiveAt" => "Effective At",
+                    "effectiveUntil" => "Effective Until",
+                    "latitudeDegrees" => "Latitude",
+                    "longitudeDegrees" => "Longitude",
+                    "depthKm" => "Depth",
+                    "elevationKm" => "Elevation",
+                    "description" => "Description",
+                    "type" => "Type",
+                  },
+                  "enumOfKeys": Object {
+                    "depthKm": "depthKm",
+                    "description": "description",
+                    "effectiveAt": "effectiveAt",
+                    "effectiveUntil": "effectiveUntil",
+                    "elevationKm": "elevationKm",
+                    "latitudeDegrees": "latitudeDegrees",
+                    "longitudeDegrees": "longitudeDegrees",
+                    "name": "name",
+                    "type": "type",
+                  },
+                  "label": "Channel Group Columns",
+                  "menuLabel": "Channel Group Columns",
+                  "onChange": [Function],
+                  "rank": 2,
+                  "tooltip": "Select columns to be shown in the channel group table below",
+                  "type": "CheckboxList",
+                  "values": Map {
+                    "name" => true,
+                    "effectiveAt" => true,
+                    "effectiveUntil" => true,
+                    "latitudeDegrees" => true,
+                    "longitudeDegrees" => true,
+                    "depthKm" => true,
+                    "elevationKm" => true,
+                    "description" => true,
+                    "type" => true,
+                  },
+                  "widthPx": 220,
+                }
+              }
+              key="2"
+            >
+              <div
+                style={Object {}}
+              >
+                <PopoverButtonComponent
+                  cyData="station-properties-channel-group-column-picker"
+                  key="2"
+                  label="Channel Group Columns"
+                  onClick={[Function]}
+                  onPopoverDismissed={[Function]}
+                  popupContent={
+                    <CheckboxList
+                      checkboxEnum={
+                        Object {
+                          "depthKm": "depthKm",
+                          "description": "description",
+                          "effectiveAt": "effectiveAt",
+                          "effectiveUntil": "effectiveUntil",
+                          "elevationKm": "elevationKm",
+                          "latitudeDegrees": "latitudeDegrees",
+                          "longitudeDegrees": "longitudeDegrees",
+                          "name": "name",
+                          "type": "type",
+                        }
+                      }
+                      enumKeysToDisplayStrings={
+                        Map {
+                          "name" => "Name",
+                          "effectiveAt" => "Effective At",
+                          "effectiveUntil" => "Effective Until",
+                          "latitudeDegrees" => "Latitude",
+                          "longitudeDegrees" => "Longitude",
+                          "depthKm" => "Depth",
+                          "elevationKm" => "Elevation",
+                          "description" => "Description",
+                          "type" => "Type",
+                        }
+                      }
+                      enumToCheckedMap={
+                        Map {
+                          "name" => true,
+                          "effectiveAt" => true,
+                          "effectiveUntil" => true,
+                          "latitudeDegrees" => true,
+                          "longitudeDegrees" => true,
+                          "depthKm" => true,
+                          "elevationKm" => true,
+                          "description" => true,
+                          "type" => true,
+                        }
+                      }
+                      onChange={[Function]}
+                    />
+                  }
+                  tooltip="Select columns to be shown in the channel group table below"
+                  widthPx={220}
+                >
+                  <div
+                    data-cy="station-properties-channel-group-column-picker"
+                  >
+                    <Blueprint3.Button
+                      active={false}
+                      alignText="left"
+                      className="toolbar-button"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "width": "220px",
+                        }
+                      }
+                      title="Select columns to be shown in the channel group table below"
+                    >
+                      <button
+                        className="bp3-button bp3-align-left toolbar-button"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        style={
+                          Object {
+                            "width": "220px",
+                          }
+                        }
+                        title="Select columns to be shown in the channel group table below"
+                        type="button"
+                      >
+                        <Blueprint3.Icon
+                          key="leftIcon"
+                        />
+                        <span
+                          className="bp3-button-text"
+                          key="text"
+                        >
+                          <span>
+                            Channel Group Columns
+                          </span>
+                          <Blueprint3.Icon
+                            icon="chevron-down"
+                            title={false}
+                          >
+                            <span
+                              className="bp3-icon bp3-icon-chevron-down"
+                              icon="chevron-down"
+                            >
+                              <svg
+                                data-icon="chevron-down"
+                                height={16}
+                                viewBox="0 0 16 16"
+                                width={16}
+                              >
+                                <path
+                                  d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                                  fillRule="evenodd"
+                                  key="0"
+                                />
+                              </svg>
+                            </span>
+                          </Blueprint3.Icon>
+                        </span>
+                        <Blueprint3.Icon
+                          key="rightIcon"
+                        />
+                      </button>
+                    </Blueprint3.Button>
+                  </div>
+                </PopoverButtonComponent>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+          <div
+            className="toolbar-item toolbar-item__left"
+            key="3"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "cyData": "station-properties-channel-column-picker",
+                  "enumKeysToDisplayStrings": Map {
+                    "name" => "Name",
+                    "effectiveAt" => "Effective At",
+                    "effectiveUntil" => "Effective Until",
+                    "latitudeDegrees" => "Latitude",
+                    "longitudeDegrees" => "Longitude",
+                    "depthKm" => "Depth",
+                    "elevationKm" => "Elevation",
+                    "nominalSampleRateHz" => "Sample Rate",
+                    "units" => "Units",
+                    "orientationHorizontalDegrees" => "Horizontal Angle",
+                    "orientationVerticalDegrees" => "Vertical Angle",
+                    "calibrationFactor" => "Calibration Factor",
+                    "calibrationPeriod" => "Calibration Period",
+                    "calibrationEffectiveAt" => "Calibration Effective At",
+                    "calibrationTimeShift" => "Calibration Time Shift",
+                    "calibrationStandardDeviation" => "Calibration Std Dev",
+                    "northDisplacementKm" => "North Displacement",
+                    "eastDisplacementKm" => "East Displacement",
+                    "verticalDisplacementKm" => "Vertical Displacement",
+                    "description" => "Description",
+                    "channelDataType" => "Data Type",
+                    "channelBandType" => "Band Type",
+                    "channelInstrumentType" => "Instrument Type",
+                    "channelOrientationCode" => "Orientation Code",
+                    "channelOrientationType" => "Orientation Type",
+                    "calibrationResponseId" => "Calibration ID",
+                    "fapResponseId" => "FAP Resp ID",
+                  },
+                  "enumOfKeys": Object {
+                    "calibrationEffectiveAt": "calibrationEffectiveAt",
+                    "calibrationFactor": "calibrationFactor",
+                    "calibrationPeriod": "calibrationPeriod",
+                    "calibrationResponseId": "calibrationResponseId",
+                    "calibrationStandardDeviation": "calibrationStandardDeviation",
+                    "calibrationTimeShift": "calibrationTimeShift",
+                    "channelBandType": "channelBandType",
+                    "channelDataType": "channelDataType",
+                    "channelInstrumentType": "channelInstrumentType",
+                    "channelOrientationCode": "channelOrientationCode",
+                    "channelOrientationType": "channelOrientationType",
+                    "depthKm": "depthKm",
+                    "description": "description",
+                    "eastDisplacementKm": "eastDisplacementKm",
+                    "effectiveAt": "effectiveAt",
+                    "effectiveUntil": "effectiveUntil",
+                    "elevationKm": "elevationKm",
+                    "fapResponseId": "fapResponseId",
+                    "latitudeDegrees": "latitudeDegrees",
+                    "longitudeDegrees": "longitudeDegrees",
+                    "name": "name",
+                    "nominalSampleRateHz": "nominalSampleRateHz",
+                    "northDisplacementKm": "northDisplacementKm",
+                    "orientationHorizontalDegrees": "orientationHorizontalDegrees",
+                    "orientationVerticalDegrees": "orientationVerticalDegrees",
+                    "units": "units",
+                    "verticalDisplacementKm": "verticalDisplacementKm",
+                  },
+                  "label": "Channel Columns",
+                  "menuLabel": "Channel Columns",
+                  "onChange": [Function],
+                  "rank": 3,
+                  "tooltip": "Select columns to be shown in the channel table below",
+                  "type": "CheckboxList",
+                  "values": Map {
+                    "name" => true,
+                    "effectiveAt" => true,
+                    "effectiveUntil" => true,
+                    "latitudeDegrees" => true,
+                    "longitudeDegrees" => true,
+                    "depthKm" => true,
+                    "elevationKm" => true,
+                    "nominalSampleRateHz" => true,
+                    "units" => true,
+                    "orientationHorizontalDegrees" => true,
+                    "orientationVerticalDegrees" => true,
+                    "calibrationFactor" => true,
+                    "calibrationPeriod" => true,
+                    "calibrationEffectiveAt" => true,
+                    "calibrationTimeShift" => true,
+                    "calibrationStandardDeviation" => true,
+                    "northDisplacementKm" => true,
+                    "eastDisplacementKm" => true,
+                    "verticalDisplacementKm" => true,
+                    "description" => true,
+                    "channelDataType" => false,
+                    "channelBandType" => false,
+                    "channelInstrumentType" => false,
+                    "channelOrientationCode" => false,
+                    "channelOrientationType" => false,
+                    "calibrationResponseId" => true,
+                    "fapResponseId" => true,
+                  },
+                  "widthPx": 220,
+                }
+              }
+              key="3"
+            >
+              <div
+                style={Object {}}
+              >
+                <PopoverButtonComponent
+                  cyData="station-properties-channel-column-picker"
+                  key="3"
+                  label="Channel Columns"
+                  onClick={[Function]}
+                  onPopoverDismissed={[Function]}
+                  popupContent={
+                    <CheckboxList
+                      checkboxEnum={
+                        Object {
+                          "calibrationEffectiveAt": "calibrationEffectiveAt",
+                          "calibrationFactor": "calibrationFactor",
+                          "calibrationPeriod": "calibrationPeriod",
+                          "calibrationResponseId": "calibrationResponseId",
+                          "calibrationStandardDeviation": "calibrationStandardDeviation",
+                          "calibrationTimeShift": "calibrationTimeShift",
+                          "channelBandType": "channelBandType",
+                          "channelDataType": "channelDataType",
+                          "channelInstrumentType": "channelInstrumentType",
+                          "channelOrientationCode": "channelOrientationCode",
+                          "channelOrientationType": "channelOrientationType",
+                          "depthKm": "depthKm",
+                          "description": "description",
+                          "eastDisplacementKm": "eastDisplacementKm",
+                          "effectiveAt": "effectiveAt",
+                          "effectiveUntil": "effectiveUntil",
+                          "elevationKm": "elevationKm",
+                          "fapResponseId": "fapResponseId",
+                          "latitudeDegrees": "latitudeDegrees",
+                          "longitudeDegrees": "longitudeDegrees",
+                          "name": "name",
+                          "nominalSampleRateHz": "nominalSampleRateHz",
+                          "northDisplacementKm": "northDisplacementKm",
+                          "orientationHorizontalDegrees": "orientationHorizontalDegrees",
+                          "orientationVerticalDegrees": "orientationVerticalDegrees",
+                          "units": "units",
+                          "verticalDisplacementKm": "verticalDisplacementKm",
+                        }
+                      }
+                      enumKeysToDisplayStrings={
+                        Map {
+                          "name" => "Name",
+                          "effectiveAt" => "Effective At",
+                          "effectiveUntil" => "Effective Until",
+                          "latitudeDegrees" => "Latitude",
+                          "longitudeDegrees" => "Longitude",
+                          "depthKm" => "Depth",
+                          "elevationKm" => "Elevation",
+                          "nominalSampleRateHz" => "Sample Rate",
+                          "units" => "Units",
+                          "orientationHorizontalDegrees" => "Horizontal Angle",
+                          "orientationVerticalDegrees" => "Vertical Angle",
+                          "calibrationFactor" => "Calibration Factor",
+                          "calibrationPeriod" => "Calibration Period",
+                          "calibrationEffectiveAt" => "Calibration Effective At",
+                          "calibrationTimeShift" => "Calibration Time Shift",
+                          "calibrationStandardDeviation" => "Calibration Std Dev",
+                          "northDisplacementKm" => "North Displacement",
+                          "eastDisplacementKm" => "East Displacement",
+                          "verticalDisplacementKm" => "Vertical Displacement",
+                          "description" => "Description",
+                          "channelDataType" => "Data Type",
+                          "channelBandType" => "Band Type",
+                          "channelInstrumentType" => "Instrument Type",
+                          "channelOrientationCode" => "Orientation Code",
+                          "channelOrientationType" => "Orientation Type",
+                          "calibrationResponseId" => "Calibration ID",
+                          "fapResponseId" => "FAP Resp ID",
+                        }
+                      }
+                      enumToCheckedMap={
+                        Map {
+                          "name" => true,
+                          "effectiveAt" => true,
+                          "effectiveUntil" => true,
+                          "latitudeDegrees" => true,
+                          "longitudeDegrees" => true,
+                          "depthKm" => true,
+                          "elevationKm" => true,
+                          "nominalSampleRateHz" => true,
+                          "units" => true,
+                          "orientationHorizontalDegrees" => true,
+                          "orientationVerticalDegrees" => true,
+                          "calibrationFactor" => true,
+                          "calibrationPeriod" => true,
+                          "calibrationEffectiveAt" => true,
+                          "calibrationTimeShift" => true,
+                          "calibrationStandardDeviation" => true,
+                          "northDisplacementKm" => true,
+                          "eastDisplacementKm" => true,
+                          "verticalDisplacementKm" => true,
+                          "description" => true,
+                          "channelDataType" => false,
+                          "channelBandType" => false,
+                          "channelInstrumentType" => false,
+                          "channelOrientationCode" => false,
+                          "channelOrientationType" => false,
+                          "calibrationResponseId" => true,
+                          "fapResponseId" => true,
+                        }
+                      }
+                      onChange={[Function]}
+                    />
+                  }
+                  tooltip="Select columns to be shown in the channel table below"
+                  widthPx={220}
+                >
+                  <div
+                    data-cy="station-properties-channel-column-picker"
+                  >
+                    <Blueprint3.Button
+                      active={false}
+                      alignText="left"
+                      className="toolbar-button"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "width": "220px",
+                        }
+                      }
+                      title="Select columns to be shown in the channel table below"
+                    >
+                      <button
+                        className="bp3-button bp3-align-left toolbar-button"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        style={
+                          Object {
+                            "width": "220px",
+                          }
+                        }
+                        title="Select columns to be shown in the channel table below"
+                        type="button"
+                      >
+                        <Blueprint3.Icon
+                          key="leftIcon"
+                        />
+                        <span
+                          className="bp3-button-text"
+                          key="text"
+                        >
+                          <span>
+                            Channel Columns
+                          </span>
+                          <Blueprint3.Icon
+                            icon="chevron-down"
+                            title={false}
+                          >
+                            <span
+                              className="bp3-icon bp3-icon-chevron-down"
+                              icon="chevron-down"
+                            >
+                              <svg
+                                data-icon="chevron-down"
+                                height={16}
+                                viewBox="0 0 16 16"
+                                width={16}
+                              >
+                                <path
+                                  d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                                  fillRule="evenodd"
+                                  key="0"
+                                />
+                              </svg>
+                            </span>
+                          </Blueprint3.Icon>
+                        </span>
+                        <Blueprint3.Icon
+                          key="rightIcon"
+                        />
+                      </button>
+                    </Blueprint3.Button>
+                  </div>
+                </PopoverButtonComponent>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+        </div>
+        <div
+          className="toolbar__center-group"
+        >
+          <div
+            className="toolbar__whitespace"
+            style={
+              Object {
+                "width": "44px",
+              }
+            }
+          />
+        </div>
+        <div
+          className="toolbar__right-group"
+        >
+          <div
+            className="toolbar-item
+                    "
+            key="1"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "ianApp": true,
+                  "label": "Station",
+                  "rank": 1,
+                  "tooltip": "Currently Selected Station",
+                  "type": "LabelValue",
+                  "value": "name",
+                  "widthPx": 400,
+                }
+              }
+              key="1"
+            >
+              <div
+                className="toolbar-label-value"
+                style={Object {}}
+              >
+                <LabelValue
+                  ianApp={true}
+                  label="Station"
+                  tooltip="Currently Selected Station"
+                  value="name"
+                >
+                  <div
+                    className="ian-label-value-container"
+                  >
+                    <div
+                      className="ian-label-value__label"
+                    >
+                      Station: 
+                    </div>
+                    <div
+                      className="ian-label-value__value"
+                      style={
+                        Object {
+                          "color": "",
+                        }
+                      }
+                      title="Currently Selected Station"
+                    >
+                      name
+                    </div>
+                  </div>
+                </LabelValue>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+          <div
+            className="toolbar-item
+                    "
+            key="2"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "ianApp": true,
+                  "label": "Lat",
+                  "rank": 2,
+                  "tooltip": "Station Latitude",
+                  "type": "LabelValue",
+                  "value": "10.000°",
+                  "widthPx": 400,
+                }
+              }
+              key="2"
+            >
+              <div
+                className="toolbar-label-value"
+                style={Object {}}
+              >
+                <LabelValue
+                  ianApp={true}
+                  label="Lat"
+                  tooltip="Station Latitude"
+                  value="10.000°"
+                >
+                  <div
+                    className="ian-label-value-container"
+                  >
+                    <div
+                      className="ian-label-value__label"
+                    >
+                      Lat: 
+                    </div>
+                    <div
+                      className="ian-label-value__value"
+                      style={
+                        Object {
+                          "color": "",
+                        }
+                      }
+                      title="Station Latitude"
+                    >
+                      10.000°
+                    </div>
+                  </div>
+                </LabelValue>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+          <div
+            className="toolbar-item
+                    "
+            key="3"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "ianApp": true,
+                  "label": "Lon",
+                  "rank": 3,
+                  "tooltip": "Station Longitude",
+                  "type": "LabelValue",
+                  "value": "10.000°",
+                  "widthPx": 400,
+                }
+              }
+              key="3"
+            >
+              <div
+                className="toolbar-label-value"
+                style={Object {}}
+              >
+                <LabelValue
+                  ianApp={true}
+                  label="Lon"
+                  tooltip="Station Longitude"
+                  value="10.000°"
+                >
+                  <div
+                    className="ian-label-value-container"
+                  >
+                    <div
+                      className="ian-label-value__label"
+                    >
+                      Lon: 
+                    </div>
+                    <div
+                      className="ian-label-value__value"
+                      style={
+                        Object {
+                          "color": "",
+                        }
+                      }
+                      title="Station Longitude"
+                    >
+                      10.000°
+                    </div>
+                  </div>
+                </LabelValue>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+          <div
+            className="toolbar-item
+                    "
+            key="4"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "ianApp": true,
+                  "label": "Depth",
+                  "rank": 4,
+                  "tooltip": "Depth (km)",
+                  "type": "LabelValue",
+                  "value": "100.000km",
+                  "widthPx": 400,
+                }
+              }
+              key="4"
+            >
+              <div
+                className="toolbar-label-value"
+                style={Object {}}
+              >
+                <LabelValue
+                  ianApp={true}
+                  label="Depth"
+                  tooltip="Depth (km)"
+                  value="100.000km"
+                >
+                  <div
+                    className="ian-label-value-container"
+                  >
+                    <div
+                      className="ian-label-value__label"
+                    >
+                      Depth: 
+                    </div>
+                    <div
+                      className="ian-label-value__value"
+                      style={
+                        Object {
+                          "color": "",
+                        }
+                      }
+                      title="Depth (km)"
+                    >
+                      100.000km
+                    </div>
+                  </div>
+                </LabelValue>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+          <div
+            className="toolbar-item
+                    "
+            key="5"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "ianApp": true,
+                  "label": "Elev",
+                  "rank": 5,
+                  "tooltip": "Station Elevation",
+                  "type": "LabelValue",
+                  "value": "100.000km",
+                }
+              }
+              key="5"
+            >
+              <div
+                className="toolbar-label-value"
+                style={Object {}}
+              >
+                <LabelValue
+                  ianApp={true}
+                  label="Elev"
+                  tooltip="Station Elevation"
+                  value="100.000km"
+                >
+                  <div
+                    className="ian-label-value-container"
+                  >
+                    <div
+                      className="ian-label-value__label"
+                    >
+                      Elev: 
+                    </div>
+                    <div
+                      className="ian-label-value__value"
+                      style={
+                        Object {
+                          "color": "",
+                        }
+                      }
+                      title="Station Elevation"
+                    >
+                      100.000km
+                    </div>
+                  </div>
+                </LabelValue>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+          <div
+            className="toolbar-item
+                    "
+            key="6"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "ianApp": true,
+                  "label": "Description",
+                  "rank": 6,
+                  "tooltip": "Station Description",
+                  "type": "LabelValue",
+                  "value": "Unknown",
+                  "widthPx": 400,
+                }
+              }
+              key="6"
+            >
+              <div
+                className="toolbar-label-value"
+                style={Object {}}
+              >
+                <LabelValue
+                  ianApp={true}
+                  label="Description"
+                  tooltip="Station Description"
+                  value="Unknown"
+                >
+                  <div
+                    className="ian-label-value-container"
+                  >
+                    <div
+                      className="ian-label-value__label"
+                    >
+                      Description: 
+                    </div>
+                    <div
+                      className="ian-label-value__value"
+                      style={
+                        Object {
+                          "color": "",
+                        }
+                      }
+                      title="Station Description"
+                    >
+                      Unknown
+                    </div>
+                  </div>
+                </LabelValue>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+          <div
+            className="toolbar-item
+                    "
+            key="7"
+          >
+            <ToolbarItemRenderer
+              addToPopoverMap={[Function]}
+              hasIssue={false}
+              item={
+                Object {
+                  "ianApp": true,
+                  "label": "Type",
+                  "rank": 7,
+                  "tooltip": "Single Station or Array",
+                  "type": "LabelValue",
+                  "value": "Single Station",
+                  "widthPx": 400,
+                }
+              }
+              key="7"
+            >
+              <div
+                className="toolbar-label-value"
+                style={Object {}}
+              >
+                <LabelValue
+                  ianApp={true}
+                  label="Type"
+                  tooltip="Single Station or Array"
+                  value="Single Station"
+                >
+                  <div
+                    className="ian-label-value-container"
+                  >
+                    <div
+                      className="ian-label-value__label"
+                    >
+                      Type: 
+                    </div>
+                    <div
+                      className="ian-label-value__value"
+                      style={
+                        Object {
+                          "color": "",
+                        }
+                      }
+                      title="Single Station or Array"
+                    >
+                      Single Station
+                    </div>
+                  </div>
+                </LabelValue>
+              </div>
+            </ToolbarItemRenderer>
+          </div>
+        </div>
+      </div>
+    </ToolbarComponent>
+  </BaseToolbar>
+</StationPropertiesToolbar>
+`;

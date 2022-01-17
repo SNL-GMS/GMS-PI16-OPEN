@@ -1,0 +1,7 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':frameworks-osd-commonobjects')
+    api project(':frameworks-osd-api')
+    api 'nl.jqno.equalsverifier:equalsverifier'
+}

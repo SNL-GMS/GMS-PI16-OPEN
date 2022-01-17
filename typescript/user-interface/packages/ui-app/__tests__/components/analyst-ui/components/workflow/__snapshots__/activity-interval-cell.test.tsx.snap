@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Activity Interval Cell matches snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Memo()
+    activityInterval={
+      Object {
+        "activeAnalysts": Array [
+          "larry",
+          "moe",
+          "curly",
+        ],
+        "comment": "interval example",
+        "endTime": 1622057187,
+        "modificationTime": 1622057667,
+        "name": "Event Review",
+        "percentAvailable": 100,
+        "processingEndTime": 1622057547,
+        "processingStartTime": 1622057487,
+        "stageName": "AL1",
+        "startTime": 1622053587,
+        "status": "IN_PROGRESS",
+        "storageTime": 1622057607,
+      }
+    }
+  >
+    <div
+      className="interval-cell interval-cell--in-progress interval-cell--activity-cell"
+      data-cy="1622053587-Event Review"
+      key="1622053587"
+      onContextMenu={[Function]}
+      style={
+        Object {
+          "gridColumn": "span 12",
+        }
+      }
+      title="larry + 2"
+    >
+      <span
+        className="workflow-ellipsis"
+      >
+        larry + 2
+      </span>
+    </div>
+  </Memo()>
+</Provider>
+`;
+
+exports[`Activity Interval Cell shallow mounts 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <ContextProvider
+    value={
+      Object {
+        "allActivitiesOpenForSelectedInterval": false,
+        "closeConfirmationPrompt": [MockFunction],
+        "openAnythingConfirmationPrompt": [MockFunction],
+        "openConfirmationPrompt": [MockFunction],
+        "staleStartTime": 1,
+      }
+    }
+  >
+    <Memo()
+      activityInterval={
+        Object {
+          "activeAnalysts": Array [
+            "larry",
+            "moe",
+            "curly",
+          ],
+          "comment": "interval example",
+          "endTime": 1622057187,
+          "modificationTime": 1622057667,
+          "name": "Event Review",
+          "percentAvailable": 100,
+          "processingEndTime": 1622057547,
+          "processingStartTime": 1622057487,
+          "stageName": "AL1",
+          "startTime": 1622053587,
+          "status": "IN_PROGRESS",
+          "storageTime": 1622057607,
+        }
+      }
+    />
+  </ContextProvider>
+</ContextProvider>
+`;

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`station-properties non ideal states match snapshots for nonIdealStateSelectAStation 1`] = `
+<div
+  className="bp3-non-ideal-state"
+>
+  <div
+    className="bp3-non-ideal-state-visual"
+  >
+    <Blueprint3.Icon
+      icon="select"
+      iconSize={60}
+    />
+  </div>
+  <Component>
+    No station selected
+  </Component>
+  <div>
+    Select a station in the Waveform or Map Display to view station properties
+  </div>
+</div>
+`;
+
+exports[`station-properties non ideal states match snapshots for nonIdealStateSelectChannelGroupRow 1`] = `
+<div
+  className="bp3-non-ideal-state"
+>
+  <div
+    className="bp3-non-ideal-state-visual"
+  >
+    <Blueprint3.Icon
+      icon="select"
+      iconSize={60}
+    />
+  </div>
+  <Component>
+    Select a channel group
+  </Component>
+  <div>
+    To populate channel data
+  </div>
+</div>
+`;
+
+exports[`station-properties non ideal states match snapshots for nonIdealStateTooManyStationsSelected 1`] = `
+<div
+  className="bp3-non-ideal-state"
+>
+  <div
+    className="bp3-non-ideal-state-visual"
+  >
+    <Blueprint3.Icon
+      icon="exclude-row"
+      iconSize={60}
+    />
+  </div>
+  <Component>
+    Multiple stations selected
+  </Component>
+  <div>
+    Select a single station to view station properties
+  </div>
+</div>
+`;

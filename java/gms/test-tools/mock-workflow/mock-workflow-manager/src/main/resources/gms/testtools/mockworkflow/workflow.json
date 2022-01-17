@@ -1,0 +1,117 @@
+{
+  "name": "GMS",
+  "stages": [
+    {
+      "name": "Auto Network",
+      "duration": "PT5M",
+      "sequences": [
+        {
+          "name": "Auto Network Seq",
+          "steps": [
+            {
+              "name": "Arrival Beam SP"
+            },
+            {
+              "name": "Association"
+            },
+            {
+              "name": "Conflict Resolution"
+            },
+            {
+              "name": "Origin Beam SP"
+            },
+            {
+              "name": "Partial Processing"
+            }
+          ]
+        }
+      ],
+      "mode": "AUTOMATIC"
+    },
+    {
+      "name": "AL1",
+      "duration": "PT1H",
+      "activities": [
+        {
+          "name": "Event Review",
+          "stationGroup": {
+            "name": "Primary",
+            "effectiveAt": null
+          },
+          "analysisMode": "EVENT_REVIEW"
+        },
+        {
+          "name": "Scan",
+          "stationGroup": {
+            "name": "Primary",
+            "effectiveAt": null
+          },
+          "analysisMode": "SCAN"
+        }
+      ],
+      "mode": "INTERACTIVE"
+    },
+    {
+      "name": "Auto Post-AL1",
+      "duration": "PT1H",
+      "sequences": [
+        {
+          "name": "Auto Post-AL1 Seq",
+          "steps": [
+            {
+              "name": "Origin Beam SP"
+            },
+            {
+              "name": "Origin Beam LP"
+            },
+            {
+              "name": "Recall"
+            },
+            {
+              "name": "Arrival Beam SP"
+            },
+            {
+              "name": "Detection LP"
+            },
+            {
+              "name": "Recall LP"
+            },
+            {
+              "name": "Magnitude"
+            },
+            {
+              "name": "Hydro EDP"
+            },
+            {
+              "name": "HAE"
+            }
+          ]
+        }
+      ],
+      "mode": "AUTOMATIC"
+    },
+    {
+      "name": "AL2",
+      "duration": "PT1H",
+      "activities": [
+        {
+          "name": "Event Review",
+          "stationGroup": {
+            "name": "Primary",
+            "effectiveAt": null
+          },
+          "analysisMode": "EVENT_REVIEW"
+        },
+        {
+          "name": "Scan",
+          "stationGroup": {
+            "name": "Primary",
+            "effectiveAt": null
+          },
+          "analysisMode": "SCAN"
+        }
+      ],
+      "mode": "INTERACTIVE"
+    }
+  ]
+}

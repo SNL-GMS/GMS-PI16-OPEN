@@ -1,0 +1,1619 @@
+{
+  "name": "ILAR",
+  "type": "SeismicArray",
+  "description": "Eielson,_Alaska:_array",
+  "relativePositionsByChannel": {
+      "ILAR.IL16.SHZ": {
+          "northDisplacementKm": 2.441,
+          "eastDisplacementKm": -1.663,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL11.SHZ": {
+          "northDisplacementKm": -3.34,
+          "eastDisplacementKm": -0.516,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL07.SHZ": {
+          "northDisplacementKm": 3.113,
+          "eastDisplacementKm": 2.248,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL31.BHN": {
+          "northDisplacementKm": 0.0,
+          "eastDisplacementKm": 0.0,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL14.SHZ": {
+          "northDisplacementKm": 0.398,
+          "eastDisplacementKm": -4.424,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL01.SHZ": {
+          "northDisplacementKm": 0.021,
+          "eastDisplacementKm": 0.022,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL03.SHZ": {
+          "northDisplacementKm": 0.005,
+          "eastDisplacementKm": 1.681,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL18.SHZ": {
+          "northDisplacementKm": -1.555,
+          "eastDisplacementKm": 5.238,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL05.SHZ": {
+          "northDisplacementKm": 0.185,
+          "eastDisplacementKm": -1.729,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL31.BHE": {
+          "northDisplacementKm": 0.0,
+          "eastDisplacementKm": 0.0,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL04.SHZ": {
+          "northDisplacementKm": -1.607,
+          "eastDisplacementKm": 0.501,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL09.SHZ": {
+          "northDisplacementKm": -0.36,
+          "eastDisplacementKm": 4.926,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL15.SHZ": {
+          "northDisplacementKm": 0.703,
+          "eastDisplacementKm": -2.679,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL12.SHZ": {
+          "northDisplacementKm": -2.982,
+          "eastDisplacementKm": -2.72,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL10.SHZ": {
+          "northDisplacementKm": -2.067,
+          "eastDisplacementKm": 2.073,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL13.SHZ": {
+          "northDisplacementKm": -2.625,
+          "eastDisplacementKm": -4.767,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL02.SHZ": {
+          "northDisplacementKm": 1.479,
+          "eastDisplacementKm": 1.057,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL08.SHZ": {
+          "northDisplacementKm": 2.124,
+          "eastDisplacementKm": 4.27,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL31.BHZ": {
+          "northDisplacementKm": 0.0,
+          "eastDisplacementKm": 0.0,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL17.SHZ": {
+          "northDisplacementKm": 3.989,
+          "eastDisplacementKm": -0.152,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL06.SHZ": {
+          "northDisplacementKm": 0.867,
+          "eastDisplacementKm": -0.826,
+          "verticalDisplacementKm": 0.0
+      },
+      "ILAR.IL19.SHZ": {
+          "northDisplacementKm": -2.818,
+          "eastDisplacementKm": 4.251,
+          "verticalDisplacementKm": 0.0
+      }
+  },
+  "location": {
+      "latitudeDegrees": 64.77145,
+      "longitudeDegrees": -146.88645,
+      "depthKm": 0.0,
+      "elevationKm": 0.387
+  },
+  "channelGroups": [
+      {
+          "name": "IL12",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.74473,
+              "longitudeDegrees": -146.94348,
+              "depthKm": 0.0,
+              "elevationKm": 0.377
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL12.SHZ",
+                  "canonicalName": "ILAR.IL12.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel 41885e78-1779-3943-8991-b0e01753958e with version a37baa31-e66c-3513-8518-ec0722486b09",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.74473,
+                      "longitudeDegrees": -146.94348,
+                      "depthKm": 0.0579,
+                      "elevationKm": 0.377
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL12"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL09",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.76819,
+              "longitudeDegrees": -146.78311,
+              "depthKm": 0.0,
+              "elevationKm": 0.502
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL09.SHZ",
+                  "canonicalName": "ILAR.IL09.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel 9858de5b-b527-392c-8ec0-60c04b6605fa with version b84b9862-2067-3038-a025-d0e17c292a62",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.76819,
+                      "longitudeDegrees": -146.78311,
+                      "depthKm": 0.0549,
+                      "elevationKm": 0.502
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL09"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL07",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.79932,
+              "longitudeDegrees": -146.83924,
+              "depthKm": 0.0,
+              "elevationKm": 0.414
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL07.SHZ",
+                  "canonicalName": "ILAR.IL07.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel 18d21c6e-6cb8-3b26-bc9e-7571b2154bc9 with version 62018e4e-e435-3ca2-a05c-0dd603bb3f09",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.79932,
+                      "longitudeDegrees": -146.83924,
+                      "depthKm": 0.0579,
+                      "elevationKm": 0.414
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL07"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL31",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.77145,
+              "longitudeDegrees": -146.88645,
+              "depthKm": 0.0,
+              "elevationKm": 0.387
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL31.BHN",
+                  "canonicalName": "ILAR.IL31.BHN",
+                  "description": "Raw Channel created from ReferenceChannel 8d75121e-f1de-3fc7-a288-4c432b32c8d2 with version 1aeee71f-66aa-376f-be76-46539c1858ea",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "BROADBAND",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "NORTH_SOUTH",
+                  "channelOrientationCode": "N",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 40.0,
+                  "location": {
+                      "latitudeDegrees": 64.77145,
+                      "longitudeDegrees": -146.88645,
+                      "depthKm": 0.061,
+                      "elevationKm": 0.387
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": 0.0,
+                      "verticalAngleDeg": 90.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL31"
+                  }
+              },
+              {
+                  "name": "ILAR.IL31.BHZ",
+                  "canonicalName": "ILAR.IL31.BHZ",
+                  "description": "Raw Channel created from ReferenceChannel 6a2b13bc-eaab-309b-a86e-2bb601085ef3 with version 9f830dd6-c29a-359d-9240-633f96958318",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "BROADBAND",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 40.0,
+                  "location": {
+                      "latitudeDegrees": 64.77145,
+                      "longitudeDegrees": -146.88645,
+                      "depthKm": 0.061,
+                      "elevationKm": 0.387
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL31"
+                  }
+              },
+              {
+                  "name": "ILAR.IL31.BHE",
+                  "canonicalName": "ILAR.IL31.BHE",
+                  "description": "Raw Channel created from ReferenceChannel 5badb437-78aa-362d-aa23-c4640a8827c8 with version 97114c8f-e9d2-393f-b4cb-6c3b5961167c",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "BROADBAND",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "EAST_WEST",
+                  "channelOrientationCode": "E",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 40.0,
+                  "location": {
+                      "latitudeDegrees": 64.77145,
+                      "longitudeDegrees": -146.88645,
+                      "depthKm": 0.061,
+                      "elevationKm": 0.387
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": 90.0,
+                      "verticalAngleDeg": 90.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL31"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL06",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.77921,
+              "longitudeDegrees": -146.9038,
+              "depthKm": 0.0,
+              "elevationKm": 0.272
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL06.SHZ",
+                  "canonicalName": "ILAR.IL06.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel c17e458e-0edd-3b4b-aa71-f01a4782f076 with version a2a5efb8-a7cd-362b-ae77-94be51a1d463",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.77921,
+                      "longitudeDegrees": -146.9038,
+                      "depthKm": 0.0549,
+                      "elevationKm": 0.272
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL06"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL01",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.77163,
+              "longitudeDegrees": -146.88599,
+              "depthKm": 0.0,
+              "elevationKm": 0.43
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL01.SHZ",
+                  "canonicalName": "ILAR.IL01.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel 2e72f6ee-8265-3f10-b61f-fc85d0939dd4 with version dd6a5ae1-4cec-34e5-a94e-dea4d4921b1d",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.77163,
+                      "longitudeDegrees": -146.88599,
+                      "depthKm": 0.029,
+                      "elevationKm": 0.43
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL01"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL05",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.7731,
+              "longitudeDegrees": -146.92274,
+              "depthKm": 0.0,
+              "elevationKm": 0.401
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL05.SHZ",
+                  "canonicalName": "ILAR.IL05.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel 68af90e7-88ae-3c3f-b577-4fd60779160a with version 7a870107-7bcf-3632-a1f3-f7879d71427d",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.7731,
+                      "longitudeDegrees": -146.92274,
+                      "depthKm": 0.0579,
+                      "elevationKm": 0.401
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL05"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL11",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.74154,
+              "longitudeDegrees": -146.89727,
+              "depthKm": 0.0,
+              "elevationKm": 0.455
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL11.SHZ",
+                  "canonicalName": "ILAR.IL11.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel c34ba17d-6e04-3257-9205-12013022f1f6 with version 174f1e47-c342-368b-80ff-5631052e0915",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.74154,
+                      "longitudeDegrees": -146.89727,
+                      "depthKm": 0.0594,
+                      "elevationKm": 0.455
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL11"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL15",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.77773,
+              "longitudeDegrees": -146.94268,
+              "depthKm": 0.0,
+              "elevationKm": 0.349
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL15.SHZ",
+                  "canonicalName": "ILAR.IL15.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel a537a50b-755a-3a77-ad55-b4251ccb2d84 with version 4cd3f766-f286-3932-a628-bc2c2764b047",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.77773,
+                      "longitudeDegrees": -146.94268,
+                      "depthKm": 0.0585,
+                      "elevationKm": 0.349
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL15"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL13",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.74791,
+              "longitudeDegrees": -146.9864,
+              "depthKm": 0.0,
+              "elevationKm": 0.382
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL13.SHZ",
+                  "canonicalName": "ILAR.IL13.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel d868c1e6-07f0-3b9e-a790-d33019f4e7c2 with version cb410695-70a3-3a28-b43e-818de34518a5",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.74791,
+                      "longitudeDegrees": -146.9864,
+                      "depthKm": 0.0579,
+                      "elevationKm": 0.382
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL13"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL16",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.7933,
+              "longitudeDegrees": -146.92137,
+              "depthKm": 0.0,
+              "elevationKm": 0.393
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL16.SHZ",
+                  "canonicalName": "ILAR.IL16.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel 4f6687ae-b259-3375-a954-f0211f70ffbc with version 0974a1dc-8bf1-3627-b4ad-6b4fe3e78ba7",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.7933,
+                      "longitudeDegrees": -146.92137,
+                      "depthKm": 0.0588,
+                      "elevationKm": 0.393
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL16"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL04",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.75706,
+              "longitudeDegrees": -146.87595,
+              "depthKm": 0.0,
+              "elevationKm": 0.538
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL04.SHZ",
+                  "canonicalName": "ILAR.IL04.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel c196b694-1015-3532-b6d4-3a898c962da7 with version 67367777-1043-397e-b62f-80131a946220",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.75706,
+                      "longitudeDegrees": -146.87595,
+                      "depthKm": 0.0454,
+                      "elevationKm": 0.538
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL04"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL19",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.74619,
+              "longitudeDegrees": -146.79734,
+              "depthKm": 0.0,
+              "elevationKm": 0.561
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL19.SHZ",
+                  "canonicalName": "ILAR.IL19.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel d66c4891-b775-31f4-9697-5a2fd4d8eac8 with version c616e741-b141-3104-96d1-186607f136d7",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.74619,
+                      "longitudeDegrees": -146.79734,
+                      "depthKm": 0.0579,
+                      "elevationKm": 0.561
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL19"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL17",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.80717,
+              "longitudeDegrees": -146.88965,
+              "depthKm": 0.0,
+              "elevationKm": 0.369
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL17.SHZ",
+                  "canonicalName": "ILAR.IL17.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel 01a5f876-db22-3ed5-a219-44a9ab8bdee6 with version eb4e365f-ce4c-3d10-ac72-39f397a2e246",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.80717,
+                      "longitudeDegrees": -146.88965,
+                      "depthKm": 0.0594,
+                      "elevationKm": 0.369
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL17"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL10",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.75293,
+              "longitudeDegrees": -146.84299,
+              "depthKm": 0.0,
+              "elevationKm": 0.599
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL10.SHZ",
+                  "canonicalName": "ILAR.IL10.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel c657d1c5-5910-39f3-a41d-fb25574df2d6 with version a17ed0e2-3364-37c0-9b93-db8d5daa1871",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.75293,
+                      "longitudeDegrees": -146.84299,
+                      "depthKm": 0.029,
+                      "elevationKm": 0.599
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL10"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL02",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.78468,
+              "longitudeDegrees": -146.86427,
+              "depthKm": 0.0,
+              "elevationKm": 0.273
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL02.SHZ",
+                  "canonicalName": "ILAR.IL02.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel a18acfee-a674-392f-a042-9cb67e3b33a1 with version d4e8e344-e4cb-3cd8-a1eb-8d11d5982019",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.78468,
+                      "longitudeDegrees": -146.86427,
+                      "depthKm": 0.0326,
+                      "elevationKm": 0.273
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL02"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL14",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.77498,
+              "longitudeDegrees": -146.97929,
+              "depthKm": 0.0,
+              "elevationKm": 0.236
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL14.SHZ",
+                  "canonicalName": "ILAR.IL14.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel 2ca9b614-9bc4-3349-8150-c151bc7661f0 with version 029a03e8-f79e-389d-84a5-b0edb3752e4d",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.77498,
+                      "longitudeDegrees": -146.97929,
+                      "depthKm": 0.0488,
+                      "elevationKm": 0.236
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL14"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL18",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.75748,
+              "longitudeDegrees": -146.7766,
+              "depthKm": 0.0,
+              "elevationKm": 0.566
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL18.SHZ",
+                  "canonicalName": "ILAR.IL18.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel d53e0f0f-cf23-3955-8b69-a5ddd845b2cd with version 15f7690a-1b73-39a5-8bcd-d062aab27ae4",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.75748,
+                      "longitudeDegrees": -146.7766,
+                      "depthKm": 0.0604,
+                      "elevationKm": 0.566
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL18"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL03",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.77149,
+              "longitudeDegrees": -146.85117,
+              "depthKm": 0.0,
+              "elevationKm": 0.452
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL03.SHZ",
+                  "canonicalName": "ILAR.IL03.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel d27c06df-9433-3814-91a0-472648e12bf5 with version f99b30a3-3d13-373e-8b7a-351face43055",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.77149,
+                      "longitudeDegrees": -146.85117,
+                      "depthKm": 0.0579,
+                      "elevationKm": 0.452
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL03"
+                  }
+              }
+          ]
+      },
+      {
+          "name": "IL08",
+          "description": "Eielson,_Alaska:_array_element",
+          "location": {
+              "latitudeDegrees": 64.79044,
+              "longitudeDegrees": -146.7968,
+              "depthKm": 0.0,
+              "elevationKm": 0.516
+          },
+          "type": "SITE_GROUP",
+          "channels": [
+              {
+                  "name": "ILAR.IL08.SHZ",
+                  "canonicalName": "ILAR.IL08.SHZ",
+                  "description": "Raw Channel created from ReferenceChannel 4575a8e8-5098-3c64-9cc8-614dd5174271 with version 0d04f40e-d6fc-3c87-a2c1-61af86875909",
+                  "station": "ILAR",
+                  "channelDataType": "SEISMIC",
+                  "channelBandType": "SHORT_PERIOD",
+                  "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+                  "channelOrientationType": "VERTICAL",
+                  "channelOrientationCode": "Z",
+                  "units": "NANOMETERS_PER_COUNT",
+                  "nominalSampleRateHz": 20.0,
+                  "location": {
+                      "latitudeDegrees": 64.79044,
+                      "longitudeDegrees": -146.7968,
+                      "depthKm": 0.0305,
+                      "elevationKm": 0.516
+                  },
+                  "orientationAngles": {
+                      "horizontalAngleDeg": -1.0,
+                      "verticalAngleDeg": 0.0
+                  },
+                  "configuredInputs": [],
+                  "processingDefinition": {},
+                  "processingMetadata": {
+                      "CHANNEL_GROUP": "IL08"
+                  }
+              }
+          ]
+      }
+  ],
+  "channels": [
+      {
+          "name": "ILAR.IL12.SHZ",
+          "canonicalName": "ILAR.IL12.SHZ",
+          "description": "Raw Channel created from ReferenceChannel 41885e78-1779-3943-8991-b0e01753958e with version a37baa31-e66c-3513-8518-ec0722486b09",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.74473,
+              "longitudeDegrees": -146.94348,
+              "depthKm": 0.0579,
+              "elevationKm": 0.377
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL12"
+          }
+      },
+      {
+          "name": "ILAR.IL09.SHZ",
+          "canonicalName": "ILAR.IL09.SHZ",
+          "description": "Raw Channel created from ReferenceChannel 9858de5b-b527-392c-8ec0-60c04b6605fa with version b84b9862-2067-3038-a025-d0e17c292a62",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.76819,
+              "longitudeDegrees": -146.78311,
+              "depthKm": 0.0549,
+              "elevationKm": 0.502
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL09"
+          }
+      },
+      {
+          "name": "ILAR.IL07.SHZ",
+          "canonicalName": "ILAR.IL07.SHZ",
+          "description": "Raw Channel created from ReferenceChannel 18d21c6e-6cb8-3b26-bc9e-7571b2154bc9 with version 62018e4e-e435-3ca2-a05c-0dd603bb3f09",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.79932,
+              "longitudeDegrees": -146.83924,
+              "depthKm": 0.0579,
+              "elevationKm": 0.414
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL07"
+          }
+      },
+      {
+          "name": "ILAR.IL31.BHN",
+          "canonicalName": "ILAR.IL31.BHN",
+          "description": "Raw Channel created from ReferenceChannel 8d75121e-f1de-3fc7-a288-4c432b32c8d2 with version 1aeee71f-66aa-376f-be76-46539c1858ea",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "BROADBAND",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "NORTH_SOUTH",
+          "channelOrientationCode": "N",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 40.0,
+          "location": {
+              "latitudeDegrees": 64.77145,
+              "longitudeDegrees": -146.88645,
+              "depthKm": 0.061,
+              "elevationKm": 0.387
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": 0.0,
+              "verticalAngleDeg": 90.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL31"
+          }
+      },
+      {
+          "name": "ILAR.IL31.BHZ",
+          "canonicalName": "ILAR.IL31.BHZ",
+          "description": "Raw Channel created from ReferenceChannel 6a2b13bc-eaab-309b-a86e-2bb601085ef3 with version 9f830dd6-c29a-359d-9240-633f96958318",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "BROADBAND",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 40.0,
+          "location": {
+              "latitudeDegrees": 64.77145,
+              "longitudeDegrees": -146.88645,
+              "depthKm": 0.061,
+              "elevationKm": 0.387
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL31"
+          }
+      },
+      {
+          "name": "ILAR.IL31.BHE",
+          "canonicalName": "ILAR.IL31.BHE",
+          "description": "Raw Channel created from ReferenceChannel 5badb437-78aa-362d-aa23-c4640a8827c8 with version 97114c8f-e9d2-393f-b4cb-6c3b5961167c",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "BROADBAND",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "EAST_WEST",
+          "channelOrientationCode": "E",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 40.0,
+          "location": {
+              "latitudeDegrees": 64.77145,
+              "longitudeDegrees": -146.88645,
+              "depthKm": 0.061,
+              "elevationKm": 0.387
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": 90.0,
+              "verticalAngleDeg": 90.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL31"
+          }
+      },
+      {
+          "name": "ILAR.IL06.SHZ",
+          "canonicalName": "ILAR.IL06.SHZ",
+          "description": "Raw Channel created from ReferenceChannel c17e458e-0edd-3b4b-aa71-f01a4782f076 with version a2a5efb8-a7cd-362b-ae77-94be51a1d463",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.77921,
+              "longitudeDegrees": -146.9038,
+              "depthKm": 0.0549,
+              "elevationKm": 0.272
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL06"
+          }
+      },
+      {
+          "name": "ILAR.IL01.SHZ",
+          "canonicalName": "ILAR.IL01.SHZ",
+          "description": "Raw Channel created from ReferenceChannel 2e72f6ee-8265-3f10-b61f-fc85d0939dd4 with version dd6a5ae1-4cec-34e5-a94e-dea4d4921b1d",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.77163,
+              "longitudeDegrees": -146.88599,
+              "depthKm": 0.029,
+              "elevationKm": 0.43
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL01"
+          }
+      },
+      {
+          "name": "ILAR.IL05.SHZ",
+          "canonicalName": "ILAR.IL05.SHZ",
+          "description": "Raw Channel created from ReferenceChannel 68af90e7-88ae-3c3f-b577-4fd60779160a with version 7a870107-7bcf-3632-a1f3-f7879d71427d",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.7731,
+              "longitudeDegrees": -146.92274,
+              "depthKm": 0.0579,
+              "elevationKm": 0.401
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL05"
+          }
+      },
+      {
+          "name": "ILAR.IL11.SHZ",
+          "canonicalName": "ILAR.IL11.SHZ",
+          "description": "Raw Channel created from ReferenceChannel c34ba17d-6e04-3257-9205-12013022f1f6 with version 174f1e47-c342-368b-80ff-5631052e0915",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.74154,
+              "longitudeDegrees": -146.89727,
+              "depthKm": 0.0594,
+              "elevationKm": 0.455
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL11"
+          }
+      },
+      {
+          "name": "ILAR.IL15.SHZ",
+          "canonicalName": "ILAR.IL15.SHZ",
+          "description": "Raw Channel created from ReferenceChannel a537a50b-755a-3a77-ad55-b4251ccb2d84 with version 4cd3f766-f286-3932-a628-bc2c2764b047",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.77773,
+              "longitudeDegrees": -146.94268,
+              "depthKm": 0.0585,
+              "elevationKm": 0.349
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL15"
+          }
+      },
+      {
+          "name": "ILAR.IL13.SHZ",
+          "canonicalName": "ILAR.IL13.SHZ",
+          "description": "Raw Channel created from ReferenceChannel d868c1e6-07f0-3b9e-a790-d33019f4e7c2 with version cb410695-70a3-3a28-b43e-818de34518a5",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.74791,
+              "longitudeDegrees": -146.9864,
+              "depthKm": 0.0579,
+              "elevationKm": 0.382
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL13"
+          }
+      },
+      {
+          "name": "ILAR.IL16.SHZ",
+          "canonicalName": "ILAR.IL16.SHZ",
+          "description": "Raw Channel created from ReferenceChannel 4f6687ae-b259-3375-a954-f0211f70ffbc with version 0974a1dc-8bf1-3627-b4ad-6b4fe3e78ba7",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.7933,
+              "longitudeDegrees": -146.92137,
+              "depthKm": 0.0588,
+              "elevationKm": 0.393
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL16"
+          }
+      },
+      {
+          "name": "ILAR.IL04.SHZ",
+          "canonicalName": "ILAR.IL04.SHZ",
+          "description": "Raw Channel created from ReferenceChannel c196b694-1015-3532-b6d4-3a898c962da7 with version 67367777-1043-397e-b62f-80131a946220",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.75706,
+              "longitudeDegrees": -146.87595,
+              "depthKm": 0.0454,
+              "elevationKm": 0.538
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL04"
+          }
+      },
+      {
+          "name": "ILAR.IL19.SHZ",
+          "canonicalName": "ILAR.IL19.SHZ",
+          "description": "Raw Channel created from ReferenceChannel d66c4891-b775-31f4-9697-5a2fd4d8eac8 with version c616e741-b141-3104-96d1-186607f136d7",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.74619,
+              "longitudeDegrees": -146.79734,
+              "depthKm": 0.0579,
+              "elevationKm": 0.561
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL19"
+          }
+      },
+      {
+          "name": "ILAR.IL17.SHZ",
+          "canonicalName": "ILAR.IL17.SHZ",
+          "description": "Raw Channel created from ReferenceChannel 01a5f876-db22-3ed5-a219-44a9ab8bdee6 with version eb4e365f-ce4c-3d10-ac72-39f397a2e246",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.80717,
+              "longitudeDegrees": -146.88965,
+              "depthKm": 0.0594,
+              "elevationKm": 0.369
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL17"
+          }
+      },
+      {
+          "name": "ILAR.IL10.SHZ",
+          "canonicalName": "ILAR.IL10.SHZ",
+          "description": "Raw Channel created from ReferenceChannel c657d1c5-5910-39f3-a41d-fb25574df2d6 with version a17ed0e2-3364-37c0-9b93-db8d5daa1871",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.75293,
+              "longitudeDegrees": -146.84299,
+              "depthKm": 0.029,
+              "elevationKm": 0.599
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL10"
+          }
+      },
+      {
+          "name": "ILAR.IL02.SHZ",
+          "canonicalName": "ILAR.IL02.SHZ",
+          "description": "Raw Channel created from ReferenceChannel a18acfee-a674-392f-a042-9cb67e3b33a1 with version d4e8e344-e4cb-3cd8-a1eb-8d11d5982019",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.78468,
+              "longitudeDegrees": -146.86427,
+              "depthKm": 0.0326,
+              "elevationKm": 0.273
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL02"
+          }
+      },
+      {
+          "name": "ILAR.IL14.SHZ",
+          "canonicalName": "ILAR.IL14.SHZ",
+          "description": "Raw Channel created from ReferenceChannel 2ca9b614-9bc4-3349-8150-c151bc7661f0 with version 029a03e8-f79e-389d-84a5-b0edb3752e4d",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.77498,
+              "longitudeDegrees": -146.97929,
+              "depthKm": 0.0488,
+              "elevationKm": 0.236
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL14"
+          }
+      },
+      {
+          "name": "ILAR.IL18.SHZ",
+          "canonicalName": "ILAR.IL18.SHZ",
+          "description": "Raw Channel created from ReferenceChannel d53e0f0f-cf23-3955-8b69-a5ddd845b2cd with version 15f7690a-1b73-39a5-8bcd-d062aab27ae4",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.75748,
+              "longitudeDegrees": -146.7766,
+              "depthKm": 0.0604,
+              "elevationKm": 0.566
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL18"
+          }
+      },
+      {
+          "name": "ILAR.IL03.SHZ",
+          "canonicalName": "ILAR.IL03.SHZ",
+          "description": "Raw Channel created from ReferenceChannel d27c06df-9433-3814-91a0-472648e12bf5 with version f99b30a3-3d13-373e-8b7a-351face43055",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.77149,
+              "longitudeDegrees": -146.85117,
+              "depthKm": 0.0579,
+              "elevationKm": 0.452
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL03"
+          }
+      },
+      {
+          "name": "ILAR.IL08.SHZ",
+          "canonicalName": "ILAR.IL08.SHZ",
+          "description": "Raw Channel created from ReferenceChannel 4575a8e8-5098-3c64-9cc8-614dd5174271 with version 0d04f40e-d6fc-3c87-a2c1-61af86875909",
+          "station": "ILAR",
+          "channelDataType": "SEISMIC",
+          "channelBandType": "SHORT_PERIOD",
+          "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+          "channelOrientationType": "VERTICAL",
+          "channelOrientationCode": "Z",
+          "units": "NANOMETERS_PER_COUNT",
+          "nominalSampleRateHz": 20.0,
+          "location": {
+              "latitudeDegrees": 64.79044,
+              "longitudeDegrees": -146.7968,
+              "depthKm": 0.0305,
+              "elevationKm": 0.516
+          },
+          "orientationAngles": {
+              "horizontalAngleDeg": -1.0,
+              "verticalAngleDeg": 0.0
+          },
+          "configuredInputs": [],
+          "processingDefinition": {},
+          "processingMetadata": {
+              "CHANNEL_GROUP": "IL08"
+          }
+      }
+  ]
+}

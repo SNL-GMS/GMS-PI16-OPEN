@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a component 1`] = `
+<div
+  class="ag-dark"
+  style="flex: 1 1 auto; position: relative; width: 700px;"
+>
+  <div
+    class="form"
+    style="min-width: 456px;"
+  >
+    <div
+      class="form__header"
+    >
+      <div>
+        Details
+      </div>
+    </div>
+    <div
+      class="form__panel-selector"
+    >
+      <div
+        class="bp3-button-group"
+      >
+        <button
+          class="bp3-button bp3-active"
+          type="button"
+          value="default"
+        >
+          <span
+            class="bp3-button-text"
+          >
+            key1
+          </span>
+        </button>
+        <button
+          class="bp3-button"
+          type="button"
+          value="key2"
+        >
+          <span
+            class="bp3-button-text"
+          >
+            key2
+          </span>
+        </button>
+        <button
+          class="bp3-button"
+          type="button"
+          value="key3"
+        >
+          <span
+            class="bp3-button-text"
+          >
+            key3
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      class="form-body"
+    >
+      <div
+        class="form-item"
+      >
+        <div
+          class="form-label"
+          style="font-size: 1em; min-width: 11em;"
+        >
+          Label One:
+        </div>
+        <div
+          class="form-value form-value--uneditable"
+          style="width: 280px;"
+          title=""
+        >
+          Example Value
+        </div>
+      </div>
+      <div
+        class="form-item"
+      >
+        <div
+          class="form-label"
+          style="font-size: 1em; min-width: 11em;"
+        >
+          Label Two:
+        </div>
+        <div
+          class="form-value form-value--uneditable form-value--time"
+          style="width: 280px;"
+          title=""
+        >
+          test two
+        </div>
+      </div>
+      <div
+        class="form-item"
+      >
+        <div
+          class="form-label"
+          style="font-size: 1em; min-width: 11em;"
+        >
+          Label Three
+        </div>
+        <div
+          class="form-value form-value--uneditable"
+          style="width: 280px;"
+          title=""
+        >
+          Example Display Text
+        </div>
+      </div>
+    </div>
+    <div
+      class="form__buttons"
+    >
+      <div
+        class="form__buttons--right"
+      >
+        <button
+          class="bp3-button form__button"
+          data-cy="cancel-details"
+          type="button"
+        >
+          <span
+            class="bp3-button-text"
+          >
+            Close
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

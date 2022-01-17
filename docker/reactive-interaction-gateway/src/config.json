@@ -1,0 +1,17 @@
+[
+    {
+        "id": "mock-service",
+        "name": "mock-service",
+        "version_data": {
+            "default": {
+                "endpoints": [
+                ]
+            }
+        },
+        "proxy": {
+            "use_env": false,
+            "target_url": "http://mock-data-server",
+            "port": 3000
+        }
+    }
+]

@@ -1,0 +1,1179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`quieting menu CancelMenuItem can be created 1`] = `
+<CancelMenuItem
+  channelMonitorPairs={
+    Array [
+      Object {
+        "channelName": "name",
+        "monitorType": "MISSING",
+      },
+    ]
+  }
+  position={
+    Object {
+      "left": 10,
+      "top": 10,
+    }
+  }
+  quietChannelMonitorStatuses={[MockFunction]}
+  quietingDurationSelections={
+    Array [
+      300000,
+      900000,
+      3600000,
+      86400000,
+      604800000,
+    ]
+  }
+  stationName=""
+>
+  <Blueprint3.MenuItem
+    data-cy="quiet-cancel"
+    disabled={true}
+    multiline={false}
+    onClick={[Function]}
+    popoverProps={Object {}}
+    shouldDismissPopover={true}
+    text="Cancel quiet period"
+  >
+    <li
+      className=""
+    >
+      <a
+        className="bp3-menu-item bp3-disabled"
+        data-cy="quiet-cancel"
+        tabIndex={-1}
+      >
+        <Blueprint3.Icon />
+        <Blueprint3.Text
+          className="bp3-fill"
+          ellipsize={true}
+        >
+          <div
+            className="bp3-text-overflow-ellipsis bp3-fill"
+          >
+            Cancel quiet period
+          </div>
+        </Blueprint3.Text>
+      </a>
+    </li>
+  </Blueprint3.MenuItem>
+</CancelMenuItem>
+`;
+
+exports[`quieting menu QuiteMenuItem can be created 1`] = `
+<QuiteMenuItem
+  channelMonitorPairs={
+    Array [
+      Object {
+        "channelName": "name",
+        "monitorType": "MISSING",
+      },
+    ]
+  }
+  position={
+    Object {
+      "left": 10,
+      "top": 10,
+    }
+  }
+  quietChannelMonitorStatuses={[MockFunction]}
+  quietingDurationSelections={
+    Array [
+      300000,
+      900000,
+      3600000,
+      86400000,
+      604800000,
+    ]
+  }
+  stationName=""
+>
+  <Blueprint3.MenuItem
+    data-cy="quiet-without-comment"
+    disabled={false}
+    multiline={false}
+    popoverProps={Object {}}
+    shouldDismissPopover={true}
+    text="Quiet for..."
+  >
+    <li
+      className="bp3-submenu"
+    >
+      <Blueprint3.Popover
+        autoFocus={false}
+        boundary="scrollParent"
+        captureDismiss={false}
+        content={
+          <Blueprint3.Menu>
+            <Blueprint3.MenuItem
+              disabled={false}
+              multiline={false}
+              onClick={[Function]}
+              popoverProps={Object {}}
+              shouldDismissPopover={true}
+              text="5 minutes"
+            />
+            <Blueprint3.MenuItem
+              disabled={false}
+              multiline={false}
+              onClick={[Function]}
+              popoverProps={Object {}}
+              shouldDismissPopover={true}
+              text="15 minutes"
+            />
+            <Blueprint3.MenuItem
+              disabled={false}
+              multiline={false}
+              onClick={[Function]}
+              popoverProps={Object {}}
+              shouldDismissPopover={true}
+              text="1 hour"
+            />
+            <Blueprint3.MenuItem
+              disabled={false}
+              multiline={false}
+              onClick={[Function]}
+              popoverProps={Object {}}
+              shouldDismissPopover={true}
+              text="1 day"
+            />
+            <Blueprint3.MenuItem
+              disabled={false}
+              multiline={false}
+              onClick={[Function]}
+              popoverProps={Object {}}
+              shouldDismissPopover={true}
+              text="7 days"
+            />
+          </Blueprint3.Menu>
+        }
+        defaultIsOpen={false}
+        disabled={false}
+        enforceFocus={false}
+        fill={false}
+        hasBackdrop={false}
+        hoverCloseDelay={0}
+        hoverOpenDelay={150}
+        inheritDarkTheme={true}
+        interactionKind="hover"
+        minimal={true}
+        modifiers={
+          Object {
+            "flip": Object {
+              "boundariesElement": "viewport",
+              "padding": 20,
+            },
+            "offset": Object {
+              "offset": -5,
+            },
+            "preventOverflow": Object {
+              "boundariesElement": "viewport",
+              "padding": 20,
+            },
+          }
+        }
+        openOnTargetFocus={true}
+        popoverClassName="bp3-submenu"
+        position="right-top"
+        target={
+          <a
+            className="bp3-menu-item"
+            data-cy="quiet-without-comment"
+          >
+            <Blueprint3.Icon />
+            <Blueprint3.Text
+              className="bp3-fill"
+              ellipsize={true}
+            >
+              Quiet for...
+            </Blueprint3.Text>
+            <Blueprint3.Icon
+              icon="caret-right"
+            />
+          </a>
+        }
+        targetTagName="span"
+        transitionDuration={300}
+        usePortal={false}
+        wrapperTagName="span"
+      >
+        <Manager>
+          <span
+            className="bp3-popover-wrapper"
+          >
+            <Reference
+              innerRef={[Function]}
+            >
+              <InnerReference
+                innerRef={[Function]}
+                setReferenceNode={[Function]}
+              >
+                <Blueprint3.ResizeSensor
+                  onResize={[Function]}
+                >
+                  <span
+                    className="bp3-popover-target"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                  >
+                    <a
+                      className="bp3-menu-item"
+                      data-cy="quiet-without-comment"
+                      tabIndex={0}
+                    >
+                      <Blueprint3.Icon />
+                      <Blueprint3.Text
+                        className="bp3-fill"
+                        ellipsize={true}
+                      >
+                        <div
+                          className="bp3-text-overflow-ellipsis bp3-fill"
+                        >
+                          Quiet for...
+                        </div>
+                      </Blueprint3.Text>
+                      <Blueprint3.Icon
+                        icon="caret-right"
+                      >
+                        <span
+                          className="bp3-icon bp3-icon-caret-right"
+                          icon="caret-right"
+                        >
+                          <svg
+                            data-icon="caret-right"
+                            height={16}
+                            viewBox="0 0 16 16"
+                            width={16}
+                          >
+                            <desc>
+                              caret-right
+                            </desc>
+                            <path
+                              d="M11 8c0-.15-.07-.28-.17-.37l-4-3.5A.495.495 0 006 4.5v7a.495.495 0 00.83.37l4-3.5c.1-.09.17-.22.17-.37z"
+                              fillRule="evenodd"
+                              key="0"
+                            />
+                          </svg>
+                        </span>
+                      </Blueprint3.Icon>
+                    </a>
+                  </span>
+                </Blueprint3.ResizeSensor>
+              </InnerReference>
+            </Reference>
+            <Blueprint3.Overlay
+              autoFocus={false}
+              backdropClassName="bp3-popover-backdrop"
+              backdropProps={Object {}}
+              canEscapeKeyClose={true}
+              canOutsideClickClose={false}
+              enforceFocus={false}
+              hasBackdrop={false}
+              isOpen={false}
+              lazy={true}
+              onClose={[Function]}
+              transitionDuration={300}
+              transitionName="bp3-popover"
+              usePortal={false}
+            />
+          </span>
+        </Manager>
+      </Blueprint3.Popover>
+    </li>
+  </Blueprint3.MenuItem>
+</QuiteMenuItem>
+`;
+
+exports[`quieting menu QuiteWithCommentDialog can be created 1`] = `
+<QuiteWithCommentDialog
+  channelMonitorPairs={
+    Array [
+      Object {
+        "channelName": "name",
+        "monitorType": "MISSING",
+      },
+    ]
+  }
+  position={
+    Object {
+      "left": 10,
+      "top": 10,
+    }
+  }
+  quietChannelMonitorStatuses={[MockFunction]}
+  quietingDurationSelections={
+    Array [
+      300000,
+      900000,
+      3600000,
+      86400000,
+      604800000,
+    ]
+  }
+  stationName=""
+>
+  <div>
+    <Form
+      defaultPanel={
+        Object {
+          "formItems": Array [
+            Object {
+              "displayText": "",
+              "itemKey": "stationLabel",
+              "itemType": "Display",
+              "labelText": "Station",
+              "tooltip": "",
+            },
+            Object {
+              "displayText": "name",
+              "itemKey": "channelLabel",
+              "itemType": "Display",
+              "labelText": "Channel",
+              "tooltip": "name",
+            },
+            Object {
+              "displayText": "Missing",
+              "itemKey": "monitorLabel",
+              "itemType": "Display",
+              "labelText": "Monitor",
+              "tooltip": "MISSING",
+            },
+            Object {
+              "data-cy": "quiet-duration",
+              "itemKey": "duration",
+              "itemType": "Input",
+              "labelText": "Quiet for",
+              "value": Object {
+                "defaultValue": 300000,
+                "params": Object {
+                  "dropDownItems": Array [
+                    300000,
+                    900000,
+                    3600000,
+                    86400000,
+                    604800000,
+                  ],
+                  "dropdownText": Array [
+                    "5 minutes",
+                    "15 minutes",
+                    "1 hour",
+                    "1 day",
+                    "7 days",
+                  ],
+                  "tooltip": "Select the duration to quiet",
+                },
+                "type": "DropDown",
+              },
+            },
+            Object {
+              "data-cy": "quiet-comment",
+              "itemKey": "comment",
+              "itemType": "Input",
+              "labelText": "Comment",
+              "topAlign": true,
+              "value": Object {
+                "defaultValue": "",
+                "params": Object {
+                  "maxChar": 1024,
+                  "tooltip": "Enter the comment",
+                },
+                "type": "TextArea",
+              },
+            },
+          ],
+          "name": "QuietWithComment",
+        }
+      }
+      header="Quiet"
+      onCancel={[Function]}
+      onSubmit={[Function]}
+      requiresModificationForSubmit={true}
+      submitButtonText="Quiet"
+    >
+      <div
+        className="form"
+        style={
+          Object {
+            "minWidth": "440px",
+          }
+        }
+      >
+        <div
+          className="form__header"
+        >
+          <div>
+            Quiet
+          </div>
+        </div>
+        <div
+          className="form__panel-selector"
+        />
+        <FormBody
+          formItemStates={
+            Map {
+              "stationLabel" => Object {
+                "hasHold": false,
+                "modified": false,
+                "value": undefined,
+              },
+              "channelLabel" => Object {
+                "hasHold": false,
+                "modified": false,
+                "value": undefined,
+              },
+              "monitorLabel" => Object {
+                "hasHold": false,
+                "modified": false,
+                "value": undefined,
+              },
+              "duration" => Object {
+                "hasHold": false,
+                "modified": false,
+                "value": Object {
+                  "defaultValue": 300000,
+                  "params": Object {
+                    "dropDownItems": Array [
+                      300000,
+                      900000,
+                      3600000,
+                      86400000,
+                      604800000,
+                    ],
+                    "dropdownText": Array [
+                      "5 minutes",
+                      "15 minutes",
+                      "1 hour",
+                      "1 day",
+                      "7 days",
+                    ],
+                    "tooltip": "Select the duration to quiet",
+                  },
+                  "type": "DropDown",
+                },
+              },
+              "comment" => Object {
+                "hasHold": false,
+                "modified": false,
+                "value": Object {
+                  "defaultValue": "",
+                  "params": Object {
+                    "maxChar": 1024,
+                    "tooltip": "Enter the comment",
+                  },
+                  "type": "TextArea",
+                },
+              },
+            }
+          }
+          formItems={
+            Array [
+              Object {
+                "displayText": "",
+                "itemKey": "stationLabel",
+                "itemType": "Display",
+                "labelText": "Station",
+                "tooltip": "",
+              },
+              Object {
+                "displayText": "name",
+                "itemKey": "channelLabel",
+                "itemType": "Display",
+                "labelText": "Channel",
+                "tooltip": "name",
+              },
+              Object {
+                "displayText": "Missing",
+                "itemKey": "monitorLabel",
+                "itemType": "Display",
+                "labelText": "Monitor",
+                "tooltip": "MISSING",
+              },
+              Object {
+                "data-cy": "quiet-duration",
+                "itemKey": "duration",
+                "itemType": "Input",
+                "labelText": "Quiet for",
+                "value": Object {
+                  "defaultValue": 300000,
+                  "params": Object {
+                    "dropDownItems": Array [
+                      300000,
+                      900000,
+                      3600000,
+                      86400000,
+                      604800000,
+                    ],
+                    "dropdownText": Array [
+                      "5 minutes",
+                      "15 minutes",
+                      "1 hour",
+                      "1 day",
+                      "7 days",
+                    ],
+                    "tooltip": "Select the duration to quiet",
+                  },
+                  "type": "DropDown",
+                },
+              },
+              Object {
+                "data-cy": "quiet-comment",
+                "itemKey": "comment",
+                "itemType": "Input",
+                "labelText": "Comment",
+                "topAlign": true,
+                "value": Object {
+                  "defaultValue": "",
+                  "params": Object {
+                    "maxChar": 1024,
+                    "tooltip": "Enter the comment",
+                  },
+                  "type": "TextArea",
+                },
+              },
+            ]
+          }
+          labelFontSizeEm={1}
+          maxLabelWidthEm={10}
+          onHoldChange={[Function]}
+          onValue={[Function]}
+        >
+          <div
+            className="form-body"
+          >
+            <div
+              className="form-item"
+              key="Station"
+            >
+              <FormLabel
+                fontSizeEm={1}
+                modified={false}
+                text="Station"
+                widthEm={10}
+              >
+                <div
+                  className="form-label"
+                  style={
+                    Object {
+                      "fontSize": "1em",
+                      "minWidth": "10em",
+                    }
+                  }
+                >
+                  Station:
+                </div>
+              </FormLabel>
+              <FormDisplayText
+                displayText=""
+                tooltip=""
+                widthPx={280}
+              >
+                <div
+                  className="form-value form-value--uneditable"
+                  style={
+                    Object {
+                      "width": "280px",
+                    }
+                  }
+                  title=""
+                />
+              </FormDisplayText>
+            </div>
+            <div
+              className="form-item"
+              key="Channel"
+            >
+              <FormLabel
+                fontSizeEm={1}
+                modified={false}
+                text="Channel"
+                widthEm={10}
+              >
+                <div
+                  className="form-label"
+                  style={
+                    Object {
+                      "fontSize": "1em",
+                      "minWidth": "10em",
+                    }
+                  }
+                >
+                  Channel:
+                </div>
+              </FormLabel>
+              <FormDisplayText
+                displayText="name"
+                tooltip="name"
+                widthPx={280}
+              >
+                <div
+                  className="form-value form-value--uneditable"
+                  style={
+                    Object {
+                      "width": "280px",
+                    }
+                  }
+                  title="name"
+                >
+                  name
+                </div>
+              </FormDisplayText>
+            </div>
+            <div
+              className="form-item"
+              key="Monitor"
+            >
+              <FormLabel
+                fontSizeEm={1}
+                modified={false}
+                text="Monitor"
+                widthEm={10}
+              >
+                <div
+                  className="form-label"
+                  style={
+                    Object {
+                      "fontSize": "1em",
+                      "minWidth": "10em",
+                    }
+                  }
+                >
+                  Monitor:
+                </div>
+              </FormLabel>
+              <FormDisplayText
+                displayText="Missing"
+                tooltip="MISSING"
+                widthPx={280}
+              >
+                <div
+                  className="form-value form-value--uneditable"
+                  style={
+                    Object {
+                      "width": "280px",
+                    }
+                  }
+                  title="MISSING"
+                >
+                  Missing
+                </div>
+              </FormDisplayText>
+            </div>
+            <div
+              className="form-item"
+              key="Quiet for"
+            >
+              <FormLabel
+                fontSizeEm={1}
+                modified={false}
+                text="Quiet for"
+                widthEm={10}
+              >
+                <div
+                  className="form-label"
+                  style={
+                    Object {
+                      "fontSize": "1em",
+                      "minWidth": "10em",
+                    }
+                  }
+                >
+                  Quiet for:
+                </div>
+              </FormLabel>
+              <FormValue
+                data-cy="quiet-duration"
+                itemKey="duration"
+                onHoldChange={[Function]}
+                onValue={[Function]}
+                value={
+                  Object {
+                    "defaultValue": 300000,
+                    "params": Object {
+                      "dropDownItems": Array [
+                        300000,
+                        900000,
+                        3600000,
+                        86400000,
+                        604800000,
+                      ],
+                      "dropdownText": Array [
+                        "5 minutes",
+                        "15 minutes",
+                        "1 hour",
+                        "1 day",
+                        "7 days",
+                      ],
+                      "tooltip": "Select the duration to quiet",
+                    },
+                    "type": "DropDown",
+                  }
+                }
+                widthPx={280}
+              >
+                <div
+                  className="form-value"
+                  style={
+                    Object {
+                      "width": "280px",
+                    }
+                  }
+                >
+                  <Widget
+                    data-cy="quiet-duration"
+                    defaultValue={300000}
+                    isValid={true}
+                    onMaybeValue={[Function]}
+                    onValidStatus={[Function]}
+                    params={
+                      Object {
+                        "dropDownItems": Array [
+                          300000,
+                          900000,
+                          3600000,
+                          86400000,
+                          604800000,
+                        ],
+                        "dropdownText": Array [
+                          "5 minutes",
+                          "15 minutes",
+                          "1 hour",
+                          "1 day",
+                          "7 days",
+                        ],
+                        "tooltip": "Select the duration to quiet",
+                      }
+                    }
+                    type="DropDown"
+                  >
+                    <DropDown
+                      dropDownItems={
+                        Array [
+                          300000,
+                          900000,
+                          3600000,
+                          86400000,
+                          604800000,
+                        ]
+                      }
+                      dropdownText={
+                        Array [
+                          "5 minutes",
+                          "15 minutes",
+                          "1 hour",
+                          "1 day",
+                          "7 days",
+                        ]
+                      }
+                      onMaybeValue={[Function]}
+                      title="Select the duration to quiet"
+                      value={300000}
+                    >
+                      <div
+                        className="dropdown-container"
+                      >
+                        <span
+                          className="dropdown-selector"
+                        >
+                          <HTMLSelect
+                            onChange={[Function]}
+                            title="Select the duration to quiet"
+                            value={300000}
+                          >
+                            <div
+                              className="bp3-html-select"
+                            >
+                              <select
+                                multiple={false}
+                                onChange={[Function]}
+                                title="Select the duration to quiet"
+                                value={300000}
+                              >
+                                <option
+                                  key="0"
+                                  value={300000}
+                                >
+                                  5 minutes
+                                </option>
+                                <option
+                                  key="1"
+                                  value={900000}
+                                >
+                                  15 minutes
+                                </option>
+                                <option
+                                  key="2"
+                                  value={3600000}
+                                >
+                                  1 hour
+                                </option>
+                                <option
+                                  key="3"
+                                  value={86400000}
+                                >
+                                  1 day
+                                </option>
+                                <option
+                                  key="4"
+                                  value={604800000}
+                                >
+                                  7 days
+                                </option>
+                              </select>
+                              <Blueprint3.Icon
+                                icon="double-caret-vertical"
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-double-caret-vertical"
+                                  icon="double-caret-vertical"
+                                >
+                                  <svg
+                                    data-icon="double-caret-vertical"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <desc>
+                                      double-caret-vertical
+                                    </desc>
+                                    <path
+                                      d="M5 7h6a1.003 1.003 0 00.71-1.71l-3-3C8.53 2.11 8.28 2 8 2s-.53.11-.71.29l-3 3A1.003 1.003 0 005 7zm6 2H5a1.003 1.003 0 00-.71 1.71l3 3c.18.18.43.29.71.29s.53-.11.71-.29l3-3A1.003 1.003 0 0011 9z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </div>
+                          </HTMLSelect>
+                        </span>
+                      </div>
+                    </DropDown>
+                  </Widget>
+                </div>
+              </FormValue>
+            </div>
+            <div
+              className="form-item--top-align form-item"
+              key="Comment"
+            >
+              <FormLabel
+                fontSizeEm={1}
+                modified={false}
+                text="Comment"
+                widthEm={10}
+              >
+                <div
+                  className="form-label"
+                  style={
+                    Object {
+                      "fontSize": "1em",
+                      "minWidth": "10em",
+                    }
+                  }
+                >
+                  Comment:
+                </div>
+              </FormLabel>
+              <FormValue
+                data-cy="quiet-comment"
+                itemKey="comment"
+                onHoldChange={[Function]}
+                onValue={[Function]}
+                value={
+                  Object {
+                    "defaultValue": "",
+                    "params": Object {
+                      "maxChar": 1024,
+                      "tooltip": "Enter the comment",
+                    },
+                    "type": "TextArea",
+                  }
+                }
+                widthPx={280}
+              >
+                <div
+                  className="form-value"
+                  style={
+                    Object {
+                      "width": "280px",
+                    }
+                  }
+                >
+                  <Widget
+                    data-cy="quiet-comment"
+                    defaultValue=""
+                    isValid={true}
+                    onMaybeValue={[Function]}
+                    onValidStatus={[Function]}
+                    params={
+                      Object {
+                        "maxChar": 1024,
+                        "tooltip": "Enter the comment",
+                      }
+                    }
+                    type="TextArea"
+                  >
+                    <TextArea
+                      data-cy="quiet-comment"
+                      defaultValue=""
+                      maxChar={1024}
+                      onMaybeValue={[Function]}
+                      title="Enter the comment"
+                    >
+                      <div>
+                        <textarea
+                          className="form__text-input"
+                          data-cy="quiet-comment-textarea"
+                          maxLength={1024}
+                          onChange={[Function]}
+                          rows={4}
+                          title="Enter the comment"
+                          value=""
+                        />
+                        <p
+                          className="form__character-count"
+                        >
+                          Characters remaining: 
+                          1024
+                        </p>
+                      </div>
+                    </TextArea>
+                  </Widget>
+                </div>
+              </FormValue>
+            </div>
+          </div>
+        </FormBody>
+        <div
+          className="form__buttons"
+        >
+          <div
+            className="form__buttons--right"
+          >
+            <Blueprint3.Button
+              className="form__button"
+              data-cy="submit-quiet"
+              disabled={true}
+              key="submit-button"
+              onClick={[Function]}
+              text="Quiet"
+              title="Must modify a field to save"
+            >
+              <button
+                className="bp3-button bp3-disabled form__button"
+                data-cy="submit-quiet"
+                disabled={true}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                tabIndex={-1}
+                title="Must modify a field to save"
+                type="button"
+              >
+                <Blueprint3.Icon
+                  key="leftIcon"
+                />
+                <span
+                  className="bp3-button-text"
+                  key="text"
+                >
+                  Quiet
+                </span>
+                <Blueprint3.Icon
+                  key="rightIcon"
+                />
+              </button>
+            </Blueprint3.Button>
+            <Blueprint3.Button
+              className="form__button"
+              data-cy="cancel-quiet"
+              key="cancel-button"
+              onClick={[Function]}
+              text="Cancel"
+            >
+              <button
+                className="bp3-button form__button"
+                data-cy="cancel-quiet"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                type="button"
+              >
+                <Blueprint3.Icon
+                  key="leftIcon"
+                />
+                <span
+                  className="bp3-button-text"
+                  key="text"
+                >
+                  Cancel
+                </span>
+                <Blueprint3.Icon
+                  key="rightIcon"
+                />
+              </button>
+            </Blueprint3.Button>
+          </div>
+        </div>
+      </div>
+    </Form>
+  </div>
+</QuiteWithCommentDialog>
+`;
+
+exports[`quieting menu QuiteWithCommentMenuItem can be created 1`] = `
+<QuiteWithCommentMenuItem
+  channelMonitorPairs={
+    Array [
+      Object {
+        "channelName": "name",
+        "monitorType": "MISSING",
+      },
+    ]
+  }
+  position={
+    Object {
+      "left": 10,
+      "top": 10,
+    }
+  }
+  quietChannelMonitorStatuses={[MockFunction]}
+  quietingDurationSelections={
+    Array [
+      300000,
+      900000,
+      3600000,
+      86400000,
+      604800000,
+    ]
+  }
+  stationName=""
+>
+  <Blueprint3.MenuItem
+    data-cy="quiet-with-comment"
+    disabled={false}
+    multiline={false}
+    onClick={[Function]}
+    popoverProps={Object {}}
+    shouldDismissPopover={true}
+    text="Quiet with comment..."
+  >
+    <li
+      className=""
+    >
+      <a
+        className="bp3-menu-item bp3-popover-dismiss"
+        data-cy="quiet-with-comment"
+        onClick={[Function]}
+      >
+        <Blueprint3.Icon />
+        <Blueprint3.Text
+          className="bp3-fill"
+          ellipsize={true}
+        >
+          <div
+            className="bp3-text-overflow-ellipsis bp3-fill"
+          >
+            Quiet with comment...
+          </div>
+        </Blueprint3.Text>
+      </a>
+    </li>
+  </Blueprint3.MenuItem>
+</QuiteWithCommentMenuItem>
+`;
+
+exports[`quieting menu should call the contextmenu.show function with menu 1`] = `
+Array [
+  <Blueprint3.Menu>
+    <QuiteMenuItem
+      channelMonitorPairs={
+        Array [
+          Object {
+            "channelName": "name",
+            "monitorType": "MISSING",
+          },
+        ]
+      }
+      position={
+        Object {
+          "left": 10,
+          "top": 10,
+        }
+      }
+      quietChannelMonitorStatuses={[MockFunction]}
+      quietingDurationSelections={
+        Array [
+          300000,
+          900000,
+          3600000,
+          86400000,
+          604800000,
+        ]
+      }
+      stationName=""
+    />
+    <QuiteWithCommentMenuItem
+      channelMonitorPairs={
+        Array [
+          Object {
+            "channelName": "name",
+            "monitorType": "MISSING",
+          },
+        ]
+      }
+      position={
+        Object {
+          "left": 10,
+          "top": 10,
+        }
+      }
+      quietChannelMonitorStatuses={[MockFunction]}
+      quietingDurationSelections={
+        Array [
+          300000,
+          900000,
+          3600000,
+          86400000,
+          604800000,
+        ]
+      }
+      stationName=""
+    />
+    <CancelMenuItem
+      channelMonitorPairs={
+        Array [
+          Object {
+            "channelName": "name",
+            "monitorType": "MISSING",
+          },
+        ]
+      }
+      position={
+        Object {
+          "left": 10,
+          "top": 10,
+        }
+      }
+      quietChannelMonitorStatuses={[MockFunction]}
+      quietingDurationSelections={
+        Array [
+          300000,
+          900000,
+          3600000,
+          86400000,
+          604800000,
+        ]
+      }
+      stationName=""
+    />
+  </Blueprint3.Menu>,
+  Object {
+    "left": 10,
+    "top": 10,
+  },
+]
+`;

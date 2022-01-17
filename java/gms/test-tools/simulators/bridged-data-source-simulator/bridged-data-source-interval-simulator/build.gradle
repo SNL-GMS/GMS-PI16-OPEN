@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation project(':structured-logging')
+    implementation project(':bridge-utilities')
+    implementation project(':station-definition-repository')
+    implementation project(':bridged-data-source-simulator-api')
+    implementation project(':bridged-data-source-simulator-jpa')
+    implementation project(":workflow-dao")
+    implementation project(":workflow-repository")
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'com.google.guava:guava'
+
+    implementation 'org.hibernate:hibernate-entitymanager'
+
+    implementation 'io.projectreactor:reactor-core'
+
+    testImplementation 'io.projectreactor:reactor-test'
+    testImplementation project(':station-definition-testfixtures')
+}

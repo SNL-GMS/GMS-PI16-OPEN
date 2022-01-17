@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`axios response transformers axios query succeeds with message pack and instance type transformer 1`] = `
+Object {
+  "additionalInvalid": Object {
+    "badNull": Object {
+      "duration": undefined,
+    },
+    "badUndefined": Object {
+      "duration": undefined,
+    },
+    "duration": 0,
+  },
+  "badFormats": Object {
+    "duration": 0,
+    "effectiveTime": undefined,
+    "endTime": undefined,
+    "modificationTime": undefined,
+    "processingEndTime": undefined,
+    "processingStartTime": undefined,
+    "startTime": undefined,
+  },
+  "creationTime": 1274415873.123,
+  "duration": 300,
+  "effectiveTime": 1274415873.123,
+  "endTime": 1274412333.123,
+  "invalid": Object {
+    "duration": 0,
+    "effectiveTime": undefined,
+    "endTime": undefined,
+    "modificationTime": undefined,
+    "processingEndTime": Object {
+      "a time": "2010-05-21T03:24:33.123",
+    },
+    "processingStartTime": undefined,
+    "startTime": undefined,
+  },
+  "modificationTime": 1274412273.123,
+  "moreInvalid": Object {
+    "duration": undefined,
+    "effectiveTime": undefined,
+    "endTime": undefined,
+    "startTime": undefined,
+  },
+  "processingEndTime": 1274412273.123,
+  "processingStartTime": 1274412273,
+  "startTime": 1274412273.123,
+}
+`;

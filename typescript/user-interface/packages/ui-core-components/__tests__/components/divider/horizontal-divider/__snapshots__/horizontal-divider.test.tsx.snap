@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Horizontal Divider renders 1`] = `
+<HorizontalDivider
+  bottom={
+    <Unknown>
+      World
+    </Unknown>
+  }
+  minimumBottomHeightPx={100}
+  onResize={[MockFunction]}
+  onResizeEnd={[MockFunction]}
+  sizeRange={
+    Object {
+      "minimumBottomHeightPx": 100,
+      "minimumTopHeightPx": 100,
+    }
+  }
+  top={
+    <Unknown>
+      Hello
+    </Unknown>
+  }
+  topHeightPx={100}
+>
+  <div
+    className="divider-container"
+  >
+    <div
+      className="top-component"
+      style={
+        Object {
+          "height": "100px",
+        }
+      }
+    >
+      <Component>
+        <h1
+          className="bp3-heading"
+        >
+          Hello
+        </h1>
+      </Component>
+    </div>
+    <DragHandleDivider
+      handleHeight={7}
+      onDrag={[Function]}
+    >
+      <div
+        className="horizontal-divider"
+        onMouseDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="horizontal-divider__target"
+        />
+        <div
+          className="horizontal-divider__spacer"
+        />
+        <svg
+          className="resize-handle"
+          height="7"
+          viewBox="0 0 18 7"
+          width="18"
+        >
+          <title>
+            Resize
+          </title>
+          <g
+            className="resize-handle-group"
+            data-name="resize-handle-group"
+          >
+            <rect
+              height="7"
+              rx="1"
+              width="2"
+            />
+            <rect
+              height="7"
+              rx="1"
+              width="2"
+              x="4"
+            />
+            <rect
+              height="7"
+              rx="1"
+              width="2"
+              x="8"
+            />
+            <rect
+              height="7"
+              rx="1"
+              width="2"
+              x="12"
+            />
+            <rect
+              height="7"
+              rx="1"
+              width="2"
+              x="16"
+            />
+          </g>
+        </svg>
+        <div
+          className="horizontal-divider__spacer"
+        />
+      </div>
+    </DragHandleDivider>
+    <div
+      className="bottom-component"
+      style={
+        Object {
+          "height": "1px",
+        }
+      }
+    >
+      <Component>
+        <h1
+          className="bp3-heading"
+        >
+          World
+        </h1>
+      </Component>
+    </div>
+  </div>
+</HorizontalDivider>
+`;
+
+exports[`Horizontal Divider shallow renders 1`] = `
+<div
+  className="divider-container"
+>
+  <div
+    className="top-component"
+    style={
+      Object {
+        "height": "100px",
+      }
+    }
+  >
+    <Component>
+      Hello
+    </Component>
+  </div>
+  <DragHandleDivider
+    handleHeight={7}
+    onDrag={[Function]}
+  />
+  <div
+    className="bottom-component"
+    style={
+      Object {
+        "height": "1px",
+      }
+    }
+  >
+    <Component>
+      World
+    </Component>
+  </div>
+</div>
+`;

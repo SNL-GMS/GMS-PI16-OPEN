@@ -1,0 +1,47 @@
+[{
+  "channelSegments": [
+    {
+      "channelId": "1c4a8d11-178a-3c5d-a902-ac599a155621",
+      "endTime": "",
+      "id": "",
+      "name": "MKAR",
+      "startTime": "",
+      "timeseries": [
+        {
+          "highFrequency": 3.25,
+          "lowFrequency": 1.25,
+          "metadata": {
+            "phaseType": "P",
+            "slowDeltaX": 0.008882188700431906,
+            "slowDeltaY": 0.008882188700431906,
+            "slowStartX": -0.3597286423674922,
+            "slowStartY": -0.3597286423674922
+          },
+          "sampleCount": 1,
+          "sampleRate": 0.2,
+          "startTime": "",
+          "values": [
+            {
+              "attributes": [{
+                  "azimuth": 89.23610153907,
+                  "azimuthUncertainty": 1.7982547826467494,
+                  "peakFStat": 2.918405035732889,
+                  "slowness": 37.04032907180085,
+                  "slownessUncertainty": 1.1624803025762307,
+                  "xSlow": 0.41,
+                  "ySlow": 0.41
+                }],
+                "fstat": [[]],
+                "power": [[]],
+                "quality": 4
+            }
+          ],
+          "windowLead": "PT1S",
+          "windowLength": "PT4S"
+        }
+      ],
+      "timeseriesType": "FK_SPECTRA",
+      "type": "FK_SPECTRA"
+    }
+  ]
+}]

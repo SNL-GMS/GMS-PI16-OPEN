@@ -1,0 +1,9 @@
+channels:
+  - defaults
+default_channels:
+  - #ANACONDA_REPO_URL#/main
+channel_alias: #ANACONDA_REPO_URL#
+show_channel_urls: True
+auto_update_conda: False
+remote_read_timeout_secs: 300
+channel_priority: strict

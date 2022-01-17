@@ -1,0 +1,148 @@
+# imageRegistry is the Docker image registry URL where all images will be retrieved.
+#imageRegistry: docker-registry.example.com
+
+# baseDomain specifies the domain name suffix applied to all Ingress hostnames.
+#baseDomain: cluster.example.com
+
+# imageTag is the Docker image tag used when retrieving all CI-built images.
+imageTag: develop
+
+# imagePullPolicy is the policy used for all images ('Always', 'IfNotPresent', 'Never').
+imagePullPolicy: Always
+
+global: {}
+  #imageRegistry: docker-registry.example.com
+  #imageTag: develop
+
+# user specifices the username of the user installing or upgrading the instance.
+#user: UNKNOWN
+
+# env specifies environment variables that will be added to all applications.
+env: {}
+
+# global constraint flags
+globalConstrainCpu: false
+globalConstrainMemory: false
+
+# default resource limits
+cpu_default: 2
+cpu_min: "100m"
+cpu_max: 4
+cpu_request: "100m"
+memory_default: "1Gi"
+memory_request: "256Mi"
+
+# Default PersistentVolumeClaim storage class.
+# Note that kafka's storageClass is configured independently below in the kafka section.
+storageClassName: "local-path"
+
+# hostPath volume mounts are used to provide containers access to waveform and
+# response files accessible from the Kubernetes worker nodes.
+bridgeWaveforms:
+  hostPath: "/data/bridge-waveforms"
+  containerPath: "/data/bridge-waveforms"
+bridgeResponses:
+  hostPath: "/data/bridge-responses"
+  containerPath: "/data/bridge-responses"
+
+#
+# App definitions
+#
+
+bastion:
+  imageName: "gms-common/bastion"
+  replicas: 1
+  env:
+    TNS_ADMIN: /opt/gms/bastion/oracle-wallet
+    WALLET_APP_NAME: bastion
+
+cache-service:
+  imageName: "gms-common/cache-service"
+  replicas: 0
+
+config-loader:
+  imageName: "gms-common/config-loader"
+  replicas: 1
+  storageSize: "100Mi"
+
+etcd:
+  imageName: "gms-common/etcd"
+  replicas: 1
+
+frameworks-configuration-service:
+  imageName: "gms-common/frameworks-configuration-service"
+  replicas: 1
+
+frameworks-osd-service:
+  imageName: "gms-common/frameworks-osd-service"
+  replicas: 1
+
+javadoc:
+  imageName: "gms-common/javadoc_server"
+  replicas: 1
+
+# kafka is a subchart
+kafka:
+  image:
+    repository: gms-common/bitnami-kafka
+    pullPolicy: Always
+  fullnameOverride: kafka
+  persistence:
+    storageClass: local-path
+  logRetentionHours: 6
+  zookeeper:
+    image:
+      repository: gms-common/bitnami-zookeeper
+      pullPolicy: Always
+    fullnameOverride: zookeeper
+    persistence:
+      storageClass: local-path
+  extraEnvVars:
+    - name: KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE
+      value: "true"
+
+postgresql-gms:
+  imageName: "gms-common/postgres"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "10Gi"
+  node: "node1"
+  env:
+    POSTGRES_DB: "gms"
+
+signal-detection-manager-service:
+  imageName: "gms-common/signal-detection-application"
+  replicas: 1
+  restartAfterReconfig: true
+  env:
+    WALLET_APP_NAME: signal-detection-application
+
+station-definition-service:
+  imageName: "gms-common/station-definition-application"
+  replicas: 1
+  restartAfterReconfig: true
+  env:
+    WALLET_APP_NAME: station-definition-application
+
+swagger:
+  imageName: "gms-common/swagger-gms"
+  replicas: 1
+  env:
+    BASE_URL: /swagger
+
+user-manager-service:
+  imageName: "gms-common/user-manager-application"
+  replicas: 1
+  restartAfterReconfig: "true"
+
+waveform-manager-service:
+  imageName: "gms-common/waveform-manager-application"
+  replicas: 1
+  restartAfterReconfig: "true"
+  env:
+    WALLET_APP_NAME: waveform-manager-application
+
+workflow-manager-service:
+  imageName: "gms-common/workflow-manager"
+  replicas: 1
+  restartAfterReconfig: "true"

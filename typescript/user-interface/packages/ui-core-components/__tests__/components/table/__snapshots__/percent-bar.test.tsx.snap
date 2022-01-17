@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Percent Bar renders 1`] = `
+<PercentBar
+  classNames="percent-bar-half"
+  percentage={50}
+>
+  <div
+    className="percent-bar percent-bar-half"
+    key="1"
+    style={
+      Object {
+        "transform": "translateX(-50%)",
+        "width": "100%",
+      }
+    }
+  />
+</PercentBar>
+`;
+
+exports[`Percent Bar shallow renders 1`] = `
+<Fragment>
+  <div
+    className="percent-bar percent-bar-half"
+    key="2"
+    style={
+      Object {
+        "transform": "translateX(-50%)",
+        "width": "100%",
+      }
+    }
+  />
+</Fragment>
+`;

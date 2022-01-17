@@ -1,0 +1,2857 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weavess Empty Renderer renders 1`] = `
+<RecordSectionLabels
+  bottomVal={1000}
+  phases={
+    Array [
+      Object {
+        "percentX": 4,
+        "percentY": 6,
+        "phase": "phase 1",
+      },
+    ]
+  }
+  topVal={2}
+>
+  <div
+    className="y-axis-container"
+    style={
+      Object {
+        "borderLeft": "solid",
+        "borderWidth": "3px",
+        "height": "100%",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      key="label0"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "1.8036072144288577%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      20
+    </div>
+    <div
+      key="label1"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "3.807615230460922%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      40
+    </div>
+    <div
+      key="label2"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "5.811623246492986%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      60
+    </div>
+    <div
+      key="label3"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "7.81563126252505%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      80
+    </div>
+    <div
+      key="label4"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "9.819639278557114%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      100
+    </div>
+    <div
+      key="label5"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "11.823647294589179%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      120
+    </div>
+    <div
+      key="label6"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "13.827655310621243%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      140
+    </div>
+    <div
+      key="label7"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "15.831663326653308%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      160
+    </div>
+    <div
+      key="label8"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "17.835671342685373%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      180
+    </div>
+    <div
+      key="label9"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "19.839679358717436%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      200
+    </div>
+    <div
+      key="label10"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "21.8436873747495%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      220
+    </div>
+    <div
+      key="label11"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "23.847695390781563%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      240
+    </div>
+    <div
+      key="label12"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "25.851703406813627%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      260
+    </div>
+    <div
+      key="label13"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "27.855711422845694%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      280
+    </div>
+    <div
+      key="label14"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "29.859719438877757%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      300
+    </div>
+    <div
+      key="label15"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "31.86372745490982%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      320
+    </div>
+    <div
+      key="label16"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "33.86773547094189%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      340
+    </div>
+    <div
+      key="label17"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "35.87174348697395%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      360
+    </div>
+    <div
+      key="label18"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "37.875751503006015%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      380
+    </div>
+    <div
+      key="label19"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "39.879759519038075%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      400
+    </div>
+    <div
+      key="label20"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "41.88376753507014%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      420
+    </div>
+    <div
+      key="label21"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "43.88777555110221%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      440
+    </div>
+    <div
+      key="label22"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "45.89178356713427%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      460
+    </div>
+    <div
+      key="label23"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "47.895791583166336%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      480
+    </div>
+    <div
+      key="label24"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "49.899799599198396%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      500
+    </div>
+    <div
+      key="label25"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "51.90380761523046%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      520
+    </div>
+    <div
+      key="label26"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "53.90781563126253%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      540
+    </div>
+    <div
+      key="label27"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "55.91182364729459%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      560
+    </div>
+    <div
+      key="label28"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "57.91583166332666%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      580
+    </div>
+    <div
+      key="label29"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "59.91983967935872%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      600
+    </div>
+    <div
+      key="label30"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "61.92384769539078%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      620
+    </div>
+    <div
+      key="label31"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "63.92785571142285%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      640
+    </div>
+    <div
+      key="label32"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "65.93186372745491%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      660
+    </div>
+    <div
+      key="label33"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "67.93587174348697%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      680
+    </div>
+    <div
+      key="label34"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "69.93987975951904%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      700
+    </div>
+    <div
+      key="label35"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "71.9438877755511%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      720
+    </div>
+    <div
+      key="label36"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "73.94789579158316%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      740
+    </div>
+    <div
+      key="label37"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "75.95190380761524%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      760
+    </div>
+    <div
+      key="label38"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "77.9559118236473%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      780
+    </div>
+    <div
+      key="label39"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "79.95991983967936%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      800
+    </div>
+    <div
+      key="label40"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "81.96392785571143%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      820
+    </div>
+    <div
+      key="label41"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "83.96793587174349%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      840
+    </div>
+    <div
+      key="label42"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "85.97194388777555%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      860
+    </div>
+    <div
+      key="label43"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "87.97595190380761%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      880
+    </div>
+    <div
+      key="label44"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "89.97995991983969%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      900
+    </div>
+    <div
+      key="label45"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "91.98396793587175%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      920
+    </div>
+    <div
+      key="label46"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "93.9879759519038%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      940
+    </div>
+    <div
+      key="label47"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "95.99198396793588%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      960
+    </div>
+    <div
+      key="label48"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "97.99599198396794%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      980
+    </div>
+    <div
+      key="phase0"
+      style={
+        Object {
+          "left": "4%",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "6%",
+        }
+      }
+    >
+      phase 1
+    </div>
+  </div>
+</RecordSectionLabels>
+`;
+
+exports[`Weavess Empty Renderer shallow renders 1`] = `
+<div
+  className="y-axis-container"
+  style={
+    Object {
+      "borderLeft": "solid",
+      "borderWidth": "3px",
+      "height": "100%",
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    key="label0"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "1.8036072144288577%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    20
+  </div>
+  <div
+    key="label1"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "3.807615230460922%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    40
+  </div>
+  <div
+    key="label2"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "5.811623246492986%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    60
+  </div>
+  <div
+    key="label3"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "7.81563126252505%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    80
+  </div>
+  <div
+    key="label4"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "9.819639278557114%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    100
+  </div>
+  <div
+    key="label5"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "11.823647294589179%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    120
+  </div>
+  <div
+    key="label6"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "13.827655310621243%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    140
+  </div>
+  <div
+    key="label7"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "15.831663326653308%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    160
+  </div>
+  <div
+    key="label8"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "17.835671342685373%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    180
+  </div>
+  <div
+    key="label9"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "19.839679358717436%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    200
+  </div>
+  <div
+    key="label10"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "21.8436873747495%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    220
+  </div>
+  <div
+    key="label11"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "23.847695390781563%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    240
+  </div>
+  <div
+    key="label12"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "25.851703406813627%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    260
+  </div>
+  <div
+    key="label13"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "27.855711422845694%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    280
+  </div>
+  <div
+    key="label14"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "29.859719438877757%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    300
+  </div>
+  <div
+    key="label15"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "31.86372745490982%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    320
+  </div>
+  <div
+    key="label16"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "33.86773547094189%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    340
+  </div>
+  <div
+    key="label17"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "35.87174348697395%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    360
+  </div>
+  <div
+    key="label18"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "37.875751503006015%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    380
+  </div>
+  <div
+    key="label19"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "39.879759519038075%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    400
+  </div>
+  <div
+    key="label20"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "41.88376753507014%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    420
+  </div>
+  <div
+    key="label21"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "43.88777555110221%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    440
+  </div>
+  <div
+    key="label22"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "45.89178356713427%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    460
+  </div>
+  <div
+    key="label23"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "47.895791583166336%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    480
+  </div>
+  <div
+    key="label24"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "49.899799599198396%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    500
+  </div>
+  <div
+    key="label25"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "51.90380761523046%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    520
+  </div>
+  <div
+    key="label26"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "53.90781563126253%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    540
+  </div>
+  <div
+    key="label27"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "55.91182364729459%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    560
+  </div>
+  <div
+    key="label28"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "57.91583166332666%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    580
+  </div>
+  <div
+    key="label29"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "59.91983967935872%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    600
+  </div>
+  <div
+    key="label30"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "61.92384769539078%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    620
+  </div>
+  <div
+    key="label31"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "63.92785571142285%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    640
+  </div>
+  <div
+    key="label32"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "65.93186372745491%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    660
+  </div>
+  <div
+    key="label33"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "67.93587174348697%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    680
+  </div>
+  <div
+    key="label34"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "69.93987975951904%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    700
+  </div>
+  <div
+    key="label35"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "71.9438877755511%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    720
+  </div>
+  <div
+    key="label36"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "73.94789579158316%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    740
+  </div>
+  <div
+    key="label37"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "75.95190380761524%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    760
+  </div>
+  <div
+    key="label38"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "77.9559118236473%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    780
+  </div>
+  <div
+    key="label39"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "79.95991983967936%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    800
+  </div>
+  <div
+    key="label40"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "81.96392785571143%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    820
+  </div>
+  <div
+    key="label41"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "83.96793587174349%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    840
+  </div>
+  <div
+    key="label42"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "85.97194388777555%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    860
+  </div>
+  <div
+    key="label43"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "87.97595190380761%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    880
+  </div>
+  <div
+    key="label44"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "89.97995991983969%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    900
+  </div>
+  <div
+    key="label45"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "91.98396793587175%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    920
+  </div>
+  <div
+    key="label46"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "93.9879759519038%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    940
+  </div>
+  <div
+    key="label47"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "95.99198396793588%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    960
+  </div>
+  <div
+    key="label48"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "97.99599198396794%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    980
+  </div>
+  <div
+    key="phase0"
+    style={
+      Object {
+        "left": "4%",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "6%",
+      }
+    }
+  >
+    phase 1
+  </div>
+</div>
+`;
+
+exports[`Weavess Empty Renderer shallow renders 2`] = `
+<div
+  className="y-axis-container"
+  style={
+    Object {
+      "borderLeft": "solid",
+      "borderWidth": "3px",
+      "height": "100%",
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    key="label0"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "1.8036072144288577%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    20
+  </div>
+  <div
+    key="label1"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "3.807615230460922%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    40
+  </div>
+  <div
+    key="label2"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "5.811623246492986%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    60
+  </div>
+  <div
+    key="label3"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "7.81563126252505%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    80
+  </div>
+  <div
+    key="label4"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "9.819639278557114%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    100
+  </div>
+  <div
+    key="label5"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "11.823647294589179%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    120
+  </div>
+  <div
+    key="label6"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "13.827655310621243%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    140
+  </div>
+  <div
+    key="label7"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "15.831663326653308%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    160
+  </div>
+  <div
+    key="label8"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "17.835671342685373%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    180
+  </div>
+  <div
+    key="label9"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "19.839679358717436%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    200
+  </div>
+  <div
+    key="label10"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "21.8436873747495%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    220
+  </div>
+  <div
+    key="label11"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "23.847695390781563%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    240
+  </div>
+  <div
+    key="label12"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "25.851703406813627%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    260
+  </div>
+  <div
+    key="label13"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "27.855711422845694%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    280
+  </div>
+  <div
+    key="label14"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "29.859719438877757%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    300
+  </div>
+  <div
+    key="label15"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "31.86372745490982%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    320
+  </div>
+  <div
+    key="label16"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "33.86773547094189%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    340
+  </div>
+  <div
+    key="label17"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "35.87174348697395%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    360
+  </div>
+  <div
+    key="label18"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "37.875751503006015%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    380
+  </div>
+  <div
+    key="label19"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "39.879759519038075%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    400
+  </div>
+  <div
+    key="label20"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "41.88376753507014%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    420
+  </div>
+  <div
+    key="label21"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "43.88777555110221%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    440
+  </div>
+  <div
+    key="label22"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "45.89178356713427%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    460
+  </div>
+  <div
+    key="label23"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "47.895791583166336%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    480
+  </div>
+  <div
+    key="label24"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "49.899799599198396%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    500
+  </div>
+  <div
+    key="label25"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "51.90380761523046%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    520
+  </div>
+  <div
+    key="label26"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "53.90781563126253%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    540
+  </div>
+  <div
+    key="label27"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "55.91182364729459%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    560
+  </div>
+  <div
+    key="label28"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "57.91583166332666%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    580
+  </div>
+  <div
+    key="label29"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "59.91983967935872%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    600
+  </div>
+  <div
+    key="label30"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "61.92384769539078%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    620
+  </div>
+  <div
+    key="label31"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "63.92785571142285%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    640
+  </div>
+  <div
+    key="label32"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "65.93186372745491%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    660
+  </div>
+  <div
+    key="label33"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "67.93587174348697%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    680
+  </div>
+  <div
+    key="label34"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "69.93987975951904%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    700
+  </div>
+  <div
+    key="label35"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "71.9438877755511%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    720
+  </div>
+  <div
+    key="label36"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "73.94789579158316%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    740
+  </div>
+  <div
+    key="label37"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "75.95190380761524%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    760
+  </div>
+  <div
+    key="label38"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "77.9559118236473%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    780
+  </div>
+  <div
+    key="label39"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "79.95991983967936%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    800
+  </div>
+  <div
+    key="label40"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "81.96392785571143%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    820
+  </div>
+  <div
+    key="label41"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "83.96793587174349%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    840
+  </div>
+  <div
+    key="label42"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "85.97194388777555%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    860
+  </div>
+  <div
+    key="label43"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "87.97595190380761%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    880
+  </div>
+  <div
+    key="label44"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "89.97995991983969%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    900
+  </div>
+  <div
+    key="label45"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "91.98396793587175%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    920
+  </div>
+  <div
+    key="label46"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "93.9879759519038%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    940
+  </div>
+  <div
+    key="label47"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "95.99198396793588%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    960
+  </div>
+  <div
+    key="label48"
+    style={
+      Object {
+        "WebkitTransform": "translate(0, -50%)",
+        "left": "-1px",
+        "msTransform": "translate(0, -50%)",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "97.99599198396794%",
+        "transform": "translate(0, -50%)",
+      }
+    }
+  >
+    -
+    980
+  </div>
+  <div
+    key="phase0"
+    style={
+      Object {
+        "left": "4%",
+        "position": "absolute",
+        "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+        "top": "6%",
+      }
+    }
+  >
+    phase 1
+  </div>
+</div>
+`;
+
+exports[`Weavess Empty Renderer uses an interval of 5 1`] = `
+<RecordSectionLabels
+  bottomVal={100}
+  phases={
+    Array [
+      Object {
+        "percentX": 4,
+        "percentY": 6,
+        "phase": "phase 1",
+      },
+    ]
+  }
+  topVal={80}
+>
+  <div
+    className="y-axis-container"
+    style={
+      Object {
+        "borderLeft": "solid",
+        "borderWidth": "3px",
+        "height": "100%",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      key="label0"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "25%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      85
+    </div>
+    <div
+      key="label1"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "50%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      90
+    </div>
+    <div
+      key="label2"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "75%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      95
+    </div>
+    <div
+      key="label3"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "100%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      100
+    </div>
+    <div
+      key="phase0"
+      style={
+        Object {
+          "left": "4%",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "6%",
+        }
+      }
+    >
+      phase 1
+    </div>
+  </div>
+</RecordSectionLabels>
+`;
+
+exports[`Weavess Empty Renderer uses an interval of 10 1`] = `
+<RecordSectionLabels
+  bottomVal={100}
+  phases={
+    Array [
+      Object {
+        "percentX": 4,
+        "percentY": 6,
+        "phase": "phase 1",
+      },
+    ]
+  }
+  topVal={40}
+>
+  <div
+    className="y-axis-container"
+    style={
+      Object {
+        "borderLeft": "solid",
+        "borderWidth": "3px",
+        "height": "100%",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      key="label0"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "16.666666666666668%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      50
+    </div>
+    <div
+      key="label1"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "33.333333333333336%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      60
+    </div>
+    <div
+      key="label2"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "50%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      70
+    </div>
+    <div
+      key="label3"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "66.66666666666667%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      80
+    </div>
+    <div
+      key="label4"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "83.33333333333334%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      90
+    </div>
+    <div
+      key="label5"
+      style={
+        Object {
+          "WebkitTransform": "translate(0, -50%)",
+          "left": "-1px",
+          "msTransform": "translate(0, -50%)",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "100%",
+          "transform": "translate(0, -50%)",
+        }
+      }
+    >
+      -
+      100
+    </div>
+    <div
+      key="phase0"
+      style={
+        Object {
+          "left": "4%",
+          "position": "absolute",
+          "textShadow": "-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white",
+          "top": "6%",
+        }
+      }
+    >
+      phase 1
+    </div>
+  </div>
+</RecordSectionLabels>
+`;

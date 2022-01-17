@@ -1,0 +1,172 @@
+#!/usr/bin/env python3
+
+import os
+import subprocess
+import sys
+from termcolor import cprint
+from textwrap import indent
+from typing import Union
+
+
+def run_command(
+        command: str,
+        print_output: bool = False,
+        num_tries: int = 1
+) -> tuple:
+    """
+    Execute the specified command and return when the command execution is
+    completed.
+
+    Args:
+        command (str):  The command to run in the shell.
+        print_output (bool):  Enable printing of ``stdout`` and ``stderr``
+            immediately.
+        num_tries (int):  Retry this number of times if command fails.
+
+    Returns:
+        tuple:  The return code, ``stdout``, and ``stderr`` of the command.
+
+    Todo:
+        * If this is a function we tend to use all over the place, we need to
+          pull it out into its own utility.  Some colleagues and I developed a
+          ``ShellLogger`` utility on one of my last projects, but I'm not sure
+          if that's something we can just pull in and start using due to
+          potential licensing issues.  I've made the request and have someone
+          looking into it.
+    """
+
+    while True:
+        cmd = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+        stdout, stderr = cmd.communicate()
+        stdout = stdout.decode()
+        stderr = stderr.decode()
+        if print_output:
+            print(stdout)
+            if len(stderr) > 0:
+                cprint(stderr, color="yellow")
+        if cmd.returncode == 0 or num_tries == 0:
+            break
+        else:
+            num_tries = num_tries - 1
+    return cmd.returncode, stdout, stderr
+
+
+def print_failure_message(
+        service: str,
+        stdout: Union[str, None],
+        stderr: Union[str, None]
+) -> None:
+    """
+    Inform the user that the ``service`` endpoint is not alive.  If ``stdout``
+    or ``stderr`` are non-empty, include them in the message as well.
+
+    Args:
+        service (str):  The name of the service that failed.
+        stdout (str,None):  The ``stdout`` from the command to check whether or
+            not the service was alive.
+        stderr (str,None):  The ``stderr`` from the command to check whether or
+            not the service was alive.
+
+    Returns:
+        None
+    """
+    cprint(f"  Alive endpoint for '{service}' has failed!", color="red")
+    if stdout:
+        print("    stdout:\n" + indent(stdout, "    | "))
+    if stderr:
+        print("    stderr:\n" + indent(stderr, "    | "))
+
+
+def check_endpoints(services: list) -> dict:
+    """
+    Given a list of ``services``, check to ensure all the corresponding
+    endpoints are alive.
+
+    Args:
+        services (list):  A list of strings representing the names of the
+            services to check.
+
+    Returns:
+        dict:  If there are any failures, a mapping from the service names to
+        ``stdout`` and ``stderr`` from the command used to check the endpoint;
+        otherwise an empty ``dict``.
+    """
+    failures = {}
+    for service in services:
+        print(f"Checking alive endpoint for '{service}':", end="")
+        rc, out, err = run_command(f"curl --write-out '%{{http_code}}' -s -k --output /dev/null http://{service}:8080/{service}/alive")
+        if rc == 0 and out == '200':  # http success code 200
+            cprint("  Success", color="green")
+        else:
+            print("")
+            failures[service] = {"stdout": out, "stderr": err}
+    for service in failures:
+        print_failure_message(service, failures[service]["stdout"],
+                              failures[service]["stderr"])
+    return failures
+
+
+def run_alive_endpoint_test() -> bool:
+    """
+    Given the environment variable ``GMS_APP`` (set to either ``soh``, ``ian``,
+    or ``sb``), check all the services associated with the GMS application to
+    ensure all those endpoints are alive.
+
+    Returns:
+        bool:  Whether or not all the endpoints are alive.
+
+    Todo:
+        * If we only ever intend for this script to be used for ``soh`` tests,
+          we should refactor the ``expected_alive_services`` ``dict`` and this
+          docstring appropriately.
+    """
+    expected_alive_services = {
+        "soh": ["acei-merge-processor",
+                "cd11-rsdf-processor",
+                "da-connman",
+                "da-dataman",
+                "frameworks-configuration-service",
+                "frameworks-osd-service",
+                "soh-control",
+                "smds-service",
+                "ssam-control",
+                "ui-processing-configuration-service",
+                "user-manager-service"],
+        "ian": ["frameworks-configuration-service",
+                "frameworks-osd-service",
+                "signal-detection-manager-service",
+                "station-definition-service",
+                "ui-processing-configuration-service",
+                "user-manager-service"],
+        "sb": ["frameworks-configuration-service",
+               "frameworks-osd-service",
+               "signal-detection-manager-service",
+               "station-definition-service",
+               "user-manager-service"]
+    }
+    app_name = None
+    try:
+        app_name = os.environ["GMS_APP"]
+    except KeyError:
+        cprint("Expected environment variable 'GMS_APP' is undefined.",
+               color="red")
+    cprint(f"Running alive tests for '{app_name}'.", color="cyan")
+    if app_name in expected_alive_services:
+        alive_failures = check_endpoints(expected_alive_services[app_name])
+        if alive_failures:
+            test_passed = False
+            cprint(f"{len(alive_failures)} service endpoints are not alive.",
+                   color="red")
+        else:
+            test_passed = True
+            cprint("All service endpoints are alive and well.", color="green")
+    else:
+        cprint(f"No expected services defined for '{app_name}'.", color="red")
+        test_passed = False
+    return test_passed
+
+
+if __name__ == "__main__":
+    success = run_alive_endpoint_test()
+    sys.exit(0 if success else 1)

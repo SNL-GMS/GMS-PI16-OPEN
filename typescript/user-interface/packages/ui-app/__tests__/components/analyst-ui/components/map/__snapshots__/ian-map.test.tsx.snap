@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui ian map can mount map 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Memo(IANMapComponent)>
+    <BaseDisplay
+      className="ian-map-gl-container"
+    >
+      <div
+        className="base-display ian-map-gl-container"
+      >
+        <IANMapPanel>
+          <Component>
+            <h1
+              className="bp3-heading"
+            >
+              Map
+            </h1>
+          </Component>
+        </IANMapPanel>
+      </div>
+    </BaseDisplay>
+  </Memo(IANMapComponent)>
+</Provider>
+`;

@@ -1,0 +1,45 @@
+.bp3-heading {
+  margin: 10px 5px 5px;
+}
+
+.icon-cell-content {
+  &__container {
+    margin-top: -28px;
+    margin-left: 10px;
+    width: 325px;
+    position: absolute;
+    background-color: $gms-popover-background;
+  }
+  &__left {
+    float: left;
+    width: 60%;
+    height: 390px;
+    border-left: 1px #ff0000;
+    overflow: auto;
+    &--header {
+      background-color: $gms-popover-background;
+      margin-top: 0px;
+      width: 170px;
+      height: 25px;
+      position: fixed;
+      z-index: 999;
+    }
+    &--checkbox-list {
+      margin-top: 18px;
+      z-index: -1;
+    }
+  }
+  &__right {
+    height: 390px;
+    padding-left: 10px;
+    overflow: hidden;
+    &--header {
+      background-color: $gms-popover-background;
+      margin-top: 0px;
+      margin-left: -5px;
+    }
+    &--radio-list {
+      margin-top: 10px;
+    }
+  }
+}

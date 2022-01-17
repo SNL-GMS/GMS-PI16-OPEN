@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SaveOpenDialog Save Open Dialog renders 1`] = `
+<SaveOpenDialog
+  actionCallback={[MockFunction]}
+  actionText="string"
+  actionTooltipText="string"
+  cancelCallback={[MockFunction]}
+  cancelText="string"
+  cancelTooltipText="string"
+  defaultId="1"
+  defaultSaveName="string"
+  isDialogOpen={false}
+  itemList={
+    Array [
+      Object {
+        "id": "1",
+        "title": "title",
+      },
+      Object {
+        "id": "2",
+        "title": "title",
+      },
+    ]
+  }
+  openedItemId="string"
+  selectEntryCallback={[MockFunction]}
+  selectedId="string"
+  title="string"
+  titleOfItemList="string"
+>
+  <Blueprint3.Dialog
+    canOutsideClickClose={true}
+    isOpen={false}
+    onClose={[Function]}
+    title="string"
+  >
+    <Blueprint3.Overlay
+      autoFocus={true}
+      backdropProps={Object {}}
+      canEscapeKeyClose={true}
+      canOutsideClickClose={true}
+      className="bp3-overlay-scroll-container"
+      enforceFocus={true}
+      hasBackdrop={true}
+      isOpen={false}
+      lazy={true}
+      onClose={[Function]}
+      title="string"
+      transitionDuration={300}
+      transitionName="bp3-overlay"
+      usePortal={true}
+    />
+  </Blueprint3.Dialog>
+</SaveOpenDialog>
+`;
+
+exports[`SaveOpenDialog Save Open Dialog shallow renders 1`] = `
+<Blueprint3.Dialog
+  canOutsideClickClose={true}
+  isOpen={false}
+  onClose={[Function]}
+  title="string"
+>
+  <div
+    className="dialog dialog__container dialog--save-open"
+  >
+    string
+    <ul
+      className="dialog__entries"
+    >
+      <li
+        className="dialog__entry default "
+        key="1"
+        onClick={[Function]}
+      >
+        title
+        <span
+          className="dialog__entry--faded"
+          key="defaultId1"
+        >
+          (default)
+        </span>
+      </li>
+      <li
+        className="dialog__entry "
+        key="2"
+        onClick={[Function]}
+      >
+        title
+      </li>
+    </ul>
+    <div
+      className="dialog__controls"
+    >
+      <Blueprint3.Button
+        intent="primary"
+        onClick={[Function]}
+        text="string"
+        title="string"
+      />
+      <Blueprint3.Button
+        onClick={[Function]}
+        text="string"
+        title="string"
+      />
+    </div>
+  </div>
+</Blueprint3.Dialog>
+`;

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`query-util WithQuery wrapped component matches snapshot 1`] = `
+<Fragment>
+  <TestComponent
+    testQuery={
+      Object {
+        "canFetchMore": undefined,
+        "clear": [Function],
+        "data": undefined,
+        "error": null,
+        "failureCount": 0,
+        "fetchMore": [Function],
+        "isError": false,
+        "isFetched": false,
+        "isFetchedAfterMount": false,
+        "isFetching": true,
+        "isFetchingMore": false,
+        "isIdle": false,
+        "isInitialData": true,
+        "isLoading": true,
+        "isPlaceholderData": false,
+        "isPreviousData": false,
+        "isStale": true,
+        "isSuccess": false,
+        "refetch": [Function],
+        "remove": [Function],
+        "status": "loading",
+        "updatedAt": 1000,
+      }
+    }
+  />
+</Fragment>
+`;
+
+exports[`query-util buildQueryInjector returns a component that matches the snapshot 1`] = `[Function]`;

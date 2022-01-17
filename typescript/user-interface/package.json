@@ -1,0 +1,127 @@
+{
+  "name": "interactive-analysis",
+  "version": "10.1.0-SNAPSHOT",
+  "description": "GMS Interactive Analysis",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/api-gateway/**/config",
+      "**/api-gateway/**/config/**",
+      "**/api-gateway/**/express",
+      "**/api-gateway/**/express/**",
+      "**/api-gateway/**/ts-node",
+      "**/api-gateway/**/ts-node/**",
+      "**/cypress-tests/**/cypress-multi-reporters",
+      "**/cypress-tests**/cypress-multi-reporters/**",
+      "**/cypress-tests**/mochawesome",
+      "**/cypress-tests**/mochawesome/**"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{css,scss,json,yaml,xml}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ],
+    "./**/*.{ts,tsx,js,jsx}": [
+      "eslint --config .eslintrc.yaml --rule 'import/no-unresolved: off' --fix --quiet",
+      "git add"
+    ]
+  },
+  "jest-junit": {
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{classname}-{title}"
+  },
+  "scripts": {
+    "clean": "lerna run clean --stream && rimraf ./coverage && rimraf ./docs && rimraf ./log && rimraf ./node_modules",
+    "build:eslint": "lerna run build:eslint --stream",
+    "build:eslint:test": "lerna run build:eslint:test --stream",
+    "build:dev": "lerna run build:dev --stream",
+    "build:prod": "lerna run build:prod --stream",
+    "build:test": "lerna run build:tsc:test --stream",
+    "build": "yarn build:dev",
+    "bundle:dev": "lerna run bundle:dev --stream",
+    "bundle:prod": "lerna run bundle:prod --stream",
+    "bundle": "yarn bundle:dev",
+    "dev": "cd packages/ui-app && yarn dev",
+    "start": "cd packages/ui-app && yarn start",
+    "watch": "lerna run watch --parallel",
+    "docs:init": "rimraf ./docs && yarn docs-interactive-analysis && mkdir ./docs/packages",
+    "docs": "npm-run-all -s docs:init -p docs-ui-app docs-ui-electron docs-common-model docs-common-graphql docs-common-util docs-ui-apollo docs-ui-core-components docs-ui-state docs-ui-util docs-weavess docs-weavess-core",
+    "docs-interactive-analysis": "typedoc --out docs --name interactive-analysis --mode file --readme README.md --target ES6 --includeDeclarations --excludeExternals --excludeNotExported --hideGenerator",
+    "docs-ui-app": "cd ./packages/ui-app && yarn docs && cp -r ./docs ../../docs/packages/ui-app",
+    "docs-ui-electron": "cd ./packages/ui-electron && yarn docs && cp -r ./docs ../../docs/packages/ui-electron",
+    "docs-common-model": "cd ./packages/common-model && yarn docs && cp -r ./docs ../../docs/packages/common-model",
+    "docs-common-graphql": "cd ./packages/common-graphql && yarn docs && cp -r ./docs ../../docs/packages/common-graphql",
+    "docs-common-util": "cd ./packages/common-util && yarn docs && cp -r ./docs ../../docs/packages/common-util",
+    "docs-weavess-core": "cd ./packages/weavess-core && yarn docs && cp -r ./docs ../../docs/packages/weavess-core",
+    "docs-ui-apollo": "cd ./packages/ui-apollo && yarn docs && cp -r ./docs ../../docs/packages/ui-apollo",
+    "docs-ui-core-components": "cd ./packages/ui-core-components && yarn docs && cp -r ./docs ../../docs/packages/ui-core-components",
+    "docs-ui-state": "cd ./packages/ui-state && yarn docs && cp -r ./docs ../../docs/packages/ui-state",
+    "docs-ui-util": "cd ./packages/ui-util && yarn docs && cp -r ./docs ../../docs/packages/ui-util",
+    "docs-weavess": "cd ./packages/weavess && yarn docs && cp -r ./docs ../../docs/packages/weavess",
+    "mock": "cd ./scripts/mock && ./mock.sh",
+    "producer": "yarn mock",
+    "sonar": "node_modules/sonar-scanner/bin/sonar-scanner -Dproject.settings=./sonar-project.properties -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.branch.name=${CI_COMMIT_REF_SLUG} -Dsonar.projectVersion=${CI_COMMIT_REF_SLUG}",
+    "sonar-merge-request": "node_modules/sonar-scanner/bin/sonar-scanner -Dproject.settings=./sonar-project.properties -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.projectVersion=${CI_COMMIT_REF_SLUG} -Dsonar.pullrequest.branch=${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME} -Dsonar.pullrequest.key=${CI_MERGE_REQUEST_IID} -Dsonar.pullrequest.base=${CI_MERGE_REQUEST_TARGET_BRANCH_NAME}",
+    "sonar-releases": "node_modules/sonar-scanner/bin/sonar-scanner -Dproject.settings=./sonar-project.properties -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.branch.name=releases -Dsonar.projectVersion=${CI_COMMIT_REF_SLUG}",
+    "test:dev:jest": "jest --config jest.config.js --silent false --verbose=true --bail=true",
+    "test:prod:jest": "jest --config jest.config.js --verbose=false --bail=true --coverageReporters=lcovonly --reporters=default --reporters=jest-junit",
+    "test": "yarn test:dev:jest",
+    "test-all": "lerna run test --stream",
+    "test-all:prod": "lerna run test:prod --stream",
+    "test-soh": "jest --config jest.config.js  && cd ./packages/cypress-tests && yarn cypress-tags run -e TAGS=\"not @skip\"",
+    "test-ian": "GMS_UI_MODE=ian jest --config jest.config.js  && cd ./packages/cypress-tests && GMS_UI_MODE=ian yarn cypress-tags run -e TAGS=\"@ian and not @skip\"",
+    "test-cypress": "cd ./packages/cypress-tests && yarn test-cypress",
+    "test-cypress-firefox": "cd ./packages/cypress-tests && yarn test-cypress-firefox",
+    "version": "echo $npm_package_version"
+  },
+  "dependencies": {
+    "pg-native": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "3.10.3",
+    "@types/jest": "24.0.23",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.15.1",
+    "enzyme-to-json": "3.4.3",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "jest-canvas-mock": "2.2.0",
+    "jest-cli": "24.9.0",
+    "jest-environment-jsdom-fourteen": "0.1.0",
+    "jest-fetch-mock": "2.1.2",
+    "jest-junit": "12.2.0",
+    "jsdom": "15.2.1",
+    "jsdom-global": "3.0.2",
+    "lerna": "3.19.0",
+    "lint-staged": "9.5.0",
+    "npm-run-all": "4.1.5",
+    "sonar-scanner": "3.1.0",
+    "ts-jest": "24.2.0",
+    "typedoc": "0.15.3",
+    "typescript": "4.2.4"
+  },
+  "resolutions": {
+    "braces": "3.0.2",
+    "dot-prop": "5.2.0",
+    "handlebars": "4.5.3",
+    "ini": "2.0.0",
+    "js-yaml": "3.14.0",
+    "kind-of": "6.0.3",
+    "lodash": "4.17.21",
+    "mixin-deep": "2.0.1",
+    "moment": "2.26.0",
+    "node-forge": "0.10.0",
+    "underscore": "1.13.1"
+  }
+}

@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoricalTrendsComponent is buildHistoricalTrendsHistoryComponent loading 1`] = `
+<BaseDisplay
+  className="history-display top-level-container scroll-box scroll-box--y"
+>
+  <HistoricalTrendsHistoryPanel
+    displaySubtitle="title"
+    monitorType="LAG"
+    sohHistoricalDurations={
+      Array [
+        21600000,
+        43200000,
+        86400000,
+      ]
+    }
+    sohStatus={
+      Object {
+        "error": undefined,
+        "isStale": false,
+        "lastUpdated": 1,
+        "loading": true,
+        "stationAndStationGroupSoh": Object {
+          "isUpdateResponse": false,
+          "stationGroups": Array [],
+          "stationSoh": Array [
+            Object {
+              "allStationAggregates": Array [],
+              "channelSohs": Array [
+                Object {
+                  "allSohMonitorValueAndStatuses": Array [
+                    Object {
+                      "contributing": false,
+                      "hasUnacknowledgedChanges": false,
+                      "monitorType": "LAG",
+                      "quietUntilMs": 1,
+                      "status": "GOOD",
+                      "thresholdBad": 10,
+                      "thresholdMarginal": 1,
+                      "value": 1,
+                      "valuePresent": true,
+                    },
+                  ],
+                  "channelName": "AAA111",
+                  "channelSohStatus": "GOOD",
+                },
+              ],
+              "id": "1",
+              "needsAcknowledgement": true,
+              "needsAttention": true,
+              "sohStatusSummary": "MARGINAL",
+              "stationGroups": Array [
+                Object {
+                  "groupName": "GroupA",
+                  "sohStationCapability": "BAD",
+                  "stationName": "Test",
+                },
+              ],
+              "stationName": "Test",
+              "statusContributors": Array [],
+              "time": 123456789,
+              "uuid": "2",
+            },
+          ],
+        },
+      }
+    }
+    valueType="FLOAT"
+  />
+</BaseDisplay>
+`;
+
+exports[`HistoricalTrendsComponent is buildHistoricalTrendsHistoryComponent no data 1`] = `
+<BaseDisplay
+  className="history-display top-level-container scroll-box scroll-box--y"
+>
+  <HistoricalTrendsHistoryPanel
+    displaySubtitle="title"
+    monitorType="LAG"
+    sohHistoricalDurations={
+      Array [
+        21600000,
+        43200000,
+        86400000,
+      ]
+    }
+    sohStatus={
+      Object {
+        "error": undefined,
+        "isStale": false,
+        "lastUpdated": 1,
+        "loading": false,
+        "stationAndStationGroupSoh": undefined,
+      }
+    }
+    valueType="FLOAT"
+  />
+</BaseDisplay>
+`;
+
+exports[`HistoricalTrendsComponent is buildHistoricalTrendsHistoryComponent rendered 1`] = `
+<BaseDisplay
+  className="history-display top-level-container scroll-box scroll-box--y"
+>
+  <HistoricalTrendsHistoryPanel
+    displaySubtitle="title"
+    monitorType="LAG"
+    sohHistoricalDurations={
+      Array [
+        21600000,
+        43200000,
+        86400000,
+      ]
+    }
+    sohStatus={
+      Object {
+        "error": undefined,
+        "isStale": false,
+        "lastUpdated": 1,
+        "loading": false,
+        "stationAndStationGroupSoh": Object {
+          "isUpdateResponse": false,
+          "stationGroups": Array [],
+          "stationSoh": Array [
+            Object {
+              "allStationAggregates": Array [],
+              "channelSohs": Array [
+                Object {
+                  "allSohMonitorValueAndStatuses": Array [
+                    Object {
+                      "contributing": false,
+                      "hasUnacknowledgedChanges": false,
+                      "monitorType": "LAG",
+                      "quietUntilMs": 1,
+                      "status": "GOOD",
+                      "thresholdBad": 10,
+                      "thresholdMarginal": 1,
+                      "value": 1,
+                      "valuePresent": true,
+                    },
+                  ],
+                  "channelName": "AAA111",
+                  "channelSohStatus": "GOOD",
+                },
+              ],
+              "id": "1",
+              "needsAcknowledgement": true,
+              "needsAttention": true,
+              "sohStatusSummary": "MARGINAL",
+              "stationGroups": Array [
+                Object {
+                  "groupName": "GroupA",
+                  "sohStationCapability": "BAD",
+                  "stationName": "Test",
+                },
+              ],
+              "stationName": "Test",
+              "statusContributors": Array [],
+              "time": 123456789,
+              "uuid": "2",
+            },
+          ],
+        },
+      }
+    }
+    valueType="FLOAT"
+  />
+</BaseDisplay>
+`;
