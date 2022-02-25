@@ -23,7 +23,7 @@ station_ref_gen_files_dir=$1
 (cd ${GMS_HOME}/gms/shared/utilities/standard-test-data-set/scripts && time ./create-test-data-set.sh ${standard_test_data_set_dir} $station_ref_gen_files_dir)
 
 # Ensure that the Java `waveform-loader` program is built.
-time gradle -p ${GMS_HOME} :coi-data-loader:build
+time gradle -p ${GMS_HOME} :coi-data-loader:build -x test
 
 # Copy everything that we need for the `docker build` command into the
 # `docker-build` subdirectory.  Separate `rsync` commands are used here

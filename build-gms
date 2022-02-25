@@ -55,7 +55,7 @@ build_python() {
 build_java() {
     cd ${REPO_PATH}/java
     export PATH=$PATH:/opt/gradle/bin
-    time gradle -Dorg.gradle.jvmargs=-Xmx8g build test alljavadoc resolve docker dockerTagCiCommitRefSlug dockerTagCiCommitSha
+    time gradle -Dorg.gradle.jvmargs=-Xmx8g build -x test alljavadoc resolve docker dockerTagCiCommitRefSlug dockerTagCiCommitSha
 
     # Prepare to build swagger image
     mkdir spec

@@ -7,7 +7,7 @@ FROM $DOCKER_REGISTRY/gms-common/java:$DOCKER_IMAGE_TAG
 WORKDIR /cd11-data-provider/
 
 # Copy in the CD1.1 RSDF data and configuration
-COPY cd11-test-data /rsdf/cd11/
+#COPY cd11-test-data /rsdf/cd11/
 COPY conf /rsdf/cd11/
 
 COPY bin ./cd11-data-provider/bin
